@@ -10,13 +10,26 @@ This repository is the UK-first seasonal produce calendar for idea #22. Internat
 
 [ARCH.md](ARCH.md) is the Stage 4 high-level design. The signed-off sticker-garden wheel is the shared graphics layer. Stage 5 ships the UK pack on that one wheel. A later country is another pack plus a selector, not a new wheel. The thin ship does not include a globe or a second country. Where ARCH.md and DESIGN.md disagree on the UK clock, the UK staple ranking, or which UK items may be stickers, ARCH.md wins. Motion and art stay in DESIGN.md.
 
-## Prototype
+## Thin ship
 
-An interactive design prototype of the UK year-wheel lives in [`prototype/`](prototype/). It uses the UK corpus only, vendored in [`data/uk/`](data/uk/).
+Stage 5 publishes one static exhibit in [`site/`](site/). It loads the UK pack only. There is no country selector.
 
 ```bash
-node scripts/build-data.mjs          # regenerate prototype/data.js from data/uk/
-python3 -m http.server -d prototype  # open http://localhost:8000/
+node scripts/build-data.mjs uk
+node scripts/check-ship.mjs
+python3 -m http.server -d site
+```
+
+Open `http://localhost:8000/`. With no query, the wheel lands on the current month in Europe/London. `?month=9` opens September and leaves the today marker on London's month. `?item=apple` opens that fact sheet after the arrival spin. `?country=es` is ignored; the UK pack still loads.
+
+The intended public URL is `https://yanqingcheng.github.io/seasonal-produce/`.
+
+## Prototype
+
+The signed Stage 3 prototype stays in [`prototype/`](prototype/) for comparison. Its `data.js` is the Stage 3 snapshot. The ship command above does not regenerate it.
+
+```bash
+python3 -m http.server -d prototype
 ```
 
 pstack is enabled for this repository in [`.cursor/settings.json`](.cursor/settings.json). Keep later work static and small.

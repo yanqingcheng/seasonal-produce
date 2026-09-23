@@ -1,0 +1,817 @@
+{
+  "apple": {
+    "archetype": "round",
+    "colours": {
+      "body": "#ff5a4e",
+      "leaf": "#52c26b"
+    }
+  },
+  "apricot": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#ffb627",
+      "cleft": true,
+      "leaf": "#52c26b"
+    }
+  },
+  "asparagus": {
+    "archetype": "asparagus",
+    "colours": {
+      "body": "#52c26b",
+      "tip": "#8e4dd6",
+      "band": "#ff5f8a"
+    }
+  },
+  "aubergine": {
+    "archetype": "aubergine",
+    "colours": {
+      "body": "#5b3a9b",
+      "cap": "#3bb273"
+    }
+  },
+  "basil": {
+    "archetype": "herb",
+    "colours": {
+      "body": "#3bb273",
+      "stem": "#23865a",
+      "leafShape": "round"
+    }
+  },
+  "beetroot": {
+    "archetype": "bulbroot",
+    "colours": {
+      "body": "#c2255c",
+      "leaf": "#3bb273",
+      "stem": "#d9344a"
+    }
+  },
+  "bilberry": {
+    "archetype": "cluster",
+    "colours": {
+      "body": "#34307a"
+    }
+  },
+  "blackberry": {
+    "archetype": "berry",
+    "colours": {
+      "body": "#5b3a9b",
+      "body2": "#8e4dd6",
+      "leaf": "#3bb273"
+    }
+  },
+  "blackcurrant": {
+    "archetype": "currants",
+    "colours": {
+      "body": "#34307a",
+      "stem": "#3bb273",
+      "leaf": "#52c26b"
+    }
+  },
+  "blueberry": {
+    "archetype": "cluster",
+    "colours": {
+      "body": "#4f6df5"
+    }
+  },
+  "bramley apple": {
+    "archetype": "round",
+    "colours": {
+      "body": "#a8e05a",
+      "leaf": "#3bb273"
+    }
+  },
+  "broad beans": {
+    "archetype": "pod",
+    "colours": {
+      "body": "#3bb273",
+      "body2": "#c9f0b0",
+      "leaf": "#23865a"
+    }
+  },
+  "broccoli": {
+    "archetype": "broccoli",
+    "colours": {
+      "body": "#3bb273",
+      "body2": "#23865a",
+      "stalk": "#a8e05a"
+    }
+  },
+  "brussels sprouts": {
+    "archetype": "head",
+    "colours": {
+      "body": "#a8e05a",
+      "body2": "#3bb273",
+      "trio": true
+    }
+  },
+  "butternut squash": {
+    "archetype": "butternut",
+    "colours": {
+      "body": "#ffb38a",
+      "stem": "#b0703f"
+    }
+  },
+  "cabbage": {
+    "archetype": "head",
+    "colours": {
+      "body": "#52c26b",
+      "body2": "#3bb273"
+    }
+  },
+  "carrots": {
+    "archetype": "root",
+    "colours": {
+      "body": "#ff9a3c",
+      "leaf": "#3bb273"
+    }
+  },
+  "cauliflower": {
+    "archetype": "cauliflower",
+    "colours": {
+      "body": "#fff6dc",
+      "leaf": "#3bb273"
+    }
+  },
+  "cavolo nero": {
+    "archetype": "leafy",
+    "colours": {
+      "body": "#2f7d74",
+      "curly": true,
+      "dots": "#1f5c55"
+    }
+  },
+  "celeriac": {
+    "archetype": "bulbroot",
+    "colours": {
+      "body": "#e9b87a",
+      "leaf": "#3bb273",
+      "stem": "#3bb273",
+      "knobbly": true
+    }
+  },
+  "celery": {
+    "archetype": "celery",
+    "colours": {
+      "body": "#c9f0b0",
+      "body2": "#52c26b",
+      "leaf": "#3bb273"
+    }
+  },
+  "chard": {
+    "archetype": "leafy",
+    "colours": {
+      "body": "#3bb273",
+      "rib": "#d9344a"
+    }
+  },
+  "cherry": {
+    "archetype": "cherry",
+    "colours": {
+      "body": "#d9344a",
+      "stem": "#3bb273",
+      "leaf": "#52c26b"
+    }
+  },
+  "chervil": {
+    "archetype": "herb",
+    "colours": {
+      "body": "#52c26b",
+      "stem": "#3bb273",
+      "leafShape": "frilly"
+    }
+  },
+  "chestnut": {
+    "archetype": "chestnut",
+    "colours": {
+      "body": "#7a4a2c",
+      "body2": "#e9b87a"
+    }
+  },
+  "chicory": {
+    "archetype": "chicory",
+    "colours": {
+      "body": "#fff6dc",
+      "tip": "#a8e05a"
+    }
+  },
+  "chillies": {
+    "archetype": "chilli",
+    "colours": {
+      "body": "#ff5a4e",
+      "cap": "#3bb273"
+    }
+  },
+  "chives": {
+    "archetype": "herb",
+    "colours": {
+      "body": "#3bb273",
+      "leafShape": "grass"
+    }
+  },
+  "cobnuts": {
+    "archetype": "cobnut",
+    "colours": {
+      "body": "#e9b87a",
+      "leaf": "#a8e05a"
+    }
+  },
+  "coriander": {
+    "archetype": "herb",
+    "colours": {
+      "body": "#3bb273",
+      "stem": "#23865a",
+      "leafShape": "frilly"
+    }
+  },
+  "courgette": {
+    "archetype": "long",
+    "colours": {
+      "body": "#3bb273",
+      "stripes": "#a8e05a",
+      "cap": "#ffb627"
+    }
+  },
+  "courgette flower": {
+    "archetype": "courgetteflower",
+    "colours": {
+      "body": "#ffb627",
+      "body2": "#ff9a3c",
+      "stem": "#3bb273"
+    }
+  },
+  "crab apple": {
+    "archetype": "cherry",
+    "colours": {
+      "body": "#ff5a4e",
+      "body2": "#ffb627",
+      "stem": "#b0703f",
+      "leaf": "#52c26b"
+    }
+  },
+  "cucumber": {
+    "archetype": "long",
+    "colours": {
+      "body": "#23865a",
+      "dots": "#c9f0b0",
+      "cap": "#a8e05a"
+    }
+  },
+  "currants (mixed)": {
+    "archetype": "currants",
+    "colours": {
+      "body": "#ff5a4e",
+      "body2": "#34307a",
+      "stem": "#3bb273",
+      "leaf": "#52c26b"
+    }
+  },
+  "damson": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#34307a",
+      "cleft": true
+    }
+  },
+  "dill": {
+    "archetype": "herb",
+    "colours": {
+      "body": "#a8e05a",
+      "stem": "#3bb273",
+      "leafShape": "needle"
+    }
+  },
+  "elderberry": {
+    "archetype": "currants",
+    "colours": {
+      "body": "#5b3a9b",
+      "stem": "#d9344a",
+      "leaf": "#3bb273"
+    }
+  },
+  "elderflower": {
+    "archetype": "elderflower",
+    "colours": {
+      "body": "#fffdf6",
+      "body2": "#fff0a6",
+      "stem": "#3bb273",
+      "leaf": "#52c26b"
+    }
+  },
+  "fennel bulb": {
+    "archetype": "fennel",
+    "colours": {
+      "body": "#c9f0b0",
+      "stem": "#a8e05a",
+      "leaf": "#3bb273"
+    }
+  },
+  "fig": {
+    "archetype": "fig",
+    "colours": {
+      "body": "#8e4dd6",
+      "leaf": "#3bb273"
+    }
+  },
+  "forced rhubarb": {
+    "archetype": "rhubarb",
+    "colours": {
+      "body": "#ff86a8",
+      "body2": "#ff5f8a",
+      "leaf": "#ffd84a",
+      "small": true
+    }
+  },
+  "french beans": {
+    "archetype": "beans",
+    "colours": {
+      "body": "#3bb273"
+    }
+  },
+  "garlic": {
+    "archetype": "garlic",
+    "colours": {
+      "body": "#fffdf6",
+      "body2": "#c9a7ff"
+    }
+  },
+  "globe artichoke": {
+    "archetype": "artichoke",
+    "colours": {
+      "body": "#9dbf94",
+      "body2": "#3bb273",
+      "tip": "#8e4dd6"
+    }
+  },
+  "gooseberry": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#a8e05a",
+      "stripes": "#fff6dc"
+    }
+  },
+  "greengage": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#c8e06a",
+      "cleft": true,
+      "leaf": "#3bb273"
+    }
+  },
+  "horseradish": {
+    "archetype": "root",
+    "colours": {
+      "body": "#e9b87a",
+      "leaf": "#3bb273",
+      "thin": true
+    }
+  },
+  "jersey royals": {
+    "archetype": "potato",
+    "colours": {
+      "body": "#fff0a6",
+      "pair": true
+    }
+  },
+  "jerusalem artichoke": {
+    "archetype": "potato",
+    "colours": {
+      "body": "#e9b87a",
+      "blush": "#ff86a8"
+    }
+  },
+  "kale": {
+    "archetype": "leafy",
+    "colours": {
+      "body": "#23865a",
+      "curly": true
+    }
+  },
+  "kohlrabi": {
+    "archetype": "bulbroot",
+    "colours": {
+      "body": "#c9f0b0",
+      "leaf": "#3bb273",
+      "stem": "#3bb273",
+      "side": true
+    }
+  },
+  "lamb's lettuce": {
+    "archetype": "rosette",
+    "colours": {
+      "body": "#3bb273",
+      "body2": "#52c26b"
+    }
+  },
+  "leeks": {
+    "archetype": "leek",
+    "colours": {
+      "body": "#fffdf6",
+      "body2": "#c9f0b0",
+      "leaf": "#3bb273"
+    }
+  },
+  "lettuce & salad leaves": {
+    "archetype": "head",
+    "colours": {
+      "body": "#a8e05a",
+      "body2": "#52c26b",
+      "frilly": true
+    }
+  },
+  "loganberry": {
+    "archetype": "berry",
+    "colours": {
+      "body": "#d9344a",
+      "body2": "#ff5a4e",
+      "leaf": "#3bb273"
+    }
+  },
+  "mangetout": {
+    "archetype": "pod",
+    "colours": {
+      "body": "#a8e05a",
+      "leaf": "#3bb273",
+      "flat": true
+    }
+  },
+  "marrow": {
+    "archetype": "long",
+    "colours": {
+      "body": "#3bb273",
+      "stripes": "#c9f0b0",
+      "cap": "#ffb627",
+      "fat": true
+    }
+  },
+  "medlar": {
+    "archetype": "round",
+    "colours": {
+      "body": "#b0703f",
+      "crown": "#7a4a2c"
+    }
+  },
+  "mint": {
+    "archetype": "herb",
+    "colours": {
+      "body": "#52c26b",
+      "stem": "#3bb273",
+      "leafShape": "round"
+    }
+  },
+  "mushrooms (cultivated)": {
+    "archetype": "mushroom",
+    "colours": {
+      "cap": "#fff6dc",
+      "stem": "#fffdf6"
+    }
+  },
+  "mustard leaves & mizuna": {
+    "archetype": "leafy",
+    "colours": {
+      "body": "#8e4dd6",
+      "lobed": true,
+      "rib": "#c9f0b0"
+    }
+  },
+  "nasturtium": {
+    "archetype": "nasturtium",
+    "colours": {
+      "body": "#ff9a3c",
+      "body2": "#ffd84a",
+      "leaf": "#3bb273"
+    }
+  },
+  "nectarine": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#ff5a4e",
+      "cleft": true,
+      "leaf": "#52c26b"
+    }
+  },
+  "new potatoes": {
+    "archetype": "potato",
+    "colours": {
+      "body": "#fff6dc",
+      "pair": true
+    }
+  },
+  "onions": {
+    "archetype": "onion",
+    "colours": {
+      "body": "#ffb627",
+      "body2": "#ff9a3c"
+    }
+  },
+  "oregano": {
+    "archetype": "herb",
+    "colours": {
+      "body": "#6fae5a",
+      "stem": "#23865a",
+      "leafShape": "round"
+    }
+  },
+  "pak choi": {
+    "archetype": "leafy",
+    "colours": {
+      "body": "#3bb273",
+      "stalk": "#fffdf6"
+    }
+  },
+  "parsley": {
+    "archetype": "herb",
+    "colours": {
+      "body": "#23865a",
+      "stem": "#3bb273",
+      "leafShape": "frilly"
+    }
+  },
+  "parsnips": {
+    "archetype": "root",
+    "colours": {
+      "body": "#fff6dc",
+      "leaf": "#3bb273"
+    }
+  },
+  "peach": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#ffb38a",
+      "cleft": true,
+      "leaf": "#52c26b"
+    }
+  },
+  "pear": {
+    "archetype": "pear",
+    "colours": {
+      "body": "#a8e05a",
+      "leaf": "#3bb273"
+    }
+  },
+  "peas": {
+    "archetype": "pod",
+    "colours": {
+      "body": "#52c26b",
+      "body2": "#a8e05a",
+      "leaf": "#3bb273"
+    }
+  },
+  "peppers": {
+    "archetype": "pepper",
+    "colours": {
+      "body": "#ff5a4e",
+      "cap": "#3bb273"
+    }
+  },
+  "plum": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#8e4dd6",
+      "cleft": true,
+      "leaf": "#3bb273"
+    }
+  },
+  "potatoes": {
+    "archetype": "potato",
+    "colours": {
+      "body": "#e9b87a"
+    }
+  },
+  "pumpkin & squash": {
+    "archetype": "pumpkin",
+    "colours": {
+      "body": "#ff9a3c",
+      "body2": "#ffb627",
+      "stem": "#b0703f"
+    }
+  },
+  "purple sprouting broccoli": {
+    "archetype": "broccoli",
+    "colours": {
+      "body": "#8e4dd6",
+      "body2": "#c9a7ff",
+      "stalk": "#3bb273",
+      "leaf": "#52c26b",
+      "sprouting": true
+    }
+  },
+  "quince": {
+    "archetype": "pear",
+    "colours": {
+      "body": "#ffd84a",
+      "leaf": "#3bb273",
+      "fuzz": true
+    }
+  },
+  "radicchio": {
+    "archetype": "head",
+    "colours": {
+      "body": "#c2255c",
+      "body2": "#d9344a",
+      "vein": "#fffdf6"
+    }
+  },
+  "radishes": {
+    "archetype": "bulbroot",
+    "colours": {
+      "body": "#ff5f8a",
+      "leaf": "#3bb273",
+      "stem": "#3bb273"
+    }
+  },
+  "raspberry": {
+    "archetype": "berry",
+    "colours": {
+      "body": "#ff5f8a",
+      "body2": "#ff86a8",
+      "leaf": "#3bb273"
+    }
+  },
+  "redcurrant": {
+    "archetype": "currants",
+    "colours": {
+      "body": "#ff5a4e",
+      "stem": "#3bb273",
+      "leaf": "#52c26b"
+    }
+  },
+  "rhubarb": {
+    "archetype": "rhubarb",
+    "colours": {
+      "body": "#ff5f8a",
+      "body2": "#d9344a",
+      "leaf": "#3bb273"
+    }
+  },
+  "rocket": {
+    "archetype": "leafy",
+    "colours": {
+      "body": "#3bb273",
+      "lobed": true
+    }
+  },
+  "rosemary": {
+    "archetype": "herb",
+    "colours": {
+      "body": "#2f7d74",
+      "stem": "#b0703f",
+      "leafShape": "needle"
+    }
+  },
+  "runner beans": {
+    "archetype": "beans",
+    "colours": {
+      "body": "#52c26b",
+      "wide": true
+    }
+  },
+  "sage": {
+    "archetype": "herb",
+    "colours": {
+      "body": "#9dbf94",
+      "stem": "#3bb273",
+      "leafShape": "round"
+    }
+  },
+  "salsify": {
+    "archetype": "root",
+    "colours": {
+      "body": "#7a4a2c",
+      "leaf": "#3bb273",
+      "thin": true
+    }
+  },
+  "samphire": {
+    "archetype": "samphire",
+    "colours": {
+      "body": "#52c26b"
+    }
+  },
+  "shallots": {
+    "archetype": "onion",
+    "colours": {
+      "body": "#ffb38a",
+      "body2": "#e2764b",
+      "pair": true
+    }
+  },
+  "sorrel": {
+    "archetype": "leafy",
+    "colours": {
+      "body": "#52c26b",
+      "rib": "#d9344a"
+    }
+  },
+  "spinach": {
+    "archetype": "leafy",
+    "colours": {
+      "body": "#23865a"
+    }
+  },
+  "spring greens": {
+    "archetype": "leafy",
+    "colours": {
+      "body": "#a8e05a"
+    }
+  },
+  "spring onions": {
+    "archetype": "springonion",
+    "colours": {
+      "body": "#fffdf6",
+      "leaf": "#3bb273"
+    }
+  },
+  "strawberry": {
+    "archetype": "strawberry",
+    "colours": {
+      "body": "#ff5a4e",
+      "leaf": "#3bb273"
+    }
+  },
+  "swede": {
+    "archetype": "bulbroot",
+    "colours": {
+      "body": "#fff0a6",
+      "cap": "#8e4dd6",
+      "leaf": "#3bb273",
+      "stem": "#3bb273"
+    }
+  },
+  "sweetcorn": {
+    "archetype": "corn",
+    "colours": {
+      "body": "#ffd84a",
+      "body2": "#ffb627",
+      "leaf": "#52c26b"
+    }
+  },
+  "tarragon": {
+    "archetype": "herb",
+    "colours": {
+      "body": "#3bb273",
+      "stem": "#3bb273",
+      "leafShape": "needle"
+    }
+  },
+  "tayberry": {
+    "archetype": "berry",
+    "colours": {
+      "body": "#c2255c",
+      "body2": "#ff5f8a",
+      "leaf": "#3bb273"
+    }
+  },
+  "thyme": {
+    "archetype": "herb",
+    "colours": {
+      "body": "#9dbf94",
+      "stem": "#b0703f",
+      "leafShape": "needle"
+    }
+  },
+  "tomatoes": {
+    "archetype": "round",
+    "colours": {
+      "body": "#ff5a4e",
+      "calyx": "#3bb273"
+    }
+  },
+  "turnips": {
+    "archetype": "bulbroot",
+    "colours": {
+      "body": "#fffdf6",
+      "cap": "#8e4dd6",
+      "leaf": "#3bb273",
+      "stem": "#3bb273"
+    }
+  },
+  "watercress": {
+    "archetype": "rosette",
+    "colours": {
+      "body": "#23865a",
+      "body2": "#3bb273"
+    }
+  },
+  "wild garlic": {
+    "archetype": "wildgarlic",
+    "colours": {
+      "body": "#52c26b"
+    }
+  },
+  "wild mushrooms": {
+    "archetype": "mushroom",
+    "colours": {
+      "cap": "#b0703f",
+      "stem": "#fff6dc",
+      "spots": "#e9b87a",
+      "pair": true
+    }
+  },
+  "wild nettles": {
+    "archetype": "nettle",
+    "colours": {
+      "body": "#3bb273",
+      "stem": "#23865a"
+    }
+  }
+}

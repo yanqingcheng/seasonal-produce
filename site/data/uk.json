@@ -1,0 +1,4026 @@
+{
+  "id": "uk",
+  "name": "United Kingdom",
+  "locale": "en-GB",
+  "timezone": "Europe/London",
+  "title": "The UK Year-Wheel",
+  "tagline": "Spin through what's growing, month by month.",
+  "month_names": [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ],
+  "seasons": [
+    "Winter",
+    "Winter",
+    "Spring",
+    "Spring",
+    "Spring",
+    "Summer",
+    "Summer",
+    "Summer",
+    "Autumn",
+    "Autumn",
+    "Autumn",
+    "Winter"
+  ],
+  "categories": [
+    {
+      "id": "vegetable",
+      "label": "Vegetable",
+      "one": "veg",
+      "plural": "veg"
+    },
+    {
+      "id": "fruit",
+      "label": "Fruit",
+      "one": "fruit",
+      "plural": "fruit"
+    },
+    {
+      "id": "herb",
+      "label": "Herb",
+      "one": "herb",
+      "plural": "herbs"
+    },
+    {
+      "id": "salad",
+      "label": "Salad",
+      "one": "salad",
+      "plural": "salad"
+    },
+    {
+      "id": "nut",
+      "label": "Nut",
+      "one": "nut",
+      "plural": "nuts"
+    },
+    {
+      "id": "foraged/wild",
+      "label": "Foraged / wild",
+      "one": "wild & foraged",
+      "plural": "wild & foraged"
+    }
+  ],
+  "attribution": "Months and fact sheets come from the UK pass-2 research corpus (19 Sep 2026): BBC Good Food, Hubbub, BBC Gardeners’ World, Borough Kitchen and specialist grower bodies. Recipes are from BBC Good Food.",
+  "thin_sheet": "The research corpus only has the month grid for this one, so that's all we show.",
+  "copy": {
+    "this_month": "This month",
+    "back_to": "Back to {month}",
+    "new_in": "New in",
+    "last_call": "Last call",
+    "at_peak": "At peak",
+    "also_in_season": "Also in season",
+    "on_the_edge": "On the edge",
+    "edge_why": "start or end of season, or a single source",
+    "hub_this_month": "this month",
+    "at_peak_short": "{n} at peak",
+    "more_in_season": "{n} more in season",
+    "open_fact_sheet": "Open fact sheet.",
+    "recipe_badge": "recipe",
+    "months_recipe": "{month}'s recipe",
+    "made_with": "Made with",
+    "cook_it_on": "Cook it on {name}",
+    "fact_in_season": "In season",
+    "fact_peak": "Peak",
+    "fact_edge": "On the edge",
+    "stored_notes": "Stored & type notes",
+    "regions": "Regions & notes",
+    "recipe": "Recipe",
+    "specialist_sources": "Specialist sources",
+    "no_in_season": "No in-season months in the grid",
+    "no_peak": "No peak month marked",
+    "all_year": "all year",
+    "in_month": "{state} in {month}",
+    "state_labels": {
+      "peak": "Peak",
+      "in": "In season",
+      "edge": "On the edge",
+      "out": "Out of season"
+    },
+    "ring_key": {
+      "peak": "Peak",
+      "in": "In season",
+      "edge": "Edge",
+      "out": "Out"
+    },
+    "proper": {
+      "jersey": "Jersey",
+      "royals": "Royals",
+      "brussels": "Brussels",
+      "bramley": "Bramley"
+    },
+    "hint": "Tap a month on the wheel, or use the ← → keys.",
+    "wheel_label": "Produce year-wheel. Pick a month.",
+    "months_nav": "Months",
+    "close_sheet": "Close fact sheet",
+    "season_label": "Season: {list}",
+    "mix_label": "In season by type: {list}",
+    "blurb": {
+      "counts": "{month} has {peak} things at peak and {in} more in season.",
+      "fullest": "The fullest month on the wheel.",
+      "leanest": "The leanest stretch of the year, so every pick counts.",
+      "filling": "The wheel is filling up: {n} more in season than {prev}.",
+      "winding": "Winding down: {n} fewer in season than {prev}.",
+      "same": "Much the same haul as {prev}.",
+      "lead_fruit_one": "{lead} lead the peaks ({count} of {peak}), with 1 fruit at its best.",
+      "lead_fruit": "{lead} lead the peaks ({count} of {peak}), with {n} fruits at their best.",
+      "lead_none": "{lead} lead the peaks ({count} of {peak}); no UK fruit is at peak.",
+      "change_threshold": 8
+    }
+  },
+  "items": [
+    {
+      "item": "apple",
+      "category": "fruit",
+      "months": [
+        "peak",
+        "peak",
+        "edge",
+        "edge",
+        "out",
+        "out",
+        "out",
+        "in",
+        "peak",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": {
+        "jan": "stored",
+        "feb": "stored",
+        "nov": "stored",
+        "dec": "stored"
+      },
+      "regions_notes": "Harvest Aug-Nov; stored British apples available to May (controlled-atmosphere storage). Variety-level windows in apple_pear_varieties annex.",
+      "specialist_sources": [
+        "britishapplesandpears.co.uk/the-british-season"
+      ]
+    },
+    {
+      "item": "apricot",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "asparagus",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "edge",
+        "peak",
+        "peak",
+        "peak",
+        "edge",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Traditional English season St George's Day (23 Apr) to Midsummer (21 Jun); Vale of Evesham (Worcs) holds PGI and is the historic heartland; also Kent, Suffolk, Cambs. Sources list Mar as occasional early start under protection.",
+      "specialist_sources": [
+        "valeandspa.co.uk/asparagus",
+        "eatuk.uk/seasonal"
+      ]
+    },
+    {
+      "item": "aubergine",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "UK glasshouse crop; NFU notes glasshouse technology extends availability into colder months.",
+      "specialist_sources": [
+        "nfuonline.com seasonality chart notes"
+      ]
+    },
+    {
+      "item": "basil",
+      "category": "herb",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "edge",
+        "edge",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Tender annual; UK outdoor Jun-Sep (BBC Good Food lists Jun-Aug); glasshouse extends.",
+      "specialist_sources": [
+        "bbcgoodfood.com/month pages",
+        "rhs.org.uk/herbs/growing"
+      ]
+    },
+    {
+      "item": "beetroot",
+      "category": "vegetable",
+      "months": [
+        "peak",
+        "in",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "bilberry",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "edge",
+        "edge",
+        "edge",
+        "edge",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Upland wild berry (moorlands), Jul-Sep.",
+      "specialist_sources": []
+    },
+    {
+      "item": "blackberry",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "peak",
+        "peak",
+        "peak",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Cultivated Jul-Sep; wild hedgerow (brambles) late Aug-Oct.",
+      "specialist_sources": []
+    },
+    {
+      "item": "blackcurrant",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "peak",
+        "peak",
+        "edge",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "blueberry",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "peak",
+        "peak",
+        "in",
+        "edge",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "UK season Jun-Oct, peak Jul-Aug; ~10% of UK consumption home-grown (Fruit & Vine/British Berry Growers, 2026).",
+      "specialist_sources": [
+        "fruitandvine.co.uk (British Berry Growers chair)"
+      ]
+    },
+    {
+      "item": "bramley apple",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "BAPL lists Bramley year-round (stores exceptionally); BBC Good Food marks best Oct-Mar. Armagh Bramley Apple holds PGI status (Co. Armagh, NI). Both kept: see audit.",
+      "specialist_sources": [
+        "britishapplesandpears.co.uk/the-british-season",
+        "gov.uk Armagh Bramley Apple PGI spec"
+      ]
+    },
+    {
+      "item": "broad beans",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "broccoli",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "edge",
+        "edge",
+        "in",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "brussels sprouts",
+      "category": "vegetable",
+      "months": [
+        "peak",
+        "peak",
+        "peak",
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "edge",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest Aug-Apr (early varieties from 1 Aug; peak Oct-Dec, 40% of UK area harvested in Dec for Christmas). South Lincolnshire is a key growing area.",
+      "specialist_sources": [
+        "lincsfp.com",
+        "fwi.co.uk"
+      ]
+    },
+    {
+      "item": "butternut squash",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "edge",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "cabbage",
+      "category": "vegetable",
+      "months": [
+        "peak",
+        "peak",
+        "peak",
+        "in",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": {
+        "jan": "white",
+        "feb": "green savoy types",
+        "mar": "green savoy types",
+        "may": "green pointed types",
+        "jun": "green pointed types",
+        "jul": "red",
+        "aug": "red",
+        "sep": "red",
+        "oct": "red",
+        "nov": "red",
+        "dec": "red"
+      },
+      "regions_notes": "Year-round across types (savoy winter, pointed spring, red/autumn).",
+      "specialist_sources": []
+    },
+    {
+      "item": "carrots",
+      "category": "vegetable",
+      "months": [
+        "edge",
+        "in",
+        "edge",
+        "out",
+        "in",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "in",
+        "in",
+        "edge"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Maincrop Jun-Nov; stored British carrots available year-round (NFU).",
+      "specialist_sources": []
+    },
+    {
+      "item": "cauliflower",
+      "category": "vegetable",
+      "months": [
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "edge",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Year-round across regions; Cornish winter cauliflowers notable (mild coast).",
+      "specialist_sources": []
+    },
+    {
+      "item": "cavolo nero",
+      "category": "vegetable",
+      "months": [
+        "edge",
+        "edge",
+        "edge",
+        "out",
+        "out",
+        "edge",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "edge",
+        "edge"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "celeriac",
+      "category": "vegetable",
+      "months": [
+        "peak",
+        "peak",
+        "peak",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "peak",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "celery",
+      "category": "vegetable",
+      "months": [
+        "peak",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "chard",
+      "category": "vegetable",
+      "months": [
+        "edge",
+        "edge",
+        "edge",
+        "edge",
+        "edge",
+        "peak",
+        "in",
+        "peak",
+        "peak",
+        "in",
+        "peak",
+        "edge"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "cherry",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "peak",
+        "peak",
+        "edge",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "British season ~10 weeks (roughly mid-Jun-late Aug) centred on Kent; new varieties extending it (BBC News, Kent grower AC Hulme).",
+      "specialist_sources": [
+        "bbc.com Kent cherry season"
+      ]
+    },
+    {
+      "item": "chervil",
+      "category": "herb",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "BBC Good Food lists May-Sep.",
+      "specialist_sources": [
+        "bbcgoodfood.com/month pages",
+        "rhs.org.uk/herbs/growing"
+      ]
+    },
+    {
+      "item": "chestnut",
+      "category": "nut",
+      "months": [
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Fresh Oct-Dec; stored into Jan.",
+      "specialist_sources": []
+    },
+    {
+      "item": "chicory",
+      "category": "vegetable",
+      "months": [
+        "peak",
+        "peak",
+        "peak",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "edge",
+        "edge",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "chillies",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "edge",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "chives",
+      "category": "herb",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "edge",
+        "edge",
+        "edge",
+        "edge",
+        "edge",
+        "edge",
+        "edge",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "cobnuts",
+      "category": "nut",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "edge",
+        "edge",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Fresh Kentish cobnuts mid-Aug-Oct; Kent is the historic centre (Victorian 'plats').",
+      "specialist_sources": [
+        "kentishcobnutsassociation.org.uk",
+        "kentishcobnuts.com"
+      ]
+    },
+    {
+      "item": "coriander",
+      "category": "herb",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "edge",
+        "edge",
+        "edge",
+        "edge",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "courgette",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "edge",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "courgette flower",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "crab apple",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "edge",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "cucumber",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "in",
+        "in",
+        "peak",
+        "edge",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "currants (mixed)",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "edge",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "damson",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "peak",
+        "peak",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Lyth Valley (Westmorland/Cumbria) picking first 3 weeks of Sep, roadside sales second half Sep. BBC Good Food marks best Sep.",
+      "specialist_sources": [
+        "lythdamsons.org.uk"
+      ]
+    },
+    {
+      "item": "dill",
+      "category": "herb",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "edge",
+        "edge",
+        "edge",
+        "edge",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "elderberry",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "peak",
+        "peak",
+        "peak",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "elderflower",
+      "category": "foraged/wild",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "edge",
+        "edge",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Hedgerow forage, late May-Jun.",
+      "specialist_sources": []
+    },
+    {
+      "item": "fennel bulb",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": {
+        "aug": "bulb",
+        "sep": "bulb",
+        "oct": "bulb"
+      },
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "fig",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "peak",
+        "peak",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "forced rhubarb",
+      "category": "fruit",
+      "months": [
+        "peak",
+        "peak",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Yorkshire Rhubarb Triangle (Wakefield-Leeds-Bradford) forcing sheds; season late Dec-Mar; PDO-protected name. Distinct from outdoor/maincrop rhubarb (Apr-Jun).",
+      "specialist_sources": [
+        "gov.uk protected-food-drink-names/yorkshire-forced-rhubarb",
+        "deliciousmagazine.co.uk"
+      ]
+    },
+    {
+      "item": "french beans",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "peak",
+        "peak",
+        "in",
+        "edge",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "garlic",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "in",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "globe artichoke",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "edge",
+        "edge",
+        "edge",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "gooseberry",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "peak",
+        "peak",
+        "peak",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "greengage",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "peak",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "horseradish",
+      "category": "vegetable",
+      "months": [
+        "edge",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "edge",
+        "edge",
+        "edge"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "jersey royals",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "edge",
+        "in",
+        "peak",
+        "peak",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Official season late Mar-Jul, peak May-Jun (up to 1,000t/day shipped at peak). PGI-protected; only grown in Jersey.",
+      "specialist_sources": [
+        "jerseyroyals.co.uk/about-us",
+        "jersey-royals.com guide"
+      ]
+    },
+    {
+      "item": "jerusalem artichoke",
+      "category": "vegetable",
+      "months": [
+        "peak",
+        "peak",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "kale",
+      "category": "vegetable",
+      "months": [
+        "peak",
+        "peak",
+        "in",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "edge",
+        "peak",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "kohlrabi",
+      "category": "vegetable",
+      "months": [
+        "edge",
+        "edge",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "lamb's lettuce",
+      "category": "salad",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "leeks",
+      "category": "vegetable",
+      "months": [
+        "peak",
+        "peak",
+        "peak",
+        "in",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "peak",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": "At best Nov-Apr per British Leeks. Welsh Leeks hold PGI status (grown in Pembrokeshire; in stores Aug-Apr per Blas y Tir). Available much of the year.",
+      "specialist_sources": [
+        "britishleeks.co.uk",
+        "blasytir.com/produce/leeks (Welsh Leeks PGI)",
+        "businesswales.gov.wales Welsh Leeks PGI"
+      ]
+    },
+    {
+      "item": "lettuce & salad leaves",
+      "category": "salad",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "in",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "loganberry",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "out",
+        "peak",
+        "peak",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "mangetout",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "marrow",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "peak",
+        "peak",
+        "edge",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "medlar",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Single-source (Hubbub, Oct). Heritage fruit, bletted after frost.",
+      "specialist_sources": []
+    },
+    {
+      "item": "mint",
+      "category": "herb",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "edge",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Outdoor UK mint roughly May-Oct; BBC Good Food lists May-Aug.",
+      "specialist_sources": [
+        "bbcgoodfood.com/month pages"
+      ]
+    },
+    {
+      "item": "mushrooms (cultivated)",
+      "category": "vegetable",
+      "months": [
+        "edge",
+        "edge",
+        "edge",
+        "edge",
+        "edge",
+        "edge",
+        "edge",
+        "edge",
+        "in",
+        "in",
+        "in",
+        "edge"
+      ],
+      "stored_notes": {
+        "jan": "cultivated",
+        "feb": "cultivated",
+        "mar": "cultivated",
+        "apr": "cultivated",
+        "may": "cultivated",
+        "jun": "cultivated",
+        "jul": "cultivated",
+        "aug": "wild",
+        "sep": "wild",
+        "oct": "wild",
+        "nov": "wild",
+        "dec": "cultivated"
+      },
+      "regions_notes": "Year-round cultivated.",
+      "specialist_sources": []
+    },
+    {
+      "item": "mustard leaves & mizuna",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "edge",
+        "edge",
+        "edge",
+        "edge",
+        "edge",
+        "edge",
+        "edge"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "nasturtium",
+      "category": "herb",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "edge",
+        "edge",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "nectarine",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "peak",
+        "peak",
+        "peak",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "new potatoes",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Earliest from Cornwall (mid-Apr, Gulf Stream frost-free fields), Pembrokeshire (harvest from early May) and Comber Earlies (Co. Down, NI - PGI, must be harvested May-Jul). Jersey Royals are the flagship early.",
+      "specialist_sources": [
+        "branston.com Cornish new potatoes",
+        "pembrokeshire-herald.com",
+        "gov.uk New Season Comber Potatoes/Comber Earlies PGI (harvest May-Jul)"
+      ]
+    },
+    {
+      "item": "onions",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "British storage crop, effectively year-round (NFU); fresh harvest late summer.",
+      "specialist_sources": []
+    },
+    {
+      "item": "oregano",
+      "category": "herb",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "edge",
+        "edge",
+        "edge",
+        "edge",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "pak choi",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Listed year-round by BBC Good Food (glasshouse/imports in winter).",
+      "specialist_sources": []
+    },
+    {
+      "item": "parsley",
+      "category": "herb",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "edge",
+        "edge",
+        "edge",
+        "edge",
+        "edge",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "parsnips",
+      "category": "vegetable",
+      "months": [
+        "peak",
+        "peak",
+        "edge",
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "peak",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "peach",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "peak",
+        "peak",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "pear",
+      "category": "fruit",
+      "months": [
+        "peak",
+        "in",
+        "edge",
+        "edge",
+        "out",
+        "out",
+        "out",
+        "out",
+        "peak",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": {
+        "jan": "stored",
+        "feb": "stored",
+        "nov": "stored",
+        "dec": "stored"
+      },
+      "regions_notes": "Harvest Aug-Oct; stored pears to May (Conference to May per BAPL).",
+      "specialist_sources": [
+        "britishapplesandpears.co.uk/the-british-season"
+      ]
+    },
+    {
+      "item": "peas",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "in",
+        "edge",
+        "peak",
+        "peak",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Vining pea harvest Jun-Aug (8-week 24/7 operation); Great British Pea Week early July. Fresh garden peas Jun-Sep.",
+      "specialist_sources": [
+        "peas.org/what-is-great-british-pea-week"
+      ]
+    },
+    {
+      "item": "peppers",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "peak",
+        "peak",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": {
+        "aug": "capsicum",
+        "sep": "capsicum",
+        "oct": "capsicum"
+      },
+      "regions_notes": "UK glasshouse crop; NFU notes glasshouse availability in colder months.",
+      "specialist_sources": [
+        "nfuonline.com seasonality chart notes"
+      ]
+    },
+    {
+      "item": "plum",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "peak",
+        "peak",
+        "peak",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "potatoes",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "edge",
+        "in",
+        "peak",
+        "in",
+        "peak",
+        "in",
+        "in"
+      ],
+      "stored_notes": {
+        "jun": "new",
+        "jul": "new",
+        "aug": "new",
+        "sep": "maincrop",
+        "oct": "maincrop"
+      },
+      "regions_notes": "Maincrop harvest Aug-Oct; stored year-round (NFU).",
+      "specialist_sources": []
+    },
+    {
+      "item": "pumpkin & squash",
+      "category": "vegetable",
+      "months": [
+        "edge",
+        "edge",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "peak",
+        "peak",
+        "peak",
+        "in"
+      ],
+      "stored_notes": {
+        "jan": "stored",
+        "feb": "stored",
+        "dec": "stored"
+      },
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "purple sprouting broccoli",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "peak",
+        "peak",
+        "peak",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "out",
+        "edge"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "quince",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": {
+        "nov": "stored",
+        "dec": "stored"
+      },
+      "regions_notes": "Oct-Nov.",
+      "specialist_sources": []
+    },
+    {
+      "item": "radicchio",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "radishes",
+      "category": "salad",
+      "months": [
+        "out",
+        "out",
+        "edge",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "raspberry",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "peak",
+        "peak",
+        "in",
+        "edge",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Scottish season (Tayside/Angus heartland) late Jun-Oct - longer than England; peak Jul-Aug.",
+      "specialist_sources": [
+        "mclaysfoods.co.uk seasonality (Scotland)",
+        "tastescot.co.uk/whats-in-season"
+      ]
+    },
+    {
+      "item": "redcurrant",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "peak",
+        "peak",
+        "peak",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "rhubarb",
+      "category": "fruit",
+      "months": [
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "in",
+        "out",
+        "edge",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": {
+        "jan": "forced",
+        "feb": "forced",
+        "mar": "forced",
+        "apr": "maincrop",
+        "may": "maincrop",
+        "jun": "maincrop",
+        "jul": "maincrop"
+      },
+      "regions_notes": "Outdoor/maincrop rhubarb roughly Apr-Jun/Jul; winter rows are forced rhubarb. BBC Good Food marks Jan-Jun overall.",
+      "specialist_sources": []
+    },
+    {
+      "item": "rocket",
+      "category": "salad",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "edge",
+        "in",
+        "edge",
+        "in",
+        "edge",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "rosemary",
+      "category": "herb",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "edge",
+        "edge",
+        "edge",
+        "edge",
+        "edge",
+        "edge",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "runner beans",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "sage",
+      "category": "herb",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "edge",
+        "edge",
+        "edge",
+        "edge",
+        "edge",
+        "edge",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "salsify",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "edge",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "edge",
+        "edge",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "samphire",
+      "category": "foraged/wild",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "in",
+        "peak",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Marsh samphire on Norfolk coast (Hunstanton-Sheringham) runs late Jun-Aug, best July; cut, don't uproot (illegal to pull roots). Some sources list from Apr (earlier coasts/imports) - see audit.",
+      "specialist_sources": [
+        "secretgb.co.uk Norfolk samphire guide"
+      ]
+    },
+    {
+      "item": "shallots",
+      "category": "vegetable",
+      "months": [
+        "edge",
+        "edge",
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "edge",
+        "edge",
+        "edge",
+        "edge",
+        "edge"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "sorrel",
+      "category": "salad",
+      "months": [
+        "out",
+        "out",
+        "in",
+        "in",
+        "peak",
+        "in",
+        "in",
+        "in",
+        "in",
+        "edge",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "spinach",
+      "category": "vegetable",
+      "months": [
+        "edge",
+        "edge",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "in",
+        "peak",
+        "in",
+        "edge",
+        "edge"
+      ],
+      "stored_notes": {
+        "jan": "perpetual",
+        "feb": "perpetual",
+        "mar": "perpetual",
+        "apr": "perpetual",
+        "may": "perpetual",
+        "jun": "perpetual",
+        "jul": "perpetual",
+        "aug": "perpetual",
+        "sep": "perpetual",
+        "oct": "perpetual",
+        "nov": "perpetual",
+        "dec": "perpetual"
+      },
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "spring greens",
+      "category": "vegetable",
+      "months": [
+        "edge",
+        "edge",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "edge",
+        "edge",
+        "edge",
+        "edge"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "spring onions",
+      "category": "salad",
+      "months": [
+        "out",
+        "out",
+        "peak",
+        "peak",
+        "peak",
+        "in",
+        "peak",
+        "peak",
+        "peak",
+        "edge",
+        "out",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "strawberry",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "edge",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "in",
+        "edge",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Protected cropping extends Mar-Dec; traditional field season Jun-Jul; retailers treat May-Sep as British season. Peak Jun-Jul.",
+      "specialist_sources": [
+        "marksandspencer.com British strawberries",
+        "ahdb.org.uk horticulture"
+      ]
+    },
+    {
+      "item": "swede",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "edge",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Autumn-winter; 'neeps' in Scotland (Burns Night, 25 Jan).",
+      "specialist_sources": []
+    },
+    {
+      "item": "sweetcorn",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "peak",
+        "peak",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest Aug-Oct; each cob has a short ripeness window.",
+      "specialist_sources": []
+    },
+    {
+      "item": "tarragon",
+      "category": "herb",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "edge",
+        "edge",
+        "edge",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "tayberry",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "peak",
+        "peak",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "thyme",
+      "category": "herb",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "edge",
+        "edge",
+        "edge",
+        "edge",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "tomatoes",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "British glasshouse season spring-autumn per British Tomato Growers' Association; some year-round production with lights.",
+      "specialist_sources": [
+        "britishtomatoes.co.uk"
+      ]
+    },
+    {
+      "item": "turnips",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "edge",
+        "edge",
+        "edge",
+        "peak",
+        "in",
+        "in",
+        "peak",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    },
+    {
+      "item": "watercress",
+      "category": "salad",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "edge",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "UK season May-Nov per The Watercress Company; production moves overseas in winter. Centre of production: Hampshire (Alresford, 'watercress capital') and Dorset. Some calendar sources list it Mar-Oct - see audit.",
+      "specialist_sources": [
+        "watercress.co.uk/growing-watercress-faq"
+      ]
+    },
+    {
+      "item": "wild garlic",
+      "category": "foraged/wild",
+      "months": [
+        "out",
+        "out",
+        "in",
+        "in",
+        "edge",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Woodland forage, Mar-May (best before flowering ends).",
+      "specialist_sources": []
+    },
+    {
+      "item": "wild mushrooms",
+      "category": "foraged/wild",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "edge",
+        "edge",
+        "edge",
+        "edge",
+        "edge"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Autumn flush Aug-Nov; chanterelles peak Aug-Sep, ceps Sep-Oct (Scottish source).",
+      "specialist_sources": []
+    },
+    {
+      "item": "wild nettles",
+      "category": "foraged/wild",
+      "months": [
+        "out",
+        "out",
+        "in",
+        "in",
+        "edge",
+        "edge",
+        "edge",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": []
+    }
+  ],
+  "recipes": [
+    {
+      "month": 0,
+      "title": "Leek & potato soup (vichyssoise)",
+      "produce": [
+        {
+          "item": "leeks",
+          "label": "leeks",
+          "qualifier": null
+        },
+        {
+          "item": "potatoes",
+          "label": "potatoes",
+          "qualifier": null
+        }
+      ],
+      "source_name": "BBC Good Food",
+      "source_url": "https://www.bbcgoodfood.com/recipes/leek-potato-soup"
+    },
+    {
+      "month": 1,
+      "title": "Rhubarb crumble",
+      "produce": [
+        {
+          "item": "forced rhubarb",
+          "label": "forced rhubarb",
+          "qualifier": null
+        }
+      ],
+      "source_name": "BBC Good Food",
+      "source_url": "https://www.bbcgoodfood.com/recipes/rhubarb-crumble"
+    },
+    {
+      "month": 2,
+      "title": "Purple sprouting broccoli with almonds",
+      "produce": [
+        {
+          "item": "purple sprouting broccoli",
+          "label": "purple sprouting broccoli",
+          "qualifier": null
+        }
+      ],
+      "source_name": "BBC Good Food",
+      "source_url": "https://www.bbcgoodfood.com/recipes/purple-sprouting-broccoli-almonds"
+    },
+    {
+      "month": 3,
+      "title": "Asparagus risotto",
+      "produce": [
+        {
+          "item": "asparagus",
+          "label": "asparagus",
+          "qualifier": null
+        }
+      ],
+      "source_name": "BBC Good Food",
+      "source_url": "https://www.bbcgoodfood.com/recipes/asparagus-risotto"
+    },
+    {
+      "month": 4,
+      "title": "Jersey Royal salad with horseradish cream",
+      "produce": [
+        {
+          "item": "jersey royals",
+          "label": "Jersey Royals (peak May-Jun)",
+          "qualifier": "peak May-Jun"
+        }
+      ],
+      "source_name": "BBC Good Food",
+      "source_url": "https://www.bbcgoodfood.com/recipes/jersey-royal-salad-horseradish-cream"
+    },
+    {
+      "month": 5,
+      "title": "Eton mess",
+      "produce": [
+        {
+          "item": "strawberry",
+          "label": "strawberries",
+          "qualifier": null
+        }
+      ],
+      "source_name": "BBC Good Food",
+      "source_url": "https://www.bbcgoodfood.com/recipes/eton-mess"
+    },
+    {
+      "month": 6,
+      "title": "Broad bean, feta & watercress salad",
+      "produce": [
+        {
+          "item": "broad beans",
+          "label": "broad beans",
+          "qualifier": null
+        },
+        {
+          "item": "watercress",
+          "label": "watercress",
+          "qualifier": null
+        }
+      ],
+      "source_name": "BBC Good Food",
+      "source_url": "https://www.bbcgoodfood.com/recipes/broad-bean-feta-watercress-salad"
+    },
+    {
+      "month": 7,
+      "title": "Apple & blackberry crumble",
+      "produce": [
+        {
+          "item": "blackberry",
+          "label": "blackberries (early)",
+          "qualifier": "early"
+        },
+        {
+          "item": "apple",
+          "label": "early apples",
+          "qualifier": "early"
+        }
+      ],
+      "source_name": "BBC Good Food",
+      "source_url": "https://www.bbcgoodfood.com/recipes/apple-blackberry-crumble"
+    },
+    {
+      "month": 8,
+      "title": "Damson jam",
+      "produce": [
+        {
+          "item": "damson",
+          "label": "damsons",
+          "qualifier": null
+        }
+      ],
+      "source_name": "BBC Good Food",
+      "source_url": "https://www.bbcgoodfood.com/recipes/damson-jam"
+    },
+    {
+      "month": 9,
+      "title": "Pumpkin soup",
+      "produce": [
+        {
+          "item": "pumpkin & squash",
+          "label": "pumpkin & squash",
+          "qualifier": null
+        }
+      ],
+      "source_name": "BBC Good Food",
+      "source_url": "https://www.bbcgoodfood.com/recipes/pumpkin-soup"
+    },
+    {
+      "month": 10,
+      "title": "Parsnip soup with parsley cream",
+      "produce": [
+        {
+          "item": "parsnips",
+          "label": "parsnips (best after first frosts)",
+          "qualifier": "best after first frosts"
+        }
+      ],
+      "source_name": "BBC Good Food",
+      "source_url": "https://www.bbcgoodfood.com/recipes/parsnip-soup-parsley-cream"
+    },
+    {
+      "month": 11,
+      "title": "Roasted brussels sprouts with bacon & chestnuts",
+      "produce": [
+        {
+          "item": "brussels sprouts",
+          "label": "brussels sprouts",
+          "qualifier": null
+        },
+        {
+          "item": "chestnut",
+          "label": "chestnuts",
+          "qualifier": null
+        }
+      ],
+      "source_name": "BBC Good Food",
+      "source_url": "https://www.bbcgoodfood.com/recipes/roasted-brussels-sprouts-bacon-chestnuts"
+    }
+  ],
+  "months": [
+    {
+      "key": "jan",
+      "name": "January",
+      "counts": {
+        "peak": 15,
+        "in": 10,
+        "edge": 10
+      },
+      "lead": {
+        "category": "vegetable",
+        "count": 11
+      },
+      "wheel": [
+        "leeks",
+        "potatoes",
+        "brussels sprouts",
+        "pear",
+        "parsnips",
+        "apple",
+        "celery",
+        "rhubarb",
+        "kale",
+        "beetroot",
+        "cauliflower",
+        "cabbage",
+        "swede",
+        "onions",
+        "forced rhubarb"
+      ],
+      "peak": [
+        "apple",
+        "beetroot",
+        "brussels sprouts",
+        "cabbage",
+        "cauliflower",
+        "celeriac",
+        "celery",
+        "chicory",
+        "forced rhubarb",
+        "jerusalem artichoke",
+        "kale",
+        "leeks",
+        "parsnips",
+        "pear",
+        "rhubarb"
+      ],
+      "in": [
+        "bramley apple",
+        "chestnut",
+        "onions",
+        "pak choi",
+        "potatoes",
+        "purple sprouting broccoli",
+        "radicchio",
+        "salsify",
+        "swede",
+        "turnips"
+      ],
+      "edge": [
+        "carrots",
+        "cavolo nero",
+        "chard",
+        "horseradish",
+        "kohlrabi",
+        "mushrooms (cultivated)",
+        "pumpkin & squash",
+        "shallots",
+        "spinach",
+        "spring greens"
+      ],
+      "arrivals": [
+        "forced rhubarb",
+        "rhubarb",
+        "purple sprouting broccoli"
+      ],
+      "farewells": [
+        "chestnut"
+      ],
+      "quiet": [
+        "leeks",
+        "potatoes",
+        "pear",
+        "beetroot",
+        "chicory"
+      ],
+      "blurb": "January has <strong>15</strong> things at peak and <strong>10</strong> more in season. Much the same haul as December. Veg lead the peaks (11 of 15), with 4 fruits at their best."
+    },
+    {
+      "key": "feb",
+      "name": "February",
+      "counts": {
+        "peak": 13,
+        "in": 12,
+        "edge": 8
+      },
+      "lead": {
+        "category": "vegetable",
+        "count": 10
+      },
+      "wheel": [
+        "brussels sprouts",
+        "parsnips",
+        "apple",
+        "kale",
+        "rhubarb",
+        "leeks",
+        "cauliflower",
+        "cabbage",
+        "forced rhubarb",
+        "swede",
+        "pear",
+        "celery",
+        "beetroot",
+        "carrots",
+        "potatoes"
+      ],
+      "peak": [
+        "apple",
+        "brussels sprouts",
+        "cabbage",
+        "cauliflower",
+        "celeriac",
+        "chicory",
+        "forced rhubarb",
+        "jerusalem artichoke",
+        "kale",
+        "leeks",
+        "parsnips",
+        "purple sprouting broccoli",
+        "rhubarb"
+      ],
+      "in": [
+        "beetroot",
+        "bramley apple",
+        "carrots",
+        "celery",
+        "onions",
+        "pak choi",
+        "pear",
+        "potatoes",
+        "radicchio",
+        "salsify",
+        "swede",
+        "turnips"
+      ],
+      "edge": [
+        "cavolo nero",
+        "chard",
+        "kohlrabi",
+        "mushrooms (cultivated)",
+        "pumpkin & squash",
+        "shallots",
+        "spinach",
+        "spring greens"
+      ],
+      "arrivals": [
+        "carrots"
+      ],
+      "farewells": [
+        "apple",
+        "parsnips",
+        "beetroot",
+        "celery"
+      ],
+      "quiet": [
+        "kale",
+        "cauliflower",
+        "forced rhubarb",
+        "jerusalem artichoke",
+        "bramley apple"
+      ],
+      "blurb": "February has <strong>13</strong> things at peak and <strong>12</strong> more in season. Much the same haul as January. Veg lead the peaks (10 of 13), with 3 fruits at their best."
+    },
+    {
+      "key": "mar",
+      "name": "March",
+      "counts": {
+        "peak": 10,
+        "in": 12,
+        "edge": 14
+      },
+      "lead": {
+        "category": "vegetable",
+        "count": 8
+      },
+      "wheel": [
+        "brussels sprouts",
+        "rhubarb",
+        "leeks",
+        "spring onions",
+        "spinach",
+        "cauliflower",
+        "cabbage",
+        "purple sprouting broccoli",
+        "kale",
+        "potatoes",
+        "onions",
+        "chicory",
+        "celeriac",
+        "forced rhubarb",
+        "bramley apple"
+      ],
+      "peak": [
+        "brussels sprouts",
+        "cabbage",
+        "cauliflower",
+        "celeriac",
+        "chicory",
+        "leeks",
+        "purple sprouting broccoli",
+        "rhubarb",
+        "spinach",
+        "spring onions"
+      ],
+      "in": [
+        "bramley apple",
+        "forced rhubarb",
+        "jerusalem artichoke",
+        "kale",
+        "onions",
+        "pak choi",
+        "potatoes",
+        "radicchio",
+        "sorrel",
+        "spring greens",
+        "wild garlic",
+        "wild nettles"
+      ],
+      "edge": [
+        "apple",
+        "asparagus",
+        "carrots",
+        "cavolo nero",
+        "chard",
+        "globe artichoke",
+        "jersey royals",
+        "mushrooms (cultivated)",
+        "parsnips",
+        "pear",
+        "radishes",
+        "salsify",
+        "swede",
+        "turnips"
+      ],
+      "arrivals": [
+        "spinach",
+        "spring onions",
+        "sorrel",
+        "spring greens"
+      ],
+      "farewells": [
+        "brussels sprouts",
+        "chicory",
+        "bramley apple",
+        "forced rhubarb"
+      ],
+      "quiet": [
+        "rhubarb",
+        "spring onions",
+        "purple sprouting broccoli",
+        "onions",
+        "celeriac"
+      ],
+      "blurb": "March has <strong>10</strong> things at peak and <strong>12</strong> more in season. The leanest stretch of the year, so every pick counts. Veg lead the peaks (8 of 10), with 1 fruit at its best."
+    },
+    {
+      "key": "apr",
+      "name": "April",
+      "counts": {
+        "peak": 8,
+        "in": 14,
+        "edge": 12
+      },
+      "lead": {
+        "category": "vegetable",
+        "count": 5
+      },
+      "wheel": [
+        "asparagus",
+        "new potatoes",
+        "radishes",
+        "rhubarb",
+        "spinach",
+        "spring onions",
+        "cauliflower",
+        "jersey royals",
+        "peas",
+        "leeks",
+        "lettuce & salad leaves",
+        "cabbage",
+        "onions",
+        "purple sprouting broccoli",
+        "rocket"
+      ],
+      "peak": [
+        "asparagus",
+        "cauliflower",
+        "new potatoes",
+        "purple sprouting broccoli",
+        "radishes",
+        "rhubarb",
+        "spinach",
+        "spring onions"
+      ],
+      "in": [
+        "cabbage",
+        "celeriac",
+        "jersey royals",
+        "leeks",
+        "lettuce & salad leaves",
+        "onions",
+        "pak choi",
+        "peas",
+        "radicchio",
+        "rocket",
+        "sorrel",
+        "spring greens",
+        "wild garlic",
+        "wild nettles"
+      ],
+      "edge": [
+        "apple",
+        "basil",
+        "broccoli",
+        "chard",
+        "chives",
+        "dill",
+        "globe artichoke",
+        "mushrooms (cultivated)",
+        "pear",
+        "strawberry",
+        "turnips",
+        "watercress"
+      ],
+      "arrivals": [
+        "asparagus",
+        "new potatoes",
+        "radishes",
+        "jersey royals"
+      ],
+      "farewells": [
+        "cauliflower",
+        "purple sprouting broccoli",
+        "celeriac",
+        "leeks"
+      ],
+      "quiet": [
+        "asparagus",
+        "new potatoes",
+        "spinach",
+        "peas",
+        "rocket"
+      ],
+      "blurb": "April has <strong>8</strong> things at peak and <strong>14</strong> more in season. The leanest stretch of the year, so every pick counts. Veg lead the peaks (5 of 8), with 1 fruit at its best."
+    },
+    {
+      "key": "may",
+      "name": "May",
+      "counts": {
+        "peak": 11,
+        "in": 13,
+        "edge": 29
+      },
+      "lead": {
+        "category": "vegetable",
+        "count": 5
+      },
+      "wheel": [
+        "jersey royals",
+        "asparagus",
+        "new potatoes",
+        "strawberry",
+        "radishes",
+        "rhubarb",
+        "spinach",
+        "spring onions",
+        "lettuce & salad leaves",
+        "cabbage",
+        "broad beans",
+        "carrots",
+        "onions",
+        "sorrel",
+        "rocket"
+      ],
+      "peak": [
+        "asparagus",
+        "cabbage",
+        "jersey royals",
+        "lettuce & salad leaves",
+        "new potatoes",
+        "radishes",
+        "rhubarb",
+        "sorrel",
+        "spinach",
+        "spring onions",
+        "strawberry"
+      ],
+      "in": [
+        "apricot",
+        "broad beans",
+        "carrots",
+        "chervil",
+        "lamb's lettuce",
+        "mint",
+        "nectarine",
+        "onions",
+        "pak choi",
+        "radicchio",
+        "rocket",
+        "spring greens",
+        "watercress"
+      ],
+      "edge": [
+        "aubergine",
+        "basil",
+        "blackcurrant",
+        "broccoli",
+        "cauliflower",
+        "chard",
+        "chives",
+        "coriander",
+        "courgette",
+        "dill",
+        "elderflower",
+        "garlic",
+        "globe artichoke",
+        "gooseberry",
+        "mangetout",
+        "mushrooms (cultivated)",
+        "mustard leaves & mizuna",
+        "nasturtium",
+        "oregano",
+        "parsley",
+        "peas",
+        "rosemary",
+        "sage",
+        "samphire",
+        "tarragon",
+        "tomatoes",
+        "turnips",
+        "wild garlic",
+        "wild nettles"
+      ],
+      "arrivals": [
+        "strawberry",
+        "apricot",
+        "broad beans",
+        "carrots"
+      ],
+      "farewells": [
+        "radicchio",
+        "rocket"
+      ],
+      "quiet": [
+        "jersey royals",
+        "radishes",
+        "lettuce & salad leaves",
+        "carrots",
+        "sorrel"
+      ],
+      "blurb": "May has <strong>11</strong> things at peak and <strong>13</strong> more in season. Much the same haul as April. Veg lead the peaks (5 of 11), with 2 fruits at their best."
+    },
+    {
+      "key": "jun",
+      "name": "June",
+      "counts": {
+        "peak": 27,
+        "in": 18,
+        "edge": 26
+      },
+      "lead": {
+        "category": "vegetable",
+        "count": 19
+      },
+      "wheel": [
+        "strawberry",
+        "cherry",
+        "asparagus",
+        "courgette",
+        "jersey royals",
+        "new potatoes",
+        "broad beans",
+        "peas",
+        "runner beans",
+        "tomatoes",
+        "radishes",
+        "rhubarb",
+        "carrots",
+        "spinach",
+        "lettuce & salad leaves"
+      ],
+      "peak": [
+        "apricot",
+        "asparagus",
+        "aubergine",
+        "blackcurrant",
+        "broad beans",
+        "cabbage",
+        "carrots",
+        "chard",
+        "cherry",
+        "courgette",
+        "fennel bulb",
+        "globe artichoke",
+        "gooseberry",
+        "jersey royals",
+        "lettuce & salad leaves",
+        "mangetout",
+        "new potatoes",
+        "onions",
+        "pak choi",
+        "peas",
+        "radishes",
+        "rhubarb",
+        "runner beans",
+        "spinach",
+        "strawberry",
+        "tomatoes",
+        "turnips"
+      ],
+      "in": [
+        "basil",
+        "broccoli",
+        "cauliflower",
+        "chervil",
+        "courgette flower",
+        "garlic",
+        "greengage",
+        "kohlrabi",
+        "lamb's lettuce",
+        "mint",
+        "nectarine",
+        "peppers",
+        "raspberry",
+        "samphire",
+        "sorrel",
+        "spring greens",
+        "spring onions",
+        "watercress"
+      ],
+      "edge": [
+        "beetroot",
+        "bilberry",
+        "blueberry",
+        "cavolo nero",
+        "chillies",
+        "chives",
+        "coriander",
+        "cucumber",
+        "currants (mixed)",
+        "dill",
+        "elderflower",
+        "french beans",
+        "loganberry",
+        "mushrooms (cultivated)",
+        "mustard leaves & mizuna",
+        "nasturtium",
+        "oregano",
+        "parsley",
+        "potatoes",
+        "redcurrant",
+        "rocket",
+        "rosemary",
+        "sage",
+        "tarragon",
+        "thyme",
+        "wild nettles"
+      ],
+      "arrivals": [
+        "aubergine",
+        "blackcurrant",
+        "chard",
+        "cherry"
+      ],
+      "farewells": [
+        "asparagus",
+        "spring greens"
+      ],
+      "quiet": [
+        "strawberry",
+        "cherry",
+        "courgette",
+        "runner beans",
+        "gooseberry"
+      ],
+      "blurb": "June has <strong>27</strong> things at peak and <strong>18</strong> more in season. The wheel is filling up: 21 more in season than May. Veg lead the peaks (19 of 27), with 6 fruits at their best."
+    },
+    {
+      "key": "jul",
+      "name": "July",
+      "counts": {
+        "peak": 35,
+        "in": 19,
+        "edge": 26
+      },
+      "lead": {
+        "category": "vegetable",
+        "count": 20
+      },
+      "wheel": [
+        "broad beans",
+        "cherry",
+        "blueberry",
+        "courgette",
+        "raspberry",
+        "new potatoes",
+        "broccoli",
+        "strawberry",
+        "garlic",
+        "peas",
+        "runner beans",
+        "tomatoes",
+        "radishes",
+        "beetroot",
+        "watercress"
+      ],
+      "peak": [
+        "apricot",
+        "aubergine",
+        "beetroot",
+        "blackcurrant",
+        "blueberry",
+        "broad beans",
+        "broccoli",
+        "cabbage",
+        "carrots",
+        "cavolo nero",
+        "cherry",
+        "courgette",
+        "fennel bulb",
+        "french beans",
+        "garlic",
+        "globe artichoke",
+        "gooseberry",
+        "greengage",
+        "lettuce & salad leaves",
+        "mangetout",
+        "nectarine",
+        "new potatoes",
+        "onions",
+        "pak choi",
+        "peas",
+        "radishes",
+        "raspberry",
+        "redcurrant",
+        "runner beans",
+        "samphire",
+        "spinach",
+        "spring onions",
+        "strawberry",
+        "tayberry",
+        "tomatoes"
+      ],
+      "in": [
+        "basil",
+        "blackberry",
+        "cauliflower",
+        "chard",
+        "chervil",
+        "courgette flower",
+        "cucumber",
+        "jersey royals",
+        "kohlrabi",
+        "lamb's lettuce",
+        "mint",
+        "peppers",
+        "potatoes",
+        "radicchio",
+        "rhubarb",
+        "rocket",
+        "sorrel",
+        "turnips",
+        "watercress"
+      ],
+      "edge": [
+        "asparagus",
+        "bilberry",
+        "celery",
+        "chicory",
+        "chillies",
+        "chives",
+        "coriander",
+        "currants (mixed)",
+        "dill",
+        "elderflower",
+        "fig",
+        "kale",
+        "marrow",
+        "mushrooms (cultivated)",
+        "mustard leaves & mizuna",
+        "nasturtium",
+        "oregano",
+        "parsley",
+        "peach",
+        "rosemary",
+        "sage",
+        "shallots",
+        "sweetcorn",
+        "tarragon",
+        "thyme",
+        "wild nettles"
+      ],
+      "arrivals": [
+        "beetroot",
+        "blueberry",
+        "cavolo nero",
+        "french beans"
+      ],
+      "farewells": [
+        "blackcurrant",
+        "cherry",
+        "new potatoes",
+        "jersey royals"
+      ],
+      "quiet": [
+        "broad beans",
+        "blueberry",
+        "raspberry",
+        "watercress",
+        "blackcurrant"
+      ],
+      "blurb": "July has <strong>35</strong> things at peak and <strong>19</strong> more in season. The wheel is filling up: 9 more in season than June. Veg lead the peaks (20 of 35), with 11 fruits at their best."
+    },
+    {
+      "key": "aug",
+      "name": "August",
+      "counts": {
+        "peak": 43,
+        "in": 17,
+        "edge": 21
+      },
+      "lead": {
+        "category": "vegetable",
+        "count": 24
+      },
+      "wheel": [
+        "blackberry",
+        "apple",
+        "blueberry",
+        "sweetcorn",
+        "plum",
+        "courgette",
+        "raspberry",
+        "broad beans",
+        "strawberry",
+        "broccoli",
+        "garlic",
+        "peppers",
+        "runner beans",
+        "tomatoes",
+        "celery"
+      ],
+      "peak": [
+        "apricot",
+        "aubergine",
+        "beetroot",
+        "blackberry",
+        "blueberry",
+        "broad beans",
+        "broccoli",
+        "cabbage",
+        "carrots",
+        "cavolo nero",
+        "celery",
+        "chard",
+        "courgette",
+        "damson",
+        "elderberry",
+        "fennel bulb",
+        "fig",
+        "french beans",
+        "garlic",
+        "globe artichoke",
+        "gooseberry",
+        "kohlrabi",
+        "lamb's lettuce",
+        "lettuce & salad leaves",
+        "loganberry",
+        "mangetout",
+        "marrow",
+        "nectarine",
+        "onions",
+        "pak choi",
+        "peach",
+        "peppers",
+        "plum",
+        "potatoes",
+        "radishes",
+        "raspberry",
+        "redcurrant",
+        "runner beans",
+        "spring onions",
+        "strawberry",
+        "sweetcorn",
+        "tayberry",
+        "tomatoes"
+      ],
+      "in": [
+        "apple",
+        "basil",
+        "cauliflower",
+        "chervil",
+        "chillies",
+        "courgette flower",
+        "crab apple",
+        "cucumber",
+        "greengage",
+        "mint",
+        "peas",
+        "radicchio",
+        "samphire",
+        "sorrel",
+        "spinach",
+        "turnips",
+        "watercress"
+      ],
+      "edge": [
+        "bilberry",
+        "blackcurrant",
+        "brussels sprouts",
+        "cherry",
+        "chicory",
+        "chives",
+        "coriander",
+        "kale",
+        "leeks",
+        "mushrooms (cultivated)",
+        "mustard leaves & mizuna",
+        "oregano",
+        "parsley",
+        "parsnips",
+        "rocket",
+        "rosemary",
+        "sage",
+        "shallots",
+        "tarragon",
+        "thyme",
+        "wild mushrooms"
+      ],
+      "arrivals": [
+        "celery",
+        "damson",
+        "elderberry",
+        "fig"
+      ],
+      "farewells": [
+        "tayberry",
+        "basil",
+        "courgette flower",
+        "greengage"
+      ],
+      "quiet": [
+        "blackberry",
+        "apple",
+        "sweetcorn",
+        "garlic",
+        "marrow"
+      ],
+      "blurb": "August has <strong>43</strong> things at peak and <strong>17</strong> more in season. Much the same haul as July. Veg lead the peaks (24 of 43), with 15 fruits at their best."
+    },
+    {
+      "key": "sep",
+      "name": "September",
+      "counts": {
+        "peak": 46,
+        "in": 17,
+        "edge": 22
+      },
+      "lead": {
+        "category": "vegetable",
+        "count": 30
+      },
+      "wheel": [
+        "cucumber",
+        "plum",
+        "sweetcorn",
+        "blackberry",
+        "courgette",
+        "pumpkin & squash",
+        "broad beans",
+        "broccoli",
+        "garlic",
+        "peppers",
+        "runner beans",
+        "tomatoes",
+        "parsnips",
+        "pear",
+        "damson"
+      ],
+      "peak": [
+        "apple",
+        "apricot",
+        "aubergine",
+        "beetroot",
+        "blackberry",
+        "broad beans",
+        "broccoli",
+        "cabbage",
+        "carrots",
+        "cavolo nero",
+        "celeriac",
+        "celery",
+        "chard",
+        "courgette",
+        "cucumber",
+        "damson",
+        "elderberry",
+        "fennel bulb",
+        "fig",
+        "garlic",
+        "globe artichoke",
+        "kale",
+        "kohlrabi",
+        "lamb's lettuce",
+        "leeks",
+        "lettuce & salad leaves",
+        "loganberry",
+        "mangetout",
+        "marrow",
+        "nectarine",
+        "onions",
+        "pak choi",
+        "parsnips",
+        "peach",
+        "pear",
+        "peppers",
+        "plum",
+        "pumpkin & squash",
+        "radishes",
+        "redcurrant",
+        "runner beans",
+        "spinach",
+        "spring onions",
+        "sweetcorn",
+        "tomatoes",
+        "turnips"
+      ],
+      "in": [
+        "blueberry",
+        "butternut squash",
+        "cauliflower",
+        "chervil",
+        "chillies",
+        "french beans",
+        "gooseberry",
+        "mushrooms (cultivated)",
+        "peas",
+        "potatoes",
+        "radicchio",
+        "raspberry",
+        "rocket",
+        "salsify",
+        "sorrel",
+        "strawberry",
+        "watercress"
+      ],
+      "edge": [
+        "bilberry",
+        "brussels sprouts",
+        "chestnut",
+        "chicory",
+        "chives",
+        "cobnuts",
+        "coriander",
+        "crab apple",
+        "horseradish",
+        "mint",
+        "mustard leaves & mizuna",
+        "oregano",
+        "parsley",
+        "quince",
+        "rhubarb",
+        "rosemary",
+        "sage",
+        "shallots",
+        "spring greens",
+        "swede",
+        "thyme",
+        "wild mushrooms"
+      ],
+      "arrivals": [
+        "celeriac",
+        "kale",
+        "leeks",
+        "parsnips"
+      ],
+      "farewells": [
+        "apricot",
+        "broad beans",
+        "courgette",
+        "cucumber"
+      ],
+      "quiet": [
+        "cucumber",
+        "peppers",
+        "damson",
+        "butternut squash",
+        "loganberry"
+      ],
+      "blurb": "September has <strong>46</strong> things at peak and <strong>17</strong> more in season. The fullest month on the wheel. Veg lead the peaks (30 of 46), with 12 fruits at their best."
+    },
+    {
+      "key": "oct",
+      "name": "October",
+      "counts": {
+        "peak": 29,
+        "in": 18,
+        "edge": 25
+      },
+      "lead": {
+        "category": "vegetable",
+        "count": 20
+      },
+      "wheel": [
+        "pumpkin & squash",
+        "plum",
+        "blackberry",
+        "broccoli",
+        "garlic",
+        "swede",
+        "tomatoes",
+        "brussels sprouts",
+        "pear",
+        "parsnips",
+        "apple",
+        "celery",
+        "kale",
+        "beetroot",
+        "leeks"
+      ],
+      "peak": [
+        "apple",
+        "aubergine",
+        "beetroot",
+        "blackberry",
+        "broccoli",
+        "brussels sprouts",
+        "cabbage",
+        "cavolo nero",
+        "celeriac",
+        "celery",
+        "chestnut",
+        "elderberry",
+        "garlic",
+        "globe artichoke",
+        "kale",
+        "kohlrabi",
+        "lamb's lettuce",
+        "leeks",
+        "lettuce & salad leaves",
+        "pak choi",
+        "parsnips",
+        "pear",
+        "plum",
+        "potatoes",
+        "pumpkin & squash",
+        "quince",
+        "swede",
+        "tomatoes",
+        "turnips"
+      ],
+      "in": [
+        "butternut squash",
+        "carrots",
+        "cauliflower",
+        "chard",
+        "chicory",
+        "chillies",
+        "fennel bulb",
+        "fig",
+        "jerusalem artichoke",
+        "mushrooms (cultivated)",
+        "onions",
+        "peppers",
+        "radicchio",
+        "radishes",
+        "runner beans",
+        "spinach",
+        "sweetcorn",
+        "watercress"
+      ],
+      "edge": [
+        "bilberry",
+        "blueberry",
+        "chives",
+        "cobnuts",
+        "courgette",
+        "cucumber",
+        "french beans",
+        "horseradish",
+        "marrow",
+        "medlar",
+        "mustard leaves & mizuna",
+        "parsley",
+        "purple sprouting broccoli",
+        "raspberry",
+        "rocket",
+        "rosemary",
+        "sage",
+        "salsify",
+        "shallots",
+        "sorrel",
+        "spring greens",
+        "spring onions",
+        "strawberry",
+        "thyme",
+        "wild mushrooms"
+      ],
+      "arrivals": [
+        "brussels sprouts",
+        "chestnut",
+        "quince",
+        "swede"
+      ],
+      "farewells": [
+        "aubergine",
+        "blackberry",
+        "broccoli",
+        "cavolo nero"
+      ],
+      "quiet": [
+        "pumpkin & squash",
+        "plum",
+        "broccoli",
+        "tomatoes",
+        "elderberry"
+      ],
+      "blurb": "October has <strong>29</strong> things at peak and <strong>18</strong> more in season. Winding down: 16 fewer in season than September. Veg lead the peaks (20 of 29), with 6 fruits at their best."
+    },
+    {
+      "key": "nov",
+      "name": "November",
+      "counts": {
+        "peak": 22,
+        "in": 8,
+        "edge": 13
+      },
+      "lead": {
+        "category": "vegetable",
+        "count": 16
+      },
+      "wheel": [
+        "parsnips",
+        "pumpkin & squash",
+        "swede",
+        "brussels sprouts",
+        "pear",
+        "apple",
+        "celery",
+        "kale",
+        "beetroot",
+        "leeks",
+        "lettuce & salad leaves",
+        "cabbage",
+        "mushrooms (cultivated)",
+        "carrots",
+        "potatoes"
+      ],
+      "peak": [
+        "apple",
+        "beetroot",
+        "brussels sprouts",
+        "cabbage",
+        "celeriac",
+        "celery",
+        "chard",
+        "chestnut",
+        "globe artichoke",
+        "jerusalem artichoke",
+        "kale",
+        "kohlrabi",
+        "lamb's lettuce",
+        "leeks",
+        "lettuce & salad leaves",
+        "pak choi",
+        "parsnips",
+        "pear",
+        "pumpkin & squash",
+        "quince",
+        "swede",
+        "turnips"
+      ],
+      "in": [
+        "carrots",
+        "cauliflower",
+        "chicory",
+        "mushrooms (cultivated)",
+        "onions",
+        "potatoes",
+        "radicchio",
+        "watercress"
+      ],
+      "edge": [
+        "bramley apple",
+        "butternut squash",
+        "cavolo nero",
+        "cobnuts",
+        "horseradish",
+        "mustard leaves & mizuna",
+        "rosemary",
+        "sage",
+        "salsify",
+        "shallots",
+        "spinach",
+        "spring greens",
+        "wild mushrooms"
+      ],
+      "arrivals": [],
+      "farewells": [
+        "chard",
+        "globe artichoke",
+        "lamb's lettuce",
+        "carrots"
+      ],
+      "quiet": [
+        "parsnips",
+        "celery",
+        "mushrooms (cultivated)",
+        "chard",
+        "globe artichoke"
+      ],
+      "blurb": "November has <strong>22</strong> things at peak and <strong>8</strong> more in season. Winding down: 17 fewer in season than October. Veg lead the peaks (16 of 22), with 3 fruits at their best."
+    },
+    {
+      "key": "dec",
+      "name": "December",
+      "counts": {
+        "peak": 15,
+        "in": 12,
+        "edge": 12
+      },
+      "lead": {
+        "category": "vegetable",
+        "count": 11
+      },
+      "wheel": [
+        "brussels sprouts",
+        "swede",
+        "parsnips",
+        "pear",
+        "apple",
+        "celery",
+        "kale",
+        "beetroot",
+        "leeks",
+        "cabbage",
+        "chestnut",
+        "pumpkin & squash",
+        "spring onions",
+        "lettuce & salad leaves",
+        "potatoes"
+      ],
+      "peak": [
+        "apple",
+        "beetroot",
+        "brussels sprouts",
+        "cabbage",
+        "celeriac",
+        "celery",
+        "chestnut",
+        "jerusalem artichoke",
+        "kale",
+        "leeks",
+        "parsnips",
+        "pear",
+        "quince",
+        "swede",
+        "turnips"
+      ],
+      "in": [
+        "bramley apple",
+        "cauliflower",
+        "chicory",
+        "kohlrabi",
+        "lettuce & salad leaves",
+        "onions",
+        "pak choi",
+        "potatoes",
+        "pumpkin & squash",
+        "radicchio",
+        "salsify",
+        "spring onions"
+      ],
+      "edge": [
+        "carrots",
+        "cavolo nero",
+        "chard",
+        "forced rhubarb",
+        "horseradish",
+        "mushrooms (cultivated)",
+        "mustard leaves & mizuna",
+        "purple sprouting broccoli",
+        "shallots",
+        "spinach",
+        "spring greens",
+        "wild mushrooms"
+      ],
+      "arrivals": [
+        "bramley apple",
+        "salsify",
+        "spring onions"
+      ],
+      "farewells": [
+        "quince",
+        "kohlrabi",
+        "lettuce & salad leaves",
+        "pumpkin & squash"
+      ],
+      "quiet": [
+        "brussels sprouts",
+        "swede",
+        "cabbage",
+        "chestnut",
+        "quince"
+      ],
+      "blurb": "December has <strong>15</strong> things at peak and <strong>12</strong> more in season. Much the same haul as November. Veg lead the peaks (11 of 15), with 3 fruits at their best."
+    }
+  ]
+}
