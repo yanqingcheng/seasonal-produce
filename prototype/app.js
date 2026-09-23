@@ -118,9 +118,10 @@
     }));
   }
 
-  // A wedge only reaches past the plate near the pointer, where the viewBox has headroom; on a long
-  // spin the old wedge tucks in as it swings away and the new one pulls out as it arrives.
-  const REACH_FULL = 25, REACH_NONE = 70;
+  // A wedge only blooms past the plate right under the pointer: the old wedge tucks in before it
+  // swings away, the wheel turns with every wedge at quiet radius, and the new one blooms on arrival.
+  // REACH_FULL covers the spring's few degrees of overshoot so the landed wedge doesn't pulse.
+  const REACH_FULL = 4, REACH_NONE = 16;
   function reach(c) {
     const off = Math.abs(((c % 360) + 540) % 360 - 180);
     const u = Math.min(1, Math.max(0, (REACH_NONE - off) / (REACH_NONE - REACH_FULL)));
@@ -131,12 +132,15 @@
     segEls.forEach((s, m) => {
       const c = start + m * 30;
       const e = ext[m] * reach(c);
-      const d = wedge(c, HW, lerp(R_OUT, R_OUT_ACTIVE, e));
+      const rOut = lerp(R_OUT, R_OUT_ACTIVE, e);
+      const d = wedge(c, HW, rOut);
       s.bg.setAttribute("d", d);
       if (s.halo) s.halo.setAttribute("d", d);
+      // Active-only stickers ride the wedge's outer edge in and out, so they never sit in empty canvas.
+      const squash = (rOut - R_IN) / (R_OUT_ACTIVE - R_IN);
       s.slots.forEach(({ el, q, a }) => {
         const [r, frac, size] = q && a ? [lerp(q[0], a[0], e), lerp(q[1], a[1], e), lerp(q[2], a[2], e)]
-          : a ? [a[0], a[1], a[2] * e]
+          : a ? [R_IN + (a[0] - R_IN) * squash, a[1], a[2] * e]
           : [q[0], q[1], q[2] * (1 - e)];
         if (size < 2) { el.setAttribute("display", "none"); return; }
         el.removeAttribute("display");
@@ -146,6 +150,22 @@
       const [lx, ly] = polar(lerp(R_LABEL, R_LABEL_ACTIVE, e), c);
       s.label.setAttribute("transform", `translate(${f1(lx)} ${f1(ly)}) scale(${lerp(1, LABEL_GROW, e).toFixed(3)})`);
     });
+    syncHub(start);
+  }
+
+  // The hub names whichever month is under the pointer, ticking through the months a spin passes,
+  // and pops (with the confetti) when the selected month arrives.
+  let hubMonth = null, pendingBurst = false;
+  function syncHub(start) {
+    const m = ((Math.round(-start / 30) % 12) + 12) % 12;
+    if (m === hubMonth) return;
+    hubMonth = m;
+    const landed = m === selected;
+    renderHub(m, landed);
+    if (landed && pendingBurst) {
+      pendingBurst = false;
+      burst();
+    }
   }
 
   function targetLayout(m) {
@@ -157,7 +177,7 @@
   // so a long spin's overshoot past the pointer stays a few degrees. A new pick mid-spin retargets
   // the springs and keeps the wheel's momentum.
   const SPRINGS = { spin: [8, 0.62, 0.8], grow: [11, 0.7] };
-  const INTRO_SPRINGS = { spin: [4.6, 0.55, 0.55], grow: [7, 0.8] };
+  const INTRO_SPRINGS = { spin: [4.6, 0.78, 0.78], grow: [7, 0.8] };
   let goal = null, springs = SPRINGS, spinZeta = 0.62;
   let vel = 0;
   const extVel = D.months.map(() => 0);
@@ -215,13 +235,13 @@
     draw(layout);
   }
 
-  function renderHub() {
-    const mo = D.months[selected];
-    $("#hub").innerHTML = `<g class="hub-pop">
-      <text class="hub-season" y="-52">${SEASONS[selected].toUpperCase()}</text>
+  function renderHub(m, landed) {
+    const mo = D.months[m];
+    $("#hub").innerHTML = `<g class="${landed ? "hub-pop" : "hub-tick"}">
+      <text class="hub-season" y="-52">${SEASONS[m].toUpperCase()}</text>
       <text class="hub-month" y="12">${mo.name}</text>
       <text class="hub-count" y="56">${mo.counts.peak} at peak</text>
-      ${selected === today ? `<text class="hub-today" y="88">this month</text>` : ""}
+      ${m === today ? `<text class="hub-today" y="88">this month</text>` : ""}
     </g>`;
   }
 
@@ -356,14 +376,13 @@
     // Paint the enlarged wedge last so its stickers and outline sit above its neighbours.
     $("#spin").appendChild(segEls[m].g);
     if (refocus) segEls[m].g.focus({ preventScroll: true });
+    pendingBurst = changed && !intro;
+    // Already under the pointer (e.g. a quick → then ←): land it on the next frame.
+    if (hubMonth === m) hubMonth = null;
     animateTo(targetLayout(m), intro ? INTRO_SPRINGS : SPRINGS);
-    renderHub();
     renderRail();
     renderTodayButton();
-    if (changed) {
-      renderPanel(!intro);
-      if (!intro) burst();
-    }
+    if (changed) renderPanel(!intro);
   }
 
   // ---------- fact sheet ----------

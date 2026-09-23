@@ -112,6 +112,8 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.05; m
 .hub text { text-anchor: middle; dominant-baseline: middle; pointer-events: none; }
 .hub-pop { transform-box: fill-box; transform-origin: center; animation: hub-pop 0.5s var(--spring); }
 @keyframes hub-pop { from { transform: scale(0.6); opacity: 0; } to { transform: none; opacity: 1; } }
+.hub-tick { transform-box: fill-box; transform-origin: center; animation: hub-tick 0.2s var(--glide); }
+@keyframes hub-tick { from { transform: scale(0.9); opacity: 0.35; } to { transform: none; opacity: 1; } }
 .hub-season { font: 700 20px var(--display); fill: var(--ink-soft); letter-spacing: 0.2em; }
 .hub-month { font: 700 50px var(--display); fill: var(--ink); }
 .hub-count { font: 800 22px var(--body); fill: var(--tomato); }
