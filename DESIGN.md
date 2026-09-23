@@ -10,7 +10,11 @@ This exhibit sits in Qing's Animal Crossing–style museum of loves. It should m
 
 ## Qing's art direction (2026-09-23)
 
-As relayed in the Stage 3 brief. This is a faithful record, not a transcript:
+**Qing, seat chat, 2026-09-23 (verbatim):**
+
+> design note wise I want to be creative - but we need to make it artistic and stylised because fake-realistic pictures of food are offputting. so it could be 3d, pixel art, cartoon - but it needs to feel dynamic and interactive while still being slick and responsive. I want it to make people feel joy about their food
+
+**Stage 3 reading of it:**
 
 - She **wants to be creative**.
 - The art must be **artistic and stylised**, because **fake-realistic pictures of food are offputting**.
