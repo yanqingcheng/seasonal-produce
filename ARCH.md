@@ -16,7 +16,7 @@ Where this file and DESIGN.md disagree on the **UK pack’s clock**, the **UK st
 | 2 | What a shared link does | A valid `?month=1..12` is the selected month: the arrival spin lands **that** wedge under the pointer, grown to the long radius (690 in the wheel’s viewBox; §5). The today marker stays on the pack timezone’s month. No query, or a value outside 1–12, selects the pack timezone’s month. |
 | 3 | Runtime | One static page. SVG wheel, DOM panel, native dialog. The page calls `render(pack)`. No framework, no server, no account. |
 | 4 | Popularity order | The ranking **algorithm** is shared. The staple **list** is pack data. The UK list stays the editorial `STAPLES` names, moved into the UK pack. It only orders stickers and is never shown as a fact. A cited purchase table replaces that list later; it is not a gate on this ship. |
-| 5 | Stickers skipped | The pack lists item names the wheel must not draw. The UK list is **cranberry** only (the corpus says UK supply is mostly imported and there is no meaningful UK season). Pak choi and samphire stay eligible. The prototype’s substring test also drops those two; Stage 5 follows this row. |
+| 5 | What may be a row | **Peak and in season mean a meaningful domestic growing season in that country.** Import-only shop availability is not a season. Those items are **removed from the pack**, not hidden with `sticker_exclude`. The UK pack **drops cranberry** (calendar, lists, and stickers). Pak choi and samphire stay. `sticker_exclude` may exist for a rare art hold and is **empty** for the UK pack. Radicchio stays for now; Instinct re-checks it. Stage 5 does not invent a fix. |
 | 6 | Recipe depth | When a month has a recipe, the panel shows title, corpus ingredient chips, and the corpus source link. Method steps stay on that link. The UK pack has one recipe every month. |
 | 7 | About / sources | Footer text comes from the pack. The UK string is: “Months and fact sheets come from the UK pass-2 research corpus (19 Sep 2026): BBC Good Food, Hubbub, BBC Gardeners’ World, Borough Kitchen and specialist grower bodies. Recipes are from BBC Good Food.” A separate About page waits until `sources.md` is in the repo. It is not in `data/uk/` today. |
 | 8 | Public URL | `site/` published as a static site. GitHub Pages on this repo is the intended host (`https://yanqingcheng.github.io/seasonal-produce/`). Any public HTTPS host of that same directory meets the ship if Pages is unavailable. v1 has no country path. |
@@ -34,7 +34,7 @@ This is one exhibit in Qing’s Animal Crossing–style museum of loves, publish
 
 - 12-month UK wheel, Sticker Garden art, signed-off motion.
 - Month panel: derived blurb, mix, new-in / last-call, recipe card, at-peak, in-season, on-the-edge.
-- Fact sheet for every one of the 108 corpus items, fields drawn only from that item’s corpus row.
+- Fact sheet for every UK pack item (107 once cranberry is removed), fields drawn only from that item’s corpus row.
 - 12 recipes from `data/uk/recipes.csv`, one per month.
 - Today marker, “Back to {month}”, month rail, keyboard, reduced motion.
 - Shareable `?month=` link. Optional `?item=` opens that item’s fact sheet when the name is a corpus item; any other value is ignored.
@@ -91,12 +91,12 @@ A pack is a directory `data/<id>/`. The build reads one pack and writes `site/da
 | `seasons` | 12 presentation labels, one per month. UK: Jan–Feb winter, Mar–May spring, Jun–Aug summer, Sep–Nov autumn, Dec winter |
 | `categories` | `{ id, label, plural, everyday }`. `everyday: true` is the ranking +1. Colour is the shared legend, not a pack field. UK ids: vegetable, fruit, herb, salad, nut, foraged/wild, with vegetable, fruit, and salad everyday. A category id the legend does not know yet is added once, in the shared legend, when that pack is accepted |
 | `state_roles` | Map from the corpus’s month letters to the four roles `peak`, `in`, `edge`, `out`. UK: `P`, `I`, `T`, `.` |
-| `sticker_exclude` | Item names removed from sticker pools before ranking. They stay in the lists. UK: `["cranberry"]` |
+| `sticker_exclude` | Optional item names omitted from sticker pools only, for a rare art hold. They would still be in the lists. It is not how imports are handled. UK: empty |
 | `attribution` | Footer string |
 | `thin_sheet` | Sentence when an item has no optional prose. UK uses the DESIGN.md line |
 | `alias_profile` | `en` or `none`. See below |
 | `recipe_rule` | `one_per_month` or `optional`. UK: `one_per_month` |
-| `expect_items` | When set, the build fails if the row count differs. UK: `108` |
+| `expect_items` | When set, the build fails if the row count differs. UK: `107` after cranberry is removed |
 | `require_peak_every_month` | When true, the build fails if any month has no peak-role cell. UK: true (April has 8) |
 
 **Calendar, `produce_calendar.csv`**, one row per item in that country:
@@ -112,6 +112,14 @@ A pack is a directory `data/<id>/`. The build reads one pack and writes `site/da
 | `specialist_sources` | no | Fact-sheet citations, split on `;` |
 
 Any other column is kept in the file for research and is not shown. A future pack does not get new fact-sheet fields by adding a column. That takes a revision of this contract.
+
+**Domestic season rule (every pack).** Qing, 2026-09-23: a row is in a pack only when the sources support a meaningful **domestic** growing season in that country. Supermarket import availability is not a season. Peak and in season on the wheel, in the month lists, and on the stickers mean country-grown. This is the same rule for the UK ship and for every later pack. Instinct applies it when packing other countries. Stage 5 does not invent replacement rows for items the rule removes.
+
+The UK schema already excluded banana, citrus, dates, pomegranate, watermelon, melon, and sweet potato on that basis. Cranberry was left in the pass-2 calendar with a note that virtually all UK supply is imported and there is no meaningful UK season. That exception goes. Stage 5 deletes the cranberry row from `data/uk/produce_calendar.csv` before the ship build, and does not draw it. The pass-2 file had 108 rows; the UK pack ships **107**.
+
+Pak choi and samphire stay. Their notes describe UK growing (glasshouse, Norfolk marsh) and mention imports only as a caveat. The prototype’s “note contains import” test is not the rule.
+
+Radicchio stays in the pack. Qing flagged it as a soft spot: the audit calls the flags import-heavy shop availability, which is not proof of UK growing. That audit file is not in the repo. Instinct re-checks it. Stage 5 does not drop the row and does not invent UK-grower months. Qing is also asking Instinct to apply the domestic-season rule on the other countries still in research.
 
 **Recipes, `recipes.csv`**, optional file. Columns: `month`, `recipe`, `in_season_produce_used`, `source_name`, `source_url`. At most one recipe per month under this contract. `one_per_month` fails the build unless each month has one. `optional` allows a month with none, and the panel omits the recipe card for that month. An ingredient must resolve to an item whose role in that month is peak or in season.
 
@@ -131,12 +139,12 @@ Any other column is kept in the file for research and is not shown. A future pac
 
 UK-specific means pack content and UK profile flags. It does not mean branches in the wheel.
 
-- Corpus: 108 items, the pass-2 notes, 12 BBC Good Food recipes, English alias examples.
-- Profile flags: `expect_items` 108, `recipe_rule` `one_per_month`, `require_peak_every_month`, `alias_profile` `en`.
-- Clock, locale copy, season labels, category labels, cranberry skip list, staple list, attribution, title. Month tints and category colours stay in the shared graphics layer.
+- Corpus: 107 items after cranberry is removed, the pass-2 notes for the rows that remain, 12 BBC Good Food recipes, English alias examples.
+- Profile flags: `expect_items` 107, `recipe_rule` `one_per_month`, `require_peak_every_month`, `alias_profile` `en`.
+- Clock, locale copy, season labels, category labels, staple list, attribution, title. Month tints and category colours stay in the shared graphics layer. `sticker_exclude` is empty.
 - Evidence meaning of peak / in season / edge, which lives in `data/uk/schema_and_evidence_rules.md` and in the UK edge sentence. Another country’s letters map onto the same four roles only after that country’s own sources say so.
 
-The exhibit script must not contain the UK timezone, the staple names, cranberry, the footer sentence, or the 108 item names. Those live in `uk.json`. A test can grep the script for `Europe/London` and `cranberry` and expect no hits.
+The exhibit script must not contain the UK timezone, the staple names, the footer sentence, or the item names. Those live in `uk.json`. A test can grep the script for `Europe/London` and expect no hits. `uk.json` must not contain `cranberry`.
 
 ### Extension path
 
@@ -218,7 +226,7 @@ A sheet opened from a control closes on Esc, backdrop, or ×, and returns focus 
 
 | File | Role |
 |---|---|
-| `data/uk/produce_calendar.csv` | 108 items. Name, category, `jan`…`dec` (`P` `I` `T` `.`), optional `peak_months`, `stored_notes`, `regions_notes`, `specialist_sources` |
+| `data/uk/produce_calendar.csv` | 107 items after Stage 5 removes cranberry. Name, category, `jan`…`dec` (`P` `I` `T` `.`), optional `peak_months`, `stored_notes`, `regions_notes`, `specialist_sources` |
 | `data/uk/recipes.csv` | 12 rows. Month, title, ingredient string, source name, source URL |
 | `data/uk/schema_and_evidence_rules.md` | What P/I/T/. mean |
 
@@ -226,7 +234,8 @@ Not in the repo, and not required to render v1: `produce_calendar_long.csv`, `pr
 
 **Build** (`node scripts/build-data.mjs uk`) reads the UK pack and writes `site/data/uk.json` plus `site/data/registry.json`. The client does not parse CSV. The shared builder fails if a state is outside `state_roles`, a category is unknown, a staple or alias misses, a recipe ingredient is not peak or in season in its month, or an item has no art binding. The UK profile also **fails** if any of these break:
 
-- item count is not 108
+- item count is not 107, or the name `cranberry` is still a row
+- a regions note says there is no meaningful UK or domestic season (the cranberry wording). This does not drop notes that only mention imports as a caveat
 - a month state is not `P`, `I`, `T`, or `.` (the UK `state_roles`)
 - `peak_months`, when present, disagrees with that row’s peak-role cells (on this corpus they agree for every row that has the column)
 - a recipe ingredient does not resolve to a calendar item
@@ -280,7 +289,7 @@ Sort by score, highest first. Inside one score, the shorter in-season run (count
 2. Fill the remaining slots up to 5. Months take turns, one sticker per turn, fewest peak-or-in-season candidates first. On its turn a month takes its highest-ranked candidate that is not already on any quiet wedge.
 3. A name appears on a second quiet wedge only when that month has no unused candidate left. It then takes its least-repeated remaining candidate. On this corpus that step does not run: the 60 quiet stickers are distinct, and the build prints any repeat.
 
-The pack’s `sticker_exclude` list is removed from both the active and the quiet candidate pools before ranking. For the UK that list is cranberry, and the staple file is the 41 names already in the build script. The enlarged wedge may share names with quiet wedges; a month’s quiet five and its active fifteen can differ.
+If a pack sets `sticker_exclude`, those names are removed from both sticker pools before ranking and still appear in the lists. The UK list is empty. Imports are not handled here; they are absent from the calendar. The staple file is the 41 names already in the build script. The enlarged wedge may share names with quiet wedges; a month’s quiet five and its active fifteen can differ.
 
 **Fact sheet fields**, and nothing else:
 
@@ -353,13 +362,13 @@ Stage 5 is done when every line below is true on the public URL. A line that nee
 2. **Today.** With no query, on a machine whose `Europe/London` calendar month is M, the arrival spin ends with M under the pointer at the active radius, the panel says “This month”, and the sun pill, halo, and rail dot are on M. The other eleven wedges are 30° at the quiet radius.
 3. **Share.** `?month=9` ends the arrival spin with September under the pointer at the active radius. If London’s month is not September, the sun pill, halo, and rail dot stay on London’s month and “Back to {that month}” selects it. `?month=13` behaves as no query. `?item=` set to a UK corpus `item` string opens that fact sheet; any other value does not open a sheet and does not add a row.
 4. **Motion.** In every frame of a rotation, a wedge more than 16° from the pointer is at the quiet radius, and every visible sticker centre lies inside its wedge path. A wedge within 4° of the pointer may be at the long radius; that is the landing bloom, not a wedge travelling extended. Reduced-motion preference shows the final radii with no spin.
-5. **Records.** The panel lists every P and I item for the month. Counts match the CSV. Each month shows its one recipe; each ingredient chip opens the joined item; the source link is the URL in `recipes.csv`.
+5. **Records.** The panel lists every peak and in-season item for the month. Counts match the 107-row UK calendar. Cranberry appears nowhere on the wheel, in the lists, or in `uk.json`. Pak choi, samphire, and radicchio are still in the pack. Each month shows its one recipe; each ingredient chip opens the joined item; the source link is the URL in `recipes.csv`.
 6. **Fact sheets.** Apple’s sheet shows category, the ring, ranges, stored chips, regions note, and specialist source, and does not show nutrition or taste. A row with empty regions, stored notes, and specialist sources shows the thin-sheet sentence and no extra prose.
 7. **Corpus gate.** `node scripts/build-data.mjs uk` exits non-zero if the item count, states, recipe joins, recipe count, staple names, or archetype bindings break the §4 rules. CI runs that command.
 8. **Art.** Shipped image assets are the SVG sprite and the Open Graph image drawn from it. No raster food photograph.
 9. **Access.** ←/→ change month and wrap. The fact sheet takes focus and returns it to the opener on close. Changing month updates the panel text; a screen reader announces that update when it finishes the current phrase, and focus stays on the control the visitor used (arrow key, rail button, or segment). Colour is paired with a label or a hatch. Month rail works below 900px wide.
 10. **Scope.** The shipped DOM has no country switch, globe, or map. `registry.json` lists only `uk`. No second country’s data file is published or loaded.
-11. **Pack boundary.** `uk.json` has `id` `uk` and `timezone` `Europe/London`. The exhibit script renders that document through the one wheel. `uk.json` does not carry wedge radii, bloom angles, or month-tint colours. The script does not contain `Europe/London`, `cranberry`, or the footer’s source sentence; those strings are in the pack. `?country=uk` loads the UK pack. `?country=es` is ignored, the UK pack still loads, and the page contains no Spain rows.
+11. **Pack boundary.** `uk.json` has `id` `uk` and `timezone` `Europe/London`. The exhibit script renders that document through the one wheel. `uk.json` does not carry wedge radii, bloom angles, or month-tint colours. The script does not contain `Europe/London` or the footer’s source sentence; those strings are in the pack. `?country=uk` loads the UK pack. `?country=es` is ignored, the UK pack still loads, and the page contains no Spain rows.
 
 Performance note, recorded beside the checklist: one month-change on a mid-range phone or, if none is available, a CPU-throttled desktop profile, naming the machine. If the tween stays under 30fps, apply the sticker-node tactic in §5 and re-check. A tween that is still under 30fps after that tactic does not fail checks 1–11; the note says so, and Qing can hold the ship on that note alone.
 
@@ -369,7 +378,8 @@ Stage 5 does not do these. The pack contract in §2 is how a later country arriv
 
 - A second country’s rows, and the selector that would show them (toggle, globe, map). Parallel research (US regional, Italy, Australia, Egypt, Mexico, and a future Spain MAPA pack) stays out of the thin ship. No invented rows for those countries, and no UK rows reused to fake them. A later country is a pack plus that selector, not a new wheel design.
 - A per-country fork of the Stage 3 chrome: different plate, motion, month palette, panel layout, or sticker style.
-- Inventing crop-season rows, month prose that names produce not in that month’s grid, or fact-sheet fields the loaded pack does not have.
+- Inventing crop-season rows, month prose that names produce not in that month’s grid, or fact-sheet fields the loaded pack does not have. That includes inventing a UK growing season for radicchio, or deleting it, before Instinct re-checks the import-heavy flags.
+- Treating supermarket imports as in season. Cranberry is the UK case Stage 5 removes. The same domestic-season rule applies to every country pack; Stage 5 does not write those other packs.
 - Using the Joint Nature Conservation Committee (JNCC) UK fruit list — about 21 fruits, shipped inside an international data zip — as this calendar. INTENT allows it as corroboration only. Those rows are not in this repo, and v1 does not load them.
 - Photoreal, photographic, or fake-realistic food. 3D and pixel art are not the v1 style; Sticker Garden is.
 - Hosting recipe methods, quantities, or photos. The corpus has title, ingredient names, and a source URL.
@@ -380,6 +390,6 @@ Stage 5 does not do these. The pack contract in §2 is how a later country arriv
 ## Stage 5 reading order
 
 1. [INTENT.md](INTENT.md) — what Qing affirmed.
-2. This file — what to build, the ten decisions above, and the country-pack contract. v1 fills the contract with the UK pack only.
+2. This file — what to build, the eleven decisions above, and the country-pack contract. v1 fills the contract with the UK pack only. The Stage 3 sticker garden is the shared graphics layer.
 3. [DESIGN.md](DESIGN.md) — art, interaction table, blurb wording, accessibility. Motion figures are §5 of this file; they match DESIGN.md’s wheel anatomy, and a change updates both.
 4. [STAGE2.md](STAGE2.md) — why this corpus is enough, and which gaps must stay visible rather than be filled in.

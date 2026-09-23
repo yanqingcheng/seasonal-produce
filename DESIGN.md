@@ -3,7 +3,7 @@
 **Date:** 2026-09-23 · **Seat:** Stage 3 graphics / UI (Cursor Cloud, Claude Opus 5.5, effort medium)
 **Obeys:** [INTENT.md](INTENT.md) (thin UK ship) and [STAGE2.md](STAGE2.md) (UK pass-2 corpus PASS).
 **Prototype:** [`prototype/index.html`](prototype/index.html) · art sheet: [`prototype/gallery.html`](prototype/gallery.html)
-**Ship architecture:** [ARCH.md](ARCH.md) (Stage 4). The wheel is shared across countries; v1 loads the UK pack only. ARCH.md sets that pack’s clock to Europe/London, keeps the editorial staple list until a cited purchase table is vendored, and limits UK sticker exclusion to cranberry. Motion and art in this file stay the spec for every country.
+**Ship architecture:** [ARCH.md](ARCH.md) (Stage 4). The wheel is shared across countries; v1 loads the UK pack only. ARCH.md sets that pack’s clock to Europe/London, keeps the editorial staple list until a cited purchase table is vendored, and removes cranberry from the UK pack (domestic season only; not a sticker-skip). Motion and art in this file stay the spec for every country.
 
 ## Why
 
@@ -121,7 +121,7 @@ Then:
 
 - **Ties:** within the same score, the **shorter UK season goes first** (among equally familiar items, the one that's only around now is the better "this month" pick; this stops cabbage and lettuce heading every month). Categories are then interleaved so a wedge isn't all one colour.
 - **Recipe guarantee:** the month's recipe ingredients are always on the enlarged wedge. If one falls outside the top 15, it replaces the lowest-ranked non-recipe item.
-- **Import flag:** items whose corpus note says UK supply is mostly imported (e.g. cranberry) are never stickers. They still appear in the month's lists.
+- **Import flag (prototype only):** items whose corpus note says UK supply is mostly imported (cranberry) are never stickers, and still appear in the month's lists. [ARCH.md](ARCH.md) replaces that for the ship: cranberry is removed from the pack. Pak choi and samphire stay.
 - **Result:** staples at peak lead (September's enlarged wedge opens with cucumber, plum, radishes, sweetcorn and blackberry), and herbs and foraged items only fill in once the familiar produce has run out (even in thin March, the 15 slots fill with veg and fruit and no herb or foraged item makes the wedge).
 
 #### Variety on quiet wedges
