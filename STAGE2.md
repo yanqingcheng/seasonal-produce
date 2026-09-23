@@ -1,5 +1,7 @@
 # Stage 2
 
-The UK corpus check is parked until INTENT.md is filled from Qing's affirmed Stage 1 words.
+Stage 2 must re-check the UK pass-2 corpus against [INTENT.md](INTENT.md).
 
-This file does not record a PASS. Melody previously claimed PASS against idea #22. The museum-ship pipeline now requires in-repo intent first, and INTENT.md is still pending.
+This file does not record a PASS. Do not claim Stage 2 PASS yet.
+
+Melody previously claimed PASS against idea #22. That earlier claim is not a Stage 2 result against this intent.
