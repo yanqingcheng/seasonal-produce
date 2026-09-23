@@ -36,11 +36,10 @@
   const today = monthFromQuery() ?? new Date().getMonth();
 
   // ---------- geometry ----------
-  // The selected month's wedge is ACTIVE_WEIGHT times wider than a quiet month's (96° vs 24°),
-  // reaches further out, and carries every sticker in its ranked `wheel` list.
-  const R_IN = 150, R_OUT = 442, R_OUT_ACTIVE = 476, R_LABEL = 478, R_LABEL_ACTIVE = 512;
-  const ACTIVE_WEIGHT = 4;
-  const UNIT = 360 / (11 + ACTIVE_WEIGHT);
+  // Every month keeps a 30° wedge. The selected one grows outward (radius, never angle) past the
+  // plate rim and carries every sticker in its ranked `wheel` list.
+  const R_IN = 150, R_OUT = 442, R_OUT_ACTIVE = 690, R_LABEL = 478, R_LABEL_ACTIVE = 728;
+  const HW = 15;
   const polar = (r, deg) => {
     const a = (deg * Math.PI) / 180;
     return [r * Math.sin(a), -r * Math.cos(a)];
@@ -53,13 +52,17 @@
     const [x2, y2] = polar(R_IN, a1), [x3, y3] = polar(R_IN, a0);
     return `M${f1(x0)} ${f1(y0)}A${rOut} ${rOut} 0 0 1 ${f1(x1)} ${f1(y1)}L${f1(x2)} ${f1(y2)}A${R_IN} ${R_IN} 0 0 0 ${f1(x3)} ${f1(y3)}Z`;
   }
-  // Slots are [radius, fraction of the wedge's half-angle, size]. A quiet wedge shows the top 5.
-  const QUIET_SLOTS = [[222, 0, 66], [300, -0.5, 58], [300, 0.5, 58], [386, -0.52, 68], [386, 0.52, 68]];
-  const ACTIVE_ROWS = [{ r: 212, n: 4, spread: 0.7, size: 70 }, { r: 290, n: 5, spread: 0.76, size: 82 }, { r: 368, n: 6, spread: 0.8, size: 86 }, { r: 440, n: 6, spread: 0.8, size: 74 }];
-  // Higher-ranked items get the most central, roomiest slots.
+  // Slots are [radius, fraction of the 15° half-angle, size].
+  const QUIET_SLOTS = [[215, 0, 92], [300, -0.547, 76], [300, 0.547, 76], [388, -0.533, 88], [388, 0.533, 88]];
+  const ACTIVE_ROWS = [
+    { r: 222, n: 1, spread: 0, size: 84 }, { r: 302, n: 2, spread: 0.5, size: 72 }, { r: 386, n: 2, spread: 0.52, size: 88 },
+    { r: 470, n: 3, spread: 0.62, size: 72 }, { r: 555, n: 3, spread: 0.64, size: 84 }, { r: 640, n: 4, spread: 0.7, size: 72 },
+  ];
+  // Higher-ranked items get the roomiest slots nearest the pointer.
+  const ROW_PENALTY = [0.1, 0.05, 0, 0.1, 0.2, 0.35];
   const ACTIVE_SLOTS = ACTIVE_ROWS.flatMap(({ r, n, spread, size }, row) =>
     Array.from({ length: n }, (_, k) => [r, n === 1 ? 0 : lerp(-spread, spread, k / (n - 1)), size, row]))
-    .sort((a, b) => Math.abs(a[1]) + [0.2, 0, 0.05, 0.3][a[3]] - (Math.abs(b[1]) + [0.2, 0, 0.05, 0.3][b[3]]));
+    .sort((a, b) => Math.abs(a[1]) + ROW_PENALTY[a[3]] - (Math.abs(b[1]) + ROW_PENALTY[b[3]]));
 
   function scallops(r, bumps, depth) {
     let d = "";
@@ -76,7 +79,8 @@
   const wheel = $("#wheel");
   let selected = today;
   const segEls = [];
-  let layout = { weights: D.months.map(() => 1), start: 0 };
+  // `ext` is each month's outward growth (0 quiet, 1 selected); `start` is January's centre angle.
+  let layout = { ext: D.months.map(() => 0), start: 0 };
   let tween = null;
 
   function buildWheel() {
@@ -114,14 +118,11 @@
     }));
   }
 
-  function draw({ weights, start }) {
-    let acc = start;
+  function draw({ ext, start }) {
     segEls.forEach((s, m) => {
-      const hw = (weights[m] * UNIT) / 2;
-      const c = acc + hw;
-      acc += 2 * hw;
-      const e = (weights[m] - 1) / (ACTIVE_WEIGHT - 1);
-      const d = wedge(c, hw, lerp(R_OUT, R_OUT_ACTIVE, e));
+      const c = start + m * 30;
+      const e = ext[m];
+      const d = wedge(c, HW, lerp(R_OUT, R_OUT_ACTIVE, e));
       s.bg.setAttribute("d", d);
       if (s.halo) s.halo.setAttribute("d", d);
       s.slots.forEach(({ el, q, a }) => {
@@ -130,7 +131,7 @@
           : [q[0], q[1], q[2] * (1 - e)];
         if (size < 2) { el.setAttribute("display", "none"); return; }
         el.removeAttribute("display");
-        const [x, y] = polar(r, c + frac * hw);
+        const [x, y] = polar(r, c + frac * HW);
         el.setAttribute("transform", `translate(${f1(x)} ${f1(y)}) scale(${(size / 100).toFixed(3)})`);
       });
       const [lx, ly] = polar(lerp(R_LABEL, R_LABEL_ACTIVE, e), c);
@@ -139,18 +140,17 @@
   }
 
   function targetLayout(m) {
-    const weights = D.months.map((_, k) => (k === m ? ACTIVE_WEIGHT : 1));
-    return { weights, start: -(m + ACTIVE_WEIGHT / 2) * UNIT };
+    return { ext: D.months.map((_, k) => (k === m ? 1 : 0)), start: -m * 30 };
   }
 
   const easeOutCubic = (t) => 1 - (1 - t) ** 3;
   const easeOutBack = (k) => (t) => 1 + (k + 1) * (t - 1) ** 3 + k * (t - 1) ** 2;
 
-  // Rotation springs along the shortest path while the wedges trade width, so the new month
-  // swells into the pointer as the old one shrinks back.
+  // Rotation springs along the shortest path while the old month retracts and the new one
+  // grows outward under the pointer.
   function animateTo(target, { duration = 850, overshoot = 1.4 } = {}) {
     if (tween) cancelAnimationFrame(tween.raf);
-    const from = { weights: [...layout.weights], start: layout.start };
+    const from = { ext: [...layout.ext], start: layout.start };
     const delta = ((((target.start - from.start) % 360) + 540) % 360) - 180;
     if (reducedMotion.matches || duration === 0) {
       layout = target;
@@ -163,7 +163,7 @@
       const t = Math.min(1, (now - t0) / duration);
       const tw = easeOutCubic(t);
       layout = {
-        weights: from.weights.map((w, k) => lerp(w, target.weights[k], tw)),
+        ext: from.ext.map((x, k) => lerp(x, target.ext[k], tw)),
         start: from.start + delta * spin(t),
       };
       draw(layout);
@@ -449,7 +449,7 @@
     select(today, { intro: true });
   } else {
     // Start 170° round with every wedge quiet, so the arrival spin also swells today's wedge.
-    layout = { weights: D.months.map(() => 1), start: targetLayout(today).start + 170 };
+    layout = { ext: D.months.map(() => 0), start: targetLayout(today).start + 170 };
     draw(layout);
     wheel.classList.add("intro");
     select(today, { intro: true });

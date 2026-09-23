@@ -68,7 +68,8 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.05; m
   max-width: 1320px; margin: 0 auto; padding: 8px 24px 24px; align-items: start;
 }
 .wheel-wrap { position: sticky; top: 12px; display: flex; flex-direction: column; align-items: center; gap: 10px; }
-#wheel { width: min(100%, calc(100vh - 170px)); min-width: 280px; height: auto; overflow: visible; touch-action: manipulation; user-select: none; }
+/* 0.8 = viewBox width / height; the extra height is headroom for the selected wedge growing outward. */
+#wheel { width: min(100%, calc((100vh - 170px) * 0.8)); min-width: 280px; height: auto; overflow: visible; touch-action: manipulation; user-select: none; }
 .hint { margin: 0; color: var(--ink-soft); font-size: 14px; font-weight: 700; }
 
 @media (max-width: 900px) {

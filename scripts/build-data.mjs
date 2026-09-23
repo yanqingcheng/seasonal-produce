@@ -9,7 +9,7 @@ const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const MONTHS = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
 const MONTH_NAMES = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 const IN_SEASON = new Set(["P", "I"]);
-const WHEEL_COUNT = 21;
+const WHEEL_COUNT = 15;
 const QUIET_COUNT = 5;
 
 // Editorial "well-known in a UK kitchen" tier. It only ranks stickers; it is never shown as a fact.
