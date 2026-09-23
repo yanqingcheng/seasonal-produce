@@ -8,7 +8,7 @@ This repository is the UK-first seasonal produce calendar for idea #22. Internat
 
 [DESIGN.md](DESIGN.md) is the Stage 3 design. It records Qing’s 2026-09-23 art direction (stylised, never fake-realistic food; joyful, dynamic, slick) and the "Sticker Garden" system that meets it.
 
-[ARCH.md](ARCH.md) is the Stage 4 high-level design for the thin UK ship. Stage 5 builds that document. Where ARCH.md and DESIGN.md disagree on the clock, the staple ranking, or which items may be stickers, ARCH.md wins. Motion and art stay in DESIGN.md.
+[ARCH.md](ARCH.md) is the Stage 4 high-level design. Stage 5 ships the UK pack on a shared year-wheel. A later country is another pack, not a new wheel. The thin ship does not include a globe or a second country. Where ARCH.md and DESIGN.md disagree on the UK clock, the UK staple ranking, or which UK items may be stickers, ARCH.md wins. Motion and art stay in DESIGN.md.
 
 ## Prototype
 

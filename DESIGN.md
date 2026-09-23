@@ -3,7 +3,7 @@
 **Date:** 2026-09-23 · **Seat:** Stage 3 graphics / UI (Cursor Cloud, Claude Opus 5.5, effort medium)
 **Obeys:** [INTENT.md](INTENT.md) (thin UK ship) and [STAGE2.md](STAGE2.md) (UK pass-2 corpus PASS).
 **Prototype:** [`prototype/index.html`](prototype/index.html) · art sheet: [`prototype/gallery.html`](prototype/gallery.html)
-**Ship architecture:** [ARCH.md](ARCH.md) (Stage 4). For the thin ship, ARCH.md decides the clock (Europe/London), keeps the editorial staple list until a cited purchase table is vendored, and limits sticker exclusion for "mostly imported" to cranberry. Motion and art in this file stay the spec.
+**Ship architecture:** [ARCH.md](ARCH.md) (Stage 4). The wheel is shared across countries; v1 loads the UK pack only. ARCH.md sets that pack’s clock to Europe/London, keeps the editorial staple list until a cited purchase table is vendored, and limits UK sticker exclusion to cranberry. Motion and art in this file stay the spec for every country.
 
 ## Why
 
@@ -250,7 +250,7 @@ Only the selected segment bobs, so idle animation stays cheap on phones. The whe
 1. **Keep the build-time data checks** (they are the no-invention guard) and run them in CI. Add a test that every corpus item has a mapped archetype (`ProduceArt.hasArt`) so new rows can't silently fall back.
 2. **Self-host fonts** (and subset them), and add `font-display` metrics so the hub text doesn't reflow.
 3. **Pre-render the sprite** to a static `sprites.svg` (or inline it at build time) instead of generating it on the client. Add social / OG preview art in the same style for the homepage and Twitter.
-4. **Timezone:** decided in [ARCH.md](ARCH.md). "This month" is the Europe/London calendar month. `?month=` selects a month and does not move the today marker.
+4. **Timezone:** decided in [ARCH.md](ARCH.md). The shell uses the pack timezone. The UK pack’s “this month” is the Europe/London calendar month. `?month=` selects a month and does not move the today marker.
 5. **State in the URL** (optional): shareable `#month` / `#item` links, as long as the no-hash default remains the current month.
 6. **Performance budget:** keep idle animation limited to the selected segment. The busy wedge and the separate quiet picks put 193 sticker instances in the DOM (70 visible). Check that the month-change tween holds 60 fps on a mid-range phone; if it doesn't, create the active-only stickers only for the months being tweened.
 7. **A11y pass with a screen reader:** keyboard rotation, dialog focus return, and announcing month changes without being chatty.
