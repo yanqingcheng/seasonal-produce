@@ -1,0 +1,63 @@
+{
+  "id": "on",
+  "name": "Canada – Ontario",
+  "locale": "en-CA",
+  "timezone": "America/Toronto",
+  "title": "The Ontario Year-Wheel",
+  "tagline": "What's growing in Ontario, month by month.",
+  "month_names": [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ],
+  "seasons": [
+    "Winter",
+    "Winter",
+    "Spring",
+    "Spring",
+    "Spring",
+    "Summer",
+    "Summer",
+    "Summer",
+    "Autumn",
+    "Autumn",
+    "Autumn",
+    "Winter"
+  ],
+  "categories": [
+    {
+      "id": "vegetable",
+      "label": "Vegetable",
+      "one": "vegetable",
+      "plural": "vegetables",
+      "everyday": true
+    },
+    {
+      "id": "fruit",
+      "label": "Fruit",
+      "one": "fruit",
+      "plural": "fruit",
+      "everyday": true
+    }
+  ],
+  "state_roles": {
+    "I": "in",
+    ".": "out"
+  },
+  "sticker_exclude": [],
+  "attribution": "Months are the Foodland Ontario Availability Guide: when that Ontario-grown crop is available to buy, including storage and greenhouse. Contains information licensed under the Open Government Licence – Ontario. This is Ontario, not a Canada-wide calendar, and it is not a harvest-date chart.",
+  "thin_sheet": "The guide only has the month grid for this one, so that's all we show.",
+  "alias_profile": "none",
+  "recipe_rule": "optional",
+  "expect_items": 70,
+  "require_peak_every_month": false
+}

@@ -1,0 +1,71 @@
+item,category,jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec,peak_months,stored_notes,regions_notes,specialist_sources,source_label,source_group
+Apples,fruit,I,I,I,I,I,I,I,I,I,I,I,I,,,,Foodland Ontario Availability Guide,Apples,fruit
+Apricots,fruit,.,.,.,.,.,.,I,I,.,.,.,.,,,,Foodland Ontario Availability Guide,Apricots,fruit
+Blueberries,fruit,.,.,.,.,.,.,I,I,I,.,.,.,,,,Foodland Ontario Availability Guide,Blueberries,fruit
+Cherries,fruit,.,.,.,.,.,.,I,I,.,.,.,.,,,,Foodland Ontario Availability Guide,Cherries,fruit
+Cranberries,fruit,.,.,.,.,.,.,.,I,I,I,.,.,,,,Foodland Ontario Availability Guide,Cranberries,fruit
+Currants,fruit,.,.,.,.,.,.,I,I,.,.,.,.,,,,Foodland Ontario Availability Guide,Currants,fruit
+Gooseberries,fruit,.,.,.,.,.,.,I,I,.,.,.,.,,,,Foodland Ontario Availability Guide,Gooseberries,fruit
+Grapes,fruit,.,.,.,.,.,.,.,I,I,I,.,.,,,,Foodland Ontario Availability Guide,Grapes,fruit
+Haskap Berries,fruit,.,.,.,.,.,I,I,.,.,.,.,.,,,,Foodland Ontario Availability Guide,Haskap Berries,fruit
+Muskmelon,fruit,.,.,.,.,.,.,.,I,I,.,.,.,,,,Foodland Ontario Availability Guide,Muskmelon,fruit
+Nectarines,fruit,.,.,.,.,.,.,.,I,I,.,.,.,,,,Foodland Ontario Availability Guide,Nectarines,fruit
+Peaches,fruit,.,.,.,.,.,.,I,I,I,.,.,.,,,,Foodland Ontario Availability Guide,Peaches,fruit
+Pears,fruit,I,I,.,.,.,.,.,I,I,I,I,I,,,,Foodland Ontario Availability Guide,Pears,fruit
+Plums,fruit,.,.,.,.,.,.,I,I,I,I,.,.,,,,Foodland Ontario Availability Guide,Plums,fruit
+Raspberries,fruit,.,.,.,.,.,.,I,I,I,I,.,.,,,,Foodland Ontario Availability Guide,Raspberries,fruit
+rhubarb,fruit,.,.,.,I,I,I,.,.,.,.,.,.,,,,Foodland Ontario Availability Guide,Rhubarb,fruit
+Rhubarb (Forced),fruit,.,.,I,I,I,.,.,.,.,.,.,.,,,,Foodland Ontario Availability Guide,Rhubarb (Forced),fruit
+Strawberries (Field),fruit,.,.,.,.,.,I,I,I,I,I,.,.,,,,Foodland Ontario Availability Guide,Strawberries (Field),fruit
+Strawberries (Greenhouse),fruit,I,I,I,I,I,I,I,I,I,I,I,I,,,,Foodland Ontario Availability Guide,Strawberries (Greenhouse),fruit
+Watermelon,fruit,.,.,.,.,.,.,I,I,I,.,.,.,,,,Foodland Ontario Availability Guide,Watermelon,fruit
+Artichoke,vegetable,.,.,.,.,.,.,.,I,I,I,.,.,,,,Foodland Ontario Availability Guide,Artichoke,vegetable
+asparagus,vegetable,.,.,.,.,I,I,.,.,.,.,.,.,,,,Foodland Ontario Availability Guide,Asparagus,vegetable
+Beans (Green/Yellow),vegetable,.,.,.,.,.,I,I,I,I,I,.,.,,,,Foodland Ontario Availability Guide,Beans (Green/Yellow),vegetable
+Beets,vegetable,I,I,I,I,.,.,I,I,I,I,I,I,,,,Foodland Ontario Availability Guide,Beets,vegetable
+Bok Choy,vegetable,.,.,.,.,.,I,I,I,I,I,I,.,,,,Foodland Ontario Availability Guide,Bok Choy,vegetable
+broccoli,vegetable,.,.,.,.,.,I,I,I,I,I,.,.,,,,Foodland Ontario Availability Guide,Broccoli,vegetable
+brussels sprouts,vegetable,.,.,.,.,.,.,.,.,I,I,I,.,,,,Foodland Ontario Availability Guide,Brussels Sprouts,vegetable
+cabbage,vegetable,I,I,I,I,.,I,I,I,I,I,I,I,,,,Foodland Ontario Availability Guide,Cabbage,vegetable
+carrots,vegetable,I,I,I,I,I,I,I,I,I,I,I,I,,,,Foodland Ontario Availability Guide,Carrots,vegetable
+cauliflower,vegetable,.,.,.,.,.,I,I,I,I,I,I,.,,,,Foodland Ontario Availability Guide,Cauliflower,vegetable
+celery,vegetable,.,.,.,.,.,.,I,I,I,I,.,.,,,,Foodland Ontario Availability Guide,Celery,vegetable
+Chinese Broccoli (White Flower),vegetable,.,.,.,.,.,I,I,I,I,I,I,.,,,,Foodland Ontario Availability Guide,Chinese Broccoli (White Flower),vegetable
+Corn,vegetable,.,.,.,.,.,.,I,I,I,I,.,.,,,,Foodland Ontario Availability Guide,Corn,vegetable
+Cucumber (Field),vegetable,.,.,.,.,.,I,I,I,I,I,.,.,,,,Foodland Ontario Availability Guide,Cucumber (Field),vegetable
+Cucumber (Greenhouse),vegetable,I,I,I,I,I,I,I,I,I,I,I,I,,,,Foodland Ontario Availability Guide,Cucumber (Greenhouse),vegetable
+Daikon Radish,vegetable,.,.,.,.,.,I,I,I,I,I,I,.,,,,Foodland Ontario Availability Guide,Daikon Radish,vegetable
+Edible Amaranth (Hinn Choy),vegetable,.,.,.,.,.,I,I,I,I,I,.,.,,,,Foodland Ontario Availability Guide,Edible Amaranth (Hinn Choy),vegetable
+Eggplant,vegetable,.,.,.,.,.,.,.,I,I,I,.,.,,,,Foodland Ontario Availability Guide,Eggplant,vegetable
+garlic,vegetable,I,I,I,.,.,.,I,I,I,I,I,I,,,,Foodland Ontario Availability Guide,Garlic,vegetable
+kale,vegetable,.,.,.,.,.,I,I,I,I,I,I,.,,,,Foodland Ontario Availability Guide,Kale,vegetable
+leeks,vegetable,I,I,.,.,.,.,.,I,I,I,I,I,,,,Foodland Ontario Availability Guide,Leeks,vegetable
+Lettuce (Assorted),vegetable,.,.,.,.,.,I,I,I,I,I,.,.,,,,Foodland Ontario Availability Guide,Lettuce (Assorted),vegetable
+Lettuce (Greenhouse),vegetable,I,I,I,I,I,I,I,I,I,I,I,I,,,,Foodland Ontario Availability Guide,Lettuce (Greenhouse),vegetable
+Mushrooms,vegetable,I,I,I,I,I,I,I,I,I,I,I,I,,,,Foodland Ontario Availability Guide,Mushrooms,vegetable
+Mustard Greens (Gai Choy),vegetable,.,.,.,.,.,I,I,I,I,I,.,.,,,,Foodland Ontario Availability Guide,Mustard Greens (Gai Choy),vegetable
+Nappa Cabbage,vegetable,.,.,.,.,.,I,I,I,I,I,I,.,,,,Foodland Ontario Availability Guide,Nappa Cabbage,vegetable
+Onions (Cooking),vegetable,I,I,I,I,I,I,I,I,I,I,I,I,,,,Foodland Ontario Availability Guide,Onions (Cooking),vegetable
+Onions (Green),vegetable,.,.,.,.,.,I,I,I,I,I,I,.,,,,Foodland Ontario Availability Guide,Onions (Green),vegetable
+Onions (Red),vegetable,I,I,I,I,.,.,.,.,I,I,I,I,,,,Foodland Ontario Availability Guide,Onions (Red),vegetable
+Parsnip,vegetable,I,I,I,I,.,.,.,I,I,I,I,I,,,,Foodland Ontario Availability Guide,Parsnip,vegetable
+Peas (Green),vegetable,.,.,.,.,.,I,I,I,I,I,.,.,,,,Foodland Ontario Availability Guide,Peas (Green),vegetable
+Peas (Snow),vegetable,.,.,.,.,.,I,I,I,I,.,.,.,,,,Foodland Ontario Availability Guide,Peas (Snow),vegetable
+Peppers (Field),vegetable,.,.,.,.,.,.,I,I,I,I,.,.,,,,Foodland Ontario Availability Guide,Peppers (Field),vegetable
+Peppers (Greenhouse),vegetable,I,I,I,I,I,I,I,I,I,I,I,I,,,,Foodland Ontario Availability Guide,Peppers (Greenhouse),vegetable
+potatoes,vegetable,I,I,I,I,I,I,I,I,I,I,I,I,,,,Foodland Ontario Availability Guide,Potatoes,vegetable
+Pumpkin,vegetable,.,.,.,.,.,.,.,.,I,I,.,.,,,,Foodland Ontario Availability Guide,Pumpkin,vegetable
+radicchio,vegetable,.,.,.,.,.,I,I,I,.,.,.,.,,,,Foodland Ontario Availability Guide,Radicchio,vegetable
+radishes,vegetable,.,.,.,.,I,I,I,I,I,I,I,.,,,,Foodland Ontario Availability Guide,Radishes,vegetable
+Rapini,vegetable,.,.,.,.,.,.,I,I,I,I,.,.,,,,Foodland Ontario Availability Guide,Rapini,vegetable
+Rutabaga,vegetable,I,I,I,I,I,I,I,I,I,I,I,I,,,,Foodland Ontario Availability Guide,Rutabaga,vegetable
+Snow Pea Shoots (Dow Miu),vegetable,.,.,.,.,I,I,I,I,I,I,.,.,,,,Foodland Ontario Availability Guide,Snow Pea Shoots (Dow Miu),vegetable
+spinach,vegetable,.,.,.,.,I,I,I,I,I,I,.,.,,,,Foodland Ontario Availability Guide,Spinach,vegetable
+Winter Squash,vegetable,I,.,.,.,.,.,.,I,I,I,I,I,,,,Foodland Ontario Availability Guide,Winter Squash,vegetable
+Summer Squash,vegetable,.,.,.,.,.,I,I,I,I,I,.,.,,,,Foodland Ontario Availability Guide,Summer Squash,vegetable
+Sweet Potatoes,vegetable,I,I,I,I,I,I,I,I,I,I,I,I,,,,Foodland Ontario Availability Guide,Sweet Potatoes,vegetable
+Tomatoes (Field),vegetable,.,.,.,.,.,.,I,I,I,I,.,.,,,,Foodland Ontario Availability Guide,Tomatoes (Field),vegetable
+Tomatoes (Greenhouse),vegetable,I,I,I,I,I,I,I,I,I,I,I,I,,,,Foodland Ontario Availability Guide,Tomatoes (Greenhouse),vegetable
+Water Spinach (Tung Choy),vegetable,.,.,.,.,.,I,I,I,I,I,I,.,,,,Foodland Ontario Availability Guide,Water Spinach (Tung Choy),vegetable
+Yow Choy(Yellow Flower),vegetable,.,.,.,.,.,I,I,I,I,I,I,.,,,,Foodland Ontario Availability Guide,Yow Choy(Yellow Flower),vegetable
+Zucchini,vegetable,.,.,.,.,.,.,I,I,I,I,.,.,,,,Foodland Ontario Availability Guide,Zucchini,vegetable

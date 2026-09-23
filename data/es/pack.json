@@ -1,0 +1,78 @@
+{
+  "id": "es",
+  "name": "Spain",
+  "locale": "es-ES",
+  "timezone": "Europe/Madrid",
+  "title": "La rueda del año en España",
+  "tagline": "Lo que se cultiva en España, mes a mes.",
+  "month_names": [
+    "Enero",
+    "Febrero",
+    "Marzo",
+    "Abril",
+    "Mayo",
+    "Junio",
+    "Julio",
+    "Agosto",
+    "Septiembre",
+    "Octubre",
+    "Noviembre",
+    "Diciembre"
+  ],
+  "month_short": [
+    "ene",
+    "feb",
+    "mar",
+    "abr",
+    "may",
+    "jun",
+    "jul",
+    "ago",
+    "sep",
+    "oct",
+    "nov",
+    "dic"
+  ],
+  "seasons": [
+    "Invierno",
+    "Invierno",
+    "Primavera",
+    "Primavera",
+    "Primavera",
+    "Verano",
+    "Verano",
+    "Verano",
+    "Otoño",
+    "Otoño",
+    "Otoño",
+    "Invierno"
+  ],
+  "categories": [
+    {
+      "id": "vegetable",
+      "label": "Hortaliza",
+      "one": "hortaliza",
+      "plural": "hortalizas",
+      "everyday": true
+    },
+    {
+      "id": "fruit",
+      "label": "Fruta",
+      "one": "fruta",
+      "plural": "frutas",
+      "everyday": true
+    }
+  ],
+  "state_roles": {
+    "M": "peak",
+    "m": "in",
+    ".": "out"
+  },
+  "sticker_exclude": [],
+  "attribution": "Meses del calendario del Ministerio de Agricultura, Pesca y Alimentación (frutas y hortalizas de temporada). El punto es «de temporada»; el color es el nivel de comercialización, mayor o menor. No es un calendario de cosecha ni de importación.",
+  "thin_sheet": "La fuente solo trae la cuadrícula de meses, así que la ficha se queda ahí.",
+  "alias_profile": "none",
+  "recipe_rule": "optional",
+  "expect_items": 54,
+  "require_peak_every_month": true
+}

@@ -86,8 +86,17 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.05; m
 /* ---------- header ---------- */
 .top {
   display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  flex-wrap: wrap;
   max-width: 1320px; margin: 0 auto; padding: 18px 24px 4px;
 }
+.country-control { display: flex; align-items: center; gap: 8px; }
+.country-control label { font-family: var(--display); font-weight: 700; color: var(--ink-soft); }
+.country-control select {
+  font: 700 16px/1.2 var(--display); color: var(--ink); background: #fffdf6;
+  border: 3px solid var(--ink); border-radius: 999px; padding: 8px 14px;
+  box-shadow: 0 4px 0 var(--ink); cursor: pointer;
+}
+.country-control select:focus-visible { outline: 3px solid var(--sky); outline-offset: 2px; }
 .brand { display: flex; align-items: center; gap: 14px; }
 .brand-mark { width: 60px; height: 60px; display: block; animation: bob 3.2s ease-in-out infinite; }
 .brand h1 { font-size: clamp(26px, 3.2vw, 38px); letter-spacing: -0.01em; }

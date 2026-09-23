@@ -1,0 +1,261 @@
+{
+  "ail": {
+    "archetype": "garlic",
+    "colours": {
+      "body": "#fffdf6",
+      "body2": "#c9a7ff"
+    }
+  },
+  "artichaut": {
+    "archetype": "artichoke",
+    "colours": {
+      "body": "#9dbf94",
+      "body2": "#3bb273",
+      "tip": "#8e4dd6"
+    }
+  },
+  "aubergine": {
+    "archetype": "aubergine",
+    "colours": {
+      "body": "#5b3a9b",
+      "cap": "#3bb273"
+    }
+  },
+  "blette": {
+    "archetype": "leafy",
+    "colours": {
+      "body": "#3bb273",
+      "rib": "#d9344a"
+    }
+  },
+  "brocoli": {
+    "archetype": "broccoli",
+    "colours": {
+      "body": "#3bb273",
+      "body2": "#23865a",
+      "stalk": "#a8e05a"
+    }
+  },
+  "carotte": {
+    "archetype": "root",
+    "colours": {
+      "body": "#ff9a3c",
+      "leaf": "#3bb273"
+    }
+  },
+  "chou-fleur": {
+    "archetype": "cauliflower",
+    "colours": {
+      "body": "#fff6dc",
+      "leaf": "#3bb273"
+    }
+  },
+  "concombre": {
+    "archetype": "long",
+    "colours": {
+      "body": "#23865a",
+      "dots": "#c9f0b0",
+      "cap": "#a8e05a"
+    }
+  },
+  "courge": {
+    "archetype": "pumpkin",
+    "colours": {
+      "body": "#3bb273",
+      "body2": "#e9b87a",
+      "stem": "#b0703f"
+    }
+  },
+  "courgette": {
+    "archetype": "long",
+    "colours": {
+      "body": "#3bb273",
+      "stripes": "#a8e05a",
+      "cap": "#ffb627"
+    }
+  },
+  "cresson": {
+    "archetype": "rosette",
+    "colours": {
+      "body": "#23865a",
+      "body2": "#3bb273"
+    }
+  },
+  "épinard": {
+    "archetype": "leafy",
+    "colours": {
+      "body": "#23865a"
+    }
+  },
+  "fenouil": {
+    "archetype": "fennel",
+    "colours": {
+      "body": "#c9f0b0",
+      "stem": "#a8e05a",
+      "leaf": "#3bb273"
+    }
+  },
+  "figue": {
+    "archetype": "fig",
+    "colours": {
+      "body": "#8e4dd6",
+      "leaf": "#3bb273"
+    }
+  },
+  "haricot vert (cru)": {
+    "archetype": "beans",
+    "colours": {
+      "body": "#3bb273"
+    }
+  },
+  "laitue": {
+    "archetype": "head",
+    "colours": {
+      "body": "#a8e05a",
+      "body2": "#52c26b",
+      "frilly": true
+    }
+  },
+  "maïs": {
+    "archetype": "corn",
+    "colours": {
+      "body": "#ffd84a",
+      "body2": "#ffb627",
+      "leaf": "#52c26b"
+    }
+  },
+  "melon": {
+    "archetype": "round",
+    "colours": {
+      "body": "#f0a202",
+      "leaf": "#52c26b"
+    }
+  },
+  "mûre": {
+    "archetype": "berry",
+    "colours": {
+      "body": "#5b3a9b",
+      "body2": "#8e4dd6",
+      "leaf": "#3bb273"
+    }
+  },
+  "myrtille": {
+    "archetype": "cluster",
+    "colours": {
+      "body": "#4f6df5"
+    }
+  },
+  "nectarine": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#ff5a4e",
+      "cleft": true,
+      "leaf": "#52c26b"
+    }
+  },
+  "noisette": {
+    "archetype": "cobnut",
+    "colours": {
+      "body": "#e9b87a",
+      "leaf": "#a8e05a"
+    }
+  },
+  "noix": {
+    "archetype": "chestnut",
+    "colours": {
+      "body": "#7a4a2c",
+      "body2": "#e9b87a"
+    }
+  },
+  "oignon": {
+    "archetype": "onion",
+    "colours": {
+      "body": "#ffb627",
+      "body2": "#ff9a3c"
+    }
+  },
+  "pastèque": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#1f7a4d",
+      "stripes": "#143d32",
+      "leaf": "#52c26b"
+    }
+  },
+  "pêche": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#ffb38a",
+      "cleft": true,
+      "leaf": "#52c26b"
+    }
+  },
+  "poire": {
+    "archetype": "pear",
+    "colours": {
+      "body": "#a8e05a",
+      "leaf": "#3bb273"
+    }
+  },
+  "poireau": {
+    "archetype": "leek",
+    "colours": {
+      "body": "#fffdf6",
+      "body2": "#c9f0b0",
+      "leaf": "#3bb273"
+    }
+  },
+  "poivron": {
+    "archetype": "pepper",
+    "colours": {
+      "body": "#ff5a4e",
+      "cap": "#3bb273"
+    }
+  },
+  "pomme": {
+    "archetype": "round",
+    "colours": {
+      "body": "#ff5a4e",
+      "leaf": "#52c26b"
+    }
+  },
+  "potiron": {
+    "archetype": "pumpkin",
+    "colours": {
+      "body": "#ff5a4e",
+      "body2": "#ff9a3c",
+      "stem": "#b0703f"
+    }
+  },
+  "prune": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#8e4dd6",
+      "cleft": true,
+      "leaf": "#3bb273"
+    }
+  },
+  "raisin": {
+    "archetype": "currants",
+    "colours": {
+      "body": "#5b3a9b",
+      "stem": "#3bb273",
+      "leaf": "#52c26b"
+    }
+  },
+  "reine claude": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#c8e06a",
+      "cleft": true,
+      "leaf": "#3bb273"
+    }
+  },
+  "tomate": {
+    "archetype": "round",
+    "colours": {
+      "body": "#ff5a4e",
+      "calyx": "#3bb273"
+    }
+  }
+}

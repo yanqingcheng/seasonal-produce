@@ -1,11 +1,13 @@
 #!/usr/bin/env node
-// Shared country-pack builder. `node scripts/build-data.mjs <id>`
-// reads data/<id>/ and writes site/data/<id>.json, site/data/registry.json,
-// site/sprites.svg, and site/og.svg.
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
+// Shared country-pack builder. `node scripts/build-data.mjs` reads every
+// data/<id>/ pack and writes site/data/<id>.json, site/data/registry.json,
+// site/sprites.svg, and site/og.svg. Optional ids limit the log; the shared
+// sprite and registry still include every pack, because one sprite file
+// serves every wheel.
+import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
-import { archetypeIds, symbolPair } from "../art/draw.mjs";
+import { archetypeIds, slug, symbolPair } from "../art/draw.mjs";
 
 const repoRoot = join(dirname(fileURLToPath(import.meta.url)), "..");
 const MONTH_KEYS = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
@@ -158,6 +160,11 @@ export function buildPack(id, { root = repoRoot, packDir } = {}) {
   if (manifest.id !== id) fail(`pack.json id is ${manifest.id}, expected ${id}`);
   if (!Array.isArray(manifest.month_names) || manifest.month_names.length !== 12) fail("month_names must have 12 entries");
   if (!Array.isArray(manifest.seasons) || manifest.seasons.length !== 12) fail("seasons must have 12 entries");
+  let monthShort = null;
+  if (manifest.month_short != null) {
+    if (!Array.isArray(manifest.month_short) || manifest.month_short.length !== 12) fail("month_short must have 12 entries");
+    else monthShort = manifest.month_short;
+  }
   const roleByLetter = manifest.state_roles ?? {};
   for (const role of Object.values(roleByLetter)) {
     if (!ROLES.includes(role)) fail(`state_roles maps to unknown role ${role}`);
@@ -178,6 +185,7 @@ export function buildPack(id, { root = repoRoot, packDir } = {}) {
     const letters = MONTH_KEYS.map((m) => r[m]);
     if (letters.some((s) => !(s in roleByLetter))) fail(`bad month state on ${r.item}`);
     const months = letters.map((s) => roleByLetter[s]);
+    if (months.every((s) => s === "out")) fail(`${r.item} has no domestic month`);
     const gridPeaks = MONTH_KEYS.filter((_, i) => months[i] === "peak");
     const listedPeaks = r.peak_months ? r.peak_months.split(/\s+/).filter(Boolean) : [];
     if (listedPeaks.length && listedPeaks.join() !== gridPeaks.join()) {
@@ -270,10 +278,14 @@ export function buildPack(id, { root = repoRoot, packDir } = {}) {
   if (!existsSync(bindingPath)) fail(`missing art bindings art/bindings/${id}.json`);
   const bindings = existsSync(bindingPath) ? readJson(bindingPath) : {};
   const knownArchetypes = new Set(archetypeIds());
+  const seenSlugs = new Map();
   for (const it of items) {
     const binding = bindings[it.item];
     if (!binding) fail(`${it.item} has no archetype binding`);
     else if (!knownArchetypes.has(binding.archetype)) fail(`${it.item} binds unknown archetype ${binding.archetype}`);
+    const itemSlug = slug(it.item);
+    if (seenSlugs.has(itemSlug)) fail(`sprite slug ${itemSlug} is shared by ${seenSlugs.get(itemSlug)} and ${it.item}`);
+    else seenSlugs.set(itemSlug, it.item);
   }
 
   if (errors.length) {
@@ -375,6 +387,7 @@ export function buildPack(id, { root = repoRoot, packDir } = {}) {
     title: manifest.title,
     tagline: manifest.tagline,
     month_names: manifest.month_names,
+    ...(monthShort ? { month_short: monthShort } : {}),
     seasons: manifest.seasons,
     categories: categories.map(({ id: categoryId, label, one, plural }) => ({ id: categoryId, label, one, plural })),
     attribution: manifest.attribution,
@@ -386,10 +399,54 @@ export function buildPack(id, { root = repoRoot, packDir } = {}) {
   };
   const symbols = items.map((it) => {
     const binding = bindings[it.item];
-    return symbolPair(it.item, binding.archetype, binding.colours);
+    return { item: it.item, slug: slug(it.item), markup: symbolPair(it.item, binding.archetype, binding.colours) };
   });
-  const sprite = `<svg xmlns="http://www.w3.org/2000/svg" id="sprite-root">\n<defs>\n${symbols.join("\n")}\n</defs>\n</svg>\n`;
-  return { pack, sprite, quietRepeats, registryName: manifest.name };
+  const sprite = spriteFrom(symbols);
+  return { pack, sprite, symbols, quietRepeats, registryName: manifest.name };
+}
+
+function spriteFrom(symbols) {
+  return `<svg xmlns="http://www.w3.org/2000/svg" id="sprite-root">\n<defs>\n${symbols.map((s) => s.markup).join("\n")}\n</defs>\n</svg>\n`;
+}
+
+const PACK_ORDER = ["uk", "fr", "es", "on"];
+
+export function listPacks(root = repoRoot) {
+  const ids = readdirSync(join(root, "data"), { withFileTypes: true })
+    .filter((entry) => entry.isDirectory() && existsSync(join(root, "data", entry.name, "pack.json")))
+    .map((entry) => entry.name);
+  return ids.sort((a, b) => {
+    const ia = PACK_ORDER.indexOf(a);
+    const ib = PACK_ORDER.indexOf(b);
+    return (ia < 0 ? PACK_ORDER.length : ia) - (ib < 0 ? PACK_ORDER.length : ib) || a.localeCompare(b);
+  });
+}
+
+export function mergeSprites(built) {
+  const bySlug = new Map();
+  const errors = [];
+  for (const entry of built) {
+    for (const sym of entry.symbols) {
+      const prev = bySlug.get(sym.slug);
+      if (!prev) bySlug.set(sym.slug, { ...sym, pack: entry.id });
+      else if (prev.markup !== sym.markup) {
+        errors.push(`sprite id art-${sym.slug} conflicts between ${prev.pack}:${prev.item} and ${entry.id}:${sym.item}`);
+      }
+    }
+  }
+  if (errors.length) {
+    const error = new Error(errors.map((e) => `build-data: ${e}`).join("\n"));
+    error.errors = errors;
+    throw error;
+  }
+  return spriteFrom([...bySlug.values()]);
+}
+
+export function assembleSite(root = repoRoot) {
+  const built = listPacks(root).map((id) => ({ id, ...buildPack(id, { root }) }));
+  const sprite = mergeSprites(built);
+  const registry = built.map(({ id, registryName }) => ({ id, name: registryName, status: "shipped" }));
+  return { built, sprite, registry, og: ogSvg(sprite) };
 }
 
 function ogSvg(sprite) {
@@ -411,33 +468,40 @@ function ogSvg(sprite) {
 `;
 }
 
-function writeOutputs(root, id, built) {
+function writeSite(root, site) {
   const dataDir = join(root, "site", "data");
   mkdirSync(dataDir, { recursive: true });
-  writeFileSync(join(dataDir, `${id}.json`), `${JSON.stringify(built.pack, null, 2)}\n`);
-  const registry = [{ id, name: built.registryName, status: "shipped" }];
-  writeFileSync(join(dataDir, "registry.json"), `${JSON.stringify(registry, null, 2)}\n`);
-  writeFileSync(join(root, "site", "sprites.svg"), built.sprite);
-  writeFileSync(join(root, "site", "og.svg"), ogSvg(built.sprite));
+  for (const { id, pack } of site.built) {
+    writeFileSync(join(dataDir, `${id}.json`), `${JSON.stringify(pack, null, 2)}\n`);
+  }
+  writeFileSync(join(dataDir, "registry.json"), `${JSON.stringify(site.registry, null, 2)}\n`);
+  writeFileSync(join(root, "site", "sprites.svg"), site.sprite);
+  writeFileSync(join(root, "site", "og.svg"), site.og);
 }
 
 const isCli = process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
 
 if (isCli) {
-  const id = process.argv[2];
-  if (!id) {
-    console.error("usage: node scripts/build-data.mjs <pack-id>");
-    process.exit(1);
-  }
+  const requested = process.argv.slice(2);
   try {
-    const built = buildPack(id);
-    writeOutputs(repoRoot, id, built);
-    const { pack, quietRepeats } = built;
-    console.log(`build-data: ${pack.items.length} items, ${pack.recipes.length} recipes -> site/data/${id}.json`);
-    for (const mo of pack.months) {
-      console.log(`  ${mo.key}: peak ${mo.counts.peak} in ${mo.counts.in} edge ${mo.counts.edge}`);
+    const ids = listPacks(repoRoot);
+    for (const id of requested) {
+      if (!ids.includes(id)) {
+        console.error(`build-data: unknown pack ${id}`);
+        process.exit(1);
+      }
     }
-    console.log(`  quiet-wedge repeats: ${quietRepeats.length ? quietRepeats.map(([n, k]) => `${n} x${k}`).join(", ") : "none"}`);
+    const site = assembleSite(repoRoot);
+    writeSite(repoRoot, site);
+    const logged = site.built.filter((entry) => !requested.length || requested.includes(entry.id));
+    for (const { pack, quietRepeats } of logged) {
+      console.log(`build-data: ${pack.id} ${pack.items.length} items, ${pack.recipes.length} recipes -> site/data/${pack.id}.json`);
+      for (const mo of pack.months) {
+        console.log(`  ${mo.key}: peak ${mo.counts.peak} in ${mo.counts.in} edge ${mo.counts.edge}`);
+      }
+      console.log(`  quiet-wedge repeats: ${quietRepeats.length ? quietRepeats.map(([n, k]) => `${n} x${k}`).join(", ") : "none"}`);
+    }
+    console.log(`build-data: registry ${site.registry.map((row) => row.id).join(", ")}`);
   } catch (err) {
     console.error(err.message);
     process.exit(1);

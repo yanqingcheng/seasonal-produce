@@ -12,15 +12,15 @@ This repository is the UK-first seasonal produce calendar for idea #22. Internat
 
 ## Thin ship
 
-Stage 5 publishes one static exhibit in [`site/`](site/). It loads the UK pack only. There is no country selector.
+Stage 5 publishes one static exhibit in [`site/`](site/). The wheel is shared. Shipped packs are the United Kingdom, France, Spain, and Ontario (`on`, never a Canada-wide pack). A place selector appears when the registry lists more than one shipped pack.
 
 ```bash
-node scripts/build-data.mjs uk
+node scripts/build-data.mjs
 node scripts/check-ship.mjs
 python3 -m http.server -d site
 ```
 
-Open `http://localhost:8000/`. With no query, the wheel lands on the current month in Europe/London. `?month=9` opens September and leaves the today marker on London's month. `?item=apple` opens that fact sheet after the arrival spin. `?country=es` is ignored; the UK pack still loads.
+Open `http://localhost:8000/`. With no query, the wheel lands on the current month in the pack timezone (Europe/London for the UK). `?month=9` opens September. `?item=apple` opens that fact sheet after the arrival spin. `?country=fr`, `?country=es`, and `?country=on` load those packs. Any other `?country=` value falls back to the UK pack.
 
 The intended public URL is `https://yanqingcheng.github.io/seasonal-produce/`.
 

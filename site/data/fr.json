@@ -1,0 +1,1632 @@
+{
+  "id": "fr",
+  "name": "France",
+  "locale": "fr-FR",
+  "timezone": "Europe/Paris",
+  "title": "La roue de l'année en France",
+  "tagline": "Ce qui pousse en France, mois par mois.",
+  "month_names": [
+    "Janvier",
+    "Février",
+    "Mars",
+    "Avril",
+    "Mai",
+    "Juin",
+    "Juillet",
+    "Août",
+    "Septembre",
+    "Octobre",
+    "Novembre",
+    "Décembre"
+  ],
+  "month_short": [
+    "jan",
+    "fév",
+    "mar",
+    "avr",
+    "mai",
+    "juin",
+    "juil",
+    "août",
+    "sep",
+    "oct",
+    "nov",
+    "déc"
+  ],
+  "seasons": [
+    "Hiver",
+    "Hiver",
+    "Printemps",
+    "Printemps",
+    "Printemps",
+    "Été",
+    "Été",
+    "Été",
+    "Automne",
+    "Automne",
+    "Automne",
+    "Hiver"
+  ],
+  "categories": [
+    {
+      "id": "vegetable",
+      "label": "Légume",
+      "one": "légume",
+      "plural": "légumes"
+    },
+    {
+      "id": "fruit",
+      "label": "Fruit",
+      "one": "fruit",
+      "plural": "fruits"
+    },
+    {
+      "id": "salad",
+      "label": "Salade",
+      "one": "salade",
+      "plural": "salades"
+    },
+    {
+      "id": "nut",
+      "label": "Fruit à coque",
+      "one": "fruit à coque",
+      "plural": "fruits à coque"
+    }
+  ],
+  "attribution": "Mois issus de l'outil ADEME Impact CO2 « Fruits et légumes de saison » (hypothèses grand public, données MIT du dépôt incubateur-ademe/impactco2). Les lignes seulement importées, ou sans saison française lisible, ont été retirées. De saison veut dire cultivé pour la France dans cette grille, pas un pic de récolte.",
+  "thin_sheet": "La source ne donne que la grille des mois, donc la fiche s'arrête là.",
+  "copy": {
+    "this_month": "Ce mois-ci",
+    "back_to": "Retour en {month}",
+    "new_in": "Arrivées",
+    "last_call": "Derniers jours",
+    "at_peak": "Au pic",
+    "also_in_season": "De saison",
+    "on_the_edge": "En bord de saison",
+    "edge_why": "La source ADEME ne distingue pas de mois de bord.",
+    "hub_this_month": "ce mois-ci",
+    "at_peak_short": "{n} au pic",
+    "more_in_season": "{n} de plus de saison",
+    "hub_when_no_peak": "{n} de saison",
+    "open_fact_sheet": "Ouvrir la fiche.",
+    "recipe_badge": "recette",
+    "months_recipe": "Recette de {month}",
+    "made_with": "Avec",
+    "cook_it_on": "La recette sur {name}",
+    "fact_in_season": "De saison",
+    "fact_peak": "Pic",
+    "fact_edge": "En bord de saison",
+    "stored_notes": "Conservation",
+    "regions": "Notes",
+    "recipe": "Recette",
+    "specialist_sources": "Source",
+    "no_in_season": "Aucun mois de saison dans la grille",
+    "no_peak": "Pas de pic dans la grille",
+    "all_year": "toute l'année",
+    "in_month": "{state} en {month}",
+    "state_labels": {
+      "peak": "Pic",
+      "in": "De saison",
+      "edge": "Bord",
+      "out": "Hors saison"
+    },
+    "ring_key": {
+      "peak": "Pic",
+      "in": "Saison",
+      "edge": "Bord",
+      "out": "Hors"
+    },
+    "proper": {},
+    "hint": "Touchez un mois sur la roue, ou utilisez les touches ← →.",
+    "wheel_label": "Roue de l'année. Choisir un mois.",
+    "months_nav": "Mois",
+    "close_sheet": "Fermer la fiche",
+    "season_label": "Saison : {list}",
+    "mix_label": "De saison par type : {list}",
+    "blurb": {
+      "counts": "{month} compte {in} produits de saison. Cette source ne marque aucun pic ({peak}).",
+      "fullest": "Le mois le plus fourni de la roue.",
+      "leanest": "Le creux de l'année : chaque produit compte.",
+      "filling": "La roue se remplit : {n} de plus de saison qu'en {prev}.",
+      "winding": "Ça se calme : {n} de moins de saison qu'en {prev}.",
+      "same": "À peu près la même récolte qu'en {prev}.",
+      "lead_fruit_one": "{lead} mènent les pics ({count} sur {peak}), avec 1 fruit au pic.",
+      "lead_fruit": "{lead} mènent les pics ({count} sur {peak}), avec {n} fruits au pic.",
+      "lead_none": "{lead} mènent les pics ({count} sur {peak}) ; aucun fruit n'est au pic.",
+      "change_threshold": 8
+    }
+  },
+  "items": [
+    {
+      "item": "ail",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "ADEME Impact CO2, Fruits et légumes de saison"
+      ]
+    },
+    {
+      "item": "artichaut",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "ADEME Impact CO2, Fruits et légumes de saison"
+      ]
+    },
+    {
+      "item": "aubergine",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "ADEME Impact CO2, Fruits et légumes de saison"
+      ]
+    },
+    {
+      "item": "blette",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "ADEME Impact CO2, Fruits et légumes de saison"
+      ]
+    },
+    {
+      "item": "brocoli",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "ADEME Impact CO2, Fruits et légumes de saison"
+      ]
+    },
+    {
+      "item": "carotte",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "ADEME Impact CO2, Fruits et légumes de saison"
+      ]
+    },
+    {
+      "item": "chou-fleur",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "ADEME Impact CO2, Fruits et légumes de saison"
+      ]
+    },
+    {
+      "item": "concombre",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "ADEME Impact CO2, Fruits et légumes de saison"
+      ]
+    },
+    {
+      "item": "courge",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "ADEME Impact CO2, Fruits et légumes de saison"
+      ]
+    },
+    {
+      "item": "courgette",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "ADEME Impact CO2, Fruits et légumes de saison"
+      ]
+    },
+    {
+      "item": "cresson",
+      "category": "salad",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "ADEME Impact CO2, Fruits et légumes de saison"
+      ]
+    },
+    {
+      "item": "épinard",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "ADEME Impact CO2, Fruits et légumes de saison"
+      ]
+    },
+    {
+      "item": "fenouil",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "in",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "ADEME Impact CO2, Fruits et légumes de saison"
+      ]
+    },
+    {
+      "item": "figue",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "ADEME Impact CO2, Fruits et légumes de saison"
+      ]
+    },
+    {
+      "item": "haricot vert (cru)",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "ADEME Impact CO2, Fruits et légumes de saison"
+      ]
+    },
+    {
+      "item": "laitue",
+      "category": "salad",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "ADEME Impact CO2, Fruits et légumes de saison"
+      ]
+    },
+    {
+      "item": "maïs",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "ADEME Impact CO2, Fruits et légumes de saison"
+      ]
+    },
+    {
+      "item": "melon",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "ADEME Impact CO2, Fruits et légumes de saison"
+      ]
+    },
+    {
+      "item": "mûre",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "ADEME Impact CO2, Fruits et légumes de saison"
+      ]
+    },
+    {
+      "item": "myrtille",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "ADEME Impact CO2, Fruits et légumes de saison"
+      ]
+    },
+    {
+      "item": "nectarine",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "ADEME Impact CO2, Fruits et légumes de saison"
+      ]
+    },
+    {
+      "item": "noisette",
+      "category": "nut",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "ADEME Impact CO2, Fruits et légumes de saison"
+      ]
+    },
+    {
+      "item": "noix",
+      "category": "nut",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "ADEME Impact CO2, Fruits et légumes de saison"
+      ]
+    },
+    {
+      "item": "oignon",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "ADEME Impact CO2, Fruits et légumes de saison"
+      ]
+    },
+    {
+      "item": "pastèque",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "ADEME Impact CO2, Fruits et légumes de saison"
+      ]
+    },
+    {
+      "item": "pêche",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "ADEME Impact CO2, Fruits et légumes de saison"
+      ]
+    },
+    {
+      "item": "poire",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "ADEME Impact CO2, Fruits et légumes de saison"
+      ]
+    },
+    {
+      "item": "poireau",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "ADEME Impact CO2, Fruits et légumes de saison"
+      ]
+    },
+    {
+      "item": "poivron",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "ADEME Impact CO2, Fruits et légumes de saison"
+      ]
+    },
+    {
+      "item": "pomme",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "ADEME Impact CO2, Fruits et légumes de saison"
+      ]
+    },
+    {
+      "item": "potiron",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "ADEME Impact CO2, Fruits et légumes de saison"
+      ]
+    },
+    {
+      "item": "prune",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "ADEME Impact CO2, Fruits et légumes de saison"
+      ]
+    },
+    {
+      "item": "raisin",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "ADEME Impact CO2, Fruits et légumes de saison"
+      ]
+    },
+    {
+      "item": "reine claude",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "ADEME Impact CO2, Fruits et légumes de saison"
+      ]
+    },
+    {
+      "item": "tomate",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "ADEME Impact CO2, Fruits et légumes de saison"
+      ]
+    }
+  ],
+  "recipes": [],
+  "months": [
+    {
+      "key": "jan",
+      "name": "Janvier",
+      "counts": {
+        "peak": 0,
+        "in": 10,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "carotte",
+        "chou-fleur",
+        "oignon",
+        "poire",
+        "poireau",
+        "épinard",
+        "pomme",
+        "courge",
+        "potiron",
+        "cresson"
+      ],
+      "peak": [],
+      "in": [
+        "carotte",
+        "chou-fleur",
+        "courge",
+        "cresson",
+        "épinard",
+        "oignon",
+        "poire",
+        "poireau",
+        "pomme",
+        "potiron"
+      ],
+      "edge": [],
+      "arrivals": [],
+      "farewells": [
+        "courge",
+        "potiron"
+      ],
+      "quiet": [
+        "chou-fleur",
+        "poire",
+        "pomme",
+        "courge",
+        "potiron"
+      ],
+      "blurb": "Janvier compte <strong>10</strong> produits de saison. Cette source ne marque aucun pic (<strong>0</strong>). À peu près la même récolte qu'en Décembre."
+    },
+    {
+      "key": "feb",
+      "name": "Février",
+      "counts": {
+        "peak": 0,
+        "in": 8,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "carotte",
+        "chou-fleur",
+        "oignon",
+        "poire",
+        "poireau",
+        "épinard",
+        "pomme",
+        "cresson"
+      ],
+      "peak": [],
+      "in": [
+        "carotte",
+        "chou-fleur",
+        "cresson",
+        "épinard",
+        "oignon",
+        "poire",
+        "poireau",
+        "pomme"
+      ],
+      "edge": [],
+      "arrivals": [],
+      "farewells": [],
+      "quiet": [
+        "carotte",
+        "chou-fleur",
+        "poire",
+        "épinard",
+        "cresson"
+      ],
+      "blurb": "Février compte <strong>8</strong> produits de saison. Cette source ne marque aucun pic (<strong>0</strong>). À peu près la même récolte qu'en Janvier."
+    },
+    {
+      "key": "mar",
+      "name": "Mars",
+      "counts": {
+        "peak": 0,
+        "in": 8,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "carotte",
+        "chou-fleur",
+        "oignon",
+        "poire",
+        "poireau",
+        "épinard",
+        "pomme",
+        "cresson"
+      ],
+      "peak": [],
+      "in": [
+        "carotte",
+        "chou-fleur",
+        "cresson",
+        "épinard",
+        "oignon",
+        "poire",
+        "poireau",
+        "pomme"
+      ],
+      "edge": [],
+      "arrivals": [],
+      "farewells": [
+        "carotte",
+        "chou-fleur",
+        "poire"
+      ],
+      "quiet": [
+        "carotte",
+        "chou-fleur",
+        "oignon",
+        "poireau",
+        "pomme"
+      ],
+      "blurb": "Mars compte <strong>8</strong> produits de saison. Cette source ne marque aucun pic (<strong>0</strong>). À peu près la même récolte qu'en Février."
+    },
+    {
+      "key": "apr",
+      "name": "Avril",
+      "counts": {
+        "peak": 0,
+        "in": 6,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "oignon",
+        "poireau",
+        "épinard",
+        "pomme",
+        "fenouil",
+        "cresson"
+      ],
+      "peak": [],
+      "in": [
+        "cresson",
+        "épinard",
+        "fenouil",
+        "oignon",
+        "poireau",
+        "pomme"
+      ],
+      "edge": [],
+      "arrivals": [
+        "fenouil"
+      ],
+      "farewells": [
+        "oignon",
+        "poireau",
+        "pomme"
+      ],
+      "quiet": [
+        "oignon",
+        "poireau",
+        "épinard",
+        "fenouil",
+        "cresson"
+      ],
+      "blurb": "Avril compte <strong>6</strong> produits de saison. Cette source ne marque aucun pic (<strong>0</strong>). Le creux de l'année : chaque produit compte."
+    },
+    {
+      "key": "may",
+      "name": "Mai",
+      "counts": {
+        "peak": 0,
+        "in": 6,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "laitue",
+        "concombre",
+        "courgette",
+        "épinard",
+        "artichaut",
+        "cresson"
+      ],
+      "peak": [],
+      "in": [
+        "artichaut",
+        "concombre",
+        "courgette",
+        "cresson",
+        "épinard",
+        "laitue"
+      ],
+      "edge": [],
+      "arrivals": [
+        "artichaut",
+        "concombre",
+        "courgette",
+        "laitue"
+      ],
+      "farewells": [
+        "épinard"
+      ],
+      "quiet": [
+        "laitue",
+        "concombre",
+        "courgette",
+        "épinard",
+        "artichaut"
+      ],
+      "blurb": "Mai compte <strong>6</strong> produits de saison. Cette source ne marque aucun pic (<strong>0</strong>). Le creux de l'année : chaque produit compte."
+    },
+    {
+      "key": "jun",
+      "name": "Juin",
+      "counts": {
+        "peak": 0,
+        "in": 14,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "melon",
+        "poivron",
+        "pêche",
+        "tomate",
+        "haricot vert (cru)",
+        "laitue",
+        "concombre",
+        "courgette",
+        "aubergine",
+        "pastèque",
+        "artichaut",
+        "blette",
+        "fenouil",
+        "cresson"
+      ],
+      "peak": [],
+      "in": [
+        "artichaut",
+        "aubergine",
+        "blette",
+        "concombre",
+        "courgette",
+        "cresson",
+        "fenouil",
+        "haricot vert (cru)",
+        "laitue",
+        "melon",
+        "pastèque",
+        "pêche",
+        "poivron",
+        "tomate"
+      ],
+      "edge": [],
+      "arrivals": [
+        "aubergine",
+        "blette",
+        "fenouil",
+        "haricot vert (cru)"
+      ],
+      "farewells": [],
+      "quiet": [
+        "melon",
+        "poivron",
+        "haricot vert (cru)",
+        "aubergine",
+        "pastèque"
+      ],
+      "blurb": "Juin compte <strong>14</strong> produits de saison. Cette source ne marque aucun pic (<strong>0</strong>). La roue se remplit : 8 de plus de saison qu'en Mai."
+    },
+    {
+      "key": "jul",
+      "name": "Juillet",
+      "counts": {
+        "peak": 0,
+        "in": 19,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "melon",
+        "poivron",
+        "pêche",
+        "tomate",
+        "haricot vert (cru)",
+        "laitue",
+        "ail",
+        "concombre",
+        "courgette",
+        "maïs",
+        "myrtille",
+        "prune",
+        "aubergine",
+        "figue",
+        "pastèque"
+      ],
+      "peak": [],
+      "in": [
+        "ail",
+        "artichaut",
+        "aubergine",
+        "blette",
+        "concombre",
+        "courgette",
+        "cresson",
+        "fenouil",
+        "figue",
+        "haricot vert (cru)",
+        "laitue",
+        "maïs",
+        "melon",
+        "myrtille",
+        "pastèque",
+        "pêche",
+        "poivron",
+        "prune",
+        "tomate"
+      ],
+      "edge": [],
+      "arrivals": [
+        "ail",
+        "figue",
+        "maïs",
+        "myrtille"
+      ],
+      "farewells": [],
+      "quiet": [
+        "poivron",
+        "pêche",
+        "courgette",
+        "maïs",
+        "prune"
+      ],
+      "blurb": "Juillet compte <strong>19</strong> produits de saison. Cette source ne marque aucun pic (<strong>0</strong>). À peu près la même récolte qu'en Juin."
+    },
+    {
+      "key": "aug",
+      "name": "Août",
+      "counts": {
+        "peak": 0,
+        "in": 23,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "melon",
+        "poivron",
+        "pêche",
+        "tomate",
+        "haricot vert (cru)",
+        "laitue",
+        "ail",
+        "concombre",
+        "courgette",
+        "poire",
+        "pomme",
+        "mûre",
+        "nectarine",
+        "maïs",
+        "myrtille"
+      ],
+      "peak": [],
+      "in": [
+        "ail",
+        "artichaut",
+        "aubergine",
+        "blette",
+        "concombre",
+        "courgette",
+        "cresson",
+        "fenouil",
+        "figue",
+        "haricot vert (cru)",
+        "laitue",
+        "maïs",
+        "melon",
+        "mûre",
+        "myrtille",
+        "nectarine",
+        "pastèque",
+        "pêche",
+        "poire",
+        "poivron",
+        "pomme",
+        "prune",
+        "tomate"
+      ],
+      "edge": [],
+      "arrivals": [
+        "mûre",
+        "nectarine",
+        "poire",
+        "pomme"
+      ],
+      "farewells": [],
+      "quiet": [
+        "melon",
+        "pêche",
+        "tomate",
+        "mûre",
+        "nectarine"
+      ],
+      "blurb": "Août compte <strong>23</strong> produits de saison. Cette source ne marque aucun pic (<strong>0</strong>). À peu près la même récolte qu'en Juillet."
+    },
+    {
+      "key": "sep",
+      "name": "Septembre",
+      "counts": {
+        "peak": 0,
+        "in": 35,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "raisin",
+        "brocoli",
+        "melon",
+        "poivron",
+        "pêche",
+        "tomate",
+        "haricot vert (cru)",
+        "laitue",
+        "ail",
+        "concombre",
+        "courgette",
+        "carotte",
+        "chou-fleur",
+        "oignon",
+        "poire"
+      ],
+      "peak": [],
+      "in": [
+        "ail",
+        "artichaut",
+        "aubergine",
+        "blette",
+        "brocoli",
+        "carotte",
+        "chou-fleur",
+        "concombre",
+        "courge",
+        "courgette",
+        "cresson",
+        "épinard",
+        "fenouil",
+        "figue",
+        "haricot vert (cru)",
+        "laitue",
+        "maïs",
+        "melon",
+        "mûre",
+        "myrtille",
+        "nectarine",
+        "noisette",
+        "noix",
+        "oignon",
+        "pastèque",
+        "pêche",
+        "poire",
+        "poireau",
+        "poivron",
+        "pomme",
+        "potiron",
+        "prune",
+        "raisin",
+        "reine claude",
+        "tomate"
+      ],
+      "edge": [],
+      "arrivals": [
+        "brocoli",
+        "carotte",
+        "chou-fleur",
+        "courge"
+      ],
+      "farewells": [
+        "artichaut",
+        "aubergine",
+        "laitue",
+        "maïs"
+      ],
+      "quiet": [
+        "raisin",
+        "tomate",
+        "laitue",
+        "reine claude",
+        "myrtille"
+      ],
+      "blurb": "Septembre compte <strong>35</strong> produits de saison. Cette source ne marque aucun pic (<strong>0</strong>). Le mois le plus fourni de la roue."
+    },
+    {
+      "key": "oct",
+      "name": "Octobre",
+      "counts": {
+        "peak": 0,
+        "in": 21,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "raisin",
+        "brocoli",
+        "haricot vert (cru)",
+        "ail",
+        "concombre",
+        "courgette",
+        "carotte",
+        "chou-fleur",
+        "oignon",
+        "poire",
+        "poireau",
+        "épinard",
+        "pomme",
+        "figue",
+        "courge"
+      ],
+      "peak": [],
+      "in": [
+        "ail",
+        "blette",
+        "brocoli",
+        "carotte",
+        "chou-fleur",
+        "concombre",
+        "courge",
+        "courgette",
+        "cresson",
+        "épinard",
+        "fenouil",
+        "figue",
+        "haricot vert (cru)",
+        "noisette",
+        "noix",
+        "oignon",
+        "poire",
+        "poireau",
+        "pomme",
+        "potiron",
+        "raisin"
+      ],
+      "edge": [],
+      "arrivals": [],
+      "farewells": [
+        "concombre",
+        "courgette",
+        "figue",
+        "haricot vert (cru)"
+      ],
+      "quiet": [
+        "raisin",
+        "brocoli",
+        "haricot vert (cru)",
+        "figue",
+        "noix"
+      ],
+      "blurb": "Octobre compte <strong>21</strong> produits de saison. Cette source ne marque aucun pic (<strong>0</strong>). Ça se calme : 14 de moins de saison qu'en Septembre."
+    },
+    {
+      "key": "nov",
+      "name": "Novembre",
+      "counts": {
+        "peak": 0,
+        "in": 15,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "brocoli",
+        "ail",
+        "carotte",
+        "chou-fleur",
+        "oignon",
+        "poire",
+        "poireau",
+        "épinard",
+        "pomme",
+        "courge",
+        "potiron",
+        "blette",
+        "fenouil",
+        "cresson",
+        "noisette"
+      ],
+      "peak": [],
+      "in": [
+        "ail",
+        "blette",
+        "brocoli",
+        "carotte",
+        "chou-fleur",
+        "courge",
+        "cresson",
+        "épinard",
+        "fenouil",
+        "noisette",
+        "oignon",
+        "poire",
+        "poireau",
+        "pomme",
+        "potiron"
+      ],
+      "edge": [],
+      "arrivals": [],
+      "farewells": [
+        "blette",
+        "brocoli",
+        "fenouil",
+        "noisette"
+      ],
+      "quiet": [
+        "brocoli",
+        "ail",
+        "blette",
+        "fenouil",
+        "noisette"
+      ],
+      "blurb": "Novembre compte <strong>15</strong> produits de saison. Cette source ne marque aucun pic (<strong>0</strong>). À peu près la même récolte qu'en Octobre."
+    },
+    {
+      "key": "dec",
+      "name": "Décembre",
+      "counts": {
+        "peak": 0,
+        "in": 11,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "ail",
+        "carotte",
+        "chou-fleur",
+        "oignon",
+        "poire",
+        "poireau",
+        "épinard",
+        "pomme",
+        "courge",
+        "potiron",
+        "cresson"
+      ],
+      "peak": [],
+      "in": [
+        "ail",
+        "carotte",
+        "chou-fleur",
+        "courge",
+        "cresson",
+        "épinard",
+        "oignon",
+        "poire",
+        "poireau",
+        "pomme",
+        "potiron"
+      ],
+      "edge": [],
+      "arrivals": [],
+      "farewells": [
+        "ail"
+      ],
+      "quiet": [
+        "ail",
+        "carotte",
+        "oignon",
+        "courge",
+        "potiron"
+      ],
+      "blurb": "Décembre compte <strong>11</strong> produits de saison. Cette source ne marque aucun pic (<strong>0</strong>). À peu près la même récolte qu'en Novembre."
+    }
+  ]
+}

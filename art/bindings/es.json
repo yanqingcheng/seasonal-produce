@@ -1,0 +1,407 @@
+{
+  "acelga": {
+    "archetype": "leafy",
+    "colours": {
+      "body": "#3bb273",
+      "rib": "#d9344a"
+    }
+  },
+  "ajo": {
+    "archetype": "garlic",
+    "colours": {
+      "body": "#fffdf6",
+      "body2": "#c9a7ff"
+    }
+  },
+  "alcachofa": {
+    "archetype": "artichoke",
+    "colours": {
+      "body": "#9dbf94",
+      "body2": "#3bb273",
+      "tip": "#8e4dd6"
+    }
+  },
+  "apio": {
+    "archetype": "celery",
+    "colours": {
+      "body": "#c9f0b0",
+      "body2": "#52c26b",
+      "leaf": "#3bb273"
+    }
+  },
+  "berenjena": {
+    "archetype": "aubergine",
+    "colours": {
+      "body": "#5b3a9b",
+      "cap": "#3bb273"
+    }
+  },
+  "brócoli": {
+    "archetype": "broccoli",
+    "colours": {
+      "body": "#3bb273",
+      "body2": "#23865a",
+      "stalk": "#a8e05a"
+    }
+  },
+  "calabacín": {
+    "archetype": "long",
+    "colours": {
+      "body": "#3bb273",
+      "stripes": "#a8e05a",
+      "cap": "#ffb627"
+    }
+  },
+  "calabaza": {
+    "archetype": "pumpkin",
+    "colours": {
+      "body": "#ff9a3c",
+      "body2": "#ffb627",
+      "stem": "#b0703f"
+    }
+  },
+  "cardo": {
+    "archetype": "celery",
+    "colours": {
+      "body": "#c9f0b0",
+      "body2": "#52c26b",
+      "leaf": "#3bb273"
+    }
+  },
+  "cebolla": {
+    "archetype": "onion",
+    "colours": {
+      "body": "#ffb627",
+      "body2": "#ff9a3c"
+    }
+  },
+  "col lombarda": {
+    "archetype": "head",
+    "colours": {
+      "body": "#5b3a9b",
+      "body2": "#8e4dd6"
+    }
+  },
+  "coliflor": {
+    "archetype": "cauliflower",
+    "colours": {
+      "body": "#fff6dc",
+      "leaf": "#3bb273"
+    }
+  },
+  "endibia": {
+    "archetype": "chicory",
+    "colours": {
+      "body": "#fff6dc",
+      "tip": "#a8e05a"
+    }
+  },
+  "escarola": {
+    "archetype": "head",
+    "colours": {
+      "body": "#c9f0b0",
+      "body2": "#52c26b",
+      "frilly": true
+    }
+  },
+  "espárrago verde": {
+    "archetype": "asparagus",
+    "colours": {
+      "body": "#52c26b",
+      "tip": "#8e4dd6",
+      "band": "#ff5f8a"
+    }
+  },
+  "espinaca": {
+    "archetype": "leafy",
+    "colours": {
+      "body": "#23865a"
+    }
+  },
+  "guisante": {
+    "archetype": "pod",
+    "colours": {
+      "body": "#52c26b",
+      "body2": "#a8e05a",
+      "leaf": "#3bb273"
+    }
+  },
+  "haba": {
+    "archetype": "pod",
+    "colours": {
+      "body": "#3bb273",
+      "body2": "#c9f0b0",
+      "leaf": "#23865a"
+    }
+  },
+  "judía verde": {
+    "archetype": "beans",
+    "colours": {
+      "body": "#3bb273"
+    }
+  },
+  "lechuga": {
+    "archetype": "head",
+    "colours": {
+      "body": "#a8e05a",
+      "body2": "#52c26b",
+      "frilly": true
+    }
+  },
+  "nabo": {
+    "archetype": "bulbroot",
+    "colours": {
+      "body": "#fffdf6",
+      "cap": "#8e4dd6",
+      "leaf": "#3bb273",
+      "stem": "#3bb273"
+    }
+  },
+  "pepino": {
+    "archetype": "long",
+    "colours": {
+      "body": "#23865a",
+      "dots": "#c9f0b0",
+      "cap": "#a8e05a"
+    }
+  },
+  "pimiento": {
+    "archetype": "pepper",
+    "colours": {
+      "body": "#ff5a4e",
+      "cap": "#3bb273"
+    }
+  },
+  "puerro": {
+    "archetype": "leek",
+    "colours": {
+      "body": "#fffdf6",
+      "body2": "#c9f0b0",
+      "leaf": "#3bb273"
+    }
+  },
+  "rábano": {
+    "archetype": "bulbroot",
+    "colours": {
+      "body": "#ff5f8a",
+      "leaf": "#3bb273",
+      "stem": "#3bb273"
+    }
+  },
+  "remolacha": {
+    "archetype": "bulbroot",
+    "colours": {
+      "body": "#c2255c",
+      "leaf": "#3bb273",
+      "stem": "#d9344a"
+    }
+  },
+  "repollo": {
+    "archetype": "head",
+    "colours": {
+      "body": "#52c26b",
+      "body2": "#3bb273"
+    }
+  },
+  "tomate": {
+    "archetype": "round",
+    "colours": {
+      "body": "#ff5a4e",
+      "calyx": "#3bb273"
+    }
+  },
+  "zanahoria": {
+    "archetype": "root",
+    "colours": {
+      "body": "#ff9a3c",
+      "leaf": "#3bb273"
+    }
+  },
+  "aguacate": {
+    "archetype": "pear",
+    "colours": {
+      "body": "#23865a",
+      "leaf": "#a8e05a"
+    }
+  },
+  "albaricoque": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#ffb627",
+      "cleft": true,
+      "leaf": "#52c26b"
+    }
+  },
+  "breva": {
+    "archetype": "fig",
+    "colours": {
+      "body": "#a8e05a",
+      "leaf": "#3bb273"
+    }
+  },
+  "caqui": {
+    "archetype": "round",
+    "colours": {
+      "body": "#ff6b2c",
+      "calyx": "#3bb273"
+    }
+  },
+  "cereza": {
+    "archetype": "cherry",
+    "colours": {
+      "body": "#d9344a",
+      "stem": "#3bb273",
+      "leaf": "#52c26b"
+    }
+  },
+  "ciruela": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#8e4dd6",
+      "cleft": true,
+      "leaf": "#3bb273"
+    }
+  },
+  "frambuesa": {
+    "archetype": "berry",
+    "colours": {
+      "body": "#ff5f8a",
+      "body2": "#ff86a8",
+      "leaf": "#3bb273"
+    }
+  },
+  "fresa y fresón": {
+    "archetype": "strawberry",
+    "colours": {
+      "body": "#ff5a4e",
+      "leaf": "#3bb273"
+    }
+  },
+  "granada": {
+    "archetype": "round",
+    "colours": {
+      "body": "#c2255c",
+      "crown": "#e9b87a"
+    }
+  },
+  "higo": {
+    "archetype": "fig",
+    "colours": {
+      "body": "#8e4dd6",
+      "leaf": "#3bb273"
+    }
+  },
+  "limón": {
+    "archetype": "round",
+    "colours": {
+      "body": "#ffd84a",
+      "leaf": "#52c26b"
+    }
+  },
+  "mandarina": {
+    "archetype": "round",
+    "colours": {
+      "body": "#ffb627",
+      "leaf": "#3bb273"
+    }
+  },
+  "mango": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#ff9a3c",
+      "cleft": true,
+      "leaf": "#3bb273"
+    }
+  },
+  "manzana": {
+    "archetype": "round",
+    "colours": {
+      "body": "#ff5a4e",
+      "leaf": "#52c26b"
+    }
+  },
+  "melocotón": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#ffb38a",
+      "cleft": true,
+      "leaf": "#52c26b"
+    }
+  },
+  "melón": {
+    "archetype": "round",
+    "colours": {
+      "body": "#f0a202",
+      "leaf": "#52c26b"
+    }
+  },
+  "membrillo": {
+    "archetype": "pear",
+    "colours": {
+      "body": "#ffd84a",
+      "leaf": "#3bb273",
+      "fuzz": true
+    }
+  },
+  "naranja": {
+    "archetype": "round",
+    "colours": {
+      "body": "#ff7a1a",
+      "leaf": "#3bb273"
+    }
+  },
+  "nectarina": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#ff5a4e",
+      "cleft": true,
+      "leaf": "#52c26b"
+    }
+  },
+  "níspero": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#ff9a3c",
+      "cleft": true,
+      "leaf": "#52c26b"
+    }
+  },
+  "paraguaya": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#ffb38a",
+      "cleft": true,
+      "leaf": "#52c26b"
+    }
+  },
+  "pera": {
+    "archetype": "pear",
+    "colours": {
+      "body": "#a8e05a",
+      "leaf": "#3bb273"
+    }
+  },
+  "pomelo": {
+    "archetype": "round",
+    "colours": {
+      "body": "#e7f5a4",
+      "leaf": "#52c26b"
+    }
+  },
+  "sandía": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#1f7a4d",
+      "stripes": "#143d32",
+      "leaf": "#52c26b"
+    }
+  },
+  "uva": {
+    "archetype": "currants",
+    "colours": {
+      "body": "#5b3a9b",
+      "stem": "#3bb273",
+      "leaf": "#52c26b"
+    }
+  }
+}

@@ -1,0 +1,2431 @@
+{
+  "id": "es",
+  "name": "Spain",
+  "locale": "es-ES",
+  "timezone": "Europe/Madrid",
+  "title": "La rueda del año en España",
+  "tagline": "Lo que se cultiva en España, mes a mes.",
+  "month_names": [
+    "Enero",
+    "Febrero",
+    "Marzo",
+    "Abril",
+    "Mayo",
+    "Junio",
+    "Julio",
+    "Agosto",
+    "Septiembre",
+    "Octubre",
+    "Noviembre",
+    "Diciembre"
+  ],
+  "month_short": [
+    "ene",
+    "feb",
+    "mar",
+    "abr",
+    "may",
+    "jun",
+    "jul",
+    "ago",
+    "sep",
+    "oct",
+    "nov",
+    "dic"
+  ],
+  "seasons": [
+    "Invierno",
+    "Invierno",
+    "Primavera",
+    "Primavera",
+    "Primavera",
+    "Verano",
+    "Verano",
+    "Verano",
+    "Otoño",
+    "Otoño",
+    "Otoño",
+    "Invierno"
+  ],
+  "categories": [
+    {
+      "id": "vegetable",
+      "label": "Hortaliza",
+      "one": "hortaliza",
+      "plural": "hortalizas"
+    },
+    {
+      "id": "fruit",
+      "label": "Fruta",
+      "one": "fruta",
+      "plural": "frutas"
+    }
+  ],
+  "attribution": "Meses del calendario del Ministerio de Agricultura, Pesca y Alimentación (frutas y hortalizas de temporada). El punto es «de temporada»; el color es el nivel de comercialización, mayor o menor. No es un calendario de cosecha ni de importación.",
+  "thin_sheet": "La fuente solo trae la cuadrícula de meses, así que la ficha se queda ahí.",
+  "copy": {
+    "this_month": "Este mes",
+    "back_to": "Volver a {month}",
+    "new_in": "Entran",
+    "last_call": "Última llamada",
+    "at_peak": "Mayor comercialización",
+    "also_in_season": "Menor comercialización",
+    "on_the_edge": "Al borde",
+    "edge_why": "El calendario MAPA no marca un nivel de borde.",
+    "hub_this_month": "este mes",
+    "at_peak_short": "{n} en mayor",
+    "more_in_season": "{n} en menor",
+    "open_fact_sheet": "Abrir la ficha.",
+    "recipe_badge": "receta",
+    "months_recipe": "Receta de {month}",
+    "made_with": "Con",
+    "cook_it_on": "La receta en {name}",
+    "fact_in_season": "De temporada",
+    "fact_peak": "Mayor comercialización",
+    "fact_edge": "Al borde",
+    "stored_notes": "Conservación",
+    "regions": "Notas",
+    "recipe": "Receta",
+    "specialist_sources": "Fuente",
+    "no_in_season": "Ningún mes de temporada en la cuadrícula",
+    "no_peak": "Ningún mes en mayor comercialización",
+    "all_year": "todo el año",
+    "in_month": "{state} en {month}",
+    "state_labels": {
+      "peak": "Mayor comercialización",
+      "in": "Menor comercialización",
+      "edge": "Borde",
+      "out": "Fuera de temporada"
+    },
+    "ring_key": {
+      "peak": "Mayor",
+      "in": "Menor",
+      "edge": "Borde",
+      "out": "Fuera"
+    },
+    "proper": {},
+    "hint": "Toca un mes en la rueda, o usa las teclas ← →.",
+    "wheel_label": "Rueda del año. Elige un mes.",
+    "months_nav": "Meses",
+    "close_sheet": "Cerrar la ficha",
+    "season_label": "Temporada: {list}",
+    "mix_label": "De temporada por tipo: {list}",
+    "blurb": {
+      "counts": "{month} tiene {peak} productos en mayor comercialización y {in} en menor.",
+      "fullest": "El mes con más productos de temporada.",
+      "leanest": "El tramo más corto del año.",
+      "filling": "La rueda se llena: {n} más de temporada que en {prev}.",
+      "winding": "Va bajando: {n} menos de temporada que en {prev}.",
+      "same": "Una cosecha parecida a la de {prev}.",
+      "lead_fruit_one": "{lead} lideran la mayor comercialización ({count} de {peak}), con 1 fruta en ese nivel.",
+      "lead_fruit": "{lead} lideran la mayor comercialización ({count} de {peak}), con {n} frutas en ese nivel.",
+      "lead_none": "{lead} lideran la mayor comercialización ({count} de {peak}); ninguna fruta está en ese nivel.",
+      "change_threshold": 8
+    }
+  },
+  "items": [
+    {
+      "item": "acelga",
+      "category": "vegetable",
+      "months": [
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "in",
+        "in",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de hortalizas de temporada"
+      ]
+    },
+    {
+      "item": "ajo",
+      "category": "vegetable",
+      "months": [
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de hortalizas de temporada"
+      ]
+    },
+    {
+      "item": "alcachofa",
+      "category": "vegetable",
+      "months": [
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "in",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de hortalizas de temporada"
+      ]
+    },
+    {
+      "item": "apio",
+      "category": "vegetable",
+      "months": [
+        "peak",
+        "peak",
+        "peak",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de hortalizas de temporada"
+      ]
+    },
+    {
+      "item": "berenjena",
+      "category": "vegetable",
+      "months": [
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de hortalizas de temporada"
+      ]
+    },
+    {
+      "item": "brócoli",
+      "category": "vegetable",
+      "months": [
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "out",
+        "out",
+        "in",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de hortalizas de temporada"
+      ]
+    },
+    {
+      "item": "calabacín",
+      "category": "vegetable",
+      "months": [
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de hortalizas de temporada"
+      ]
+    },
+    {
+      "item": "calabaza",
+      "category": "vegetable",
+      "months": [
+        "peak",
+        "peak",
+        "peak",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "peak",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de hortalizas de temporada"
+      ]
+    },
+    {
+      "item": "cardo",
+      "category": "vegetable",
+      "months": [
+        "peak",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de hortalizas de temporada"
+      ]
+    },
+    {
+      "item": "cebolla",
+      "category": "vegetable",
+      "months": [
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de hortalizas de temporada"
+      ]
+    },
+    {
+      "item": "col lombarda",
+      "category": "vegetable",
+      "months": [
+        "peak",
+        "peak",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de hortalizas de temporada"
+      ]
+    },
+    {
+      "item": "coliflor",
+      "category": "vegetable",
+      "months": [
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "in",
+        "in",
+        "out",
+        "out",
+        "peak",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de hortalizas de temporada"
+      ]
+    },
+    {
+      "item": "endibia",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "peak",
+        "peak",
+        "peak",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de hortalizas de temporada"
+      ]
+    },
+    {
+      "item": "escarola",
+      "category": "vegetable",
+      "months": [
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de hortalizas de temporada"
+      ]
+    },
+    {
+      "item": "espárrago verde",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "out",
+        "out",
+        "peak",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de hortalizas de temporada"
+      ]
+    },
+    {
+      "item": "espinaca",
+      "category": "vegetable",
+      "months": [
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "out",
+        "out",
+        "in",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de hortalizas de temporada"
+      ]
+    },
+    {
+      "item": "guisante",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "peak",
+        "peak",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de hortalizas de temporada"
+      ]
+    },
+    {
+      "item": "haba",
+      "category": "vegetable",
+      "months": [
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de hortalizas de temporada"
+      ]
+    },
+    {
+      "item": "judía verde",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "peak",
+        "peak",
+        "peak",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de hortalizas de temporada"
+      ]
+    },
+    {
+      "item": "lechuga",
+      "category": "vegetable",
+      "months": [
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de hortalizas de temporada"
+      ]
+    },
+    {
+      "item": "nabo",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de hortalizas de temporada"
+      ]
+    },
+    {
+      "item": "pepino",
+      "category": "vegetable",
+      "months": [
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de hortalizas de temporada"
+      ]
+    },
+    {
+      "item": "pimiento",
+      "category": "vegetable",
+      "months": [
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de hortalizas de temporada"
+      ]
+    },
+    {
+      "item": "puerro",
+      "category": "vegetable",
+      "months": [
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de hortalizas de temporada"
+      ]
+    },
+    {
+      "item": "rábano",
+      "category": "vegetable",
+      "months": [
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de hortalizas de temporada"
+      ]
+    },
+    {
+      "item": "remolacha",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "peak",
+        "peak",
+        "peak",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de hortalizas de temporada"
+      ]
+    },
+    {
+      "item": "repollo",
+      "category": "vegetable",
+      "months": [
+        "peak",
+        "peak",
+        "peak",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "peak",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de hortalizas de temporada"
+      ]
+    },
+    {
+      "item": "tomate",
+      "category": "vegetable",
+      "months": [
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de hortalizas de temporada"
+      ]
+    },
+    {
+      "item": "zanahoria",
+      "category": "vegetable",
+      "months": [
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de hortalizas de temporada"
+      ]
+    },
+    {
+      "item": "aguacate",
+      "category": "fruit",
+      "months": [
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de frutas de temporada"
+      ]
+    },
+    {
+      "item": "albaricoque",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "in",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de frutas de temporada"
+      ]
+    },
+    {
+      "item": "breva",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "peak",
+        "peak",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de frutas de temporada"
+      ]
+    },
+    {
+      "item": "caqui",
+      "category": "fruit",
+      "months": [
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de frutas de temporada"
+      ]
+    },
+    {
+      "item": "cereza",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "in",
+        "peak",
+        "peak",
+        "peak",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de frutas de temporada"
+      ]
+    },
+    {
+      "item": "ciruela",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "peak",
+        "peak",
+        "peak",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de frutas de temporada"
+      ]
+    },
+    {
+      "item": "frambuesa",
+      "category": "fruit",
+      "months": [
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de frutas de temporada"
+      ]
+    },
+    {
+      "item": "fresa y fresón",
+      "category": "fruit",
+      "months": [
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de frutas de temporada"
+      ]
+    },
+    {
+      "item": "granada",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "peak",
+        "peak",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de frutas de temporada"
+      ]
+    },
+    {
+      "item": "higo",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "peak",
+        "peak",
+        "peak",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de frutas de temporada"
+      ]
+    },
+    {
+      "item": "limón",
+      "category": "fruit",
+      "months": [
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "in",
+        "out",
+        "out",
+        "out",
+        "in",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de frutas de temporada"
+      ]
+    },
+    {
+      "item": "mandarina",
+      "category": "fruit",
+      "months": [
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "in",
+        "out",
+        "out",
+        "out",
+        "in",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de frutas de temporada"
+      ]
+    },
+    {
+      "item": "mango",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de frutas de temporada"
+      ]
+    },
+    {
+      "item": "manzana",
+      "category": "fruit",
+      "months": [
+        "peak",
+        "peak",
+        "peak",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "peak",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de frutas de temporada"
+      ]
+    },
+    {
+      "item": "melocotón",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "in",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de frutas de temporada"
+      ]
+    },
+    {
+      "item": "melón",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "peak",
+        "peak",
+        "peak",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de frutas de temporada"
+      ]
+    },
+    {
+      "item": "membrillo",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "peak",
+        "peak",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de frutas de temporada"
+      ]
+    },
+    {
+      "item": "naranja",
+      "category": "fruit",
+      "months": [
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "in",
+        "out",
+        "out",
+        "out",
+        "in",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de frutas de temporada"
+      ]
+    },
+    {
+      "item": "nectarina",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "in",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de frutas de temporada"
+      ]
+    },
+    {
+      "item": "níspero",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "in",
+        "peak",
+        "peak",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de frutas de temporada"
+      ]
+    },
+    {
+      "item": "paraguaya",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "peak",
+        "peak",
+        "peak",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de frutas de temporada"
+      ]
+    },
+    {
+      "item": "pera",
+      "category": "fruit",
+      "months": [
+        "peak",
+        "peak",
+        "peak",
+        "in",
+        "out",
+        "in",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de frutas de temporada"
+      ]
+    },
+    {
+      "item": "pomelo",
+      "category": "fruit",
+      "months": [
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de frutas de temporada"
+      ]
+    },
+    {
+      "item": "sandía",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "peak",
+        "peak",
+        "peak",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de frutas de temporada"
+      ]
+    },
+    {
+      "item": "uva",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "peak",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de frutas de temporada"
+      ]
+    }
+  ],
+  "recipes": [],
+  "months": [
+    {
+      "key": "jan",
+      "name": "Enero",
+      "counts": {
+        "peak": 32,
+        "in": 4,
+        "edge": 0
+      },
+      "lead": {
+        "category": "vegetable",
+        "count": 23
+      },
+      "wheel": [
+        "fresa y fresón",
+        "manzana",
+        "naranja",
+        "espinaca",
+        "pera",
+        "ajo",
+        "calabacín",
+        "calabaza",
+        "cebolla",
+        "lechuga",
+        "pepino",
+        "pimiento",
+        "tomate",
+        "zanahoria",
+        "cardo"
+      ],
+      "peak": [
+        "acelga",
+        "ajo",
+        "alcachofa",
+        "apio",
+        "berenjena",
+        "brócoli",
+        "calabacín",
+        "calabaza",
+        "cardo",
+        "cebolla",
+        "col lombarda",
+        "coliflor",
+        "escarola",
+        "espinaca",
+        "haba",
+        "lechuga",
+        "pepino",
+        "pimiento",
+        "puerro",
+        "rábano",
+        "repollo",
+        "tomate",
+        "zanahoria",
+        "aguacate",
+        "frambuesa",
+        "fresa y fresón",
+        "limón",
+        "mandarina",
+        "manzana",
+        "naranja",
+        "pera",
+        "pomelo"
+      ],
+      "in": [
+        "endibia",
+        "guisante",
+        "nabo",
+        "caqui"
+      ],
+      "edge": [],
+      "arrivals": [
+        "haba",
+        "fresa y fresón",
+        "guisante"
+      ],
+      "farewells": [
+        "endibia",
+        "caqui"
+      ],
+      "quiet": [
+        "naranja",
+        "tomate",
+        "cardo",
+        "alcachofa",
+        "repollo"
+      ],
+      "blurb": "Enero tiene <strong>32</strong> productos en mayor comercialización y <strong>4</strong> en menor. Una cosecha parecida a la de Diciembre. Hortalizas lideran la mayor comercialización (23 de 32), con 9 frutas en ese nivel."
+    },
+    {
+      "key": "feb",
+      "name": "Febrero",
+      "counts": {
+        "peak": 31,
+        "in": 3,
+        "edge": 0
+      },
+      "lead": {
+        "category": "vegetable",
+        "count": 22
+      },
+      "wheel": [
+        "fresa y fresón",
+        "manzana",
+        "naranja",
+        "espinaca",
+        "pera",
+        "ajo",
+        "calabacín",
+        "calabaza",
+        "cebolla",
+        "lechuga",
+        "pepino",
+        "pimiento",
+        "tomate",
+        "zanahoria",
+        "apio"
+      ],
+      "peak": [
+        "acelga",
+        "ajo",
+        "alcachofa",
+        "apio",
+        "berenjena",
+        "brócoli",
+        "calabacín",
+        "calabaza",
+        "cebolla",
+        "col lombarda",
+        "coliflor",
+        "escarola",
+        "espinaca",
+        "haba",
+        "lechuga",
+        "pepino",
+        "pimiento",
+        "puerro",
+        "rábano",
+        "repollo",
+        "tomate",
+        "zanahoria",
+        "aguacate",
+        "frambuesa",
+        "fresa y fresón",
+        "limón",
+        "mandarina",
+        "manzana",
+        "naranja",
+        "pera",
+        "pomelo"
+      ],
+      "in": [
+        "cardo",
+        "guisante",
+        "nabo"
+      ],
+      "edge": [],
+      "arrivals": [],
+      "farewells": [
+        "cardo"
+      ],
+      "quiet": [
+        "fresa y fresón",
+        "pepino",
+        "apio",
+        "pomelo",
+        "puerro"
+      ],
+      "blurb": "Febrero tiene <strong>31</strong> productos en mayor comercialización y <strong>3</strong> en menor. Una cosecha parecida a la de Enero. Hortalizas lideran la mayor comercialización (22 de 31), con 9 frutas en ese nivel."
+    },
+    {
+      "key": "mar",
+      "name": "Marzo",
+      "counts": {
+        "peak": 31,
+        "in": 4,
+        "edge": 0
+      },
+      "lead": {
+        "category": "vegetable",
+        "count": 22
+      },
+      "wheel": [
+        "fresa y fresón",
+        "manzana",
+        "naranja",
+        "espinaca",
+        "pera",
+        "ajo",
+        "calabacín",
+        "calabaza",
+        "cebolla",
+        "lechuga",
+        "pepino",
+        "pimiento",
+        "tomate",
+        "zanahoria",
+        "espárrago verde"
+      ],
+      "peak": [
+        "acelga",
+        "ajo",
+        "alcachofa",
+        "apio",
+        "berenjena",
+        "brócoli",
+        "calabacín",
+        "calabaza",
+        "cebolla",
+        "coliflor",
+        "escarola",
+        "espárrago verde",
+        "espinaca",
+        "haba",
+        "lechuga",
+        "pepino",
+        "pimiento",
+        "puerro",
+        "rábano",
+        "repollo",
+        "tomate",
+        "zanahoria",
+        "aguacate",
+        "frambuesa",
+        "fresa y fresón",
+        "limón",
+        "mandarina",
+        "manzana",
+        "naranja",
+        "pera",
+        "pomelo"
+      ],
+      "in": [
+        "col lombarda",
+        "guisante",
+        "nabo",
+        "níspero"
+      ],
+      "edge": [],
+      "arrivals": [
+        "espárrago verde",
+        "níspero"
+      ],
+      "farewells": [
+        "col lombarda"
+      ],
+      "quiet": [
+        "manzana",
+        "pimiento",
+        "haba",
+        "aguacate",
+        "rábano"
+      ],
+      "blurb": "Marzo tiene <strong>31</strong> productos en mayor comercialización y <strong>4</strong> en menor. Una cosecha parecida a la de Febrero. Hortalizas lideran la mayor comercialización (22 de 31), con 9 frutas en ese nivel."
+    },
+    {
+      "key": "apr",
+      "name": "Abril",
+      "counts": {
+        "peak": 27,
+        "in": 11,
+        "edge": 0
+      },
+      "lead": {
+        "category": "vegetable",
+        "count": 19
+      },
+      "wheel": [
+        "fresa y fresón",
+        "naranja",
+        "espinaca",
+        "ajo",
+        "calabacín",
+        "cebolla",
+        "lechuga",
+        "pepino",
+        "pimiento",
+        "tomate",
+        "zanahoria",
+        "manzana",
+        "pera",
+        "calabaza",
+        "níspero"
+      ],
+      "peak": [
+        "acelga",
+        "ajo",
+        "alcachofa",
+        "berenjena",
+        "brócoli",
+        "calabacín",
+        "cebolla",
+        "coliflor",
+        "escarola",
+        "espárrago verde",
+        "espinaca",
+        "haba",
+        "lechuga",
+        "pepino",
+        "pimiento",
+        "puerro",
+        "rábano",
+        "tomate",
+        "zanahoria",
+        "aguacate",
+        "frambuesa",
+        "fresa y fresón",
+        "limón",
+        "mandarina",
+        "naranja",
+        "níspero",
+        "pomelo"
+      ],
+      "in": [
+        "apio",
+        "calabaza",
+        "guisante",
+        "nabo",
+        "repollo",
+        "albaricoque",
+        "cereza",
+        "manzana",
+        "melocotón",
+        "nectarina",
+        "pera"
+      ],
+      "edge": [],
+      "arrivals": [
+        "albaricoque",
+        "cereza",
+        "melocotón",
+        "nectarina"
+      ],
+      "farewells": [
+        "frambuesa",
+        "apio",
+        "manzana",
+        "pera"
+      ],
+      "quiet": [
+        "fresa y fresón",
+        "ajo",
+        "níspero",
+        "frambuesa",
+        "escarola"
+      ],
+      "blurb": "Abril tiene <strong>27</strong> productos en mayor comercialización y <strong>11</strong> en menor. Una cosecha parecida a la de Marzo. Hortalizas lideran la mayor comercialización (19 de 27), con 8 frutas en ese nivel."
+    },
+    {
+      "key": "may",
+      "name": "Mayo",
+      "counts": {
+        "peak": 26,
+        "in": 12,
+        "edge": 0
+      },
+      "lead": {
+        "category": "vegetable",
+        "count": 18
+      },
+      "wheel": [
+        "fresa y fresón",
+        "naranja",
+        "espinaca",
+        "ajo",
+        "calabacín",
+        "cebolla",
+        "lechuga",
+        "pepino",
+        "pimiento",
+        "tomate",
+        "zanahoria",
+        "melón",
+        "sandía",
+        "calabaza",
+        "níspero"
+      ],
+      "peak": [
+        "acelga",
+        "ajo",
+        "alcachofa",
+        "berenjena",
+        "brócoli",
+        "calabacín",
+        "cebolla",
+        "espárrago verde",
+        "espinaca",
+        "guisante",
+        "haba",
+        "lechuga",
+        "pepino",
+        "pimiento",
+        "puerro",
+        "rábano",
+        "tomate",
+        "zanahoria",
+        "albaricoque",
+        "cereza",
+        "fresa y fresón",
+        "limón",
+        "melocotón",
+        "naranja",
+        "nectarina",
+        "níspero"
+      ],
+      "in": [
+        "calabaza",
+        "coliflor",
+        "escarola",
+        "nabo",
+        "repollo",
+        "aguacate",
+        "ciruela",
+        "mandarina",
+        "melón",
+        "paraguaya",
+        "pomelo",
+        "sandía"
+      ],
+      "edge": [],
+      "arrivals": [
+        "ciruela",
+        "melón",
+        "paraguaya",
+        "sandía"
+      ],
+      "farewells": [
+        "fresa y fresón",
+        "aguacate",
+        "mandarina",
+        "pomelo"
+      ],
+      "quiet": [
+        "naranja",
+        "calabacín",
+        "espárrago verde",
+        "albaricoque",
+        "brócoli"
+      ],
+      "blurb": "Mayo tiene <strong>26</strong> productos en mayor comercialización y <strong>12</strong> en menor. Una cosecha parecida a la de Abril. Hortalizas lideran la mayor comercialización (18 de 26), con 8 frutas en ese nivel."
+    },
+    {
+      "key": "jun",
+      "name": "Junio",
+      "counts": {
+        "peak": 24,
+        "in": 13,
+        "edge": 0
+      },
+      "lead": {
+        "category": "vegetable",
+        "count": 15
+      },
+      "wheel": [
+        "melón",
+        "sandía",
+        "espinaca",
+        "ajo",
+        "calabacín",
+        "cebolla",
+        "lechuga",
+        "pepino",
+        "pimiento",
+        "tomate",
+        "zanahoria",
+        "naranja",
+        "pera",
+        "calabaza",
+        "breva"
+      ],
+      "peak": [
+        "ajo",
+        "berenjena",
+        "brócoli",
+        "calabacín",
+        "cebolla",
+        "espárrago verde",
+        "espinaca",
+        "guisante",
+        "lechuga",
+        "pepino",
+        "pimiento",
+        "puerro",
+        "rábano",
+        "tomate",
+        "zanahoria",
+        "albaricoque",
+        "breva",
+        "cereza",
+        "ciruela",
+        "melocotón",
+        "melón",
+        "nectarina",
+        "paraguaya",
+        "sandía"
+      ],
+      "in": [
+        "acelga",
+        "alcachofa",
+        "calabaza",
+        "coliflor",
+        "escarola",
+        "haba",
+        "nabo",
+        "repollo",
+        "higo",
+        "limón",
+        "naranja",
+        "níspero",
+        "pera"
+      ],
+      "edge": [],
+      "arrivals": [
+        "breva",
+        "higo",
+        "pera"
+      ],
+      "farewells": [
+        "brócoli",
+        "espárrago verde",
+        "espinaca",
+        "alcachofa"
+      ],
+      "quiet": [
+        "melón",
+        "espinaca",
+        "breva",
+        "ciruela",
+        "guisante"
+      ],
+      "blurb": "Junio tiene <strong>24</strong> productos en mayor comercialización y <strong>13</strong> en menor. Una cosecha parecida a la de Mayo. Hortalizas lideran la mayor comercialización (15 de 24), con 9 frutas en ese nivel."
+    },
+    {
+      "key": "jul",
+      "name": "Julio",
+      "counts": {
+        "peak": 22,
+        "in": 9,
+        "edge": 0
+      },
+      "lead": {
+        "category": "vegetable",
+        "count": 11
+      },
+      "wheel": [
+        "melón",
+        "sandía",
+        "pera",
+        "ajo",
+        "calabacín",
+        "cebolla",
+        "lechuga",
+        "pepino",
+        "pimiento",
+        "tomate",
+        "zanahoria",
+        "judía verde",
+        "calabaza",
+        "breva",
+        "paraguaya"
+      ],
+      "peak": [
+        "ajo",
+        "berenjena",
+        "calabacín",
+        "cebolla",
+        "lechuga",
+        "pepino",
+        "pimiento",
+        "puerro",
+        "rábano",
+        "tomate",
+        "zanahoria",
+        "albaricoque",
+        "breva",
+        "cereza",
+        "ciruela",
+        "higo",
+        "melocotón",
+        "melón",
+        "nectarina",
+        "paraguaya",
+        "pera",
+        "sandía"
+      ],
+      "in": [
+        "acelga",
+        "calabaza",
+        "guisante",
+        "judía verde",
+        "nabo",
+        "remolacha",
+        "repollo",
+        "mango",
+        "membrillo"
+      ],
+      "edge": [],
+      "arrivals": [
+        "judía verde",
+        "remolacha",
+        "mango",
+        "membrillo"
+      ],
+      "farewells": [
+        "breva",
+        "guisante"
+      ],
+      "quiet": [
+        "sandía",
+        "lechuga",
+        "cereza",
+        "melocotón",
+        "berenjena"
+      ],
+      "blurb": "Julio tiene <strong>22</strong> productos en mayor comercialización y <strong>9</strong> en menor. Una cosecha parecida a la de Junio. Hortalizas lideran la mayor comercialización (11 de 22), con 11 frutas en ese nivel."
+    },
+    {
+      "key": "aug",
+      "name": "Agosto",
+      "counts": {
+        "peak": 25,
+        "in": 5,
+        "edge": 0
+      },
+      "lead": {
+        "category": "vegetable",
+        "count": 14
+      },
+      "wheel": [
+        "melón",
+        "sandía",
+        "judía verde",
+        "pera",
+        "ajo",
+        "calabacín",
+        "cebolla",
+        "lechuga",
+        "pepino",
+        "pimiento",
+        "tomate",
+        "zanahoria",
+        "uva",
+        "calabaza",
+        "membrillo"
+      ],
+      "peak": [
+        "acelga",
+        "ajo",
+        "berenjena",
+        "calabacín",
+        "cebolla",
+        "judía verde",
+        "lechuga",
+        "pepino",
+        "pimiento",
+        "puerro",
+        "rábano",
+        "remolacha",
+        "tomate",
+        "zanahoria",
+        "albaricoque",
+        "ciruela",
+        "higo",
+        "mango",
+        "melocotón",
+        "melón",
+        "membrillo",
+        "nectarina",
+        "paraguaya",
+        "pera",
+        "sandía"
+      ],
+      "in": [
+        "calabaza",
+        "nabo",
+        "repollo",
+        "cereza",
+        "uva"
+      ],
+      "edge": [],
+      "arrivals": [
+        "uva"
+      ],
+      "farewells": [
+        "paraguaya",
+        "cereza"
+      ],
+      "quiet": [
+        "melón",
+        "cebolla",
+        "paraguaya",
+        "remolacha",
+        "acelga"
+      ],
+      "blurb": "Agosto tiene <strong>25</strong> productos en mayor comercialización y <strong>5</strong> en menor. El tramo más corto del año. Hortalizas lideran la mayor comercialización (14 de 25), con 11 frutas en ese nivel."
+    },
+    {
+      "key": "sep",
+      "name": "Septiembre",
+      "counts": {
+        "peak": 27,
+        "in": 10,
+        "edge": 0
+      },
+      "lead": {
+        "category": "vegetable",
+        "count": 19
+      },
+      "wheel": [
+        "uva",
+        "judía verde",
+        "manzana",
+        "pera",
+        "ajo",
+        "calabacín",
+        "calabaza",
+        "cebolla",
+        "lechuga",
+        "pepino",
+        "pimiento",
+        "tomate",
+        "zanahoria",
+        "melón",
+        "sandía"
+      ],
+      "peak": [
+        "acelga",
+        "ajo",
+        "berenjena",
+        "calabacín",
+        "calabaza",
+        "cebolla",
+        "coliflor",
+        "endibia",
+        "espárrago verde",
+        "judía verde",
+        "lechuga",
+        "pepino",
+        "pimiento",
+        "puerro",
+        "rábano",
+        "remolacha",
+        "repollo",
+        "tomate",
+        "zanahoria",
+        "higo",
+        "mango",
+        "manzana",
+        "melocotón",
+        "membrillo",
+        "nectarina",
+        "pera",
+        "uva"
+      ],
+      "in": [
+        "brócoli",
+        "espinaca",
+        "nabo",
+        "albaricoque",
+        "caqui",
+        "ciruela",
+        "granada",
+        "mandarina",
+        "melón",
+        "sandía"
+      ],
+      "edge": [],
+      "arrivals": [
+        "coliflor",
+        "endibia",
+        "espárrago verde",
+        "manzana"
+      ],
+      "farewells": [
+        "albaricoque",
+        "ciruela",
+        "melón",
+        "sandía"
+      ],
+      "quiet": [
+        "uva",
+        "judía verde",
+        "membrillo",
+        "higo",
+        "nectarina"
+      ],
+      "blurb": "Septiembre tiene <strong>27</strong> productos en mayor comercialización y <strong>10</strong> en menor. Una cosecha parecida a la de Agosto. Hortalizas lideran la mayor comercialización (19 de 27), con 8 frutas en ese nivel."
+    },
+    {
+      "key": "oct",
+      "name": "Octubre",
+      "counts": {
+        "peak": 31,
+        "in": 9,
+        "edge": 0
+      },
+      "lead": {
+        "category": "vegetable",
+        "count": 23
+      },
+      "wheel": [
+        "uva",
+        "judía verde",
+        "manzana",
+        "espinaca",
+        "pera",
+        "ajo",
+        "calabacín",
+        "calabaza",
+        "cebolla",
+        "lechuga",
+        "pepino",
+        "pimiento",
+        "tomate",
+        "zanahoria",
+        "naranja"
+      ],
+      "peak": [
+        "acelga",
+        "ajo",
+        "berenjena",
+        "brócoli",
+        "calabacín",
+        "calabaza",
+        "cebolla",
+        "col lombarda",
+        "coliflor",
+        "endibia",
+        "escarola",
+        "espinaca",
+        "judía verde",
+        "lechuga",
+        "nabo",
+        "pepino",
+        "pimiento",
+        "puerro",
+        "rábano",
+        "remolacha",
+        "repollo",
+        "tomate",
+        "zanahoria",
+        "caqui",
+        "frambuesa",
+        "granada",
+        "mandarina",
+        "mango",
+        "manzana",
+        "pera",
+        "uva"
+      ],
+      "in": [
+        "alcachofa",
+        "cardo",
+        "aguacate",
+        "higo",
+        "limón",
+        "melocotón",
+        "membrillo",
+        "naranja",
+        "nectarina"
+      ],
+      "edge": [],
+      "arrivals": [
+        "col lombarda",
+        "escarola",
+        "frambuesa",
+        "alcachofa"
+      ],
+      "farewells": [
+        "higo",
+        "melocotón",
+        "membrillo",
+        "nectarina"
+      ],
+      "quiet": [
+        "judía verde",
+        "calabaza",
+        "endibia",
+        "col lombarda",
+        "coliflor"
+      ],
+      "blurb": "Octubre tiene <strong>31</strong> productos en mayor comercialización y <strong>9</strong> en menor. El mes con más productos de temporada. Hortalizas lideran la mayor comercialización (23 de 31), con 8 frutas en ese nivel."
+    },
+    {
+      "key": "nov",
+      "name": "Noviembre",
+      "counts": {
+        "peak": 33,
+        "in": 6,
+        "edge": 0
+      },
+      "lead": {
+        "category": "vegetable",
+        "count": 22
+      },
+      "wheel": [
+        "uva",
+        "manzana",
+        "naranja",
+        "espinaca",
+        "pera",
+        "ajo",
+        "calabacín",
+        "calabaza",
+        "cebolla",
+        "lechuga",
+        "pepino",
+        "pimiento",
+        "tomate",
+        "zanahoria",
+        "judía verde"
+      ],
+      "peak": [
+        "acelga",
+        "ajo",
+        "apio",
+        "berenjena",
+        "brócoli",
+        "calabacín",
+        "calabaza",
+        "cebolla",
+        "col lombarda",
+        "coliflor",
+        "endibia",
+        "escarola",
+        "espinaca",
+        "lechuga",
+        "nabo",
+        "pepino",
+        "pimiento",
+        "puerro",
+        "rábano",
+        "repollo",
+        "tomate",
+        "zanahoria",
+        "aguacate",
+        "caqui",
+        "frambuesa",
+        "granada",
+        "limón",
+        "mandarina",
+        "mango",
+        "manzana",
+        "naranja",
+        "pera",
+        "uva"
+      ],
+      "in": [
+        "alcachofa",
+        "cardo",
+        "haba",
+        "judía verde",
+        "remolacha",
+        "pomelo"
+      ],
+      "edge": [],
+      "arrivals": [
+        "apio",
+        "haba",
+        "pomelo"
+      ],
+      "farewells": [
+        "granada",
+        "mango"
+      ],
+      "quiet": [
+        "manzana",
+        "pera",
+        "granada",
+        "mango",
+        "mandarina"
+      ],
+      "blurb": "Noviembre tiene <strong>33</strong> productos en mayor comercialización y <strong>6</strong> en menor. Una cosecha parecida a la de Octubre. Hortalizas lideran la mayor comercialización (22 de 33), con 11 frutas en ese nivel."
+    },
+    {
+      "key": "dec",
+      "name": "Diciembre",
+      "counts": {
+        "peak": 33,
+        "in": 3,
+        "edge": 0
+      },
+      "lead": {
+        "category": "vegetable",
+        "count": 23
+      },
+      "wheel": [
+        "uva",
+        "manzana",
+        "naranja",
+        "espinaca",
+        "pera",
+        "ajo",
+        "calabacín",
+        "calabaza",
+        "cebolla",
+        "lechuga",
+        "pepino",
+        "pimiento",
+        "tomate",
+        "zanahoria",
+        "judía verde"
+      ],
+      "peak": [
+        "acelga",
+        "ajo",
+        "alcachofa",
+        "apio",
+        "berenjena",
+        "brócoli",
+        "calabacín",
+        "calabaza",
+        "cardo",
+        "cebolla",
+        "col lombarda",
+        "coliflor",
+        "escarola",
+        "espinaca",
+        "lechuga",
+        "nabo",
+        "pepino",
+        "pimiento",
+        "puerro",
+        "rábano",
+        "repollo",
+        "tomate",
+        "zanahoria",
+        "aguacate",
+        "caqui",
+        "frambuesa",
+        "limón",
+        "mandarina",
+        "manzana",
+        "naranja",
+        "pera",
+        "pomelo",
+        "uva"
+      ],
+      "in": [
+        "endibia",
+        "judía verde",
+        "remolacha"
+      ],
+      "edge": [],
+      "arrivals": [],
+      "farewells": [
+        "uva",
+        "judía verde",
+        "remolacha"
+      ],
+      "quiet": [
+        "uva",
+        "zanahoria",
+        "caqui",
+        "limón",
+        "nabo"
+      ],
+      "blurb": "Diciembre tiene <strong>33</strong> productos en mayor comercialización y <strong>3</strong> en menor. Una cosecha parecida a la de Noviembre. Hortalizas lideran la mayor comercialización (23 de 33), con 10 frutas en ese nivel."
+    }
+  ]
+}
