@@ -163,7 +163,7 @@ function wantedNames(m) {
 }
 
 function slotMarkup(item, mo, m, i) {
-  return `<g class="slot" data-q="${mo.quiet.indexOf(item)}" data-a="${mo.wheel.indexOf(item)}"><g class="pop" style="--i:${i};--m:${(m - session.today + 12) % 12}"><g class="bob" style="--d:${(i * 0.37 + m * 0.21) % 2}s"><g class="jig" data-item="${esc(item)}">${sticker(item)}</g></g></g></g>`;
+  return `<g class="slot" data-q="${mo.quiet.indexOf(item)}" data-a="${mo.wheel.indexOf(item)}"><g class="pop" style="--i:${i};--m:${(m - session.today + 12) % 12}"><g class="bob" style="--d:${(i * 0.37 + m * 0.21) % 2}s"><g class="jig" data-item="${esc(item)}">${sticker(item, `x="-50" y="-50" width="100" height="100"`)}</g></g></g></g>`;
 }
 
 // Active-only stickers exist on a wedge while it is selected or still extended.
