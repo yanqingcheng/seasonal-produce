@@ -5,11 +5,12 @@ Standing Workshop frame: personal Animal Crossing–style museum of loves; publi
 Exhibit-specific thin ship Qing affirmed in seat chat (2026-09-23):
 
 - **First ship country: UK** (one-country-first to validate visual style).
-- **Interaction / shape** (Qing affirmed the remaining recipes decision in seat chat, 2026-09-23):
+- **Interaction / UX** (Qing, seat chat 2026-09-23):
   1. Circular UK year-wheel, richly illustrated with produce for each month.
   2. Click a month segment → short description.
   3. Clickable ingredients → a fact sheet each.
   4. Recipes included, from the stronger UK research pack.
+  5. **Current-month default:** whatever marker is on the year-wheel must default to the current month on load. Exact treatment (highlight, animation, “on top”, or other) is left to the designer (Astra). Behaviour prescribed: default selection / focus = current calendar month.
 - **Recipes + ingredients:** YES — include in the UK first ship.
 - **Fact sheets:** content is bounded by available UK research fields. Do not invent fact-sheet fields beyond what is in the UK corpus.
 - **Not in this first ship:** multi-country toggle / globe / map of other countries (those stay later depth while Instinct continues research).
