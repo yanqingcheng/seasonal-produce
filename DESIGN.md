@@ -219,4 +219,3 @@ Opening `prototype/index.html` straight from disk also works.
 
 - **Stage 2 points at `/workspace/seasonal-produce-uk/`, which doesn't exist on this box.** The corpus arrived only as chat uploads (CSV, JSON, recipes, schema; no `sources.md`, long CSV or varieties annex). The pack is now vendored into `data/uk/`, so later stages have one in-repo source. Future briefs should point there.
 - **The uploaded JSON isn't a lossless mirror of the CSV** (the notes fields are merged). The pipeline uses the CSV only. Stage 4 shouldn't switch to the JSON without re-splitting the fields.
-- **The brief paraphrases Qing's words.** They are recorded above as relayed; if a verbatim quote exists in seat chat, paste it into this section.
