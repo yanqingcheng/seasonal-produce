@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The UK Year-Wheel · Seasonal produce</title>
+  <meta name="description" content="Spin the UK year-wheel to see what's growing each month: produce, fact sheets and a recipe for every month." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="sprite"></div>
+
+  <header class="top">
+    <div class="brand">
+      <span class="brand-mark" id="brand-mark"></span>
+      <div>
+        <h1>The UK Year-Wheel</h1>
+        <p>Spin through what's growing, month by month.</p>
+      </div>
+    </div>
+    <button type="button" id="today-btn" class="chunky-btn" hidden>Back to <span></span></button>
+  </header>
+
+  <main class="stage">
+    <section class="wheel-wrap" aria-label="Year-wheel">
+      <svg id="wheel" viewBox="-520 -780 1040 1300" role="group" aria-label="UK produce year-wheel. Pick a month."></svg>
+      <nav class="month-rail" id="month-rail" aria-label="Months"></nav>
+      <p class="hint">Tap a month on the wheel, or use the ← → keys.</p>
+    </section>
+    <section class="panel" id="panel" aria-live="polite"></section>
+  </main>
+
+  <footer class="foot">
+    <p>
+      Months and fact sheets come from the UK pass-2 research corpus (19 Sep 2026): BBC Good Food, Hubbub,
+      BBC Gardeners' World, Borough Kitchen and specialist grower bodies. Recipes are from BBC Good Food.
+      Design prototype, not the production site.
+    </p>
+  </footer>
+
+  <dialog id="sheet" aria-labelledby="sheet-title"></dialog>
+
+  <script src="data.js"></script>
+  <script src="art.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
