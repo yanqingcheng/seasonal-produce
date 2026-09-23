@@ -1,0 +1,41 @@
+apple
+pear
+strawberry
+raspberry
+blackberry
+blueberry
+cherry
+plum
+rhubarb
+potatoes
+new potatoes
+jersey royals
+carrots
+onions
+leeks
+garlic
+cabbage
+cauliflower
+broccoli
+brussels sprouts
+kale
+spinach
+peas
+broad beans
+runner beans
+sweetcorn
+tomatoes
+cucumber
+courgette
+peppers
+pumpkin & squash
+butternut squash
+parsnips
+swede
+beetroot
+celery
+asparagus
+mushrooms (cultivated)
+lettuce & salad leaves
+spring onions
+radishes

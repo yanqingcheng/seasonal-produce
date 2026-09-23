@@ -1,30 +1,19 @@
 #!/usr/bin/env node
-// Builds prototype/data.js from the UK pass-2 corpus in data/uk/.
-// Everything the prototype shows about produce comes from here; nothing is authored by hand.
-import { readFileSync, writeFileSync } from "node:fs";
+// Shared country-pack builder. `node scripts/build-data.mjs <id>`
+// reads data/<id>/ and writes site/data/<id>.json, site/data/registry.json,
+// site/sprites.svg, and site/og.svg.
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
+import { archetypeIds, symbolPair } from "../art/draw.mjs";
 
-const root = join(dirname(fileURLToPath(import.meta.url)), "..");
-const MONTHS = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
-const MONTH_NAMES = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-const IN_SEASON = new Set(["P", "I"]);
+const repoRoot = join(dirname(fileURLToPath(import.meta.url)), "..");
+const MONTH_KEYS = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
 const WHEEL_COUNT = 15;
 const QUIET_COUNT = 5;
+const ROLES = ["peak", "in", "edge", "out"];
 
-// Editorial "well-known in a UK kitchen" tier. It only ranks stickers; it is never shown as a fact.
-// The corpus has no popularity field, so Stage 4 should replace this with real purchase or search data.
-const STAPLES = new Set([
-  "apple", "pear", "strawberry", "raspberry", "blackberry", "blueberry", "cherry", "plum", "rhubarb",
-  "potatoes", "new potatoes", "jersey royals", "carrots", "onions", "leeks", "garlic", "cabbage", "cauliflower",
-  "broccoli", "brussels sprouts", "kale", "spinach", "peas", "broad beans", "runner beans", "sweetcorn",
-  "tomatoes", "cucumber", "courgette", "peppers", "pumpkin & squash", "butternut squash", "parsnips", "swede",
-  "beetroot", "celery", "asparagus", "mushrooms (cultivated)",
-  "lettuce & salad leaves", "spring onions", "radishes",
-]);
-const EVERYDAY_CATEGORIES = new Set(["vegetable", "fruit", "salad"]);
-
-function parseCsv(text) {
+export function parseCsv(text) {
   const rows = [];
   let row = [];
   let field = "";
@@ -49,170 +38,408 @@ function parseCsv(text) {
   return body.map((r) => Object.fromEntries(header.map((h, i) => [h, r[i] ?? ""])));
 }
 
-function fail(msg) {
-  console.error(`build-data: ${msg}`);
-  process.exit(1);
+function readJson(path) {
+  return JSON.parse(readFileSync(path, "utf8"));
 }
 
-const calendarRows = parseCsv(readFileSync(join(root, "data/uk/produce_calendar.csv"), "utf8"));
-const recipeRows = parseCsv(readFileSync(join(root, "data/uk/recipes.csv"), "utf8"));
-
-const items = calendarRows.map((r) => {
-  const months = MONTHS.map((m) => r[m]);
-  if (months.some((s) => !["P", "I", "T", "."].includes(s))) fail(`bad month state on ${r.item}`);
-  const gridPeaks = MONTHS.filter((_, i) => months[i] === "P");
-  const listedPeaks = r.peak_months ? r.peak_months.split(/\s+/) : [];
-  if (listedPeaks.length && listedPeaks.join() !== gridPeaks.join()) {
-    console.warn(`build-data: ${r.item} peak_months differs from grid P cells`);
-  }
-  return {
-    item: r.item,
-    category: r.category,
-    months,
-    peak_months: listedPeaks,
-    stored_notes: r.stored_notes ? JSON.parse(r.stored_notes) : null,
-    regions_notes: r.regions_notes || null,
-    specialist_sources: r.specialist_sources ? r.specialist_sources.split(/;\s*/) : [],
-  };
-});
-if (items.length !== 108) fail(`expected 108 items, got ${items.length}`);
-const byName = new Map(items.map((it) => [it.item, it]));
-for (const s of STAPLES) if (!byName.has(s)) fail(`staple "${s}" is not a calendar item`);
-
-// Recipe strings use plurals and qualifiers ("blackberries (early)", "early apples").
-function resolveIngredient(raw) {
-  const qualifier = (raw.match(/\(([^)]*)\)/) || [])[1] || null;
-  let name = raw.replace(/\([^)]*\)/g, "").trim().toLowerCase();
-  const early = /^early\s+/.test(name);
-  name = name.replace(/^early\s+/, "");
-  const candidates = [name, name.replace(/ies$/, "y"), name.replace(/s$/, "")];
-  const hit = candidates.find((c) => byName.has(c));
-  if (!hit) fail(`recipe ingredient "${raw}" does not resolve to a calendar item`);
-  return { item: hit, label: raw.trim(), qualifier: qualifier ?? (early ? "early" : null) };
+function fill(tpl, vars) {
+  return tpl.replace(/\{(\w+)\}/g, (_, k) => String(vars[k] ?? ""));
 }
 
-const recipes = recipeRows.map((r) => {
-  const monthIndex = MONTH_NAMES.findIndex((n) => n.toLowerCase() === r.month);
-  if (monthIndex < 0) fail(`bad recipe month ${r.month}`);
-  const produce = r.in_season_produce_used.split(/,\s*/).map(resolveIngredient);
-  for (const p of produce) {
-    const state = byName.get(p.item).months[monthIndex];
-    if (!IN_SEASON.has(state)) fail(`${r.recipe}: ${p.item} is "${state}" in ${r.month}, expected P or I`);
-  }
-  return { month: monthIndex, title: r.recipe, produce, source_name: r.source_name, source_url: r.source_url };
-});
-if (recipes.length !== 12 || new Set(recipes.map((r) => r.month)).size !== 12) fail("expected one recipe per month");
+function escText(s) {
+  return String(s).replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
+}
 
-function roundRobinByCategory(list) {
+function capital(s) {
+  return s ? s[0].toUpperCase() + s.slice(1) : s;
+}
+
+/** English alias steps from ARCH §4. `byName` keys are lowercase item names. */
+export function resolveIngredient(raw, byName, { aliasProfile, aliases }) {
+  const original = raw.trim();
+  const paren = original.match(/\(([^)]*)\)/);
+  let qualifier = paren ? paren[1] : null;
+  let name = original.replace(/\([^)]*\)/g, "").trim().toLowerCase();
+  if (aliases?.has(name)) {
+    const hit = aliases.get(name);
+    if (!byName.has(hit)) return null;
+    return { item: byName.get(hit), label: original, qualifier };
+  }
+  if (aliasProfile === "en") {
+    const early = /^early\s+/.test(name);
+    name = name.replace(/^early\s+/, "");
+    if (early && qualifier == null) qualifier = "early";
+    const candidates = [name, name.replace(/ies$/, "y"), name.replace(/s$/, "")];
+    const hit = candidates.find((c) => byName.has(c));
+    if (!hit) return null;
+    return { item: byName.get(hit), label: original, qualifier };
+  }
+  if (!byName.has(name)) return null;
+  return { item: byName.get(name), label: original, qualifier };
+}
+
+function interleave(list) {
   const buckets = new Map();
   for (const it of list) {
     if (!buckets.has(it.category)) buckets.set(it.category, []);
     buckets.get(it.category).push(it);
   }
   const out = [];
-  while (out.length < list.length) {
-    for (const b of buckets.values()) if (b.length) out.push(b.shift());
+  let pending = true;
+  while (pending) {
+    pending = false;
+    for (const bucket of buckets.values()) {
+      if (bucket.length) { out.push(bucket.shift()); pending = true; }
+    }
   }
   return out;
 }
 
-const rankedByMonth = [];
-const months = MONTHS.map((key, m) => {
-  const state = (it, offset = 0) => it.months[(m + offset + 12) % 12];
-  const peak = items.filter((it) => state(it) === "P");
-  const inSeason = items.filter((it) => state(it) === "I");
-  const edge = items.filter((it) => state(it) === "T");
-  const recipe = recipes.find((r) => r.month === m);
-  const stars = recipe.produce.map((p) => byName.get(p.item));
-
-  // Wheel stickers put common, popular produce first (see DESIGN.md, "Busy active segment").
-  // Items whose corpus note says UK supply is mostly imported never become stickers.
-  const seasonLength = (it) => it.months.filter((s) => IN_SEASON.has(s)).length;
-  const importFlagged = (it) => /import/i.test(it.regions_notes || "");
-  const score = (it) =>
-    (STAPLES.has(it.item) ? 4 : 0) +
-    (stars.includes(it) ? 3 : 0) +
-    (state(it) === "P" ? 2 : 0) +
-    (EVERYDAY_CATEGORIES.has(it.category) ? 1 : 0);
-  const buckets = new Map();
-  for (const it of [...peak, ...inSeason].filter((x) => !importFlagged(x))) {
+function rankCandidates(list, score, seasonLength) {
+  const byScore = new Map();
+  for (const it of list) {
     const s = score(it);
-    if (!buckets.has(s)) buckets.set(s, []);
-    buckets.get(s).push(it);
+    if (!byScore.has(s)) byScore.set(s, []);
+    byScore.get(s).push(it);
   }
-  const ranked = [...buckets.keys()].sort((a, b) => b - a).flatMap((s) =>
-    roundRobinByCategory(buckets.get(s).sort((a, b) => seasonLength(a) - seasonLength(b))),
-  );
-  rankedByMonth.push(ranked);
-  const wheel = ranked.slice(0, WHEEL_COUNT);
-  for (const star of stars.filter((s) => !wheel.includes(s))) {
-    const slot = wheel.findLastIndex((it) => !stars.includes(it));
-    wheel[slot] = star;
+  const ranked = [];
+  for (const s of [...byScore.keys()].sort((a, b) => b - a)) {
+    const byLen = new Map();
+    for (const it of byScore.get(s)) {
+      const len = seasonLength(it);
+      if (!byLen.has(len)) byLen.set(len, []);
+      byLen.get(len).push(it);
+    }
+    for (const len of [...byLen.keys()].sort((a, b) => a - b)) {
+      ranked.push(...interleave(byLen.get(len)));
+    }
+  }
+  return ranked;
+}
+
+function composeBlurb(month, prev, months, itemsByName, categories, blurb) {
+  const total = (m) => m.counts.peak + m.counts.in;
+  const totals = months.map(total);
+  const change = total(month) - total(prev);
+  const threshold = blurb.change_threshold ?? 8;
+  let trend;
+  if (total(month) === Math.max(...totals)) trend = blurb.fullest;
+  else if (total(month) === Math.min(...totals)) trend = blurb.leanest;
+  else if (change >= threshold) trend = fill(blurb.filling, { n: change, prev: escText(prev.name) });
+  else if (change <= -threshold) trend = fill(blurb.winding, { n: -change, prev: escText(prev.name) });
+  else trend = fill(blurb.same, { prev: escText(prev.name) });
+  const counts = fill(blurb.counts, {
+    month: escText(month.name),
+    peak: `<strong>${month.counts.peak}</strong>`,
+    in: `<strong>${month.counts.in}</strong>`,
+  });
+  if (!month.lead) return `${counts} ${trend}`;
+  const fruitPeaks = month.peak.filter((n) => itemsByName.get(n).category === "fruit").length;
+  const plural = categories.find((c) => c.id === month.lead.category)?.plural ?? month.lead.category;
+  const lead = escText(capital(plural));
+  const mix = fruitPeaks === 0
+    ? fill(blurb.lead_none, { lead, count: month.lead.count, peak: month.counts.peak })
+    : fruitPeaks === 1
+      ? fill(blurb.lead_fruit_one, { lead, count: month.lead.count, peak: month.counts.peak })
+      : fill(blurb.lead_fruit, { lead, count: month.lead.count, peak: month.counts.peak, n: fruitPeaks });
+  return `${counts} ${trend} ${mix}`;
+}
+
+/**
+ * Validate one pack and return the runtime document plus sprite markup.
+ * Throws an Error whose message lists every failed check.
+ */
+export function buildPack(id, { root = repoRoot, packDir } = {}) {
+  const dir = packDir ?? join(root, "data", id);
+  const errors = [];
+  const fail = (msg) => errors.push(msg);
+  const manifest = readJson(join(dir, "pack.json"));
+  const copy = readJson(join(dir, "copy.json"));
+  if (manifest.id !== id) fail(`pack.json id is ${manifest.id}, expected ${id}`);
+  if (!Array.isArray(manifest.month_names) || manifest.month_names.length !== 12) fail("month_names must have 12 entries");
+  if (!Array.isArray(manifest.seasons) || manifest.seasons.length !== 12) fail("seasons must have 12 entries");
+  const roleByLetter = manifest.state_roles ?? {};
+  for (const role of Object.values(roleByLetter)) {
+    if (!ROLES.includes(role)) fail(`state_roles maps to unknown role ${role}`);
+  }
+  const categories = manifest.categories ?? [];
+  const categoryById = new Map(categories.map((c) => [c.id, c]));
+  const everyday = new Set(categories.filter((c) => c.everyday).map((c) => c.id));
+
+  const calendarRows = parseCsv(readFileSync(join(dir, "produce_calendar.csv"), "utf8"));
+  const seen = new Set();
+  const items = [];
+  for (const r of calendarRows) {
+    if (!r.item) { fail("calendar row missing item"); continue; }
+    if (seen.has(r.item)) fail(`duplicate item ${r.item}`);
+    seen.add(r.item);
+    if (r.item.toLowerCase() === "cranberry") fail("cranberry is not a domestic season and must not be a row");
+    if (!categoryById.has(r.category)) fail(`${r.item} has unknown category ${r.category}`);
+    const letters = MONTH_KEYS.map((m) => r[m]);
+    if (letters.some((s) => !(s in roleByLetter))) fail(`bad month state on ${r.item}`);
+    const months = letters.map((s) => roleByLetter[s]);
+    const gridPeaks = MONTH_KEYS.filter((_, i) => months[i] === "peak");
+    const listedPeaks = r.peak_months ? r.peak_months.split(/\s+/).filter(Boolean) : [];
+    if (listedPeaks.length && listedPeaks.join() !== gridPeaks.join()) {
+      fail(`${r.item} peak_months disagrees with peak-role cells`);
+    }
+    if (/no meaningful\s+(uk|domestic)\s+season/i.test(r.regions_notes || "")) {
+      fail(`${r.item} regions note says there is no meaningful domestic season`);
+    }
+    let stored = null;
+    if (r.stored_notes) {
+      try { stored = JSON.parse(r.stored_notes); }
+      catch { fail(`${r.item} stored_notes is not JSON`); }
+    }
+    items.push({
+      item: r.item,
+      category: r.category,
+      months,
+      stored_notes: stored,
+      regions_notes: r.regions_notes || null,
+      specialist_sources: r.specialist_sources ? r.specialist_sources.split(/;\s*/).filter(Boolean) : [],
+    });
+  }
+  if (manifest.expect_items != null && items.length !== manifest.expect_items) {
+    fail(`expected ${manifest.expect_items} items, got ${items.length}`);
+  }
+  const byName = new Map(items.map((it) => [it.item, it]));
+  const byLower = new Map(items.map((it) => [it.item.toLowerCase(), it.item]));
+
+  const staplesPath = join(dir, "staples.txt");
+  const staples = new Set();
+  if (existsSync(staplesPath)) {
+    for (const line of readFileSync(staplesPath, "utf8").split(/\r?\n/)) {
+      const name = line.trim();
+      if (!name || name.startsWith("#")) continue;
+      if (!byName.has(name)) fail(`staple "${name}" is not a calendar item`);
+      staples.add(name);
+    }
+  }
+  const exclude = new Set(manifest.sticker_exclude ?? []);
+  for (const name of exclude) {
+    if (!byName.has(name)) fail(`sticker_exclude "${name}" is not a calendar item`);
   }
 
-  const arrivals = [...peak, ...inSeason].filter((it) => !IN_SEASON.has(state(it, -1)));
-  const farewells = [...peak, ...inSeason].filter((it) => !IN_SEASON.has(state(it, 1)) && !arrivals.includes(it));
+  const aliasPath = join(dir, "aliases.csv");
+  const aliases = new Map();
+  if (existsSync(aliasPath)) {
+    for (const row of parseCsv(readFileSync(aliasPath, "utf8"))) {
+      const from = (row.from || "").trim().toLowerCase();
+      const item = (row.item || "").trim();
+      if (!from || !byName.has(item)) fail(`alias "${row.from}" misses calendar item "${row.item}"`);
+      else aliases.set(from, item.toLowerCase());
+    }
+  }
 
-  const categoryCounts = {};
-  for (const it of peak) categoryCounts[it.category] = (categoryCounts[it.category] || 0) + 1;
-  const [leadCategory, leadCount] = Object.entries(categoryCounts).sort((a, b) => b[1] - a[1])[0];
+  const recipePath = join(dir, "recipes.csv");
+  const recipeRows = existsSync(recipePath) ? parseCsv(readFileSync(recipePath, "utf8")) : [];
+  const recipes = [];
+  const recipeMonths = new Set();
+  for (const r of recipeRows) {
+    const monthIndex = manifest.month_names.findIndex((n) => n.toLowerCase() === String(r.month).toLowerCase());
+    if (monthIndex < 0) { fail(`bad recipe month ${r.month}`); continue; }
+    if (recipeMonths.has(monthIndex)) fail(`more than one recipe for ${r.month}`);
+    recipeMonths.add(monthIndex);
+    const parts = r.in_season_produce_used ? r.in_season_produce_used.split(/,\s*/) : [];
+    const produce = [];
+    for (const raw of parts) {
+      const resolved = resolveIngredient(raw, byLower, { aliasProfile: manifest.alias_profile, aliases });
+      if (!resolved) { fail(`recipe ingredient "${raw}" does not resolve to a calendar item`); continue; }
+      const state = byName.get(resolved.item).months[monthIndex];
+      if (state !== "peak" && state !== "in") {
+        fail(`${r.recipe}: ${resolved.item} is "${state}" in ${r.month}, expected peak or in season`);
+      }
+      produce.push(resolved);
+    }
+    recipes.push({
+      month: monthIndex,
+      title: r.recipe,
+      produce,
+      source_name: r.source_name,
+      source_url: r.source_url,
+    });
+  }
+  if (manifest.recipe_rule === "one_per_month") {
+    for (let m = 0; m < 12; m++) {
+      if (!recipeMonths.has(m)) fail(`missing recipe for ${manifest.month_names[m]}`);
+    }
+  }
 
-  return {
-    key,
-    name: MONTH_NAMES[m],
-    counts: { peak: peak.length, in: inSeason.length, edge: edge.length },
-    lead: { category: leadCategory, count: leadCount },
-    wheel: wheel.map((it) => it.item),
-    peak: roundRobinByCategory(peak).map((it) => it.item),
-    in: roundRobinByCategory(inSeason).map((it) => it.item),
-    edge: edge.map((it) => it.item),
-    arrivals: arrivals.slice(0, 4).map((it) => it.item),
-    farewells: farewells.slice(0, 4).map((it) => it.item),
+  const bindingPath = join(root, "art", "bindings", `${id}.json`);
+  if (!existsSync(bindingPath)) fail(`missing art bindings art/bindings/${id}.json`);
+  const bindings = existsSync(bindingPath) ? readJson(bindingPath) : {};
+  const knownArchetypes = new Set(archetypeIds());
+  for (const it of items) {
+    const binding = bindings[it.item];
+    if (!binding) fail(`${it.item} has no archetype binding`);
+    else if (!knownArchetypes.has(binding.archetype)) fail(`${it.item} binds unknown archetype ${binding.archetype}`);
+  }
+
+  if (errors.length) {
+    const error = new Error(errors.map((e) => `build-data: ${e}`).join("\n"));
+    error.errors = errors;
+    throw error;
+  }
+
+  const role = (it, m, offset = 0) => it.months[(m + offset + 12) % 12];
+  const seasonLength = (it) => it.months.filter((s) => s === "peak" || s === "in").length;
+  const rankedByMonth = [];
+  const months = MONTH_KEYS.map((key, m) => {
+    const peak = items.filter((it) => role(it, m) === "peak");
+    const inSeason = items.filter((it) => role(it, m) === "in");
+    const edge = items.filter((it) => role(it, m) === "edge");
+    const recipe = recipes.find((r) => r.month === m);
+    const stars = (recipe?.produce ?? []).map((p) => byName.get(p.item));
+    const score = (it) =>
+      (staples.has(it.item) ? 4 : 0) +
+      (stars.includes(it) ? 3 : 0) +
+      (role(it, m) === "peak" ? 2 : 0) +
+      (everyday.has(it.category) ? 1 : 0);
+    const pool = [...peak, ...inSeason].filter((it) => !exclude.has(it.item));
+    const ranked = rankCandidates(pool, score, seasonLength);
+    rankedByMonth.push(ranked);
+    const wheel = ranked.slice(0, WHEEL_COUNT);
+    for (const star of stars.filter((s) => s && !exclude.has(s.item) && !wheel.includes(s))) {
+      const slot = wheel.findLastIndex((it) => !stars.includes(it));
+      if (slot >= 0) wheel[slot] = star;
+    }
+    const arrivals = [...peak, ...inSeason].filter((it) => role(it, m, -1) !== "peak" && role(it, m, -1) !== "in");
+    const farewells = [...peak, ...inSeason].filter((it) => {
+      const next = role(it, m, 1);
+      return next !== "peak" && next !== "in" && !arrivals.includes(it);
+    });
+    const categoryCounts = new Map();
+    for (const it of peak) categoryCounts.set(it.category, (categoryCounts.get(it.category) || 0) + 1);
+    let lead = null;
+    for (const [category, count] of categoryCounts) {
+      if (!lead || count > lead.count) lead = { category, count };
+    }
+    if (!lead && manifest.require_peak_every_month) {
+      throw new Error(`build-data: ${manifest.month_names[m]} has no peak-role item`);
+    }
+    return {
+      key,
+      name: manifest.month_names[m],
+      counts: { peak: peak.length, in: inSeason.length, edge: edge.length },
+      lead,
+      wheel: wheel.map((it) => it.item),
+      peak: peak.map((it) => it.item),
+      in: inSeason.map((it) => it.item),
+      edge: edge.map((it) => it.item),
+      arrivals: arrivals.slice(0, 4).map((it) => it.item),
+      farewells: farewells.slice(0, 4).map((it) => it.item),
+    };
+  });
+
+  const quietUses = new Map();
+  const use = (m, item) => {
+    months[m].quiet.push(item);
+    quietUses.set(item, (quietUses.get(item) || 0) + 1);
   };
-});
+  months.forEach((mo, m) => {
+    mo.quiet = [];
+    const recipe = recipes.find((r) => r.month === m);
+    for (const p of recipe?.produce ?? []) {
+      if (exclude.has(p.item) || mo.quiet.includes(p.item) || mo.quiet.length >= QUIET_COUNT) continue;
+      use(m, p.item);
+    }
+  });
+  const draftOrder = MONTH_KEYS.map((_, i) => i).sort((a, b) => rankedByMonth[a].length - rankedByMonth[b].length || a - b);
+  for (let round = 0; round < QUIET_COUNT; round++) {
+    for (const m of draftOrder) {
+      const quiet = months[m].quiet;
+      if (quiet.length >= QUIET_COUNT) continue;
+      const options = rankedByMonth[m].map((it) => it.item).filter((n) => !quiet.includes(n));
+      if (!options.length) continue;
+      const least = Math.min(...options.map((n) => quietUses.get(n) || 0));
+      use(m, options.find((n) => (quietUses.get(n) || 0) === least));
+    }
+  }
+  for (const [m, mo] of months.entries()) {
+    const rank = new Map(rankedByMonth[m].map((it, i) => [it.item, i]));
+    mo.quiet.sort((a, b) => (rank.get(a) ?? 999) - (rank.get(b) ?? 999));
+  }
+  const quietRepeats = [...quietUses].filter(([, n]) => n > 1);
 
-// Quiet wedges avoid repeating stickers used on other quiet wedges (see DESIGN.md, "Variety on quiet wedges").
-// Each month first gets its own recipe ingredients, then months draft one sticker per round (thinnest month
-// first), taking their most popular item not yet on another quiet wedge. A repeat only happens when a month
-// has no unused option left, and then it takes the least-repeated one.
-const quietUses = new Map();
-const use = (m, item) => {
-  months[m].quiet.push(item);
-  quietUses.set(item, (quietUses.get(item) || 0) + 1);
-};
-months.forEach((mo, m) => {
-  mo.quiet = [];
-  for (const p of recipes.find((r) => r.month === m).produce) use(m, p.item);
-});
-const draftOrder = MONTHS.map((_, i) => i).sort((a, b) => rankedByMonth[a].length - rankedByMonth[b].length || a - b);
-for (let round = 0; round < QUIET_COUNT; round++) {
-  for (const m of draftOrder) {
-    const quiet = months[m].quiet;
-    if (quiet.length >= QUIET_COUNT) continue;
-    const options = rankedByMonth[m].map((it) => it.item).filter((n) => !quiet.includes(n));
-    const least = Math.min(...options.map((n) => quietUses.get(n) || 0));
-    use(m, options.find((n) => (quietUses.get(n) || 0) === least));
+  for (let m = 0; m < 12; m++) {
+    const prev = months[(m + 11) % 12];
+    months[m].blurb = composeBlurb(months[m], prev, months, byName, categories, copy.blurb);
+  }
+
+  const pack = {
+    id: manifest.id,
+    name: manifest.name,
+    locale: manifest.locale,
+    timezone: manifest.timezone,
+    title: manifest.title,
+    tagline: manifest.tagline,
+    month_names: manifest.month_names,
+    seasons: manifest.seasons,
+    categories: categories.map(({ id: categoryId, label, one, plural }) => ({ id: categoryId, label, one, plural })),
+    attribution: manifest.attribution,
+    thin_sheet: manifest.thin_sheet,
+    copy,
+    items,
+    recipes,
+    months,
+  };
+  const symbols = items.map((it) => {
+    const binding = bindings[it.item];
+    return symbolPair(it.item, binding.archetype, binding.colours);
+  });
+  const sprite = `<svg xmlns="http://www.w3.org/2000/svg" id="sprite-root">\n<defs>\n${symbols.join("\n")}\n</defs>\n</svg>\n`;
+  return { pack, sprite, quietRepeats, registryName: manifest.name };
+}
+
+function ogSvg(sprite) {
+  const defs = sprite.match(/<defs>[\s\S]*<\/defs>/)?.[0] ?? "<defs></defs>";
+  const ids = [...sprite.matchAll(/id="(art-[^"]+)"/g)].map((m) => m[1]);
+  const picks = [0, 8, 16, 24, 32, 40].map((i) => ids[i]).filter(Boolean);
+  const uses = picks.map((id, i) => {
+    const x = 150 + i * 160;
+    return `<use href="#${id}" x="${x}" y="180" width="130" height="130"/>`;
+  }).join("\n  ");
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#fff7e8"/>
+  <circle cx="600" cy="250" r="210" fill="#fff3dd" stroke="#2b2340" stroke-width="8"/>
+  ${defs}
+  ${uses}
+  <text x="600" y="500" text-anchor="middle" font-family="Nunito, sans-serif" font-size="54" font-weight="800" fill="#2b2340">The year-wheel</text>
+  <text x="600" y="555" text-anchor="middle" font-family="Nunito, sans-serif" font-size="28" font-weight="700" fill="#625879">What's growing, month by month</text>
+</svg>
+`;
+}
+
+function writeOutputs(root, id, built) {
+  const dataDir = join(root, "site", "data");
+  mkdirSync(dataDir, { recursive: true });
+  writeFileSync(join(dataDir, `${id}.json`), `${JSON.stringify(built.pack, null, 2)}\n`);
+  const registry = [{ id, name: built.registryName, status: "shipped" }];
+  writeFileSync(join(dataDir, "registry.json"), `${JSON.stringify(registry, null, 2)}\n`);
+  writeFileSync(join(root, "site", "sprites.svg"), built.sprite);
+  writeFileSync(join(root, "site", "og.svg"), ogSvg(built.sprite));
+}
+
+const isCli = process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
+
+if (isCli) {
+  const id = process.argv[2];
+  if (!id) {
+    console.error("usage: node scripts/build-data.mjs <pack-id>");
+    process.exit(1);
+  }
+  try {
+    const built = buildPack(id);
+    writeOutputs(repoRoot, id, built);
+    const { pack, quietRepeats } = built;
+    console.log(`build-data: ${pack.items.length} items, ${pack.recipes.length} recipes -> site/data/${id}.json`);
+    for (const mo of pack.months) {
+      console.log(`  ${mo.key}: peak ${mo.counts.peak} in ${mo.counts.in} edge ${mo.counts.edge}`);
+    }
+    console.log(`  quiet-wedge repeats: ${quietRepeats.length ? quietRepeats.map(([n, k]) => `${n} x${k}`).join(", ") : "none"}`);
+  } catch (err) {
+    console.error(err.message);
+    process.exit(1);
   }
 }
-for (const [m, mo] of months.entries()) {
-  const rank = new Map(rankedByMonth[m].map((it, i) => [it.item, i]));
-  mo.quiet.sort((a, b) => rank.get(a) - rank.get(b));
-}
-const quietRepeats = [...quietUses].filter(([, n]) => n > 1);
-
-const out = {
-  generated_from: "data/uk (UK pass-2 corpus, 19 Sep 2026)",
-  states: { P: "peak season", I: "in season (UK-grown available)", T: "edge of season or single-source", ".": "out of UK season" },
-  monthKeys: MONTHS,
-  items,
-  recipes,
-  months,
-};
-
-writeFileSync(
-  join(root, "prototype/data.js"),
-  `// Generated by scripts/build-data.mjs from data/uk/. Do not edit by hand.\nwindow.UK_WHEEL = ${JSON.stringify(out)};\n`,
-);
-console.log(`build-data: ${items.length} items, ${recipes.length} recipes, 12 months -> prototype/data.js`);
-for (const mo of months) console.log(`  ${mo.key}: P${mo.counts.peak} I${mo.counts.in} T${mo.counts.edge}\n    quiet:  ${mo.quiet.join(", ")}\n    active: ${mo.wheel.join(", ")}`);
-console.log(`  quiet-wedge repeats: ${quietRepeats.length ? quietRepeats.map(([n, k]) => `${n} x${k}`).join(", ") : "none"}`);
