@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Drives headless Chrome over CDP to screenshot prototype states.
-// Usage: node scripts/shoot.mjs <url> <out.png> <width> <height> [js-to-run-before-shot] [waitMs]
+// Usage: [SCALE=2] [REDUCED=1] node scripts/shoot.mjs <url> <out.png> <width> <height> [js-to-run-before-shot] [waitMs]
 import { spawn } from "node:child_process";
 import { writeFileSync, mkdtempSync } from "node:fs";
 import { tmpdir } from "node:os";
@@ -35,7 +35,8 @@ ws.addEventListener("message", (e) => {
 });
 const send = (method, params = {}) => new Promise((r) => { const n = ++id; pending.set(n, r); ws.send(JSON.stringify({ id: n, method, params })); });
 
-await send("Emulation.setDeviceMetricsOverride", { width: +width, height: +height, deviceScaleFactor: 1, mobile: +width < 600 });
+await send("Emulation.setDeviceMetricsOverride", { width: +width, height: +height, deviceScaleFactor: +(process.env.SCALE || 1), mobile: +width < 600 });
+if (process.env.REDUCED) await send("Emulation.setEmulatedMedia", { features: [{ name: "prefers-reduced-motion", value: "reduce" }] });
 await send("Page.enable");
 await send("Runtime.enable");
 const errors = [];
