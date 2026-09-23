@@ -84,24 +84,9 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.05; m
 /* ---------- wheel ---------- */
 .plate-rim { fill: #fffdf6; stroke: var(--ink); stroke-width: 5; filter: drop-shadow(0 10px 0 rgba(43, 35, 64, 0.14)); }
 .plate-inner { fill: #fff3dd; stroke: var(--ink); stroke-width: 4; }
-.spin {
-  transform-box: view-box; transform-origin: 0 0;
-  transform: rotate(calc(var(--rot, 0) * 1deg));
-  transition: transform 0.85s var(--spring);
-}
-.upright {
-  transform-box: fill-box; transform-origin: center;
-  transform: rotate(calc(var(--rot, 0) * -1deg));
-  transition: transform 0.85s var(--spring);
-}
-#wheel.intro .spin, #wheel.intro .upright { transition-duration: 1.6s; transition-timing-function: cubic-bezier(0.2, 1.25, 0.4, 1); }
-#wheel.no-anim .spin, #wheel.no-anim .upright { transition: none; }
-.bbox { fill: none; stroke: none; }
-
-.seg { cursor: pointer; outline: none; transition: transform 0.5s var(--spring); }
+.seg { cursor: pointer; outline: none; }
 .seg-bg { fill: var(--tint); stroke: #fff3dd; stroke-width: 3; transition: filter 0.3s, stroke 0.3s; }
 .seg:hover .seg-bg { filter: brightness(1.04) saturate(1.15); }
-.seg.is-selected { transform: translate(var(--lx), var(--ly)); }
 .seg.is-selected .seg-bg { stroke: var(--ink); stroke-width: 5; filter: saturate(1.35) drop-shadow(0 8px 0 rgba(43, 35, 64, 0.22)); }
 .seg:focus-visible .seg-bg { stroke: var(--sky); stroke-width: 7; }
 .today-halo { fill: none; stroke: var(--tomato); stroke-width: 5; stroke-dasharray: 14 12; stroke-linecap: round; animation: march 1.4s linear infinite; pointer-events: none; }

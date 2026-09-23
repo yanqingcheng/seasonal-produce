@@ -36,18 +36,30 @@
   const today = monthFromQuery() ?? new Date().getMonth();
 
   // ---------- geometry ----------
-  const R_IN = 150, R_OUT = 442, R_LABEL = 478;
+  // The selected month's wedge is ACTIVE_WEIGHT times wider than a quiet month's (96° vs 24°),
+  // reaches further out, and carries every sticker in its ranked `wheel` list.
+  const R_IN = 150, R_OUT = 442, R_OUT_ACTIVE = 476, R_LABEL = 478, R_LABEL_ACTIVE = 512;
+  const ACTIVE_WEIGHT = 4;
+  const UNIT = 360 / (11 + ACTIVE_WEIGHT);
   const polar = (r, deg) => {
     const a = (deg * Math.PI) / 180;
     return [r * Math.sin(a), -r * Math.cos(a)];
   };
-  function wedge(m) {
-    const a0 = m * 30 - 15 + 0.7, a1 = m * 30 + 15 - 0.7;
-    const [x0, y0] = polar(R_OUT, a0), [x1, y1] = polar(R_OUT, a1);
+  const lerp = (a, b, t) => a + (b - a) * t;
+  const f1 = (v) => v.toFixed(1);
+  function wedge(c, hw, rOut) {
+    const a0 = c - hw + 0.7, a1 = c + hw - 0.7;
+    const [x0, y0] = polar(rOut, a0), [x1, y1] = polar(rOut, a1);
     const [x2, y2] = polar(R_IN, a1), [x3, y3] = polar(R_IN, a0);
-    return `M${x0} ${y0}A${R_OUT} ${R_OUT} 0 0 1 ${x1} ${y1}L${x2} ${y2}A${R_IN} ${R_IN} 0 0 0 ${x3} ${y3}Z`;
+    return `M${f1(x0)} ${f1(y0)}A${rOut} ${rOut} 0 0 1 ${f1(x1)} ${f1(y1)}L${f1(x2)} ${f1(y2)}A${R_IN} ${R_IN} 0 0 0 ${f1(x3)} ${f1(y3)}Z`;
   }
-  const SLOTS = [[215, 0, 92], [300, -8.2, 76], [300, 8.2, 76], [388, -8, 88], [388, 8, 88]];
+  // Slots are [radius, fraction of the wedge's half-angle, size]. A quiet wedge shows the top 5.
+  const QUIET_SLOTS = [[222, 0, 66], [300, -0.5, 58], [300, 0.5, 58], [386, -0.52, 68], [386, 0.52, 68]];
+  const ACTIVE_ROWS = [{ r: 212, n: 4, spread: 0.7, size: 70 }, { r: 290, n: 5, spread: 0.76, size: 82 }, { r: 368, n: 6, spread: 0.8, size: 86 }, { r: 440, n: 6, spread: 0.8, size: 74 }];
+  // Higher-ranked items get the most central, roomiest slots.
+  const ACTIVE_SLOTS = ACTIVE_ROWS.flatMap(({ r, n, spread, size }, row) =>
+    Array.from({ length: n }, (_, k) => [r, n === 1 ? 0 : lerp(-spread, spread, k / (n - 1)), size, row]))
+    .sort((a, b) => Math.abs(a[1]) + [0.2, 0, 0.05, 0.3][a[3]] - (Math.abs(b[1]) + [0.2, 0, 0.05, 0.3][b[3]]));
 
   function scallops(r, bumps, depth) {
     let d = "";
@@ -62,43 +74,100 @@
 
   // ---------- wheel ----------
   const wheel = $("#wheel");
-  let rot = 0;
   let selected = today;
-
-  function uprightGroup(x, y, size, inner, cls = "") {
-    return `<g transform="translate(${x.toFixed(1)} ${y.toFixed(1)})"><g class="upright ${cls}"><rect class="bbox" x="${-size / 2}" y="${-size / 2}" width="${size}" height="${size}"/>${inner}</g></g>`;
-  }
+  const segEls = [];
+  let layout = { weights: D.months.map(() => 1), start: 0 };
+  let tween = null;
 
   function buildWheel() {
     const segs = D.months.map((mo, m) => {
-      const stickers = mo.heroes.map((item, i) => {
-        const [r, off, size] = SLOTS[i];
-        const [x, y] = polar(r, m * 30 + off);
-        const art = `<g class="pop" style="--i:${i};--m:${(m - today + 12) % 12}"><g class="bob" style="--d:${(i * 0.37 + m * 0.21) % 2}s"><g class="jig" data-item="${esc(item)}">${sticker(item, `x="${-size / 2}" y="${-size / 2}" width="${size}" height="${size}"`)}</g></g></g>`;
-        return uprightGroup(x, y, size, art);
-      }).join("");
-      const [lx, ly] = polar(R_LABEL, m * 30);
+      const stickers = mo.wheel.map((item, i) =>
+        `<g class="slot"><g class="pop" style="--i:${i};--m:${(m - today + 12) % 12}"><g class="bob" style="--d:${(i * 0.37 + m * 0.21) % 2}s"><g class="jig" data-item="${esc(item)}">${sticker(item, `x="-50" y="-50" width="100" height="100"`)}</g></g></g></g>`).join("");
       const isToday = m === today;
       const label = isToday
         ? `<g class="sun"><circle r="40" class="sun-rays"/></g><rect x="-44" y="-22" width="88" height="44" rx="22" class="today-pill"/><text class="seg-label" y="2">${SHORT[m].toUpperCase()}</text>`
         : `<text class="seg-label" y="2">${SHORT[m].toUpperCase()}</text>`;
-      const [dx, dy] = polar(16, m * 30);
-      return `<g class="seg${isToday ? " is-today" : ""}" data-m="${m}" tabindex="0" role="button" aria-label="${mo.name}: ${mo.counts.peak} at peak, ${mo.counts.in} more in season${isToday ? " (this month)" : ""}" style="--tint:${TINTS[m]};--lx:${dx.toFixed(1)}px;--ly:${dy.toFixed(1)}px">
-        <path class="seg-bg" d="${wedge(m)}"/>
-        ${isToday ? `<path class="today-halo" d="${wedge(m)}"/>` : ""}
+      return `<g class="seg${isToday ? " is-today" : ""}" data-m="${m}" tabindex="0" role="button" aria-label="${mo.name}: ${mo.counts.peak} at peak, ${mo.counts.in} more in season${isToday ? " (this month)" : ""}" style="--tint:${TINTS[m]}">
+        <path class="seg-bg"/>
+        ${isToday ? `<path class="today-halo"/>` : ""}
         ${stickers}
-        ${uprightGroup(lx, ly, 96, label, "label")}
+        <g class="label">${label}</g>
       </g>`;
     }).join("");
 
     wheel.innerHTML = `
       <path class="plate-rim" d="${scallops(508, 48, 7)}"/>
       <circle class="plate-inner" r="${R_OUT + 4}"/>
-      <g class="spin" id="spin">${segs}</g>
+      <g id="spin">${segs}</g>
       <circle class="hub-ring" r="${R_IN - 8}"/>
       <g class="hub" id="hub"></g>
       <g class="pointer"><path d="M-26 -136L0 -178L26 -136Z"/><circle cx="0" cy="-150" r="5" class="pointer-dot"/></g>
       <g id="burst"></g>`;
+    wheel.querySelectorAll(".seg").forEach((g) => segEls.push({
+      g,
+      bg: $(".seg-bg", g),
+      halo: $(".today-halo", g),
+      slots: [...g.querySelectorAll(".slot")],
+      label: $(".label", g),
+    }));
+  }
+
+  function draw({ weights, start }) {
+    let acc = start;
+    segEls.forEach((s, m) => {
+      const hw = (weights[m] * UNIT) / 2;
+      const c = acc + hw;
+      acc += 2 * hw;
+      const e = (weights[m] - 1) / (ACTIVE_WEIGHT - 1);
+      const d = wedge(c, hw, lerp(R_OUT, R_OUT_ACTIVE, e));
+      s.bg.setAttribute("d", d);
+      if (s.halo) s.halo.setAttribute("d", d);
+      s.slots.forEach((el, i) => {
+        const a = ACTIVE_SLOTS[i];
+        const q = QUIET_SLOTS[i];
+        const [r, frac, size] = q ? [lerp(q[0], a[0], e), lerp(q[1], a[1], e), lerp(q[2], a[2], e)] : [a[0], a[1], a[2] * e];
+        if (size < 2) { el.setAttribute("display", "none"); return; }
+        el.removeAttribute("display");
+        const [x, y] = polar(r, c + frac * hw);
+        el.setAttribute("transform", `translate(${f1(x)} ${f1(y)}) scale(${(size / 100).toFixed(3)})`);
+      });
+      const [lx, ly] = polar(lerp(R_LABEL, R_LABEL_ACTIVE, e), c);
+      s.label.setAttribute("transform", `translate(${f1(lx)} ${f1(ly)})`);
+    });
+  }
+
+  function targetLayout(m) {
+    const weights = D.months.map((_, k) => (k === m ? ACTIVE_WEIGHT : 1));
+    return { weights, start: -(m + ACTIVE_WEIGHT / 2) * UNIT };
+  }
+
+  const easeOutCubic = (t) => 1 - (1 - t) ** 3;
+  const easeOutBack = (k) => (t) => 1 + (k + 1) * (t - 1) ** 3 + k * (t - 1) ** 2;
+
+  // Rotation springs along the shortest path while the wedges trade width, so the new month
+  // swells into the pointer as the old one shrinks back.
+  function animateTo(target, { duration = 850, overshoot = 1.4 } = {}) {
+    if (tween) cancelAnimationFrame(tween.raf);
+    const from = { weights: [...layout.weights], start: layout.start };
+    const delta = ((((target.start - from.start) % 360) + 540) % 360) - 180;
+    if (reducedMotion.matches || duration === 0) {
+      layout = target;
+      draw(layout);
+      return;
+    }
+    const spin = easeOutBack(overshoot);
+    const t0 = performance.now();
+    const step = (now) => {
+      const t = Math.min(1, (now - t0) / duration);
+      const tw = easeOutCubic(t);
+      layout = {
+        weights: from.weights.map((w, k) => lerp(w, target.weights[k], tw)),
+        start: from.start + delta * spin(t),
+      };
+      draw(layout);
+      tween = t < 1 ? { raf: requestAnimationFrame(step) } : null;
+    };
+    tween = { raf: requestAnimationFrame(step) };
   }
 
   function renderHub() {
@@ -109,12 +178,6 @@
       <text class="hub-count" y="56">${mo.counts.peak} at peak</text>
       ${selected === today ? `<text class="hub-today" y="88">this month</text>` : ""}
     </g>`;
-  }
-
-  function setRotation(target, intro) {
-    const delta = ((((target - rot) % 360) + 540) % 360) - 180;
-    rot = intro ? target : rot + delta;
-    wheel.style.setProperty("--rot", rot);
   }
 
   function burst() {
@@ -128,7 +191,7 @@
       const shape = i % 3 === 0
         ? `<path d="M0 -9L2.6 -2.6L9 0L2.6 2.6L0 9L-2.6 2.6L-9 0L-2.6 -2.6Z"/>`
         : `<circle r="${5 + Math.random() * 5}"/>`;
-      dots += `<g transform="translate(0 -452)"><g class="burst-dot" style="--dx:${(Math.cos(a) * dist).toFixed(0)}px;--dy:${(Math.sin(a) * dist).toFixed(0)}px;fill:${colours[i % colours.length]}">${shape}</g></g>`;
+      dots += `<g transform="translate(0 -${R_OUT_ACTIVE + 8})"><g class="burst-dot" style="--dx:${(Math.cos(a) * dist).toFixed(0)}px;--dy:${(Math.sin(a) * dist).toFixed(0)}px;fill:${colours[i % colours.length]}">${shape}</g></g>`;
     }
     g.innerHTML = dots;
   }
@@ -243,8 +306,12 @@
   function select(m, { intro = false } = {}) {
     const changed = m !== selected || intro;
     selected = m;
-    setRotation(-m * 30, intro);
-    wheel.querySelectorAll(".seg").forEach((g) => g.classList.toggle("is-selected", Number(g.dataset.m) === m));
+    const refocus = document.activeElement === segEls[m].g;
+    segEls.forEach((s, k) => s.g.classList.toggle("is-selected", k === m));
+    // Paint the enlarged wedge last so its stickers and outline sit above its neighbours.
+    $("#spin").appendChild(segEls[m].g);
+    if (refocus) segEls[m].g.focus({ preventScroll: true });
+    animateTo(targetLayout(m), intro ? { duration: 1600, overshoot: 1.9 } : undefined);
     renderHub();
     renderRail();
     renderTodayButton();
@@ -373,20 +440,17 @@
 
   // ---------- boot ----------
   $("#sprite").innerHTML = buildSprite(D.items);
-  $("#brand-mark").innerHTML = sticker(D.months[today].heroes[0]);
+  $("#brand-mark").innerHTML = sticker(D.months[today].wheel[0]);
   buildWheel();
   bind();
   if (reducedMotion.matches) {
     select(today, { intro: true });
   } else {
-    wheel.classList.add("no-anim");
-    wheel.style.setProperty("--rot", -today * 30 + 200);
-    rot = -today * 30 + 200;
-    requestAnimationFrame(() => requestAnimationFrame(() => {
-      wheel.classList.remove("no-anim");
-      wheel.classList.add("intro");
-      select(today, { intro: true });
-      setTimeout(() => wheel.classList.remove("intro"), 1800);
-    }));
+    // Start 170° round with every wedge quiet, so the arrival spin also swells today's wedge.
+    layout = { weights: D.months.map(() => 1), start: targetLayout(today).start + 170 };
+    draw(layout);
+    wheel.classList.add("intro");
+    select(today, { intro: true });
+    setTimeout(() => wheel.classList.remove("intro"), 2600);
   }
 })();
