@@ -22,12 +22,21 @@ This exhibit sits in Qing's Animal Crossing–style museum of loves. It should m
 - It must feel **dynamic and interactive**, while still **slick and responsive**.
 - The goal: make people **feel joy about their food**.
 
+### Qing's follow-up (2026-09-23): make it busier
+
+**Qing, seat chat, 2026-09-23 (as relayed in the Stage 3 iteration brief, not verbatim):** she likes that it's cute but wants it **busier**. Her proposal:
+
+- **Enlarge the highlighted / selected month segment** so more of that month's produce can sit on the wheel itself.
+- When packing items onto the enlarged segment, **prioritise common and popular** produce, not obscure or niche items first.
+
+That is now the "busy active segment" rule (see [Wheel anatomy](#wheel-anatomy)).
+
 ### Hard rules that follow from it
 
 1. **No fake-realistic food.** No photos, stock imagery, photoreal renders, AI "food photography", realistic textures, subsurface shine or gradient-modelled volume. If a drawing starts to look like real food, simplify it until it doesn't.
 2. **Stylised, and one style everywhere.** Every produce item, at every size, is drawn in the same system (below).
 3. **Joy is a requirement.** Every screen should have at least one thing that moves, smiles or responds.
-4. **Slick beats busy.** Motion is springy but short, never blocks input, and switches off under `prefers-reduced-motion`.
+4. **Busy, but slick.** The board should feel full of food (Qing's follow-up), but motion stays springy and short, never blocks input, and switches off under `prefers-reduced-motion`. Busyness comes from more stickers, not more simultaneous animation.
 
 ## Chosen visual system: "Sticker Garden"
 
@@ -44,7 +53,7 @@ Every produce item is a **die-cut sticker**:
 
 - `prototype/art.js` holds about 40 hand-drawn **archetypes**: round fruit, stone fruit, pear, berry, cluster, currant strig, cherry pair, root, bulb-root, potato, leafy bunch, rosette, head, cauliflower, broccoli, asparagus, rhubarb, celery, leek, spring onion, pod, beans, pumpkin, butternut, long veg, aubergine, corn, mushroom, nuts, potted herb (four leaf styles), wild garlic, nettle, elderflower, courgette flower, nasturtium, onion, garlic, fennel, pepper, chilli, artichoke, samphire and chicory.
 - Each of the **108 corpus items** maps to one archetype plus a colour set. Examples: plum and damson share the stone-fruit shape but differ in colour; forced rhubarb is pink with small yellow leaves, while maincrop rhubarb is red with a big green leaf.
-- Art is built once into an SVG `<symbol>` sprite with two symbols per item: `art-*` (colour) and `cut-*` (silhouette for the die-cut and shadow). Everything reuses them with `<use>`, so the wheel's 60 stickers cost almost nothing.
+- Art is built once into an SVG `<symbol>` sprite with two symbols per item: `art-*` (colour) and `cut-*` (silhouette for the die-cut and shadow). Everything reuses them with `<use>`, so the wheel's stickers (21 per month in the DOM, of which about 76 are visible at once) stay cheap.
 - Herbs sit in little terracotta pots, so the herb family reads at a glance.
 - Art only encodes *what the item is*. It never encodes data. Varieties, taste, size and nutrition are not in the corpus, and the drawings don't imply them.
 
@@ -78,19 +87,42 @@ Cards, tiles, chips and buttons use a **3 px ink border and a solid offset "stic
 ### Wheel anatomy
 
 - A scalloped **plate** holds 12 wedge **segments**, tinted by month.
-- Each segment carries **5 stickers**, the month's most distinctive produce, chosen in this order:
-  1. the month's recipe ingredients;
-  2. items at peak, shortest UK season first;
-  3. items in season.
-  Items whose corpus note says UK supply is mostly imported (e.g. cranberry) are never used as stickers. They still appear in the month's lists.
 - A **hub** shows the selected month, its season and its peak count. A tomato **pointer notch** on the hub marks the selection.
-- Month **labels** stay upright on the rim while the wheel turns (they counter-rotate).
+- Month **labels** sit on the rim and are always upright (they are positioned, never rotated).
+
+#### Busy active segment
+
+- The **selected month's wedge is 4× as wide as a quiet month's**: 96° against 24° for each of the other 11. It also reaches further out (radius 476 vs 442, breaking over the plate's inner edge) and its label moves out onto the rim.
+- The active wedge carries **up to 21 stickers** in four rows (4 + 5 + 6 + 6). A quiet wedge carries **5**. Both use the same ranked list for the month: a quiet wedge shows its top 5, and the enlarged one shows the full list.
+- Higher-ranked items take the **most central, roomiest slots** (middle rows, centre column first), so the most familiar produce is what the eye lands on under the pointer.
+- Anything that doesn't fit on the wedge is still in the panel's **At peak / Also in season** lists, exactly as before. The wedge is a highlight reel; the panel is the full record.
+- When the selection changes, the old wedge shrinks while the new one swells into the pointer. The first five stickers slide between their quiet and active slots, and the extra 16 grow in from nothing.
+
+#### Which produce goes on the wedge (commonness heuristic)
+
+The corpus has **no popularity or familiarity field**, so `scripts/build-data.mjs` ranks each month's P and I items with a transparent points score. The score only orders stickers. It is never shown to visitors as a fact.
+
+| Signal | Points | Source |
+|---|---|---|
+| Well-known UK kitchen staple | +4 | `STAPLES` list in `build-data.mjs` (41 names: apple, pear, strawberry, potatoes, carrots, leeks, cabbage, peas, tomatoes, lettuce & salad leaves, and so on). The build fails if a name isn't a corpus item |
+| Ingredient in this month's recipe | +3 | `recipes.csv` join |
+| At peak (P) this month, not just in season (I) | +2 | Month grid |
+| Everyday category (vegetable, fruit, salad) | +1 | `category`. Herbs, nuts and foraged/wild score 0 here |
+
+Then:
+
+- **Ties:** within the same score, the **shorter UK season goes first** (among equally familiar items, the one that's only around now is the better "this month" pick; this stops cabbage and lettuce heading every month). Categories are then interleaved so a wedge isn't all one colour.
+- **Recipe guarantee:** the month's recipe ingredients are always on the enlarged wedge. If one falls outside the top 21, it replaces the lowest-ranked non-recipe item.
+- **Import flag:** items whose corpus note says UK supply is mostly imported (e.g. cranberry) are never stickers. They still appear in the month's lists.
+- **Result:** staples at peak lead (September's top 5 are cucumber, plum, radishes, sweetcorn and blackberry), and herbs and foraged items only fill in once the familiar produce has run out (March's wedge ends with wild garlic and nettles).
+
+The `STAPLES` list is an **editorial judgement**, not corpus data. It is small and reviewable on purpose. **Stage 4** should replace it with a sourced signal (e.g. Defra Family Food purchase volumes or search-interest data), vendored and cited like the rest of the corpus.
 
 ### Current-month default (INTENT behaviour)
 
 On load, the selection **is** the current calendar month, taken from `new Date()`. How it's shown:
 
-- **Arrival spin:** the wheel spins in (about 200°, springy overshoot, 1.6 s) and **lands with today's month on top**, under the pointer. Stickers pop in one after another, starting from today's segment.
+- **Arrival spin:** the wheel spins in (about 170°, springy overshoot, 1.6 s) with every wedge quiet, and **lands with today's month on top**, under the pointer, swelling to the enlarged busy wedge as it arrives. Stickers pop in one after another, starting from today's segment.
 - **Today stays marked** even after you spin away:
   - a **sun pill** (yellow, slowly turning rays) replaces that month's rim label;
   - a **marching-ants tomato halo** outlines the segment;
@@ -103,7 +135,7 @@ On load, the selection **is** the current calendar month, taken from `new Date()
 
 | Action | Result |
 |---|---|
-| Click / tap a segment | The wheel rotates the shortest way to put it on top (0.85 s spring); the segment lifts out; a confetti burst pops at the rim; the panel refreshes |
+| Click / tap a segment | The wheel rotates the shortest way to put it on top (0.85 s spring) while that wedge swells to the busy active size and the old one shrinks; a confetti burst pops at the rim; the panel refreshes |
 | Click a sticker on the wheel | Selects its month **and** opens that item's fact sheet |
 | Month rail buttons | Same as clicking a segment. This is the reliable control on small screens |
 | ← / → keys | Previous / next month (wraps the year) |
@@ -148,13 +180,13 @@ The 23 grid-only items say so plainly: "The research corpus only has the month g
 | Moment | Motion | Timing |
 |---|---|---|
 | Load | Wheel spin-in to today; stickers pop in (scale and rotate), staggered by month distance from today | 1.6 s, overshoot |
-| Select month | Shortest-path rotation; segment lift; hub text pop; confetti burst; panel rise; tiles pop in, staggered | 0.85 s spring; tiles 22 ms stagger |
+| Select month | Shortest-path rotation (spring) while wedge widths trade (ease-out), with extra stickers growing in; hub text pop; confetti burst; panel rise; tiles pop in, staggered | 0.85 s; tiles 22 ms stagger |
 | Idle | Selected segment's stickers bob; faces blink; today's sun rays turn; halo dashes march; pointer nudges | Slow loops (2.8–12 s) |
 | Hover | Sticker jiggle (scale and tilt); tile lift and squish; chip tilt; plate wiggle | 0.2–0.6 s spring |
 | Fact sheet | Dialog springs up; hero sticker pops, then bobs | 0.45 s |
-| Reduced motion | All of the above off; state changes are instant | — |
+| Reduced motion | All of the above off; state changes are instant (the enlarged wedge is drawn at its final size straight away) | — |
 
-Only the selected segment bobs, so idle animation stays cheap on phones.
+Only the selected segment bobs, so idle animation stays cheap on phones. The wheel layout is tweened in JS (`requestAnimationFrame`, one pass over 12 paths and their visible stickers per frame) because wedge widths can't be animated with CSS transforms alone.
 
 ### Accessibility and responsive
 
@@ -178,7 +210,7 @@ Only the selected segment bobs, so idle animation stays cheap on phones.
   - a recipe ingredient isn't P or I in its month;
   - there isn't exactly one recipe per month.
 - **Alias normalisation** at ingest: strip `(…)` qualifiers (kept as display text), strip a leading "early", then try the name as-is, `-ies`→`-y` and `-s`→`` (`strawberries`→`strawberry`, `blackberries (early)`→`blackberry`, `early apples`→`apple`, `damsons`→`damson`, `chestnuts`→`chestnut`, `Jersey Royals (peak May-Jun)`→`jersey royals`, `parsnips (best after first frosts)`→`parsnips`).
-- Nothing is authored by hand: sticker picks, arrivals and farewells are all computed from the grid.
+- Nothing about the produce is authored by hand: arrivals and farewells are computed from the grid, and sticker picks are computed from the grid, recipes and categories. The one editorial input is the `STAPLES` ranking list (see [the commonness heuristic](#which-produce-goes-on-the-wedge-commonness-heuristic)). It orders stickers and adds no rows or fact fields.
 
 ## Prototype vs. what Stage 4/5 should harden
 
@@ -197,10 +229,10 @@ Only the selected segment bobs, so idle animation stays cheap on phones.
 3. **Pre-render the sprite** to a static `sprites.svg` (or inline it at build time) instead of generating it on the client. Add social / OG preview art in the same style for the homepage and Twitter.
 4. **Timezone:** the "current month" uses the visitor's local clock. Decide whether a UK exhibit should use `Europe/London` near month boundaries.
 5. **State in the URL** (optional): shareable `#month` / `#item` links, as long as the no-hash default remains the current month.
-6. **Performance budget:** keep idle animation limited to the selected segment. Check 60 fps on a mid-range phone and measure the SVG `<use>` count if more stickers per segment are added.
-7. **A11y pass with a screen reader:** keyboard rotation, dialog focus return, and announcing month changes without being chatty.
+6. **Performance budget:** keep idle animation limited to the selected segment. The busy wedge put 252 sticker instances in the DOM (about 76 visible). Check that the month-change tween holds 60 fps on a mid-range phone; if it doesn't, create the 16 extra stickers only for the months being tweened.7. **A11y pass with a screen reader:** keyboard rotation, dialog focus return, and announcing month changes without being chatty.
 8. **Trust copy:** surface the corpus's confidence caveats (Hubbub-only herbs, radicchio import flag) in an About / sources view built from `sources.md` once that annex is vendored.
 9. **Art QA:** a few archetypes are close cousins (the needle-leaf herbs; thyme vs. tarragon). An illustrator pass can differentiate them without leaving the system.
+10. **Popularity signal:** replace the editorial `STAPLES` list with a sourced familiarity or purchase signal (see [the commonness heuristic](#which-produce-goes-on-the-wedge-commonness-heuristic)), and keep the build check that every name resolves to a corpus item.
 
 **Out of scope for v1 (per INTENT):** multi-country, globe or map; inventing rows or fact fields; more countries' wheels.
 
@@ -218,4 +250,6 @@ Opening `prototype/index.html` straight from disk also works.
 ## Friction log
 
 - **Stage 2 points at `/workspace/seasonal-produce-uk/`, which doesn't exist on this box.** The corpus arrived only as chat uploads (CSV, JSON, recipes, schema; no `sources.md`, long CSV or varieties annex). The pack is now vendored into `data/uk/`, so later stages have one in-repo source. Future briefs should point there.
+- **Qing's "make it busier" feedback reached this seat as a paraphrase**, so DESIGN.md records it as relayed, not verbatim. If a verbatim quote exists, paste it in alongside the art-direction quote.
+- **The corpus has no popularity signal**, yet "common and popular first" is now a design requirement. The `STAPLES` list covers the gap for the prototype; Stage 4 should source real data (Stage 4 hardening item 10).
 - **The uploaded JSON isn't a lossless mirror of the CSV** (the notes fields are merged). The pipeline uses the CSV only. Stage 4 shouldn't switch to the JSON without re-splitting the fields.
