@@ -81,8 +81,10 @@
 
   function buildWheel() {
     const segs = D.months.map((mo, m) => {
-      const stickers = mo.wheel.map((item, i) =>
-        `<g class="slot"><g class="pop" style="--i:${i};--m:${(m - today + 12) % 12}"><g class="bob" style="--d:${(i * 0.37 + m * 0.21) % 2}s"><g class="jig" data-item="${esc(item)}">${sticker(item, `x="-50" y="-50" width="100" height="100"`)}</g></g></g></g>`).join("");
+      // Quiet and active lists differ (quiet wedges avoid repeats), so each wedge holds their union.
+      const items = [...new Set([...mo.quiet, ...mo.wheel])];
+      const stickers = items.map((item, i) =>
+        `<g class="slot" data-q="${mo.quiet.indexOf(item)}" data-a="${mo.wheel.indexOf(item)}"><g class="pop" style="--i:${i};--m:${(m - today + 12) % 12}"><g class="bob" style="--d:${(i * 0.37 + m * 0.21) % 2}s"><g class="jig" data-item="${esc(item)}">${sticker(item, `x="-50" y="-50" width="100" height="100"`)}</g></g></g></g>`).join("");
       const isToday = m === today;
       const label = isToday
         ? `<g class="sun"><circle r="40" class="sun-rays"/></g><rect x="-44" y="-22" width="88" height="44" rx="22" class="today-pill"/><text class="seg-label" y="2">${SHORT[m].toUpperCase()}</text>`
@@ -107,7 +109,7 @@
       g,
       bg: $(".seg-bg", g),
       halo: $(".today-halo", g),
-      slots: [...g.querySelectorAll(".slot")],
+      slots: [...g.querySelectorAll(".slot")].map((el) => ({ el, q: QUIET_SLOTS[el.dataset.q], a: ACTIVE_SLOTS[el.dataset.a] })),
       label: $(".label", g),
     }));
   }
@@ -122,10 +124,10 @@
       const d = wedge(c, hw, lerp(R_OUT, R_OUT_ACTIVE, e));
       s.bg.setAttribute("d", d);
       if (s.halo) s.halo.setAttribute("d", d);
-      s.slots.forEach((el, i) => {
-        const a = ACTIVE_SLOTS[i];
-        const q = QUIET_SLOTS[i];
-        const [r, frac, size] = q ? [lerp(q[0], a[0], e), lerp(q[1], a[1], e), lerp(q[2], a[2], e)] : [a[0], a[1], a[2] * e];
+      s.slots.forEach(({ el, q, a }) => {
+        const [r, frac, size] = q && a ? [lerp(q[0], a[0], e), lerp(q[1], a[1], e), lerp(q[2], a[2], e)]
+          : a ? [a[0], a[1], a[2] * e]
+          : [q[0], q[1], q[2] * (1 - e)];
         if (size < 2) { el.setAttribute("display", "none"); return; }
         el.removeAttribute("display");
         const [x, y] = polar(r, c + frac * hw);
