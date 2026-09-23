@@ -1,0 +1,109 @@
+item,category,jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec,peak_months,stored_notes,regions_notes,specialist_sources
+apple,fruit,P,P,T,T,.,.,.,I,P,P,P,P,jan feb sep oct nov dec,"{""jan"": ""stored"", ""feb"": ""stored"", ""nov"": ""stored"", ""dec"": ""stored""}",Harvest Aug-Nov; stored British apples available to May (controlled-atmosphere storage). Variety-level windows in apple_pear_varieties annex.,britishapplesandpears.co.uk/the-british-season
+apricot,fruit,.,.,.,.,I,P,P,P,P,.,.,.,jun jul aug sep,,,
+asparagus,vegetable,.,.,T,P,P,P,T,.,.,.,.,.,apr may jun,,"Traditional English season St George's Day (23 Apr) to Midsummer (21 Jun); Vale of Evesham (Worcs) holds PGI and is the historic heartland; also Kent, Suffolk, Cambs. Sources list Mar as occasional early start under protection.",valeandspa.co.uk/asparagus; eatuk.uk/seasonal
+aubergine,vegetable,.,.,.,.,T,P,P,P,P,P,.,.,jun jul aug sep oct,,UK glasshouse crop; NFU notes glasshouse technology extends availability into colder months.,nfuonline.com seasonality chart notes
+basil,herb,.,.,.,T,T,I,I,I,.,.,.,.,,,Tender annual; UK outdoor Jun-Sep (BBC Good Food lists Jun-Aug); glasshouse extends.,bbcgoodfood.com/month pages; rhs.org.uk/herbs/growing
+beetroot,vegetable,P,I,.,.,.,T,P,P,P,P,P,P,jan jul aug sep oct nov dec,,,
+bilberry,fruit,.,.,.,.,.,T,T,T,T,T,.,.,,,"Upland wild berry (moorlands), Jul-Sep.",
+blackberry,fruit,.,.,.,.,.,.,I,P,P,P,.,.,aug sep oct,,Cultivated Jul-Sep; wild hedgerow (brambles) late Aug-Oct.,
+blackcurrant,fruit,.,.,.,.,T,P,P,T,.,.,.,.,jun jul,,,
+blueberry,fruit,.,.,.,.,.,T,P,P,I,T,.,.,jul aug,,"UK season Jun-Oct, peak Jul-Aug; ~10% of UK consumption home-grown (Fruit & Vine/British Berry Growers, 2026).",fruitandvine.co.uk (British Berry Growers chair)
+bramley apple,fruit,I,I,I,.,.,.,.,.,.,.,T,I,,,"BAPL lists Bramley year-round (stores exceptionally); BBC Good Food marks best Oct-Mar. Armagh Bramley Apple holds PGI status (Co. Armagh, NI). Both kept: see audit.",britishapplesandpears.co.uk/the-british-season; gov.uk Armagh Bramley Apple PGI spec
+broad beans,vegetable,.,.,.,.,I,P,P,P,P,.,.,.,jun jul aug sep,,,
+broccoli,vegetable,.,.,.,T,T,I,P,P,P,P,.,.,jul aug sep oct,,,
+brussels sprouts,vegetable,P,P,P,.,.,.,.,T,T,P,P,P,jan feb mar oct nov dec,,"Harvest Aug-Apr (early varieties from 1 Aug; peak Oct-Dec, 40% of UK area harvested in Dec for Christmas). South Lincolnshire is a key growing area.",lincsfp.com; fwi.co.uk
+butternut squash,vegetable,.,.,.,.,.,.,.,.,I,I,T,.,,,,
+cabbage,vegetable,P,P,P,I,P,P,P,P,P,P,P,P,jan feb mar may jun jul aug sep oct nov dec,"{""jan"": ""white"", ""feb"": ""green savoy types"", ""mar"": ""green savoy types"", ""may"": ""green pointed types"", ""jun"": ""green pointed types"", ""jul"": ""red"", ""aug"": ""red"", ""sep"": ""red"", ""oct"": ""red"", ""nov"": ""red"", ""dec"": ""red""}","Year-round across types (savoy winter, pointed spring, red/autumn).",
+carrots,vegetable,T,I,T,.,I,P,P,P,P,I,I,T,jun jul aug sep,,Maincrop Jun-Nov; stored British carrots available year-round (NFU).,
+cauliflower,vegetable,P,P,P,P,T,I,I,I,I,I,I,I,jan feb mar apr,,Year-round across regions; Cornish winter cauliflowers notable (mild coast).,
+cavolo nero,vegetable,T,T,T,.,.,T,P,P,P,P,T,T,jul aug sep oct,,,
+celeriac,vegetable,P,P,P,I,.,.,.,.,P,P,P,P,jan feb mar sep oct nov dec,,,
+celery,vegetable,P,I,.,.,.,.,T,P,P,P,P,P,jan aug sep oct nov dec,,,
+chard,vegetable,T,T,T,T,T,P,I,P,P,I,P,T,jun aug sep nov,,,
+cherry,fruit,.,.,.,.,.,P,P,T,.,.,.,.,jun jul,,"British season ~10 weeks (roughly mid-Jun-late Aug) centred on Kent; new varieties extending it (BBC News, Kent grower AC Hulme).",bbc.com Kent cherry season
+chervil,herb,.,.,.,.,I,I,I,I,I,.,.,.,,,BBC Good Food lists May-Sep.,bbcgoodfood.com/month pages; rhs.org.uk/herbs/growing
+chestnut,nut,I,.,.,.,.,.,.,.,T,P,P,P,oct nov dec,,Fresh Oct-Dec; stored into Jan.,
+chicory,vegetable,P,P,P,.,.,.,T,T,T,I,I,I,jan feb mar,,,
+chillies,vegetable,.,.,.,.,.,T,T,I,I,I,.,.,,,,
+chives,herb,.,.,.,T,T,T,T,T,T,T,.,.,,,,
+cobnuts,nut,.,.,.,.,.,.,.,.,T,T,T,.,,,Fresh Kentish cobnuts mid-Aug-Oct; Kent is the historic centre (Victorian 'plats').,kentishcobnutsassociation.org.uk; kentishcobnuts.com
+coriander,herb,.,.,.,.,T,T,T,T,T,.,.,.,,,,
+courgette,vegetable,.,.,.,.,T,P,P,P,P,T,.,.,jun jul aug sep,,,
+courgette flower,vegetable,.,.,.,.,.,I,I,I,.,.,.,.,,,,
+crab apple,fruit,.,.,.,.,.,.,.,I,T,.,.,.,,,,
+cranberry,fruit,.,.,.,.,.,.,.,.,.,I,P,P,nov dec,,"Listed by BBC Good Food for Nov-Dec, but virtually all UK supply is imported; no meaningful UK season. Flagged.",
+cucumber,vegetable,.,.,.,.,.,T,I,I,P,T,.,.,sep,,,
+currants (mixed),fruit,.,.,.,.,.,T,T,.,.,.,.,.,,,,
+damson,fruit,.,.,.,.,.,.,.,P,P,.,.,.,aug sep,,"Lyth Valley (Westmorland/Cumbria) picking first 3 weeks of Sep, roadside sales second half Sep. BBC Good Food marks best Sep.",lythdamsons.org.uk
+dill,herb,.,.,.,T,T,T,T,.,.,.,.,.,,,,
+elderberry,fruit,.,.,.,.,.,.,.,P,P,P,.,.,aug sep oct,,,
+elderflower,foraged/wild,.,.,.,.,T,T,T,.,.,.,.,.,,,"Hedgerow forage, late May-Jun.",
+fennel bulb,vegetable,.,.,.,.,.,P,P,P,P,I,.,.,jun jul aug sep,"{""aug"": ""bulb"", ""sep"": ""bulb"", ""oct"": ""bulb""}",,
+fig,fruit,.,.,.,.,.,.,T,P,P,I,.,.,aug sep,,,
+forced rhubarb,fruit,P,P,I,.,.,.,.,.,.,.,.,T,jan feb,,Yorkshire Rhubarb Triangle (Wakefield-Leeds-Bradford) forcing sheds; season late Dec-Mar; PDO-protected name. Distinct from outdoor/maincrop rhubarb (Apr-Jun).,gov.uk protected-food-drink-names/yorkshire-forced-rhubarb; deliciousmagazine.co.uk
+french beans,vegetable,.,.,.,.,.,T,P,P,I,T,.,.,jul aug,,,
+garlic,vegetable,.,.,.,.,T,I,P,P,P,P,.,.,jul aug sep oct,,,
+globe artichoke,vegetable,.,.,T,T,T,P,P,P,P,P,P,.,jun jul aug sep oct nov,,,
+gooseberry,fruit,.,.,.,.,T,P,P,P,I,.,.,.,jun jul aug,,,
+greengage,fruit,.,.,.,.,.,I,P,I,.,.,.,.,jul,,,
+horseradish,vegetable,T,.,.,.,.,.,.,.,T,T,T,T,,,,
+jersey royals,vegetable,.,.,T,I,P,P,I,.,.,.,.,.,may jun,,"Official season late Mar-Jul, peak May-Jun (up to 1,000t/day shipped at peak). PGI-protected; only grown in Jersey.",jerseyroyals.co.uk/about-us; jersey-royals.com guide
+jerusalem artichoke,vegetable,P,P,I,.,.,.,.,.,.,I,P,P,jan feb nov dec,,,
+kale,vegetable,P,P,I,.,.,.,T,T,P,P,P,P,jan feb sep oct nov dec,,,
+kohlrabi,vegetable,T,T,.,.,.,I,I,P,P,P,P,I,aug sep oct nov,,,
+lamb's lettuce,salad,.,.,.,.,I,I,I,P,P,P,P,.,aug sep oct nov,,,
+leeks,vegetable,P,P,P,I,.,.,.,T,P,P,P,P,jan feb mar sep oct nov dec,,At best Nov-Apr per British Leeks. Welsh Leeks hold PGI status (grown in Pembrokeshire; in stores Aug-Apr per Blas y Tir). Available much of the year.,britishleeks.co.uk; blasytir.com/produce/leeks (Welsh Leeks PGI); businesswales.gov.wales Welsh Leeks PGI
+lettuce & salad leaves,salad,.,.,.,I,P,P,P,P,P,P,P,I,may jun jul aug sep oct nov,,,
+loganberry,fruit,.,.,.,.,.,T,.,P,P,.,.,.,aug sep,,,
+mangetout,vegetable,.,.,.,.,T,P,P,P,P,.,.,.,jun jul aug sep,,,
+marrow,vegetable,.,.,.,.,.,.,T,P,P,T,.,.,aug sep,,,
+medlar,fruit,.,.,.,.,.,.,.,.,.,T,.,.,,,"Single-source (Hubbub, Oct). Heritage fruit, bletted after frost.",
+mint,herb,.,.,.,.,I,I,I,I,T,.,.,.,,,Outdoor UK mint roughly May-Oct; BBC Good Food lists May-Aug.,bbcgoodfood.com/month pages
+mushrooms (cultivated),vegetable,T,T,T,T,T,T,T,T,I,I,I,T,,"{""jan"": ""cultivated"", ""feb"": ""cultivated"", ""mar"": ""cultivated"", ""apr"": ""cultivated"", ""may"": ""cultivated"", ""jun"": ""cultivated"", ""jul"": ""cultivated"", ""aug"": ""wild"", ""sep"": ""wild"", ""oct"": ""wild"", ""nov"": ""wild"", ""dec"": ""cultivated""}",Year-round cultivated.,
+mustard leaves & mizuna,vegetable,.,.,.,.,T,T,T,T,T,T,T,T,,,,
+nasturtium,herb,.,.,.,.,T,T,T,.,.,.,.,.,,,,
+nectarine,fruit,.,.,.,.,I,I,P,P,P,.,.,.,jul aug sep,,,
+new potatoes,vegetable,.,.,.,P,P,P,P,.,.,.,.,.,apr may jun jul,,"Earliest from Cornwall (mid-Apr, Gulf Stream frost-free fields), Pembrokeshire (harvest from early May) and Comber Earlies (Co. Down, NI - PGI, must be harvested May-Jul). Jersey Royals are the flagship early.",branston.com Cornish new potatoes; pembrokeshire-herald.com; gov.uk New Season Comber Potatoes/Comber Earlies PGI (harvest May-Jul)
+onions,vegetable,I,I,I,I,I,P,P,P,P,I,I,I,jun jul aug sep,,"British storage crop, effectively year-round (NFU); fresh harvest late summer.",
+oregano,herb,.,.,.,.,T,T,T,T,T,.,.,.,,,,
+pak choi,vegetable,I,I,I,I,I,P,P,P,P,P,P,I,jun jul aug sep oct nov,,Listed year-round by BBC Good Food (glasshouse/imports in winter).,
+parsley,herb,.,.,.,.,T,T,T,T,T,T,.,.,,,,
+parsnips,vegetable,P,P,T,.,.,.,.,T,P,P,P,P,jan feb sep oct nov dec,,,
+peach,fruit,.,.,.,.,.,.,T,P,P,.,.,.,aug sep,,,
+pear,fruit,P,I,T,T,.,.,.,.,P,P,P,P,jan sep oct nov dec,"{""jan"": ""stored"", ""feb"": ""stored"", ""nov"": ""stored"", ""dec"": ""stored""}",Harvest Aug-Oct; stored pears to May (Conference to May per BAPL).,britishapplesandpears.co.uk/the-british-season
+peas,vegetable,.,.,.,I,T,P,P,I,I,.,.,.,jun jul,,Vining pea harvest Jun-Aug (8-week 24/7 operation); Great British Pea Week early July. Fresh garden peas Jun-Sep.,peas.org/what-is-great-british-pea-week
+peppers,vegetable,.,.,.,.,.,I,I,P,P,I,.,.,aug sep,"{""aug"": ""capsicum"", ""sep"": ""capsicum"", ""oct"": ""capsicum""}",UK glasshouse crop; NFU notes glasshouse availability in colder months.,nfuonline.com seasonality chart notes
+plum,fruit,.,.,.,.,.,.,.,P,P,P,.,.,aug sep oct,,,
+potatoes,vegetable,I,I,I,.,.,T,I,P,I,P,I,I,aug oct,"{""jun"": ""new"", ""jul"": ""new"", ""aug"": ""new"", ""sep"": ""maincrop"", ""oct"": ""maincrop""}",Maincrop harvest Aug-Oct; stored year-round (NFU).,
+pumpkin & squash,vegetable,T,T,.,.,.,.,.,.,P,P,P,I,sep oct nov,"{""jan"": ""stored"", ""feb"": ""stored"", ""dec"": ""stored""}",,
+purple sprouting broccoli,vegetable,I,P,P,P,.,.,.,.,.,T,.,T,feb mar apr,,,
+quince,fruit,.,.,.,.,.,.,.,.,T,P,P,P,oct nov dec,"{""nov"": ""stored"", ""dec"": ""stored""}",Oct-Nov.,
+radicchio,vegetable,I,I,I,I,I,.,I,I,I,I,I,I,,,,
+radishes,salad,.,.,T,P,P,P,P,P,P,I,.,.,apr may jun jul aug sep,,,
+raspberry,fruit,.,.,.,.,.,I,P,P,I,T,.,.,jul aug,,Scottish season (Tayside/Angus heartland) late Jun-Oct - longer than England; peak Jul-Aug.,mclaysfoods.co.uk seasonality (Scotland); tastescot.co.uk/whats-in-season
+redcurrant,fruit,.,.,.,.,.,T,P,P,P,.,.,.,jul aug sep,,,
+rhubarb,fruit,P,P,P,P,P,P,I,.,T,.,.,.,jan feb mar apr may jun,"{""jan"": ""forced"", ""feb"": ""forced"", ""mar"": ""forced"", ""apr"": ""maincrop"", ""may"": ""maincrop"", ""jun"": ""maincrop"", ""jul"": ""maincrop""}",Outdoor/maincrop rhubarb roughly Apr-Jun/Jul; winter rows are forced rhubarb. BBC Good Food marks Jan-Jun overall.,
+rocket,salad,.,.,.,I,I,T,I,T,I,T,.,.,,,,
+rosemary,herb,.,.,.,.,T,T,T,T,T,T,T,.,,,,
+runner beans,vegetable,.,.,.,.,.,P,P,P,P,I,.,.,jun jul aug sep,,,
+sage,herb,.,.,.,.,T,T,T,T,T,T,T,.,,,,
+salsify,vegetable,I,I,T,.,.,.,.,.,I,T,T,I,,,,
+samphire,foraged/wild,.,.,.,.,T,I,P,I,.,.,.,.,jul,,"Marsh samphire on Norfolk coast (Hunstanton-Sheringham) runs late Jun-Aug, best July; cut, don't uproot (illegal to pull roots). Some sources list from Apr (earlier coasts/imports) - see audit.",secretgb.co.uk Norfolk samphire guide
+shallots,vegetable,T,T,.,.,.,.,T,T,T,T,T,T,,,,
+sorrel,salad,.,.,I,I,P,I,I,I,I,T,.,.,may,,,
+spinach,vegetable,T,T,P,P,P,P,P,I,P,I,T,T,mar apr may jun jul sep,"{""jan"": ""perpetual"", ""feb"": ""perpetual"", ""mar"": ""perpetual"", ""apr"": ""perpetual"", ""may"": ""perpetual"", ""jun"": ""perpetual"", ""jul"": ""perpetual"", ""aug"": ""perpetual"", ""sep"": ""perpetual"", ""oct"": ""perpetual"", ""nov"": ""perpetual"", ""dec"": ""perpetual""}",,
+spring greens,vegetable,T,T,I,I,I,I,.,.,T,T,T,T,,,,
+spring onions,salad,.,.,P,P,P,I,P,P,P,T,.,I,mar apr may jul aug sep,,,
+strawberry,fruit,.,.,.,T,P,P,P,P,I,T,.,.,may jun jul aug,,Protected cropping extends Mar-Dec; traditional field season Jun-Jul; retailers treat May-Sep as British season. Peak Jun-Jul.,marksandspencer.com British strawberries; ahdb.org.uk horticulture
+swede,vegetable,I,I,T,.,.,.,.,.,T,P,P,P,oct nov dec,,"Autumn-winter; 'neeps' in Scotland (Burns Night, 25 Jan).",
+sweetcorn,vegetable,.,.,.,.,.,.,T,P,P,I,.,.,aug sep,,Harvest Aug-Oct; each cob has a short ripeness window.,
+tarragon,herb,.,.,.,.,T,T,T,T,.,.,.,.,,,,
+tayberry,fruit,.,.,.,.,.,.,P,P,.,.,.,.,jul aug,,,
+thyme,herb,.,.,.,.,.,T,T,T,T,T,.,.,,,,
+tomatoes,vegetable,.,.,.,.,T,P,P,P,P,P,.,.,jun jul aug sep oct,,British glasshouse season spring-autumn per British Tomato Growers' Association; some year-round production with lights.,britishtomatoes.co.uk
+turnips,vegetable,I,I,T,T,T,P,I,I,P,P,P,P,jun sep oct nov dec,,,
+watercress,salad,.,.,.,T,I,I,I,I,I,I,I,.,,,"UK season May-Nov per The Watercress Company; production moves overseas in winter. Centre of production: Hampshire (Alresford, 'watercress capital') and Dorset. Some calendar sources list it Mar-Oct - see audit.",watercress.co.uk/growing-watercress-faq
+wild garlic,foraged/wild,.,.,I,I,T,.,.,.,.,.,.,.,,,"Woodland forage, Mar-May (best before flowering ends).",
+wild mushrooms,foraged/wild,.,.,.,.,.,.,.,T,T,T,T,T,,,"Autumn flush Aug-Nov; chanterelles peak Aug-Sep, ceps Sep-Oct (Scottish source).",
+wild nettles,foraged/wild,.,.,I,I,T,T,T,.,.,.,.,.,,,,
