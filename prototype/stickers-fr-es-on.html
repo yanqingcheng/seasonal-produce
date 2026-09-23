@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sticker Garden · new shared stickers for France, Spain and Ontario</title>
+  <link rel="stylesheet" href="../site/styles.css" />
+  <style>
+    .sheet-page { max-width: 1320px; margin: 0 auto; padding: 8px 24px 48px; }
+    .sheet-page h2 { font-size: 26px; margin: 28px 0 4px; }
+    .sheet-page > p, .sheet-page section > p { margin: 4px 0 12px; color: var(--ink-soft); font-weight: 700; max-width: 80ch; }
+    .arch { display: grid; grid-template-columns: 190px 1fr; gap: 18px; align-items: center; padding: 14px 18px; margin: 12px 0; background: var(--card); border: 3px solid var(--ink); border-radius: 24px; box-shadow: 0 5px 0 var(--ink); }
+    .arch-hero { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+    .arch-hero .tile-art { width: 132px; height: 132px; }
+    .arch-hero code { font: 700 15px var(--display); background: var(--ink); color: #fff; padding: 2px 10px; border-radius: 999px; }
+    .arch .tiles { margin: 0; grid-template-columns: repeat(auto-fill, minmax(112px, 1fr)); }
+    .pack-tag { position: absolute; top: -9px; left: -6px; background: #fff; font: 700 11px var(--display); letter-spacing: 0.06em; padding: 2px 7px; border-radius: 999px; border: 2px solid var(--ink); transform: rotate(-6deg); }
+    .sizes { display: flex; align-items: end; gap: 14px; }
+    .sizes span { display: block; }
+    .scale-row { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding: 16px 18px; background: var(--card); border: 3px solid var(--ink); border-radius: 24px; box-shadow: 0 5px 0 var(--ink); }
+    .scale-row .chip { cursor: default; }
+    .ref .tiles { grid-template-columns: repeat(auto-fill, minmax(112px, 1fr)); }
+    @media (max-width: 640px) { .arch { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div id="sprite"></div>
+  <header class="top">
+    <div class="brand">
+      <div>
+        <h1>Sticker Garden · new shared stickers</h1>
+        <p>Drawn for France, Spain and Ontario where no existing archetype reads as the produce. Any pack may bind to them. <a href="selector.html">Country selector mock</a> · <a href="gallery.html">UK sheet</a></p>
+      </div>
+    </div>
+  </header>
+  <main class="sheet-page">
+    <section>
+      <h2>Eight new archetypes</h2>
+      <p>Each row is one new drawing in <code>art/draw.mjs</code>, shown large, then every France / Spain / Ontario binding that uses it. Items sharing a drawing differ by fill only (the plum vs damson pattern).</p>
+      <div id="new"></div>
+    </section>
+    <section>
+      <h2>Chip, tile and wheel sizes</h2>
+      <p>The same symbols at chip (28 px), wheel-sticker (about 72–92 px of a 1040-unit wheel) and tile size, beside UK stickers for style continuity.</p>
+      <div class="scale-row" id="scale"></div>
+    </section>
+    <section class="ref">
+      <h2>Rebinds on existing archetypes (no new drawing)</h2>
+      <p>These looked like gaps but read fine as an existing shape with new fills.</p>
+      <ul class="tiles" id="rebinds"></ul>
+    </section>
+  </main>
+  <script src="multi-pack.js"></script>
+  <script>
+    const M = window.MULTI;
+    document.getElementById("sprite").innerHTML = M.sprite;
+    const slug = (n) => n.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+    const sticker = (id, cls = "sticker") => `<svg class="${cls}" viewBox="-8 -8 116 116" aria-hidden="true"><use href="#cut-${slug(id)}" class="sticker-shadow"/><use href="#cut-${slug(id)}" class="sticker-cut"/><use href="#art-${slug(id)}"/></svg>`;
+    const code = (p) => M.packs[p].code;
+    const tile = (id, label, pack) => `<li><div class="tile">${pack ? `<span class="pack-tag">${code(pack)}</span>` : ""}<span class="tile-art">${sticker(id)}</span><span class="tile-name">${label}</span></div></li>`;
+
+    document.getElementById("new").innerHTML = M.sheet.map(({ kind, uses }) => `
+      <div class="arch">
+        <div class="arch-hero"><span class="tile-art">${sticker(uses[0].id)}</span><code>${kind}</code></div>
+        <ul class="tiles">${uses.map((u) => tile(u.id, u.label, u.pack)).join("")}</ul>
+      </div>`).join("");
+
+    const scaleIds = ["apple", "leeks", "plum", "es naranja", "es platano", "fr raisin", "es sandia", "on muskmelon", "es aguacate", "es kiwi", "es mango", "fr noix", "es limon", "es pomelo"];
+    const label = (id) => Object.values(M.packs).map((p) => p.names[id]).find(Boolean).label;
+    document.getElementById("scale").innerHTML =
+      scaleIds.map((id) => `<span class="chip">${sticker(id)}${label(id)}</span>`).join("") +
+      `<span class="sizes">${scaleIds.slice(0, 7).map((id, i) => `<span style="width:${[92, 76, 88, 72, 84, 72, 88][i]}px;height:${[92, 76, 88, 72, 84, 72, 88][i]}px">${sticker(id)}</span>`).join("")}</span>`;
+
+    const rebinds = [["es caqui", "es"], ["es granada", "es"], ["es nispero", "es"], ["es paraguaya", "es"], ["es breva", "es"], ["es cardo", "es"], ["es col lombarda", "es"], ["es escarola", "es"], ["es endibia", "es"],
+      ["on cranberries", "on"], ["on haskap berries", "on"], ["on sweet potatoes", "on"], ["on nappa cabbage", "on"], ["on bitter melon/fuzzy squash", "on"], ["on rapini", "on"], ["on yow choy(yellow flower)", "on"], ["on chinese broccoli (white flower)", "on"],
+      ["on edible amaranth (hinn choy)", "on"], ["on daikon radish", "on"], ["on summer squash", "on"], ["on onions (red)", "on"], ["on water spinach (tung choy)", "on"]];
+    document.getElementById("rebinds").innerHTML = rebinds.map(([id, p]) => tile(id, label(id), p)).join("");
+  </script>
+</body>
+</html>

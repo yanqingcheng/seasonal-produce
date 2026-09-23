@@ -1,0 +1,15 @@
+{
+  "country": "France",
+  "before_primary_units": 0,
+  "after_primary_units": 1,
+  "denominator_units": 1,
+  "unit_type": "national consumer-facing ADEME tool",
+  "units_with_primary_guide": 1,
+  "semantic_layer": "PRIMARY_CONSUMER_AVAILABILITY_MONTHS",
+  "unique_item_records": 42,
+  "month_cells": 504,
+  "available_month_cells": 260,
+  "semantic_zero_cells": 244,
+  "source_language": "French",
+  "api_warning": "La requete n'est pas authentifiée. Nous nous reservons le droit de couper cette API aux utilisateurs anonymes, veuillez nous contacter à impactco2@ademe.fr pour obtenir une clé d'API gratuite."
+}

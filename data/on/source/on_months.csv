@@ -1,0 +1,877 @@
+sgc_code,alpha_code,province_or_territory,produce_group,produce_item,month,available,semantic_type,source_label,source_id
+35,ON,Ontario,fruit,Apples,January,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Apples,February,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Apples,March,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Apples,April,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Apples,May,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Apples,June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Apples,July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Apples,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Apples,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Apples,October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Apples,November,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Apples,December,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Apricots,January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Apricots,February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Apricots,March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Apricots,April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Apricots,May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Apricots,June,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Apricots,July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Apricots,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Apricots,September,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Apricots,October,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Apricots,November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Apricots,December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Blueberries,January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Blueberries,February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Blueberries,March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Blueberries,April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Blueberries,May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Blueberries,June,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Blueberries,July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Blueberries,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Blueberries,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Blueberries,October,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Blueberries,November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Blueberries,December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Cherries,January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Cherries,February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Cherries,March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Cherries,April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Cherries,May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Cherries,June,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Cherries,July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Cherries,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Cherries,September,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Cherries,October,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Cherries,November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Cherries,December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Cranberries,January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Cranberries,February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Cranberries,March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Cranberries,April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Cranberries,May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Cranberries,June,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Cranberries,July,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Cranberries,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Cranberries,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Cranberries,October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Cranberries,November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Cranberries,December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Currants,January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Currants,February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Currants,March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Currants,April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Currants,May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Currants,June,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Currants,July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Currants,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Currants,September,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Currants,October,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Currants,November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Currants,December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Gooseberries,January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Gooseberries,February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Gooseberries,March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Gooseberries,April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Gooseberries,May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Gooseberries,June,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Gooseberries,July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Gooseberries,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Gooseberries,September,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Gooseberries,October,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Gooseberries,November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Gooseberries,December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Grapes,January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Grapes,February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Grapes,March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Grapes,April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Grapes,May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Grapes,June,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Grapes,July,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Grapes,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Grapes,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Grapes,October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Grapes,November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Grapes,December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Haskap Berries,January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Haskap Berries,February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Haskap Berries,March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Haskap Berries,April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Haskap Berries,May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Haskap Berries,June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Haskap Berries,July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Haskap Berries,August,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Haskap Berries,September,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Haskap Berries,October,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Haskap Berries,November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Haskap Berries,December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Muskmelon,January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Muskmelon,February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Muskmelon,March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Muskmelon,April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Muskmelon,May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Muskmelon,June,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Muskmelon,July,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Muskmelon,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Muskmelon,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Muskmelon,October,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Muskmelon,November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Muskmelon,December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Nectarines,January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Nectarines,February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Nectarines,March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Nectarines,April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Nectarines,May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Nectarines,June,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Nectarines,July,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Nectarines,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Nectarines,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Nectarines,October,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Nectarines,November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Nectarines,December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Peaches,January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Peaches,February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Peaches,March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Peaches,April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Peaches,May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Peaches,June,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Peaches,July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Peaches,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Peaches,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Peaches,October,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Peaches,November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Peaches,December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Pears,January,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Pears,February,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Pears,March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Pears,April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Pears,May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Pears,June,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Pears,July,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Pears,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Pears,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Pears,October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Pears,November,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Pears,December,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Plums,January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Plums,February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Plums,March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Plums,April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Plums,May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Plums,June,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Plums,July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Plums,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Plums,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Plums,October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Plums,November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Plums,December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Raspberries,January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Raspberries,February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Raspberries,March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Raspberries,April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Raspberries,May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Raspberries,June,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Raspberries,July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Raspberries,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Raspberries,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Raspberries,October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Raspberries,November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Raspberries,December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Rhubarb,January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Rhubarb,February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Rhubarb,March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Rhubarb,April,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Rhubarb,May,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Rhubarb,June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Rhubarb,July,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Rhubarb,August,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Rhubarb,September,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Rhubarb,October,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Rhubarb,November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Rhubarb,December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Rhubarb (Forced),January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Rhubarb (Forced),February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Rhubarb (Forced),March,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Rhubarb (Forced),April,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Rhubarb (Forced),May,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Rhubarb (Forced),June,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Rhubarb (Forced),July,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Rhubarb (Forced),August,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Rhubarb (Forced),September,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Rhubarb (Forced),October,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Rhubarb (Forced),November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Rhubarb (Forced),December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Strawberries (Field),January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Strawberries (Field),February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Strawberries (Field),March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Strawberries (Field),April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Strawberries (Field),May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Strawberries (Field),June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Strawberries (Field),July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Strawberries (Field),August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Strawberries (Field),September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Strawberries (Field),October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Strawberries (Field),November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Strawberries (Field),December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Strawberries (Greenhouse),January,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Strawberries (Greenhouse),February,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Strawberries (Greenhouse),March,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Strawberries (Greenhouse),April,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Strawberries (Greenhouse),May,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Strawberries (Greenhouse),June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Strawberries (Greenhouse),July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Strawberries (Greenhouse),August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Strawberries (Greenhouse),September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Strawberries (Greenhouse),October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Strawberries (Greenhouse),November,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Strawberries (Greenhouse),December,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Watermelon,January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Watermelon,February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Watermelon,March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Watermelon,April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Watermelon,May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Watermelon,June,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Watermelon,July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Watermelon,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Watermelon,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Watermelon,October,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Watermelon,November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,fruit,Watermelon,December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Artichoke,January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Artichoke,February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Artichoke,March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Artichoke,April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Artichoke,May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Artichoke,June,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Artichoke,July,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Artichoke,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Artichoke,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Artichoke,October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Artichoke,November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Artichoke,December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Asparagus,January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Asparagus,February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Asparagus,March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Asparagus,April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Asparagus,May,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Asparagus,June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Asparagus,July,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Asparagus,August,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Asparagus,September,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Asparagus,October,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Asparagus,November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Asparagus,December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Beans (Green/Yellow),January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Beans (Green/Yellow),February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Beans (Green/Yellow),March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Beans (Green/Yellow),April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Beans (Green/Yellow),May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Beans (Green/Yellow),June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Beans (Green/Yellow),July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Beans (Green/Yellow),August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Beans (Green/Yellow),September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Beans (Green/Yellow),October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Beans (Green/Yellow),November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Beans (Green/Yellow),December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Beets,January,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Beets,February,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Beets,March,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Beets,April,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Beets,May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Beets,June,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Beets,July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Beets,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Beets,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Beets,October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Beets,November,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Beets,December,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Bitter Melon/Fuzzy Squash,January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Bitter Melon/Fuzzy Squash,February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Bitter Melon/Fuzzy Squash,March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Bitter Melon/Fuzzy Squash,April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Bitter Melon/Fuzzy Squash,May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Bitter Melon/Fuzzy Squash,June,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Bitter Melon/Fuzzy Squash,July,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Bitter Melon/Fuzzy Squash,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Bitter Melon/Fuzzy Squash,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Bitter Melon/Fuzzy Squash,October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Bitter Melon/Fuzzy Squash,November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Bitter Melon/Fuzzy Squash,December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Bok Choy,January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Bok Choy,February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Bok Choy,March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Bok Choy,April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Bok Choy,May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Bok Choy,June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Bok Choy,July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Bok Choy,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Bok Choy,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Bok Choy,October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Bok Choy,November,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Bok Choy,December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Broccoli,January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Broccoli,February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Broccoli,March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Broccoli,April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Broccoli,May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Broccoli,June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Broccoli,July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Broccoli,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Broccoli,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Broccoli,October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Broccoli,November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Broccoli,December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Brussels Sprouts,January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Brussels Sprouts,February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Brussels Sprouts,March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Brussels Sprouts,April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Brussels Sprouts,May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Brussels Sprouts,June,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Brussels Sprouts,July,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Brussels Sprouts,August,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Brussels Sprouts,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Brussels Sprouts,October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Brussels Sprouts,November,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Brussels Sprouts,December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cabbage,January,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cabbage,February,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cabbage,March,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cabbage,April,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cabbage,May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cabbage,June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cabbage,July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cabbage,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cabbage,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cabbage,October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cabbage,November,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cabbage,December,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Carrots,January,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Carrots,February,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Carrots,March,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Carrots,April,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Carrots,May,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Carrots,June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Carrots,July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Carrots,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Carrots,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Carrots,October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Carrots,November,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Carrots,December,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cauliflower,January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cauliflower,February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cauliflower,March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cauliflower,April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cauliflower,May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cauliflower,June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cauliflower,July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cauliflower,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cauliflower,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cauliflower,October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cauliflower,November,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cauliflower,December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Celery,January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Celery,February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Celery,March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Celery,April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Celery,May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Celery,June,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Celery,July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Celery,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Celery,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Celery,October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Celery,November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Celery,December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Chinese Broccoli (White Flower),January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Chinese Broccoli (White Flower),February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Chinese Broccoli (White Flower),March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Chinese Broccoli (White Flower),April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Chinese Broccoli (White Flower),May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Chinese Broccoli (White Flower),June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Chinese Broccoli (White Flower),July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Chinese Broccoli (White Flower),August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Chinese Broccoli (White Flower),September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Chinese Broccoli (White Flower),October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Chinese Broccoli (White Flower),November,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Chinese Broccoli (White Flower),December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Corn,January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Corn,February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Corn,March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Corn,April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Corn,May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Corn,June,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Corn,July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Corn,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Corn,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Corn,October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Corn,November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Corn,December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cucumber (Field),January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cucumber (Field),February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cucumber (Field),March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cucumber (Field),April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cucumber (Field),May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cucumber (Field),June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cucumber (Field),July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cucumber (Field),August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cucumber (Field),September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cucumber (Field),October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cucumber (Field),November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cucumber (Field),December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cucumber (Greenhouse),January,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cucumber (Greenhouse),February,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cucumber (Greenhouse),March,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cucumber (Greenhouse),April,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cucumber (Greenhouse),May,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cucumber (Greenhouse),June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cucumber (Greenhouse),July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cucumber (Greenhouse),August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cucumber (Greenhouse),September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cucumber (Greenhouse),October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cucumber (Greenhouse),November,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Cucumber (Greenhouse),December,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Daikon Radish,January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Daikon Radish,February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Daikon Radish,March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Daikon Radish,April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Daikon Radish,May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Daikon Radish,June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Daikon Radish,July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Daikon Radish,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Daikon Radish,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Daikon Radish,October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Daikon Radish,November,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Daikon Radish,December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Edible Amaranth (Hinn Choy),January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Edible Amaranth (Hinn Choy),February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Edible Amaranth (Hinn Choy),March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Edible Amaranth (Hinn Choy),April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Edible Amaranth (Hinn Choy),May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Edible Amaranth (Hinn Choy),June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Edible Amaranth (Hinn Choy),July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Edible Amaranth (Hinn Choy),August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Edible Amaranth (Hinn Choy),September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Edible Amaranth (Hinn Choy),October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Edible Amaranth (Hinn Choy),November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Edible Amaranth (Hinn Choy),December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Eggplant,January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Eggplant,February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Eggplant,March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Eggplant,April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Eggplant,May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Eggplant,June,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Eggplant,July,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Eggplant,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Eggplant,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Eggplant,October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Eggplant,November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Eggplant,December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Garlic,January,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Garlic,February,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Garlic,March,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Garlic,April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Garlic,May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Garlic,June,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Garlic,July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Garlic,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Garlic,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Garlic,October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Garlic,November,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Garlic,December,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Garlic Scapes,January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Garlic Scapes,February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Garlic Scapes,March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Garlic Scapes,April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Garlic Scapes,May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Garlic Scapes,June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Garlic Scapes,July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Garlic Scapes,August,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Garlic Scapes,September,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Garlic Scapes,October,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Garlic Scapes,November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Garlic Scapes,December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Kale,January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Kale,February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Kale,March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Kale,April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Kale,May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Kale,June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Kale,July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Kale,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Kale,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Kale,October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Kale,November,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Kale,December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Leeks,January,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Leeks,February,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Leeks,March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Leeks,April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Leeks,May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Leeks,June,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Leeks,July,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Leeks,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Leeks,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Leeks,October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Leeks,November,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Leeks,December,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Lettuce (Assorted),January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Lettuce (Assorted),February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Lettuce (Assorted),March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Lettuce (Assorted),April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Lettuce (Assorted),May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Lettuce (Assorted),June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Lettuce (Assorted),July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Lettuce (Assorted),August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Lettuce (Assorted),September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Lettuce (Assorted),October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Lettuce (Assorted),November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Lettuce (Assorted),December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Lettuce (Greenhouse),January,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Lettuce (Greenhouse),February,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Lettuce (Greenhouse),March,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Lettuce (Greenhouse),April,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Lettuce (Greenhouse),May,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Lettuce (Greenhouse),June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Lettuce (Greenhouse),July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Lettuce (Greenhouse),August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Lettuce (Greenhouse),September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Lettuce (Greenhouse),October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Lettuce (Greenhouse),November,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Lettuce (Greenhouse),December,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Mushrooms,January,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Mushrooms,February,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Mushrooms,March,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Mushrooms,April,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Mushrooms,May,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Mushrooms,June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Mushrooms,July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Mushrooms,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Mushrooms,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Mushrooms,October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Mushrooms,November,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Mushrooms,December,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Mustard Greens (Gai Choy),January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Mustard Greens (Gai Choy),February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Mustard Greens (Gai Choy),March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Mustard Greens (Gai Choy),April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Mustard Greens (Gai Choy),May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Mustard Greens (Gai Choy),June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Mustard Greens (Gai Choy),July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Mustard Greens (Gai Choy),August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Mustard Greens (Gai Choy),September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Mustard Greens (Gai Choy),October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Mustard Greens (Gai Choy),November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Mustard Greens (Gai Choy),December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Nappa Cabbage,January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Nappa Cabbage,February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Nappa Cabbage,March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Nappa Cabbage,April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Nappa Cabbage,May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Nappa Cabbage,June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Nappa Cabbage,July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Nappa Cabbage,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Nappa Cabbage,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Nappa Cabbage,October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Nappa Cabbage,November,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Nappa Cabbage,December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Onions (Cooking),January,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Onions (Cooking),February,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Onions (Cooking),March,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Onions (Cooking),April,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Onions (Cooking),May,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Onions (Cooking),June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Onions (Cooking),July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Onions (Cooking),August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Onions (Cooking),September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Onions (Cooking),October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Onions (Cooking),November,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Onions (Cooking),December,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Onions (Green),January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Onions (Green),February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Onions (Green),March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Onions (Green),April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Onions (Green),May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Onions (Green),June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Onions (Green),July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Onions (Green),August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Onions (Green),September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Onions (Green),October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Onions (Green),November,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Onions (Green),December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Onions (Red),January,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Onions (Red),February,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Onions (Red),March,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Onions (Red),April,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Onions (Red),May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Onions (Red),June,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Onions (Red),July,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Onions (Red),August,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Onions (Red),September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Onions (Red),October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Onions (Red),November,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Onions (Red),December,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Parsnip,January,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Parsnip,February,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Parsnip,March,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Parsnip,April,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Parsnip,May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Parsnip,June,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Parsnip,July,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Parsnip,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Parsnip,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Parsnip,October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Parsnip,November,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Parsnip,December,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peas (Green),January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peas (Green),February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peas (Green),March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peas (Green),April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peas (Green),May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peas (Green),June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peas (Green),July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peas (Green),August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peas (Green),September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peas (Green),October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peas (Green),November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peas (Green),December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peas (Snow),January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peas (Snow),February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peas (Snow),March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peas (Snow),April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peas (Snow),May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peas (Snow),June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peas (Snow),July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peas (Snow),August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peas (Snow),September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peas (Snow),October,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peas (Snow),November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peas (Snow),December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peppers (Field),January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peppers (Field),February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peppers (Field),March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peppers (Field),April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peppers (Field),May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peppers (Field),June,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peppers (Field),July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peppers (Field),August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peppers (Field),September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peppers (Field),October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peppers (Field),November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peppers (Field),December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peppers (Greenhouse),January,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peppers (Greenhouse),February,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peppers (Greenhouse),March,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peppers (Greenhouse),April,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peppers (Greenhouse),May,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peppers (Greenhouse),June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peppers (Greenhouse),July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peppers (Greenhouse),August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peppers (Greenhouse),September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peppers (Greenhouse),October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peppers (Greenhouse),November,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Peppers (Greenhouse),December,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Potatoes,January,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Potatoes,February,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Potatoes,March,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Potatoes,April,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Potatoes,May,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Potatoes,June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Potatoes,July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Potatoes,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Potatoes,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Potatoes,October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Potatoes,November,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Potatoes,December,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Pumpkin,January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Pumpkin,February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Pumpkin,March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Pumpkin,April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Pumpkin,May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Pumpkin,June,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Pumpkin,July,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Pumpkin,August,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Pumpkin,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Pumpkin,October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Pumpkin,November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Pumpkin,December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Radicchio,January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Radicchio,February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Radicchio,March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Radicchio,April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Radicchio,May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Radicchio,June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Radicchio,July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Radicchio,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Radicchio,September,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Radicchio,October,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Radicchio,November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Radicchio,December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Radishes,January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Radishes,February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Radishes,March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Radishes,April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Radishes,May,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Radishes,June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Radishes,July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Radishes,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Radishes,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Radishes,October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Radishes,November,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Radishes,December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Rapini,January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Rapini,February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Rapini,March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Rapini,April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Rapini,May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Rapini,June,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Rapini,July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Rapini,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Rapini,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Rapini,October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Rapini,November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Rapini,December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Rutabaga,January,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Rutabaga,February,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Rutabaga,March,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Rutabaga,April,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Rutabaga,May,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Rutabaga,June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Rutabaga,July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Rutabaga,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Rutabaga,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Rutabaga,October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Rutabaga,November,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Rutabaga,December,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Snow Pea Shoots (Dow Miu),January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Snow Pea Shoots (Dow Miu),February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Snow Pea Shoots (Dow Miu),March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Snow Pea Shoots (Dow Miu),April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Snow Pea Shoots (Dow Miu),May,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Snow Pea Shoots (Dow Miu),June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Snow Pea Shoots (Dow Miu),July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Snow Pea Shoots (Dow Miu),August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Snow Pea Shoots (Dow Miu),September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Snow Pea Shoots (Dow Miu),October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Snow Pea Shoots (Dow Miu),November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Snow Pea Shoots (Dow Miu),December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Spinach,January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Spinach,February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Spinach,March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Spinach,April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Spinach,May,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Spinach,June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Spinach,July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Spinach,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Spinach,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Spinach,October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Spinach,November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Spinach,December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Sprouts,January,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Sprouts,February,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Sprouts,March,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Sprouts,April,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Sprouts,May,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Sprouts,June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Sprouts,July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Sprouts,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Sprouts,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Sprouts,October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Sprouts,November,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Sprouts,December,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Winter Squash,January,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Winter Squash,February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Winter Squash,March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Winter Squash,April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Winter Squash,May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Winter Squash,June,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Winter Squash,July,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Winter Squash,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Winter Squash,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Winter Squash,October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Winter Squash,November,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Winter Squash,December,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Summer Squash,January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Summer Squash,February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Summer Squash,March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Summer Squash,April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Summer Squash,May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Summer Squash,June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Summer Squash,July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Summer Squash,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Summer Squash,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Summer Squash,October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Summer Squash,November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Summer Squash,December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Sweet Potatoes,January,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Sweet Potatoes,February,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Sweet Potatoes,March,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Sweet Potatoes,April,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Sweet Potatoes,May,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Sweet Potatoes,June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Sweet Potatoes,July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Sweet Potatoes,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Sweet Potatoes,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Sweet Potatoes,October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Sweet Potatoes,November,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Sweet Potatoes,December,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Tomatoes (Field),January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Tomatoes (Field),February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Tomatoes (Field),March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Tomatoes (Field),April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Tomatoes (Field),May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Tomatoes (Field),June,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Tomatoes (Field),July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Tomatoes (Field),August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Tomatoes (Field),September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Tomatoes (Field),October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Tomatoes (Field),November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Tomatoes (Field),December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Tomatoes (Greenhouse),January,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Tomatoes (Greenhouse),February,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Tomatoes (Greenhouse),March,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Tomatoes (Greenhouse),April,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Tomatoes (Greenhouse),May,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Tomatoes (Greenhouse),June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Tomatoes (Greenhouse),July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Tomatoes (Greenhouse),August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Tomatoes (Greenhouse),September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Tomatoes (Greenhouse),October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Tomatoes (Greenhouse),November,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Tomatoes (Greenhouse),December,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Water Spinach (Tung Choy),January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Water Spinach (Tung Choy),February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Water Spinach (Tung Choy),March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Water Spinach (Tung Choy),April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Water Spinach (Tung Choy),May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Water Spinach (Tung Choy),June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Water Spinach (Tung Choy),July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Water Spinach (Tung Choy),August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Water Spinach (Tung Choy),September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Water Spinach (Tung Choy),October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Water Spinach (Tung Choy),November,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Water Spinach (Tung Choy),December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Yow Choy(Yellow Flower),January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Yow Choy(Yellow Flower),February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Yow Choy(Yellow Flower),March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Yow Choy(Yellow Flower),April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Yow Choy(Yellow Flower),May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Yow Choy(Yellow Flower),June,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Yow Choy(Yellow Flower),July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Yow Choy(Yellow Flower),August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Yow Choy(Yellow Flower),September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Yow Choy(Yellow Flower),October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Yow Choy(Yellow Flower),November,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Yow Choy(Yellow Flower),December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Zucchini,January,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Zucchini,February,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Zucchini,March,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Zucchini,April,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Zucchini,May,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Zucchini,June,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Zucchini,July,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Zucchini,August,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Zucchini,September,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Zucchini,October,1,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Zucchini,November,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
+35,ON,Ontario,vegetable,Zucchini,December,0,purchase_availability,Foodland Ontario Availability Guide,ON-FOODLAND-AVAIL
