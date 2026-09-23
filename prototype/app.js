@@ -39,7 +39,7 @@
   // Every month keeps a 30° wedge. The selected one grows outward (radius, never angle) past the
   // plate rim and carries every sticker in its ranked `wheel` list.
   const R_IN = 150, R_OUT = 442, R_OUT_ACTIVE = 690, R_LABEL = 478, R_LABEL_ACTIVE = 728;
-  const HW = 15;
+  const HW = 15, LABEL_GROW = 34 / 30;
   const polar = (r, deg) => {
     const a = (deg * Math.PI) / 180;
     return [r * Math.sin(a), -r * Math.cos(a)];
@@ -118,10 +118,19 @@
     }));
   }
 
+  // A wedge only reaches past the plate near the pointer, where the viewBox has headroom; on a long
+  // spin the old wedge tucks in as it swings away and the new one pulls out as it arrives.
+  const REACH_FULL = 25, REACH_NONE = 70;
+  function reach(c) {
+    const off = Math.abs(((c % 360) + 540) % 360 - 180);
+    const u = Math.min(1, Math.max(0, (REACH_NONE - off) / (REACH_NONE - REACH_FULL)));
+    return u * u * (3 - 2 * u);
+  }
+
   function draw({ ext, start }) {
     segEls.forEach((s, m) => {
       const c = start + m * 30;
-      const e = ext[m];
+      const e = ext[m] * reach(c);
       const d = wedge(c, HW, lerp(R_OUT, R_OUT_ACTIVE, e));
       s.bg.setAttribute("d", d);
       if (s.halo) s.halo.setAttribute("d", d);
@@ -135,7 +144,7 @@
         el.setAttribute("transform", `translate(${f1(x)} ${f1(y)}) scale(${(size / 100).toFixed(3)})`);
       });
       const [lx, ly] = polar(lerp(R_LABEL, R_LABEL_ACTIVE, e), c);
-      s.label.setAttribute("transform", `translate(${f1(lx)} ${f1(ly)})`);
+      s.label.setAttribute("transform", `translate(${f1(lx)} ${f1(ly)}) scale(${lerp(1, LABEL_GROW, e).toFixed(3)})`);
     });
   }
 
@@ -143,33 +152,67 @@
     return { ext: D.months.map((_, k) => (k === m ? 1 : 0)), start: -m * 30 };
   }
 
-  const easeOutCubic = (t) => 1 - (1 - t) ** 3;
-  const easeOutBack = (k) => (t) => 1 + (k + 1) * (t - 1) ** 3 + k * (t - 1) ** 2;
+  // Rotation and each wedge's outward growth are damped springs. `grow` is [angular frequency,
+  // damping ratio]; `spin` is [angular frequency, damping for a 30° step, damping for a 180° spin],
+  // so a long spin's overshoot past the pointer stays a few degrees. A new pick mid-spin retargets
+  // the springs and keeps the wheel's momentum.
+  const SPRINGS = { spin: [8, 0.62, 0.8], grow: [11, 0.7] };
+  const INTRO_SPRINGS = { spin: [4.6, 0.55, 0.55], grow: [7, 0.8] };
+  let goal = null, springs = SPRINGS, spinZeta = 0.62;
+  let vel = 0;
+  const extVel = D.months.map(() => 0);
+  let lastFrame = 0;
 
-  // Rotation springs along the shortest path while the old month retracts and the new one
-  // grows outward under the pointer.
-  function animateTo(target, { duration = 850, overshoot = 1.4 } = {}) {
-    if (tween) cancelAnimationFrame(tween.raf);
-    const from = { ext: [...layout.ext], start: layout.start };
-    const delta = ((((target.start - from.start) % 360) + 540) % 360) - 180;
-    if (reducedMotion.matches || duration === 0) {
-      layout = target;
+  function animateTo(target, withSprings = SPRINGS) {
+    const delta = ((((target.start - layout.start) % 360) + 540) % 360) - 180;
+    goal = { ext: target.ext, start: layout.start + delta };
+    springs = withSprings;
+    const [, zNear, zFar] = springs.spin;
+    spinZeta = lerp(zNear, zFar, Math.min(1, Math.max(0, (Math.abs(delta) - 30) / 150)));
+    if (reducedMotion.matches) {
+      if (tween) cancelAnimationFrame(tween);
+      tween = null;
+      vel = 0;
+      extVel.fill(0);
+      layout = { ext: [...goal.ext], start: goal.start };
       draw(layout);
       return;
     }
-    const spin = easeOutBack(overshoot);
-    const t0 = performance.now();
-    const step = (now) => {
-      const t = Math.min(1, (now - t0) / duration);
-      const tw = easeOutCubic(t);
-      layout = {
-        ext: from.ext.map((x, k) => lerp(x, target.ext[k], tw)),
-        start: from.start + delta * spin(t),
-      };
-      draw(layout);
-      tween = t < 1 ? { raf: requestAnimationFrame(step) } : null;
-    };
-    tween = { raf: requestAnimationFrame(step) };
+    if (!tween) {
+      lastFrame = performance.now();
+      tween = requestAnimationFrame(tick);
+    }
+  }
+
+  function tick(now) {
+    // rAF timestamps can predate the click that started the motion, so dt is clamped at 0.
+    const dt = Math.min(0.05, Math.max(0, (now - lastFrame) / 1000));
+    lastFrame = now;
+    const [ws] = springs.spin, [wg, zg] = springs.grow;
+    let { start } = layout;
+    const ext = [...layout.ext];
+    const steps = Math.ceil(dt / (1 / 240));
+    for (let i = 0; i < steps; i++) {
+      const h = dt / steps;
+      vel += (-ws * ws * (start - goal.start) - 2 * spinZeta * ws * vel) * h;
+      start += vel * h;
+      for (let k = 0; k < 12; k++) {
+        extVel[k] += (-wg * wg * (ext[k] - goal.ext[k]) - 2 * zg * wg * extVel[k]) * h;
+        ext[k] += extVel[k] * h;
+      }
+    }
+    const settled = Math.abs(start - goal.start) < 0.02 && Math.abs(vel) < 0.2
+      && ext.every((x, k) => Math.abs(x - goal.ext[k]) < 0.002 && Math.abs(extVel[k]) < 0.02);
+    if (settled) {
+      layout = { ext: [...goal.ext], start: goal.start };
+      vel = 0;
+      extVel.fill(0);
+      tween = null;
+    } else {
+      layout = { ext, start };
+      tween = requestAnimationFrame(tick);
+    }
+    draw(layout);
   }
 
   function renderHub() {
@@ -313,7 +356,7 @@
     // Paint the enlarged wedge last so its stickers and outline sit above its neighbours.
     $("#spin").appendChild(segEls[m].g);
     if (refocus) segEls[m].g.focus({ preventScroll: true });
-    animateTo(targetLayout(m), intro ? { duration: 1600, overshoot: 1.9 } : undefined);
+    animateTo(targetLayout(m), intro ? INTRO_SPRINGS : SPRINGS);
     renderHub();
     renderRail();
     renderTodayButton();

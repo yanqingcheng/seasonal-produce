@@ -86,7 +86,7 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.05; m
 .plate-rim { fill: #fffdf6; stroke: var(--ink); stroke-width: 5; filter: drop-shadow(0 10px 0 rgba(43, 35, 64, 0.14)); }
 .plate-inner { fill: #fff3dd; stroke: var(--ink); stroke-width: 4; }
 .seg { cursor: pointer; outline: none; }
-.seg-bg { fill: var(--tint); stroke: #fff3dd; stroke-width: 3; transition: filter 0.3s, stroke 0.3s; }
+.seg-bg { fill: var(--tint); stroke: #fff3dd; stroke-width: 3; transition: filter 0.3s, stroke 0.3s, stroke-width 0.3s; }
 .seg:hover .seg-bg { filter: brightness(1.04) saturate(1.15); }
 .seg.is-selected .seg-bg { stroke: var(--ink); stroke-width: 5; filter: saturate(1.35) drop-shadow(0 8px 0 rgba(43, 35, 64, 0.22)); }
 .seg:focus-visible .seg-bg { stroke: var(--sky); stroke-width: 7; }
@@ -94,7 +94,6 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.05; m
 @keyframes march { to { stroke-dashoffset: -52; } }
 
 .seg-label { font: 700 30px var(--display); fill: var(--ink); text-anchor: middle; dominant-baseline: middle; letter-spacing: 0.04em; pointer-events: none; }
-.seg.is-selected .seg-label { font-size: 34px; }
 .today-pill { fill: var(--sun); stroke: var(--ink); stroke-width: 4; }
 .sun { transform-box: fill-box; transform-origin: center; animation: spin-slow 12s linear infinite; }
 .sun-rays { fill: none; stroke: var(--sun); stroke-width: 12; stroke-dasharray: 6 9; }
