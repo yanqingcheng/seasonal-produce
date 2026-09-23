@@ -1,0 +1,20 @@
+{
+  "fruit": {
+    "produce_items": 20,
+    "month_cells": 240,
+    "available_month_cells": 79
+  },
+  "vegetable": {
+    "produce_items": 53,
+    "month_cells": 636,
+    "available_month_cells": 354
+  },
+  "country_units": 13,
+  "units_with_calendar": 1,
+  "unit_gaps": 12,
+  "produce_items": 73,
+  "month_cells": 876,
+  "available_month_cells": 433,
+  "unavailable_month_cells": 443,
+  "harvest_timing_facts": 0
+}
