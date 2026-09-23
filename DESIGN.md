@@ -31,6 +31,8 @@ This exhibit sits in Qing's Animal Crossing–style museum of loves. It should m
 
 That is now the "busy active segment" rule (see [Wheel anatomy](#wheel-anatomy)).
 
+**Correction (2026-09-23): "enlarge" means radius, not angle.** The first build of this rule read "enlarge" as a wider slice: the selected month took 96° and squeezed the other 11 down to 24° each. Qing clarified that she meant the opposite. **Every month keeps the same 30° angle**, and the selected wedge gets a **longer radius**, pushing out past the plate rim. The extra space comes from growing outward, not from taking angle from its neighbours. The prototype and this document now follow the corrected reading.
+
 ### Hard rules that follow from it
 
 1. **No fake-realistic food.** No photos, stock imagery, photoreal renders, AI "food photography", realistic textures, subsurface shine or gradient-modelled volume. If a drawing starts to look like real food, simplify it until it doesn't.
@@ -53,7 +55,7 @@ Every produce item is a **die-cut sticker**:
 
 - `prototype/art.js` holds about 40 hand-drawn **archetypes**: round fruit, stone fruit, pear, berry, cluster, currant strig, cherry pair, root, bulb-root, potato, leafy bunch, rosette, head, cauliflower, broccoli, asparagus, rhubarb, celery, leek, spring onion, pod, beans, pumpkin, butternut, long veg, aubergine, corn, mushroom, nuts, potted herb (four leaf styles), wild garlic, nettle, elderflower, courgette flower, nasturtium, onion, garlic, fennel, pepper, chilli, artichoke, samphire and chicory.
 - Each of the **108 corpus items** maps to one archetype plus a colour set. Examples: plum and damson share the stone-fruit shape but differ in colour; forced rhubarb is pink with small yellow leaves, while maincrop rhubarb is red with a big green leaf.
-- Art is built once into an SVG `<symbol>` sprite with two symbols per item: `art-*` (colour) and `cut-*` (silhouette for the die-cut and shadow). Everything reuses them with `<use>`, so the wheel's stickers (a month's quiet and active lists combined in the DOM, about 76 visible at once) stay cheap.
+- Art is built once into an SVG `<symbol>` sprite with two symbols per item: `art-*` (colour) and `cut-*` (silhouette for the die-cut and shadow). Everything reuses them with `<use>`, so the wheel's stickers (a month's quiet and active lists combined in the DOM, 70 visible at once) stay cheap.
 - Herbs sit in little terracotta pots, so the herb family reads at a glance.
 - Art only encodes *what the item is*. It never encodes data. Varieties, taste, size and nutrition are not in the corpus, and the drawings don't imply them.
 
@@ -92,11 +94,13 @@ Cards, tiles, chips and buttons use a **3 px ink border and a solid offset "stic
 
 #### Busy active segment
 
-- The **selected month's wedge is 4× as wide as a quiet month's**: 96° against 24° for each of the other 11. It also reaches further out (radius 476 vs 442, breaking over the plate's inner edge) and its label moves out onto the rim.
-- The active wedge carries **up to 21 stickers** in four rows (4 + 5 + 6 + 6), taken from the month's popularity ranking. A quiet wedge carries **5**, picked for variety across the wheel (see [Variety on quiet wedges](#variety-on-quiet-wedges)).
-- Higher-ranked items take the **most central, roomiest slots** (middle rows, centre column first), so the most familiar produce is what the eye lands on under the pointer.
+- **Enlarge = radius, never angle.** All 12 wedges are always **30°**. The selected wedge's outer radius grows from **442 to 690** (about 1.56×), so it sticks out well past the scalloped plate rim like a slice pulled out of a pie. Its label moves out with it (radius 478 → 728).
+- The quiet wedges keep the 442 radius and never lose angle, so the rest of the wheel doesn't change shape when you pick a month.
+- The active wedge carries **up to 15 stickers** in six rows, getting wider as they go out (1 + 2 + 2 + 3 + 3 + 4), taken from the month's popularity ranking. A quiet wedge carries **5**, picked for variety across the wheel (see [Variety on quiet wedges](#variety-on-quiet-wedges)).
+- Higher-ranked items take the **roomiest slots nearest the pointer** (middle rows, centre column first), so the most familiar produce is what the eye lands on first.
+- **Headroom:** the wheel's SVG `viewBox` is taller than it is wide (1040 × 1300), leaving room above the plate for the extended wedge. On desktop the wheel is sized by height, so the plate itself draws about 20% smaller than before the correction. That's the main cost of growing outward.
 - Anything that doesn't fit on the wedge is still in the panel's **At peak / Also in season** lists, exactly as before. The wedge is a highlight reel; the panel is the full record.
-- When the selection changes, the old wedge shrinks while the new one swells into the pointer. Stickers on both the quiet and active lists slide between their slots; stickers on only one list grow in or shrink away.
+- When the selection changes, the old wedge retracts to the plate while the new one grows outward under the pointer. Stickers on both the quiet and active lists slide between their slots; stickers on only one list grow in or shrink away.
 
 #### Which produce goes on the wedge (commonness heuristic)
 
@@ -112,7 +116,7 @@ The corpus has **no popularity or familiarity field**, so `scripts/build-data.mj
 Then:
 
 - **Ties:** within the same score, the **shorter UK season goes first** (among equally familiar items, the one that's only around now is the better "this month" pick; this stops cabbage and lettuce heading every month). Categories are then interleaved so a wedge isn't all one colour.
-- **Recipe guarantee:** the month's recipe ingredients are always on the enlarged wedge. If one falls outside the top 21, it replaces the lowest-ranked non-recipe item.
+- **Recipe guarantee:** the month's recipe ingredients are always on the enlarged wedge. If one falls outside the top 15, it replaces the lowest-ranked non-recipe item.
 - **Import flag:** items whose corpus note says UK supply is mostly imported (e.g. cranberry) are never stickers. They still appear in the month's lists.
 - **Result:** staples at peak lead (September's enlarged wedge opens with cucumber, plum, radishes, sweetcorn and blackberry), and herbs and foraged items only fill in once the familiar produce has run out (March's wedge ends with wild garlic and nettles).
 
@@ -136,7 +140,7 @@ The `STAPLES` list is an **editorial judgement**, not corpus data. It is small a
 
 On load, the selection **is** the current calendar month, taken from `new Date()`. How it's shown:
 
-- **Arrival spin:** the wheel spins in (about 170°, springy overshoot, 1.6 s) with every wedge quiet, and **lands with today's month on top**, under the pointer, swelling to the enlarged busy wedge as it arrives. Stickers pop in one after another, starting from today's segment.
+- **Arrival spin:** the wheel spins in (about 170°, springy overshoot, 1.6 s) with every wedge quiet, and **lands with today's month on top**, under the pointer, growing outward into the enlarged busy wedge as it arrives. Stickers pop in one after another, starting from today's segment.
 - **Today stays marked** even after you spin away:
   - a **sun pill** (yellow, slowly turning rays) replaces that month's rim label;
   - a **marching-ants tomato halo** outlines the segment;
@@ -149,7 +153,7 @@ On load, the selection **is** the current calendar month, taken from `new Date()
 
 | Action | Result |
 |---|---|
-| Click / tap a segment | The wheel rotates the shortest way to put it on top (0.85 s spring) while that wedge swells to the busy active size and the old one shrinks; a confetti burst pops at the rim; the panel refreshes |
+| Click / tap a segment | The wheel rotates the shortest way to put it on top (0.85 s spring) while that wedge grows outward to the busy active radius and the old one retracts; a confetti burst pops at the rim; the panel refreshes |
 | Click a sticker on the wheel | Selects its month **and** opens that item's fact sheet |
 | Month rail buttons | Same as clicking a segment. This is the reliable control on small screens |
 | ← / → keys | Previous / next month (wraps the year) |
@@ -194,13 +198,13 @@ The 23 grid-only items say so plainly: "The research corpus only has the month g
 | Moment | Motion | Timing |
 |---|---|---|
 | Load | Wheel spin-in to today; stickers pop in (scale and rotate), staggered by month distance from today | 1.6 s, overshoot |
-| Select month | Shortest-path rotation (spring) while wedge widths trade (ease-out), with extra stickers growing in; hub text pop; confetti burst; panel rise; tiles pop in, staggered | 0.85 s; tiles 22 ms stagger |
+| Select month | Shortest-path rotation (spring) while the old wedge's radius shrinks and the new one's grows (ease-out), with extra stickers growing in; hub text pop; confetti burst; panel rise; tiles pop in, staggered | 0.85 s; tiles 22 ms stagger |
 | Idle | Selected segment's stickers bob; faces blink; today's sun rays turn; halo dashes march; pointer nudges | Slow loops (2.8–12 s) |
 | Hover | Sticker jiggle (scale and tilt); tile lift and squish; chip tilt; plate wiggle | 0.2–0.6 s spring |
 | Fact sheet | Dialog springs up; hero sticker pops, then bobs | 0.45 s |
 | Reduced motion | All of the above off; state changes are instant (the enlarged wedge is drawn at its final size straight away) | — |
 
-Only the selected segment bobs, so idle animation stays cheap on phones. The wheel layout is tweened in JS (`requestAnimationFrame`, one pass over 12 paths and their visible stickers per frame) because wedge widths can't be animated with CSS transforms alone.
+Only the selected segment bobs, so idle animation stays cheap on phones. The wheel layout is tweened in JS (`requestAnimationFrame`, one pass over 12 paths and their visible stickers per frame) because a wedge's radius (its path shape) can't be animated with CSS transforms alone.
 
 ### Accessibility and responsive
 
@@ -243,7 +247,8 @@ Only the selected segment bobs, so idle animation stays cheap on phones. The whe
 3. **Pre-render the sprite** to a static `sprites.svg` (or inline it at build time) instead of generating it on the client. Add social / OG preview art in the same style for the homepage and Twitter.
 4. **Timezone:** the "current month" uses the visitor's local clock. Decide whether a UK exhibit should use `Europe/London` near month boundaries.
 5. **State in the URL** (optional): shareable `#month` / `#item` links, as long as the no-hash default remains the current month.
-6. **Performance budget:** keep idle animation limited to the selected segment. The busy wedge and the separate quiet picks put 258 sticker instances in the DOM (about 76 visible). Check that the month-change tween holds 60 fps on a mid-range phone; if it doesn't, create the active-only stickers only for the months being tweened.7. **A11y pass with a screen reader:** keyboard rotation, dialog focus return, and announcing month changes without being chatty.
+6. **Performance budget:** keep idle animation limited to the selected segment. The busy wedge and the separate quiet picks put 193 sticker instances in the DOM (70 visible). Check that the month-change tween holds 60 fps on a mid-range phone; if it doesn't, create the active-only stickers only for the months being tweened.
+7. **A11y pass with a screen reader:** keyboard rotation, dialog focus return, and announcing month changes without being chatty.
 8. **Trust copy:** surface the corpus's confidence caveats (Hubbub-only herbs, radicchio import flag) in an About / sources view built from `sources.md` once that annex is vendored.
 9. **Art QA:** a few archetypes are close cousins (the needle-leaf herbs; thyme vs. tarragon). An illustrator pass can differentiate them without leaving the system.
 10. **Popularity signal:** replace the editorial `STAPLES` list with a sourced familiarity or purchase signal (see [the commonness heuristic](#which-produce-goes-on-the-wedge-commonness-heuristic)), and keep the build check that every name resolves to a corpus item.
