@@ -162,7 +162,7 @@
     const fruitPeaks = mo.peak.filter((n) => byName.get(n).category === "fruit").length;
     const lead = CATEGORY[mo.lead.category].plural;
     const mix = fruitPeaks
-      ? `${lead[0].toUpperCase() + lead.slice(1)} lead the peaks (${mo.lead.count} of ${mo.counts.peak}), with ${fruitPeaks} fruit${fruitPeaks === 1 ? "" : "s"} at their best.`
+      ? `${lead[0].toUpperCase() + lead.slice(1)} lead the peaks (${mo.lead.count} of ${mo.counts.peak}), with ${fruitPeaks === 1 ? "1 fruit at its best" : `${fruitPeaks} fruits at their best`}.`
       : `${lead[0].toUpperCase() + lead.slice(1)} lead the peaks (${mo.lead.count} of ${mo.counts.peak}); no UK fruit is at peak.`;
     return `${mo.name} has <strong>${mo.counts.peak}</strong> things at peak and <strong>${mo.counts.in}</strong> more in season. ${trend} ${mix}`;
   }
