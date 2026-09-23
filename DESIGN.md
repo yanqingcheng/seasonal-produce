@@ -1,0 +1,218 @@
+# Stage 3 — Design: the UK Year-Wheel
+
+**Date:** 2026-09-23 · **Seat:** Stage 3 graphics / UI (Cursor Cloud, Claude Opus 5.5, effort medium)
+**Obeys:** [INTENT.md](INTENT.md) (thin UK ship) and [STAGE2.md](STAGE2.md) (UK pass-2 corpus PASS).
+**Prototype:** [`prototype/index.html`](prototype/index.html) · art sheet: [`prototype/gallery.html`](prototype/gallery.html)
+
+## Why
+
+This exhibit sits in Qing's Animal Crossing–style museum of loves. It should make a visitor smile at a leek. The seasonal data is the substance; the design's job is to make that data feel like a toy you want to spin.
+
+## Qing's art direction (2026-09-23)
+
+As relayed in the Stage 3 brief. This is a faithful record, not a transcript:
+
+- She **wants to be creative**.
+- The art must be **artistic and stylised**, because **fake-realistic pictures of food are offputting**.
+- **3D, pixel art, or cartoon** are all OK.
+- It must feel **dynamic and interactive**, while still **slick and responsive**.
+- The goal: make people **feel joy about their food**.
+
+### Hard rules that follow from it
+
+1. **No fake-realistic food.** No photos, stock imagery, photoreal renders, AI "food photography", realistic textures, subsurface shine or gradient-modelled volume. If a drawing starts to look like real food, simplify it until it doesn't.
+2. **Stylised, and one style everywhere.** Every produce item, at every size, is drawn in the same system (below).
+3. **Joy is a requirement.** Every screen should have at least one thing that moves, smiles or responds.
+4. **Slick beats busy.** Motion is springy but short, never blocks input, and switches off under `prefers-reduced-motion`.
+
+## Chosen visual system: "Sticker Garden"
+
+**Cartoon** is the pick from Qing's three options. 3D would be heavy for a thin static ship, and pixel art fights a wheel that rotates (pixels shimmer when rotated). Cartoon also matches the Animal Crossing museum frame, and SVG keeps it crisp at every size, from 28 px chips to the fact-sheet hero.
+
+Every produce item is a **die-cut sticker**:
+
+- **Flat colour shapes** with a single **ink outline** (`#2b2340`, 3.4 on a 100-unit box, round joins).
+- **One white highlight** blob per body. That is the only nod to volume.
+- **A face on everything**: two dot eyes with catch-lights, a small smile and pink blush. Eyes **blink** on a staggered cycle, so the board feels alive.
+- **A white die-cut border and a soft offset shadow**, like a sticker on paper.
+
+### Illustration approach
+
+- `prototype/art.js` holds about 40 hand-drawn **archetypes**: round fruit, stone fruit, pear, berry, cluster, currant strig, cherry pair, root, bulb-root, potato, leafy bunch, rosette, head, cauliflower, broccoli, asparagus, rhubarb, celery, leek, spring onion, pod, beans, pumpkin, butternut, long veg, aubergine, corn, mushroom, nuts, potted herb (four leaf styles), wild garlic, nettle, elderflower, courgette flower, nasturtium, onion, garlic, fennel, pepper, chilli, artichoke, samphire and chicory.
+- Each of the **108 corpus items** maps to one archetype plus a colour set. Examples: plum and damson share the stone-fruit shape but differ in colour; forced rhubarb is pink with small yellow leaves, while maincrop rhubarb is red with a big green leaf.
+- Art is built once into an SVG `<symbol>` sprite with two symbols per item: `art-*` (colour) and `cut-*` (silhouette for the die-cut and shadow). Everything reuses them with `<use>`, so the wheel's 60 stickers cost almost nothing.
+- Herbs sit in little terracotta pots, so the herb family reads at a glance.
+- Art only encodes *what the item is*. It never encodes data. Varieties, taste, size and nutrition are not in the corpus, and the drawings don't imply them.
+
+### Palette
+
+| Token | Hex | Use |
+|---|---|---|
+| Paper | `#fff7e8` → `#ffeccc` | Page background, with a faint polka-dot grid |
+| Ink | `#2b2340` | Every outline, text, chunky shadows |
+| Tomato | `#ff5a4e` | Peak state, "this month" tag, today halo, pointer |
+| Sun | `#ffc93c` | In-season state, today pill, primary buttons |
+| Leaf | `#3bb273` | Veg category, "new in" |
+| Plum | `#8e4dd6` | Wild/foraged category, recipe badge, links |
+| Sky | `#4f6df5` | Keyboard focus ring |
+| Month tints | 12 hues, icy blue (Jan) → spring greens → summer yellows → autumn oranges → lilac (Dec) | Wheel segments and panel header; the year reads as a colour wheel |
+
+Category colours (mix bar, fact sheet): veg `#3bb273`, fruit `#ff5a4e`, herb `#2f7d74`, salad `#a8e05a`, nut `#b0703f`, wild/foraged `#8e4dd6`.
+
+### Type
+
+- **Fredoka** (rounded, chunky) for display: month names, headings, labels.
+- **Nunito** for body copy.
+- The prototype loads both from Google Fonts. Stage 4 should self-host them (see below).
+
+### Surfaces
+
+Cards, tiles, chips and buttons use a **3 px ink border and a solid offset "sticker" shadow** (`0 4–7px 0 ink`). Buttons **press down** on `:active` (the shadow collapses), which is the tactile, toy-like feel.
+
+## The exhibit
+
+### Wheel anatomy
+
+- A scalloped **plate** holds 12 wedge **segments**, tinted by month.
+- Each segment carries **5 stickers**, the month's most distinctive produce, chosen in this order:
+  1. the month's recipe ingredients;
+  2. items at peak, shortest UK season first;
+  3. items in season.
+  Items whose corpus note says UK supply is mostly imported (e.g. cranberry) are never used as stickers. They still appear in the month's lists.
+- A **hub** shows the selected month, its season and its peak count. A tomato **pointer notch** on the hub marks the selection.
+- Month **labels** stay upright on the rim while the wheel turns (they counter-rotate).
+
+### Current-month default (INTENT behaviour)
+
+On load, the selection **is** the current calendar month, taken from `new Date()`. How it's shown:
+
+- **Arrival spin:** the wheel spins in (about 200°, springy overshoot, 1.6 s) and **lands with today's month on top**, under the pointer. Stickers pop in one after another, starting from today's segment.
+- **Today stays marked** even after you spin away:
+  - a **sun pill** (yellow, slowly turning rays) replaces that month's rim label;
+  - a **marching-ants tomato halo** outlines the segment;
+  - a red dot sits on that month in the month rail;
+  - the panel shows a "This month" tag and the hub says "this month".
+- A **"Back to {Month}" button** appears whenever another month is selected.
+- For demos and tests, `?month=1..12` overrides the current month. Without it, the default is always the real current month.
+
+### Interactions
+
+| Action | Result |
+|---|---|
+| Click / tap a segment | The wheel rotates the shortest way to put it on top (0.85 s spring); the segment lifts out; a confetti burst pops at the rim; the panel refreshes |
+| Click a sticker on the wheel | Selects its month **and** opens that item's fact sheet |
+| Month rail buttons | Same as clicking a segment. This is the reliable control on small screens |
+| ← / → keys | Previous / next month (wraps the year) |
+| Tab to a segment, then Enter / Space | Selects it |
+| Any produce tile or chip | Opens the fact sheet (native `<dialog>`; Esc, backdrop or × closes it) |
+| Recipe link in a fact sheet | Closes the sheet and jumps the wheel to that recipe's month |
+
+### Month panel (click month → short description)
+
+- **Header:** season, month name, and a short **derived** description.
+- A **mix bar** shows the in-season count by category.
+- **"New in"** and **"Last call"** chips list items starting or ending their in-season run (P/I) this month.
+- **Recipe card:** the month's stickers on a plate, the recipe title, clickable ingredient chips (with the corpus qualifier, e.g. "best after first frosts") and a link to the source.
+- **At peak** (P) and **Also in season** (I) tile grids. A "recipe" badge marks the recipe's ingredients.
+- **On the edge** (T): a collapsible chip list, explained as "start or end of season, or a single source".
+
+**Copy rules.** The corpus has no authored month text (Stage 2, gap 1), so descriptions are **templates filled only from the grid**:
+
+- peak and in-season counts;
+- fullest / leanest month, or the change versus the previous month;
+- the leading category and the fruit-peak count;
+- the arrivals and farewells lists.
+
+Every noun in the copy is a corpus item or a count. Winter months come out veg-led on their own ("Veg lead the peaks (11 of 15), with 4 fruits at their best") and no fruit is invented.
+
+### Fact sheet (clickable ingredient)
+
+**Corpus fields only:**
+
+- name and category;
+- a **12-month season ring** (P solid, I tint, T hatched, `.` pale) with the current month's cell bolded;
+- in-season, peak and edge month ranges;
+- `stored_notes` as month chips, when present;
+- `regions_notes`, when present;
+- the recipe join (recipes that use this item);
+- `specialist_sources`, when present.
+
+The 23 grid-only items say so plainly: "The research corpus only has the month grid for this one, so that's all we show." Nothing is padded.
+
+### Motion inventory
+
+| Moment | Motion | Timing |
+|---|---|---|
+| Load | Wheel spin-in to today; stickers pop in (scale and rotate), staggered by month distance from today | 1.6 s, overshoot |
+| Select month | Shortest-path rotation; segment lift; hub text pop; confetti burst; panel rise; tiles pop in, staggered | 0.85 s spring; tiles 22 ms stagger |
+| Idle | Selected segment's stickers bob; faces blink; today's sun rays turn; halo dashes march; pointer nudges | Slow loops (2.8–12 s) |
+| Hover | Sticker jiggle (scale and tilt); tile lift and squish; chip tilt; plate wiggle | 0.2–0.6 s spring |
+| Fact sheet | Dialog springs up; hero sticker pops, then bobs | 0.45 s |
+| Reduced motion | All of the above off; state changes are instant | — |
+
+Only the selected segment bobs, so idle animation stays cheap on phones.
+
+### Accessibility and responsive
+
+- **Layout:** two columns at 900 px and up (wheel sticky on the left, panel on the right). Below 900 px the wheel stacks above the panel and the rail becomes 6 × 2 below 560 px. Tiles tighten to 3 across on phones. The fact sheet goes single-column on phones.
+- **Controls:** every action has a real `<button>` (rail, tiles, chips), so the wheel is never the only way in. Segments are focusable `role="button"` with labels like "September: 46 at peak, 17 more in season (this month)".
+- **Announcements:** the panel is `aria-live="polite"`. The season ring and mix bar have text `aria-label`s. Stickers are `aria-hidden`; names are always printed beside them.
+- **Visuals:** colour is never the only signal. States also differ by pattern (hatched edge) and by label, and there is a visible sky-blue focus ring. Ink-on-pastel contrast is high throughout.
+- `prefers-reduced-motion` is honoured globally.
+
+## Data pipeline (UK corpus only)
+
+- `data/uk/` vendors the uploaded UK pass-2 pack:
+  - `produce_calendar.csv`: 108 items. Byte-identical to the Drive copy per Stage 2 (13191 bytes).
+  - `recipes.csv`: 12 recipes.
+  - `schema_and_evidence_rules.md`.
+- The CSV is the source rather than the JSON: the JSON merges `regions_notes`, `stored_notes` and sources into one `notes` field, and the CSV keeps them separate.
+- `node scripts/build-data.mjs` writes `prototype/data.js` and **fails the build** if any of these break:
+  - the item count is not 108;
+  - a month state is not P, I, T or `.`;
+  - a recipe ingredient doesn't resolve to a calendar item;
+  - a recipe ingredient isn't P or I in its month;
+  - there isn't exactly one recipe per month.
+- **Alias normalisation** at ingest: strip `(…)` qualifiers (kept as display text), strip a leading "early", then try the name as-is, `-ies`→`-y` and `-s`→`` (`strawberries`→`strawberry`, `blackberries (early)`→`blackberry`, `early apples`→`apple`, `damsons`→`damson`, `chestnuts`→`chestnut`, `Jersey Royals (peak May-Jun)`→`jersey royals`, `parsnips (best after first frosts)`→`parsnips`).
+- Nothing is authored by hand: sticker picks, arrivals and farewells are all computed from the grid.
+
+## Prototype vs. what Stage 4/5 should harden
+
+**Intentionally prototype (fine to throw away):**
+
+- Plain static HTML/CSS/JS, with no framework or bundler. Panel HTML is rebuilt with template strings.
+- Google Fonts loaded from the CDN.
+- `?month=` override and `scripts/shoot.mjs` (a headless-Chrome screenshot harness used for design review).
+- Hand-tuned SVG path data in one `art.js` file; archetype parameters are loose.
+- Blurb templates live in `app.js`.
+
+**Stage 4/5 should harden:**
+
+1. **Keep the build-time data checks** (they are the no-invention guard) and run them in CI. Add a test that every corpus item has a mapped archetype (`ProduceArt.hasArt`) so new rows can't silently fall back.
+2. **Self-host fonts** (and subset them), and add `font-display` metrics so the hub text doesn't reflow.
+3. **Pre-render the sprite** to a static `sprites.svg` (or inline it at build time) instead of generating it on the client. Add social / OG preview art in the same style for the homepage and Twitter.
+4. **Timezone:** the "current month" uses the visitor's local clock. Decide whether a UK exhibit should use `Europe/London` near month boundaries.
+5. **State in the URL** (optional): shareable `#month` / `#item` links, as long as the no-hash default remains the current month.
+6. **Performance budget:** keep idle animation limited to the selected segment. Check 60 fps on a mid-range phone and measure the SVG `<use>` count if more stickers per segment are added.
+7. **A11y pass with a screen reader:** keyboard rotation, dialog focus return, and announcing month changes without being chatty.
+8. **Trust copy:** surface the corpus's confidence caveats (Hubbub-only herbs, radicchio import flag) in an About / sources view built from `sources.md` once that annex is vendored.
+9. **Art QA:** a few archetypes are close cousins (the needle-leaf herbs; thyme vs. tarragon). An illustrator pass can differentiate them without leaving the system.
+
+**Out of scope for v1 (per INTENT):** multi-country, globe or map; inventing rows or fact fields; more countries' wheels.
+
+## How to run
+
+```bash
+node scripts/build-data.mjs          # regenerate prototype/data.js from data/uk/
+python3 -m http.server -d prototype  # then open http://localhost:8000/
+# demo another month:  http://localhost:8000/?month=1
+# every sticker:       http://localhost:8000/gallery.html
+```
+
+Opening `prototype/index.html` straight from disk also works.
+
+## Friction log
+
+- **Stage 2 points at `/workspace/seasonal-produce-uk/`, which doesn't exist on this box.** The corpus arrived only as chat uploads (CSV, JSON, recipes, schema; no `sources.md`, long CSV or varieties annex). The pack is now vendored into `data/uk/`, so later stages have one in-repo source. Future briefs should point there.
+- **The uploaded JSON isn't a lossless mirror of the CSV** (the notes fields are merged). The pipeline uses the CSV only. Stage 4 shouldn't switch to the JSON without re-splitting the fields.
+- **The brief paraphrases Qing's words.** They are recorded above as relayed; if a verbatim quote exists in seat chat, paste it into this section.
