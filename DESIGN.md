@@ -3,6 +3,7 @@
 **Date:** 2026-09-23 · **Seat:** Stage 3 graphics / UI (Cursor Cloud, Claude Opus 5.5, effort medium)
 **Obeys:** [INTENT.md](INTENT.md) (thin UK ship) and [STAGE2.md](STAGE2.md) (UK pass-2 corpus PASS).
 **Prototype:** [`prototype/index.html`](prototype/index.html) · art sheet: [`prototype/gallery.html`](prototype/gallery.html)
+**Ship architecture:** [ARCH.md](ARCH.md) (Stage 4). The wheel is shared across countries; v1 loads the UK pack only. ARCH.md sets that pack’s clock to Europe/London, keeps the editorial staple list until a cited purchase table is vendored, and removes cranberry from the UK pack (domestic season only; not a sticker-skip). Motion and art in this file stay the spec for every country.
 
 ## Why
 
@@ -120,7 +121,7 @@ Then:
 
 - **Ties:** within the same score, the **shorter UK season goes first** (among equally familiar items, the one that's only around now is the better "this month" pick; this stops cabbage and lettuce heading every month). Categories are then interleaved so a wedge isn't all one colour.
 - **Recipe guarantee:** the month's recipe ingredients are always on the enlarged wedge. If one falls outside the top 15, it replaces the lowest-ranked non-recipe item.
-- **Import flag:** items whose corpus note says UK supply is mostly imported (e.g. cranberry) are never stickers. They still appear in the month's lists.
+- **Import flag (prototype only):** items whose corpus note says UK supply is mostly imported (cranberry) are never stickers, and still appear in the month's lists. [ARCH.md](ARCH.md) replaces that for the ship: cranberry is removed from the pack. Pak choi and samphire stay.
 - **Result:** staples at peak lead (September's enlarged wedge opens with cucumber, plum, radishes, sweetcorn and blackberry), and herbs and foraged items only fill in once the familiar produce has run out (even in thin March, the 15 slots fill with veg and fruit and no herb or foraged item makes the wedge).
 
 #### Variety on quiet wedges
@@ -137,7 +138,7 @@ The **enlarged active wedge is exempt**: it stays popularity-first (Qing's earli
 
 Trade-off: rich months give up some headline staples to thinner ones (September's quiet wedge is cucumber, garlic, damson, butternut squash and loganberry; plum goes to October). Selecting the month still shows its most popular produce.
 
-The `STAPLES` list is an **editorial judgement**, not corpus data. It is small and reviewable on purpose. **Stage 4** should replace it with a sourced signal (e.g. Defra Family Food purchase volumes or search-interest data), vendored and cited like the rest of the corpus.
+The `STAPLES` list is an **editorial judgement**, not corpus data. It is small and reviewable on purpose. [ARCH.md](ARCH.md) keeps it for the thin ship. A sourced purchase or search-interest table can replace it later, vendored and cited like the rest of the corpus, once that file exists.
 
 ### Current-month default (INTENT behaviour)
 
@@ -249,13 +250,13 @@ Only the selected segment bobs, so idle animation stays cheap on phones. The whe
 1. **Keep the build-time data checks** (they are the no-invention guard) and run them in CI. Add a test that every corpus item has a mapped archetype (`ProduceArt.hasArt`) so new rows can't silently fall back.
 2. **Self-host fonts** (and subset them), and add `font-display` metrics so the hub text doesn't reflow.
 3. **Pre-render the sprite** to a static `sprites.svg` (or inline it at build time) instead of generating it on the client. Add social / OG preview art in the same style for the homepage and Twitter.
-4. **Timezone:** the "current month" uses the visitor's local clock. Decide whether a UK exhibit should use `Europe/London` near month boundaries.
+4. **Timezone:** decided in [ARCH.md](ARCH.md). The shell uses the pack timezone. The UK pack’s “this month” is the Europe/London calendar month. `?month=` selects a month and does not move the today marker.
 5. **State in the URL** (optional): shareable `#month` / `#item` links, as long as the no-hash default remains the current month.
 6. **Performance budget:** keep idle animation limited to the selected segment. The busy wedge and the separate quiet picks put 193 sticker instances in the DOM (70 visible). Check that the month-change tween holds 60 fps on a mid-range phone; if it doesn't, create the active-only stickers only for the months being tweened.
 7. **A11y pass with a screen reader:** keyboard rotation, dialog focus return, and announcing month changes without being chatty.
 8. **Trust copy:** surface the corpus's confidence caveats (Hubbub-only herbs, radicchio import flag) in an About / sources view built from `sources.md` once that annex is vendored.
 9. **Art QA:** a few archetypes are close cousins (the needle-leaf herbs; thyme vs. tarragon). An illustrator pass can differentiate them without leaving the system.
-10. **Popularity signal:** replace the editorial `STAPLES` list with a sourced familiarity or purchase signal (see [the commonness heuristic](#which-produce-goes-on-the-wedge-commonness-heuristic)), and keep the build check that every name resolves to a corpus item.
+10. **Popularity signal:** decided in [ARCH.md](ARCH.md). The editorial `STAPLES` list stays for the thin ship and still only orders stickers. Replacing it waits on a cited table vendored in `data/uk/`, with the same build check that every name is a corpus item.
 
 **Out of scope for v1 (per INTENT):** multi-country, globe or map; inventing rows or fact fields; more countries' wheels.
 
@@ -276,5 +277,5 @@ Opening `prototype/index.html` straight from disk also works.
 - **"Enlarge the selected segment" was ambiguous, and Stage 3 picked the wrong reading.** Enlarging by angle was built and shipped to the PR before Qing clarified that she meant radius. Next time, when a spatial direction could mean two things ("bigger" could mean wider or longer), put a quick sketch or a one-line "angle or radius?" check to the requester before building.
 - **The first "spin is fixed" report was wrong.** Its frame probe only measured labels and the wheel's overall bounding box, so it missed tiny active-only stickers left floating at their outer slots and wedges half-bloomed 20–70° from the pointer. The hub also led the wheel on rapid presses. An independent 1 fps frame review caught it. Motion checks now assert per frame that every visible sticker's centre is inside its own wedge path, that no wedge more than 16° from the pointer is past quiet radius, and that the hub names the month at the pointer. Before claiming a motion fix, probe the elements a viewer actually sees, not proxies.
 - **Qing's "make it busier" feedback reached this seat as a paraphrase**, so DESIGN.md records it as relayed, not verbatim. If a verbatim quote exists, paste it in alongside the art-direction quote.
-- **The corpus has no popularity signal**, yet "common and popular first" is now a design requirement. The `STAPLES` list covers the gap for the prototype; Stage 4 should source real data (Stage 4 hardening item 10).
+- **The corpus has no popularity signal**, yet "common and popular first" is now a design requirement. The `STAPLES` list covers the gap for the prototype. Stage 4 kept that list for the thin ship ([ARCH.md](ARCH.md)); a sourced table is a follow-up, not a ship gate.
 - **The uploaded JSON isn't a lossless mirror of the CSV** (the notes fields are merged). The pipeline uses the CSV only. Stage 4 shouldn't switch to the JSON without re-splitting the fields.

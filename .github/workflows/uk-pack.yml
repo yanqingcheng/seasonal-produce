@@ -1,0 +1,20 @@
+name: UK pack
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Build the UK pack
+        run: node scripts/build-data.mjs uk
+      - name: Acceptance checks
+        run: node scripts/check-ship.mjs
+      - name: Generated site data is committed
+        run: git diff --exit-code -- site/data site/sprites.svg site/og.svg
