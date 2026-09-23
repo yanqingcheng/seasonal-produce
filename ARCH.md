@@ -4,7 +4,7 @@
 **Obeys:** [INTENT.md](INTENT.md) (thin UK ship, Qing affirmed 2026-09-23), [STAGE2.md](STAGE2.md) (UK pass-2 corpus PASS), [DESIGN.md](DESIGN.md) (Sticker Garden, signed off).
 **This document is the Stage 5 spec.** Stage 5 ships the **UK pack** on a wheel that already speaks the country-pack contract below. It does not restyle the wheel, reopen motion, or publish a second country, a country toggle, or a globe.
 
-The wheel is not a UK-only program with a rewrite planned later. Motion, the month → produce → fact sheet → recipe flow, and the page shell are shared. Country data, copy, clock, and ranking lists live in a pack. v1 builds and loads the UK pack only.
+The wheel is not a UK-only program with a rewrite planned later. The signed-off Stage 3 sticker garden is the **shared graphics layer**: one wheel, one panel, one fact sheet, reused for every country. A pack supplies data and locale copy. It does not fork that chrome. v1 builds and loads the UK pack only.
 
 Where this file and DESIGN.md disagree on the **UK pack’s clock**, the **UK staple ranking**, or **which UK items may be stickers**, this file wins. Art, UK blurb wording, and accessibility stay in DESIGN.md. **§5 is the motion spec Stage 5 implements.** Those radii, angles, and sticker counts are the same figures as DESIGN.md’s wheel anatomy. They do not vary by country.
 
@@ -20,8 +20,9 @@ Where this file and DESIGN.md disagree on the **UK pack’s clock**, the **UK st
 | 6 | Recipe depth | When a month has a recipe, the panel shows title, corpus ingredient chips, and the corpus source link. Method steps stay on that link. The UK pack has one recipe every month. |
 | 7 | About / sources | Footer text comes from the pack. The UK string is: “Months and fact sheets come from the UK pass-2 research corpus (19 Sep 2026): BBC Good Food, Hubbub, BBC Gardeners’ World, Borough Kitchen and specialist grower bodies. Recipes are from BBC Good Food.” A separate About page waits until `sources.md` is in the repo. It is not in `data/uk/` today. |
 | 8 | Public URL | `site/` published as a static site. GitHub Pages on this repo is the intended host (`https://yanqingcheng.github.io/seasonal-produce/`). Any public HTTPS host of that same directory meets the ship if Pages is unavailable. v1 has no country path. |
-| 9 | How a second country plugs in | A new `data/<id>/` pack, art bindings, and a registry row. The wheel source stays. A Spain MAPA pack later is this shape, adapted into the contract CSVs if MAPA’s files differ. This pass does not add that pack. |
-| 10 | Toggle and globe | Stage 5 writes a registry with one shipped pack and does not draw a control. A control appears only when a later change ships a second pack. Globe and map stay deferred; when they exist they call the same `loadPack(id)`. |
+| 9 | How a second country plugs in | A new pack: data, locale copy, and bindings onto the existing stickers. A new drawing is added to the **shared** library only when no current archetype reads as that item. The wheel chrome is not redrawn. This pass does not add a second pack. |
+| 10 | Toggle and globe | Extension is a new pack plus a selector. Stage 5 writes a registry with one shipped pack and does not draw a control. A control appears only when a later change ships a second pack. Globe and map stay deferred; when they exist they are that selector and call `loadPack(id)`. They are not a new wheel. |
+| 11 | Graphics | Month tints, category colours, plate, type, motion, panel, and fact-sheet layout are one shared layer from Stage 3. Packs do not reskin them. |
 
 ## 1. Product cut
 
@@ -42,17 +43,37 @@ This is one exhibit in Qing’s Animal Crossing–style museum of loves, publish
 
 ## 2. Country packs
 
+### Shared graphics layer
+
+The Stage 3 prototype is the graphics spec for every country. Stage 5 implements it once. Changing country swaps the pack on that same screen. It does not ship a second design.
+
+**Common, one implementation**
+
+- The year-wheel chrome: scalloped plate, 12 wedges, hub, tomato pointer, upright rim labels, sun pill, marching-ants halo.
+- Motion and packing from §5 and DESIGN.md: equal **30°** wedges, selected month enlarges by **radius** (442 → 690), tuck → rotate → bloom only as the wedge lands under the pointer (full within 4°, quiet by 16°), stickers anchored on their wedge, active fifteen in six rows (1+2+2+3+3+4), quiet five.
+- Sticker-garden drawing rules: flat colour, one ink outline, one white highlight, a face, die-cut border and offset shadow. The same rules at chip size and at fact-sheet hero size.
+- The archetype library (the Stage 3 shapes: round fruit, root, leek, brassica, and the rest).
+- Month tints (icy blue in January through to lilac in December) and the category legend colours. These are chrome, not pack fields.
+- Panels: month blurb, mix bar, new-in / last-call, recipe card on its plate, at-peak and in-season shelves, edge disclosure, fact-sheet dialog and season ring.
+- Type, ink and paper, buttons, breakpoints, reduced motion, and the Open Graph image drawn in the same style.
+
+**A pack supplies data and locale copy.** Title, tagline, month names, season labels, category labels, attribution, blurb connective words, and the thin-sheet sentence. Plus the calendar, recipes, staples, and skip list.
+
+**What can be a country-specific asset**
+
+- A **binding** from that pack’s item id to an archetype already in the library, plus the fill colours that distinguish items sharing a shape (plum and damson). That is how most new rows appear. No new drawing.
+- A **new sticker** only when no archetype reads as that produce. The drawing joins the shared library under the same rules, and any pack may bind to it. It does not restyle the plate, the wedges, or the panels, and it is not a private theme.
+- Nothing else visual. A pack does not bring its own plate, wedge geometry, motion, type, month palette, or panel layout.
+
 ### Shared core
 
 These do not change when a country is added. Stage 5 builds them once, with the UK pack as the only input.
 
 - **Flow.** Load → today’s month in the pack timezone → spin lands that wedge → month panel → ingredient fact sheet → recipe card when the month has one. Back to today. Rail, ←/→, reduced motion.
-- **Motion and sticker geometry.** §5. Equal 30° wedges, radius growth, tuck → rotate → bloom, stickers anchored on their wedge. One set of numbers for every country.
-- **Shell.** Header, wheel, month rail, panel, dialog, footer. The shell fills them from the pack: title, tagline, month names, season labels, category legend, attribution, chrome strings.
+- **Graphics.** The layer above. `render(pack)` paints that one screen from the pack’s data and copy.
 - **Ranking algorithm and quiet-wedge draft.** Same point table and draft rules. The staple names, the everyday categories, and the skip list come from the pack.
 - **Blurb composer.** Same count rules as DESIGN.md. Connective words come from the pack’s copy bundle; nouns and counts come from that pack’s grid.
-- **Fact-sheet renderer.** Draws a field only when that item has it. The four season roles (peak, in season, edge, out) are what the ring understands.
-- **Art system.** One sticker-garden archetype library. A pack binds its item names to those archetypes.
+- **Fact-sheet renderer.** Same dialog. It draws a field only when that item has it. The four season roles (peak, in season, edge, out) are what the ring understands.
 
 ### Country pack contract
 
@@ -68,12 +89,11 @@ A pack is a directory `data/<id>/`. The build reads one pack and writes `site/da
 | `title`, `tagline` | Header. UK: “The UK Year-Wheel” / “Spin through what's growing, month by month.” |
 | `month_names` | 12 Gregorian names, January first. The wheel does not reorder months for a southern hemisphere; season labels do that work |
 | `seasons` | 12 presentation labels, one per month. UK: Jan–Feb winter, Mar–May spring, Jun–Aug summer, Sep–Nov autumn, Dec winter |
-| `categories` | `{ id, label, plural, colour, everyday }`. `everyday: true` is the ranking +1. UK ids: vegetable, fruit, herb, salad, nut, foraged/wild, with vegetable, fruit, and salad everyday |
+| `categories` | `{ id, label, plural, everyday }`. `everyday: true` is the ranking +1. Colour is the shared legend, not a pack field. UK ids: vegetable, fruit, herb, salad, nut, foraged/wild, with vegetable, fruit, and salad everyday. A category id the legend does not know yet is added once, in the shared legend, when that pack is accepted |
 | `state_roles` | Map from the corpus’s month letters to the four roles `peak`, `in`, `edge`, `out`. UK: `P`, `I`, `T`, `.` |
 | `sticker_exclude` | Item names removed from sticker pools before ranking. They stay in the lists. UK: `["cranberry"]` |
 | `attribution` | Footer string |
 | `thin_sheet` | Sentence when an item has no optional prose. UK uses the DESIGN.md line |
-| `tints` | Optional 12 month colours. Omitted → the Stage 3 UK sequence, which is the shell default |
 | `alias_profile` | `en` or `none`. See below |
 | `recipe_rule` | `one_per_month` or `optional`. UK: `one_per_month` |
 | `expect_items` | When set, the build fails if the row count differs. UK: `108` |
@@ -99,9 +119,9 @@ Any other column is kept in the file for research and is not shown. A future pac
 
 **Aliases.** The shared resolver lowercases the ingredient string, lifts a parenthetical into `qualifier`, then looks up the name. If `aliases.csv` exists (`from,item` pairs), those pairs win before anything else. The English steps (strip a leading `early `, then try the name, a trailing `ies`→`y`, and one trailing `s` removed) run only when `alias_profile` is `en`. UK sets `en` and keeps the worked examples in §4. A later pack that is not English sets `alias_profile` to `none` and ships explicit pairs. It does not inherit English plural stripping.
 
-**Copy bundle**, `copy.json`. Chrome strings the shell will not hardcode: “This month”, “Back to {month}”, “New in”, “Last call”, “At peak”, “Also in season”, “On the edge”, the edge explanation, state-role labels, and the blurb connective words. UK’s bundle is the English of the prototype and DESIGN.md. Item names inside blurbs still come from the grid.
+**Copy bundle**, `copy.json`. Locale copy the shell will not hardcode: “This month”, “Back to {month}”, “New in”, “Last call”, “At peak”, “Also in season”, “On the edge”, the edge explanation, state-role labels, and the blurb connective words. UK’s bundle is the English of the prototype and DESIGN.md. Item names inside blurbs still come from the grid. This file does not set colours, radii, or motion.
 
-**Art bindings**, `art/bindings/<id>.json`. Each calendar item maps to a shared archetype id and a colour set. The drawings stay in `art/` once, shared. Spain’s leek, when that pack exists, points at the same leek archetype under its own item name. The build fails if any item in the pack lacks a binding.
+**Art bindings**, `art/bindings/<id>.json`. Each calendar item maps to a shared archetype id and that item’s fill colours. The drawings live once in `art/`. A pack that names a leek points at the leek archetype; it does not redraw the wheel. The build fails if any item lacks a binding. If no archetype fits, the new drawing is added to `art/` under the sticker-garden rules, then the binding points at it. Packs do not carry a second sprite style.
 
 **Runtime document**, `site/data/<id>.json`, is the manifest’s display fields plus `items`, `recipes`, and `months` as in §4. `items[].months` stores the four **roles**, not the raw letters, so the shell never branches on a country’s alphabet. The UK CSV letters map onto those roles; `uk.json` stores the roles.
 
@@ -113,7 +133,7 @@ UK-specific means pack content and UK profile flags. It does not mean branches i
 
 - Corpus: 108 items, the pass-2 notes, 12 BBC Good Food recipes, English alias examples.
 - Profile flags: `expect_items` 108, `recipe_rule` `one_per_month`, `require_peak_every_month`, `alias_profile` `en`.
-- Clock, copy, seasons, categories, tints (via the default), cranberry skip list, staple list, attribution, title.
+- Clock, locale copy, season labels, category labels, cranberry skip list, staple list, attribution, title. Month tints and category colours stay in the shared graphics layer.
 - Evidence meaning of peak / in season / edge, which lives in `data/uk/schema_and_evidence_rules.md` and in the UK edge sentence. Another country’s letters map onto the same four roles only after that country’s own sources say so.
 
 The exhibit script must not contain the UK timezone, the staple names, cranberry, the footer sentence, or the 108 item names. Those live in `uk.json`. A test can grep the script for `Europe/London` and `cranberry` and expect no hits.
@@ -129,15 +149,15 @@ The exhibit script must not contain the UK timezone, the staple names, cranberry
 
 **Deliberately deferred**
 
-- Country toggle, globe, map, GeoJSON, or any geography.
-- A second pack, including Spain MAPA. When that research is accepted, an adapter writes the contract CSVs into `data/<id>/`, bindings are added, the registry gains a shipped row, and the wheel source is unchanged. The toggle appears because the registry grew, not because a new screen was designed in Stage 5.
-- Cross-country compare, a network fetch of packs, and per-country motion.
+- The selector UI: country toggle, globe, map, GeoJSON. When it is built, it only chooses a pack id. The screen it opens is this wheel.
+- A second pack, including Spain MAPA. When that research is accepted, an adapter writes the contract CSVs into `data/<id>/`, locale copy and bindings are added, and the registry gains a shipped row. New stickers are added only for item ids the library cannot show. The wheel source and the Stage 3 chrome stay. The selector appears because the registry grew.
+- Cross-country compare, a network fetch of packs, and any per-country motion, palette, or panel layout.
 
 `openPack` for a future map is `loadPack(id)`. Stage 5 does not add a second function for geography.
 
 ### Worked plug-in (not built)
 
-A later Spain pack is `data/es/pack.json` plus a calendar CSV in the columns above, optional recipes, a staple list, `alias_profile: "none"` with `aliases.csv` for Spanish names, and `art/bindings/es.json` pointing at existing archetypes. `timezone` would be `Europe/Madrid` if that pack is about what Spain is growing now. Season labels and category colours are whatever that corpus supports. Missing months are not filled with UK rows or with guessed crops. Until that directory exists, the site has nothing to load for `es`.
+A later Spain pack is `data/es/pack.json` plus a calendar CSV in the columns above, optional recipes, a staple list, Spanish locale copy, `alias_profile: "none"` with `aliases.csv`, and `art/bindings/es.json` pointing at the existing archetypes. A produce the library cannot show gets one new shared sticker, drawn to the same rules. `timezone` would be `Europe/Madrid` if that pack is about what Spain is growing now. The plate, the spin, the panels, and the month colours stay the Stage 3 wheel. Missing months are not filled with UK rows or with guessed crops. Until that directory exists, the site has nothing to load for `es`.
 
 ## 3. Information architecture
 
@@ -283,7 +303,7 @@ Nutrition, taste, varieties, and encyclopedia copy are not fields.
 
 **SVG for the wheel, DOM for the panel, `<dialog>` for the sheet.** Stickers stay crisp from a chip to the fact-sheet hero, labels stay upright, and controls stay real buttons. A wedge’s outer radius is path geometry, so the spin is a `requestAnimationFrame` spring that rewrites the 12 wedge paths and their sticker positions each frame.
 
-**Art pipeline.** Archetype drawings move from `prototype/art.js` into `art/`. The UK item→archetype map moves to `art/bindings/uk.json`. The build emits `site/sprites.svg` with the symbols the UK bindings use (`art-*` and `cut-*` per item). The page includes that sprite. The client only `<use>`s it. A later pack adds bindings and the build adds symbols; it does not fork the drawings. Art encodes what the item is. It does not encode variety, taste, or nutrition. The drawing rules (flat colour, one ink outline, one white highlight, a face, die-cut border) stay DESIGN.md’s Sticker Garden. No photo, no photoreal render, no stock image.
+**Art pipeline.** This is the shared graphics layer, not a UK theme. Archetype drawings move from `prototype/art.js` into `art/`. The UK item→archetype map moves to `art/bindings/uk.json`. The build emits `site/sprites.svg` with the symbols those bindings use (`art-*` and `cut-*` per item). The page includes that sprite. The client only `<use>`s it. A later pack adds bindings. A new symbol is emitted only for a new shared archetype. Art encodes what the item is. It does not encode variety, taste, or nutrition. The drawing rules stay DESIGN.md’s Sticker Garden. No photo, no photoreal render, no stock image. Month tints and category colours are constants in the shell, the same ones as the prototype.
 
 **Fonts.** Fredoka and Nunito are self-hosted under `site/fonts/` (Open Font License, Latin subset, `font-display: optional` so a late font does not swap under the hub and move it). The page does not call Google Fonts.
 
@@ -339,7 +359,7 @@ Stage 5 is done when every line below is true on the public URL. A line that nee
 8. **Art.** Shipped image assets are the SVG sprite and the Open Graph image drawn from it. No raster food photograph.
 9. **Access.** ←/→ change month and wrap. The fact sheet takes focus and returns it to the opener on close. Changing month updates the panel text; a screen reader announces that update when it finishes the current phrase, and focus stays on the control the visitor used (arrow key, rail button, or segment). Colour is paired with a label or a hatch. Month rail works below 900px wide.
 10. **Scope.** The shipped DOM has no country switch, globe, or map. `registry.json` lists only `uk`. No second country’s data file is published or loaded.
-11. **Pack boundary.** `uk.json` has `id` `uk` and `timezone` `Europe/London`. The exhibit script renders that document. It does not contain `Europe/London`, `cranberry`, or the footer’s source sentence; those strings are in the pack. `?country=uk` loads the UK pack. `?country=es` is ignored, the UK pack still loads, and the page contains no Spain rows.
+11. **Pack boundary.** `uk.json` has `id` `uk` and `timezone` `Europe/London`. The exhibit script renders that document through the one wheel. `uk.json` does not carry wedge radii, bloom angles, or month-tint colours. The script does not contain `Europe/London`, `cranberry`, or the footer’s source sentence; those strings are in the pack. `?country=uk` loads the UK pack. `?country=es` is ignored, the UK pack still loads, and the page contains no Spain rows.
 
 Performance note, recorded beside the checklist: one month-change on a mid-range phone or, if none is available, a CPU-throttled desktop profile, naming the machine. If the tween stays under 30fps, apply the sticker-node tactic in §5 and re-check. A tween that is still under 30fps after that tactic does not fail checks 1–11; the note says so, and Qing can hold the ship on that note alone.
 
@@ -347,7 +367,8 @@ Performance note, recorded beside the checklist: one month-change on a mid-range
 
 Stage 5 does not do these. The pack contract in §2 is how a later country arrives; it is not permission to ship one now.
 
-- Country toggle, globe, map, or a second country’s rows. Parallel research (US regional, Italy, Australia, Egypt, Mexico, and a future Spain MAPA pack) stays out of the thin ship. No invented rows for those countries, and no UK rows reused to fake them.
+- A second country’s rows, and the selector that would show them (toggle, globe, map). Parallel research (US regional, Italy, Australia, Egypt, Mexico, and a future Spain MAPA pack) stays out of the thin ship. No invented rows for those countries, and no UK rows reused to fake them. A later country is a pack plus that selector, not a new wheel design.
+- A per-country fork of the Stage 3 chrome: different plate, motion, month palette, panel layout, or sticker style.
 - Inventing crop-season rows, month prose that names produce not in that month’s grid, or fact-sheet fields the loaded pack does not have.
 - Using the Joint Nature Conservation Committee (JNCC) UK fruit list — about 21 fruits, shipped inside an international data zip — as this calendar. INTENT allows it as corroboration only. Those rows are not in this repo, and v1 does not load them.
 - Photoreal, photographic, or fake-realistic food. 3D and pixel art are not the v1 style; Sticker Garden is.
