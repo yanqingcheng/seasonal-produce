@@ -440,6 +440,110 @@ const A = {
     <path d="M50 8C60 16 64 26 64 36C58 28 54 20 50 8Z M50 8C40 16 36 26 36 36C42 28 46 20 50 8Z" fill="${c.tip}"/>
     <path d="M50 20C42 40 42 70 48 92M50 20C58 40 58 70 52 92" fill="none" stroke-width="2.2" opacity=".35"/>
     ${f(50, 62, 0.72)}`,
+
+  // A cut slice reads at chip size where a whole melon is just a ball. Melon vs watermelon is fill only.
+  slice: (c, f) => `
+    <g transform="rotate(-10 50 50)">
+    <path d="M2 30C2 64 23 90 50 90C77 90 98 64 98 30Z" fill="${c.rind}"/>
+    <path d="M10 30C10 59 28 82 50 82C72 82 90 59 90 30Z" fill="${c.pith}" stroke="none"/>
+    <path d="M15 30C15 56 31 76 50 76C69 76 85 56 85 30Z" fill="${c.body}"/>
+    ${c.seeds ? [[28, 42], [40, 60], [60, 60], [72, 42], [50, 68]].map(([x, y]) => `<path d="M${x} ${y - 3}C${x + 3} ${y} ${x + 2} ${y + 4} ${x} ${y + 4}C${x - 2} ${y + 4} ${x - 3} ${y} ${x} ${y - 3}Z" fill="${c.seeds}" stroke="none"/>`).join("") : ""}
+    ${c.net ? `<path d="M18 68l6-5M31 80l5-7M50 86v-7M69 80l-5-7M82 68l-6-5" fill="none" stroke-width="2" opacity=".4"/>` : ""}
+    ${shine(26, 37, 4, 3, 0)}
+    </g>
+    ${f(50, 48, 0.86)}`,
+
+  grapes: (c, f) => {
+    const rows = [[36, [22, 40, 58, 76]], [52, [31, 67]], [68, [40, 58]], [84, [49]]];
+    const grape = (x, y, i) => `<circle cx="${x}" cy="${y}" r="10.5" fill="${i % 2 === 0 && c.body2 ? c.body2 : c.body}"/>${shine(x - 3.5, y - 3.5, 2, 3.4)}`;
+    let i = 0;
+    return `
+    <path d="M50 26C50 18 52 12 57 8" fill="none" stroke="${c.stem}" stroke-width="3.4"/>
+    <path d="M56 16C60 6 76 2 86 8C84 12 88 18 82 22C78 26 70 24 66 22C62 24 56 22 56 16Z" fill="${c.leaf}"/>
+    <path d="M43 14C36 12 32 16 34 20" fill="none" stroke="${c.stem}" stroke-width="2.2"/>
+    ${rows.map(([y, xs]) => xs.map((x) => grape(x, y, i++)).join("")).join("")}
+    <circle cx="49" cy="55" r="15" fill="${c.body}"/>${shine(42, 49, 2.6, 4.4)}
+    ${f(49, 57, 0.72)}`;
+  },
+
+  // Whole fruit by default; `lemon` and `flat` change the body, `half` shows the cut segments.
+  citrus: (c, f) => {
+    if (c.half) {
+      const spokes = [0, 45, 90, 135].map((r) => `<path d="M50 23V87" transform="rotate(${r} 50 55)" fill="none" stroke="${c.pith}" stroke-width="3"/>`).join("");
+      return `
+    <circle cx="50" cy="55" r="38" fill="${c.body}"/>
+    <circle cx="50" cy="55" r="31" fill="${c.pith}" stroke="none"/>
+    <circle cx="50" cy="55" r="28" fill="${c.flesh}" stroke-width="2.4"/>
+    ${spokes}
+    <circle cx="50" cy="55" r="12" fill="${c.flesh}" stroke="none"/>
+    ${shine(36, 42, 3, 5)}
+    ${f(50, 57, 0.62)}`;
+    }
+    const body = c.lemon
+      ? `<path d="M6 60C6 55 10 52 15 52C20 40 34 32 50 32C66 32 80 40 85 52C90 52 94 55 94 60C94 65 90 68 85 68C80 80 66 86 50 86C34 86 20 80 15 68C10 68 6 65 6 60Z" fill="${c.body}" transform="rotate(-12 50 60)"/>`
+      : `<ellipse cx="50" cy="58" rx="${c.flat ? 36 : 34}" ry="${c.flat ? 28 : 34}" fill="${c.body}"/>`;
+    const top = c.lemon ? 33 : c.flat ? 31 : 25;
+    return `
+    ${body}
+    <path d="M30 50h.1M40 42h.1M62 42h.1M70 52h.1M32 70h.1M66 72h.1M50 80h.1" fill="none" stroke="${c.body2}" stroke-width="3.2"/>
+    ${shine(32, 50, 4, 8)}
+    <path d="M50 ${top + 2}C50 ${top - 4} 52 ${top - 8} 55 ${top - 11}" fill="none"/>
+    <path d="M54 ${top - 6}C60 ${top - 17} 76 ${top - 19} 84 ${top - 14}C78 ${top - 2} 63 ${top} 54 ${top - 6}Z" fill="${c.leaf}"/>
+    ${f(50, 62)}`;
+  },
+
+  banana: (c, f) => {
+    const fruit = (face) => `
+      <path d="M22 18C16 44 26 76 56 86C70 90 84 86 92 78C94 74 90 72 86 74C66 80 44 66 38 42C36 32 36 24 36 18Z" fill="${c.body}"/>
+      <path d="M30 26C30 50 42 70 64 78" fill="none" stroke="${c.body2}" stroke-width="2.4" opacity=".7"/>
+      <path d="M22 18L24 9L36 10L36 18Z" fill="${c.stem}"/>
+      <path d="M90 76C92 78 94 80 96 80" fill="none" stroke="${c.stem}" stroke-width="4"/>
+      ${face ? f(34, 56, 0.68) : ""}`;
+    return `<g transform="translate(14 -6) rotate(-10 50 50) scale(.9)">${fruit(false)}</g>${fruit(true)}`;
+  },
+
+  avocado: (c, f) => `
+    <path d="M50 8C60 8 64 20 68 34C74 48 84 58 84 72C84 88 68 96 50 96C32 96 16 88 16 72C16 58 26 48 32 34C36 20 40 8 50 8Z" fill="${c.body}"/>
+    <path d="M50 16C57 16 59 26 62 36C66 48 76 58 76 71C76 83 64 89 50 89C36 89 24 83 24 71C24 58 34 48 38 36C41 26 43 16 50 16Z" fill="${c.flesh}"/>
+    <path d="M50 22C55 22 56 30 58 38C62 48 70 58 70 70C70 80 60 84 50 84C40 84 30 80 30 70C30 58 38 48 42 38C44 30 45 22 50 22Z" fill="${c.flesh2}" stroke="none"/>
+    <circle cx="50" cy="68" r="14" fill="${c.pit}"/>
+    ${shine(45, 63, 2.6, 4.6)}
+    ${f(50, 44, 0.58)}`,
+
+  kiwi: (c, f) => {
+    const seeds = Array.from({ length: 14 }, (_, i) => {
+      const a = (i / 14) * Math.PI * 2;
+      const x = 50 + Math.cos(a) * 21, y = 55 + Math.sin(a) * 21;
+      return `<ellipse cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" rx="1.5" ry="3" fill="${c.seeds}" stroke="none" transform="rotate(${((a * 180) / Math.PI + 90).toFixed(0)} ${x.toFixed(1)} ${y.toFixed(1)})"/>`;
+    }).join("");
+    return `
+    <circle cx="50" cy="55" r="39" fill="${c.body}"/>
+    <path d="M50 19v3M50 88v3M14 55h3M83 55h3M25 30l2 2M75 30l-2 2M25 80l2-2M75 80l-2-2" fill="none" stroke="${c.flesh}" stroke-width="2.2" opacity=".6"/>
+    <circle cx="50" cy="55" r="32" fill="${c.flesh}"/>
+    ${seeds}
+    <ellipse cx="50" cy="55" rx="13" ry="12" fill="${c.core}" stroke="none"/>
+    ${shine(34, 40, 3, 5)}
+    ${f(50, 56, 0.5)}`;
+  },
+
+  mango: (c, f) => `
+    <g transform="rotate(-28 50 54)">
+    <path d="M50 12C74 12 88 36 86 60C84 84 68 96 50 94C38 92 32 84 33 74C34 64 26 58 22 48C16 28 30 12 50 12Z" fill="${c.body}"/>
+    ${c.blush ? `<path d="M50 12C74 12 88 36 86 60C78 46 66 36 52 32C40 28 28 32 21 40C22 22 34 12 50 12Z" fill="${c.blush}" stroke="none"/>` : ""}
+    <path d="M50 12C74 12 88 36 86 60C84 84 68 96 50 94C38 92 32 84 33 74C34 64 26 58 22 48C16 28 30 12 50 12Z" fill="none"/>
+    ${shine(70, 60, 4, 10, 10)}
+    <path d="M44 14C42 9 42 6 44 2" fill="none" stroke="${c.stem}" stroke-width="3.4"/>
+    <path d="M44 6C34 -4 18 -2 14 4C22 14 36 14 44 6Z" fill="${c.leaf}"/>
+    </g>
+    ${f(52, 56, 0.9)}`,
+
+  walnut: (c, f) => `
+    <path d="M50 12C70 12 86 30 86 54C86 76 70 90 50 90C30 90 14 76 14 54C14 30 30 12 50 12Z" fill="${c.body}"/>
+    <path d="M50 12C46 24 54 34 50 44M50 76C52 82 49 86 50 90" fill="none" stroke-width="2.6"/>
+    <path d="M26 36q5 4 2 10q-4 6 2 12M74 36q-5 4-2 10q4 6-2 12M34 22q6 4 4 12M66 22q-6 4-4 12M28 72q6-2 8 4M72 72q-6-2-8 4" fill="none" stroke="${c.body2}" stroke-width="2.4"/>
+    <path d="M48 12L50 5L52 12Z" fill="${c.body2}"/>
+    ${shine(30, 44, 4, 8, 25)}
+    ${f(50, 58, 0.8)}`,
 };
 
 
