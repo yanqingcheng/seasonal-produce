@@ -101,6 +101,7 @@ Cards, tiles, chips and buttons use a **3 px ink border and a solid offset "stic
 - **Headroom:** the wheel's SVG `viewBox` is taller than it is wide (1040 × 1300), leaving room above the plate for the extended wedge. On desktop the wheel is sized by height, so the plate itself draws about 20% smaller than before the correction. That's the main cost of growing outward.
 - Anything that doesn't fit on the wedge is still in the panel's **At peak / Also in season** lists, exactly as before. The wedge is a highlight reel; the panel is the full record.
 - When the selection changes, the old wedge retracts to the plate while the new one grows outward under the pointer. Stickers on both the quiet and active lists slide between their slots; stickers on only one list grow in or shrink away.
+- **Reach is gated by angle.** A wedge can only stick out past the plate while it's within about 25° of the pointer, fading to none by 70°. On a long spin (say December to June) the old wedge tucks in as it swings away and the new one pulls out as it arrives, instead of two full-length slices sweeping sideways over the panel and off the edge of a phone screen. The label grows with the wedge (30 → 34 px), and the ink outline eases in and out rather than snapping.
 
 #### Which produce goes on the wedge (commonness heuristic)
 
@@ -153,7 +154,7 @@ On load, the selection **is** the current calendar month, taken from `new Date()
 
 | Action | Result |
 |---|---|
-| Click / tap a segment | The wheel rotates the shortest way to put it on top (0.85 s spring) while that wedge grows outward to the busy active radius and the old one retracts; a confetti burst pops at the rim; the panel refreshes |
+| Click / tap a segment | The wheel springs the shortest way to put it on top (settles in about 0.9 s) while that wedge grows outward to the busy active radius and the old one retracts; a confetti burst pops at the rim; the panel refreshes |
 | Click a sticker on the wheel | Selects its month **and** opens that item's fact sheet |
 | Month rail buttons | Same as clicking a segment. This is the reliable control on small screens |
 | ← / → keys | Previous / next month (wraps the year) |
@@ -198,13 +199,14 @@ The 23 grid-only items say so plainly: "The research corpus only has the month g
 | Moment | Motion | Timing |
 |---|---|---|
 | Load | Wheel spin-in to today; stickers pop in (scale and rotate), staggered by month distance from today | 1.6 s, overshoot |
-| Select month | Shortest-path rotation (spring) while the old wedge's radius shrinks and the new one's grows (ease-out), with extra stickers growing in; hub text pop; confetti burst; panel rise; tiles pop in, staggered | 0.85 s; tiles 22 ms stagger |
+| Select month | Shortest-path rotation spring, overshooting about 2° past the pointer whether it's a 30° step or a 180° spin; the old wedge's radius shrinks and the new one's grows on their own spring with a small outward pop; extra stickers grow in; hub text pop; confetti burst; panel rise; tiles pop in, staggered | ~0.9 s to settle; tiles 22 ms stagger |
+| Rapid picks (holding ← / →, clicking mid-spin) | The springs retarget and keep their velocity, so several quick steps glide as one spin with no stop-start or backward tick | — |
 | Idle | Selected segment's stickers bob; faces blink; today's sun rays turn; halo dashes march; pointer nudges | Slow loops (2.8–12 s) |
 | Hover | Sticker jiggle (scale and tilt); tile lift and squish; chip tilt; plate wiggle | 0.2–0.6 s spring |
 | Fact sheet | Dialog springs up; hero sticker pops, then bobs | 0.45 s |
 | Reduced motion | All of the above off; state changes are instant (the enlarged wedge is drawn at its final size straight away) | — |
 
-Only the selected segment bobs, so idle animation stays cheap on phones. The wheel layout is tweened in JS (`requestAnimationFrame`, one pass over 12 paths and their visible stickers per frame) because a wedge's radius (its path shape) can't be animated with CSS transforms alone.
+Only the selected segment bobs, so idle animation stays cheap on phones. The wheel layout is driven by JS springs (`requestAnimationFrame`, one pass over 12 paths and their visible stickers per frame; about 2–3 ms of script per frame in headless Chrome) because a wedge's radius (its path shape) can't be animated with CSS transforms alone. In headless software rendering, about a quarter of the frames during a spin drop to 30 fps. That cost is raster of the ~70 visible stickers, not script, so Stage 4 should confirm frame rate on a real mid-range phone (hardening item 6).
 
 ### Accessibility and responsive
 
