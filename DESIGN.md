@@ -118,7 +118,7 @@ Then:
 - **Ties:** within the same score, the **shorter UK season goes first** (among equally familiar items, the one that's only around now is the better "this month" pick; this stops cabbage and lettuce heading every month). Categories are then interleaved so a wedge isn't all one colour.
 - **Recipe guarantee:** the month's recipe ingredients are always on the enlarged wedge. If one falls outside the top 15, it replaces the lowest-ranked non-recipe item.
 - **Import flag:** items whose corpus note says UK supply is mostly imported (e.g. cranberry) are never stickers. They still appear in the month's lists.
-- **Result:** staples at peak lead (September's enlarged wedge opens with cucumber, plum, radishes, sweetcorn and blackberry), and herbs and foraged items only fill in once the familiar produce has run out (March's wedge ends with wild garlic and nettles).
+- **Result:** staples at peak lead (September's enlarged wedge opens with cucumber, plum, radishes, sweetcorn and blackberry), and herbs and foraged items only fill in once the familiar produce has run out (even in thin March, the 15 slots fill with veg and fruit and no herb or foraged item makes the wedge).
 
 #### Variety on quiet wedges
 
@@ -269,6 +269,7 @@ Opening `prototype/index.html` straight from disk also works.
 ## Friction log
 
 - **Stage 2 points at `/workspace/seasonal-produce-uk/`, which doesn't exist on this box.** The corpus arrived only as chat uploads (CSV, JSON, recipes, schema; no `sources.md`, long CSV or varieties annex). The pack is now vendored into `data/uk/`, so later stages have one in-repo source. Future briefs should point there.
+- **"Enlarge the selected segment" was ambiguous, and Stage 3 picked the wrong reading.** Enlarging by angle was built and shipped to the PR before Qing clarified that she meant radius. Next time, when a spatial direction could mean two things ("bigger" could mean wider or longer), put a quick sketch or a one-line "angle or radius?" check to the requester before building.
 - **Qing's "make it busier" feedback reached this seat as a paraphrase**, so DESIGN.md records it as relayed, not verbatim. If a verbatim quote exists, paste it in alongside the art-direction quote.
 - **The corpus has no popularity signal**, yet "common and popular first" is now a design requirement. The `STAPLES` list covers the gap for the prototype; Stage 4 should source real data (Stage 4 hardening item 10).
 - **The uploaded JSON isn't a lossless mirror of the CSV** (the notes fields are merged). The pipeline uses the CSV only. Stage 4 shouldn't switch to the JSON without re-splitting the fields.
