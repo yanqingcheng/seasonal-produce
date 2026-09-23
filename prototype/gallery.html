@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sticker Garden · all 108 UK produce stickers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .gallery { max-width: 1320px; margin: 0 auto; padding: 8px 24px 40px; }
+    .gallery h2 { font-size: 26px; margin: 24px 0 10px; text-transform: capitalize; }
+    .gallery .tiles { grid-template-columns: repeat(auto-fill, minmax(112px, 1fr)); }
+  </style>
+</head>
+<body>
+  <div id="sprite"></div>
+  <header class="top">
+    <div class="brand">
+      <div>
+        <h1>Sticker Garden</h1>
+        <p>Every UK corpus item, drawn in the exhibit's art system. <a href="index.html">Back to the wheel</a></p>
+      </div>
+    </div>
+  </header>
+  <main class="gallery" id="gallery"></main>
+  <script src="data.js"></script>
+  <script src="art.js"></script>
+  <script>
+    const { buildSprite, sticker } = window.ProduceArt;
+    const items = window.UK_WHEEL.items;
+    document.getElementById("sprite").innerHTML = buildSprite(items);
+    const byCat = {};
+    for (const it of items) (byCat[it.category] ||= []).push(it.item);
+    document.getElementById("gallery").innerHTML = Object.entries(byCat).map(([cat, names]) => `
+      <h2>${cat} <small>${names.length}</small></h2>
+      <ul class="tiles">${names.map((n, i) => `<li style="--i:${i}"><div class="tile"><span class="tile-art">${sticker(n)}</span><span class="tile-name">${n}</span></div></li>`).join("")}</ul>`).join("");
+  </script>
+</body>
+</html>
