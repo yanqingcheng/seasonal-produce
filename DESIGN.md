@@ -89,7 +89,7 @@ Cards, tiles, chips and buttons use a **3 px ink border and a solid offset "stic
 ### Wheel anatomy
 
 - A scalloped **plate** holds 12 wedge **segments**, tinted by month.
-- A **hub** shows the selected month, its season and its peak count. A tomato **pointer notch** on the hub marks the selection.
+- A **hub** shows the month under the pointer, its season and its peak count. During a spin it ticks through the months it passes and pops when the selected month lands. A tomato **pointer notch** on the hub marks the selection.
 - Month **labels** sit on the rim and are always upright (they are positioned, never rotated).
 
 #### Busy active segment
@@ -101,7 +101,9 @@ Cards, tiles, chips and buttons use a **3 px ink border and a solid offset "stic
 - **Headroom:** the wheel's SVG `viewBox` is taller than it is wide (1040 × 1300), leaving room above the plate for the extended wedge. On desktop the wheel is sized by height, so the plate itself draws about 20% smaller than before the correction. That's the main cost of growing outward.
 - Anything that doesn't fit on the wedge is still in the panel's **At peak / Also in season** lists, exactly as before. The wedge is a highlight reel; the panel is the full record.
 - When the selection changes, the old wedge retracts to the plate while the new one grows outward under the pointer. Stickers on both the quiet and active lists slide between their slots; stickers on only one list grow in or shrink away.
-- **Reach is gated by angle.** A wedge can only stick out past the plate while it's within about 25° of the pointer, fading to none by 70°. On a long spin (say December to June) the old wedge tucks in as it swings away and the new one pulls out as it arrives, instead of two full-length slices sweeping sideways over the panel and off the edge of a phone screen. The label grows with the wedge (30 → 34 px), and the ink outline eases in and out rather than snapping.
+- **Tuck → rotate → bloom.** A wedge only blooms past the plate right under the pointer: full within 4° of 12 o'clock (enough to cover the spring's overshoot), easing to quiet radius by 16°. On any spin the old wedge folds back to the plate before it has turned half a wedge, the wheel turns with every wedge at quiet radius, and the new wedge blooms as it arrives. No wedge ever swings round the circle extended.
+- **Stickers stay on their wedge.** Stickers on both lists slide between their quiet and active slots. Stickers only on the active list ride the wedge's outer edge in and out as they shrink, so none is ever left floating in empty canvas.
+- The label grows with the wedge (30 → 34 px), and the ink outline eases in and out rather than snapping.
 
 #### Which produce goes on the wedge (commonness heuristic)
 
@@ -141,7 +143,7 @@ The `STAPLES` list is an **editorial judgement**, not corpus data. It is small a
 
 On load, the selection **is** the current calendar month, taken from `new Date()`. How it's shown:
 
-- **Arrival spin:** the wheel spins in (about 170°, springy overshoot, 1.6 s) with every wedge quiet, and **lands with today's month on top**, under the pointer, growing outward into the enlarged busy wedge as it arrives. Stickers pop in one after another, starting from today's segment.
+- **Arrival spin:** the wheel spins in (about 170°, a soft spring with a few degrees of overshoot, about 1.6 s) with every wedge quiet, and **lands with today's month on top**, under the pointer, blooming outward into the enlarged busy wedge as it arrives. Stickers pop in one after another, starting from today's segment.
 - **Today stays marked** even after you spin away:
   - a **sun pill** (yellow, slowly turning rays) replaces that month's rim label;
   - a **marching-ants tomato halo** outlines the segment;
@@ -154,7 +156,7 @@ On load, the selection **is** the current calendar month, taken from `new Date()
 
 | Action | Result |
 |---|---|
-| Click / tap a segment | The wheel springs the shortest way to put it on top (settles in about 0.9 s) while that wedge grows outward to the busy active radius and the old one retracts; a confetti burst pops at the rim; the panel refreshes |
+| Click / tap a segment | The wheel springs the shortest way to put it on top (settles in about 0.9 s) while the old wedge tucks in first and the new one blooms outward once it reaches the pointer; the confetti burst and hub pop fire on arrival; the panel refreshes straight away |
 | Click a sticker on the wheel | Selects its month **and** opens that item's fact sheet |
 | Month rail buttons | Same as clicking a segment. This is the reliable control on small screens |
 | ← / → keys | Previous / next month (wraps the year) |
@@ -199,8 +201,8 @@ The 23 grid-only items say so plainly: "The research corpus only has the month g
 | Moment | Motion | Timing |
 |---|---|---|
 | Load | Wheel spin-in to today; stickers pop in (scale and rotate), staggered by month distance from today | 1.6 s, overshoot |
-| Select month | Shortest-path rotation spring, overshooting about 2° past the pointer whether it's a 30° step or a 180° spin; the old wedge's radius shrinks and the new one's grows on their own spring with a small outward pop; extra stickers grow in; hub text pop; confetti burst; panel rise; tiles pop in, staggered | ~0.9 s to settle; tiles 22 ms stagger |
-| Rapid picks (holding ← / →, clicking mid-spin) | The springs retarget and keep their velocity, so several quick steps glide as one spin with no stop-start or backward tick | — |
+| Select month | Shortest-path rotation spring, overshooting about 2° past the pointer whether it's a 30° step or a 180° spin; the old wedge tucks in, the wheel turns quiet, the new wedge blooms at the pointer with a small outward pop; hub ticks through passing months, then pops and the confetti bursts on arrival; panel rise; tiles pop in, staggered | ~0.9 s to settle; tiles 22 ms stagger |
+| Rapid picks (holding ← / →, clicking mid-spin) | The springs retarget and keep their velocity, so several quick steps glide as one spin with no stop-start or backward tick. Each month briefly lifts as it passes the pointer | — |
 | Idle | Selected segment's stickers bob; faces blink; today's sun rays turn; halo dashes march; pointer nudges | Slow loops (2.8–12 s) |
 | Hover | Sticker jiggle (scale and tilt); tile lift and squish; chip tilt; plate wiggle | 0.2–0.6 s spring |
 | Fact sheet | Dialog springs up; hero sticker pops, then bobs | 0.45 s |
