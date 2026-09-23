@@ -53,7 +53,7 @@ Every produce item is a **die-cut sticker**:
 
 - `prototype/art.js` holds about 40 hand-drawn **archetypes**: round fruit, stone fruit, pear, berry, cluster, currant strig, cherry pair, root, bulb-root, potato, leafy bunch, rosette, head, cauliflower, broccoli, asparagus, rhubarb, celery, leek, spring onion, pod, beans, pumpkin, butternut, long veg, aubergine, corn, mushroom, nuts, potted herb (four leaf styles), wild garlic, nettle, elderflower, courgette flower, nasturtium, onion, garlic, fennel, pepper, chilli, artichoke, samphire and chicory.
 - Each of the **108 corpus items** maps to one archetype plus a colour set. Examples: plum and damson share the stone-fruit shape but differ in colour; forced rhubarb is pink with small yellow leaves, while maincrop rhubarb is red with a big green leaf.
-- Art is built once into an SVG `<symbol>` sprite with two symbols per item: `art-*` (colour) and `cut-*` (silhouette for the die-cut and shadow). Everything reuses them with `<use>`, so the wheel's stickers (21 per month in the DOM, of which about 76 are visible at once) stay cheap.
+- Art is built once into an SVG `<symbol>` sprite with two symbols per item: `art-*` (colour) and `cut-*` (silhouette for the die-cut and shadow). Everything reuses them with `<use>`, so the wheel's stickers (a month's quiet and active lists combined in the DOM, about 76 visible at once) stay cheap.
 - Herbs sit in little terracotta pots, so the herb family reads at a glance.
 - Art only encodes *what the item is*. It never encodes data. Varieties, taste, size and nutrition are not in the corpus, and the drawings don't imply them.
 
@@ -93,10 +93,10 @@ Cards, tiles, chips and buttons use a **3 px ink border and a solid offset "stic
 #### Busy active segment
 
 - The **selected month's wedge is 4× as wide as a quiet month's**: 96° against 24° for each of the other 11. It also reaches further out (radius 476 vs 442, breaking over the plate's inner edge) and its label moves out onto the rim.
-- The active wedge carries **up to 21 stickers** in four rows (4 + 5 + 6 + 6). A quiet wedge carries **5**. Both use the same ranked list for the month: a quiet wedge shows its top 5, and the enlarged one shows the full list.
+- The active wedge carries **up to 21 stickers** in four rows (4 + 5 + 6 + 6), taken from the month's popularity ranking. A quiet wedge carries **5**, picked for variety across the wheel (see [Variety on quiet wedges](#variety-on-quiet-wedges)).
 - Higher-ranked items take the **most central, roomiest slots** (middle rows, centre column first), so the most familiar produce is what the eye lands on under the pointer.
 - Anything that doesn't fit on the wedge is still in the panel's **At peak / Also in season** lists, exactly as before. The wedge is a highlight reel; the panel is the full record.
-- When the selection changes, the old wedge shrinks while the new one swells into the pointer. The first five stickers slide between their quiet and active slots, and the extra 16 grow in from nothing.
+- When the selection changes, the old wedge shrinks while the new one swells into the pointer. Stickers on both the quiet and active lists slide between their slots; stickers on only one list grow in or shrink away.
 
 #### Which produce goes on the wedge (commonness heuristic)
 
@@ -114,7 +114,21 @@ Then:
 - **Ties:** within the same score, the **shorter UK season goes first** (among equally familiar items, the one that's only around now is the better "this month" pick; this stops cabbage and lettuce heading every month). Categories are then interleaved so a wedge isn't all one colour.
 - **Recipe guarantee:** the month's recipe ingredients are always on the enlarged wedge. If one falls outside the top 21, it replaces the lowest-ranked non-recipe item.
 - **Import flag:** items whose corpus note says UK supply is mostly imported (e.g. cranberry) are never stickers. They still appear in the month's lists.
-- **Result:** staples at peak lead (September's top 5 are cucumber, plum, radishes, sweetcorn and blackberry), and herbs and foraged items only fill in once the familiar produce has run out (March's wedge ends with wild garlic and nettles).
+- **Result:** staples at peak lead (September's enlarged wedge opens with cucumber, plum, radishes, sweetcorn and blackberry), and herbs and foraged items only fill in once the familiar produce has run out (March's wedge ends with wild garlic and nettles).
+
+#### Variety on quiet wedges
+
+**Qing, seat chat, 2026-09-23 (as relayed, not verbatim):** fewer repeats on the non-highlighted months. If the corpus has other in-season options for a month, prefer those over repeating the same stickers across many wedges. Repeats are OK only when a month is genuinely thin.
+
+So the 11 quiet wedges together should read as twelve different months, not twelve cabbages. `build-data.mjs` picks each month's 5 quiet stickers with a draft across the whole year:
+
+1. **Recipe first:** each month's own recipe ingredients go on its quiet wedge (the 12 recipes use distinct produce, so this never repeats). The wheel and the panel's recipe card stay tied together.
+2. **Draft rounds:** the months then take turns, one sticker per round, thinnest month (fewest P/I candidates) first. Each month takes its **most popular item** (by the ranking above) that isn't already on another quiet wedge.
+3. **Repeats only when thin:** if a month has no unused option left, it takes its least-repeated item. On the current corpus this never happens: the 60 quiet stickers are all distinct, and the build prints any repeats.
+
+The **enlarged active wedge is exempt**: it stays popularity-first (Qing's earlier rule), so it can share items with quiet wedges. The quiet and active lists for a month can differ; each wedge holds both lists.
+
+Trade-off: rich months give up some headline staples to thinner ones (September's quiet wedge is cucumber, garlic, damson, butternut squash and loganberry; plum goes to October). Selecting the month still shows its most popular produce.
 
 The `STAPLES` list is an **editorial judgement**, not corpus data. It is small and reviewable on purpose. **Stage 4** should replace it with a sourced signal (e.g. Defra Family Food purchase volumes or search-interest data), vendored and cited like the rest of the corpus.
 
@@ -229,7 +243,7 @@ Only the selected segment bobs, so idle animation stays cheap on phones. The whe
 3. **Pre-render the sprite** to a static `sprites.svg` (or inline it at build time) instead of generating it on the client. Add social / OG preview art in the same style for the homepage and Twitter.
 4. **Timezone:** the "current month" uses the visitor's local clock. Decide whether a UK exhibit should use `Europe/London` near month boundaries.
 5. **State in the URL** (optional): shareable `#month` / `#item` links, as long as the no-hash default remains the current month.
-6. **Performance budget:** keep idle animation limited to the selected segment. The busy wedge put 252 sticker instances in the DOM (about 76 visible). Check that the month-change tween holds 60 fps on a mid-range phone; if it doesn't, create the 16 extra stickers only for the months being tweened.7. **A11y pass with a screen reader:** keyboard rotation, dialog focus return, and announcing month changes without being chatty.
+6. **Performance budget:** keep idle animation limited to the selected segment. The busy wedge and the separate quiet picks put 258 sticker instances in the DOM (about 76 visible). Check that the month-change tween holds 60 fps on a mid-range phone; if it doesn't, create the active-only stickers only for the months being tweened.7. **A11y pass with a screen reader:** keyboard rotation, dialog focus return, and announcing month changes without being chatty.
 8. **Trust copy:** surface the corpus's confidence caveats (Hubbub-only herbs, radicchio import flag) in an About / sources view built from `sources.md` once that annex is vendored.
 9. **Art QA:** a few archetypes are close cousins (the needle-leaf herbs; thyme vs. tarragon). An illustrator pass can differentiate them without leaving the system.
 10. **Popularity signal:** replace the editorial `STAPLES` list with a sourced familiarity or purchase signal (see [the commonness heuristic](#which-produce-goes-on-the-wedge-commonness-heuristic)), and keep the build check that every name resolves to a corpus item.
