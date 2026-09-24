@@ -408,7 +408,7 @@ function spriteFrom(symbols) {
   return `<svg xmlns="http://www.w3.org/2000/svg" id="sprite-root">\n<defs>\n${symbols.map((s) => s.markup).join("\n")}\n</defs>\n</svg>\n`;
 }
 
-const PACK_ORDER = ["uk", "fr", "es", "on", "it", "fl"];
+const PACK_ORDER = ["uk", "fr", "es", "on", "it", "fl", "sc", "sd", "js", "yn", "hi", "xj", "jp"];
 
 export function listPacks(root = repoRoot) {
   const ids = readdirSync(join(root, "data"), { withFileTypes: true })

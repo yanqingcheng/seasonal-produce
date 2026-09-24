@@ -1,0 +1,236 @@
+{
+  "apple": {
+    "archetype": "round",
+    "colours": {
+      "body": "#ff5a4e",
+      "leaf": "#52c26b"
+    }
+  },
+  "Avocado": {
+    "archetype": "pear",
+    "colours": {
+      "body": "#23865a",
+      "leaf": "#a8e05a"
+    }
+  },
+  "blueberry": {
+    "archetype": "cluster",
+    "colours": {
+      "body": "#4f6df5"
+    }
+  },
+  "broad beans": {
+    "archetype": "pod",
+    "colours": {
+      "body": "#3bb273",
+      "body2": "#c9f0b0",
+      "leaf": "#23865a"
+    }
+  },
+  "cauliflower": {
+    "archetype": "cauliflower",
+    "colours": {
+      "body": "#fff6dc",
+      "leaf": "#3bb273"
+    }
+  },
+  "cherry": {
+    "archetype": "cherry",
+    "colours": {
+      "body": "#d9344a",
+      "stem": "#3bb273",
+      "leaf": "#52c26b"
+    }
+  },
+  "Cherry tomato": {
+    "archetype": "round",
+    "colours": {
+      "body": "#ff5a4e",
+      "calyx": "#3bb273"
+    }
+  },
+  "chillies": {
+    "archetype": "chilli",
+    "colours": {
+      "body": "#ff5a4e",
+      "cap": "#3bb273"
+    }
+  },
+  "Chinese bayberry": {
+    "archetype": "berry",
+    "colours": {
+      "body": "#9b2242",
+      "body2": "#d24a6a",
+      "leaf": "#3bb273"
+    }
+  },
+  "Chu orange": {
+    "archetype": "round",
+    "colours": {
+      "body": "#ff7a1a",
+      "leaf": "#3bb273"
+    }
+  },
+  "Citrus": {
+    "archetype": "round",
+    "colours": {
+      "body": "#ff7a1a",
+      "leaf": "#3bb273"
+    }
+  },
+  "cucumber": {
+    "archetype": "long",
+    "colours": {
+      "body": "#23865a",
+      "dots": "#c9f0b0",
+      "cap": "#a8e05a"
+    }
+  },
+  "garlic": {
+    "archetype": "garlic",
+    "colours": {
+      "body": "#fffdf6",
+      "body2": "#c9a7ff"
+    }
+  },
+  "Grape": {
+    "archetype": "currants",
+    "colours": {
+      "body": "#5b3a9b",
+      "stem": "#3bb273",
+      "leaf": "#52c26b"
+    }
+  },
+  "Green bean": {
+    "archetype": "beans",
+    "colours": {
+      "body": "#3bb273"
+    }
+  },
+  "Indian jujube / green jujube": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#c6e07a",
+      "cleft": true,
+      "leaf": "#3bb273"
+    }
+  },
+  "Lemon": {
+    "archetype": "round",
+    "colours": {
+      "body": "#ffd84a",
+      "leaf": "#52c26b"
+    }
+  },
+  "Loquat": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#ff9a3c",
+      "cleft": true,
+      "leaf": "#52c26b"
+    }
+  },
+  "mango": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#ff9a3c",
+      "cleft": true,
+      "leaf": "#3bb273"
+    }
+  },
+  "Matsutake": {
+    "archetype": "mushroom",
+    "colours": {
+      "cap": "#b0703f",
+      "stem": "#fff6dc",
+      "spots": "#e9b87a",
+      "pair": true
+    }
+  },
+  "Morel": {
+    "archetype": "mushroom",
+    "colours": {
+      "cap": "#fff6dc",
+      "stem": "#fffdf6"
+    }
+  },
+  "Onion": {
+    "archetype": "onion",
+    "colours": {
+      "body": "#ffb627",
+      "body2": "#ff9a3c"
+    }
+  },
+  "Pea shoots": {
+    "archetype": "leafy",
+    "colours": {
+      "body": "#a8e05a"
+    }
+  },
+  "peach": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#ffb38a",
+      "cleft": true,
+      "leaf": "#52c26b"
+    }
+  },
+  "pear": {
+    "archetype": "pear",
+    "colours": {
+      "body": "#a8e05a",
+      "leaf": "#3bb273"
+    }
+  },
+  "Pepino melon": {
+    "archetype": "round",
+    "colours": {
+      "body": "#f0e07a",
+      "leaf": "#52c26b"
+    }
+  },
+  "Pomegranate": {
+    "archetype": "round",
+    "colours": {
+      "body": "#c2255c",
+      "crown": "#e9b87a"
+    }
+  },
+  "Potato": {
+    "archetype": "potato",
+    "colours": {
+      "body": "#e9b87a"
+    }
+  },
+  "strawberry": {
+    "archetype": "strawberry",
+    "colours": {
+      "body": "#ff5a4e",
+      "leaf": "#3bb273"
+    }
+  },
+  "Tomato": {
+    "archetype": "round",
+    "colours": {
+      "body": "#ff5a4e",
+      "calyx": "#3bb273"
+    }
+  },
+  "Watermelon": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#1f7a4d",
+      "stripes": "#143d32",
+      "leaf": "#52c26b"
+    }
+  },
+  "wild mushrooms": {
+    "archetype": "mushroom",
+    "colours": {
+      "cap": "#b0703f",
+      "stem": "#fff6dc",
+      "spots": "#e9b87a",
+      "pair": true
+    }
+  }
+}

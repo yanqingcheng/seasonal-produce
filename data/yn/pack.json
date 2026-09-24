@@ -1,0 +1,62 @@
+{
+  "id": "yn",
+  "name": "Yunnan",
+  "locale": "en",
+  "timezone": "Asia/Shanghai",
+  "title": "The Yunnan Year-Wheel",
+  "tagline": "What's growing in Yunnan, month by month.",
+  "month_names": [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ],
+  "seasons": [
+    "Winter",
+    "Winter",
+    "Spring",
+    "Spring",
+    "Spring",
+    "Summer",
+    "Summer",
+    "Summer",
+    "Autumn",
+    "Autumn",
+    "Autumn",
+    "Winter"
+  ],
+  "categories": [
+    {
+      "id": "vegetable",
+      "label": "Vegetable",
+      "one": "vegetable",
+      "plural": "vegetables",
+      "everyday": true
+    },
+    {
+      "id": "fruit",
+      "label": "Fruit",
+      "one": "fruit",
+      "plural": "fruit",
+      "everyday": true
+    }
+  ],
+  "state_roles": {
+    "I": "in",
+    ".": "out"
+  },
+  "sticker_exclude": [],
+  "attribution": "Yunnan harvest months from 云南网 and 云南省农业农村厅.",
+  "alias_profile": "none",
+  "recipe_rule": "optional",
+  "expect_items": 32,
+  "require_peak_every_month": false
+}

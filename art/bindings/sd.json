@@ -1,0 +1,235 @@
+{
+  "apple": {
+    "archetype": "round",
+    "colours": {
+      "body": "#ff5a4e",
+      "leaf": "#52c26b"
+    }
+  },
+  "apricot": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#ffb627",
+      "cleft": true,
+      "leaf": "#52c26b"
+    }
+  },
+  "aubergine": {
+    "archetype": "aubergine",
+    "colours": {
+      "body": "#5b3a9b",
+      "cap": "#3bb273"
+    }
+  },
+  "blueberry": {
+    "archetype": "cluster",
+    "colours": {
+      "body": "#4f6df5"
+    }
+  },
+  "Carrot": {
+    "archetype": "root",
+    "colours": {
+      "body": "#ff9a3c",
+      "leaf": "#3bb273"
+    }
+  },
+  "chestnut": {
+    "archetype": "chestnut",
+    "colours": {
+      "body": "#7a4a2c",
+      "body2": "#e9b87a"
+    }
+  },
+  "Chinese cabbage": {
+    "archetype": "head",
+    "colours": {
+      "body": "#fffdf6",
+      "body2": "#a8e05a"
+    }
+  },
+  "Chinese yam": {
+    "archetype": "root",
+    "colours": {
+      "body": "#e2c48a",
+      "leaf": "#3bb273"
+    }
+  },
+  "chives": {
+    "archetype": "herb",
+    "colours": {
+      "body": "#3bb273",
+      "leafShape": "grass"
+    }
+  },
+  "cucumber": {
+    "archetype": "long",
+    "colours": {
+      "body": "#23865a",
+      "dots": "#c9f0b0",
+      "cap": "#a8e05a"
+    }
+  },
+  "Dazeshan grape": {
+    "archetype": "currants",
+    "colours": {
+      "body": "#5b3a9b",
+      "stem": "#3bb273",
+      "leaf": "#52c26b"
+    }
+  },
+  "Feicheng peach": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#ffb38a",
+      "cleft": true,
+      "leaf": "#52c26b"
+    }
+  },
+  "fig": {
+    "archetype": "fig",
+    "colours": {
+      "body": "#8e4dd6",
+      "leaf": "#3bb273"
+    }
+  },
+  "garlic": {
+    "archetype": "garlic",
+    "colours": {
+      "body": "#fffdf6",
+      "body2": "#c9a7ff"
+    }
+  },
+  "Jinsi jujube": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#e7b84a",
+      "cleft": true,
+      "leaf": "#52c26b"
+    }
+  },
+  "Laiyang pear": {
+    "archetype": "pear",
+    "colours": {
+      "body": "#a8e05a",
+      "leaf": "#3bb273"
+    }
+  },
+  "melon": {
+    "archetype": "round",
+    "colours": {
+      "body": "#f0a202",
+      "leaf": "#52c26b"
+    }
+  },
+  "Mengyin peach": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#ffb38a",
+      "cleft": true,
+      "leaf": "#52c26b"
+    }
+  },
+  "Mulberry": {
+    "archetype": "berry",
+    "colours": {
+      "body": "#5b3a9b",
+      "body2": "#8e4dd6",
+      "leaf": "#3bb273"
+    }
+  },
+  "pear": {
+    "archetype": "pear",
+    "colours": {
+      "body": "#a8e05a",
+      "leaf": "#3bb273"
+    }
+  },
+  "Pomegranate": {
+    "archetype": "round",
+    "colours": {
+      "body": "#c2255c",
+      "crown": "#e9b87a"
+    }
+  },
+  "Potato": {
+    "archetype": "potato",
+    "colours": {
+      "body": "#e9b87a"
+    }
+  },
+  "Radish": {
+    "archetype": "bulbroot",
+    "colours": {
+      "body": "#ff5f8a",
+      "leaf": "#3bb273",
+      "stem": "#3bb273"
+    }
+  },
+  "Spring Chinese cabbage": {
+    "archetype": "head",
+    "colours": {
+      "body": "#b7e7a1",
+      "body2": "#a8e05a"
+    }
+  },
+  "strawberry": {
+    "archetype": "strawberry",
+    "colours": {
+      "body": "#ff5a4e",
+      "leaf": "#3bb273"
+    }
+  },
+  "Sweet cherry": {
+    "archetype": "cherry",
+    "colours": {
+      "body": "#d9344a",
+      "stem": "#3bb273",
+      "leaf": "#52c26b"
+    }
+  },
+  "sweetcorn": {
+    "archetype": "corn",
+    "colours": {
+      "body": "#ffd84a",
+      "body2": "#ffb627",
+      "leaf": "#52c26b"
+    }
+  },
+  "Taro": {
+    "archetype": "potato",
+    "colours": {
+      "body": "#6b3f69"
+    }
+  },
+  "Tomato": {
+    "archetype": "round",
+    "colours": {
+      "body": "#ff5a4e",
+      "calyx": "#3bb273"
+    }
+  },
+  "Watermelon": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#1f7a4d",
+      "stripes": "#143d32",
+      "leaf": "#52c26b"
+    }
+  },
+  "Winter jujube": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#d8e7a4",
+      "cleft": true,
+      "leaf": "#3bb273"
+    }
+  },
+  "Zhangqiu scallion": {
+    "archetype": "springonion",
+    "colours": {
+      "body": "#fffdf6",
+      "leaf": "#3bb273"
+    }
+  }
+}

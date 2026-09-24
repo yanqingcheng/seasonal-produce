@@ -1,0 +1,257 @@
+{
+  "apple": {
+    "archetype": "round",
+    "colours": {
+      "body": "#ff5a4e",
+      "leaf": "#52c26b"
+    }
+  },
+  "blueberry": {
+    "archetype": "cluster",
+    "colours": {
+      "body": "#4f6df5"
+    }
+  },
+  "Burdock": {
+    "archetype": "root",
+    "colours": {
+      "body": "#8a6a4b",
+      "leaf": "#3bb273"
+    }
+  },
+  "cabbage": {
+    "archetype": "head",
+    "colours": {
+      "body": "#52c26b",
+      "body2": "#3bb273"
+    }
+  },
+  "cherry": {
+    "archetype": "cherry",
+    "colours": {
+      "body": "#d9344a",
+      "stem": "#3bb273",
+      "leaf": "#52c26b"
+    }
+  },
+  "chestnut": {
+    "archetype": "chestnut",
+    "colours": {
+      "body": "#7a4a2c",
+      "body2": "#e9b87a"
+    }
+  },
+  "Chinese cabbage": {
+    "archetype": "head",
+    "colours": {
+      "body": "#fffdf6",
+      "body2": "#a8e05a"
+    }
+  },
+  "cucumber": {
+    "archetype": "long",
+    "colours": {
+      "body": "#23865a",
+      "dots": "#c9f0b0",
+      "cap": "#a8e05a"
+    }
+  },
+  "Daikon": {
+    "archetype": "root",
+    "colours": {
+      "body": "#fffdf6",
+      "leaf": "#3bb273",
+      "thin": true
+    }
+  },
+  "Edamame": {
+    "archetype": "beans",
+    "colours": {
+      "body": "#3bb273"
+    }
+  },
+  "Eggplant": {
+    "archetype": "aubergine",
+    "colours": {
+      "body": "#5b3a9b",
+      "cap": "#3bb273"
+    }
+  },
+  "Grape": {
+    "archetype": "currants",
+    "colours": {
+      "body": "#5b3a9b",
+      "stem": "#3bb273",
+      "leaf": "#52c26b"
+    }
+  },
+  "Green asparagus": {
+    "archetype": "asparagus",
+    "colours": {
+      "body": "#52c26b",
+      "tip": "#8e4dd6",
+      "band": "#ff5f8a"
+    }
+  },
+  "Iyokan citrus": {
+    "archetype": "round",
+    "colours": {
+      "body": "#ff8a3d",
+      "leaf": "#3bb273"
+    }
+  },
+  "Japanese pear": {
+    "archetype": "pear",
+    "colours": {
+      "body": "#a8e05a",
+      "leaf": "#3bb273"
+    }
+  },
+  "Kabocha squash": {
+    "archetype": "pumpkin",
+    "colours": {
+      "body": "#d9782a",
+      "body2": "#e39a45",
+      "stem": "#b0703f"
+    }
+  },
+  "Kujo negi": {
+    "archetype": "springonion",
+    "colours": {
+      "body": "#fffdf6",
+      "leaf": "#3bb273"
+    }
+  },
+  "La France pear": {
+    "archetype": "pear",
+    "colours": {
+      "body": "#d7e39a",
+      "leaf": "#3bb273"
+    }
+  },
+  "Lettuce": {
+    "archetype": "head",
+    "colours": {
+      "body": "#a8e05a",
+      "body2": "#52c26b",
+      "frilly": true
+    }
+  },
+  "Loquat": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#ff9a3c",
+      "cleft": true,
+      "leaf": "#52c26b"
+    }
+  },
+  "Matsutake": {
+    "archetype": "mushroom",
+    "colours": {
+      "cap": "#b0703f",
+      "stem": "#fff6dc",
+      "spots": "#e9b87a",
+      "pair": true
+    }
+  },
+  "melon": {
+    "archetype": "round",
+    "colours": {
+      "body": "#f0a202",
+      "leaf": "#52c26b"
+    }
+  },
+  "Nagaimo yam": {
+    "archetype": "root",
+    "colours": {
+      "body": "#f3ead2",
+      "leaf": "#3bb273"
+    }
+  },
+  "Nijisseiki pear": {
+    "archetype": "pear",
+    "colours": {
+      "body": "#e7f0b0",
+      "leaf": "#3bb273"
+    }
+  },
+  "Onion": {
+    "archetype": "onion",
+    "colours": {
+      "body": "#ffb627",
+      "body2": "#ff9a3c"
+    }
+  },
+  "peach": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#ffb38a",
+      "cleft": true,
+      "leaf": "#52c26b"
+    }
+  },
+  "Persimmon": {
+    "archetype": "round",
+    "colours": {
+      "body": "#ff6b2c",
+      "calyx": "#3bb273"
+    }
+  },
+  "Potato": {
+    "archetype": "potato",
+    "colours": {
+      "body": "#e9b87a"
+    }
+  },
+  "Satsuma mandarin": {
+    "archetype": "round",
+    "colours": {
+      "body": "#ffb627",
+      "leaf": "#3bb273"
+    }
+  },
+  "strawberry": {
+    "archetype": "strawberry",
+    "colours": {
+      "body": "#ff5a4e",
+      "leaf": "#3bb273"
+    }
+  },
+  "Sudachi": {
+    "archetype": "round",
+    "colours": {
+      "body": "#b6d84a",
+      "leaf": "#52c26b"
+    }
+  },
+  "Sweet potato": {
+    "archetype": "potato",
+    "colours": {
+      "body": "#ff9a3c"
+    }
+  },
+  "sweetcorn": {
+    "archetype": "corn",
+    "colours": {
+      "body": "#ffd84a",
+      "body2": "#ffb627",
+      "leaf": "#52c26b"
+    }
+  },
+  "Ume": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#d7e07a",
+      "cleft": true,
+      "leaf": "#3bb273"
+    }
+  },
+  "Watermelon": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#1f7a4d",
+      "stripes": "#143d32",
+      "leaf": "#52c26b"
+    }
+  }
+}

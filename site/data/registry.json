@@ -28,5 +28,40 @@
     "id": "fl",
     "name": "Florida",
     "status": "shipped"
+  },
+  {
+    "id": "sc",
+    "name": "Sichuan",
+    "status": "shipped"
+  },
+  {
+    "id": "sd",
+    "name": "Shandong",
+    "status": "shipped"
+  },
+  {
+    "id": "js",
+    "name": "Jiangsu",
+    "status": "shipped"
+  },
+  {
+    "id": "yn",
+    "name": "Yunnan",
+    "status": "shipped"
+  },
+  {
+    "id": "hi",
+    "name": "Hainan",
+    "status": "shipped"
+  },
+  {
+    "id": "xj",
+    "name": "Xinjiang",
+    "status": "shipped"
+  },
+  {
+    "id": "jp",
+    "name": "Japan",
+    "status": "shipped"
   }
 ]

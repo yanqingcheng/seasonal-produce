@@ -1,0 +1,69 @@
+{
+  "id": "xj",
+  "name": "Xinjiang",
+  "locale": "en",
+  "timezone": "Asia/Urumqi",
+  "title": "The Xinjiang Year-Wheel",
+  "tagline": "What's growing in Xinjiang, month by month.",
+  "month_names": [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ],
+  "seasons": [
+    "Winter",
+    "Winter",
+    "Spring",
+    "Spring",
+    "Spring",
+    "Summer",
+    "Summer",
+    "Summer",
+    "Autumn",
+    "Autumn",
+    "Autumn",
+    "Winter"
+  ],
+  "categories": [
+    {
+      "id": "vegetable",
+      "label": "Vegetable",
+      "one": "vegetable",
+      "plural": "vegetables",
+      "everyday": true
+    },
+    {
+      "id": "fruit",
+      "label": "Fruit",
+      "one": "fruit",
+      "plural": "fruit",
+      "everyday": true
+    },
+    {
+      "id": "herb",
+      "label": "Herb",
+      "one": "herb",
+      "plural": "herbs",
+      "everyday": false
+    }
+  ],
+  "state_roles": {
+    "I": "in",
+    ".": "out"
+  },
+  "sticker_exclude": [],
+  "attribution": "Xinjiang harvest months from 中新网·新疆 and 天山网.",
+  "alias_profile": "none",
+  "recipe_rule": "optional",
+  "expect_items": 39,
+  "require_peak_every_month": false
+}

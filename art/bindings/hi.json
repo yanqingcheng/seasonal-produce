@@ -1,0 +1,125 @@
+{
+  "aubergine": {
+    "archetype": "aubergine",
+    "colours": {
+      "body": "#5b3a9b",
+      "cap": "#3bb273"
+    }
+  },
+  "Avocado": {
+    "archetype": "pear",
+    "colours": {
+      "body": "#23865a",
+      "leaf": "#a8e05a"
+    }
+  },
+  "Cherry tomato": {
+    "archetype": "round",
+    "colours": {
+      "body": "#ff5a4e",
+      "calyx": "#3bb273"
+    }
+  },
+  "chillies": {
+    "archetype": "chilli",
+    "colours": {
+      "body": "#ff5a4e",
+      "cap": "#3bb273"
+    }
+  },
+  "Chinese yam": {
+    "archetype": "root",
+    "colours": {
+      "body": "#e2c48a",
+      "leaf": "#3bb273"
+    }
+  },
+  "Cowpea": {
+    "archetype": "beans",
+    "colours": {
+      "body": "#3bb273"
+    }
+  },
+  "cucumber": {
+    "archetype": "long",
+    "colours": {
+      "body": "#23865a",
+      "dots": "#c9f0b0",
+      "cap": "#a8e05a"
+    }
+  },
+  "Green pomelo": {
+    "archetype": "round",
+    "colours": {
+      "body": "#e7f5a4",
+      "leaf": "#52c26b"
+    }
+  },
+  "Hami melon": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#e9b87a",
+      "stripes": "#c4a574",
+      "leaf": "#3bb273"
+    }
+  },
+  "Indian jujube / green jujube": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#c6e07a",
+      "cleft": true,
+      "leaf": "#3bb273"
+    }
+  },
+  "mango": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#ff9a3c",
+      "cleft": true,
+      "leaf": "#3bb273"
+    }
+  },
+  "Orange": {
+    "archetype": "round",
+    "colours": {
+      "body": "#ff7a1a",
+      "leaf": "#3bb273"
+    }
+  },
+  "Sweet potato": {
+    "archetype": "potato",
+    "colours": {
+      "body": "#ff9a3c"
+    }
+  },
+  "sweetcorn": {
+    "archetype": "corn",
+    "colours": {
+      "body": "#ffd84a",
+      "body2": "#ffb627",
+      "leaf": "#52c26b"
+    }
+  },
+  "Taro": {
+    "archetype": "potato",
+    "colours": {
+      "body": "#6b3f69"
+    }
+  },
+  "Watermelon": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#1f7a4d",
+      "stripes": "#143d32",
+      "leaf": "#52c26b"
+    }
+  },
+  "Wax gourd": {
+    "archetype": "pumpkin",
+    "colours": {
+      "body": "#d7e8c8",
+      "body2": "#eef6e4",
+      "stem": "#b0703f"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "id": "sc",
+  "name": "Sichuan",
+  "locale": "en",
+  "timezone": "Asia/Shanghai",
+  "title": "The Sichuan Year-Wheel",
+  "tagline": "What's growing in Sichuan, month by month.",
+  "month_names": [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ],
+  "seasons": [
+    "Winter",
+    "Winter",
+    "Spring",
+    "Spring",
+    "Spring",
+    "Summer",
+    "Summer",
+    "Summer",
+    "Autumn",
+    "Autumn",
+    "Autumn",
+    "Winter"
+  ],
+  "categories": [
+    {
+      "id": "vegetable",
+      "label": "Vegetable",
+      "one": "vegetable",
+      "plural": "vegetables",
+      "everyday": true
+    },
+    {
+      "id": "fruit",
+      "label": "Fruit",
+      "one": "fruit",
+      "plural": "fruit",
+      "everyday": true
+    },
+    {
+      "id": "nut",
+      "label": "Nut",
+      "one": "nut",
+      "plural": "nuts",
+      "everyday": false
+    }
+  ],
+  "state_roles": {
+    "I": "in",
+    ".": "out"
+  },
+  "sticker_exclude": [],
+  "attribution": "Sichuan harvest months from 四川在线 and 川观新闻.",
+  "alias_profile": "none",
+  "recipe_rule": "optional",
+  "expect_items": 35,
+  "require_peak_every_month": false
+}

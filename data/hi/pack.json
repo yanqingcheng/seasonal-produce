@@ -1,0 +1,62 @@
+{
+  "id": "hi",
+  "name": "Hainan",
+  "locale": "en",
+  "timezone": "Asia/Shanghai",
+  "title": "The Hainan Year-Wheel",
+  "tagline": "What's growing in Hainan, month by month.",
+  "month_names": [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ],
+  "seasons": [
+    "Winter",
+    "Winter",
+    "Spring",
+    "Spring",
+    "Spring",
+    "Summer",
+    "Summer",
+    "Summer",
+    "Autumn",
+    "Autumn",
+    "Autumn",
+    "Winter"
+  ],
+  "categories": [
+    {
+      "id": "vegetable",
+      "label": "Vegetable",
+      "one": "vegetable",
+      "plural": "vegetables",
+      "everyday": true
+    },
+    {
+      "id": "fruit",
+      "label": "Fruit",
+      "one": "fruit",
+      "plural": "fruit",
+      "everyday": true
+    }
+  ],
+  "state_roles": {
+    "I": "in",
+    ".": "out"
+  },
+  "sticker_exclude": [],
+  "attribution": "Hainan harvest months from 海南省农业农村厅 and 海南日报.",
+  "alias_profile": "none",
+  "recipe_rule": "optional",
+  "expect_items": 17,
+  "require_peak_every_month": false
+}
