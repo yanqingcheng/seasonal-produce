@@ -1,6 +1,6 @@
 # seasonal-produce
 
-This repository is the UK-first seasonal produce calendar for idea #22. International coverage is gated. The work follows the museum-ship pipeline.
+This repository is the seasonal produce calendar for idea #22. The United Kingdom shipped first. France, Spain, and Ontario ship on the same wheel. The work follows the museum-ship pipeline.
 
 [INTENT.md](INTENT.md) is the product truth.
 
@@ -8,7 +8,7 @@ This repository is the UK-first seasonal produce calendar for idea #22. Internat
 
 [DESIGN.md](DESIGN.md) is the Stage 3 design. It records Qing’s 2026-09-23 art direction (stylised, never fake-realistic food; joyful, dynamic, slick) and the "Sticker Garden" system that meets it.
 
-[ARCH.md](ARCH.md) is the Stage 4 high-level design. The signed-off sticker-garden wheel is the shared graphics layer. Stage 5 ships the UK pack on that one wheel. A later country is another pack plus a selector, not a new wheel. The thin ship does not include a globe or a second country. Where ARCH.md and DESIGN.md disagree on the UK clock, the UK staple ranking, or which UK items may be stickers, ARCH.md wins. Motion and art stay in DESIGN.md.
+[ARCH.md](ARCH.md) is the Stage 4 high-level design. The signed-off sticker-garden wheel is the shared graphics layer. Stage 5 shipped the UK pack on that wheel. A later country is another pack plus a selector, not a new wheel. France, Spain, and Ontario are those packs. There is still no globe. Where ARCH.md and DESIGN.md disagree on the UK clock, the UK staple ranking, or which UK items may be stickers, ARCH.md wins. Motion and art stay in DESIGN.md.
 
 ## Thin ship
 
