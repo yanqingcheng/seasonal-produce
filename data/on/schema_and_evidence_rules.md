@@ -1,6 +1,6 @@
 # Ontario pack — schema and evidence
 
-Region pack. Id `on`. Display name « Canada – Ontario ». Not a Canada-national calendar. Timezone America/Toronto.
+Region pack. Id `on`. Display name « Ontario ». Not a Canada-national calendar. Timezone America/Toronto.
 
 Source: Foodland Ontario Availability Guide, in `primary_months.csv` (20 fruits + 53 vegetables). The guide says when that produce is available to buy in Ontario. Semantic type in the extract: `purchase_availability`. Harvest-timing facts in the extract: 0. Open Government Licence – Ontario. The federal note that Canada has 13 provinces and territories is why this pack is not copied to any other province.
 
