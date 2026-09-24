@@ -42,4 +42,20 @@ Listed apart from Brussels sprouts and marked available all year, which fits ind
 
 jan in (source 1), feb in (source 1), mar in (source 1), apr in (source 1), may in (source 1), jun in (source 1), jul in (source 1), aug in (source 1), sep in (source 1), oct in (source 1), nov in (source 1), dec in (source 1)
 
-France has no sticker gaps. The French rows that failed the domestic test are listed in `data/fr/schema_and_evidence_rules.md`, not here.
+## Italy (`it`)
+
+### kiwi (source kiwi)
+
+The Italian calendar lists a bounded season. A brown oval would read as a stone fruit, not a kiwi.
+
+jan in, feb in, mar in, apr in, may in, nov in, dec in
+
+## Florida (`fl`)
+
+### Peanut
+
+The Florida calendar lists a bounded season. A husked cobnut would read as a hazelnut, not a peanut.
+
+aug in, sep in, oct in, nov in
+
+France has no sticker gaps. The French rows that failed the domestic test are listed in `data/fr/schema_and_evidence_rules.md`, not here. Italy drops one isolated carciofi month (June) and ships the rest of that row; that note is in `data/it/schema_and_evidence_rules.md`.

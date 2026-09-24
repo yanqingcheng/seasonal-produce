@@ -1,0 +1,2156 @@
+{
+  "id": "it",
+  "name": "Italy",
+  "locale": "it-IT",
+  "timezone": "Europe/Rome",
+  "title": "La ruota dell'anno in Italia",
+  "tagline": "Quello che cresce in Italia, mese per mese.",
+  "month_names": [
+    "Gennaio",
+    "Febbraio",
+    "Marzo",
+    "Aprile",
+    "Maggio",
+    "Giugno",
+    "Luglio",
+    "Agosto",
+    "Settembre",
+    "Ottobre",
+    "Novembre",
+    "Dicembre"
+  ],
+  "month_short": [
+    "gen",
+    "feb",
+    "mar",
+    "apr",
+    "mag",
+    "giu",
+    "lug",
+    "ago",
+    "set",
+    "ott",
+    "nov",
+    "dic"
+  ],
+  "seasons": [
+    "Inverno",
+    "Inverno",
+    "Primavera",
+    "Primavera",
+    "Primavera",
+    "Estate",
+    "Estate",
+    "Estate",
+    "Autunno",
+    "Autunno",
+    "Autunno",
+    "Inverno"
+  ],
+  "categories": [
+    {
+      "id": "vegetable",
+      "label": "Verdura",
+      "one": "verdura",
+      "plural": "verdure"
+    },
+    {
+      "id": "fruit",
+      "label": "Frutta",
+      "one": "frutta",
+      "plural": "frutta"
+    }
+  ],
+  "attribution": "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura, pubblicato da AULSS 9 Scaligera.",
+  "copy": {
+    "this_month": "Questo mese",
+    "back_to": "Torna a {month}",
+    "new_in": "Novità",
+    "last_call": "Ultimi giorni",
+    "at_peak": "Al picco",
+    "also_in_season": "Di stagione",
+    "on_the_edge": "A fine stagione",
+    "edge_why": "A fine stagione.",
+    "hub_this_month": "questo mese",
+    "at_peak_short": "{n} al picco",
+    "more_in_season": "{n} in più di stagione",
+    "hub_when_no_peak": "{n} di stagione",
+    "open_fact_sheet": "Apri la scheda.",
+    "recipe_badge": "ricetta",
+    "months_recipe": "Ricetta di {month}",
+    "made_with": "Con",
+    "cook_it_on": "La ricetta su {name}",
+    "fact_in_season": "Di stagione",
+    "fact_peak": "Picco",
+    "fact_edge": "A fine stagione",
+    "stored_notes": "Conservazione",
+    "regions": "Note",
+    "recipe": "Ricetta",
+    "specialist_sources": "Fonte",
+    "no_in_season": "Nessun mese di stagione nella griglia",
+    "no_peak": "",
+    "all_year": "tutto l'anno",
+    "in_month": "{state} in {month}",
+    "state_labels": {
+      "peak": "Picco",
+      "in": "Di stagione",
+      "edge": "Bordo",
+      "out": "Fuori stagione"
+    },
+    "ring_key": {
+      "peak": "Picco",
+      "in": "Stagione",
+      "edge": "Bordo",
+      "out": "Fuori"
+    },
+    "proper": {},
+    "hint": "Tocca un mese sulla ruota, o usa i tasti ← →.",
+    "wheel_label": "Ruota dell'anno. Scegli un mese.",
+    "months_nav": "Mesi",
+    "close_sheet": "Chiudi la scheda",
+    "season_label": "Stagione: {list}",
+    "mix_label": "Di stagione per tipo: {list}",
+    "blurb": {
+      "counts": "{month} conta {in} prodotti di stagione.",
+      "fullest": "Il mese più pieno della ruota.",
+      "leanest": "Il tratto più magro dell'anno.",
+      "filling": "La ruota si riempie: {n} in più di stagione rispetto a {prev}.",
+      "winding": "Si calma: {n} in meno di stagione rispetto a {prev}.",
+      "same": "Più o meno lo stesso raccolto di {prev}.",
+      "lead_fruit_one": "{lead} guidano i picchi ({count} su {peak}), con 1 frutto al picco.",
+      "lead_fruit": "{lead} guidano i picchi ({count} su {peak}), con {n} frutti al picco.",
+      "lead_none": "{lead} guidano i picchi ({count} su {peak}); nessun frutto è al picco.",
+      "change_threshold": 8
+    }
+  },
+  "items": [
+    {
+      "item": "aglio",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "albicocche",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "amarene",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "angurie",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "arance",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "asparagi",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "bietole da coste",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "broccoli",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "carciofi",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "carote",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "castagne",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "cavolfiori",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "cavoli",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "cetrioli",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "cicoria",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "ciliegie",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "cipolline",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "clementine",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "fagioli",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "fagiolini",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "fave",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "fichi",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "finocchi",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "fragole",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "insalata",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "kaki",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "lamponi",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "limoni",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "mandarini",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "melanzane",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "mele",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "meloni",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "mirtilli",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "nespole",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "peperoni",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "pere",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "pesche",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "piselli",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "pomodori",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "pompelmi",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "prugne",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "radicchio",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "rape",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "ravanelli",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "sedano",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "spinaci",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "susine",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "uva",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "zucche",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
+      "item": "zucchine",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    }
+  ],
+  "recipes": [],
+  "months": [
+    {
+      "key": "jan",
+      "name": "Gennaio",
+      "counts": {
+        "peak": 0,
+        "in": 19,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "arance",
+        "broccoli",
+        "cavolfiori",
+        "zucche",
+        "finocchi",
+        "spinaci",
+        "mele",
+        "pere",
+        "carote",
+        "carciofi",
+        "mandarini",
+        "clementine",
+        "rape",
+        "limoni",
+        "pompelmi"
+      ],
+      "peak": [],
+      "in": [
+        "arance",
+        "bietole da coste",
+        "broccoli",
+        "carciofi",
+        "carote",
+        "cavolfiori",
+        "cavoli",
+        "cicoria",
+        "clementine",
+        "finocchi",
+        "limoni",
+        "mandarini",
+        "mele",
+        "pere",
+        "pompelmi",
+        "radicchio",
+        "rape",
+        "spinaci",
+        "zucche"
+      ],
+      "edge": [],
+      "arrivals": [
+        "carciofi"
+      ],
+      "farewells": [],
+      "quiet": [
+        "arance",
+        "finocchi",
+        "carciofi",
+        "rape",
+        "cicoria"
+      ],
+      "blurb": "Gennaio conta <strong>19</strong> prodotti di stagione. Il tratto più magro dell'anno."
+    },
+    {
+      "key": "feb",
+      "name": "Febbraio",
+      "counts": {
+        "peak": 0,
+        "in": 20,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "arance",
+        "broccoli",
+        "cavolfiori",
+        "zucche",
+        "finocchi",
+        "spinaci",
+        "mele",
+        "pere",
+        "carote",
+        "carciofi",
+        "mandarini",
+        "clementine",
+        "rape",
+        "limoni",
+        "pompelmi"
+      ],
+      "peak": [],
+      "in": [
+        "arance",
+        "bietole da coste",
+        "broccoli",
+        "carciofi",
+        "carote",
+        "cavolfiori",
+        "cavoli",
+        "cicoria",
+        "clementine",
+        "finocchi",
+        "limoni",
+        "mandarini",
+        "mele",
+        "pere",
+        "pompelmi",
+        "radicchio",
+        "rape",
+        "sedano",
+        "spinaci",
+        "zucche"
+      ],
+      "edge": [],
+      "arrivals": [
+        "sedano"
+      ],
+      "farewells": [
+        "clementine",
+        "mandarini",
+        "zucche"
+      ],
+      "quiet": [
+        "broccoli",
+        "spinaci",
+        "mandarini",
+        "limoni",
+        "radicchio"
+      ],
+      "blurb": "Febbraio conta <strong>20</strong> prodotti di stagione. Più o meno lo stesso raccolto di Gennaio."
+    },
+    {
+      "key": "mar",
+      "name": "Marzo",
+      "counts": {
+        "peak": 0,
+        "in": 20,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "arance",
+        "broccoli",
+        "cavolfiori",
+        "finocchi",
+        "spinaci",
+        "insalata",
+        "mele",
+        "pere",
+        "carote",
+        "cipolline",
+        "asparagi",
+        "carciofi",
+        "rape",
+        "limoni",
+        "pompelmi"
+      ],
+      "peak": [],
+      "in": [
+        "arance",
+        "asparagi",
+        "bietole da coste",
+        "broccoli",
+        "carciofi",
+        "carote",
+        "cavolfiori",
+        "cavoli",
+        "cicoria",
+        "cipolline",
+        "finocchi",
+        "insalata",
+        "limoni",
+        "mele",
+        "pere",
+        "pompelmi",
+        "radicchio",
+        "rape",
+        "sedano",
+        "spinaci"
+      ],
+      "edge": [],
+      "arrivals": [
+        "asparagi",
+        "cipolline",
+        "insalata"
+      ],
+      "farewells": [
+        "broccoli",
+        "rape"
+      ],
+      "quiet": [
+        "arance",
+        "cavolfiori",
+        "insalata",
+        "cipolline",
+        "pompelmi"
+      ],
+      "blurb": "Marzo conta <strong>20</strong> prodotti di stagione. Più o meno lo stesso raccolto di Febbraio."
+    },
+    {
+      "key": "apr",
+      "name": "Aprile",
+      "counts": {
+        "peak": 0,
+        "in": 22,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "fragole",
+        "arance",
+        "cavolfiori",
+        "finocchi",
+        "spinaci",
+        "insalata",
+        "mele",
+        "pere",
+        "carote",
+        "nespole",
+        "cipolline",
+        "asparagi",
+        "carciofi",
+        "limoni",
+        "ravanelli"
+      ],
+      "peak": [],
+      "in": [
+        "aglio",
+        "arance",
+        "asparagi",
+        "bietole da coste",
+        "carciofi",
+        "carote",
+        "cavolfiori",
+        "cavoli",
+        "cicoria",
+        "cipolline",
+        "finocchi",
+        "fragole",
+        "insalata",
+        "limoni",
+        "mele",
+        "nespole",
+        "pere",
+        "pompelmi",
+        "radicchio",
+        "ravanelli",
+        "sedano",
+        "spinaci"
+      ],
+      "edge": [],
+      "arrivals": [
+        "aglio",
+        "fragole",
+        "nespole",
+        "ravanelli"
+      ],
+      "farewells": [
+        "arance",
+        "carciofi",
+        "cavolfiori",
+        "limoni"
+      ],
+      "quiet": [
+        "fragole",
+        "cavolfiori",
+        "mele",
+        "asparagi",
+        "ravanelli"
+      ],
+      "blurb": "Aprile conta <strong>22</strong> prodotti di stagione. Più o meno lo stesso raccolto di Marzo."
+    },
+    {
+      "key": "may",
+      "name": "Maggio",
+      "counts": {
+        "peak": 0,
+        "in": 26,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "fragole",
+        "pomodori",
+        "meloni",
+        "finocchi",
+        "spinaci",
+        "insalata",
+        "mele",
+        "pere",
+        "carote",
+        "nespole",
+        "piselli",
+        "ciliegie",
+        "cipolline",
+        "fave",
+        "asparagi"
+      ],
+      "peak": [],
+      "in": [
+        "aglio",
+        "asparagi",
+        "bietole da coste",
+        "carote",
+        "cavoli",
+        "cicoria",
+        "ciliegie",
+        "cipolline",
+        "fagioli",
+        "fagiolini",
+        "fave",
+        "finocchi",
+        "fragole",
+        "insalata",
+        "lamponi",
+        "mele",
+        "meloni",
+        "nespole",
+        "pere",
+        "piselli",
+        "pomodori",
+        "pompelmi",
+        "radicchio",
+        "ravanelli",
+        "sedano",
+        "spinaci"
+      ],
+      "edge": [],
+      "arrivals": [
+        "ciliegie",
+        "fagioli",
+        "fagiolini",
+        "fave"
+      ],
+      "farewells": [
+        "cipolline",
+        "finocchi",
+        "mele",
+        "nespole"
+      ],
+      "quiet": [
+        "fragole",
+        "pomodori",
+        "nespole",
+        "piselli",
+        "fagioli"
+      ],
+      "blurb": "Maggio conta <strong>26</strong> prodotti di stagione. Più o meno lo stesso raccolto di Aprile."
+    },
+    {
+      "key": "jun",
+      "name": "Giugno",
+      "counts": {
+        "peak": 0,
+        "in": 28,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "cetrioli",
+        "pesche",
+        "zucchine",
+        "fragole",
+        "peperoni",
+        "meloni",
+        "pomodori",
+        "insalata",
+        "carote",
+        "albicocche",
+        "piselli",
+        "amarene",
+        "ciliegie",
+        "fave",
+        "asparagi"
+      ],
+      "peak": [],
+      "in": [
+        "aglio",
+        "albicocche",
+        "amarene",
+        "asparagi",
+        "bietole da coste",
+        "carote",
+        "cavoli",
+        "cetrioli",
+        "cicoria",
+        "ciliegie",
+        "fagioli",
+        "fagiolini",
+        "fave",
+        "fichi",
+        "fragole",
+        "insalata",
+        "lamponi",
+        "melanzane",
+        "meloni",
+        "peperoni",
+        "pesche",
+        "piselli",
+        "pomodori",
+        "radicchio",
+        "ravanelli",
+        "sedano",
+        "susine",
+        "zucchine"
+      ],
+      "edge": [],
+      "arrivals": [
+        "albicocche",
+        "amarene",
+        "cetrioli",
+        "fichi"
+      ],
+      "farewells": [
+        "asparagi",
+        "piselli"
+      ],
+      "quiet": [
+        "cetrioli",
+        "pesche",
+        "albicocche",
+        "ciliegie",
+        "susine"
+      ],
+      "blurb": "Giugno conta <strong>28</strong> prodotti di stagione. Più o meno lo stesso raccolto di Maggio."
+    },
+    {
+      "key": "jul",
+      "name": "Luglio",
+      "counts": {
+        "peak": 0,
+        "in": 29,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "cetrioli",
+        "pesche",
+        "zucchine",
+        "fragole",
+        "peperoni",
+        "meloni",
+        "pomodori",
+        "insalata",
+        "carote",
+        "albicocche",
+        "amarene",
+        "angurie",
+        "ciliegie",
+        "fave",
+        "mirtilli"
+      ],
+      "peak": [],
+      "in": [
+        "aglio",
+        "albicocche",
+        "amarene",
+        "angurie",
+        "bietole da coste",
+        "carote",
+        "cavoli",
+        "cetrioli",
+        "cicoria",
+        "ciliegie",
+        "fagioli",
+        "fagiolini",
+        "fave",
+        "fichi",
+        "fragole",
+        "insalata",
+        "lamponi",
+        "melanzane",
+        "meloni",
+        "mirtilli",
+        "peperoni",
+        "pesche",
+        "pomodori",
+        "prugne",
+        "radicchio",
+        "ravanelli",
+        "sedano",
+        "susine",
+        "zucchine"
+      ],
+      "edge": [],
+      "arrivals": [
+        "angurie",
+        "mirtilli",
+        "prugne"
+      ],
+      "farewells": [
+        "albicocche",
+        "amarene",
+        "ciliegie",
+        "fave"
+      ],
+      "quiet": [
+        "cetrioli",
+        "pesche",
+        "amarene",
+        "fave",
+        "fagiolini"
+      ],
+      "blurb": "Luglio conta <strong>29</strong> prodotti di stagione. Il mese più pieno della ruota."
+    },
+    {
+      "key": "aug",
+      "name": "Agosto",
+      "counts": {
+        "peak": 0,
+        "in": 29,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "cetrioli",
+        "pesche",
+        "zucchine",
+        "fragole",
+        "peperoni",
+        "meloni",
+        "pomodori",
+        "uva",
+        "zucche",
+        "insalata",
+        "mele",
+        "pere",
+        "carote",
+        "angurie",
+        "mirtilli"
+      ],
+      "peak": [],
+      "in": [
+        "aglio",
+        "angurie",
+        "bietole da coste",
+        "carote",
+        "cavoli",
+        "cetrioli",
+        "cicoria",
+        "fagioli",
+        "fagiolini",
+        "fichi",
+        "fragole",
+        "insalata",
+        "lamponi",
+        "melanzane",
+        "mele",
+        "meloni",
+        "mirtilli",
+        "peperoni",
+        "pere",
+        "pesche",
+        "pomodori",
+        "prugne",
+        "radicchio",
+        "ravanelli",
+        "sedano",
+        "susine",
+        "uva",
+        "zucche",
+        "zucchine"
+      ],
+      "edge": [],
+      "arrivals": [
+        "mele",
+        "pere",
+        "uva",
+        "zucche"
+      ],
+      "farewells": [
+        "angurie",
+        "fragole"
+      ],
+      "quiet": [
+        "zucchine",
+        "peperoni",
+        "angurie",
+        "prugne",
+        "sedano"
+      ],
+      "blurb": "Agosto conta <strong>29</strong> prodotti di stagione. Il mese più pieno della ruota."
+    },
+    {
+      "key": "sep",
+      "name": "Settembre",
+      "counts": {
+        "peak": 0,
+        "in": 29,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "cetrioli",
+        "pesche",
+        "zucchine",
+        "meloni",
+        "peperoni",
+        "uva",
+        "pomodori",
+        "broccoli",
+        "zucche",
+        "spinaci",
+        "insalata",
+        "mele",
+        "pere",
+        "carote",
+        "mirtilli"
+      ],
+      "peak": [],
+      "in": [
+        "aglio",
+        "bietole da coste",
+        "broccoli",
+        "carote",
+        "cavoli",
+        "cetrioli",
+        "cicoria",
+        "fagioli",
+        "fagiolini",
+        "fichi",
+        "insalata",
+        "lamponi",
+        "melanzane",
+        "mele",
+        "meloni",
+        "mirtilli",
+        "peperoni",
+        "pere",
+        "pesche",
+        "pomodori",
+        "prugne",
+        "radicchio",
+        "ravanelli",
+        "sedano",
+        "spinaci",
+        "susine",
+        "uva",
+        "zucche",
+        "zucchine"
+      ],
+      "edge": [],
+      "arrivals": [
+        "broccoli",
+        "spinaci"
+      ],
+      "farewells": [
+        "cetrioli",
+        "fagioli",
+        "fagiolini",
+        "fichi"
+      ],
+      "quiet": [
+        "zucchine",
+        "meloni",
+        "mirtilli",
+        "fichi",
+        "cavoli"
+      ],
+      "blurb": "Settembre conta <strong>29</strong> prodotti di stagione. Il mese più pieno della ruota."
+    },
+    {
+      "key": "oct",
+      "name": "Ottobre",
+      "counts": {
+        "peak": 0,
+        "in": 25,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "peperoni",
+        "uva",
+        "broccoli",
+        "cavolfiori",
+        "zucche",
+        "finocchi",
+        "spinaci",
+        "insalata",
+        "mele",
+        "pere",
+        "carote",
+        "castagne",
+        "kaki",
+        "clementine",
+        "melanzane"
+      ],
+      "peak": [],
+      "in": [
+        "aglio",
+        "bietole da coste",
+        "broccoli",
+        "carote",
+        "castagne",
+        "cavolfiori",
+        "cavoli",
+        "cicoria",
+        "clementine",
+        "finocchi",
+        "insalata",
+        "kaki",
+        "lamponi",
+        "limoni",
+        "melanzane",
+        "mele",
+        "peperoni",
+        "pere",
+        "radicchio",
+        "rape",
+        "ravanelli",
+        "sedano",
+        "spinaci",
+        "uva",
+        "zucche"
+      ],
+      "edge": [],
+      "arrivals": [
+        "castagne",
+        "cavolfiori",
+        "clementine",
+        "finocchi"
+      ],
+      "farewells": [
+        "lamponi",
+        "melanzane",
+        "peperoni",
+        "ravanelli"
+      ],
+      "quiet": [
+        "peperoni",
+        "zucche",
+        "castagne",
+        "melanzane",
+        "lamponi"
+      ],
+      "blurb": "Ottobre conta <strong>25</strong> prodotti di stagione. Più o meno lo stesso raccolto di Settembre."
+    },
+    {
+      "key": "nov",
+      "name": "Novembre",
+      "counts": {
+        "peak": 0,
+        "in": 24,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "uva",
+        "arance",
+        "broccoli",
+        "cavolfiori",
+        "zucche",
+        "finocchi",
+        "spinaci",
+        "insalata",
+        "mele",
+        "pere",
+        "carote",
+        "castagne",
+        "kaki",
+        "mandarini",
+        "clementine"
+      ],
+      "peak": [],
+      "in": [
+        "aglio",
+        "arance",
+        "bietole da coste",
+        "broccoli",
+        "carote",
+        "castagne",
+        "cavolfiori",
+        "cavoli",
+        "cicoria",
+        "clementine",
+        "finocchi",
+        "insalata",
+        "kaki",
+        "limoni",
+        "mandarini",
+        "mele",
+        "pere",
+        "pompelmi",
+        "radicchio",
+        "rape",
+        "sedano",
+        "spinaci",
+        "uva",
+        "zucche"
+      ],
+      "edge": [],
+      "arrivals": [
+        "arance",
+        "mandarini",
+        "pompelmi"
+      ],
+      "farewells": [
+        "aglio",
+        "sedano"
+      ],
+      "quiet": [
+        "uva",
+        "zucche",
+        "carote",
+        "clementine",
+        "aglio"
+      ],
+      "blurb": "Novembre conta <strong>24</strong> prodotti di stagione. Più o meno lo stesso raccolto di Ottobre."
+    },
+    {
+      "key": "dec",
+      "name": "Dicembre",
+      "counts": {
+        "peak": 0,
+        "in": 22,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "uva",
+        "arance",
+        "broccoli",
+        "cavolfiori",
+        "zucche",
+        "finocchi",
+        "spinaci",
+        "insalata",
+        "mele",
+        "pere",
+        "carote",
+        "castagne",
+        "kaki",
+        "mandarini",
+        "clementine"
+      ],
+      "peak": [],
+      "in": [
+        "arance",
+        "bietole da coste",
+        "broccoli",
+        "carote",
+        "castagne",
+        "cavolfiori",
+        "cavoli",
+        "cicoria",
+        "clementine",
+        "finocchi",
+        "insalata",
+        "kaki",
+        "limoni",
+        "mandarini",
+        "mele",
+        "pere",
+        "pompelmi",
+        "radicchio",
+        "rape",
+        "spinaci",
+        "uva",
+        "zucche"
+      ],
+      "edge": [],
+      "arrivals": [],
+      "farewells": [
+        "castagne",
+        "insalata",
+        "kaki",
+        "uva"
+      ],
+      "quiet": [
+        "uva",
+        "broccoli",
+        "pere",
+        "kaki",
+        "bietole da coste"
+      ],
+      "blurb": "Dicembre conta <strong>22</strong> prodotti di stagione. Più o meno lo stesso raccolto di Novembre."
+    }
+  ]
+}
