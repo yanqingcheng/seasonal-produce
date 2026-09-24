@@ -1,0 +1,36 @@
+item,category,jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec,peak_months,stored_notes,regions_notes,specialist_sources,source_label,source_group
+ail,vegetable,.,.,.,.,.,.,I,I,I,I,I,I,,,,"ADEME Impact CO2, Fruits et légumes de saison",Ail,herbes
+artichaut,vegetable,.,.,.,.,I,I,I,I,I,.,.,.,,,,"ADEME Impact CO2, Fruits et légumes de saison",Artichaut,légumes
+aubergine,vegetable,.,.,.,.,.,I,I,I,I,.,.,.,,,,"ADEME Impact CO2, Fruits et légumes de saison",Aubergine,légumes
+blette,vegetable,.,.,.,.,.,I,I,I,I,I,I,.,,,,"ADEME Impact CO2, Fruits et légumes de saison",Blette,légumes
+brocoli,vegetable,.,.,.,.,.,.,.,.,I,I,I,.,,,,"ADEME Impact CO2, Fruits et légumes de saison",Brocoli,légumes
+carotte,vegetable,I,I,I,.,.,.,.,.,I,I,I,I,,,,"ADEME Impact CO2, Fruits et légumes de saison",Carotte,légumes
+chou-fleur,vegetable,I,I,I,.,.,.,.,.,I,I,I,I,,,,"ADEME Impact CO2, Fruits et légumes de saison",Chou-fleur,légumes
+concombre,vegetable,.,.,.,.,I,I,I,I,I,I,.,.,,,,"ADEME Impact CO2, Fruits et légumes de saison",Concombre,légumes
+courge,vegetable,I,.,.,.,.,.,.,.,I,I,I,I,,,,"ADEME Impact CO2, Fruits et légumes de saison",Courge,légumes
+courgette,vegetable,.,.,.,.,I,I,I,I,I,I,.,.,,,,"ADEME Impact CO2, Fruits et légumes de saison",Courgette,légumes
+cresson,salad,I,I,I,I,I,I,I,I,I,I,I,I,,,,"ADEME Impact CO2, Fruits et légumes de saison",Cresson,légumes
+épinard,vegetable,I,I,I,I,I,.,.,.,I,I,I,I,,,,"ADEME Impact CO2, Fruits et légumes de saison",Épinard,légumes
+fenouil,vegetable,.,.,.,I,.,I,I,I,I,I,I,.,,,,"ADEME Impact CO2, Fruits et légumes de saison",Fenouil,légumes
+figue,fruit,.,.,.,.,.,.,I,I,I,I,.,.,,,,"ADEME Impact CO2, Fruits et légumes de saison",Figue,fruits
+haricot vert (cru),vegetable,.,.,.,.,.,I,I,I,I,I,.,.,,,,"ADEME Impact CO2, Fruits et légumes de saison",Haricot vert (cru),légumes
+laitue,salad,.,.,.,.,I,I,I,I,I,.,.,.,,,,"ADEME Impact CO2, Fruits et légumes de saison",Laitue,légumes
+maïs,vegetable,.,.,.,.,.,.,I,I,I,.,.,.,,,,"ADEME Impact CO2, Fruits et légumes de saison",Maïs,"pâtes, riz et céréales"
+melon,fruit,.,.,.,.,.,I,I,I,I,.,.,.,,,,"ADEME Impact CO2, Fruits et légumes de saison",Melon,fruits
+mûre,fruit,.,.,.,.,.,.,.,I,I,.,.,.,,,,"ADEME Impact CO2, Fruits et légumes de saison",Mûre,fruits
+myrtille,fruit,.,.,.,.,.,.,I,I,I,.,.,.,,,,"ADEME Impact CO2, Fruits et légumes de saison",Myrtille,fruits
+nectarine,fruit,.,.,.,.,.,.,.,I,I,.,.,.,,,,"ADEME Impact CO2, Fruits et légumes de saison",Nectarine,fruits
+noisette,nut,.,.,.,.,.,.,.,.,I,I,I,.,,,,"ADEME Impact CO2, Fruits et légumes de saison",Noisette,fruits à coque et graines oléagineuses
+noix,nut,.,.,.,.,.,.,.,.,I,I,.,.,,,,"ADEME Impact CO2, Fruits et légumes de saison",Noix,fruits à coque et graines oléagineuses
+oignon,vegetable,I,I,I,I,.,.,.,.,I,I,I,I,,,,"ADEME Impact CO2, Fruits et légumes de saison",Oignon,légumes
+pastèque,fruit,.,.,.,.,.,I,I,I,I,.,.,.,,,,"ADEME Impact CO2, Fruits et légumes de saison",Pastèque,fruits
+pêche,fruit,.,.,.,.,.,I,I,I,I,.,.,.,,,,"ADEME Impact CO2, Fruits et légumes de saison",Pêche,fruits
+poire,fruit,I,I,I,.,.,.,.,I,I,I,I,I,,,,"ADEME Impact CO2, Fruits et légumes de saison",Poire,fruits
+poireau,vegetable,I,I,I,I,.,.,.,.,I,I,I,I,,,,"ADEME Impact CO2, Fruits et légumes de saison",Poireau,légumes
+poivron,vegetable,.,.,.,.,.,I,I,I,I,.,.,.,,,,"ADEME Impact CO2, Fruits et légumes de saison",Poivron,légumes
+pomme,fruit,I,I,I,I,.,.,.,I,I,I,I,I,,,,"ADEME Impact CO2, Fruits et légumes de saison",Pomme,fruits
+potiron,vegetable,I,.,.,.,.,.,.,.,I,I,I,I,,,,"ADEME Impact CO2, Fruits et légumes de saison",Potiron,légumes
+prune,fruit,.,.,.,.,.,.,I,I,I,.,.,.,,,,"ADEME Impact CO2, Fruits et légumes de saison",Prune,fruits
+raisin,fruit,.,.,.,.,.,.,.,.,I,I,.,.,,,,"ADEME Impact CO2, Fruits et légumes de saison",Raisin,fruits
+reine claude,fruit,.,.,.,.,.,.,.,.,I,.,.,.,,,,"ADEME Impact CO2, Fruits et légumes de saison",Reine claude,fruits
+tomate,vegetable,.,.,.,.,.,I,I,I,I,.,.,.,,,,"ADEME Impact CO2, Fruits et légumes de saison",Tomate,légumes

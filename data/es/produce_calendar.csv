@@ -1,0 +1,55 @@
+item,category,jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec,peak_months,stored_notes,regions_notes,specialist_sources,source_label,source_group
+acelga,vegetable,M,M,M,M,M,m,m,M,M,M,M,M,jan feb mar apr may aug sep oct nov dec,,,"MAPA, calendario de hortalizas de temporada",ACELGA,HORTALIZA
+ajo,vegetable,M,M,M,M,M,M,M,M,M,M,M,M,jan feb mar apr may jun jul aug sep oct nov dec,,,"MAPA, calendario de hortalizas de temporada",AJO,HORTALIZA
+alcachofa,vegetable,M,M,M,M,M,m,.,.,.,m,m,M,jan feb mar apr may dec,,,"MAPA, calendario de hortalizas de temporada",ALCACHOFA,HORTALIZA
+apio,vegetable,M,M,M,m,.,.,.,.,.,.,M,M,jan feb mar nov dec,,,"MAPA, calendario de hortalizas de temporada",APIO,HORTALIZA
+berenjena,vegetable,M,M,M,M,M,M,M,M,M,M,M,M,jan feb mar apr may jun jul aug sep oct nov dec,,,"MAPA, calendario de hortalizas de temporada",BERENJENA,HORTALIZA
+brócoli,vegetable,M,M,M,M,M,M,.,.,m,M,M,M,jan feb mar apr may jun oct nov dec,,,"MAPA, calendario de hortalizas de temporada",BRÓCOLI,HORTALIZA
+calabacín,vegetable,M,M,M,M,M,M,M,M,M,M,M,M,jan feb mar apr may jun jul aug sep oct nov dec,,,"MAPA, calendario de hortalizas de temporada",CALABACÍN,HORTALIZA
+calabaza,vegetable,M,M,M,m,m,m,m,m,M,M,M,M,jan feb mar sep oct nov dec,,,"MAPA, calendario de hortalizas de temporada",CALABAZA,HORTALIZA
+cardo,vegetable,M,m,.,.,.,.,.,.,.,m,m,M,jan dec,,,"MAPA, calendario de hortalizas de temporada",CARDO,HORTALIZA
+cebolla,vegetable,M,M,M,M,M,M,M,M,M,M,M,M,jan feb mar apr may jun jul aug sep oct nov dec,,,"MAPA, calendario de hortalizas de temporada",CEBOLLA,HORTALIZA
+col lombarda,vegetable,M,M,m,.,.,.,.,.,.,M,M,M,jan feb oct nov dec,,,"MAPA, calendario de hortalizas de temporada",COL LOMBARDA,HORTALIZA
+coliflor,vegetable,M,M,M,M,m,m,.,.,M,M,M,M,jan feb mar apr sep oct nov dec,,,"MAPA, calendario de hortalizas de temporada",COLIFLOR,HORTALIZA
+endibia,vegetable,m,.,.,.,.,.,.,.,M,M,M,m,sep oct nov,,,"MAPA, calendario de hortalizas de temporada",ENDIBIA,HORTALIZA
+escarola,vegetable,M,M,M,M,m,m,.,.,.,M,M,M,jan feb mar apr oct nov dec,,,"MAPA, calendario de hortalizas de temporada",ESCAROLA,HORTALIZA
+espárrago verde,vegetable,.,.,M,M,M,M,.,.,M,.,.,.,mar apr may jun sep,,,"MAPA, calendario de hortalizas de temporada",ESPÁRRAGO VERDE,HORTALIZA
+espinaca,vegetable,M,M,M,M,M,M,.,.,m,M,M,M,jan feb mar apr may jun oct nov dec,,,"MAPA, calendario de hortalizas de temporada",ESPINACA,HORTALIZA
+guisante,vegetable,m,m,m,m,M,M,m,.,.,.,.,.,may jun,,,"MAPA, calendario de hortalizas de temporada",GUISANTE,HORTALIZA
+haba,vegetable,M,M,M,M,M,m,.,.,.,.,m,.,jan feb mar apr may,,,"MAPA, calendario de hortalizas de temporada",HABA,HORTALIZA
+judía verde,vegetable,.,.,.,.,.,.,m,M,M,M,m,m,aug sep oct,,,"MAPA, calendario de hortalizas de temporada",JUDÍA VERDE,HORTALIZA
+lechuga,vegetable,M,M,M,M,M,M,M,M,M,M,M,M,jan feb mar apr may jun jul aug sep oct nov dec,,,"MAPA, calendario de hortalizas de temporada",LECHUGA,HORTALIZA
+nabo,vegetable,m,m,m,m,m,m,m,m,m,M,M,M,oct nov dec,,,"MAPA, calendario de hortalizas de temporada",NABO,HORTALIZA
+pepino,vegetable,M,M,M,M,M,M,M,M,M,M,M,M,jan feb mar apr may jun jul aug sep oct nov dec,,,"MAPA, calendario de hortalizas de temporada",PEPINO,HORTALIZA
+pimiento,vegetable,M,M,M,M,M,M,M,M,M,M,M,M,jan feb mar apr may jun jul aug sep oct nov dec,,,"MAPA, calendario de hortalizas de temporada",PIMIENTO,HORTALIZA
+puerro,vegetable,M,M,M,M,M,M,M,M,M,M,M,M,jan feb mar apr may jun jul aug sep oct nov dec,,,"MAPA, calendario de hortalizas de temporada",PUERRO,HORTALIZA
+rábano,vegetable,M,M,M,M,M,M,M,M,M,M,M,M,jan feb mar apr may jun jul aug sep oct nov dec,,,"MAPA, calendario de hortalizas de temporada",RÁBANO,HORTALIZA
+remolacha,vegetable,.,.,.,.,.,.,m,M,M,M,m,m,aug sep oct,,,"MAPA, calendario de hortalizas de temporada",REMOLACHA,HORTALIZA
+repollo,vegetable,M,M,M,m,m,m,m,m,M,M,M,M,jan feb mar sep oct nov dec,,,"MAPA, calendario de hortalizas de temporada",REPOLLO,HORTALIZA
+tomate,vegetable,M,M,M,M,M,M,M,M,M,M,M,M,jan feb mar apr may jun jul aug sep oct nov dec,,,"MAPA, calendario de hortalizas de temporada",TOMATE,HORTALIZA
+zanahoria,vegetable,M,M,M,M,M,M,M,M,M,M,M,M,jan feb mar apr may jun jul aug sep oct nov dec,,,"MAPA, calendario de hortalizas de temporada",ZANAHORIA,HORTALIZA
+aguacate,fruit,M,M,M,M,m,.,.,.,.,m,M,M,jan feb mar apr nov dec,,,"MAPA, calendario de frutas de temporada",AGUACATE,FRUTA
+albaricoque,fruit,.,.,.,m,M,M,M,M,m,.,.,.,may jun jul aug,,,"MAPA, calendario de frutas de temporada",ALBARICOQUE,FRUTA
+breva,fruit,.,.,.,.,.,M,M,.,.,.,.,.,jun jul,,,"MAPA, calendario de frutas de temporada",BREVA,FRUTA
+caqui,fruit,m,.,.,.,.,.,.,.,m,M,M,M,oct nov dec,,,"MAPA, calendario de frutas de temporada",CAQUI,FRUTA
+cereza,fruit,.,.,.,m,M,M,M,m,.,.,.,.,may jun jul,,,"MAPA, calendario de frutas de temporada",CEREZA,FRUTA
+ciruela,fruit,.,.,.,.,m,M,M,M,m,.,.,.,jun jul aug,,,"MAPA, calendario de frutas de temporada",CIRUELA,FRUTA
+frambuesa,fruit,M,M,M,M,.,.,.,.,.,M,M,M,jan feb mar apr oct nov dec,,,"MAPA, calendario de frutas de temporada",FRAMBUESA,FRUTA
+fresa y fresón,fruit,M,M,M,M,M,.,.,.,.,.,.,.,jan feb mar apr may,,,"MAPA, calendario de frutas de temporada",FRESA • FRESÓN,FRUTA
+granada,fruit,.,.,.,.,.,.,.,.,m,M,M,.,oct nov,,,"MAPA, calendario de frutas de temporada",GRANADA,FRUTA
+higo,fruit,.,.,.,.,.,m,M,M,M,m,.,.,jul aug sep,,,"MAPA, calendario de frutas de temporada",HIGO,FRUTA
+limón,fruit,M,M,M,M,M,m,.,.,.,m,M,M,jan feb mar apr may nov dec,,,"MAPA, calendario de frutas de temporada",LIMÓN,FRUTA
+mandarina,fruit,M,M,M,M,m,.,.,.,m,M,M,M,jan feb mar apr oct nov dec,,,"MAPA, calendario de frutas de temporada",MANDARINA,FRUTA
+mango,fruit,.,.,.,.,.,.,m,M,M,M,M,.,aug sep oct nov,,,"MAPA, calendario de frutas de temporada",MANGO,FRUTA
+manzana,fruit,M,M,M,m,.,.,.,.,M,M,M,M,jan feb mar sep oct nov dec,,,"MAPA, calendario de frutas de temporada",MANZANA,FRUTA
+melocotón,fruit,.,.,.,m,M,M,M,M,M,m,.,.,may jun jul aug sep,,,"MAPA, calendario de frutas de temporada",MELOCOTÓN,FRUTA
+melón,fruit,.,.,.,.,m,M,M,M,m,.,.,.,jun jul aug,,,"MAPA, calendario de frutas de temporada",MELÓN,FRUTA
+membrillo,fruit,.,.,.,.,.,.,m,M,M,m,.,.,aug sep,,,"MAPA, calendario de frutas de temporada",MEMBRILLO,FRUTA
+naranja,fruit,M,M,M,M,M,m,.,.,.,m,M,M,jan feb mar apr may nov dec,,,"MAPA, calendario de frutas de temporada",NARANJA,FRUTA
+nectarina,fruit,.,.,.,m,M,M,M,M,M,m,.,.,may jun jul aug sep,,,"MAPA, calendario de frutas de temporada",NECTARINA,FRUTA
+níspero,fruit,.,.,m,M,M,m,.,.,.,.,.,.,apr may,,,"MAPA, calendario de frutas de temporada",NÍSPERO,FRUTA
+paraguaya,fruit,.,.,.,.,m,M,M,M,.,.,.,.,jun jul aug,,,"MAPA, calendario de frutas de temporada",PARAGUAYA,FRUTA
+pera,fruit,M,M,M,m,.,m,M,M,M,M,M,M,jan feb mar jul aug sep oct nov dec,,,"MAPA, calendario de frutas de temporada",PERA,FRUTA
+pomelo,fruit,M,M,M,M,m,.,.,.,.,.,m,M,jan feb mar apr dec,,,"MAPA, calendario de frutas de temporada",POMELO,FRUTA
+sandía,fruit,.,.,.,.,m,M,M,M,m,.,.,.,jun jul aug,,,"MAPA, calendario de frutas de temporada",SANDÍA,FRUTA
+uva,fruit,.,.,.,.,.,.,.,m,M,M,M,M,sep oct nov dec,,,"MAPA, calendario de frutas de temporada",UVA,FRUTA

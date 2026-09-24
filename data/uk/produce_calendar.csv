@@ -1,5 +1,5 @@
 item,category,jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec,peak_months,stored_notes,regions_notes,specialist_sources
-apple,fruit,P,P,T,T,.,.,.,I,P,P,P,P,jan feb sep oct nov dec,"{""jan"": ""stored"", ""feb"": ""stored"", ""nov"": ""stored"", ""dec"": ""stored""}",Harvest Aug-Nov; stored British apples available to May (controlled-atmosphere storage). Variety-level windows in apple_pear_varieties annex.,britishapplesandpears.co.uk/the-british-season
+apple,fruit,P,P,T,T,.,.,.,I,P,P,P,P,jan feb sep oct nov dec,"{""jan"": ""stored"", ""feb"": ""stored"", ""nov"": ""stored"", ""dec"": ""stored""}",Harvest Aug-Nov; stored British apples available to May (controlled-atmosphere storage).,britishapplesandpears.co.uk/the-british-season
 apricot,fruit,.,.,.,.,I,P,P,P,P,.,.,.,jun jul aug sep,,,
 asparagus,vegetable,.,.,T,P,P,P,T,.,.,.,.,.,apr may jun,,"Traditional English season St George's Day (23 Apr) to Midsummer (21 Jun); Vale of Evesham (Worcs) holds PGI and is the historic heartland; also Kent, Suffolk, Cambs. Sources list Mar as occasional early start under protection.",valeandspa.co.uk/asparagus; eatuk.uk/seasonal
 aubergine,vegetable,.,.,.,.,T,P,P,P,P,P,.,.,jun jul aug sep oct,,UK glasshouse crop; NFU notes glasshouse technology extends availability into colder months.,nfuonline.com seasonality chart notes

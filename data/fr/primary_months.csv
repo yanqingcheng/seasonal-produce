@@ -1,0 +1,505 @@
+country,geographic_scope,item_source_label,item_slug,source_category,month,is_in_season
+France,national consumer-facing ADEME tool,Ail,ail,herbes,1,0
+France,national consumer-facing ADEME tool,Ail,ail,herbes,2,0
+France,national consumer-facing ADEME tool,Ail,ail,herbes,3,0
+France,national consumer-facing ADEME tool,Ail,ail,herbes,4,0
+France,national consumer-facing ADEME tool,Ail,ail,herbes,5,0
+France,national consumer-facing ADEME tool,Ail,ail,herbes,6,0
+France,national consumer-facing ADEME tool,Ail,ail,herbes,7,1
+France,national consumer-facing ADEME tool,Ail,ail,herbes,8,1
+France,national consumer-facing ADEME tool,Ail,ail,herbes,9,1
+France,national consumer-facing ADEME tool,Ail,ail,herbes,10,1
+France,national consumer-facing ADEME tool,Ail,ail,herbes,11,1
+France,national consumer-facing ADEME tool,Ail,ail,herbes,12,1
+France,national consumer-facing ADEME tool,Ananas,ananas,fruits,1,1
+France,national consumer-facing ADEME tool,Ananas,ananas,fruits,2,1
+France,national consumer-facing ADEME tool,Ananas,ananas,fruits,3,1
+France,national consumer-facing ADEME tool,Ananas,ananas,fruits,4,1
+France,national consumer-facing ADEME tool,Ananas,ananas,fruits,5,1
+France,national consumer-facing ADEME tool,Ananas,ananas,fruits,6,1
+France,national consumer-facing ADEME tool,Ananas,ananas,fruits,7,1
+France,national consumer-facing ADEME tool,Ananas,ananas,fruits,8,1
+France,national consumer-facing ADEME tool,Ananas,ananas,fruits,9,1
+France,national consumer-facing ADEME tool,Ananas,ananas,fruits,10,1
+France,national consumer-facing ADEME tool,Ananas,ananas,fruits,11,1
+France,national consumer-facing ADEME tool,Ananas,ananas,fruits,12,1
+France,national consumer-facing ADEME tool,Artichaut,artichaut,légumes,1,0
+France,national consumer-facing ADEME tool,Artichaut,artichaut,légumes,2,0
+France,national consumer-facing ADEME tool,Artichaut,artichaut,légumes,3,0
+France,national consumer-facing ADEME tool,Artichaut,artichaut,légumes,4,0
+France,national consumer-facing ADEME tool,Artichaut,artichaut,légumes,5,1
+France,national consumer-facing ADEME tool,Artichaut,artichaut,légumes,6,1
+France,national consumer-facing ADEME tool,Artichaut,artichaut,légumes,7,1
+France,national consumer-facing ADEME tool,Artichaut,artichaut,légumes,8,1
+France,national consumer-facing ADEME tool,Artichaut,artichaut,légumes,9,1
+France,national consumer-facing ADEME tool,Artichaut,artichaut,légumes,10,0
+France,national consumer-facing ADEME tool,Artichaut,artichaut,légumes,11,0
+France,national consumer-facing ADEME tool,Artichaut,artichaut,légumes,12,0
+France,national consumer-facing ADEME tool,Aubergine,aubergine,légumes,1,0
+France,national consumer-facing ADEME tool,Aubergine,aubergine,légumes,2,0
+France,national consumer-facing ADEME tool,Aubergine,aubergine,légumes,3,0
+France,national consumer-facing ADEME tool,Aubergine,aubergine,légumes,4,0
+France,national consumer-facing ADEME tool,Aubergine,aubergine,légumes,5,0
+France,national consumer-facing ADEME tool,Aubergine,aubergine,légumes,6,1
+France,national consumer-facing ADEME tool,Aubergine,aubergine,légumes,7,1
+France,national consumer-facing ADEME tool,Aubergine,aubergine,légumes,8,1
+France,national consumer-facing ADEME tool,Aubergine,aubergine,légumes,9,1
+France,national consumer-facing ADEME tool,Aubergine,aubergine,légumes,10,0
+France,national consumer-facing ADEME tool,Aubergine,aubergine,légumes,11,0
+France,national consumer-facing ADEME tool,Aubergine,aubergine,légumes,12,0
+France,national consumer-facing ADEME tool,Avocat,avocat,légumes,1,1
+France,national consumer-facing ADEME tool,Avocat,avocat,légumes,2,1
+France,national consumer-facing ADEME tool,Avocat,avocat,légumes,3,1
+France,national consumer-facing ADEME tool,Avocat,avocat,légumes,4,1
+France,national consumer-facing ADEME tool,Avocat,avocat,légumes,5,1
+France,national consumer-facing ADEME tool,Avocat,avocat,légumes,6,1
+France,national consumer-facing ADEME tool,Avocat,avocat,légumes,7,1
+France,national consumer-facing ADEME tool,Avocat,avocat,légumes,8,1
+France,national consumer-facing ADEME tool,Avocat,avocat,légumes,9,1
+France,national consumer-facing ADEME tool,Avocat,avocat,légumes,10,1
+France,national consumer-facing ADEME tool,Avocat,avocat,légumes,11,1
+France,national consumer-facing ADEME tool,Avocat,avocat,légumes,12,1
+France,national consumer-facing ADEME tool,Banane,banane,fruits,1,1
+France,national consumer-facing ADEME tool,Banane,banane,fruits,2,1
+France,national consumer-facing ADEME tool,Banane,banane,fruits,3,1
+France,national consumer-facing ADEME tool,Banane,banane,fruits,4,1
+France,national consumer-facing ADEME tool,Banane,banane,fruits,5,1
+France,national consumer-facing ADEME tool,Banane,banane,fruits,6,1
+France,national consumer-facing ADEME tool,Banane,banane,fruits,7,1
+France,national consumer-facing ADEME tool,Banane,banane,fruits,8,1
+France,national consumer-facing ADEME tool,Banane,banane,fruits,9,1
+France,national consumer-facing ADEME tool,Banane,banane,fruits,10,1
+France,national consumer-facing ADEME tool,Banane,banane,fruits,11,1
+France,national consumer-facing ADEME tool,Banane,banane,fruits,12,1
+France,national consumer-facing ADEME tool,Blette,blette,légumes,1,0
+France,national consumer-facing ADEME tool,Blette,blette,légumes,2,0
+France,national consumer-facing ADEME tool,Blette,blette,légumes,3,0
+France,national consumer-facing ADEME tool,Blette,blette,légumes,4,0
+France,national consumer-facing ADEME tool,Blette,blette,légumes,5,0
+France,national consumer-facing ADEME tool,Blette,blette,légumes,6,1
+France,national consumer-facing ADEME tool,Blette,blette,légumes,7,1
+France,national consumer-facing ADEME tool,Blette,blette,légumes,8,1
+France,national consumer-facing ADEME tool,Blette,blette,légumes,9,1
+France,national consumer-facing ADEME tool,Blette,blette,légumes,10,1
+France,national consumer-facing ADEME tool,Blette,blette,légumes,11,1
+France,national consumer-facing ADEME tool,Blette,blette,légumes,12,0
+France,national consumer-facing ADEME tool,Brocoli,brocoli,légumes,1,0
+France,national consumer-facing ADEME tool,Brocoli,brocoli,légumes,2,0
+France,national consumer-facing ADEME tool,Brocoli,brocoli,légumes,3,0
+France,national consumer-facing ADEME tool,Brocoli,brocoli,légumes,4,0
+France,national consumer-facing ADEME tool,Brocoli,brocoli,légumes,5,0
+France,national consumer-facing ADEME tool,Brocoli,brocoli,légumes,6,0
+France,national consumer-facing ADEME tool,Brocoli,brocoli,légumes,7,0
+France,national consumer-facing ADEME tool,Brocoli,brocoli,légumes,8,0
+France,national consumer-facing ADEME tool,Brocoli,brocoli,légumes,9,1
+France,national consumer-facing ADEME tool,Brocoli,brocoli,légumes,10,1
+France,national consumer-facing ADEME tool,Brocoli,brocoli,légumes,11,1
+France,national consumer-facing ADEME tool,Brocoli,brocoli,légumes,12,0
+France,national consumer-facing ADEME tool,Carotte,carotte,légumes,1,1
+France,national consumer-facing ADEME tool,Carotte,carotte,légumes,2,1
+France,national consumer-facing ADEME tool,Carotte,carotte,légumes,3,1
+France,national consumer-facing ADEME tool,Carotte,carotte,légumes,4,0
+France,national consumer-facing ADEME tool,Carotte,carotte,légumes,5,0
+France,national consumer-facing ADEME tool,Carotte,carotte,légumes,6,0
+France,national consumer-facing ADEME tool,Carotte,carotte,légumes,7,0
+France,national consumer-facing ADEME tool,Carotte,carotte,légumes,8,0
+France,national consumer-facing ADEME tool,Carotte,carotte,légumes,9,1
+France,national consumer-facing ADEME tool,Carotte,carotte,légumes,10,1
+France,national consumer-facing ADEME tool,Carotte,carotte,légumes,11,1
+France,national consumer-facing ADEME tool,Carotte,carotte,légumes,12,1
+France,national consumer-facing ADEME tool,Champignon (morille crue),champignonmorille,légumes,1,1
+France,national consumer-facing ADEME tool,Champignon (morille crue),champignonmorille,légumes,2,1
+France,national consumer-facing ADEME tool,Champignon (morille crue),champignonmorille,légumes,3,1
+France,national consumer-facing ADEME tool,Champignon (morille crue),champignonmorille,légumes,4,1
+France,national consumer-facing ADEME tool,Champignon (morille crue),champignonmorille,légumes,5,1
+France,national consumer-facing ADEME tool,Champignon (morille crue),champignonmorille,légumes,6,1
+France,national consumer-facing ADEME tool,Champignon (morille crue),champignonmorille,légumes,7,1
+France,national consumer-facing ADEME tool,Champignon (morille crue),champignonmorille,légumes,8,1
+France,national consumer-facing ADEME tool,Champignon (morille crue),champignonmorille,légumes,9,1
+France,national consumer-facing ADEME tool,Champignon (morille crue),champignonmorille,légumes,10,1
+France,national consumer-facing ADEME tool,Champignon (morille crue),champignonmorille,légumes,11,1
+France,national consumer-facing ADEME tool,Champignon (morille crue),champignonmorille,légumes,12,1
+France,national consumer-facing ADEME tool,Chou-fleur,choufleur,légumes,1,1
+France,national consumer-facing ADEME tool,Chou-fleur,choufleur,légumes,2,1
+France,national consumer-facing ADEME tool,Chou-fleur,choufleur,légumes,3,1
+France,national consumer-facing ADEME tool,Chou-fleur,choufleur,légumes,4,0
+France,national consumer-facing ADEME tool,Chou-fleur,choufleur,légumes,5,0
+France,national consumer-facing ADEME tool,Chou-fleur,choufleur,légumes,6,0
+France,national consumer-facing ADEME tool,Chou-fleur,choufleur,légumes,7,0
+France,national consumer-facing ADEME tool,Chou-fleur,choufleur,légumes,8,0
+France,national consumer-facing ADEME tool,Chou-fleur,choufleur,légumes,9,1
+France,national consumer-facing ADEME tool,Chou-fleur,choufleur,légumes,10,1
+France,national consumer-facing ADEME tool,Chou-fleur,choufleur,légumes,11,1
+France,national consumer-facing ADEME tool,Chou-fleur,choufleur,légumes,12,1
+France,national consumer-facing ADEME tool,Concombre,concombre,légumes,1,0
+France,national consumer-facing ADEME tool,Concombre,concombre,légumes,2,0
+France,national consumer-facing ADEME tool,Concombre,concombre,légumes,3,0
+France,national consumer-facing ADEME tool,Concombre,concombre,légumes,4,0
+France,national consumer-facing ADEME tool,Concombre,concombre,légumes,5,1
+France,national consumer-facing ADEME tool,Concombre,concombre,légumes,6,1
+France,national consumer-facing ADEME tool,Concombre,concombre,légumes,7,1
+France,national consumer-facing ADEME tool,Concombre,concombre,légumes,8,1
+France,national consumer-facing ADEME tool,Concombre,concombre,légumes,9,1
+France,national consumer-facing ADEME tool,Concombre,concombre,légumes,10,1
+France,national consumer-facing ADEME tool,Concombre,concombre,légumes,11,0
+France,national consumer-facing ADEME tool,Concombre,concombre,légumes,12,0
+France,national consumer-facing ADEME tool,Courge,courge,légumes,1,1
+France,national consumer-facing ADEME tool,Courge,courge,légumes,2,0
+France,national consumer-facing ADEME tool,Courge,courge,légumes,3,0
+France,national consumer-facing ADEME tool,Courge,courge,légumes,4,0
+France,national consumer-facing ADEME tool,Courge,courge,légumes,5,0
+France,national consumer-facing ADEME tool,Courge,courge,légumes,6,0
+France,national consumer-facing ADEME tool,Courge,courge,légumes,7,0
+France,national consumer-facing ADEME tool,Courge,courge,légumes,8,0
+France,national consumer-facing ADEME tool,Courge,courge,légumes,9,1
+France,national consumer-facing ADEME tool,Courge,courge,légumes,10,1
+France,national consumer-facing ADEME tool,Courge,courge,légumes,11,1
+France,national consumer-facing ADEME tool,Courge,courge,légumes,12,1
+France,national consumer-facing ADEME tool,Courgette,courgette,légumes,1,0
+France,national consumer-facing ADEME tool,Courgette,courgette,légumes,2,0
+France,national consumer-facing ADEME tool,Courgette,courgette,légumes,3,0
+France,national consumer-facing ADEME tool,Courgette,courgette,légumes,4,0
+France,national consumer-facing ADEME tool,Courgette,courgette,légumes,5,1
+France,national consumer-facing ADEME tool,Courgette,courgette,légumes,6,1
+France,national consumer-facing ADEME tool,Courgette,courgette,légumes,7,1
+France,national consumer-facing ADEME tool,Courgette,courgette,légumes,8,1
+France,national consumer-facing ADEME tool,Courgette,courgette,légumes,9,1
+France,national consumer-facing ADEME tool,Courgette,courgette,légumes,10,1
+France,national consumer-facing ADEME tool,Courgette,courgette,légumes,11,0
+France,national consumer-facing ADEME tool,Courgette,courgette,légumes,12,0
+France,national consumer-facing ADEME tool,Cresson,cresson,légumes,1,1
+France,national consumer-facing ADEME tool,Cresson,cresson,légumes,2,1
+France,national consumer-facing ADEME tool,Cresson,cresson,légumes,3,1
+France,national consumer-facing ADEME tool,Cresson,cresson,légumes,4,1
+France,national consumer-facing ADEME tool,Cresson,cresson,légumes,5,1
+France,national consumer-facing ADEME tool,Cresson,cresson,légumes,6,1
+France,national consumer-facing ADEME tool,Cresson,cresson,légumes,7,1
+France,national consumer-facing ADEME tool,Cresson,cresson,légumes,8,1
+France,national consumer-facing ADEME tool,Cresson,cresson,légumes,9,1
+France,national consumer-facing ADEME tool,Cresson,cresson,légumes,10,1
+France,national consumer-facing ADEME tool,Cresson,cresson,légumes,11,1
+France,national consumer-facing ADEME tool,Cresson,cresson,légumes,12,1
+France,national consumer-facing ADEME tool,Épinard,epinard,légumes,1,1
+France,national consumer-facing ADEME tool,Épinard,epinard,légumes,2,1
+France,national consumer-facing ADEME tool,Épinard,epinard,légumes,3,1
+France,national consumer-facing ADEME tool,Épinard,epinard,légumes,4,1
+France,national consumer-facing ADEME tool,Épinard,epinard,légumes,5,1
+France,national consumer-facing ADEME tool,Épinard,epinard,légumes,6,0
+France,national consumer-facing ADEME tool,Épinard,epinard,légumes,7,0
+France,national consumer-facing ADEME tool,Épinard,epinard,légumes,8,0
+France,national consumer-facing ADEME tool,Épinard,epinard,légumes,9,1
+France,national consumer-facing ADEME tool,Épinard,epinard,légumes,10,1
+France,national consumer-facing ADEME tool,Épinard,epinard,légumes,11,1
+France,national consumer-facing ADEME tool,Épinard,epinard,légumes,12,1
+France,national consumer-facing ADEME tool,Fenouil,fenouil,légumes,1,0
+France,national consumer-facing ADEME tool,Fenouil,fenouil,légumes,2,0
+France,national consumer-facing ADEME tool,Fenouil,fenouil,légumes,3,0
+France,national consumer-facing ADEME tool,Fenouil,fenouil,légumes,4,1
+France,national consumer-facing ADEME tool,Fenouil,fenouil,légumes,5,0
+France,national consumer-facing ADEME tool,Fenouil,fenouil,légumes,6,1
+France,national consumer-facing ADEME tool,Fenouil,fenouil,légumes,7,1
+France,national consumer-facing ADEME tool,Fenouil,fenouil,légumes,8,1
+France,national consumer-facing ADEME tool,Fenouil,fenouil,légumes,9,1
+France,national consumer-facing ADEME tool,Fenouil,fenouil,légumes,10,1
+France,national consumer-facing ADEME tool,Fenouil,fenouil,légumes,11,1
+France,national consumer-facing ADEME tool,Fenouil,fenouil,légumes,12,0
+France,national consumer-facing ADEME tool,Figue,figue,fruits,1,0
+France,national consumer-facing ADEME tool,Figue,figue,fruits,2,0
+France,national consumer-facing ADEME tool,Figue,figue,fruits,3,0
+France,national consumer-facing ADEME tool,Figue,figue,fruits,4,0
+France,national consumer-facing ADEME tool,Figue,figue,fruits,5,0
+France,national consumer-facing ADEME tool,Figue,figue,fruits,6,0
+France,national consumer-facing ADEME tool,Figue,figue,fruits,7,1
+France,national consumer-facing ADEME tool,Figue,figue,fruits,8,1
+France,national consumer-facing ADEME tool,Figue,figue,fruits,9,1
+France,national consumer-facing ADEME tool,Figue,figue,fruits,10,1
+France,national consumer-facing ADEME tool,Figue,figue,fruits,11,0
+France,national consumer-facing ADEME tool,Figue,figue,fruits,12,0
+France,national consumer-facing ADEME tool,Fruit de la passion,fruitdelapassion,fruits,1,1
+France,national consumer-facing ADEME tool,Fruit de la passion,fruitdelapassion,fruits,2,1
+France,national consumer-facing ADEME tool,Fruit de la passion,fruitdelapassion,fruits,3,1
+France,national consumer-facing ADEME tool,Fruit de la passion,fruitdelapassion,fruits,4,1
+France,national consumer-facing ADEME tool,Fruit de la passion,fruitdelapassion,fruits,5,1
+France,national consumer-facing ADEME tool,Fruit de la passion,fruitdelapassion,fruits,6,1
+France,national consumer-facing ADEME tool,Fruit de la passion,fruitdelapassion,fruits,7,1
+France,national consumer-facing ADEME tool,Fruit de la passion,fruitdelapassion,fruits,8,1
+France,national consumer-facing ADEME tool,Fruit de la passion,fruitdelapassion,fruits,9,1
+France,national consumer-facing ADEME tool,Fruit de la passion,fruitdelapassion,fruits,10,1
+France,national consumer-facing ADEME tool,Fruit de la passion,fruitdelapassion,fruits,11,1
+France,national consumer-facing ADEME tool,Fruit de la passion,fruitdelapassion,fruits,12,1
+France,national consumer-facing ADEME tool,Haricot vert (cru),haricotvert,légumes,1,0
+France,national consumer-facing ADEME tool,Haricot vert (cru),haricotvert,légumes,2,0
+France,national consumer-facing ADEME tool,Haricot vert (cru),haricotvert,légumes,3,0
+France,national consumer-facing ADEME tool,Haricot vert (cru),haricotvert,légumes,4,0
+France,national consumer-facing ADEME tool,Haricot vert (cru),haricotvert,légumes,5,0
+France,national consumer-facing ADEME tool,Haricot vert (cru),haricotvert,légumes,6,1
+France,national consumer-facing ADEME tool,Haricot vert (cru),haricotvert,légumes,7,1
+France,national consumer-facing ADEME tool,Haricot vert (cru),haricotvert,légumes,8,1
+France,national consumer-facing ADEME tool,Haricot vert (cru),haricotvert,légumes,9,1
+France,national consumer-facing ADEME tool,Haricot vert (cru),haricotvert,légumes,10,1
+France,national consumer-facing ADEME tool,Haricot vert (cru),haricotvert,légumes,11,0
+France,national consumer-facing ADEME tool,Haricot vert (cru),haricotvert,légumes,12,0
+France,national consumer-facing ADEME tool,Laitue,laitue,légumes,1,0
+France,national consumer-facing ADEME tool,Laitue,laitue,légumes,2,0
+France,national consumer-facing ADEME tool,Laitue,laitue,légumes,3,0
+France,national consumer-facing ADEME tool,Laitue,laitue,légumes,4,0
+France,national consumer-facing ADEME tool,Laitue,laitue,légumes,5,1
+France,national consumer-facing ADEME tool,Laitue,laitue,légumes,6,1
+France,national consumer-facing ADEME tool,Laitue,laitue,légumes,7,1
+France,national consumer-facing ADEME tool,Laitue,laitue,légumes,8,1
+France,national consumer-facing ADEME tool,Laitue,laitue,légumes,9,1
+France,national consumer-facing ADEME tool,Laitue,laitue,légumes,10,0
+France,national consumer-facing ADEME tool,Laitue,laitue,légumes,11,0
+France,national consumer-facing ADEME tool,Laitue,laitue,légumes,12,0
+France,national consumer-facing ADEME tool,Maïs,mais,"pâtes, riz et céréales",1,0
+France,national consumer-facing ADEME tool,Maïs,mais,"pâtes, riz et céréales",2,0
+France,national consumer-facing ADEME tool,Maïs,mais,"pâtes, riz et céréales",3,0
+France,national consumer-facing ADEME tool,Maïs,mais,"pâtes, riz et céréales",4,0
+France,national consumer-facing ADEME tool,Maïs,mais,"pâtes, riz et céréales",5,0
+France,national consumer-facing ADEME tool,Maïs,mais,"pâtes, riz et céréales",6,0
+France,national consumer-facing ADEME tool,Maïs,mais,"pâtes, riz et céréales",7,1
+France,national consumer-facing ADEME tool,Maïs,mais,"pâtes, riz et céréales",8,1
+France,national consumer-facing ADEME tool,Maïs,mais,"pâtes, riz et céréales",9,1
+France,national consumer-facing ADEME tool,Maïs,mais,"pâtes, riz et céréales",10,0
+France,national consumer-facing ADEME tool,Maïs,mais,"pâtes, riz et céréales",11,0
+France,national consumer-facing ADEME tool,Maïs,mais,"pâtes, riz et céréales",12,0
+France,national consumer-facing ADEME tool,Mangue (importée par avion),mangue,fruits,1,1
+France,national consumer-facing ADEME tool,Mangue (importée par avion),mangue,fruits,2,1
+France,national consumer-facing ADEME tool,Mangue (importée par avion),mangue,fruits,3,1
+France,national consumer-facing ADEME tool,Mangue (importée par avion),mangue,fruits,4,1
+France,national consumer-facing ADEME tool,Mangue (importée par avion),mangue,fruits,5,1
+France,national consumer-facing ADEME tool,Mangue (importée par avion),mangue,fruits,6,1
+France,national consumer-facing ADEME tool,Mangue (importée par avion),mangue,fruits,7,1
+France,national consumer-facing ADEME tool,Mangue (importée par avion),mangue,fruits,8,1
+France,national consumer-facing ADEME tool,Mangue (importée par avion),mangue,fruits,9,1
+France,national consumer-facing ADEME tool,Mangue (importée par avion),mangue,fruits,10,1
+France,national consumer-facing ADEME tool,Mangue (importée par avion),mangue,fruits,11,1
+France,national consumer-facing ADEME tool,Mangue (importée par avion),mangue,fruits,12,1
+France,national consumer-facing ADEME tool,Mangue (importée par bateau),manguebateau,fruits,1,1
+France,national consumer-facing ADEME tool,Mangue (importée par bateau),manguebateau,fruits,2,1
+France,national consumer-facing ADEME tool,Mangue (importée par bateau),manguebateau,fruits,3,1
+France,national consumer-facing ADEME tool,Mangue (importée par bateau),manguebateau,fruits,4,1
+France,national consumer-facing ADEME tool,Mangue (importée par bateau),manguebateau,fruits,5,1
+France,national consumer-facing ADEME tool,Mangue (importée par bateau),manguebateau,fruits,6,1
+France,national consumer-facing ADEME tool,Mangue (importée par bateau),manguebateau,fruits,7,1
+France,national consumer-facing ADEME tool,Mangue (importée par bateau),manguebateau,fruits,8,1
+France,national consumer-facing ADEME tool,Mangue (importée par bateau),manguebateau,fruits,9,1
+France,national consumer-facing ADEME tool,Mangue (importée par bateau),manguebateau,fruits,10,1
+France,national consumer-facing ADEME tool,Mangue (importée par bateau),manguebateau,fruits,11,1
+France,national consumer-facing ADEME tool,Mangue (importée par bateau),manguebateau,fruits,12,1
+France,national consumer-facing ADEME tool,Melon,melon,fruits,1,0
+France,national consumer-facing ADEME tool,Melon,melon,fruits,2,0
+France,national consumer-facing ADEME tool,Melon,melon,fruits,3,0
+France,national consumer-facing ADEME tool,Melon,melon,fruits,4,0
+France,national consumer-facing ADEME tool,Melon,melon,fruits,5,0
+France,national consumer-facing ADEME tool,Melon,melon,fruits,6,1
+France,national consumer-facing ADEME tool,Melon,melon,fruits,7,1
+France,national consumer-facing ADEME tool,Melon,melon,fruits,8,1
+France,national consumer-facing ADEME tool,Melon,melon,fruits,9,1
+France,national consumer-facing ADEME tool,Melon,melon,fruits,10,0
+France,national consumer-facing ADEME tool,Melon,melon,fruits,11,0
+France,national consumer-facing ADEME tool,Melon,melon,fruits,12,0
+France,national consumer-facing ADEME tool,Mûre,mure,fruits,1,0
+France,national consumer-facing ADEME tool,Mûre,mure,fruits,2,0
+France,national consumer-facing ADEME tool,Mûre,mure,fruits,3,0
+France,national consumer-facing ADEME tool,Mûre,mure,fruits,4,0
+France,national consumer-facing ADEME tool,Mûre,mure,fruits,5,0
+France,national consumer-facing ADEME tool,Mûre,mure,fruits,6,0
+France,national consumer-facing ADEME tool,Mûre,mure,fruits,7,0
+France,national consumer-facing ADEME tool,Mûre,mure,fruits,8,1
+France,national consumer-facing ADEME tool,Mûre,mure,fruits,9,1
+France,national consumer-facing ADEME tool,Mûre,mure,fruits,10,0
+France,national consumer-facing ADEME tool,Mûre,mure,fruits,11,0
+France,national consumer-facing ADEME tool,Mûre,mure,fruits,12,0
+France,national consumer-facing ADEME tool,Myrtille,myrtille,fruits,1,0
+France,national consumer-facing ADEME tool,Myrtille,myrtille,fruits,2,0
+France,national consumer-facing ADEME tool,Myrtille,myrtille,fruits,3,0
+France,national consumer-facing ADEME tool,Myrtille,myrtille,fruits,4,0
+France,national consumer-facing ADEME tool,Myrtille,myrtille,fruits,5,0
+France,national consumer-facing ADEME tool,Myrtille,myrtille,fruits,6,0
+France,national consumer-facing ADEME tool,Myrtille,myrtille,fruits,7,1
+France,national consumer-facing ADEME tool,Myrtille,myrtille,fruits,8,1
+France,national consumer-facing ADEME tool,Myrtille,myrtille,fruits,9,1
+France,national consumer-facing ADEME tool,Myrtille,myrtille,fruits,10,0
+France,national consumer-facing ADEME tool,Myrtille,myrtille,fruits,11,0
+France,national consumer-facing ADEME tool,Myrtille,myrtille,fruits,12,0
+France,national consumer-facing ADEME tool,Nectarine,nectarine,fruits,1,0
+France,national consumer-facing ADEME tool,Nectarine,nectarine,fruits,2,0
+France,national consumer-facing ADEME tool,Nectarine,nectarine,fruits,3,0
+France,national consumer-facing ADEME tool,Nectarine,nectarine,fruits,4,0
+France,national consumer-facing ADEME tool,Nectarine,nectarine,fruits,5,0
+France,national consumer-facing ADEME tool,Nectarine,nectarine,fruits,6,0
+France,national consumer-facing ADEME tool,Nectarine,nectarine,fruits,7,0
+France,national consumer-facing ADEME tool,Nectarine,nectarine,fruits,8,1
+France,national consumer-facing ADEME tool,Nectarine,nectarine,fruits,9,1
+France,national consumer-facing ADEME tool,Nectarine,nectarine,fruits,10,0
+France,national consumer-facing ADEME tool,Nectarine,nectarine,fruits,11,0
+France,national consumer-facing ADEME tool,Nectarine,nectarine,fruits,12,0
+France,national consumer-facing ADEME tool,Noisette,noisette,fruits à coque et graines oléagineuses,1,0
+France,national consumer-facing ADEME tool,Noisette,noisette,fruits à coque et graines oléagineuses,2,0
+France,national consumer-facing ADEME tool,Noisette,noisette,fruits à coque et graines oléagineuses,3,0
+France,national consumer-facing ADEME tool,Noisette,noisette,fruits à coque et graines oléagineuses,4,0
+France,national consumer-facing ADEME tool,Noisette,noisette,fruits à coque et graines oléagineuses,5,0
+France,national consumer-facing ADEME tool,Noisette,noisette,fruits à coque et graines oléagineuses,6,0
+France,national consumer-facing ADEME tool,Noisette,noisette,fruits à coque et graines oléagineuses,7,0
+France,national consumer-facing ADEME tool,Noisette,noisette,fruits à coque et graines oléagineuses,8,0
+France,national consumer-facing ADEME tool,Noisette,noisette,fruits à coque et graines oléagineuses,9,1
+France,national consumer-facing ADEME tool,Noisette,noisette,fruits à coque et graines oléagineuses,10,1
+France,national consumer-facing ADEME tool,Noisette,noisette,fruits à coque et graines oléagineuses,11,1
+France,national consumer-facing ADEME tool,Noisette,noisette,fruits à coque et graines oléagineuses,12,0
+France,national consumer-facing ADEME tool,Noix,noix,fruits à coque et graines oléagineuses,1,0
+France,national consumer-facing ADEME tool,Noix,noix,fruits à coque et graines oléagineuses,2,0
+France,national consumer-facing ADEME tool,Noix,noix,fruits à coque et graines oléagineuses,3,0
+France,national consumer-facing ADEME tool,Noix,noix,fruits à coque et graines oléagineuses,4,0
+France,national consumer-facing ADEME tool,Noix,noix,fruits à coque et graines oléagineuses,5,0
+France,national consumer-facing ADEME tool,Noix,noix,fruits à coque et graines oléagineuses,6,0
+France,national consumer-facing ADEME tool,Noix,noix,fruits à coque et graines oléagineuses,7,0
+France,national consumer-facing ADEME tool,Noix,noix,fruits à coque et graines oléagineuses,8,0
+France,national consumer-facing ADEME tool,Noix,noix,fruits à coque et graines oléagineuses,9,1
+France,national consumer-facing ADEME tool,Noix,noix,fruits à coque et graines oléagineuses,10,1
+France,national consumer-facing ADEME tool,Noix,noix,fruits à coque et graines oléagineuses,11,0
+France,national consumer-facing ADEME tool,Noix,noix,fruits à coque et graines oléagineuses,12,0
+France,national consumer-facing ADEME tool,Oignon,oignon,légumes,1,1
+France,national consumer-facing ADEME tool,Oignon,oignon,légumes,2,1
+France,national consumer-facing ADEME tool,Oignon,oignon,légumes,3,1
+France,national consumer-facing ADEME tool,Oignon,oignon,légumes,4,1
+France,national consumer-facing ADEME tool,Oignon,oignon,légumes,5,0
+France,national consumer-facing ADEME tool,Oignon,oignon,légumes,6,0
+France,national consumer-facing ADEME tool,Oignon,oignon,légumes,7,0
+France,national consumer-facing ADEME tool,Oignon,oignon,légumes,8,0
+France,national consumer-facing ADEME tool,Oignon,oignon,légumes,9,1
+France,national consumer-facing ADEME tool,Oignon,oignon,légumes,10,1
+France,national consumer-facing ADEME tool,Oignon,oignon,légumes,11,1
+France,national consumer-facing ADEME tool,Oignon,oignon,légumes,12,1
+France,national consumer-facing ADEME tool,Pastèque,pasteque,fruits,1,0
+France,national consumer-facing ADEME tool,Pastèque,pasteque,fruits,2,0
+France,national consumer-facing ADEME tool,Pastèque,pasteque,fruits,3,0
+France,national consumer-facing ADEME tool,Pastèque,pasteque,fruits,4,0
+France,national consumer-facing ADEME tool,Pastèque,pasteque,fruits,5,0
+France,national consumer-facing ADEME tool,Pastèque,pasteque,fruits,6,1
+France,national consumer-facing ADEME tool,Pastèque,pasteque,fruits,7,1
+France,national consumer-facing ADEME tool,Pastèque,pasteque,fruits,8,1
+France,national consumer-facing ADEME tool,Pastèque,pasteque,fruits,9,1
+France,national consumer-facing ADEME tool,Pastèque,pasteque,fruits,10,0
+France,national consumer-facing ADEME tool,Pastèque,pasteque,fruits,11,0
+France,national consumer-facing ADEME tool,Pastèque,pasteque,fruits,12,0
+France,national consumer-facing ADEME tool,Pêche,peche,fruits,1,0
+France,national consumer-facing ADEME tool,Pêche,peche,fruits,2,0
+France,national consumer-facing ADEME tool,Pêche,peche,fruits,3,0
+France,national consumer-facing ADEME tool,Pêche,peche,fruits,4,0
+France,national consumer-facing ADEME tool,Pêche,peche,fruits,5,0
+France,national consumer-facing ADEME tool,Pêche,peche,fruits,6,1
+France,national consumer-facing ADEME tool,Pêche,peche,fruits,7,1
+France,national consumer-facing ADEME tool,Pêche,peche,fruits,8,1
+France,national consumer-facing ADEME tool,Pêche,peche,fruits,9,1
+France,national consumer-facing ADEME tool,Pêche,peche,fruits,10,0
+France,national consumer-facing ADEME tool,Pêche,peche,fruits,11,0
+France,national consumer-facing ADEME tool,Pêche,peche,fruits,12,0
+France,national consumer-facing ADEME tool,Poire,poire,fruits,1,1
+France,national consumer-facing ADEME tool,Poire,poire,fruits,2,1
+France,national consumer-facing ADEME tool,Poire,poire,fruits,3,1
+France,national consumer-facing ADEME tool,Poire,poire,fruits,4,0
+France,national consumer-facing ADEME tool,Poire,poire,fruits,5,0
+France,national consumer-facing ADEME tool,Poire,poire,fruits,6,0
+France,national consumer-facing ADEME tool,Poire,poire,fruits,7,0
+France,national consumer-facing ADEME tool,Poire,poire,fruits,8,1
+France,national consumer-facing ADEME tool,Poire,poire,fruits,9,1
+France,national consumer-facing ADEME tool,Poire,poire,fruits,10,1
+France,national consumer-facing ADEME tool,Poire,poire,fruits,11,1
+France,national consumer-facing ADEME tool,Poire,poire,fruits,12,1
+France,national consumer-facing ADEME tool,Poireau,poireau,légumes,1,1
+France,national consumer-facing ADEME tool,Poireau,poireau,légumes,2,1
+France,national consumer-facing ADEME tool,Poireau,poireau,légumes,3,1
+France,national consumer-facing ADEME tool,Poireau,poireau,légumes,4,1
+France,national consumer-facing ADEME tool,Poireau,poireau,légumes,5,0
+France,national consumer-facing ADEME tool,Poireau,poireau,légumes,6,0
+France,national consumer-facing ADEME tool,Poireau,poireau,légumes,7,0
+France,national consumer-facing ADEME tool,Poireau,poireau,légumes,8,0
+France,national consumer-facing ADEME tool,Poireau,poireau,légumes,9,1
+France,national consumer-facing ADEME tool,Poireau,poireau,légumes,10,1
+France,national consumer-facing ADEME tool,Poireau,poireau,légumes,11,1
+France,national consumer-facing ADEME tool,Poireau,poireau,légumes,12,1
+France,national consumer-facing ADEME tool,Poivron,poivron,légumes,1,0
+France,national consumer-facing ADEME tool,Poivron,poivron,légumes,2,0
+France,national consumer-facing ADEME tool,Poivron,poivron,légumes,3,0
+France,national consumer-facing ADEME tool,Poivron,poivron,légumes,4,0
+France,national consumer-facing ADEME tool,Poivron,poivron,légumes,5,0
+France,national consumer-facing ADEME tool,Poivron,poivron,légumes,6,1
+France,national consumer-facing ADEME tool,Poivron,poivron,légumes,7,1
+France,national consumer-facing ADEME tool,Poivron,poivron,légumes,8,1
+France,national consumer-facing ADEME tool,Poivron,poivron,légumes,9,1
+France,national consumer-facing ADEME tool,Poivron,poivron,légumes,10,0
+France,national consumer-facing ADEME tool,Poivron,poivron,légumes,11,0
+France,national consumer-facing ADEME tool,Poivron,poivron,légumes,12,0
+France,national consumer-facing ADEME tool,Pomme,pomme,fruits,1,1
+France,national consumer-facing ADEME tool,Pomme,pomme,fruits,2,1
+France,national consumer-facing ADEME tool,Pomme,pomme,fruits,3,1
+France,national consumer-facing ADEME tool,Pomme,pomme,fruits,4,1
+France,national consumer-facing ADEME tool,Pomme,pomme,fruits,5,0
+France,national consumer-facing ADEME tool,Pomme,pomme,fruits,6,0
+France,national consumer-facing ADEME tool,Pomme,pomme,fruits,7,0
+France,national consumer-facing ADEME tool,Pomme,pomme,fruits,8,1
+France,national consumer-facing ADEME tool,Pomme,pomme,fruits,9,1
+France,national consumer-facing ADEME tool,Pomme,pomme,fruits,10,1
+France,national consumer-facing ADEME tool,Pomme,pomme,fruits,11,1
+France,national consumer-facing ADEME tool,Pomme,pomme,fruits,12,1
+France,national consumer-facing ADEME tool,Potiron,potiron,légumes,1,1
+France,national consumer-facing ADEME tool,Potiron,potiron,légumes,2,0
+France,national consumer-facing ADEME tool,Potiron,potiron,légumes,3,0
+France,national consumer-facing ADEME tool,Potiron,potiron,légumes,4,0
+France,national consumer-facing ADEME tool,Potiron,potiron,légumes,5,0
+France,national consumer-facing ADEME tool,Potiron,potiron,légumes,6,0
+France,national consumer-facing ADEME tool,Potiron,potiron,légumes,7,0
+France,national consumer-facing ADEME tool,Potiron,potiron,légumes,8,0
+France,national consumer-facing ADEME tool,Potiron,potiron,légumes,9,1
+France,national consumer-facing ADEME tool,Potiron,potiron,légumes,10,1
+France,national consumer-facing ADEME tool,Potiron,potiron,légumes,11,1
+France,national consumer-facing ADEME tool,Potiron,potiron,légumes,12,1
+France,national consumer-facing ADEME tool,Prune,prune,fruits,1,0
+France,national consumer-facing ADEME tool,Prune,prune,fruits,2,0
+France,national consumer-facing ADEME tool,Prune,prune,fruits,3,0
+France,national consumer-facing ADEME tool,Prune,prune,fruits,4,0
+France,national consumer-facing ADEME tool,Prune,prune,fruits,5,0
+France,national consumer-facing ADEME tool,Prune,prune,fruits,6,0
+France,national consumer-facing ADEME tool,Prune,prune,fruits,7,1
+France,national consumer-facing ADEME tool,Prune,prune,fruits,8,1
+France,national consumer-facing ADEME tool,Prune,prune,fruits,9,1
+France,national consumer-facing ADEME tool,Prune,prune,fruits,10,0
+France,national consumer-facing ADEME tool,Prune,prune,fruits,11,0
+France,national consumer-facing ADEME tool,Prune,prune,fruits,12,0
+France,national consumer-facing ADEME tool,Raisin,raisin,fruits,1,0
+France,national consumer-facing ADEME tool,Raisin,raisin,fruits,2,0
+France,national consumer-facing ADEME tool,Raisin,raisin,fruits,3,0
+France,national consumer-facing ADEME tool,Raisin,raisin,fruits,4,0
+France,national consumer-facing ADEME tool,Raisin,raisin,fruits,5,0
+France,national consumer-facing ADEME tool,Raisin,raisin,fruits,6,0
+France,national consumer-facing ADEME tool,Raisin,raisin,fruits,7,0
+France,national consumer-facing ADEME tool,Raisin,raisin,fruits,8,0
+France,national consumer-facing ADEME tool,Raisin,raisin,fruits,9,1
+France,national consumer-facing ADEME tool,Raisin,raisin,fruits,10,1
+France,national consumer-facing ADEME tool,Raisin,raisin,fruits,11,0
+France,national consumer-facing ADEME tool,Raisin,raisin,fruits,12,0
+France,national consumer-facing ADEME tool,Reine claude,reineclaude,fruits,1,0
+France,national consumer-facing ADEME tool,Reine claude,reineclaude,fruits,2,0
+France,national consumer-facing ADEME tool,Reine claude,reineclaude,fruits,3,0
+France,national consumer-facing ADEME tool,Reine claude,reineclaude,fruits,4,0
+France,national consumer-facing ADEME tool,Reine claude,reineclaude,fruits,5,0
+France,national consumer-facing ADEME tool,Reine claude,reineclaude,fruits,6,0
+France,national consumer-facing ADEME tool,Reine claude,reineclaude,fruits,7,0
+France,national consumer-facing ADEME tool,Reine claude,reineclaude,fruits,8,0
+France,national consumer-facing ADEME tool,Reine claude,reineclaude,fruits,9,1
+France,national consumer-facing ADEME tool,Reine claude,reineclaude,fruits,10,0
+France,national consumer-facing ADEME tool,Reine claude,reineclaude,fruits,11,0
+France,national consumer-facing ADEME tool,Reine claude,reineclaude,fruits,12,0
+France,national consumer-facing ADEME tool,Tomate,tomate,légumes,1,0
+France,national consumer-facing ADEME tool,Tomate,tomate,légumes,2,0
+France,national consumer-facing ADEME tool,Tomate,tomate,légumes,3,0
+France,national consumer-facing ADEME tool,Tomate,tomate,légumes,4,0
+France,national consumer-facing ADEME tool,Tomate,tomate,légumes,5,0
+France,national consumer-facing ADEME tool,Tomate,tomate,légumes,6,1
+France,national consumer-facing ADEME tool,Tomate,tomate,légumes,7,1
+France,national consumer-facing ADEME tool,Tomate,tomate,légumes,8,1
+France,national consumer-facing ADEME tool,Tomate,tomate,légumes,9,1
+France,national consumer-facing ADEME tool,Tomate,tomate,légumes,10,0
+France,national consumer-facing ADEME tool,Tomate,tomate,légumes,11,0
+France,national consumer-facing ADEME tool,Tomate,tomate,légumes,12,0

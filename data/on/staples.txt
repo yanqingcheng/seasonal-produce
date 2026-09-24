@@ -1,0 +1,15 @@
+Apples
+carrots
+potatoes
+Onions (Cooking)
+Tomatoes (Field)
+Corn
+Strawberries (Field)
+Peppers (Field)
+Cucumber (Field)
+Lettuce (Assorted)
+broccoli
+cabbage
+garlic
+Beans (Green/Yellow)
+Peas (Green)

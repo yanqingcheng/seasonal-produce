@@ -1,4 +1,5 @@
-// Shared year-wheel. One screen, painted from a country pack. Motion figures are ARCH §5.
+// Shared year-wheel. One screen, painted from a country pack.
+import { resolvePackId, searchForPack } from "./pack-id.js";
 
 const TINTS = ["#cfe0ff", "#ddd3ff", "#d3f2c4", "#c2ecad", "#e2f59c", "#fff09a", "#ffe07a", "#ffcf7a", "#ffbd7e", "#ffab88", "#f6b3aa", "#dccff2"];
 const LEGEND = {
@@ -120,7 +121,12 @@ const session = {
 };
 
 function shortName(m) {
-  return session.pack.month_names[m].slice(0, 3);
+  return session.pack.month_short?.[m] ?? session.pack.month_names[m].slice(0, 3);
+}
+
+function monthHeadline(mo, copy) {
+  if (mo.counts.peak === 0 && copy.hub_when_no_peak) return fillTpl(copy.hub_when_no_peak, { n: mo.counts.in });
+  return fillTpl(copy.at_peak_short, { n: mo.counts.peak });
 }
 
 function displayName(name) {
@@ -167,7 +173,7 @@ function slotMarkup(item, mo, m, i) {
 }
 
 // Active-only stickers exist on a wedge while it is selected or still extended.
-// Quiet wedges keep their five. This is the DOM-count tactic in ARCH §5.
+// Quiet wedges keep their five.
 function syncStickers() {
   session.segEls.forEach((s, m) => {
     const mo = session.pack.months[m];
@@ -198,7 +204,9 @@ function buildWheel() {
     const label = isToday
       ? `<g class="sun"><circle r="40" class="sun-rays"/></g><rect x="-44" y="-22" width="88" height="44" rx="22" class="today-pill"/><text class="seg-label" y="2">${shortName(m).toUpperCase()}</text>`
       : `<text class="seg-label" y="2">${shortName(m).toUpperCase()}</text>`;
-    const aria = `${mo.name}: ${fillTpl(pack.copy.at_peak_short, { n: mo.counts.peak })}, ${fillTpl(pack.copy.more_in_season, { n: mo.counts.in })}${isToday ? ` (${pack.copy.hub_this_month})` : ""}`;
+    const headline = monthHeadline(mo, pack.copy);
+    const extra = mo.counts.peak === 0 && pack.copy.hub_when_no_peak ? "" : `, ${fillTpl(pack.copy.more_in_season, { n: mo.counts.in })}`;
+    const aria = `${mo.name}: ${headline}${extra}${isToday ? ` (${pack.copy.hub_this_month})` : ""}`;
     return `<g class="seg${isToday ? " is-today" : ""}" data-m="${m}" tabindex="0" role="button" aria-label="${esc(aria)}" style="--tint:${TINTS[m]}">
       <path class="seg-bg"/>
       ${isToday ? `<path class="today-halo"/>` : ""}
@@ -331,7 +339,7 @@ function renderHub(m, landed) {
   $("#hub").innerHTML = `<g class="${landed ? "hub-pop" : "hub-tick"}">
     <text class="hub-season" y="-52">${esc(session.pack.seasons[m].toUpperCase())}</text>
     <text class="hub-month" y="12">${esc(mo.name)}</text>
-    <text class="hub-count" y="56">${esc(fillTpl(copy.at_peak_short, { n: mo.counts.peak }))}</text>
+    <text class="hub-count" y="56">${esc(monthHeadline(mo, copy))}</text>
     ${m === session.today ? `<text class="hub-today" y="88">${esc(copy.hub_this_month)}</text>` : ""}
   </g>`;
 }
@@ -421,14 +429,14 @@ function renderPanel(animate) {
         ${mo.farewells.length ? `<div class="flow"><span class="flow-label bye">${esc(copy.last_call)}</span>${mo.farewells.map((n) => itemChip(n)).join("")}</div>` : ""}
       </header>
       ${recipeCard(m)}
-      <section class="shelf">
+      ${mo.counts.peak ? `<section class="shelf">
         <h3><span class="state-dot peak"></span>${esc(copy.at_peak)} <small>${mo.counts.peak}</small></h3>
         <ul class="tiles">${mo.peak.map((n, i) => tile(n, i, recipeItems)).join("")}</ul>
-      </section>
-      <section class="shelf">
+      </section>` : ""}
+      ${mo.counts.in ? `<section class="shelf">
         <h3><span class="state-dot in"></span>${esc(copy.also_in_season)} <small>${mo.counts.in}</small></h3>
         <ul class="tiles">${mo.in.map((n, i) => tile(n, i, recipeItems)).join("")}</ul>
-      </section>
+      </section>` : ""}
       ${mo.edge.length ? `<details class="edge">
         <summary><span class="state-dot edge"></span>${esc(copy.on_the_edge)} <small>${mo.counts.edge}</small><span class="edge-why">${esc(copy.edge_why)}</span></summary>
         <div class="edge-chips">${mo.edge.map((n) => itemChip(n)).join("")}</div>
@@ -452,17 +460,23 @@ function renderTodayButton() {
   btn.textContent = fillTpl(session.pack.copy.back_to, { month: session.pack.month_names[session.today] });
 }
 
+function replaceSearch(next) {
+  const current = location.search.replace(/^\?/, "");
+  if (next === current) return;
+  history.replaceState(null, "", next ? `?${next}` : location.pathname);
+}
+
+function stripUnknownCountry(packId) {
+  replaceSearch(searchForPack(location.search, packId));
+}
+
 function syncQuery() {
-  if (!session.urlReady) return;
-  const params = new URLSearchParams(location.search);
+  if (!session.urlReady || !session.pack) return;
+  const params = new URLSearchParams(searchForPack(location.search, session.pack.id));
   params.set("month", String(session.selected + 1));
   if (session.openItem) params.set("item", session.openItem);
   else params.delete("item");
-  if (params.get("country") && params.get("country") !== session.pack.id) params.delete("country");
-  const next = params.toString();
-  if (next !== location.search.replace(/^\?/, "")) {
-    history.replaceState(null, "", next ? `?${next}` : location.pathname);
-  }
+  replaceSearch(params.toString());
 }
 
 function select(m, { intro = false, onSettle = null } = {}) {
@@ -527,9 +541,10 @@ function openSheet(name, { fromQuery = false, opener = null } = {}) {
   const peaks = it.months.map((role, m) => (role === "peak" ? m : -1)).filter((m) => m >= 0);
   const recipes = session.pack.recipes.filter((r) => r.produce.some((p) => p.item === name));
   const stored = it.stored_notes ? Object.entries(it.stored_notes) : [];
-  const gridOnly = !it.regions_notes && !stored.length && !it.specialist_sources.length;
   const nowRole = it.months[session.selected];
   const ring = copy.ring_key;
+  const roles = session.roles ?? new Set();
+  const ringKeys = ["peak", "in", "edge", "out"].filter((role) => roles.has(role));
 
   const sheet = $("#sheet");
   sheet.style.setProperty("--cat", catColour(it.category));
@@ -542,20 +557,19 @@ function openSheet(name, { fromQuery = false, opener = null } = {}) {
         <h2 id="sheet-title">${esc(displayName(it.item))}</h2>
         <p class="sheet-now"><span class="state-dot ${nowRole}"></span>${esc(fillTpl(copy.in_month, { state: roleLabel(nowRole), month: session.pack.months[session.selected].name }))}</p>
         <ul class="ring-key">
-          <li><i class="k-peak"></i>${esc(ring.peak)}</li><li><i class="k-in"></i>${esc(ring.in)}</li><li><i class="k-edge"></i>${esc(ring.edge)}</li><li><i class="k-out"></i>${esc(ring.out)}</li>
+          ${ringKeys.map((role) => `<li><i class="k-${role}"></i>${esc(ring[role])}</li>`).join("")}
         </ul>
       </div>
     </div>
     <dl class="facts">
       <div><dt>${esc(copy.fact_in_season)}</dt><dd>${esc(inSeason.length ? monthRanges(inSeason) : copy.no_in_season)}</dd></div>
-      <div><dt>${esc(copy.fact_peak)}</dt><dd>${esc(peaks.length ? monthRanges(peaks) : copy.no_peak)}</dd></div>
+      ${roles.has("peak") ? `<div><dt>${esc(copy.fact_peak)}</dt><dd>${esc(peaks.length ? monthRanges(peaks) : copy.no_peak)}</dd></div>` : ""}
       ${edge.length ? `<div><dt>${esc(copy.fact_edge)}</dt><dd>${esc(monthRanges(edge))}</dd></div>` : ""}
       ${stored.length ? `<div class="wide"><dt>${esc(copy.stored_notes)}</dt><dd class="notes-chips">${stored.map(([k, v]) => `<span><b>${esc(shortName(MONTH_KEYS.indexOf(k)))}</b> ${esc(v)}</span>`).join("")}</dd></div>` : ""}
       ${it.regions_notes ? `<div class="wide"><dt>${esc(copy.regions)}</dt><dd>${esc(it.regions_notes)}</dd></div>` : ""}
       ${recipes.length ? `<div class="wide"><dt>${esc(copy.recipe)}</dt><dd>${recipes.map((r) => `<button type="button" class="link-btn" data-goto="${r.month}">${esc(r.title)} <small>(${esc(session.pack.months[r.month].name)})</small></button>`).join("<br>")}</dd></div>` : ""}
       ${it.specialist_sources.length ? `<div class="wide"><dt>${esc(copy.specialist_sources)}</dt><dd class="sources">${it.specialist_sources.map((s) => `<span>${esc(s)}</span>`).join("")}</dd></div>` : ""}
     </dl>
-    ${gridOnly ? `<p class="sheet-foot">${esc(session.pack.thin_sheet)}</p>` : ""}
   </div>`;
   session.openItem = name;
   session.sheetReturn = fromQuery
@@ -568,20 +582,34 @@ function openSheet(name, { fromQuery = false, opener = null } = {}) {
 
 function maybeCountryControl(registry) {
   document.querySelector(".country-control")?.remove();
-  const shipped = (registry ?? []).filter((row) => row.status === "shipped");
+  const shipped = (registry ?? []).filter((row) => row.status === "shipped" || row.status === "ready");
   if (shipped.length < 2) return;
   const nav = document.createElement("nav");
   nav.className = "country-control";
-  nav.setAttribute("aria-label", "Country");
+  const label = document.createElement("label");
+  label.htmlFor = "country-select";
+  label.textContent = "Place";
+  const select = document.createElement("select");
+  select.id = "country-select";
   for (const row of shipped) {
-    const button = document.createElement("button");
-    button.type = "button";
-    button.textContent = row.name;
-    button.addEventListener("click", () => {
-      loadPack(row.id).then((next) => render(next));
-    });
-    nav.appendChild(button);
+    const option = document.createElement("option");
+    option.value = row.id;
+    option.textContent = row.name;
+    option.selected = row.id === session.pack?.id;
+    select.appendChild(option);
   }
+  select.addEventListener("change", () => {
+    const id = select.value;
+    if (!id || id === session.pack?.id) return;
+    const params = new URLSearchParams(location.search);
+    params.set("country", id);
+    params.delete("item");
+    history.pushState(null, "", `?${params.toString()}`);
+    loadPack(id).then((next) => render(next)).then(() => {
+      document.querySelector("#country-select")?.focus();
+    });
+  });
+  nav.append(label, select);
   document.querySelector(".top")?.append(nav);
 }
 
@@ -643,13 +671,20 @@ function bind() {
   });
   document.addEventListener("keydown", (e) => {
     if (sheet.open || e.altKey || e.ctrlKey || e.metaKey) return;
-    if (e.target instanceof Element && e.target.closest("input, textarea")) return;
+    if (e.target instanceof Element && e.target.closest("input, textarea, select")) return;
     const fromSeg = document.activeElement?.closest?.(".seg");
     if (e.key === "ArrowRight") select((session.selected + 1) % 12);
     else if (e.key === "ArrowLeft") select((session.selected + 11) % 12);
     else return;
     e.preventDefault();
     if (fromSeg) session.segEls[session.selected].g.focus({ preventScroll: true });
+  });
+  window.addEventListener("popstate", () => {
+    loadRegistry().then((registry) => {
+      const id = resolvePackId(new URLSearchParams(location.search).get("country"), registry);
+      if (id === session.pack?.id) render(session.pack);
+      else loadPack(id).then((pack) => render(pack));
+    });
   });
 }
 
@@ -668,8 +703,16 @@ async function mountSprite() {
   holder.dataset.ready = "1";
 }
 
+function rolesIn(pack) {
+  const roles = new Set();
+  for (const it of pack.items) for (const role of it.months) roles.add(role);
+  return roles;
+}
+
 export async function render(pack) {
+  session.urlReady = false;
   session.pack = pack;
+  session.roles = rolesIn(pack);
   session.byName = new Map(pack.items.map((it) => [it.item, it]));
   session.recipeByMonth = new Map(pack.recipes.map((r) => [r.month, r]));
   session.today = monthInZone(pack.timezone);
@@ -729,6 +772,7 @@ export async function render(pack) {
     setTimeout(() => $("#wheel")?.classList.remove("intro"), 2600);
   }
   session.urlReady = true;
+  stripUnknownCountry(pack.id);
   if (requested == null && new URLSearchParams(location.search).has("month")) {
     const params = new URLSearchParams(location.search);
     params.delete("month");
@@ -743,10 +787,14 @@ export async function render(pack) {
   }
 }
 
-function packIdFromSearch(search) {
-  const requested = new URLSearchParams(search).get("country");
-  if (!requested || requested === "uk") return "uk";
-  return "uk";
+async function boot() {
+  const registry = await loadRegistry();
+  const params = new URLSearchParams(location.search);
+  const requested = params.get("country");
+  const id = resolvePackId(requested, registry);
+  stripUnknownCountry(id);
+  const pack = await loadPack(id);
+  await render(pack);
 }
 
-loadPack(packIdFromSearch(location.search)).then((pack) => render(pack));
+boot();

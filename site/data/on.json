@@ -1,0 +1,2702 @@
+{
+  "id": "on",
+  "name": "Canada – Ontario",
+  "locale": "en-CA",
+  "timezone": "America/Toronto",
+  "title": "The Ontario Year-Wheel",
+  "tagline": "What's growing in Ontario, month by month.",
+  "month_names": [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ],
+  "seasons": [
+    "Winter",
+    "Winter",
+    "Spring",
+    "Spring",
+    "Spring",
+    "Summer",
+    "Summer",
+    "Summer",
+    "Autumn",
+    "Autumn",
+    "Autumn",
+    "Winter"
+  ],
+  "categories": [
+    {
+      "id": "vegetable",
+      "label": "Vegetable",
+      "one": "vegetable",
+      "plural": "vegetables"
+    },
+    {
+      "id": "fruit",
+      "label": "Fruit",
+      "one": "fruit",
+      "plural": "fruit"
+    }
+  ],
+  "attribution": "Foodland Ontario Availability Guide. Open Government Licence – Ontario.",
+  "copy": {
+    "this_month": "This month",
+    "back_to": "Back to {month}",
+    "new_in": "New in",
+    "last_call": "Last call",
+    "at_peak": "At peak",
+    "also_in_season": "In the guide",
+    "on_the_edge": "On the edge",
+    "edge_why": "Edge of the season.",
+    "hub_this_month": "this month",
+    "at_peak_short": "{n} at peak",
+    "more_in_season": "{n} more in the guide",
+    "hub_when_no_peak": "{n} in the guide",
+    "open_fact_sheet": "Open fact sheet.",
+    "recipe_badge": "recipe",
+    "months_recipe": "{month}'s recipe",
+    "made_with": "Made with",
+    "cook_it_on": "Cook it on {name}",
+    "fact_in_season": "In the guide",
+    "fact_peak": "Peak",
+    "fact_edge": "On the edge",
+    "stored_notes": "Stored & type notes",
+    "regions": "Regions & notes",
+    "recipe": "Recipe",
+    "specialist_sources": "Source",
+    "no_in_season": "No months in the guide",
+    "no_peak": "",
+    "all_year": "all year",
+    "in_month": "{state} in {month}",
+    "state_labels": {
+      "peak": "Peak",
+      "in": "Available",
+      "edge": "On the edge",
+      "out": "Not listed"
+    },
+    "ring_key": {
+      "peak": "Peak",
+      "in": "Available",
+      "edge": "Edge",
+      "out": "Out"
+    },
+    "proper": {},
+    "hint": "Tap a month on the wheel, or use the ← → keys.",
+    "wheel_label": "Produce year-wheel. Pick a month.",
+    "months_nav": "Months",
+    "close_sheet": "Close fact sheet",
+    "season_label": "Season: {list}",
+    "mix_label": "In the guide by type: {list}",
+    "blurb": {
+      "counts": "{month} lists {in} Ontario-grown crops.",
+      "fullest": "The fullest month in the guide.",
+      "leanest": "The leanest stretch of the year in the guide.",
+      "filling": "The wheel is filling up: {n} more listed than in {prev}.",
+      "winding": "Winding down: {n} fewer listed than in {prev}.",
+      "same": "Much the same list as {prev}.",
+      "lead_fruit_one": "{lead} lead the peaks ({count} of {peak}), with 1 fruit at its best.",
+      "lead_fruit": "{lead} lead the peaks ({count} of {peak}), with {n} fruits at their best.",
+      "lead_none": "{lead} lead the peaks ({count} of {peak}); no fruit is at peak.",
+      "change_threshold": 8
+    }
+  },
+  "items": [
+    {
+      "item": "Apples",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Apricots",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Blueberries",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Cherries",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Cranberries",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Currants",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Gooseberries",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Grapes",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Haskap Berries",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Muskmelon",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Nectarines",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Peaches",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Pears",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Plums",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Raspberries",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "rhubarb",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Rhubarb (Forced)",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Strawberries (Field)",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Strawberries (Greenhouse)",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Watermelon",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Artichoke",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "asparagus",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Beans (Green/Yellow)",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Beets",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Bok Choy",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "broccoli",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "brussels sprouts",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "cabbage",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "carrots",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "cauliflower",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "celery",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Chinese Broccoli (White Flower)",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Corn",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Cucumber (Field)",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Cucumber (Greenhouse)",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Daikon Radish",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Edible Amaranth (Hinn Choy)",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Eggplant",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "garlic",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "kale",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "leeks",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Lettuce (Assorted)",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Lettuce (Greenhouse)",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Mushrooms",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Mustard Greens (Gai Choy)",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Nappa Cabbage",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Onions (Cooking)",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Onions (Green)",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Onions (Red)",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Parsnip",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Peas (Green)",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Peas (Snow)",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Peppers (Field)",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Peppers (Greenhouse)",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "potatoes",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Pumpkin",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "radicchio",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "radishes",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Rapini",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Rutabaga",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Snow Pea Shoots (Dow Miu)",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "spinach",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Winter Squash",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Summer Squash",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Sweet Potatoes",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Tomatoes (Field)",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Tomatoes (Greenhouse)",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Water Spinach (Tung Choy)",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Yow Choy(Yellow Flower)",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Zucchini",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    }
+  ],
+  "recipes": [],
+  "months": [
+    {
+      "key": "jan",
+      "name": "January",
+      "counts": {
+        "peak": 0,
+        "in": 20,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "garlic",
+        "cabbage",
+        "Apples",
+        "carrots",
+        "Onions (Cooking)",
+        "potatoes",
+        "Winter Squash",
+        "Pears",
+        "leeks",
+        "Onions (Red)",
+        "Parsnip",
+        "Beets",
+        "Strawberries (Greenhouse)",
+        "Cucumber (Greenhouse)",
+        "Lettuce (Greenhouse)"
+      ],
+      "peak": [],
+      "in": [
+        "Apples",
+        "Pears",
+        "Strawberries (Greenhouse)",
+        "Beets",
+        "cabbage",
+        "carrots",
+        "Cucumber (Greenhouse)",
+        "garlic",
+        "leeks",
+        "Lettuce (Greenhouse)",
+        "Mushrooms",
+        "Onions (Cooking)",
+        "Onions (Red)",
+        "Parsnip",
+        "Peppers (Greenhouse)",
+        "potatoes",
+        "Rutabaga",
+        "Winter Squash",
+        "Sweet Potatoes",
+        "Tomatoes (Greenhouse)"
+      ],
+      "edge": [],
+      "arrivals": [],
+      "farewells": [
+        "Winter Squash"
+      ],
+      "quiet": [
+        "cabbage",
+        "Onions (Cooking)",
+        "Winter Squash",
+        "Strawberries (Greenhouse)",
+        "Rutabaga"
+      ],
+      "blurb": "January lists <strong>20</strong> Ontario-grown crops. Much the same list as December."
+    },
+    {
+      "key": "feb",
+      "name": "February",
+      "counts": {
+        "peak": 0,
+        "in": 19,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "garlic",
+        "cabbage",
+        "Apples",
+        "carrots",
+        "Onions (Cooking)",
+        "potatoes",
+        "Pears",
+        "leeks",
+        "Onions (Red)",
+        "Parsnip",
+        "Beets",
+        "Strawberries (Greenhouse)",
+        "Cucumber (Greenhouse)",
+        "Lettuce (Greenhouse)",
+        "Mushrooms"
+      ],
+      "peak": [],
+      "in": [
+        "Apples",
+        "Pears",
+        "Strawberries (Greenhouse)",
+        "Beets",
+        "cabbage",
+        "carrots",
+        "Cucumber (Greenhouse)",
+        "garlic",
+        "leeks",
+        "Lettuce (Greenhouse)",
+        "Mushrooms",
+        "Onions (Cooking)",
+        "Onions (Red)",
+        "Parsnip",
+        "Peppers (Greenhouse)",
+        "potatoes",
+        "Rutabaga",
+        "Sweet Potatoes",
+        "Tomatoes (Greenhouse)"
+      ],
+      "edge": [],
+      "arrivals": [],
+      "farewells": [
+        "Pears",
+        "leeks"
+      ],
+      "quiet": [
+        "garlic",
+        "carrots",
+        "Pears",
+        "Beets",
+        "Peppers (Greenhouse)"
+      ],
+      "blurb": "February lists <strong>19</strong> Ontario-grown crops. Much the same list as January."
+    },
+    {
+      "key": "mar",
+      "name": "March",
+      "counts": {
+        "peak": 0,
+        "in": 18,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "garlic",
+        "cabbage",
+        "Apples",
+        "carrots",
+        "Onions (Cooking)",
+        "potatoes",
+        "Rhubarb (Forced)",
+        "Onions (Red)",
+        "Parsnip",
+        "Beets",
+        "Strawberries (Greenhouse)",
+        "Cucumber (Greenhouse)",
+        "Lettuce (Greenhouse)",
+        "Mushrooms",
+        "Peppers (Greenhouse)"
+      ],
+      "peak": [],
+      "in": [
+        "Apples",
+        "Rhubarb (Forced)",
+        "Strawberries (Greenhouse)",
+        "Beets",
+        "cabbage",
+        "carrots",
+        "Cucumber (Greenhouse)",
+        "garlic",
+        "Lettuce (Greenhouse)",
+        "Mushrooms",
+        "Onions (Cooking)",
+        "Onions (Red)",
+        "Parsnip",
+        "Peppers (Greenhouse)",
+        "potatoes",
+        "Rutabaga",
+        "Sweet Potatoes",
+        "Tomatoes (Greenhouse)"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Rhubarb (Forced)"
+      ],
+      "farewells": [
+        "garlic"
+      ],
+      "quiet": [
+        "garlic",
+        "Rhubarb (Forced)",
+        "Onions (Red)",
+        "Lettuce (Greenhouse)",
+        "Tomatoes (Greenhouse)"
+      ],
+      "blurb": "March lists <strong>18</strong> Ontario-grown crops. The leanest stretch of the year in the guide."
+    },
+    {
+      "key": "apr",
+      "name": "April",
+      "counts": {
+        "peak": 0,
+        "in": 18,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "cabbage",
+        "Apples",
+        "carrots",
+        "Onions (Cooking)",
+        "potatoes",
+        "rhubarb",
+        "Rhubarb (Forced)",
+        "Onions (Red)",
+        "Parsnip",
+        "Beets",
+        "Strawberries (Greenhouse)",
+        "Cucumber (Greenhouse)",
+        "Lettuce (Greenhouse)",
+        "Mushrooms",
+        "Peppers (Greenhouse)"
+      ],
+      "peak": [],
+      "in": [
+        "Apples",
+        "rhubarb",
+        "Rhubarb (Forced)",
+        "Strawberries (Greenhouse)",
+        "Beets",
+        "cabbage",
+        "carrots",
+        "Cucumber (Greenhouse)",
+        "Lettuce (Greenhouse)",
+        "Mushrooms",
+        "Onions (Cooking)",
+        "Onions (Red)",
+        "Parsnip",
+        "Peppers (Greenhouse)",
+        "potatoes",
+        "Rutabaga",
+        "Sweet Potatoes",
+        "Tomatoes (Greenhouse)"
+      ],
+      "edge": [],
+      "arrivals": [
+        "rhubarb"
+      ],
+      "farewells": [
+        "Beets",
+        "cabbage",
+        "Onions (Red)",
+        "Parsnip"
+      ],
+      "quiet": [
+        "cabbage",
+        "Apples",
+        "rhubarb",
+        "Parsnip",
+        "Mushrooms"
+      ],
+      "blurb": "April lists <strong>18</strong> Ontario-grown crops. The leanest stretch of the year in the guide."
+    },
+    {
+      "key": "may",
+      "name": "May",
+      "counts": {
+        "peak": 0,
+        "in": 18,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Apples",
+        "carrots",
+        "Onions (Cooking)",
+        "potatoes",
+        "asparagus",
+        "rhubarb",
+        "Rhubarb (Forced)",
+        "Snow Pea Shoots (Dow Miu)",
+        "spinach",
+        "radishes",
+        "Strawberries (Greenhouse)",
+        "Cucumber (Greenhouse)",
+        "Lettuce (Greenhouse)",
+        "Mushrooms",
+        "Peppers (Greenhouse)"
+      ],
+      "peak": [],
+      "in": [
+        "Apples",
+        "rhubarb",
+        "Rhubarb (Forced)",
+        "Strawberries (Greenhouse)",
+        "asparagus",
+        "carrots",
+        "Cucumber (Greenhouse)",
+        "Lettuce (Greenhouse)",
+        "Mushrooms",
+        "Onions (Cooking)",
+        "Peppers (Greenhouse)",
+        "potatoes",
+        "radishes",
+        "Rutabaga",
+        "Snow Pea Shoots (Dow Miu)",
+        "spinach",
+        "Sweet Potatoes",
+        "Tomatoes (Greenhouse)"
+      ],
+      "edge": [],
+      "arrivals": [
+        "asparagus",
+        "radishes",
+        "Snow Pea Shoots (Dow Miu)",
+        "spinach"
+      ],
+      "farewells": [
+        "Rhubarb (Forced)"
+      ],
+      "quiet": [
+        "Apples",
+        "asparagus",
+        "Snow Pea Shoots (Dow Miu)",
+        "spinach",
+        "radishes"
+      ],
+      "blurb": "May lists <strong>18</strong> Ontario-grown crops. The leanest stretch of the year in the guide."
+    },
+    {
+      "key": "jun",
+      "name": "June",
+      "counts": {
+        "peak": 0,
+        "in": 39,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Strawberries (Field)",
+        "Beans (Green/Yellow)",
+        "broccoli",
+        "Cucumber (Field)",
+        "Lettuce (Assorted)",
+        "Peas (Green)",
+        "cabbage",
+        "Apples",
+        "carrots",
+        "Onions (Cooking)",
+        "potatoes",
+        "Haskap Berries",
+        "asparagus",
+        "rhubarb",
+        "radicchio"
+      ],
+      "peak": [],
+      "in": [
+        "Apples",
+        "Haskap Berries",
+        "rhubarb",
+        "Strawberries (Field)",
+        "Strawberries (Greenhouse)",
+        "asparagus",
+        "Beans (Green/Yellow)",
+        "Bok Choy",
+        "broccoli",
+        "cabbage",
+        "carrots",
+        "cauliflower",
+        "Chinese Broccoli (White Flower)",
+        "Cucumber (Field)",
+        "Cucumber (Greenhouse)",
+        "Daikon Radish",
+        "Edible Amaranth (Hinn Choy)",
+        "kale",
+        "Lettuce (Assorted)",
+        "Lettuce (Greenhouse)",
+        "Mushrooms",
+        "Mustard Greens (Gai Choy)",
+        "Nappa Cabbage",
+        "Onions (Cooking)",
+        "Onions (Green)",
+        "Peas (Green)",
+        "Peas (Snow)",
+        "Peppers (Greenhouse)",
+        "potatoes",
+        "radicchio",
+        "radishes",
+        "Rutabaga",
+        "Snow Pea Shoots (Dow Miu)",
+        "spinach",
+        "Summer Squash",
+        "Sweet Potatoes",
+        "Tomatoes (Greenhouse)",
+        "Water Spinach (Tung Choy)",
+        "Yow Choy(Yellow Flower)"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Haskap Berries",
+        "Strawberries (Field)",
+        "Beans (Green/Yellow)",
+        "Bok Choy"
+      ],
+      "farewells": [
+        "rhubarb",
+        "asparagus"
+      ],
+      "quiet": [
+        "Strawberries (Field)",
+        "broccoli",
+        "Haskap Berries",
+        "radicchio",
+        "Peas (Snow)"
+      ],
+      "blurb": "June lists <strong>39</strong> Ontario-grown crops. The wheel is filling up: 21 more listed than in May."
+    },
+    {
+      "key": "jul",
+      "name": "July",
+      "counts": {
+        "peak": 0,
+        "in": 54,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Corn",
+        "Peppers (Field)",
+        "Tomatoes (Field)",
+        "Strawberries (Field)",
+        "Beans (Green/Yellow)",
+        "broccoli",
+        "Cucumber (Field)",
+        "Lettuce (Assorted)",
+        "Peas (Green)",
+        "garlic",
+        "cabbage",
+        "Apples",
+        "carrots",
+        "Onions (Cooking)",
+        "potatoes"
+      ],
+      "peak": [],
+      "in": [
+        "Apples",
+        "Apricots",
+        "Blueberries",
+        "Cherries",
+        "Currants",
+        "Gooseberries",
+        "Haskap Berries",
+        "Peaches",
+        "Plums",
+        "Raspberries",
+        "Strawberries (Field)",
+        "Strawberries (Greenhouse)",
+        "Watermelon",
+        "Beans (Green/Yellow)",
+        "Beets",
+        "Bok Choy",
+        "broccoli",
+        "cabbage",
+        "carrots",
+        "cauliflower",
+        "celery",
+        "Chinese Broccoli (White Flower)",
+        "Corn",
+        "Cucumber (Field)",
+        "Cucumber (Greenhouse)",
+        "Daikon Radish",
+        "Edible Amaranth (Hinn Choy)",
+        "garlic",
+        "kale",
+        "Lettuce (Assorted)",
+        "Lettuce (Greenhouse)",
+        "Mushrooms",
+        "Mustard Greens (Gai Choy)",
+        "Nappa Cabbage",
+        "Onions (Cooking)",
+        "Onions (Green)",
+        "Peas (Green)",
+        "Peas (Snow)",
+        "Peppers (Field)",
+        "Peppers (Greenhouse)",
+        "potatoes",
+        "radicchio",
+        "radishes",
+        "Rapini",
+        "Rutabaga",
+        "Snow Pea Shoots (Dow Miu)",
+        "spinach",
+        "Summer Squash",
+        "Sweet Potatoes",
+        "Tomatoes (Field)",
+        "Tomatoes (Greenhouse)",
+        "Water Spinach (Tung Choy)",
+        "Yow Choy(Yellow Flower)",
+        "Zucchini"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Apricots",
+        "Blueberries",
+        "Cherries",
+        "Currants"
+      ],
+      "farewells": [
+        "Haskap Berries"
+      ],
+      "quiet": [
+        "Corn",
+        "Cucumber (Field)",
+        "Cherries",
+        "Gooseberries",
+        "Peaches"
+      ],
+      "blurb": "July lists <strong>54</strong> Ontario-grown crops. The wheel is filling up: 15 more listed than in June."
+    },
+    {
+      "key": "aug",
+      "name": "August",
+      "counts": {
+        "peak": 0,
+        "in": 63,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Corn",
+        "Peppers (Field)",
+        "Tomatoes (Field)",
+        "Strawberries (Field)",
+        "Beans (Green/Yellow)",
+        "broccoli",
+        "Cucumber (Field)",
+        "Lettuce (Assorted)",
+        "Peas (Green)",
+        "garlic",
+        "cabbage",
+        "Apples",
+        "carrots",
+        "Onions (Cooking)",
+        "potatoes"
+      ],
+      "peak": [],
+      "in": [
+        "Apples",
+        "Apricots",
+        "Blueberries",
+        "Cherries",
+        "Cranberries",
+        "Currants",
+        "Gooseberries",
+        "Grapes",
+        "Muskmelon",
+        "Nectarines",
+        "Peaches",
+        "Pears",
+        "Plums",
+        "Raspberries",
+        "Strawberries (Field)",
+        "Strawberries (Greenhouse)",
+        "Watermelon",
+        "Artichoke",
+        "Beans (Green/Yellow)",
+        "Beets",
+        "Bok Choy",
+        "broccoli",
+        "cabbage",
+        "carrots",
+        "cauliflower",
+        "celery",
+        "Chinese Broccoli (White Flower)",
+        "Corn",
+        "Cucumber (Field)",
+        "Cucumber (Greenhouse)",
+        "Daikon Radish",
+        "Edible Amaranth (Hinn Choy)",
+        "Eggplant",
+        "garlic",
+        "kale",
+        "leeks",
+        "Lettuce (Assorted)",
+        "Lettuce (Greenhouse)",
+        "Mushrooms",
+        "Mustard Greens (Gai Choy)",
+        "Nappa Cabbage",
+        "Onions (Cooking)",
+        "Onions (Green)",
+        "Parsnip",
+        "Peas (Green)",
+        "Peas (Snow)",
+        "Peppers (Field)",
+        "Peppers (Greenhouse)",
+        "potatoes",
+        "radicchio",
+        "radishes",
+        "Rapini",
+        "Rutabaga",
+        "Snow Pea Shoots (Dow Miu)",
+        "spinach",
+        "Winter Squash",
+        "Summer Squash",
+        "Sweet Potatoes",
+        "Tomatoes (Field)",
+        "Tomatoes (Greenhouse)",
+        "Water Spinach (Tung Choy)",
+        "Yow Choy(Yellow Flower)",
+        "Zucchini"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Cranberries",
+        "Grapes",
+        "Muskmelon",
+        "Nectarines"
+      ],
+      "farewells": [
+        "Apricots",
+        "Cherries",
+        "Currants",
+        "Gooseberries"
+      ],
+      "quiet": [
+        "Beans (Green/Yellow)",
+        "Apricots",
+        "Currants",
+        "Blueberries",
+        "Eggplant"
+      ],
+      "blurb": "August lists <strong>63</strong> Ontario-grown crops. The fullest month in the guide."
+    },
+    {
+      "key": "sep",
+      "name": "September",
+      "counts": {
+        "peak": 0,
+        "in": 61,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Corn",
+        "Peppers (Field)",
+        "Tomatoes (Field)",
+        "Strawberries (Field)",
+        "Beans (Green/Yellow)",
+        "broccoli",
+        "Cucumber (Field)",
+        "Lettuce (Assorted)",
+        "Peas (Green)",
+        "garlic",
+        "cabbage",
+        "Apples",
+        "carrots",
+        "Onions (Cooking)",
+        "potatoes"
+      ],
+      "peak": [],
+      "in": [
+        "Apples",
+        "Blueberries",
+        "Cranberries",
+        "Grapes",
+        "Muskmelon",
+        "Nectarines",
+        "Peaches",
+        "Pears",
+        "Plums",
+        "Raspberries",
+        "Strawberries (Field)",
+        "Strawberries (Greenhouse)",
+        "Watermelon",
+        "Artichoke",
+        "Beans (Green/Yellow)",
+        "Beets",
+        "Bok Choy",
+        "broccoli",
+        "brussels sprouts",
+        "cabbage",
+        "carrots",
+        "cauliflower",
+        "celery",
+        "Chinese Broccoli (White Flower)",
+        "Corn",
+        "Cucumber (Field)",
+        "Cucumber (Greenhouse)",
+        "Daikon Radish",
+        "Edible Amaranth (Hinn Choy)",
+        "Eggplant",
+        "garlic",
+        "kale",
+        "leeks",
+        "Lettuce (Assorted)",
+        "Lettuce (Greenhouse)",
+        "Mushrooms",
+        "Mustard Greens (Gai Choy)",
+        "Nappa Cabbage",
+        "Onions (Cooking)",
+        "Onions (Green)",
+        "Onions (Red)",
+        "Parsnip",
+        "Peas (Green)",
+        "Peas (Snow)",
+        "Peppers (Field)",
+        "Peppers (Greenhouse)",
+        "potatoes",
+        "Pumpkin",
+        "radishes",
+        "Rapini",
+        "Rutabaga",
+        "Snow Pea Shoots (Dow Miu)",
+        "spinach",
+        "Winter Squash",
+        "Summer Squash",
+        "Sweet Potatoes",
+        "Tomatoes (Field)",
+        "Tomatoes (Greenhouse)",
+        "Water Spinach (Tung Choy)",
+        "Yow Choy(Yellow Flower)",
+        "Zucchini"
+      ],
+      "edge": [],
+      "arrivals": [
+        "brussels sprouts",
+        "Onions (Red)",
+        "Pumpkin"
+      ],
+      "farewells": [
+        "Blueberries",
+        "Muskmelon",
+        "Nectarines",
+        "Peaches"
+      ],
+      "quiet": [
+        "Tomatoes (Field)",
+        "Peas (Green)",
+        "Muskmelon",
+        "Nectarines",
+        "Grapes"
+      ],
+      "blurb": "September lists <strong>61</strong> Ontario-grown crops. Much the same list as August."
+    },
+    {
+      "key": "oct",
+      "name": "October",
+      "counts": {
+        "peak": 0,
+        "in": 55,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Corn",
+        "Peppers (Field)",
+        "Tomatoes (Field)",
+        "Strawberries (Field)",
+        "Beans (Green/Yellow)",
+        "broccoli",
+        "Cucumber (Field)",
+        "Lettuce (Assorted)",
+        "Peas (Green)",
+        "garlic",
+        "cabbage",
+        "Apples",
+        "carrots",
+        "Onions (Cooking)",
+        "potatoes"
+      ],
+      "peak": [],
+      "in": [
+        "Apples",
+        "Cranberries",
+        "Grapes",
+        "Pears",
+        "Plums",
+        "Raspberries",
+        "Strawberries (Field)",
+        "Strawberries (Greenhouse)",
+        "Artichoke",
+        "Beans (Green/Yellow)",
+        "Beets",
+        "Bok Choy",
+        "broccoli",
+        "brussels sprouts",
+        "cabbage",
+        "carrots",
+        "cauliflower",
+        "celery",
+        "Chinese Broccoli (White Flower)",
+        "Corn",
+        "Cucumber (Field)",
+        "Cucumber (Greenhouse)",
+        "Daikon Radish",
+        "Edible Amaranth (Hinn Choy)",
+        "Eggplant",
+        "garlic",
+        "kale",
+        "leeks",
+        "Lettuce (Assorted)",
+        "Lettuce (Greenhouse)",
+        "Mushrooms",
+        "Mustard Greens (Gai Choy)",
+        "Nappa Cabbage",
+        "Onions (Cooking)",
+        "Onions (Green)",
+        "Onions (Red)",
+        "Parsnip",
+        "Peas (Green)",
+        "Peppers (Field)",
+        "Peppers (Greenhouse)",
+        "potatoes",
+        "Pumpkin",
+        "radishes",
+        "Rapini",
+        "Rutabaga",
+        "Snow Pea Shoots (Dow Miu)",
+        "spinach",
+        "Winter Squash",
+        "Summer Squash",
+        "Sweet Potatoes",
+        "Tomatoes (Field)",
+        "Tomatoes (Greenhouse)",
+        "Water Spinach (Tung Choy)",
+        "Yow Choy(Yellow Flower)",
+        "Zucchini"
+      ],
+      "edge": [],
+      "arrivals": [],
+      "farewells": [
+        "Cranberries",
+        "Grapes",
+        "Plums",
+        "Raspberries"
+      ],
+      "quiet": [
+        "Peppers (Field)",
+        "Lettuce (Assorted)",
+        "Pumpkin",
+        "Cranberries",
+        "Artichoke"
+      ],
+      "blurb": "October lists <strong>55</strong> Ontario-grown crops. Much the same list as September."
+    },
+    {
+      "key": "nov",
+      "name": "November",
+      "counts": {
+        "peak": 0,
+        "in": 31,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "garlic",
+        "cabbage",
+        "Apples",
+        "carrots",
+        "Onions (Cooking)",
+        "potatoes",
+        "brussels sprouts",
+        "Bok Choy",
+        "cauliflower",
+        "Chinese Broccoli (White Flower)",
+        "Daikon Radish",
+        "kale",
+        "Nappa Cabbage",
+        "Onions (Green)",
+        "Winter Squash"
+      ],
+      "peak": [],
+      "in": [
+        "Apples",
+        "Pears",
+        "Strawberries (Greenhouse)",
+        "Beets",
+        "Bok Choy",
+        "brussels sprouts",
+        "cabbage",
+        "carrots",
+        "cauliflower",
+        "Chinese Broccoli (White Flower)",
+        "Cucumber (Greenhouse)",
+        "Daikon Radish",
+        "garlic",
+        "kale",
+        "leeks",
+        "Lettuce (Greenhouse)",
+        "Mushrooms",
+        "Nappa Cabbage",
+        "Onions (Cooking)",
+        "Onions (Green)",
+        "Onions (Red)",
+        "Parsnip",
+        "Peppers (Greenhouse)",
+        "potatoes",
+        "radishes",
+        "Rutabaga",
+        "Winter Squash",
+        "Sweet Potatoes",
+        "Tomatoes (Greenhouse)",
+        "Water Spinach (Tung Choy)",
+        "Yow Choy(Yellow Flower)"
+      ],
+      "edge": [],
+      "arrivals": [],
+      "farewells": [
+        "Bok Choy",
+        "brussels sprouts",
+        "cauliflower",
+        "Chinese Broccoli (White Flower)"
+      ],
+      "quiet": [
+        "brussels sprouts",
+        "Bok Choy",
+        "cauliflower",
+        "Chinese Broccoli (White Flower)",
+        "Daikon Radish"
+      ],
+      "blurb": "November lists <strong>31</strong> Ontario-grown crops. Winding down: 24 fewer listed than in October."
+    },
+    {
+      "key": "dec",
+      "name": "December",
+      "counts": {
+        "peak": 0,
+        "in": 20,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "garlic",
+        "cabbage",
+        "Apples",
+        "carrots",
+        "Onions (Cooking)",
+        "potatoes",
+        "Winter Squash",
+        "Pears",
+        "leeks",
+        "Onions (Red)",
+        "Parsnip",
+        "Beets",
+        "Strawberries (Greenhouse)",
+        "Cucumber (Greenhouse)",
+        "Lettuce (Greenhouse)"
+      ],
+      "peak": [],
+      "in": [
+        "Apples",
+        "Pears",
+        "Strawberries (Greenhouse)",
+        "Beets",
+        "cabbage",
+        "carrots",
+        "Cucumber (Greenhouse)",
+        "garlic",
+        "leeks",
+        "Lettuce (Greenhouse)",
+        "Mushrooms",
+        "Onions (Cooking)",
+        "Onions (Red)",
+        "Parsnip",
+        "Peppers (Greenhouse)",
+        "potatoes",
+        "Rutabaga",
+        "Winter Squash",
+        "Sweet Potatoes",
+        "Tomatoes (Greenhouse)"
+      ],
+      "edge": [],
+      "arrivals": [],
+      "farewells": [],
+      "quiet": [
+        "carrots",
+        "potatoes",
+        "leeks",
+        "Cucumber (Greenhouse)",
+        "Sweet Potatoes"
+      ],
+      "blurb": "December lists <strong>20</strong> Ontario-grown crops. Winding down: 11 fewer listed than in November."
+    }
+  ]
+}

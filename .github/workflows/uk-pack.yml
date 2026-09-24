@@ -12,8 +12,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - name: Build the UK pack
-        run: node scripts/build-data.mjs uk
+      - name: Build every country pack
+        run: node scripts/build-data.mjs
       - name: Acceptance checks
         run: node scripts/check-ship.mjs
       - name: Generated site data is committed

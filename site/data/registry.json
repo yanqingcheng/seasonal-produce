@@ -3,5 +3,20 @@
     "id": "uk",
     "name": "United Kingdom",
     "status": "shipped"
+  },
+  {
+    "id": "fr",
+    "name": "France",
+    "status": "shipped"
+  },
+  {
+    "id": "es",
+    "name": "Spain",
+    "status": "shipped"
+  },
+  {
+    "id": "on",
+    "name": "Canada – Ontario",
+    "status": "shipped"
   }
 ]

@@ -1,0 +1,90 @@
+{
+  "id": "fr",
+  "name": "France",
+  "locale": "fr-FR",
+  "timezone": "Europe/Paris",
+  "title": "La roue de l'année en France",
+  "tagline": "Ce qui pousse en France, mois par mois.",
+  "month_names": [
+    "Janvier",
+    "Février",
+    "Mars",
+    "Avril",
+    "Mai",
+    "Juin",
+    "Juillet",
+    "Août",
+    "Septembre",
+    "Octobre",
+    "Novembre",
+    "Décembre"
+  ],
+  "month_short": [
+    "jan",
+    "fév",
+    "mar",
+    "avr",
+    "mai",
+    "juin",
+    "juil",
+    "août",
+    "sep",
+    "oct",
+    "nov",
+    "déc"
+  ],
+  "seasons": [
+    "Hiver",
+    "Hiver",
+    "Printemps",
+    "Printemps",
+    "Printemps",
+    "Été",
+    "Été",
+    "Été",
+    "Automne",
+    "Automne",
+    "Automne",
+    "Hiver"
+  ],
+  "categories": [
+    {
+      "id": "vegetable",
+      "label": "Légume",
+      "one": "légume",
+      "plural": "légumes",
+      "everyday": true
+    },
+    {
+      "id": "fruit",
+      "label": "Fruit",
+      "one": "fruit",
+      "plural": "fruits",
+      "everyday": true
+    },
+    {
+      "id": "salad",
+      "label": "Salade",
+      "one": "salade",
+      "plural": "salades",
+      "everyday": true
+    },
+    {
+      "id": "nut",
+      "label": "Fruit à coque",
+      "one": "fruit à coque",
+      "plural": "fruits à coque",
+      "everyday": false
+    }
+  ],
+  "state_roles": {
+    "I": "in",
+    ".": "out"
+  },
+  "sticker_exclude": [],
+  "attribution": "ADEME Impact CO2, Fruits et légumes de saison.",
+  "alias_profile": "none",
+  "recipe_rule": "optional",
+  "expect_items": 35,
+  "require_peak_every_month": false
+}

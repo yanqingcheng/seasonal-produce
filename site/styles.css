@@ -86,8 +86,17 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.05; m
 /* ---------- header ---------- */
 .top {
   display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  flex-wrap: wrap;
   max-width: 1320px; margin: 0 auto; padding: 18px 24px 4px;
 }
+.country-control { display: flex; align-items: center; gap: 8px; }
+.country-control label { font-family: var(--display); font-weight: 700; color: var(--ink-soft); }
+.country-control select {
+  font: 700 16px/1.2 var(--display); color: var(--ink); background: #fffdf6;
+  border: 3px solid var(--ink); border-radius: 999px; padding: 8px 14px;
+  box-shadow: 0 4px 0 var(--ink); cursor: pointer;
+}
+.country-control select:focus-visible { outline: 3px solid var(--sky); outline-offset: 2px; }
 .brand { display: flex; align-items: center; gap: 14px; }
 .brand-mark { width: 60px; height: 60px; display: block; animation: bob 3.2s ease-in-out infinite; }
 .brand h1 { font-size: clamp(26px, 3.2vw, 38px); letter-spacing: -0.01em; }
@@ -322,7 +331,6 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.05; m
 .notes-chips span, .sources span { background: color-mix(in srgb, var(--cat) 14%, white); border: 2px solid color-mix(in srgb, var(--ink) 30%, transparent); border-radius: 10px; padding: 2px 8px; font-size: 14px; }
 .sources span { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12.5px; font-weight: 600; }
 .link-btn { background: none; border: none; padding: 0; font-weight: 800; color: var(--plum); text-decoration: underline wavy; text-underline-offset: 4px; cursor: pointer; text-align: left; }
-.sheet-foot { margin: 14px 2px 0; color: var(--ink-soft); font-weight: 700; font-size: 14px; }
 @media (max-width: 560px) {
   .sheet-top { grid-template-columns: 1fr; justify-items: center; text-align: center; }
   .sheet-now, .ring-key, .sheet-title .eyebrow { justify-content: center; }
