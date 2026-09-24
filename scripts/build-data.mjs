@@ -56,7 +56,7 @@ function capital(s) {
   return s ? s[0].toUpperCase() + s.slice(1) : s;
 }
 
-/** English alias steps from ARCH §4. `byName` keys are lowercase item names. */
+/** English alias steps. `byName` keys are lowercase item names. */
 export function resolveIngredient(raw, byName, { aliasProfile, aliases }) {
   const original = raw.trim();
   const paren = original.match(/\(([^)]*)\)/);
@@ -391,7 +391,6 @@ export function buildPack(id, { root = repoRoot, packDir } = {}) {
     seasons: manifest.seasons,
     categories: categories.map(({ id: categoryId, label, one, plural }) => ({ id: categoryId, label, one, plural })),
     attribution: manifest.attribution,
-    thin_sheet: manifest.thin_sheet,
     copy,
     items,
     recipes,

@@ -9,3 +9,11 @@ export function resolvePackId(requested, registry) {
   if (ids.has("uk")) return "uk";
   return usable[0]?.id ?? "uk";
 }
+
+// Drop a ?country= value that is not the pack actually on screen.
+export function searchForPack(search, packId) {
+  const params = new URLSearchParams(String(search ?? "").replace(/^\?/, ""));
+  const country = params.get("country");
+  if (country !== null && country !== packId) params.delete("country");
+  return params.toString();
+}

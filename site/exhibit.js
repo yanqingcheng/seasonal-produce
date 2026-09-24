@@ -1,5 +1,5 @@
-// Shared year-wheel. One screen, painted from a country pack. Motion figures are ARCH §5.
-import { resolvePackId } from "./pack-id.js";
+// Shared year-wheel. One screen, painted from a country pack.
+import { resolvePackId, searchForPack } from "./pack-id.js";
 
 const TINTS = ["#cfe0ff", "#ddd3ff", "#d3f2c4", "#c2ecad", "#e2f59c", "#fff09a", "#ffe07a", "#ffcf7a", "#ffbd7e", "#ffab88", "#f6b3aa", "#dccff2"];
 const LEGEND = {
@@ -173,7 +173,7 @@ function slotMarkup(item, mo, m, i) {
 }
 
 // Active-only stickers exist on a wedge while it is selected or still extended.
-// Quiet wedges keep their five. This is the DOM-count tactic in ARCH §5.
+// Quiet wedges keep their five.
 function syncStickers() {
   session.segEls.forEach((s, m) => {
     const mo = session.pack.months[m];
@@ -460,17 +460,23 @@ function renderTodayButton() {
   btn.textContent = fillTpl(session.pack.copy.back_to, { month: session.pack.month_names[session.today] });
 }
 
+function replaceSearch(next) {
+  const current = location.search.replace(/^\?/, "");
+  if (next === current) return;
+  history.replaceState(null, "", next ? `?${next}` : location.pathname);
+}
+
+function stripUnknownCountry(packId) {
+  replaceSearch(searchForPack(location.search, packId));
+}
+
 function syncQuery() {
-  if (!session.urlReady) return;
-  const params = new URLSearchParams(location.search);
+  if (!session.urlReady || !session.pack) return;
+  const params = new URLSearchParams(searchForPack(location.search, session.pack.id));
   params.set("month", String(session.selected + 1));
   if (session.openItem) params.set("item", session.openItem);
   else params.delete("item");
-  if (params.get("country") && params.get("country") !== session.pack.id) params.delete("country");
-  const next = params.toString();
-  if (next !== location.search.replace(/^\?/, "")) {
-    history.replaceState(null, "", next ? `?${next}` : location.pathname);
-  }
+  replaceSearch(params.toString());
 }
 
 function select(m, { intro = false, onSettle = null } = {}) {
@@ -535,9 +541,10 @@ function openSheet(name, { fromQuery = false, opener = null } = {}) {
   const peaks = it.months.map((role, m) => (role === "peak" ? m : -1)).filter((m) => m >= 0);
   const recipes = session.pack.recipes.filter((r) => r.produce.some((p) => p.item === name));
   const stored = it.stored_notes ? Object.entries(it.stored_notes) : [];
-  const gridOnly = !it.regions_notes && !stored.length && !it.specialist_sources.length;
   const nowRole = it.months[session.selected];
   const ring = copy.ring_key;
+  const roles = session.roles ?? new Set();
+  const ringKeys = ["peak", "in", "edge", "out"].filter((role) => roles.has(role));
 
   const sheet = $("#sheet");
   sheet.style.setProperty("--cat", catColour(it.category));
@@ -550,20 +557,19 @@ function openSheet(name, { fromQuery = false, opener = null } = {}) {
         <h2 id="sheet-title">${esc(displayName(it.item))}</h2>
         <p class="sheet-now"><span class="state-dot ${nowRole}"></span>${esc(fillTpl(copy.in_month, { state: roleLabel(nowRole), month: session.pack.months[session.selected].name }))}</p>
         <ul class="ring-key">
-          <li><i class="k-peak"></i>${esc(ring.peak)}</li><li><i class="k-in"></i>${esc(ring.in)}</li><li><i class="k-edge"></i>${esc(ring.edge)}</li><li><i class="k-out"></i>${esc(ring.out)}</li>
+          ${ringKeys.map((role) => `<li><i class="k-${role}"></i>${esc(ring[role])}</li>`).join("")}
         </ul>
       </div>
     </div>
     <dl class="facts">
       <div><dt>${esc(copy.fact_in_season)}</dt><dd>${esc(inSeason.length ? monthRanges(inSeason) : copy.no_in_season)}</dd></div>
-      <div><dt>${esc(copy.fact_peak)}</dt><dd>${esc(peaks.length ? monthRanges(peaks) : copy.no_peak)}</dd></div>
+      ${roles.has("peak") ? `<div><dt>${esc(copy.fact_peak)}</dt><dd>${esc(peaks.length ? monthRanges(peaks) : copy.no_peak)}</dd></div>` : ""}
       ${edge.length ? `<div><dt>${esc(copy.fact_edge)}</dt><dd>${esc(monthRanges(edge))}</dd></div>` : ""}
       ${stored.length ? `<div class="wide"><dt>${esc(copy.stored_notes)}</dt><dd class="notes-chips">${stored.map(([k, v]) => `<span><b>${esc(shortName(MONTH_KEYS.indexOf(k)))}</b> ${esc(v)}</span>`).join("")}</dd></div>` : ""}
       ${it.regions_notes ? `<div class="wide"><dt>${esc(copy.regions)}</dt><dd>${esc(it.regions_notes)}</dd></div>` : ""}
       ${recipes.length ? `<div class="wide"><dt>${esc(copy.recipe)}</dt><dd>${recipes.map((r) => `<button type="button" class="link-btn" data-goto="${r.month}">${esc(r.title)} <small>(${esc(session.pack.months[r.month].name)})</small></button>`).join("<br>")}</dd></div>` : ""}
       ${it.specialist_sources.length ? `<div class="wide"><dt>${esc(copy.specialist_sources)}</dt><dd class="sources">${it.specialist_sources.map((s) => `<span>${esc(s)}</span>`).join("")}</dd></div>` : ""}
     </dl>
-    ${gridOnly ? `<p class="sheet-foot">${esc(session.pack.thin_sheet)}</p>` : ""}
   </div>`;
   session.openItem = name;
   session.sheetReturn = fromQuery
@@ -697,8 +703,16 @@ async function mountSprite() {
   holder.dataset.ready = "1";
 }
 
+function rolesIn(pack) {
+  const roles = new Set();
+  for (const it of pack.items) for (const role of it.months) roles.add(role);
+  return roles;
+}
+
 export async function render(pack) {
+  session.urlReady = false;
   session.pack = pack;
+  session.roles = rolesIn(pack);
   session.byName = new Map(pack.items.map((it) => [it.item, it]));
   session.recipeByMonth = new Map(pack.recipes.map((r) => [r.month, r]));
   session.today = monthInZone(pack.timezone);
@@ -758,6 +772,7 @@ export async function render(pack) {
     setTimeout(() => $("#wheel")?.classList.remove("intro"), 2600);
   }
   session.urlReady = true;
+  stripUnknownCountry(pack.id);
   if (requested == null && new URLSearchParams(location.search).has("month")) {
     const params = new URLSearchParams(location.search);
     params.delete("month");
@@ -777,11 +792,7 @@ async function boot() {
   const params = new URLSearchParams(location.search);
   const requested = params.get("country");
   const id = resolvePackId(requested, registry);
-  if (requested && id !== requested) {
-    params.delete("country");
-    const next = params.toString();
-    history.replaceState(null, "", next ? `?${next}` : location.pathname);
-  }
+  stripUnknownCountry(id);
   const pack = await loadPack(id);
   await render(pack);
 }

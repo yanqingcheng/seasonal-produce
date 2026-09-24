@@ -6,7 +6,7 @@
   "at_peak": "Au pic",
   "also_in_season": "De saison",
   "on_the_edge": "En bord de saison",
-  "edge_why": "La source ADEME ne distingue pas de mois de bord.",
+  "edge_why": "Bord de saison.",
   "hub_this_month": "ce mois-ci",
   "at_peak_short": "{n} au pic",
   "more_in_season": "{n} de plus de saison",
@@ -24,7 +24,7 @@
   "recipe": "Recette",
   "specialist_sources": "Source",
   "no_in_season": "Aucun mois de saison dans la grille",
-  "no_peak": "Pas de pic dans la grille",
+  "no_peak": "",
   "all_year": "toute l'année",
   "in_month": "{state} en {month}",
   "state_labels": {
@@ -47,7 +47,7 @@
   "season_label": "Saison : {list}",
   "mix_label": "De saison par type : {list}",
   "blurb": {
-    "counts": "{month} compte {in} produits de saison. Cette source ne marque aucun pic ({peak}).",
+    "counts": "{month} compte {in} produits de saison.",
     "fullest": "Le mois le plus fourni de la roue.",
     "leanest": "Le creux de l'année : chaque produit compte.",
     "filling": "La roue se remplit : {n} de plus de saison qu'en {prev}.",

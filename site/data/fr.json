@@ -73,8 +73,7 @@
       "plural": "fruits à coque"
     }
   ],
-  "attribution": "Mois issus de l'outil ADEME Impact CO2 « Fruits et légumes de saison » (hypothèses grand public, données MIT du dépôt incubateur-ademe/impactco2). Les lignes seulement importées, ou sans saison française lisible, ont été retirées. De saison veut dire cultivé pour la France dans cette grille, pas un pic de récolte.",
-  "thin_sheet": "La source ne donne que la grille des mois, donc la fiche s'arrête là.",
+  "attribution": "ADEME Impact CO2, Fruits et légumes de saison.",
   "copy": {
     "this_month": "Ce mois-ci",
     "back_to": "Retour en {month}",
@@ -83,7 +82,7 @@
     "at_peak": "Au pic",
     "also_in_season": "De saison",
     "on_the_edge": "En bord de saison",
-    "edge_why": "La source ADEME ne distingue pas de mois de bord.",
+    "edge_why": "Bord de saison.",
     "hub_this_month": "ce mois-ci",
     "at_peak_short": "{n} au pic",
     "more_in_season": "{n} de plus de saison",
@@ -101,7 +100,7 @@
     "recipe": "Recette",
     "specialist_sources": "Source",
     "no_in_season": "Aucun mois de saison dans la grille",
-    "no_peak": "Pas de pic dans la grille",
+    "no_peak": "",
     "all_year": "toute l'année",
     "in_month": "{state} en {month}",
     "state_labels": {
@@ -124,7 +123,7 @@
     "season_label": "Saison : {list}",
     "mix_label": "De saison par type : {list}",
     "blurb": {
-      "counts": "{month} compte {in} produits de saison. Cette source ne marque aucun pic ({peak}).",
+      "counts": "{month} compte {in} produits de saison.",
       "fullest": "Le mois le plus fourni de la roue.",
       "leanest": "Le creux de l'année : chaque produit compte.",
       "filling": "La roue se remplit : {n} de plus de saison qu'en {prev}.",
@@ -992,7 +991,7 @@
         "courge",
         "potiron"
       ],
-      "blurb": "Janvier compte <strong>10</strong> produits de saison. Cette source ne marque aucun pic (<strong>0</strong>). À peu près la même récolte qu'en Décembre."
+      "blurb": "Janvier compte <strong>10</strong> produits de saison. À peu près la même récolte qu'en Décembre."
     },
     {
       "key": "feb",
@@ -1034,7 +1033,7 @@
         "épinard",
         "cresson"
       ],
-      "blurb": "Février compte <strong>8</strong> produits de saison. Cette source ne marque aucun pic (<strong>0</strong>). À peu près la même récolte qu'en Janvier."
+      "blurb": "Février compte <strong>8</strong> produits de saison. À peu près la même récolte qu'en Janvier."
     },
     {
       "key": "mar",
@@ -1080,7 +1079,7 @@
         "poireau",
         "pomme"
       ],
-      "blurb": "Mars compte <strong>8</strong> produits de saison. Cette source ne marque aucun pic (<strong>0</strong>). À peu près la même récolte qu'en Février."
+      "blurb": "Mars compte <strong>8</strong> produits de saison. À peu près la même récolte qu'en Février."
     },
     {
       "key": "apr",
@@ -1124,7 +1123,7 @@
         "fenouil",
         "cresson"
       ],
-      "blurb": "Avril compte <strong>6</strong> produits de saison. Cette source ne marque aucun pic (<strong>0</strong>). Le creux de l'année : chaque produit compte."
+      "blurb": "Avril compte <strong>6</strong> produits de saison. Le creux de l'année : chaque produit compte."
     },
     {
       "key": "may",
@@ -1169,7 +1168,7 @@
         "épinard",
         "artichaut"
       ],
-      "blurb": "Mai compte <strong>6</strong> produits de saison. Cette source ne marque aucun pic (<strong>0</strong>). Le creux de l'année : chaque produit compte."
+      "blurb": "Mai compte <strong>6</strong> produits de saison. Le creux de l'année : chaque produit compte."
     },
     {
       "key": "jun",
@@ -1228,7 +1227,7 @@
         "aubergine",
         "pastèque"
       ],
-      "blurb": "Juin compte <strong>14</strong> produits de saison. Cette source ne marque aucun pic (<strong>0</strong>). La roue se remplit : 8 de plus de saison qu'en Mai."
+      "blurb": "Juin compte <strong>14</strong> produits de saison. La roue se remplit : 8 de plus de saison qu'en Mai."
     },
     {
       "key": "jul",
@@ -1293,7 +1292,7 @@
         "maïs",
         "prune"
       ],
-      "blurb": "Juillet compte <strong>19</strong> produits de saison. Cette source ne marque aucun pic (<strong>0</strong>). À peu près la même récolte qu'en Juin."
+      "blurb": "Juillet compte <strong>19</strong> produits de saison. À peu près la même récolte qu'en Juin."
     },
     {
       "key": "aug",
@@ -1362,7 +1361,7 @@
         "mûre",
         "nectarine"
       ],
-      "blurb": "Août compte <strong>23</strong> produits de saison. Cette source ne marque aucun pic (<strong>0</strong>). À peu près la même récolte qu'en Juillet."
+      "blurb": "Août compte <strong>23</strong> produits de saison. À peu près la même récolte qu'en Juillet."
     },
     {
       "key": "sep",
@@ -1448,7 +1447,7 @@
         "reine claude",
         "myrtille"
       ],
-      "blurb": "Septembre compte <strong>35</strong> produits de saison. Cette source ne marque aucun pic (<strong>0</strong>). Le mois le plus fourni de la roue."
+      "blurb": "Septembre compte <strong>35</strong> produits de saison. Le mois le plus fourni de la roue."
     },
     {
       "key": "oct",
@@ -1515,7 +1514,7 @@
         "figue",
         "noix"
       ],
-      "blurb": "Octobre compte <strong>21</strong> produits de saison. Cette source ne marque aucun pic (<strong>0</strong>). Ça se calme : 14 de moins de saison qu'en Septembre."
+      "blurb": "Octobre compte <strong>21</strong> produits de saison. Ça se calme : 14 de moins de saison qu'en Septembre."
     },
     {
       "key": "nov",
@@ -1576,7 +1575,7 @@
         "fenouil",
         "noisette"
       ],
-      "blurb": "Novembre compte <strong>15</strong> produits de saison. Cette source ne marque aucun pic (<strong>0</strong>). À peu près la même récolte qu'en Octobre."
+      "blurb": "Novembre compte <strong>15</strong> produits de saison. À peu près la même récolte qu'en Octobre."
     },
     {
       "key": "dec",
@@ -1626,7 +1625,7 @@
         "courge",
         "potiron"
       ],
-      "blurb": "Décembre compte <strong>11</strong> produits de saison. Cette source ne marque aucun pic (<strong>0</strong>). À peu près la même récolte qu'en Novembre."
+      "blurb": "Décembre compte <strong>11</strong> produits de saison. À peu près la même récolte qu'en Novembre."
     }
   ]
 }

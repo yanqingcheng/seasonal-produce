@@ -82,8 +82,7 @@
     ".": "out"
   },
   "sticker_exclude": [],
-  "attribution": "Mois issus de l'outil ADEME Impact CO2 « Fruits et légumes de saison » (hypothèses grand public, données MIT du dépôt incubateur-ademe/impactco2). Les lignes seulement importées, ou sans saison française lisible, ont été retirées. De saison veut dire cultivé pour la France dans cette grille, pas un pic de récolte.",
-  "thin_sheet": "La source ne donne que la grille des mois, donc la fiche s'arrête là.",
+  "attribution": "ADEME Impact CO2, Fruits et légumes de saison.",
   "alias_profile": "none",
   "recipe_rule": "optional",
   "expect_items": 35,

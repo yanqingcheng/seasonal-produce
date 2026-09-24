@@ -69,8 +69,7 @@
     ".": "out"
   },
   "sticker_exclude": [],
-  "attribution": "Meses del calendario del Ministerio de Agricultura, Pesca y Alimentación (frutas y hortalizas de temporada). El punto es «de temporada»; el color es el nivel de comercialización, mayor o menor. No es un calendario de cosecha ni de importación.",
-  "thin_sheet": "La fuente solo trae la cuadrícula de meses, así que la ficha se queda ahí.",
+  "attribution": "Ministerio de Agricultura, Pesca y Alimentación, frutas y hortalizas de temporada.",
   "alias_profile": "none",
   "recipe_rule": "optional",
   "expect_items": 54,

@@ -54,8 +54,7 @@
     ".": "out"
   },
   "sticker_exclude": [],
-  "attribution": "Months are the Foodland Ontario Availability Guide: when that Ontario-grown crop is available to buy, including storage and greenhouse. Contains information licensed under the Open Government Licence – Ontario. This is Ontario, not a Canada-wide calendar, and it is not a harvest-date chart.",
-  "thin_sheet": "The guide only has the month grid for this one, so that's all we show.",
+  "attribution": "Foodland Ontario Availability Guide. Open Government Licence – Ontario.",
   "alias_profile": "none",
   "recipe_rule": "optional",
   "expect_items": 70,

@@ -71,8 +71,7 @@
       "plural": "wild & foraged"
     }
   ],
-  "attribution": "Months and fact sheets come from the UK pass-2 research corpus (19 Sep 2026): BBC Good Food, Hubbub, BBC Gardeners’ World, Borough Kitchen and specialist grower bodies. Recipes are from BBC Good Food.",
-  "thin_sheet": "The research corpus only has the month grid for this one, so that's all we show.",
+  "attribution": "BBC Good Food, Hubbub, BBC Gardeners’ World, Borough Kitchen, and specialist grower guides. Recipes are from BBC Good Food.",
   "copy": {
     "this_month": "This month",
     "back_to": "Back to {month}",
@@ -162,7 +161,7 @@
         "nov": "stored",
         "dec": "stored"
       },
-      "regions_notes": "Harvest Aug-Nov; stored British apples available to May (controlled-atmosphere storage). Variety-level windows in apple_pear_varieties annex.",
+      "regions_notes": "Harvest Aug-Nov; stored British apples available to May (controlled-atmosphere storage).",
       "specialist_sources": [
         "britishapplesandpears.co.uk/the-british-season"
       ]

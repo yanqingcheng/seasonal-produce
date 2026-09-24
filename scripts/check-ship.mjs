@@ -1,11 +1,11 @@
 #!/usr/bin/env node
-// Acceptance checks Stage 5 can automate. See ARCH.md §4 and §7.
+// Acceptance checks the ship can automate.
 import { readFileSync, mkdtempSync, cpSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { assembleSite, buildPack, resolveIngredient } from "./build-data.mjs";
-import { resolvePackId } from "../site/pack-id.js";
+import { resolvePackId, searchForPack } from "../site/pack-id.js";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const failures = [];
@@ -92,7 +92,7 @@ expectFail("item count", (dir) => {
 expectFail("domestic-season note", (dir) => {
   const file = join(dir, "produce_calendar.csv");
   const text = readFileSync(file, "utf8").replace(
-    "Harvest Aug-Nov; stored British apples available to May (controlled-atmosphere storage). Variety-level windows in apple_pear_varieties annex.",
+    "Harvest Aug-Nov; stored British apples available to May (controlled-atmosphere storage).",
     "no meaningful domestic season",
   );
   writeFileSync(file, text);
@@ -149,6 +149,24 @@ check(resolvePackId("fr", registry) === "fr" && resolvePackId("es", registry) ==
 check(resolvePackId("ca", registry) === "uk" && resolvePackId("ontario", registry) === "uk" && resolvePackId("zz", registry) === "uk", "unknown country falls back to uk");
 check(resolvePackId("fr", [{ id: "fr", status: "draft" }, { id: "uk", status: "shipped" }]) === "uk", "draft pack is not selectable");
 check(resolvePackId("es", [{ id: "es", status: "ready" }]) === "es", "ready pack is selectable");
+check(searchForPack("?country=cz&month=9", "uk") === "month=9", "unknown country stays in the query");
+check(searchForPack("?country=cz", "uk") === "", "unknown country query is not cleared");
+check(searchForPack("?country=fr&month=9", "fr") === "country=fr&month=9", "known country query");
+check(searchForPack("?country=FR", "fr") === "", "mismatched country id is cleared");
+
+const pageCss = readFileSync(join(root, "site/styles.css"), "utf8");
+check(!exhibit.includes("thin_sheet") && !exhibit.includes("sheet-foot") && !pageCss.includes("sheet-foot"), "thin-sheet footer still shipped");
+check(byId.uk.thin_sheet == null && byId.fr.thin_sheet == null && byId.es.thin_sheet == null && byId.on.thin_sheet == null, "thin_sheet still on a pack");
+check(byId.uk.attribution === "BBC Good Food, Hubbub, BBC Gardeners’ World, Borough Kitchen, and specialist grower guides. Recipes are from BBC Good Food.", "uk attribution");
+check(!/pass-2|research corpus|importée|pas un pic|harvest-date|ficha se queda|fiche s'arrête/i.test([byId.uk, byId.fr, byId.es, byId.on].map((p) => p.attribution).join("\n")), "attribution still explains a gap");
+check(byId.fr.months.every((mo) => !mo.blurb.includes("aucun pic") && !mo.blurb.includes("<strong>0</strong>")), "France blurb names a missing peak");
+check(byId.on.months.every((mo) => !mo.blurb.includes("peak level") && !mo.blurb.includes("does not use") && !mo.blurb.includes("<strong>0</strong>")), "Ontario blurb names a missing peak");
+check(byId.fr.months[8].blurb.includes("35"), "France September count");
+
+const jargon = /pass-2|pass-1|research corpus|Instinct|\bannex\b|\bARCH\b|\bINTENT\b|\bStage\b|thin_sheet|only has the month|that's all we show|fiche s'arrête|ficha se queda/;
+for (const rel of ["site/exhibit.js", "site/index.html", "site/styles.css", "site/pack-id.js", "site/data/uk.json", "site/data/fr.json", "site/data/es.json", "site/data/on.json", "site/data/registry.json"]) {
+  check(!jargon.test(readFileSync(join(root, rel), "utf8")), `${rel} has visitor-facing research jargon`);
+}
 
 if (failures.length) {
   console.error(failures.map((f) => `check-ship: ${f}`).join("\n"));

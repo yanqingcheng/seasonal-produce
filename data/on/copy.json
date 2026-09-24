@@ -6,7 +6,7 @@
   "at_peak": "At peak",
   "also_in_season": "In the guide",
   "on_the_edge": "On the edge",
-  "edge_why": "The Foodland guide is available or not; it has no edge level.",
+  "edge_why": "Edge of the season.",
   "hub_this_month": "this month",
   "at_peak_short": "{n} at peak",
   "more_in_season": "{n} more in the guide",
@@ -24,7 +24,7 @@
   "recipe": "Recipe",
   "specialist_sources": "Source",
   "no_in_season": "No months in the guide",
-  "no_peak": "No peak level in this guide",
+  "no_peak": "",
   "all_year": "all year",
   "in_month": "{state} in {month}",
   "state_labels": {
@@ -47,7 +47,7 @@
   "season_label": "Season: {list}",
   "mix_label": "In the guide by type: {list}",
   "blurb": {
-    "counts": "{month} lists {in} Ontario-grown crops in the Foodland guide ({peak} at a peak level this guide does not use).",
+    "counts": "{month} lists {in} Ontario-grown crops.",
     "fullest": "The fullest month in the guide.",
     "leanest": "The leanest stretch of the year in the guide.",
     "filling": "The wheel is filling up: {n} more listed than in {prev}.",

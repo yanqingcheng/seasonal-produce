@@ -61,8 +61,7 @@
       "plural": "frutas"
     }
   ],
-  "attribution": "Meses del calendario del Ministerio de Agricultura, Pesca y Alimentación (frutas y hortalizas de temporada). El punto es «de temporada»; el color es el nivel de comercialización, mayor o menor. No es un calendario de cosecha ni de importación.",
-  "thin_sheet": "La fuente solo trae la cuadrícula de meses, así que la ficha se queda ahí.",
+  "attribution": "Ministerio de Agricultura, Pesca y Alimentación, frutas y hortalizas de temporada.",
   "copy": {
     "this_month": "Este mes",
     "back_to": "Volver a {month}",
@@ -71,7 +70,7 @@
     "at_peak": "Mayor comercialización",
     "also_in_season": "Menor comercialización",
     "on_the_edge": "Al borde",
-    "edge_why": "El calendario MAPA no marca un nivel de borde.",
+    "edge_why": "Al borde de la temporada.",
     "hub_this_month": "este mes",
     "at_peak_short": "{n} en mayor",
     "more_in_season": "{n} en menor",

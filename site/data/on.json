@@ -47,8 +47,7 @@
       "plural": "fruit"
     }
   ],
-  "attribution": "Months are the Foodland Ontario Availability Guide: when that Ontario-grown crop is available to buy, including storage and greenhouse. Contains information licensed under the Open Government Licence – Ontario. This is Ontario, not a Canada-wide calendar, and it is not a harvest-date chart.",
-  "thin_sheet": "The guide only has the month grid for this one, so that's all we show.",
+  "attribution": "Foodland Ontario Availability Guide. Open Government Licence – Ontario.",
   "copy": {
     "this_month": "This month",
     "back_to": "Back to {month}",
@@ -57,7 +56,7 @@
     "at_peak": "At peak",
     "also_in_season": "In the guide",
     "on_the_edge": "On the edge",
-    "edge_why": "The Foodland guide is available or not; it has no edge level.",
+    "edge_why": "Edge of the season.",
     "hub_this_month": "this month",
     "at_peak_short": "{n} at peak",
     "more_in_season": "{n} more in the guide",
@@ -75,7 +74,7 @@
     "recipe": "Recipe",
     "specialist_sources": "Source",
     "no_in_season": "No months in the guide",
-    "no_peak": "No peak level in this guide",
+    "no_peak": "",
     "all_year": "all year",
     "in_month": "{state} in {month}",
     "state_labels": {
@@ -98,7 +97,7 @@
     "season_label": "Season: {list}",
     "mix_label": "In the guide by type: {list}",
     "blurb": {
-      "counts": "{month} lists {in} Ontario-grown crops in the Foodland guide ({peak} at a peak level this guide does not use).",
+      "counts": "{month} lists {in} Ontario-grown crops.",
       "fullest": "The fullest month in the guide.",
       "leanest": "The leanest stretch of the year in the guide.",
       "filling": "The wheel is filling up: {n} more listed than in {prev}.",
@@ -1785,7 +1784,7 @@
         "Strawberries (Greenhouse)",
         "Rutabaga"
       ],
-      "blurb": "January lists <strong>20</strong> Ontario-grown crops in the Foodland guide (<strong>0</strong> at a peak level this guide does not use). Much the same list as December."
+      "blurb": "January lists <strong>20</strong> Ontario-grown crops. Much the same list as December."
     },
     {
       "key": "feb",
@@ -1848,7 +1847,7 @@
         "Beets",
         "Peppers (Greenhouse)"
       ],
-      "blurb": "February lists <strong>19</strong> Ontario-grown crops in the Foodland guide (<strong>0</strong> at a peak level this guide does not use). Much the same list as January."
+      "blurb": "February lists <strong>19</strong> Ontario-grown crops. Much the same list as January."
     },
     {
       "key": "mar",
@@ -1911,7 +1910,7 @@
         "Lettuce (Greenhouse)",
         "Tomatoes (Greenhouse)"
       ],
-      "blurb": "March lists <strong>18</strong> Ontario-grown crops in the Foodland guide (<strong>0</strong> at a peak level this guide does not use). The leanest stretch of the year in the guide."
+      "blurb": "March lists <strong>18</strong> Ontario-grown crops. The leanest stretch of the year in the guide."
     },
     {
       "key": "apr",
@@ -1977,7 +1976,7 @@
         "Parsnip",
         "Mushrooms"
       ],
-      "blurb": "April lists <strong>18</strong> Ontario-grown crops in the Foodland guide (<strong>0</strong> at a peak level this guide does not use). The leanest stretch of the year in the guide."
+      "blurb": "April lists <strong>18</strong> Ontario-grown crops. The leanest stretch of the year in the guide."
     },
     {
       "key": "may",
@@ -2043,7 +2042,7 @@
         "spinach",
         "radishes"
       ],
-      "blurb": "May lists <strong>18</strong> Ontario-grown crops in the Foodland guide (<strong>0</strong> at a peak level this guide does not use). The leanest stretch of the year in the guide."
+      "blurb": "May lists <strong>18</strong> Ontario-grown crops. The leanest stretch of the year in the guide."
     },
     {
       "key": "jun",
@@ -2131,7 +2130,7 @@
         "radicchio",
         "Peas (Snow)"
       ],
-      "blurb": "June lists <strong>39</strong> Ontario-grown crops in the Foodland guide (<strong>0</strong> at a peak level this guide does not use). The wheel is filling up: 21 more listed than in May."
+      "blurb": "June lists <strong>39</strong> Ontario-grown crops. The wheel is filling up: 21 more listed than in May."
     },
     {
       "key": "jul",
@@ -2233,7 +2232,7 @@
         "Gooseberries",
         "Peaches"
       ],
-      "blurb": "July lists <strong>54</strong> Ontario-grown crops in the Foodland guide (<strong>0</strong> at a peak level this guide does not use). The wheel is filling up: 15 more listed than in June."
+      "blurb": "July lists <strong>54</strong> Ontario-grown crops. The wheel is filling up: 15 more listed than in June."
     },
     {
       "key": "aug",
@@ -2347,7 +2346,7 @@
         "Blueberries",
         "Eggplant"
       ],
-      "blurb": "August lists <strong>63</strong> Ontario-grown crops in the Foodland guide (<strong>0</strong> at a peak level this guide does not use). The fullest month in the guide."
+      "blurb": "August lists <strong>63</strong> Ontario-grown crops. The fullest month in the guide."
     },
     {
       "key": "sep",
@@ -2458,7 +2457,7 @@
         "Nectarines",
         "Grapes"
       ],
-      "blurb": "September lists <strong>61</strong> Ontario-grown crops in the Foodland guide (<strong>0</strong> at a peak level this guide does not use). Much the same list as August."
+      "blurb": "September lists <strong>61</strong> Ontario-grown crops. Much the same list as August."
     },
     {
       "key": "oct",
@@ -2559,7 +2558,7 @@
         "Cranberries",
         "Artichoke"
       ],
-      "blurb": "October lists <strong>55</strong> Ontario-grown crops in the Foodland guide (<strong>0</strong> at a peak level this guide does not use). Much the same list as September."
+      "blurb": "October lists <strong>55</strong> Ontario-grown crops. Much the same list as September."
     },
     {
       "key": "nov",
@@ -2636,7 +2635,7 @@
         "Chinese Broccoli (White Flower)",
         "Daikon Radish"
       ],
-      "blurb": "November lists <strong>31</strong> Ontario-grown crops in the Foodland guide (<strong>0</strong> at a peak level this guide does not use). Winding down: 24 fewer listed than in October."
+      "blurb": "November lists <strong>31</strong> Ontario-grown crops. Winding down: 24 fewer listed than in October."
     },
     {
       "key": "dec",
@@ -2697,7 +2696,7 @@
         "Cucumber (Greenhouse)",
         "Sweet Potatoes"
       ],
-      "blurb": "December lists <strong>20</strong> Ontario-grown crops in the Foodland guide (<strong>0</strong> at a peak level this guide does not use). Winding down: 11 fewer listed than in November."
+      "blurb": "December lists <strong>20</strong> Ontario-grown crops. Winding down: 11 fewer listed than in November."
     }
   ]
 }
