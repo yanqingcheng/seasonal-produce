@@ -33,3 +33,7 @@ python3 -m http.server -d prototype
 ```
 
 pstack is enabled for this repository in [`.cursor/settings.json`](.cursor/settings.json). Keep later work static and small.
+
+## License
+
+The code in this repository is [MIT](LICENSE), copyright 2026 Yanqing Cheng / Qing's Workshop. Country pack attributions stay with their named public sources, already on each pack.
