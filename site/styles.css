@@ -92,8 +92,9 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.05; m
 .country-control { display: flex; align-items: center; gap: 8px; }
 .country-control label { font-family: var(--display); font-weight: 700; color: var(--ink-soft); }
 .country-control select {
-  font: 700 16px/1.2 var(--display); color: var(--ink); background: #fffdf6;
-  border: 3px solid var(--ink); border-radius: 999px; padding: 8px 14px;
+  font: 700 16px/1.35 var(--display), "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+  color: var(--ink); background: #fffdf6;
+  border: 3px solid var(--ink); border-radius: 999px; padding: 8px 16px 8px 12px;
   box-shadow: 0 4px 0 var(--ink); cursor: pointer;
 }
 .country-control select:focus-visible { outline: 3px solid var(--sky); outline-offset: 2px; }

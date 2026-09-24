@@ -580,6 +580,26 @@ function openSheet(name, { fromQuery = false, opener = null } = {}) {
   syncQuery();
 }
 
+const PLACE_FLAGS = {
+  uk: "🇬🇧",
+  fr: "🇫🇷",
+  es: "🇪🇸",
+  on: "🇨🇦",
+  it: "🇮🇹",
+  fl: "🇺🇸",
+  sc: "🇨🇳",
+  sd: "🇨🇳",
+  js: "🇨🇳",
+  yn: "🇨🇳",
+  hi: "🇨🇳",
+  xj: "🇨🇳",
+  jp: "🇯🇵",
+};
+
+function flagForPlace(id) {
+  return PLACE_FLAGS[id] ?? "";
+}
+
 function maybeCountryControl(registry) {
   document.querySelector(".country-control")?.remove();
   const shipped = (registry ?? []).filter((row) => row.status === "shipped" || row.status === "ready");
@@ -594,7 +614,8 @@ function maybeCountryControl(registry) {
   for (const row of shipped) {
     const option = document.createElement("option");
     option.value = row.id;
-    option.textContent = row.name;
+    const flag = flagForPlace(row.id);
+    option.textContent = flag ? `${flag} ${row.name}` : row.name;
     option.selected = row.id === session.pack?.id;
     select.appendChild(option);
   }
