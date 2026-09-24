@@ -596,6 +596,12 @@ const PLACE_FLAGS = {
   jp: "🇯🇵",
 };
 
+const PLACE_CONTINENTS = [
+  ["Europe", ["uk", "fr", "es", "it"]],
+  ["North America", ["on", "fl"]],
+  ["Asia", ["sc", "sd", "js", "yn", "hi", "xj", "jp"]],
+];
+
 function flagForPlace(id) {
   return PLACE_FLAGS[id] ?? "";
 }
@@ -611,13 +617,20 @@ function maybeCountryControl(registry) {
   label.textContent = "Place";
   const select = document.createElement("select");
   select.id = "country-select";
-  for (const row of shipped) {
-    const option = document.createElement("option");
-    option.value = row.id;
-    const flag = flagForPlace(row.id);
-    option.textContent = flag ? `${flag} ${row.name}` : row.name;
-    option.selected = row.id === session.pack?.id;
-    select.appendChild(option);
+  for (const [continent, ids] of PLACE_CONTINENTS) {
+    const rows = shipped.filter((row) => ids.includes(row.id));
+    if (!rows.length) continue;
+    const group = document.createElement("optgroup");
+    group.label = continent;
+    for (const row of rows) {
+      const option = document.createElement("option");
+      option.value = row.id;
+      const flag = flagForPlace(row.id);
+      option.textContent = flag ? `${flag} ${row.name}` : row.name;
+      option.selected = row.id === session.pack?.id;
+      group.appendChild(option);
+    }
+    select.appendChild(group);
   }
   select.addEventListener("change", () => {
     const id = select.value;
