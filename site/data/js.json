@@ -1,0 +1,1444 @@
+{
+  "id": "js",
+  "name": "Jiangsu",
+  "locale": "en",
+  "timezone": "Asia/Shanghai",
+  "title": "The Jiangsu Year-Wheel",
+  "tagline": "What's growing in Jiangsu, month by month.",
+  "month_names": [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ],
+  "seasons": [
+    "Winter",
+    "Winter",
+    "Spring",
+    "Spring",
+    "Spring",
+    "Summer",
+    "Summer",
+    "Summer",
+    "Autumn",
+    "Autumn",
+    "Autumn",
+    "Winter"
+  ],
+  "categories": [
+    {
+      "id": "vegetable",
+      "label": "Vegetable",
+      "one": "vegetable",
+      "plural": "vegetables"
+    },
+    {
+      "id": "fruit",
+      "label": "Fruit",
+      "one": "fruit",
+      "plural": "fruit"
+    },
+    {
+      "id": "nut",
+      "label": "Nut",
+      "one": "nut",
+      "plural": "nuts"
+    }
+  ],
+  "attribution": "Jiangsu harvest months from 中国江苏网 and 扬子晚报.",
+  "copy": {
+    "this_month": "This month",
+    "back_to": "Back to {month}",
+    "new_in": "New in",
+    "last_call": "Last call",
+    "at_peak": "At peak",
+    "also_in_season": "In season",
+    "on_the_edge": "On the edge",
+    "edge_why": "Edge of the season.",
+    "hub_this_month": "this month",
+    "at_peak_short": "{n} at peak",
+    "more_in_season": "{n} more in season",
+    "hub_when_no_peak": "{n} in season",
+    "open_fact_sheet": "Open fact sheet.",
+    "recipe_badge": "recipe",
+    "months_recipe": "{month}'s recipe",
+    "made_with": "Made with",
+    "cook_it_on": "Cook it on {name}",
+    "fact_in_season": "In season",
+    "fact_peak": "Peak",
+    "fact_edge": "On the edge",
+    "stored_notes": "Stored & type notes",
+    "regions": "Regions & notes",
+    "recipe": "Recipe",
+    "specialist_sources": "Source",
+    "no_in_season": "No in-season months on the calendar",
+    "no_peak": "",
+    "all_year": "all year",
+    "in_month": "{state} in {month}",
+    "state_labels": {
+      "peak": "Peak",
+      "in": "In season",
+      "edge": "On the edge",
+      "out": "Not in season"
+    },
+    "ring_key": {
+      "peak": "Peak",
+      "in": "In season",
+      "edge": "Edge",
+      "out": "Out"
+    },
+    "proper": {},
+    "hint": "Tap a month on the wheel, or use the ← → keys.",
+    "wheel_label": "Produce year-wheel. Pick a month.",
+    "months_nav": "Months",
+    "close_sheet": "Close fact sheet",
+    "season_label": "Season: {list}",
+    "mix_label": "In season by type: {list}",
+    "blurb": {
+      "counts": "{month} has {in} Jiangsu crops in season.",
+      "fullest": "The fullest month on the wheel.",
+      "leanest": "The leanest stretch of the year.",
+      "filling": "The wheel is filling up: {n} more in season than in {prev}.",
+      "winding": "Winding down: {n} fewer in season than in {prev}.",
+      "same": "Much the same list as {prev}.",
+      "lead_fruit_one": "{lead} lead the peaks ({count} of {peak}), with 1 fruit at its best.",
+      "lead_fruit": "{lead} lead the peaks ({count} of {peak}), with {n} fruits at their best.",
+      "lead_none": "{lead} lead the peaks ({count} of {peak}); no fruit is at peak.",
+      "change_threshold": 8
+    }
+  },
+  "items": [
+    {
+      "item": "apple",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Fengxian, Xuzhou, Jiangsu.",
+      "specialist_sources": [
+        "中国江苏网"
+      ]
+    },
+    {
+      "item": "asparagus",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Jiangsu.",
+      "specialist_sources": [
+        "中国江苏网"
+      ]
+    },
+    {
+      "item": "Black tatsoi",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Rugao, Nantong, Jiangsu.",
+      "specialist_sources": [
+        "南通市人民政府"
+      ]
+    },
+    {
+      "item": "blueberry",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Lishui, Nanjing, Jiangsu.",
+      "specialist_sources": [
+        "南京市农业农村局"
+      ]
+    },
+    {
+      "item": "broccoli",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Xiangshui, Yancheng, Jiangsu.",
+      "specialist_sources": [
+        "我苏网"
+      ]
+    },
+    {
+      "item": "cherry",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Changzhou, Jiangsu.",
+      "specialist_sources": [
+        "中国江苏网"
+      ]
+    },
+    {
+      "item": "chestnut",
+      "category": "nut",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Dongshan, Wuzhong, Suzhou, Jiangsu.",
+      "specialist_sources": [
+        "苏州市农业农村局"
+      ]
+    },
+    {
+      "item": "chillies",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Yandong, Tinghu, Yancheng, Jiangsu.",
+      "specialist_sources": [
+        "中共江苏省委新闻网"
+      ]
+    },
+    {
+      "item": "Chinese bayberry",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Dongshan, Wuzhong, Suzhou, Jiangsu.",
+      "specialist_sources": [
+        "苏州市农业农村局"
+      ]
+    },
+    {
+      "item": "Chinese yam",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Jiangsu.",
+      "specialist_sources": [
+        "新华报业网"
+      ]
+    },
+    {
+      "item": "Citrus",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Binhu, Wuxi, Jiangsu.",
+      "specialist_sources": [
+        "无锡市滨湖区人民政府"
+      ]
+    },
+    {
+      "item": "Cuiguan pear",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Tong'an, Suzhou New District, Jiangsu.",
+      "specialist_sources": [
+        "苏州市农业农村局"
+      ]
+    },
+    {
+      "item": "fig",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Yangzhong, Zhenjiang, Jiangsu.",
+      "specialist_sources": [
+        "中国江苏网"
+      ]
+    },
+    {
+      "item": "garlic",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Pizhou, Xuzhou, Jiangsu.",
+      "specialist_sources": [
+        "澎湃新闻"
+      ]
+    },
+    {
+      "item": "Grape",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Jiangxinzhou, Jianye, Nanjing, Jiangsu.",
+      "specialist_sources": [
+        "南京市建邺区人民政府"
+      ]
+    },
+    {
+      "item": "Honey peach",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Xinyi, Xuzhou, Jiangsu.",
+      "specialist_sources": [
+        "中国江苏网"
+      ]
+    },
+    {
+      "item": "Loquat",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Wuzhong, Suzhou, Jiangsu.",
+      "specialist_sources": [
+        "苏州市人民政府"
+      ]
+    },
+    {
+      "item": "Luhao",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Suqian, Jiangsu.",
+      "specialist_sources": [
+        "中国江苏网"
+      ]
+    },
+    {
+      "item": "Malan greens",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Yangzhou, Jiangsu.",
+      "specialist_sources": [
+        "中国江苏网"
+      ]
+    },
+    {
+      "item": "melon",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Sancang, Dongtai, Yancheng, Jiangsu.",
+      "specialist_sources": [
+        "盐城市农业农村局"
+      ]
+    },
+    {
+      "item": "pear",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Jiangsu.",
+      "specialist_sources": [
+        "扬子晚报"
+      ]
+    },
+    {
+      "item": "Persimmon",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Gucheng, Gaochun, Nanjing, Jiangsu.",
+      "specialist_sources": [
+        "新华报业网"
+      ]
+    },
+    {
+      "item": "Shepherd's purse",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Wuxi, Jiangsu.",
+      "specialist_sources": [
+        "中国江苏网"
+      ]
+    },
+    {
+      "item": "Shiitake",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Pingwang, Wujiang, Suzhou, Jiangsu.",
+      "specialist_sources": [
+        "扬子晚报"
+      ]
+    },
+    {
+      "item": "strawberry",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Xiangshui, Yancheng, Jiangsu.",
+      "specialist_sources": [
+        "央广网"
+      ]
+    },
+    {
+      "item": "Sweet pea",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Tengxing, Fenjie, Taizhou, Jiangsu.",
+      "specialist_sources": [
+        "中共江苏省委新闻网"
+      ]
+    },
+    {
+      "item": "Water celery",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Yangzhou, Jiangsu.",
+      "specialist_sources": [
+        "中国江苏网"
+      ]
+    },
+    {
+      "item": "Watermelon",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Xiangshui, Yancheng, Jiangsu.",
+      "specialist_sources": [
+        "中国江苏网"
+      ]
+    },
+    {
+      "item": "Winter jujube",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Nantong, Jiangsu.",
+      "specialist_sources": [
+        "中国江苏网"
+      ]
+    },
+    {
+      "item": "Yangshan honey peach",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Yangshan, Huishan, Wuxi, Jiangsu.",
+      "specialist_sources": [
+        "腾讯新闻"
+      ]
+    },
+    {
+      "item": "Yellow peach",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Suzhou, Jiangsu.",
+      "specialist_sources": [
+        "扬子晚报"
+      ]
+    }
+  ],
+  "recipes": [],
+  "months": [
+    {
+      "key": "jan",
+      "name": "January",
+      "counts": {
+        "peak": 0,
+        "in": 5,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "strawberry",
+        "Black tatsoi",
+        "Water celery",
+        "Luhao",
+        "Shiitake"
+      ],
+      "peak": [],
+      "in": [
+        "Black tatsoi",
+        "Luhao",
+        "Shiitake",
+        "strawberry",
+        "Water celery"
+      ],
+      "edge": [],
+      "arrivals": [],
+      "farewells": [],
+      "quiet": [
+        "strawberry",
+        "Black tatsoi",
+        "Water celery",
+        "Luhao",
+        "Shiitake"
+      ],
+      "blurb": "January has <strong>5</strong> Jiangsu crops in season. The leanest stretch of the year."
+    },
+    {
+      "key": "feb",
+      "name": "February",
+      "counts": {
+        "peak": 0,
+        "in": 5,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "strawberry",
+        "Black tatsoi",
+        "Water celery",
+        "Luhao",
+        "Shiitake"
+      ],
+      "peak": [],
+      "in": [
+        "Black tatsoi",
+        "Luhao",
+        "Shiitake",
+        "strawberry",
+        "Water celery"
+      ],
+      "edge": [],
+      "arrivals": [],
+      "farewells": [
+        "Black tatsoi",
+        "Water celery"
+      ],
+      "quiet": [
+        "strawberry",
+        "Black tatsoi",
+        "Water celery",
+        "Luhao",
+        "Shiitake"
+      ],
+      "blurb": "February has <strong>5</strong> Jiangsu crops in season. The leanest stretch of the year."
+    },
+    {
+      "key": "mar",
+      "name": "March",
+      "counts": {
+        "peak": 0,
+        "in": 6,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "strawberry",
+        "Malan greens",
+        "Shepherd's purse",
+        "Luhao",
+        "Shiitake",
+        "asparagus"
+      ],
+      "peak": [],
+      "in": [
+        "asparagus",
+        "Luhao",
+        "Malan greens",
+        "Shepherd's purse",
+        "Shiitake",
+        "strawberry"
+      ],
+      "edge": [],
+      "arrivals": [
+        "asparagus",
+        "Malan greens",
+        "Shepherd's purse"
+      ],
+      "farewells": [],
+      "quiet": [
+        "strawberry",
+        "Malan greens",
+        "Shepherd's purse",
+        "Shiitake",
+        "asparagus"
+      ],
+      "blurb": "March has <strong>6</strong> Jiangsu crops in season. Much the same list as February."
+    },
+    {
+      "key": "apr",
+      "name": "April",
+      "counts": {
+        "peak": 0,
+        "in": 11,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "cherry",
+        "Watermelon",
+        "melon",
+        "strawberry",
+        "Sweet pea",
+        "Malan greens",
+        "Shepherd's purse",
+        "Luhao",
+        "Shiitake",
+        "asparagus",
+        "Honey peach"
+      ],
+      "peak": [],
+      "in": [
+        "asparagus",
+        "cherry",
+        "Honey peach",
+        "Luhao",
+        "Malan greens",
+        "melon",
+        "Shepherd's purse",
+        "Shiitake",
+        "strawberry",
+        "Sweet pea",
+        "Watermelon"
+      ],
+      "edge": [],
+      "arrivals": [
+        "cherry",
+        "Honey peach",
+        "melon",
+        "Sweet pea"
+      ],
+      "farewells": [
+        "Malan greens",
+        "Shiitake"
+      ],
+      "quiet": [
+        "cherry",
+        "Watermelon",
+        "melon",
+        "Sweet pea",
+        "Malan greens"
+      ],
+      "blurb": "April has <strong>11</strong> Jiangsu crops in season. Much the same list as March."
+    },
+    {
+      "key": "may",
+      "name": "May",
+      "counts": {
+        "peak": 0,
+        "in": 12,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "garlic",
+        "blueberry",
+        "cherry",
+        "Watermelon",
+        "melon",
+        "strawberry",
+        "chillies",
+        "Loquat",
+        "Shepherd's purse",
+        "Luhao",
+        "asparagus",
+        "Honey peach"
+      ],
+      "peak": [],
+      "in": [
+        "asparagus",
+        "blueberry",
+        "cherry",
+        "chillies",
+        "garlic",
+        "Honey peach",
+        "Loquat",
+        "Luhao",
+        "melon",
+        "Shepherd's purse",
+        "strawberry",
+        "Watermelon"
+      ],
+      "edge": [],
+      "arrivals": [
+        "blueberry",
+        "chillies",
+        "garlic",
+        "Loquat"
+      ],
+      "farewells": [
+        "Luhao",
+        "Shepherd's purse",
+        "strawberry"
+      ],
+      "quiet": [
+        "garlic",
+        "blueberry",
+        "Watermelon",
+        "Loquat",
+        "Shepherd's purse"
+      ],
+      "blurb": "May has <strong>12</strong> Jiangsu crops in season. The fullest month on the wheel."
+    },
+    {
+      "key": "jun",
+      "name": "June",
+      "counts": {
+        "peak": 0,
+        "in": 11,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "blueberry",
+        "cherry",
+        "pear",
+        "Watermelon",
+        "melon",
+        "chillies",
+        "Chinese bayberry",
+        "Loquat",
+        "Yangshan honey peach",
+        "asparagus",
+        "Honey peach"
+      ],
+      "peak": [],
+      "in": [
+        "asparagus",
+        "blueberry",
+        "cherry",
+        "chillies",
+        "Chinese bayberry",
+        "Honey peach",
+        "Loquat",
+        "melon",
+        "pear",
+        "Watermelon",
+        "Yangshan honey peach"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Chinese bayberry",
+        "pear",
+        "Yangshan honey peach"
+      ],
+      "farewells": [
+        "cherry",
+        "Loquat"
+      ],
+      "quiet": [
+        "blueberry",
+        "cherry",
+        "Chinese bayberry",
+        "Loquat",
+        "Yangshan honey peach"
+      ],
+      "blurb": "June has <strong>11</strong> Jiangsu crops in season. Much the same list as May."
+    },
+    {
+      "key": "jul",
+      "name": "July",
+      "counts": {
+        "peak": 0,
+        "in": 12,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "blueberry",
+        "Grape",
+        "pear",
+        "Watermelon",
+        "melon",
+        "chillies",
+        "Cuiguan pear",
+        "Yangshan honey peach",
+        "fig",
+        "Winter jujube",
+        "asparagus",
+        "Honey peach"
+      ],
+      "peak": [],
+      "in": [
+        "asparagus",
+        "blueberry",
+        "chillies",
+        "Cuiguan pear",
+        "fig",
+        "Grape",
+        "Honey peach",
+        "melon",
+        "pear",
+        "Watermelon",
+        "Winter jujube",
+        "Yangshan honey peach"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Cuiguan pear",
+        "fig",
+        "Grape",
+        "Winter jujube"
+      ],
+      "farewells": [
+        "blueberry",
+        "Watermelon"
+      ],
+      "quiet": [
+        "Grape",
+        "pear",
+        "Cuiguan pear",
+        "Yangshan honey peach",
+        "Winter jujube"
+      ],
+      "blurb": "July has <strong>12</strong> Jiangsu crops in season. The fullest month on the wheel."
+    },
+    {
+      "key": "aug",
+      "name": "August",
+      "counts": {
+        "peak": 0,
+        "in": 12,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Grape",
+        "pear",
+        "melon",
+        "chillies",
+        "Yellow peach",
+        "Cuiguan pear",
+        "broccoli",
+        "Yangshan honey peach",
+        "fig",
+        "Winter jujube",
+        "asparagus",
+        "Honey peach"
+      ],
+      "peak": [],
+      "in": [
+        "asparagus",
+        "broccoli",
+        "chillies",
+        "Cuiguan pear",
+        "fig",
+        "Grape",
+        "Honey peach",
+        "melon",
+        "pear",
+        "Winter jujube",
+        "Yangshan honey peach",
+        "Yellow peach"
+      ],
+      "edge": [],
+      "arrivals": [
+        "broccoli",
+        "Yellow peach"
+      ],
+      "farewells": [
+        "Cuiguan pear",
+        "melon",
+        "Yangshan honey peach"
+      ],
+      "quiet": [
+        "pear",
+        "melon",
+        "Yellow peach",
+        "Cuiguan pear",
+        "asparagus"
+      ],
+      "blurb": "August has <strong>12</strong> Jiangsu crops in season. The fullest month on the wheel."
+    },
+    {
+      "key": "sep",
+      "name": "September",
+      "counts": {
+        "peak": 0,
+        "in": 10,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Grape",
+        "pear",
+        "chillies",
+        "broccoli",
+        "Persimmon",
+        "fig",
+        "Winter jujube",
+        "asparagus",
+        "Honey peach",
+        "chestnut"
+      ],
+      "peak": [],
+      "in": [
+        "asparagus",
+        "broccoli",
+        "chestnut",
+        "chillies",
+        "fig",
+        "Grape",
+        "Honey peach",
+        "pear",
+        "Persimmon",
+        "Winter jujube"
+      ],
+      "edge": [],
+      "arrivals": [
+        "chestnut",
+        "Persimmon"
+      ],
+      "farewells": [
+        "pear"
+      ],
+      "quiet": [
+        "Grape",
+        "broccoli",
+        "Persimmon",
+        "fig",
+        "chestnut"
+      ],
+      "blurb": "September has <strong>10</strong> Jiangsu crops in season. Much the same list as August."
+    },
+    {
+      "key": "oct",
+      "name": "October",
+      "counts": {
+        "peak": 0,
+        "in": 11,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "apple",
+        "Grape",
+        "chillies",
+        "Citrus",
+        "broccoli",
+        "Persimmon",
+        "fig",
+        "Winter jujube",
+        "asparagus",
+        "Honey peach",
+        "chestnut"
+      ],
+      "peak": [],
+      "in": [
+        "apple",
+        "asparagus",
+        "broccoli",
+        "chestnut",
+        "chillies",
+        "Citrus",
+        "fig",
+        "Grape",
+        "Honey peach",
+        "Persimmon",
+        "Winter jujube"
+      ],
+      "edge": [],
+      "arrivals": [
+        "apple",
+        "Citrus"
+      ],
+      "farewells": [
+        "asparagus",
+        "broccoli",
+        "chestnut",
+        "Grape"
+      ],
+      "quiet": [
+        "apple",
+        "chillies",
+        "Citrus",
+        "broccoli",
+        "Honey peach"
+      ],
+      "blurb": "October has <strong>11</strong> Jiangsu crops in season. Much the same list as September."
+    },
+    {
+      "key": "nov",
+      "name": "November",
+      "counts": {
+        "peak": 0,
+        "in": 10,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "apple",
+        "chillies",
+        "Chinese yam",
+        "Citrus",
+        "Persimmon",
+        "Water celery",
+        "fig",
+        "Shiitake",
+        "Winter jujube",
+        "Honey peach"
+      ],
+      "peak": [],
+      "in": [
+        "apple",
+        "chillies",
+        "Chinese yam",
+        "Citrus",
+        "fig",
+        "Honey peach",
+        "Persimmon",
+        "Shiitake",
+        "Water celery",
+        "Winter jujube"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Chinese yam",
+        "Shiitake",
+        "Water celery"
+      ],
+      "farewells": [
+        "apple",
+        "chillies",
+        "Citrus",
+        "fig"
+      ],
+      "quiet": [
+        "apple",
+        "chillies",
+        "Chinese yam",
+        "Citrus",
+        "fig"
+      ],
+      "blurb": "November has <strong>10</strong> Jiangsu crops in season. Much the same list as October."
+    },
+    {
+      "key": "dec",
+      "name": "December",
+      "counts": {
+        "peak": 0,
+        "in": 6,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "strawberry",
+        "Black tatsoi",
+        "Water celery",
+        "Luhao",
+        "Winter jujube",
+        "Shiitake"
+      ],
+      "peak": [],
+      "in": [
+        "Black tatsoi",
+        "Luhao",
+        "Shiitake",
+        "strawberry",
+        "Water celery",
+        "Winter jujube"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Black tatsoi",
+        "Luhao",
+        "strawberry"
+      ],
+      "farewells": [
+        "Winter jujube"
+      ],
+      "quiet": [
+        "strawberry",
+        "Black tatsoi",
+        "Water celery",
+        "Luhao",
+        "Winter jujube"
+      ],
+      "blurb": "December has <strong>6</strong> Jiangsu crops in season. Much the same list as November."
+    }
+  ]
+}

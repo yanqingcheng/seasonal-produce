@@ -1,0 +1,69 @@
+{
+  "id": "jp",
+  "name": "Japan",
+  "locale": "en",
+  "timezone": "Asia/Tokyo",
+  "title": "The Japan Year-Wheel",
+  "tagline": "What's growing in Japan, month by month.",
+  "month_names": [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ],
+  "seasons": [
+    "Winter",
+    "Winter",
+    "Spring",
+    "Spring",
+    "Spring",
+    "Summer",
+    "Summer",
+    "Summer",
+    "Autumn",
+    "Autumn",
+    "Autumn",
+    "Winter"
+  ],
+  "categories": [
+    {
+      "id": "vegetable",
+      "label": "Vegetable",
+      "one": "vegetable",
+      "plural": "vegetables",
+      "everyday": true
+    },
+    {
+      "id": "fruit",
+      "label": "Fruit",
+      "one": "fruit",
+      "plural": "fruit",
+      "everyday": true
+    },
+    {
+      "id": "nut",
+      "label": "Nut",
+      "one": "nut",
+      "plural": "nuts",
+      "everyday": false
+    }
+  ],
+  "state_roles": {
+    "I": "in",
+    ".": "out"
+  },
+  "sticker_exclude": [],
+  "attribution": "Japan harvest months from ALIC 野菜情報 and Hokkaido Yasai.",
+  "alias_profile": "none",
+  "recipe_rule": "optional",
+  "expect_items": 35,
+  "require_peak_every_month": false
+}

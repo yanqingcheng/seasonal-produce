@@ -1,0 +1,1477 @@
+{
+  "id": "sd",
+  "name": "Shandong",
+  "locale": "en",
+  "timezone": "Asia/Shanghai",
+  "title": "The Shandong Year-Wheel",
+  "tagline": "What's growing in Shandong, month by month.",
+  "month_names": [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ],
+  "seasons": [
+    "Winter",
+    "Winter",
+    "Spring",
+    "Spring",
+    "Spring",
+    "Summer",
+    "Summer",
+    "Summer",
+    "Autumn",
+    "Autumn",
+    "Autumn",
+    "Winter"
+  ],
+  "categories": [
+    {
+      "id": "vegetable",
+      "label": "Vegetable",
+      "one": "vegetable",
+      "plural": "vegetables"
+    },
+    {
+      "id": "fruit",
+      "label": "Fruit",
+      "one": "fruit",
+      "plural": "fruit"
+    },
+    {
+      "id": "herb",
+      "label": "Herb",
+      "one": "herb",
+      "plural": "herbs"
+    },
+    {
+      "id": "nut",
+      "label": "Nut",
+      "one": "nut",
+      "plural": "nuts"
+    }
+  ],
+  "attribution": "Shandong harvest months from 齐鲁网 and 腾讯新闻.",
+  "copy": {
+    "this_month": "This month",
+    "back_to": "Back to {month}",
+    "new_in": "New in",
+    "last_call": "Last call",
+    "at_peak": "At peak",
+    "also_in_season": "In season",
+    "on_the_edge": "On the edge",
+    "edge_why": "Edge of the season.",
+    "hub_this_month": "this month",
+    "at_peak_short": "{n} at peak",
+    "more_in_season": "{n} more in season",
+    "hub_when_no_peak": "{n} in season",
+    "open_fact_sheet": "Open fact sheet.",
+    "recipe_badge": "recipe",
+    "months_recipe": "{month}'s recipe",
+    "made_with": "Made with",
+    "cook_it_on": "Cook it on {name}",
+    "fact_in_season": "In season",
+    "fact_peak": "Peak",
+    "fact_edge": "On the edge",
+    "stored_notes": "Stored & type notes",
+    "regions": "Regions & notes",
+    "recipe": "Recipe",
+    "specialist_sources": "Source",
+    "no_in_season": "No in-season months on the calendar",
+    "no_peak": "",
+    "all_year": "all year",
+    "in_month": "{state} in {month}",
+    "state_labels": {
+      "peak": "Peak",
+      "in": "In season",
+      "edge": "On the edge",
+      "out": "Not in season"
+    },
+    "ring_key": {
+      "peak": "Peak",
+      "in": "In season",
+      "edge": "Edge",
+      "out": "Out"
+    },
+    "proper": {},
+    "hint": "Tap a month on the wheel, or use the ← → keys.",
+    "wheel_label": "Produce year-wheel. Pick a month.",
+    "months_nav": "Months",
+    "close_sheet": "Close fact sheet",
+    "season_label": "Season: {list}",
+    "mix_label": "In season by type: {list}",
+    "blurb": {
+      "counts": "{month} has {in} Shandong crops in season.",
+      "fullest": "The fullest month on the wheel.",
+      "leanest": "The leanest stretch of the year.",
+      "filling": "The wheel is filling up: {n} more in season than in {prev}.",
+      "winding": "Winding down: {n} fewer in season than in {prev}.",
+      "same": "Much the same list as {prev}.",
+      "lead_fruit_one": "{lead} lead the peaks ({count} of {peak}), with 1 fruit at its best.",
+      "lead_fruit": "{lead} lead the peaks ({count} of {peak}), with {n} fruits at their best.",
+      "lead_none": "{lead} lead the peaks ({count} of {peak}); no fruit is at peak.",
+      "change_threshold": 8
+    }
+  },
+  "items": [
+    {
+      "item": "apple",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Yantai, Shandong.",
+      "specialist_sources": [
+        "央广网 山东"
+      ]
+    },
+    {
+      "item": "apricot",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Xiazhuang, Chengyang, Qingdao, Shandong.",
+      "specialist_sources": [
+        "齐鲁网"
+      ]
+    },
+    {
+      "item": "aubergine",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Weifang, Shandong.",
+      "specialist_sources": [
+        "齐鲁网·潍坊"
+      ]
+    },
+    {
+      "item": "blueberry",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Huangdao / West Coast New Area, Qingdao, Shandong.",
+      "specialist_sources": [
+        "腾讯新闻"
+      ]
+    },
+    {
+      "item": "Carrot",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Dianbu, Laiyang, Yantai, Shandong.",
+      "specialist_sources": [
+        "腾讯新闻"
+      ]
+    },
+    {
+      "item": "chestnut",
+      "category": "nut",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Tianmeng Mountain, Linyi, Shandong.",
+      "specialist_sources": [
+        "齐鲁网·临沂"
+      ]
+    },
+    {
+      "item": "Chinese cabbage",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Shandong.",
+      "specialist_sources": [
+        "齐鲁网"
+      ]
+    },
+    {
+      "item": "Chinese yam",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Chenji, Heze, Shandong.",
+      "specialist_sources": [
+        "中国地理标志产品"
+      ]
+    },
+    {
+      "item": "chives",
+      "category": "herb",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Shouguang, Weifang, Shandong.",
+      "specialist_sources": [
+        "中国蔬菜"
+      ]
+    },
+    {
+      "item": "cucumber",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Shidao, Rongcheng, Weihai, Shandong.",
+      "specialist_sources": [
+        "齐鲁网·威海"
+      ]
+    },
+    {
+      "item": "Dazeshan grape",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Dazeshan, Pingdu, Qingdao, Shandong.",
+      "specialist_sources": [
+        "青岛市史志办"
+      ]
+    },
+    {
+      "item": "Feicheng peach",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Feicheng, Shandong.",
+      "specialist_sources": [
+        "肥城网"
+      ]
+    },
+    {
+      "item": "fig",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Jining, Shandong.",
+      "specialist_sources": [
+        "齐鲁网·济宁"
+      ]
+    },
+    {
+      "item": "garlic",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Jinxiang, Jining, Shandong.",
+      "specialist_sources": [
+        "今日头条"
+      ]
+    },
+    {
+      "item": "Jinsi jujube",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Leling, Dezhou, Shandong.",
+      "specialist_sources": [
+        "Geographical indication product standard"
+      ]
+    },
+    {
+      "item": "Laiyang pear",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Laiyang, Shandong.",
+      "specialist_sources": [
+        "Geographical indication product standard"
+      ]
+    },
+    {
+      "item": "melon",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Dongying, Shandong.",
+      "specialist_sources": [
+        "齐鲁网·东营"
+      ]
+    },
+    {
+      "item": "Mengyin peach",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Mengyin, Linyi, Shandong.",
+      "specialist_sources": [
+        "新华网 山东"
+      ]
+    },
+    {
+      "item": "Mulberry",
+      "category": "fruit",
+      "months": [
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Weifang, Shandong.",
+      "specialist_sources": [
+        "齐鲁网·潍坊"
+      ]
+    },
+    {
+      "item": "pear",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Tai'an, Shandong.",
+      "specialist_sources": [
+        "齐鲁网·泰安"
+      ]
+    },
+    {
+      "item": "Pomegranate",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Yicheng, Zaozhuang, Shandong.",
+      "specialist_sources": [
+        "中国地理标志产品"
+      ]
+    },
+    {
+      "item": "Potato",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Tengzhou, Zaozhuang, Shandong.",
+      "specialist_sources": [
+        "山东省科学技术厅"
+      ]
+    },
+    {
+      "item": "Radish",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Shandong.",
+      "specialist_sources": [
+        "齐鲁网"
+      ]
+    },
+    {
+      "item": "Spring Chinese cabbage",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Qingdao, Shandong.",
+      "specialist_sources": [
+        "齐鲁网"
+      ]
+    },
+    {
+      "item": "strawberry",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Linyi, Shandong.",
+      "specialist_sources": [
+        "齐鲁网·临沂"
+      ]
+    },
+    {
+      "item": "Sweet cherry",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Yantai, Shandong.",
+      "specialist_sources": [
+        "大众网"
+      ]
+    },
+    {
+      "item": "sweetcorn",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Binzhou, Shandong.",
+      "specialist_sources": [
+        "腾讯新闻"
+      ]
+    },
+    {
+      "item": "Taro",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Laiyang, Yantai, Shandong.",
+      "specialist_sources": [
+        "澎湃新闻·地标日历"
+      ]
+    },
+    {
+      "item": "Tomato",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Dezhou, Shandong.",
+      "specialist_sources": [
+        "齐鲁网·德州"
+      ]
+    },
+    {
+      "item": "Watermelon",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Nanwangdian, Dingtao, Heze, Shandong.",
+      "specialist_sources": [
+        "齐鲁网"
+      ]
+    },
+    {
+      "item": "Winter jujube",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Zhanhua, Shandong.",
+      "specialist_sources": [
+        "新华网"
+      ]
+    },
+    {
+      "item": "Zhangqiu scallion",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Zhangqiu, Shandong.",
+      "specialist_sources": [
+        "北京日报客户端"
+      ]
+    }
+  ],
+  "recipes": [],
+  "months": [
+    {
+      "key": "jan",
+      "name": "January",
+      "counts": {
+        "peak": 0,
+        "in": 5,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "strawberry",
+        "aubergine",
+        "Tomato",
+        "Chinese yam",
+        "chives"
+      ],
+      "peak": [],
+      "in": [
+        "aubergine",
+        "Chinese yam",
+        "chives",
+        "strawberry",
+        "Tomato"
+      ],
+      "edge": [],
+      "arrivals": [],
+      "farewells": [],
+      "quiet": [
+        "strawberry",
+        "aubergine",
+        "Tomato",
+        "Chinese yam",
+        "chives"
+      ],
+      "blurb": "January has <strong>5</strong> Shandong crops in season. The leanest stretch of the year."
+    },
+    {
+      "key": "feb",
+      "name": "February",
+      "counts": {
+        "peak": 0,
+        "in": 6,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "strawberry",
+        "aubergine",
+        "Tomato",
+        "Mulberry",
+        "Chinese yam",
+        "chives"
+      ],
+      "peak": [],
+      "in": [
+        "aubergine",
+        "Chinese yam",
+        "chives",
+        "Mulberry",
+        "strawberry",
+        "Tomato"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Mulberry"
+      ],
+      "farewells": [],
+      "quiet": [
+        "strawberry",
+        "aubergine",
+        "Tomato",
+        "Mulberry",
+        "Chinese yam"
+      ],
+      "blurb": "February has <strong>6</strong> Shandong crops in season. Much the same list as January."
+    },
+    {
+      "key": "mar",
+      "name": "March",
+      "counts": {
+        "peak": 0,
+        "in": 7,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "blueberry",
+        "strawberry",
+        "aubergine",
+        "Tomato",
+        "Mulberry",
+        "Chinese yam",
+        "chives"
+      ],
+      "peak": [],
+      "in": [
+        "aubergine",
+        "blueberry",
+        "Chinese yam",
+        "chives",
+        "Mulberry",
+        "strawberry",
+        "Tomato"
+      ],
+      "edge": [],
+      "arrivals": [
+        "blueberry"
+      ],
+      "farewells": [
+        "Chinese yam",
+        "chives"
+      ],
+      "quiet": [
+        "blueberry",
+        "strawberry",
+        "aubergine",
+        "Mulberry",
+        "Chinese yam"
+      ],
+      "blurb": "March has <strong>7</strong> Shandong crops in season. Much the same list as February."
+    },
+    {
+      "key": "apr",
+      "name": "April",
+      "counts": {
+        "peak": 0,
+        "in": 8,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Watermelon",
+        "blueberry",
+        "Potato",
+        "strawberry",
+        "aubergine",
+        "Tomato",
+        "Spring Chinese cabbage",
+        "Mulberry"
+      ],
+      "peak": [],
+      "in": [
+        "aubergine",
+        "blueberry",
+        "Mulberry",
+        "Potato",
+        "Spring Chinese cabbage",
+        "strawberry",
+        "Tomato",
+        "Watermelon"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Potato",
+        "Spring Chinese cabbage",
+        "Watermelon"
+      ],
+      "farewells": [],
+      "quiet": [
+        "Watermelon",
+        "blueberry",
+        "Potato",
+        "Tomato",
+        "Spring Chinese cabbage"
+      ],
+      "blurb": "April has <strong>8</strong> Shandong crops in season. Much the same list as March."
+    },
+    {
+      "key": "may",
+      "name": "May",
+      "counts": {
+        "peak": 0,
+        "in": 12,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "garlic",
+        "melon",
+        "Watermelon",
+        "blueberry",
+        "Carrot",
+        "Potato",
+        "strawberry",
+        "aubergine",
+        "Tomato",
+        "Sweet cherry",
+        "Spring Chinese cabbage",
+        "Mulberry"
+      ],
+      "peak": [],
+      "in": [
+        "aubergine",
+        "blueberry",
+        "Carrot",
+        "garlic",
+        "melon",
+        "Mulberry",
+        "Potato",
+        "Spring Chinese cabbage",
+        "strawberry",
+        "Sweet cherry",
+        "Tomato",
+        "Watermelon"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Carrot",
+        "garlic",
+        "melon",
+        "Sweet cherry"
+      ],
+      "farewells": [
+        "aubergine",
+        "strawberry"
+      ],
+      "quiet": [
+        "garlic",
+        "melon",
+        "Watermelon",
+        "blueberry",
+        "Sweet cherry"
+      ],
+      "blurb": "May has <strong>12</strong> Shandong crops in season. Much the same list as April."
+    },
+    {
+      "key": "jun",
+      "name": "June",
+      "counts": {
+        "peak": 0,
+        "in": 13,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "sweetcorn",
+        "melon",
+        "Watermelon",
+        "blueberry",
+        "Carrot",
+        "cucumber",
+        "Potato",
+        "Tomato",
+        "apricot",
+        "Sweet cherry",
+        "Spring Chinese cabbage",
+        "Mengyin peach",
+        "Mulberry"
+      ],
+      "peak": [],
+      "in": [
+        "apricot",
+        "blueberry",
+        "Carrot",
+        "cucumber",
+        "melon",
+        "Mengyin peach",
+        "Mulberry",
+        "Potato",
+        "Spring Chinese cabbage",
+        "Sweet cherry",
+        "sweetcorn",
+        "Tomato",
+        "Watermelon"
+      ],
+      "edge": [],
+      "arrivals": [
+        "apricot",
+        "cucumber",
+        "Mengyin peach",
+        "sweetcorn"
+      ],
+      "farewells": [
+        "Mulberry",
+        "Potato",
+        "Spring Chinese cabbage",
+        "Sweet cherry"
+      ],
+      "quiet": [
+        "sweetcorn",
+        "cucumber",
+        "apricot",
+        "Sweet cherry",
+        "Spring Chinese cabbage"
+      ],
+      "blurb": "June has <strong>13</strong> Shandong crops in season. The fullest month on the wheel."
+    },
+    {
+      "key": "jul",
+      "name": "July",
+      "counts": {
+        "peak": 0,
+        "in": 10,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "sweetcorn",
+        "melon",
+        "Watermelon",
+        "blueberry",
+        "Carrot",
+        "cucumber",
+        "Tomato",
+        "apricot",
+        "Mengyin peach",
+        "fig"
+      ],
+      "peak": [],
+      "in": [
+        "apricot",
+        "blueberry",
+        "Carrot",
+        "cucumber",
+        "fig",
+        "melon",
+        "Mengyin peach",
+        "sweetcorn",
+        "Tomato",
+        "Watermelon"
+      ],
+      "edge": [],
+      "arrivals": [
+        "fig"
+      ],
+      "farewells": [
+        "apricot",
+        "blueberry",
+        "Carrot",
+        "sweetcorn"
+      ],
+      "quiet": [
+        "sweetcorn",
+        "Watermelon",
+        "apricot",
+        "Mengyin peach",
+        "fig"
+      ],
+      "blurb": "July has <strong>10</strong> Shandong crops in season. Much the same list as June."
+    },
+    {
+      "key": "aug",
+      "name": "August",
+      "counts": {
+        "peak": 0,
+        "in": 7,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "melon",
+        "cucumber",
+        "Feicheng peach",
+        "Taro",
+        "Pomegranate",
+        "Mengyin peach",
+        "fig"
+      ],
+      "peak": [],
+      "in": [
+        "cucumber",
+        "Feicheng peach",
+        "fig",
+        "melon",
+        "Mengyin peach",
+        "Pomegranate",
+        "Taro"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Feicheng peach",
+        "Pomegranate",
+        "Taro"
+      ],
+      "farewells": [
+        "melon"
+      ],
+      "quiet": [
+        "melon",
+        "cucumber",
+        "Feicheng peach",
+        "Taro",
+        "Pomegranate"
+      ],
+      "blurb": "August has <strong>7</strong> Shandong crops in season. Much the same list as July."
+    },
+    {
+      "key": "sep",
+      "name": "September",
+      "counts": {
+        "peak": 0,
+        "in": 13,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "pear",
+        "cucumber",
+        "aubergine",
+        "Dazeshan grape",
+        "Jinsi jujube",
+        "Feicheng peach",
+        "Taro",
+        "Laiyang pear",
+        "Pomegranate",
+        "Winter jujube",
+        "Mengyin peach",
+        "fig",
+        "chestnut"
+      ],
+      "peak": [],
+      "in": [
+        "aubergine",
+        "chestnut",
+        "cucumber",
+        "Dazeshan grape",
+        "Feicheng peach",
+        "fig",
+        "Jinsi jujube",
+        "Laiyang pear",
+        "Mengyin peach",
+        "pear",
+        "Pomegranate",
+        "Taro",
+        "Winter jujube"
+      ],
+      "edge": [],
+      "arrivals": [
+        "aubergine",
+        "chestnut",
+        "Dazeshan grape",
+        "Jinsi jujube"
+      ],
+      "farewells": [
+        "Feicheng peach",
+        "Mengyin peach",
+        "Pomegranate",
+        "Taro"
+      ],
+      "quiet": [
+        "pear",
+        "Dazeshan grape",
+        "Jinsi jujube",
+        "Feicheng peach",
+        "chestnut"
+      ],
+      "blurb": "September has <strong>13</strong> Shandong crops in season. The fullest month on the wheel."
+    },
+    {
+      "key": "oct",
+      "name": "October",
+      "counts": {
+        "peak": 0,
+        "in": 12,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "apple",
+        "Chinese cabbage",
+        "pear",
+        "cucumber",
+        "Potato",
+        "aubergine",
+        "Laiyang pear",
+        "Radish",
+        "Winter jujube",
+        "Zhangqiu scallion",
+        "fig",
+        "Chinese yam"
+      ],
+      "peak": [],
+      "in": [
+        "apple",
+        "aubergine",
+        "Chinese cabbage",
+        "Chinese yam",
+        "cucumber",
+        "fig",
+        "Laiyang pear",
+        "pear",
+        "Potato",
+        "Radish",
+        "Winter jujube",
+        "Zhangqiu scallion"
+      ],
+      "edge": [],
+      "arrivals": [
+        "apple",
+        "Chinese cabbage",
+        "Chinese yam",
+        "Potato"
+      ],
+      "farewells": [
+        "Laiyang pear",
+        "pear",
+        "Winter jujube"
+      ],
+      "quiet": [
+        "apple",
+        "Chinese cabbage",
+        "pear",
+        "Laiyang pear",
+        "Winter jujube"
+      ],
+      "blurb": "October has <strong>12</strong> Shandong crops in season. Much the same list as September."
+    },
+    {
+      "key": "nov",
+      "name": "November",
+      "counts": {
+        "peak": 0,
+        "in": 11,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Chinese cabbage",
+        "Carrot",
+        "cucumber",
+        "Potato",
+        "aubergine",
+        "Tomato",
+        "Radish",
+        "Zhangqiu scallion",
+        "fig",
+        "Chinese yam",
+        "chives"
+      ],
+      "peak": [],
+      "in": [
+        "aubergine",
+        "Carrot",
+        "Chinese cabbage",
+        "Chinese yam",
+        "chives",
+        "cucumber",
+        "fig",
+        "Potato",
+        "Radish",
+        "Tomato",
+        "Zhangqiu scallion"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Carrot",
+        "chives",
+        "Tomato"
+      ],
+      "farewells": [
+        "Chinese cabbage",
+        "cucumber",
+        "fig",
+        "Radish"
+      ],
+      "quiet": [
+        "Chinese cabbage",
+        "Carrot",
+        "Radish",
+        "Zhangqiu scallion",
+        "fig"
+      ],
+      "blurb": "November has <strong>11</strong> Shandong crops in season. Much the same list as October."
+    },
+    {
+      "key": "dec",
+      "name": "December",
+      "counts": {
+        "peak": 0,
+        "in": 8,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Carrot",
+        "Potato",
+        "strawberry",
+        "aubergine",
+        "Tomato",
+        "Zhangqiu scallion",
+        "Chinese yam",
+        "chives"
+      ],
+      "peak": [],
+      "in": [
+        "aubergine",
+        "Carrot",
+        "Chinese yam",
+        "chives",
+        "Potato",
+        "strawberry",
+        "Tomato",
+        "Zhangqiu scallion"
+      ],
+      "edge": [],
+      "arrivals": [
+        "strawberry"
+      ],
+      "farewells": [
+        "Carrot",
+        "Potato",
+        "Zhangqiu scallion"
+      ],
+      "quiet": [
+        "Carrot",
+        "Potato",
+        "strawberry",
+        "Zhangqiu scallion",
+        "chives"
+      ],
+      "blurb": "December has <strong>8</strong> Shandong crops in season. Much the same list as November."
+    }
+  ]
+}

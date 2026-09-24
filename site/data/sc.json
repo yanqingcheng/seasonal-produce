@@ -1,0 +1,1615 @@
+{
+  "id": "sc",
+  "name": "Sichuan",
+  "locale": "en",
+  "timezone": "Asia/Shanghai",
+  "title": "The Sichuan Year-Wheel",
+  "tagline": "What's growing in Sichuan, month by month.",
+  "month_names": [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ],
+  "seasons": [
+    "Winter",
+    "Winter",
+    "Spring",
+    "Spring",
+    "Spring",
+    "Summer",
+    "Summer",
+    "Summer",
+    "Autumn",
+    "Autumn",
+    "Autumn",
+    "Winter"
+  ],
+  "categories": [
+    {
+      "id": "vegetable",
+      "label": "Vegetable",
+      "one": "vegetable",
+      "plural": "vegetables"
+    },
+    {
+      "id": "fruit",
+      "label": "Fruit",
+      "one": "fruit",
+      "plural": "fruit"
+    },
+    {
+      "id": "nut",
+      "label": "Nut",
+      "one": "nut",
+      "plural": "nuts"
+    }
+  ],
+  "attribution": "Sichuan harvest months from 四川在线 and 川观新闻.",
+  "copy": {
+    "this_month": "This month",
+    "back_to": "Back to {month}",
+    "new_in": "New in",
+    "last_call": "Last call",
+    "at_peak": "At peak",
+    "also_in_season": "In season",
+    "on_the_edge": "On the edge",
+    "edge_why": "Edge of the season.",
+    "hub_this_month": "this month",
+    "at_peak_short": "{n} at peak",
+    "more_in_season": "{n} more in season",
+    "hub_when_no_peak": "{n} in season",
+    "open_fact_sheet": "Open fact sheet.",
+    "recipe_badge": "recipe",
+    "months_recipe": "{month}'s recipe",
+    "made_with": "Made with",
+    "cook_it_on": "Cook it on {name}",
+    "fact_in_season": "In season",
+    "fact_peak": "Peak",
+    "fact_edge": "On the edge",
+    "stored_notes": "Stored & type notes",
+    "regions": "Regions & notes",
+    "recipe": "Recipe",
+    "specialist_sources": "Source",
+    "no_in_season": "No in-season months on the calendar",
+    "no_peak": "",
+    "all_year": "all year",
+    "in_month": "{state} in {month}",
+    "state_labels": {
+      "peak": "Peak",
+      "in": "In season",
+      "edge": "On the edge",
+      "out": "Not in season"
+    },
+    "ring_key": {
+      "peak": "Peak",
+      "in": "In season",
+      "edge": "Edge",
+      "out": "Out"
+    },
+    "proper": {},
+    "hint": "Tap a month on the wheel, or use the ← → keys.",
+    "wheel_label": "Produce year-wheel. Pick a month.",
+    "months_nav": "Months",
+    "close_sheet": "Close fact sheet",
+    "season_label": "Season: {list}",
+    "mix_label": "In season by type: {list}",
+    "blurb": {
+      "counts": "{month} has {in} Sichuan crops in season.",
+      "fullest": "The fullest month on the wheel.",
+      "leanest": "The leanest stretch of the year.",
+      "filling": "The wheel is filling up: {n} more in season than in {prev}.",
+      "winding": "Winding down: {n} fewer in season than in {prev}.",
+      "same": "Much the same list as {prev}.",
+      "lead_fruit_one": "{lead} lead the peaks ({count} of {peak}), with 1 fruit at its best.",
+      "lead_fruit": "{lead} lead the peaks ({count} of {peak}), with {n} fruits at their best.",
+      "lead_none": "{lead} lead the peaks ({count} of {peak}); no fruit is at peak.",
+      "change_threshold": 8
+    }
+  },
+  "items": [
+    {
+      "item": "apple",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Yanyuan, Liangshan, Sichuan.",
+      "specialist_sources": [
+        "四川在线 凉山"
+      ]
+    },
+    {
+      "item": "apricot",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Dazhou, Sichuan.",
+      "specialist_sources": [
+        "四川在线·达州"
+      ]
+    },
+    {
+      "item": "Blood orange",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Sichuan.",
+      "specialist_sources": [
+        "四川在线"
+      ]
+    },
+    {
+      "item": "blueberry",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Sichuan.",
+      "specialist_sources": [
+        "四川在线"
+      ]
+    },
+    {
+      "item": "chestnut",
+      "category": "nut",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Dechang, Liangshan, Sichuan.",
+      "specialist_sources": [
+        "四川在线·凉山"
+      ]
+    },
+    {
+      "item": "Chinese cabbage",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Li County, Ngawa, Sichuan.",
+      "specialist_sources": [
+        "川观新闻"
+      ]
+    },
+    {
+      "item": "Chinese mallow",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Luzhou, Sichuan.",
+      "specialist_sources": [
+        "四川在线·泸州"
+      ]
+    },
+    {
+      "item": "Chinese yam",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Baoxing, Ya'an, Sichuan.",
+      "specialist_sources": [
+        "川观新闻"
+      ]
+    },
+    {
+      "item": "Chunjian mandarin",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Pujiang, Chengdu, Sichuan.",
+      "specialist_sources": [
+        "四川在线"
+      ]
+    },
+    {
+      "item": "Crisp plum",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Sichuan.",
+      "specialist_sources": [
+        "四川在线"
+      ]
+    },
+    {
+      "item": "cucumber",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Luzhou, Sichuan.",
+      "specialist_sources": [
+        "四川在线·泸州"
+      ]
+    },
+    {
+      "item": "Edamame",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Sichuan.",
+      "specialist_sources": [
+        "四川省农业农村厅"
+      ]
+    },
+    {
+      "item": "Erjingtiao chilli",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Shuangliu, Chengdu, Sichuan.",
+      "specialist_sources": [
+        "中国地理标志产品"
+      ]
+    },
+    {
+      "item": "Grape",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Dazhou, Sichuan.",
+      "specialist_sources": [
+        "四川在线·达州"
+      ]
+    },
+    {
+      "item": "Lemon",
+      "category": "fruit",
+      "months": [
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Anyue, Ziyang, Sichuan.",
+      "specialist_sources": [
+        "四川在线"
+      ]
+    },
+    {
+      "item": "Loquat",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Luzhou, Sichuan.",
+      "specialist_sources": [
+        "四川在线·泸州"
+      ]
+    },
+    {
+      "item": "mango",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Panzhihua, Sichuan.",
+      "specialist_sources": [
+        "四川在线"
+      ]
+    },
+    {
+      "item": "Matsutake",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Ganzi, Sichuan.",
+      "specialist_sources": [
+        "四川新闻网·甘孜"
+      ]
+    },
+    {
+      "item": "Morel",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Sichuan.",
+      "specialist_sources": [
+        "四川在线"
+      ]
+    },
+    {
+      "item": "Mulberry",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Chengdu area, Sichuan.",
+      "specialist_sources": [
+        "成都商报"
+      ]
+    },
+    {
+      "item": "Pea shoots",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Sichuan.",
+      "specialist_sources": [
+        "四川在线"
+      ]
+    },
+    {
+      "item": "peach",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Longquanyi, Chengdu.",
+      "specialist_sources": [
+        "腾讯新闻"
+      ]
+    },
+    {
+      "item": "pear",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Lizhou, Guangyuan, Sichuan.",
+      "specialist_sources": [
+        "四川在线"
+      ]
+    },
+    {
+      "item": "Persimmon",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Jiuzhaigou, Aba, Sichuan.",
+      "specialist_sources": [
+        "中国地理标志产品"
+      ]
+    },
+    {
+      "item": "Pomegranate",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Huili, Sichuan.",
+      "specialist_sources": [
+        "人民日报海外版"
+      ]
+    },
+    {
+      "item": "pomelo",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Hejiang, Luzhou, Sichuan.",
+      "specialist_sources": [
+        "四川在线"
+      ]
+    },
+    {
+      "item": "Pumpkin",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Sichuan.",
+      "specialist_sources": [
+        "川观新闻"
+      ]
+    },
+    {
+      "item": "Radish",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Sichuan.",
+      "specialist_sources": [
+        "川观新闻"
+      ]
+    },
+    {
+      "item": "Shiranui / dekopon",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Danling, Meishan, Sichuan.",
+      "specialist_sources": [
+        "Meishan local news"
+      ]
+    },
+    {
+      "item": "strawberry",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Chengdu area, Sichuan.",
+      "specialist_sources": [
+        "川观新闻"
+      ]
+    },
+    {
+      "item": "Sweet cherry",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Hanyuan, Ya'an, Sichuan.",
+      "specialist_sources": [
+        "雅安市人民政府"
+      ]
+    },
+    {
+      "item": "Sweet potato",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Sichuan.",
+      "specialist_sources": [
+        "四川省农业农村厅"
+      ]
+    },
+    {
+      "item": "sweetcorn",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Sichuan.",
+      "specialist_sources": [
+        "川观新闻"
+      ]
+    },
+    {
+      "item": "Water spinach",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Sichuan.",
+      "specialist_sources": [
+        "川观新闻"
+      ]
+    },
+    {
+      "item": "Watermelon",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Chengdu and surrounds, Sichuan.",
+      "specialist_sources": [
+        "川观新闻"
+      ]
+    }
+  ],
+  "recipes": [],
+  "months": [
+    {
+      "key": "jan",
+      "name": "January",
+      "counts": {
+        "peak": 0,
+        "in": 10,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "strawberry",
+        "Morel",
+        "Chunjian mandarin",
+        "Radish",
+        "Lemon",
+        "pomelo",
+        "Blood orange",
+        "Chinese mallow",
+        "Chinese yam",
+        "Pea shoots"
+      ],
+      "peak": [],
+      "in": [
+        "Blood orange",
+        "Chinese mallow",
+        "Chinese yam",
+        "Chunjian mandarin",
+        "Lemon",
+        "Morel",
+        "Pea shoots",
+        "pomelo",
+        "Radish",
+        "strawberry"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Morel"
+      ],
+      "farewells": [
+        "Lemon"
+      ],
+      "quiet": [
+        "Chunjian mandarin",
+        "Radish",
+        "Lemon",
+        "Chinese mallow",
+        "Chinese yam"
+      ],
+      "blurb": "January has <strong>10</strong> Sichuan crops in season. Much the same list as December."
+    },
+    {
+      "key": "feb",
+      "name": "February",
+      "counts": {
+        "peak": 0,
+        "in": 9,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "strawberry",
+        "Morel",
+        "Chunjian mandarin",
+        "Radish",
+        "pomelo",
+        "Blood orange",
+        "Chinese mallow",
+        "Chinese yam",
+        "Pea shoots"
+      ],
+      "peak": [],
+      "in": [
+        "Blood orange",
+        "Chinese mallow",
+        "Chinese yam",
+        "Chunjian mandarin",
+        "Morel",
+        "Pea shoots",
+        "pomelo",
+        "Radish",
+        "strawberry"
+      ],
+      "edge": [],
+      "arrivals": [],
+      "farewells": [
+        "pomelo",
+        "Radish"
+      ],
+      "quiet": [
+        "strawberry",
+        "Morel",
+        "Radish",
+        "pomelo",
+        "Blood orange"
+      ],
+      "blurb": "February has <strong>9</strong> Sichuan crops in season. Much the same list as January."
+    },
+    {
+      "key": "mar",
+      "name": "March",
+      "counts": {
+        "peak": 0,
+        "in": 9,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "strawberry",
+        "Morel",
+        "Shiranui / dekopon",
+        "Chunjian mandarin",
+        "Blood orange",
+        "Chinese mallow",
+        "Chinese yam",
+        "Pea shoots",
+        "Water spinach"
+      ],
+      "peak": [],
+      "in": [
+        "Blood orange",
+        "Chinese mallow",
+        "Chinese yam",
+        "Chunjian mandarin",
+        "Morel",
+        "Pea shoots",
+        "Shiranui / dekopon",
+        "strawberry",
+        "Water spinach"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Shiranui / dekopon",
+        "Water spinach"
+      ],
+      "farewells": [
+        "Chinese mallow",
+        "Chunjian mandarin",
+        "Morel",
+        "Pea shoots"
+      ],
+      "quiet": [
+        "Morel",
+        "Shiranui / dekopon",
+        "Chunjian mandarin",
+        "Blood orange",
+        "Chinese mallow"
+      ],
+      "blurb": "March has <strong>9</strong> Sichuan crops in season. Much the same list as February."
+    },
+    {
+      "key": "apr",
+      "name": "April",
+      "counts": {
+        "peak": 0,
+        "in": 8,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Watermelon",
+        "strawberry",
+        "Mulberry",
+        "Loquat",
+        "Shiranui / dekopon",
+        "Blood orange",
+        "Chinese yam",
+        "Water spinach"
+      ],
+      "peak": [],
+      "in": [
+        "Blood orange",
+        "Chinese yam",
+        "Loquat",
+        "Mulberry",
+        "Shiranui / dekopon",
+        "strawberry",
+        "Water spinach",
+        "Watermelon"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Loquat",
+        "Mulberry",
+        "Watermelon"
+      ],
+      "farewells": [
+        "Chinese yam",
+        "strawberry"
+      ],
+      "quiet": [
+        "Watermelon",
+        "strawberry",
+        "Mulberry",
+        "Loquat",
+        "Shiranui / dekopon"
+      ],
+      "blurb": "April has <strong>8</strong> Sichuan crops in season. The leanest stretch of the year."
+    },
+    {
+      "key": "may",
+      "name": "May",
+      "counts": {
+        "peak": 0,
+        "in": 11,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "blueberry",
+        "Watermelon",
+        "sweetcorn",
+        "Chinese cabbage",
+        "apricot",
+        "Mulberry",
+        "Loquat",
+        "Shiranui / dekopon",
+        "Sweet cherry",
+        "Blood orange",
+        "Water spinach"
+      ],
+      "peak": [],
+      "in": [
+        "apricot",
+        "Blood orange",
+        "blueberry",
+        "Chinese cabbage",
+        "Loquat",
+        "Mulberry",
+        "Shiranui / dekopon",
+        "Sweet cherry",
+        "sweetcorn",
+        "Water spinach",
+        "Watermelon"
+      ],
+      "edge": [],
+      "arrivals": [
+        "apricot",
+        "blueberry",
+        "Chinese cabbage",
+        "Sweet cherry"
+      ],
+      "farewells": [
+        "Blood orange",
+        "Mulberry",
+        "Shiranui / dekopon"
+      ],
+      "quiet": [
+        "blueberry",
+        "Watermelon",
+        "Chinese cabbage",
+        "apricot",
+        "Sweet cherry"
+      ],
+      "blurb": "May has <strong>11</strong> Sichuan crops in season. Much the same list as April."
+    },
+    {
+      "key": "jun",
+      "name": "June",
+      "counts": {
+        "peak": 0,
+        "in": 12,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "blueberry",
+        "peach",
+        "Watermelon",
+        "sweetcorn",
+        "Chinese cabbage",
+        "mango",
+        "apricot",
+        "Loquat",
+        "Sweet cherry",
+        "Edamame",
+        "Pumpkin",
+        "Water spinach"
+      ],
+      "peak": [],
+      "in": [
+        "apricot",
+        "blueberry",
+        "Chinese cabbage",
+        "Edamame",
+        "Loquat",
+        "mango",
+        "peach",
+        "Pumpkin",
+        "Sweet cherry",
+        "sweetcorn",
+        "Water spinach",
+        "Watermelon"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Edamame",
+        "mango",
+        "peach",
+        "Pumpkin"
+      ],
+      "farewells": [
+        "apricot",
+        "blueberry",
+        "Loquat"
+      ],
+      "quiet": [
+        "blueberry",
+        "peach",
+        "Chinese cabbage",
+        "apricot",
+        "Pumpkin"
+      ],
+      "blurb": "June has <strong>12</strong> Sichuan crops in season. Much the same list as May."
+    },
+    {
+      "key": "jul",
+      "name": "July",
+      "counts": {
+        "peak": 0,
+        "in": 17,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "pear",
+        "peach",
+        "Watermelon",
+        "apple",
+        "Grape",
+        "sweetcorn",
+        "Chinese cabbage",
+        "mango",
+        "Erjingtiao chilli",
+        "Crisp plum",
+        "Matsutake",
+        "Sweet cherry",
+        "Edamame",
+        "Pumpkin",
+        "Sweet potato"
+      ],
+      "peak": [],
+      "in": [
+        "apple",
+        "chestnut",
+        "Chinese cabbage",
+        "Crisp plum",
+        "Edamame",
+        "Erjingtiao chilli",
+        "Grape",
+        "mango",
+        "Matsutake",
+        "peach",
+        "pear",
+        "Pumpkin",
+        "Sweet cherry",
+        "Sweet potato",
+        "sweetcorn",
+        "Water spinach",
+        "Watermelon"
+      ],
+      "edge": [],
+      "arrivals": [
+        "apple",
+        "chestnut",
+        "Crisp plum",
+        "Erjingtiao chilli"
+      ],
+      "farewells": [
+        "Sweet cherry",
+        "Watermelon"
+      ],
+      "quiet": [
+        "pear",
+        "sweetcorn",
+        "Erjingtiao chilli",
+        "Crisp plum",
+        "chestnut"
+      ],
+      "blurb": "July has <strong>17</strong> Sichuan crops in season. The fullest month on the wheel."
+    },
+    {
+      "key": "aug",
+      "name": "August",
+      "counts": {
+        "peak": 0,
+        "in": 16,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "pear",
+        "peach",
+        "apple",
+        "Grape",
+        "sweetcorn",
+        "Chinese cabbage",
+        "mango",
+        "Erjingtiao chilli",
+        "Pomegranate",
+        "Crisp plum",
+        "Matsutake",
+        "Edamame",
+        "Pumpkin",
+        "Sweet potato",
+        "Water spinach"
+      ],
+      "peak": [],
+      "in": [
+        "apple",
+        "chestnut",
+        "Chinese cabbage",
+        "Crisp plum",
+        "Edamame",
+        "Erjingtiao chilli",
+        "Grape",
+        "mango",
+        "Matsutake",
+        "peach",
+        "pear",
+        "Pomegranate",
+        "Pumpkin",
+        "Sweet potato",
+        "sweetcorn",
+        "Water spinach"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Pomegranate"
+      ],
+      "farewells": [
+        "Erjingtiao chilli",
+        "peach",
+        "pear"
+      ],
+      "quiet": [
+        "pear",
+        "peach",
+        "Erjingtiao chilli",
+        "Pomegranate",
+        "Matsutake"
+      ],
+      "blurb": "August has <strong>16</strong> Sichuan crops in season. Much the same list as July."
+    },
+    {
+      "key": "sep",
+      "name": "September",
+      "counts": {
+        "peak": 0,
+        "in": 15,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "cucumber",
+        "apple",
+        "Grape",
+        "sweetcorn",
+        "Chinese cabbage",
+        "mango",
+        "Persimmon",
+        "Pomegranate",
+        "Crisp plum",
+        "Matsutake",
+        "Edamame",
+        "Pumpkin",
+        "Sweet potato",
+        "Water spinach",
+        "chestnut"
+      ],
+      "peak": [],
+      "in": [
+        "apple",
+        "chestnut",
+        "Chinese cabbage",
+        "Crisp plum",
+        "cucumber",
+        "Edamame",
+        "Grape",
+        "mango",
+        "Matsutake",
+        "Persimmon",
+        "Pomegranate",
+        "Pumpkin",
+        "Sweet potato",
+        "sweetcorn",
+        "Water spinach"
+      ],
+      "edge": [],
+      "arrivals": [
+        "cucumber",
+        "Persimmon"
+      ],
+      "farewells": [
+        "chestnut",
+        "Crisp plum",
+        "Matsutake",
+        "Pomegranate"
+      ],
+      "quiet": [
+        "apple",
+        "Grape",
+        "Persimmon",
+        "Pomegranate",
+        "Crisp plum"
+      ],
+      "blurb": "September has <strong>15</strong> Sichuan crops in season. Much the same list as August."
+    },
+    {
+      "key": "oct",
+      "name": "October",
+      "counts": {
+        "peak": 0,
+        "in": 15,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "cucumber",
+        "apple",
+        "Grape",
+        "sweetcorn",
+        "Chinese cabbage",
+        "mango",
+        "Persimmon",
+        "Lemon",
+        "Edamame",
+        "pomelo",
+        "Pumpkin",
+        "Sweet potato",
+        "Chinese mallow",
+        "Pea shoots",
+        "Water spinach"
+      ],
+      "peak": [],
+      "in": [
+        "apple",
+        "Chinese cabbage",
+        "Chinese mallow",
+        "cucumber",
+        "Edamame",
+        "Grape",
+        "Lemon",
+        "mango",
+        "Pea shoots",
+        "Persimmon",
+        "pomelo",
+        "Pumpkin",
+        "Sweet potato",
+        "sweetcorn",
+        "Water spinach"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Chinese mallow",
+        "Lemon",
+        "Pea shoots",
+        "pomelo"
+      ],
+      "farewells": [
+        "Edamame",
+        "Persimmon",
+        "Pumpkin",
+        "sweetcorn"
+      ],
+      "quiet": [
+        "cucumber",
+        "Grape",
+        "sweetcorn",
+        "Persimmon",
+        "Edamame"
+      ],
+      "blurb": "October has <strong>15</strong> Sichuan crops in season. Much the same list as September."
+    },
+    {
+      "key": "nov",
+      "name": "November",
+      "counts": {
+        "peak": 0,
+        "in": 14,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "cucumber",
+        "apple",
+        "Grape",
+        "strawberry",
+        "Chinese cabbage",
+        "mango",
+        "Lemon",
+        "Radish",
+        "pomelo",
+        "Sweet potato",
+        "Chinese mallow",
+        "Chinese yam",
+        "Pea shoots",
+        "Water spinach"
+      ],
+      "peak": [],
+      "in": [
+        "apple",
+        "Chinese cabbage",
+        "Chinese mallow",
+        "Chinese yam",
+        "cucumber",
+        "Grape",
+        "Lemon",
+        "mango",
+        "Pea shoots",
+        "pomelo",
+        "Radish",
+        "strawberry",
+        "Sweet potato",
+        "Water spinach"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Chinese yam",
+        "Radish",
+        "strawberry"
+      ],
+      "farewells": [
+        "apple",
+        "Chinese cabbage",
+        "cucumber",
+        "Grape"
+      ],
+      "quiet": [
+        "cucumber",
+        "apple",
+        "mango",
+        "Sweet potato",
+        "Water spinach"
+      ],
+      "blurb": "November has <strong>14</strong> Sichuan crops in season. Much the same list as October."
+    },
+    {
+      "key": "dec",
+      "name": "December",
+      "counts": {
+        "peak": 0,
+        "in": 10,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "strawberry",
+        "mango",
+        "Chunjian mandarin",
+        "Radish",
+        "Lemon",
+        "pomelo",
+        "Blood orange",
+        "Chinese mallow",
+        "Chinese yam",
+        "Pea shoots"
+      ],
+      "peak": [],
+      "in": [
+        "Blood orange",
+        "Chinese mallow",
+        "Chinese yam",
+        "Chunjian mandarin",
+        "Lemon",
+        "mango",
+        "Pea shoots",
+        "pomelo",
+        "Radish",
+        "strawberry"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Blood orange",
+        "Chunjian mandarin"
+      ],
+      "farewells": [
+        "mango"
+      ],
+      "quiet": [
+        "mango",
+        "Lemon",
+        "pomelo",
+        "Chinese yam",
+        "Pea shoots"
+      ],
+      "blurb": "December has <strong>10</strong> Sichuan crops in season. Much the same list as November."
+    }
+  ]
+}

@@ -1,0 +1,1546 @@
+{
+  "id": "xj",
+  "name": "Xinjiang",
+  "locale": "en",
+  "timezone": "Asia/Urumqi",
+  "title": "The Xinjiang Year-Wheel",
+  "tagline": "What's growing in Xinjiang, month by month.",
+  "month_names": [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ],
+  "seasons": [
+    "Winter",
+    "Winter",
+    "Spring",
+    "Spring",
+    "Spring",
+    "Summer",
+    "Summer",
+    "Summer",
+    "Autumn",
+    "Autumn",
+    "Autumn",
+    "Winter"
+  ],
+  "categories": [
+    {
+      "id": "vegetable",
+      "label": "Vegetable",
+      "one": "vegetable",
+      "plural": "vegetables"
+    },
+    {
+      "id": "fruit",
+      "label": "Fruit",
+      "one": "fruit",
+      "plural": "fruit"
+    },
+    {
+      "id": "herb",
+      "label": "Herb",
+      "one": "herb",
+      "plural": "herbs"
+    }
+  ],
+  "attribution": "Xinjiang harvest months from 中新网·新疆 and 天山网.",
+  "copy": {
+    "this_month": "This month",
+    "back_to": "Back to {month}",
+    "new_in": "New in",
+    "last_call": "Last call",
+    "at_peak": "At peak",
+    "also_in_season": "In season",
+    "on_the_edge": "On the edge",
+    "edge_why": "Edge of the season.",
+    "hub_this_month": "this month",
+    "at_peak_short": "{n} at peak",
+    "more_in_season": "{n} more in season",
+    "hub_when_no_peak": "{n} in season",
+    "open_fact_sheet": "Open fact sheet.",
+    "recipe_badge": "recipe",
+    "months_recipe": "{month}'s recipe",
+    "made_with": "Made with",
+    "cook_it_on": "Cook it on {name}",
+    "fact_in_season": "In season",
+    "fact_peak": "Peak",
+    "fact_edge": "On the edge",
+    "stored_notes": "Stored & type notes",
+    "regions": "Regions & notes",
+    "recipe": "Recipe",
+    "specialist_sources": "Source",
+    "no_in_season": "No in-season months on the calendar",
+    "no_peak": "",
+    "all_year": "all year",
+    "in_month": "{state} in {month}",
+    "state_labels": {
+      "peak": "Peak",
+      "in": "In season",
+      "edge": "On the edge",
+      "out": "Not in season"
+    },
+    "ring_key": {
+      "peak": "Peak",
+      "in": "In season",
+      "edge": "Edge",
+      "out": "Out"
+    },
+    "proper": {},
+    "hint": "Tap a month on the wheel, or use the ← → keys.",
+    "wheel_label": "Produce year-wheel. Pick a month.",
+    "months_nav": "Months",
+    "close_sheet": "Close fact sheet",
+    "season_label": "Season: {list}",
+    "mix_label": "In season by type: {list}",
+    "blurb": {
+      "counts": "{month} has {in} Xinjiang crops in season.",
+      "fullest": "The fullest month on the wheel.",
+      "leanest": "The leanest stretch of the year.",
+      "filling": "The wheel is filling up: {n} more in season than in {prev}.",
+      "winding": "Winding down: {n} fewer in season than in {prev}.",
+      "same": "Much the same list as {prev}.",
+      "lead_fruit_one": "{lead} lead the peaks ({count} of {peak}), with 1 fruit at its best.",
+      "lead_fruit": "{lead} lead the peaks ({count} of {peak}), with {n} fruits at their best.",
+      "lead_none": "{lead} lead the peaks ({count} of {peak}); no fruit is at peak.",
+      "change_threshold": 8
+    }
+  },
+  "items": [
+    {
+      "item": "apple",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Aksu, Xinjiang.",
+      "specialist_sources": [
+        "新疆日报"
+      ]
+    },
+    {
+      "item": "apricot",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Turpan, Xinjiang.",
+      "specialist_sources": [
+        "天山网"
+      ]
+    },
+    {
+      "item": "blackcurrant",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Quanzijie town, Jimsar, Changji, Xinjiang.",
+      "specialist_sources": [
+        "中新网·新疆"
+      ]
+    },
+    {
+      "item": "blueberry",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Jiashi, Kashgar, Xinjiang.",
+      "specialist_sources": [
+        "天山网"
+      ]
+    },
+    {
+      "item": "Carrot",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Tekes, Ili, Xinjiang.",
+      "specialist_sources": [
+        "中新网·新疆"
+      ]
+    },
+    {
+      "item": "cherry",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Upal, Shufu County, Kashgar, Xinjiang.",
+      "specialist_sources": [
+        "中新网新疆"
+      ]
+    },
+    {
+      "item": "chillies",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Yanqi County, Bayingolin, Xinjiang.",
+      "specialist_sources": [
+        "焉耆回族自治县人民政府"
+      ]
+    },
+    {
+      "item": "Chinese cabbage",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Yanqi, Bayingolin, Xinjiang.",
+      "specialist_sources": [
+        "新华网 新疆"
+      ]
+    },
+    {
+      "item": "Chinese chives",
+      "category": "herb",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Urumqi, Xinjiang.",
+      "specialist_sources": [
+        "天山网"
+      ]
+    },
+    {
+      "item": "Cowpea / yard-long bean",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Wushi and Zepu, Xinjiang.",
+      "specialist_sources": [
+        "中新网·新疆"
+      ]
+    },
+    {
+      "item": "crab apple",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Changji Prefecture, Xinjiang.",
+      "specialist_sources": [
+        "昌吉州林草局"
+      ]
+    },
+    {
+      "item": "cucumber",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Urumqi, Xinjiang.",
+      "specialist_sources": [
+        "天山网"
+      ]
+    },
+    {
+      "item": "European plum",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Jiashi, Kashgar, Xinjiang.",
+      "specialist_sources": [
+        "中新网新疆"
+      ]
+    },
+    {
+      "item": "fig",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Xinjiang.",
+      "specialist_sources": [
+        "中新网新疆"
+      ]
+    },
+    {
+      "item": "garlic",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Jimsar, Changji, Xinjiang.",
+      "specialist_sources": [
+        "中国天气网 新疆"
+      ]
+    },
+    {
+      "item": "Goji",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Xinjiang.",
+      "specialist_sources": [
+        "新疆维吾尔自治区林业和草原局"
+      ]
+    },
+    {
+      "item": "Grape",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Turpan, Xinjiang.",
+      "specialist_sources": [
+        "乌鲁木齐本地宝"
+      ]
+    },
+    {
+      "item": "Hami melon",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Turpan, Xinjiang.",
+      "specialist_sources": [
+        "人民网 新疆"
+      ]
+    },
+    {
+      "item": "Jiashi melon",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Jiashi, Kashgar, Xinjiang.",
+      "specialist_sources": [
+        "中国网"
+      ]
+    },
+    {
+      "item": "Jujube",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Lop County, Hotan, Xinjiang.",
+      "specialist_sources": [
+        "中新网新疆"
+      ]
+    },
+    {
+      "item": "Kidney bean",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Altay City and Fuyun, Xinjiang.",
+      "specialist_sources": [
+        "天山网"
+      ]
+    },
+    {
+      "item": "Kuqa white apricot",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Kuqa, Aksu, Xinjiang.",
+      "specialist_sources": [
+        "阿拉尔新闻网"
+      ]
+    },
+    {
+      "item": "Morel",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Shawan, Tacheng Prefecture, Xinjiang.",
+      "specialist_sources": [
+        "中新网·新疆"
+      ]
+    },
+    {
+      "item": "Mulberry",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Xinjiang.",
+      "specialist_sources": [
+        "天山网"
+      ]
+    },
+    {
+      "item": "Oleaster / Russian olive",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Southern Xinjiang, Turpan-Hami basin, north Tianshan, Xinjiang.",
+      "specialist_sources": [
+        "新疆维吾尔自治区市场监督管理局 DB65/T 4727—2023"
+      ]
+    },
+    {
+      "item": "Onion",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Yecheng, Kashgar, Xinjiang.",
+      "specialist_sources": [
+        "中新网·新疆"
+      ]
+    },
+    {
+      "item": "peach",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Weibei peach orchard, Xinjiang.",
+      "specialist_sources": [
+        "中新网新疆"
+      ]
+    },
+    {
+      "item": "pear",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Korla, Bayingolin, Xinjiang.",
+      "specialist_sources": [
+        "库尔勒市人民政府"
+      ]
+    },
+    {
+      "item": "Pomegranate",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Hotan Prefecture, Xinjiang.",
+      "specialist_sources": [
+        "中国青年报客户端"
+      ]
+    },
+    {
+      "item": "Potato",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Barkol, Hami, Xinjiang.",
+      "specialist_sources": [
+        "中新网·新疆"
+      ]
+    },
+    {
+      "item": "Pumpkin",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Fuhai, Altay, Xinjiang.",
+      "specialist_sources": [
+        "中新网·新疆"
+      ]
+    },
+    {
+      "item": "raspberry",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Beitun, XPCC 10th Division, Xinjiang.",
+      "specialist_sources": [
+        "中新网·兵团"
+      ]
+    },
+    {
+      "item": "Sea buckthorn",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Habahe, Altay, Xinjiang.",
+      "specialist_sources": [
+        "阿勒泰地区行政公署"
+      ]
+    },
+    {
+      "item": "Small white apricot",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Luntai, Bayingolin, Xinjiang.",
+      "specialist_sources": [
+        "lookxj"
+      ]
+    },
+    {
+      "item": "Tomato",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Changji city, Xinjiang.",
+      "specialist_sources": [
+        "昌吉市人民政府"
+      ]
+    },
+    {
+      "item": "Turnip",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Kalpin, Aksu, Xinjiang.",
+      "specialist_sources": [
+        "百度百科"
+      ]
+    },
+    {
+      "item": "Watermelon",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Turpan, Xinjiang.",
+      "specialist_sources": [
+        "天山网"
+      ]
+    },
+    {
+      "item": "White radish",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Baicheng, Aksu, Xinjiang.",
+      "specialist_sources": [
+        "天山网"
+      ]
+    },
+    {
+      "item": "wild mushrooms",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Xinjiang.",
+      "specialist_sources": [
+        "中新网·新疆"
+      ]
+    }
+  ],
+  "recipes": [],
+  "months": [
+    {
+      "key": "jan",
+      "name": "January",
+      "counts": {
+        "peak": 0,
+        "in": 0,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [],
+      "peak": [],
+      "in": [],
+      "edge": [],
+      "arrivals": [],
+      "farewells": [],
+      "quiet": [],
+      "blurb": "January has <strong>0</strong> Xinjiang crops in season. The leanest stretch of the year."
+    },
+    {
+      "key": "feb",
+      "name": "February",
+      "counts": {
+        "peak": 0,
+        "in": 0,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [],
+      "peak": [],
+      "in": [],
+      "edge": [],
+      "arrivals": [],
+      "farewells": [],
+      "quiet": [],
+      "blurb": "February has <strong>0</strong> Xinjiang crops in season. The leanest stretch of the year."
+    },
+    {
+      "key": "mar",
+      "name": "March",
+      "counts": {
+        "peak": 0,
+        "in": 1,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "blueberry"
+      ],
+      "peak": [],
+      "in": [
+        "blueberry"
+      ],
+      "edge": [],
+      "arrivals": [
+        "blueberry"
+      ],
+      "farewells": [],
+      "quiet": [
+        "blueberry"
+      ],
+      "blurb": "March has <strong>1</strong> Xinjiang crops in season. Much the same list as February."
+    },
+    {
+      "key": "apr",
+      "name": "April",
+      "counts": {
+        "peak": 0,
+        "in": 4,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "blueberry",
+        "Morel",
+        "wild mushrooms",
+        "Chinese chives"
+      ],
+      "peak": [],
+      "in": [
+        "blueberry",
+        "Chinese chives",
+        "Morel",
+        "wild mushrooms"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Chinese chives",
+        "Morel",
+        "wild mushrooms"
+      ],
+      "farewells": [
+        "blueberry"
+      ],
+      "quiet": [
+        "blueberry",
+        "Morel",
+        "wild mushrooms",
+        "Chinese chives"
+      ],
+      "blurb": "April has <strong>4</strong> Xinjiang crops in season. Much the same list as March."
+    },
+    {
+      "key": "may",
+      "name": "May",
+      "counts": {
+        "peak": 0,
+        "in": 10,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "cucumber",
+        "Watermelon",
+        "cherry",
+        "apricot",
+        "Morel",
+        "Kuqa white apricot",
+        "Mulberry",
+        "Small white apricot",
+        "Hami melon",
+        "wild mushrooms"
+      ],
+      "peak": [],
+      "in": [
+        "apricot",
+        "cherry",
+        "cucumber",
+        "Hami melon",
+        "Kuqa white apricot",
+        "Morel",
+        "Mulberry",
+        "Small white apricot",
+        "Watermelon",
+        "wild mushrooms"
+      ],
+      "edge": [],
+      "arrivals": [
+        "apricot",
+        "cherry",
+        "cucumber",
+        "Hami melon"
+      ],
+      "farewells": [
+        "Morel"
+      ],
+      "quiet": [
+        "cucumber",
+        "cherry",
+        "apricot",
+        "Mulberry",
+        "Hami melon"
+      ],
+      "blurb": "May has <strong>10</strong> Xinjiang crops in season. Much the same list as April."
+    },
+    {
+      "key": "jun",
+      "name": "June",
+      "counts": {
+        "peak": 0,
+        "in": 11,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Watermelon",
+        "cherry",
+        "peach",
+        "apricot",
+        "Kuqa white apricot",
+        "Mulberry",
+        "Small white apricot",
+        "Goji",
+        "raspberry",
+        "Hami melon",
+        "wild mushrooms"
+      ],
+      "peak": [],
+      "in": [
+        "apricot",
+        "cherry",
+        "Goji",
+        "Hami melon",
+        "Kuqa white apricot",
+        "Mulberry",
+        "peach",
+        "raspberry",
+        "Small white apricot",
+        "Watermelon",
+        "wild mushrooms"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Goji",
+        "peach",
+        "raspberry"
+      ],
+      "farewells": [
+        "apricot",
+        "Kuqa white apricot",
+        "Mulberry",
+        "Watermelon"
+      ],
+      "quiet": [
+        "Watermelon",
+        "peach",
+        "Kuqa white apricot",
+        "Small white apricot",
+        "Goji"
+      ],
+      "blurb": "June has <strong>11</strong> Xinjiang crops in season. Much the same list as May."
+    },
+    {
+      "key": "jul",
+      "name": "July",
+      "counts": {
+        "peak": 0,
+        "in": 13,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Onion",
+        "cherry",
+        "Grape",
+        "peach",
+        "blackcurrant",
+        "Cowpea / yard-long bean",
+        "Jiashi melon",
+        "Small white apricot",
+        "fig",
+        "Goji",
+        "raspberry",
+        "Hami melon",
+        "wild mushrooms"
+      ],
+      "peak": [],
+      "in": [
+        "blackcurrant",
+        "cherry",
+        "Cowpea / yard-long bean",
+        "fig",
+        "Goji",
+        "Grape",
+        "Hami melon",
+        "Jiashi melon",
+        "Onion",
+        "peach",
+        "raspberry",
+        "Small white apricot",
+        "wild mushrooms"
+      ],
+      "edge": [],
+      "arrivals": [
+        "blackcurrant",
+        "Cowpea / yard-long bean",
+        "fig",
+        "Grape"
+      ],
+      "farewells": [
+        "cherry",
+        "Goji",
+        "Small white apricot"
+      ],
+      "quiet": [
+        "Onion",
+        "blackcurrant",
+        "Jiashi melon",
+        "fig",
+        "raspberry"
+      ],
+      "blurb": "July has <strong>13</strong> Xinjiang crops in season. Much the same list as June."
+    },
+    {
+      "key": "aug",
+      "name": "August",
+      "counts": {
+        "peak": 0,
+        "in": 12,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Tomato",
+        "Grape",
+        "peach",
+        "blackcurrant",
+        "Cowpea / yard-long bean",
+        "crab apple",
+        "European plum",
+        "Jiashi melon",
+        "fig",
+        "raspberry",
+        "Hami melon",
+        "wild mushrooms"
+      ],
+      "peak": [],
+      "in": [
+        "blackcurrant",
+        "Cowpea / yard-long bean",
+        "crab apple",
+        "European plum",
+        "fig",
+        "Grape",
+        "Hami melon",
+        "Jiashi melon",
+        "peach",
+        "raspberry",
+        "Tomato",
+        "wild mushrooms"
+      ],
+      "edge": [],
+      "arrivals": [
+        "crab apple",
+        "European plum",
+        "Tomato"
+      ],
+      "farewells": [
+        "blackcurrant",
+        "Cowpea / yard-long bean",
+        "Jiashi melon"
+      ],
+      "quiet": [
+        "Tomato",
+        "Grape",
+        "Cowpea / yard-long bean",
+        "crab apple",
+        "European plum"
+      ],
+      "blurb": "August has <strong>12</strong> Xinjiang crops in season. Much the same list as July."
+    },
+    {
+      "key": "sep",
+      "name": "September",
+      "counts": {
+        "peak": 0,
+        "in": 18,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Chinese cabbage",
+        "garlic",
+        "Potato",
+        "chillies",
+        "pear",
+        "Tomato",
+        "Grape",
+        "peach",
+        "Kidney bean",
+        "Sea buckthorn",
+        "crab apple",
+        "European plum",
+        "Oleaster / Russian olive",
+        "fig",
+        "Goji"
+      ],
+      "peak": [],
+      "in": [
+        "chillies",
+        "Chinese cabbage",
+        "crab apple",
+        "European plum",
+        "fig",
+        "garlic",
+        "Goji",
+        "Grape",
+        "Hami melon",
+        "Kidney bean",
+        "Oleaster / Russian olive",
+        "peach",
+        "pear",
+        "Potato",
+        "raspberry",
+        "Sea buckthorn",
+        "Tomato",
+        "wild mushrooms"
+      ],
+      "edge": [],
+      "arrivals": [
+        "chillies",
+        "Chinese cabbage",
+        "garlic",
+        "Goji"
+      ],
+      "farewells": [
+        "crab apple",
+        "European plum",
+        "peach"
+      ],
+      "quiet": [
+        "Chinese cabbage",
+        "garlic",
+        "Potato",
+        "Kidney bean",
+        "Sea buckthorn"
+      ],
+      "blurb": "September has <strong>18</strong> Xinjiang crops in season. The fullest month on the wheel."
+    },
+    {
+      "key": "oct",
+      "name": "October",
+      "counts": {
+        "peak": 0,
+        "in": 16,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Carrot",
+        "apple",
+        "chillies",
+        "pear",
+        "Tomato",
+        "Grape",
+        "Pomegranate",
+        "Pumpkin",
+        "Jujube",
+        "White radish",
+        "Oleaster / Russian olive",
+        "fig",
+        "Goji",
+        "raspberry",
+        "Hami melon"
+      ],
+      "peak": [],
+      "in": [
+        "apple",
+        "Carrot",
+        "chillies",
+        "fig",
+        "Goji",
+        "Grape",
+        "Hami melon",
+        "Jujube",
+        "Oleaster / Russian olive",
+        "pear",
+        "Pomegranate",
+        "Pumpkin",
+        "raspberry",
+        "Tomato",
+        "White radish",
+        "wild mushrooms"
+      ],
+      "edge": [],
+      "arrivals": [
+        "apple",
+        "Carrot",
+        "Jujube",
+        "Pomegranate"
+      ],
+      "farewells": [
+        "chillies",
+        "fig",
+        "Goji",
+        "Grape"
+      ],
+      "quiet": [
+        "Carrot",
+        "chillies",
+        "pear",
+        "Pomegranate",
+        "Pumpkin"
+      ],
+      "blurb": "October has <strong>16</strong> Xinjiang crops in season. Much the same list as September."
+    },
+    {
+      "key": "nov",
+      "name": "November",
+      "counts": {
+        "peak": 0,
+        "in": 5,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "apple",
+        "Turnip",
+        "Jujube",
+        "White radish",
+        "Oleaster / Russian olive"
+      ],
+      "peak": [],
+      "in": [
+        "apple",
+        "Jujube",
+        "Oleaster / Russian olive",
+        "Turnip",
+        "White radish"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Turnip"
+      ],
+      "farewells": [
+        "apple",
+        "Jujube",
+        "Oleaster / Russian olive",
+        "White radish"
+      ],
+      "quiet": [
+        "apple",
+        "Turnip",
+        "Jujube",
+        "White radish",
+        "Oleaster / Russian olive"
+      ],
+      "blurb": "November has <strong>5</strong> Xinjiang crops in season. Winding down: 11 fewer in season than in October."
+    },
+    {
+      "key": "dec",
+      "name": "December",
+      "counts": {
+        "peak": 0,
+        "in": 0,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [],
+      "peak": [],
+      "in": [],
+      "edge": [],
+      "arrivals": [],
+      "farewells": [],
+      "quiet": [],
+      "blurb": "December has <strong>0</strong> Xinjiang crops in season. The leanest stretch of the year."
+    }
+  ]
+}
