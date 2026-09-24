@@ -1,0 +1,62 @@
+{
+  "id": "fl",
+  "name": "Florida",
+  "locale": "en-US",
+  "timezone": "America/New_York",
+  "title": "The Florida Year-Wheel",
+  "tagline": "What's growing in Florida, month by month.",
+  "month_names": [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ],
+  "seasons": [
+    "Winter",
+    "Winter",
+    "Spring",
+    "Spring",
+    "Spring",
+    "Summer",
+    "Summer",
+    "Summer",
+    "Autumn",
+    "Autumn",
+    "Autumn",
+    "Winter"
+  ],
+  "categories": [
+    {
+      "id": "vegetable",
+      "label": "Vegetable",
+      "one": "vegetable",
+      "plural": "vegetables",
+      "everyday": true
+    },
+    {
+      "id": "fruit",
+      "label": "Fruit",
+      "one": "fruit",
+      "plural": "fruit",
+      "everyday": true
+    }
+  ],
+  "state_roles": {
+    "I": "in",
+    ".": "out"
+  },
+  "sticker_exclude": [],
+  "attribution": "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar.",
+  "alias_profile": "none",
+  "recipe_rule": "optional",
+  "expect_items": 33,
+  "require_peak_every_month": false
+}

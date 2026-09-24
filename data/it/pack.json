@@ -1,0 +1,76 @@
+{
+  "id": "it",
+  "name": "Italy",
+  "locale": "it-IT",
+  "timezone": "Europe/Rome",
+  "title": "La ruota dell'anno in Italia",
+  "tagline": "Quello che cresce in Italia, mese per mese.",
+  "month_names": [
+    "Gennaio",
+    "Febbraio",
+    "Marzo",
+    "Aprile",
+    "Maggio",
+    "Giugno",
+    "Luglio",
+    "Agosto",
+    "Settembre",
+    "Ottobre",
+    "Novembre",
+    "Dicembre"
+  ],
+  "month_short": [
+    "gen",
+    "feb",
+    "mar",
+    "apr",
+    "mag",
+    "giu",
+    "lug",
+    "ago",
+    "set",
+    "ott",
+    "nov",
+    "dic"
+  ],
+  "seasons": [
+    "Inverno",
+    "Inverno",
+    "Primavera",
+    "Primavera",
+    "Primavera",
+    "Estate",
+    "Estate",
+    "Estate",
+    "Autunno",
+    "Autunno",
+    "Autunno",
+    "Inverno"
+  ],
+  "categories": [
+    {
+      "id": "vegetable",
+      "label": "Verdura",
+      "one": "verdura",
+      "plural": "verdure",
+      "everyday": true
+    },
+    {
+      "id": "fruit",
+      "label": "Frutta",
+      "one": "frutta",
+      "plural": "frutta",
+      "everyday": true
+    }
+  ],
+  "state_roles": {
+    "I": "in",
+    ".": "out"
+  },
+  "sticker_exclude": [],
+  "attribution": "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura, pubblicato da AULSS 9 Scaligera.",
+  "alias_profile": "none",
+  "recipe_rule": "optional",
+  "expect_items": 50,
+  "require_peak_every_month": false
+}

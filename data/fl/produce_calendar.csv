@@ -1,0 +1,34 @@
+item,category,jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec,peak_months,stored_notes,regions_notes,specialist_sources,source_label,source_group
+Avocado,fruit,I,I,.,.,.,I,I,I,I,I,I,I,,,,"Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar",Avocado,fruit
+Bell Pepper,vegetable,I,I,I,I,I,I,.,.,.,I,I,I,,,,"Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar",Bell Pepper,vegetable
+blackberry,fruit,.,.,.,I,I,I,I,.,.,.,.,.,,,,"Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar",Blackberry,fruit
+blueberry,fruit,.,.,I,I,I,.,.,.,.,.,.,.,,,,"Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar",Blueberry,fruit
+broccoli,vegetable,I,I,I,I,.,.,.,.,.,.,.,I,,,,"Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar",Broccoli,vegetable
+cabbage,vegetable,I,I,I,I,I,.,.,.,.,.,.,I,,,,"Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar",Cabbage,vegetable
+Cantaloupe,fruit,.,.,I,I,I,I,I,.,.,.,.,.,,,,"Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar",Cantaloupe,fruit
+Carrot,vegetable,I,I,I,I,I,I,.,.,.,.,I,I,,,,"Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar",Carrot,vegetable
+cauliflower,vegetable,I,I,I,.,.,.,.,.,.,.,.,.,,,,"Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar",Cauliflower,vegetable
+celery,vegetable,I,I,I,I,I,.,.,.,.,.,.,I,,,,"Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar",Celery,vegetable
+Cilantro,vegetable,I,I,I,I,I,.,.,.,.,.,I,I,,,,"Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar",Cilantro,vegetable
+Collard Greens,vegetable,I,I,I,I,.,.,.,.,.,.,.,I,,,,"Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar",Collard Greens,vegetable
+cucumber,vegetable,I,I,I,I,I,I,.,.,.,I,I,I,,,,"Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar",Cucumber,vegetable
+Eggplant,vegetable,I,I,I,I,I,I,.,.,.,I,I,I,,,,"Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar",Eggplant,vegetable
+Endive,vegetable,I,I,I,I,.,.,.,.,.,.,I,I,,,,"Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar",Endive,vegetable
+Escarole,vegetable,I,I,I,I,.,.,.,.,.,.,I,I,,,,"Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar",Escarole,vegetable
+Grapefruit,fruit,I,I,I,I,I,.,.,.,.,I,I,I,,,,"Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar",Grapefruit,fruit
+Lettuce,vegetable,I,I,I,I,.,.,.,.,.,.,I,I,,,,"Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar",Lettuce,vegetable
+mango,fruit,.,.,.,.,I,I,I,I,I,.,.,.,,,,"Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar",Mango,fruit
+Mushroom,vegetable,I,I,I,I,I,I,I,I,I,I,I,I,,,,"Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar",Mushroom,vegetable
+Orange,fruit,I,I,I,I,I,I,.,.,I,I,I,I,,,,"Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar",Orange,fruit
+peach,fruit,.,.,.,I,I,.,.,.,.,.,.,.,,,,"Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar",Peach,fruit
+Pineberry,fruit,I,I,I,I,.,.,.,.,.,.,.,I,,,,"Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar",Pineberry,fruit
+Potato,vegetable,.,I,I,I,I,I,.,.,.,.,.,.,,,,"Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar",Potato,vegetable
+Radish,vegetable,I,I,I,I,I,.,.,.,.,.,I,I,,,,"Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar",Radish,vegetable
+Snap Beans,vegetable,I,I,I,I,I,I,.,.,.,I,I,I,,,,"Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar",Snap Beans,vegetable
+spinach,vegetable,I,I,I,I,.,.,.,.,.,.,I,I,,,,"Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar",Spinach,vegetable
+Squash,vegetable,I,I,I,I,I,I,.,.,.,I,I,I,,,,"Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar",Squash,vegetable
+strawberry,fruit,I,I,I,I,.,.,.,.,.,.,.,I,,,,"Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar",Strawberry,fruit
+Sweet Corn,vegetable,I,I,I,I,I,.,.,.,.,.,I,I,,,,"Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar",Sweet Corn,vegetable
+Tangerine,fruit,I,I,I,I,.,.,.,.,I,I,I,I,,,,"Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar",Tangerine,fruit
+Tomato,vegetable,I,I,I,I,I,I,.,.,.,I,I,I,,,,"Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar",Tomato,vegetable
+Watermelon,fruit,.,.,I,I,I,I,I,.,.,I,I,I,,,,"Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar",Watermelon,fruit

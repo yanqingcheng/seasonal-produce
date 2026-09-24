@@ -1,0 +1,1613 @@
+{
+  "id": "fl",
+  "name": "Florida",
+  "locale": "en-US",
+  "timezone": "America/New_York",
+  "title": "The Florida Year-Wheel",
+  "tagline": "What's growing in Florida, month by month.",
+  "month_names": [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ],
+  "seasons": [
+    "Winter",
+    "Winter",
+    "Spring",
+    "Spring",
+    "Spring",
+    "Summer",
+    "Summer",
+    "Summer",
+    "Autumn",
+    "Autumn",
+    "Autumn",
+    "Winter"
+  ],
+  "categories": [
+    {
+      "id": "vegetable",
+      "label": "Vegetable",
+      "one": "vegetable",
+      "plural": "vegetables"
+    },
+    {
+      "id": "fruit",
+      "label": "Fruit",
+      "one": "fruit",
+      "plural": "fruit"
+    }
+  ],
+  "attribution": "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar.",
+  "copy": {
+    "this_month": "This month",
+    "back_to": "Back to {month}",
+    "new_in": "New in",
+    "last_call": "Last call",
+    "at_peak": "At peak",
+    "also_in_season": "In season",
+    "on_the_edge": "On the edge",
+    "edge_why": "Edge of the season.",
+    "hub_this_month": "this month",
+    "at_peak_short": "{n} at peak",
+    "more_in_season": "{n} more in season",
+    "hub_when_no_peak": "{n} in season",
+    "open_fact_sheet": "Open fact sheet.",
+    "recipe_badge": "recipe",
+    "months_recipe": "{month}'s recipe",
+    "made_with": "Made with",
+    "cook_it_on": "Cook it on {name}",
+    "fact_in_season": "In season",
+    "fact_peak": "Peak",
+    "fact_edge": "On the edge",
+    "stored_notes": "Stored & type notes",
+    "regions": "Regions & notes",
+    "recipe": "Recipe",
+    "specialist_sources": "Source",
+    "no_in_season": "No in-season months on the calendar",
+    "no_peak": "",
+    "all_year": "all year",
+    "in_month": "{state} in {month}",
+    "state_labels": {
+      "peak": "Peak",
+      "in": "In season",
+      "edge": "On the edge",
+      "out": "Not in season"
+    },
+    "ring_key": {
+      "peak": "Peak",
+      "in": "In season",
+      "edge": "Edge",
+      "out": "Out"
+    },
+    "proper": {},
+    "hint": "Tap a month on the wheel, or use the ← → keys.",
+    "wheel_label": "Produce year-wheel. Pick a month.",
+    "months_nav": "Months",
+    "close_sheet": "Close fact sheet",
+    "season_label": "Season: {list}",
+    "mix_label": "In season by type: {list}",
+    "blurb": {
+      "counts": "{month} has {in} Florida crops in season.",
+      "fullest": "The fullest month on the wheel.",
+      "leanest": "The leanest stretch of the year.",
+      "filling": "The wheel is filling up: {n} more in season than in {prev}.",
+      "winding": "Winding down: {n} fewer in season than in {prev}.",
+      "same": "Much the same list as {prev}.",
+      "lead_fruit_one": "{lead} lead the peaks ({count} of {peak}), with 1 fruit at its best.",
+      "lead_fruit": "{lead} lead the peaks ({count} of {peak}), with {n} fruits at their best.",
+      "lead_none": "{lead} lead the peaks ({count} of {peak}); no fruit is at peak.",
+      "change_threshold": 8
+    }
+  },
+  "items": [
+    {
+      "item": "Avocado",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar"
+      ]
+    },
+    {
+      "item": "Bell Pepper",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar"
+      ]
+    },
+    {
+      "item": "blackberry",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar"
+      ]
+    },
+    {
+      "item": "blueberry",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar"
+      ]
+    },
+    {
+      "item": "broccoli",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar"
+      ]
+    },
+    {
+      "item": "cabbage",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar"
+      ]
+    },
+    {
+      "item": "Cantaloupe",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar"
+      ]
+    },
+    {
+      "item": "Carrot",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar"
+      ]
+    },
+    {
+      "item": "cauliflower",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar"
+      ]
+    },
+    {
+      "item": "celery",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar"
+      ]
+    },
+    {
+      "item": "Cilantro",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar"
+      ]
+    },
+    {
+      "item": "Collard Greens",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar"
+      ]
+    },
+    {
+      "item": "cucumber",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar"
+      ]
+    },
+    {
+      "item": "Eggplant",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar"
+      ]
+    },
+    {
+      "item": "Endive",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar"
+      ]
+    },
+    {
+      "item": "Escarole",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar"
+      ]
+    },
+    {
+      "item": "Grapefruit",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar"
+      ]
+    },
+    {
+      "item": "Lettuce",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar"
+      ]
+    },
+    {
+      "item": "mango",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar"
+      ]
+    },
+    {
+      "item": "Mushroom",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar"
+      ]
+    },
+    {
+      "item": "Orange",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar"
+      ]
+    },
+    {
+      "item": "peach",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar"
+      ]
+    },
+    {
+      "item": "Pineberry",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar"
+      ]
+    },
+    {
+      "item": "Potato",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar"
+      ]
+    },
+    {
+      "item": "Radish",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar"
+      ]
+    },
+    {
+      "item": "Snap Beans",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar"
+      ]
+    },
+    {
+      "item": "spinach",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar"
+      ]
+    },
+    {
+      "item": "Squash",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar"
+      ]
+    },
+    {
+      "item": "strawberry",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar"
+      ]
+    },
+    {
+      "item": "Sweet Corn",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar"
+      ]
+    },
+    {
+      "item": "Tangerine",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar"
+      ]
+    },
+    {
+      "item": "Tomato",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar"
+      ]
+    },
+    {
+      "item": "Watermelon",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar"
+      ]
+    }
+  ],
+  "recipes": [],
+  "months": [
+    {
+      "key": "jan",
+      "name": "January",
+      "counts": {
+        "peak": 0,
+        "in": 26,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "broccoli",
+        "strawberry",
+        "cabbage",
+        "Lettuce",
+        "Sweet Corn",
+        "Carrot",
+        "Bell Pepper",
+        "cucumber",
+        "Snap Beans",
+        "Squash",
+        "Tomato",
+        "Orange",
+        "cauliflower",
+        "Collard Greens",
+        "Pineberry"
+      ],
+      "peak": [],
+      "in": [
+        "Avocado",
+        "Bell Pepper",
+        "broccoli",
+        "cabbage",
+        "Carrot",
+        "cauliflower",
+        "celery",
+        "Cilantro",
+        "Collard Greens",
+        "cucumber",
+        "Eggplant",
+        "Endive",
+        "Escarole",
+        "Grapefruit",
+        "Lettuce",
+        "Mushroom",
+        "Orange",
+        "Pineberry",
+        "Radish",
+        "Snap Beans",
+        "spinach",
+        "Squash",
+        "strawberry",
+        "Sweet Corn",
+        "Tangerine",
+        "Tomato"
+      ],
+      "edge": [],
+      "arrivals": [
+        "cauliflower"
+      ],
+      "farewells": [],
+      "quiet": [
+        "broccoli",
+        "strawberry",
+        "Orange",
+        "cauliflower",
+        "Escarole"
+      ],
+      "blurb": "January has <strong>26</strong> Florida crops in season. Much the same list as December."
+    },
+    {
+      "key": "feb",
+      "name": "February",
+      "counts": {
+        "peak": 0,
+        "in": 27,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "broccoli",
+        "strawberry",
+        "Potato",
+        "cabbage",
+        "Lettuce",
+        "Sweet Corn",
+        "Carrot",
+        "Bell Pepper",
+        "cucumber",
+        "Snap Beans",
+        "Squash",
+        "Tomato",
+        "Orange",
+        "cauliflower",
+        "Collard Greens"
+      ],
+      "peak": [],
+      "in": [
+        "Avocado",
+        "Bell Pepper",
+        "broccoli",
+        "cabbage",
+        "Carrot",
+        "cauliflower",
+        "celery",
+        "Cilantro",
+        "Collard Greens",
+        "cucumber",
+        "Eggplant",
+        "Endive",
+        "Escarole",
+        "Grapefruit",
+        "Lettuce",
+        "Mushroom",
+        "Orange",
+        "Pineberry",
+        "Potato",
+        "Radish",
+        "Snap Beans",
+        "spinach",
+        "Squash",
+        "strawberry",
+        "Sweet Corn",
+        "Tangerine",
+        "Tomato"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Potato"
+      ],
+      "farewells": [
+        "Avocado"
+      ],
+      "quiet": [
+        "cabbage",
+        "Lettuce",
+        "cauliflower",
+        "Pineberry",
+        "Cilantro"
+      ],
+      "blurb": "February has <strong>27</strong> Florida crops in season. Much the same list as January."
+    },
+    {
+      "key": "mar",
+      "name": "March",
+      "counts": {
+        "peak": 0,
+        "in": 29,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "blueberry",
+        "broccoli",
+        "strawberry",
+        "Potato",
+        "cabbage",
+        "Lettuce",
+        "Sweet Corn",
+        "Carrot",
+        "Watermelon",
+        "Bell Pepper",
+        "cucumber",
+        "Snap Beans",
+        "Squash",
+        "Tomato",
+        "Orange"
+      ],
+      "peak": [],
+      "in": [
+        "Bell Pepper",
+        "blueberry",
+        "broccoli",
+        "cabbage",
+        "Cantaloupe",
+        "Carrot",
+        "cauliflower",
+        "celery",
+        "Cilantro",
+        "Collard Greens",
+        "cucumber",
+        "Eggplant",
+        "Endive",
+        "Escarole",
+        "Grapefruit",
+        "Lettuce",
+        "Mushroom",
+        "Orange",
+        "Pineberry",
+        "Potato",
+        "Radish",
+        "Snap Beans",
+        "spinach",
+        "Squash",
+        "strawberry",
+        "Sweet Corn",
+        "Tangerine",
+        "Tomato",
+        "Watermelon"
+      ],
+      "edge": [],
+      "arrivals": [
+        "blueberry",
+        "Cantaloupe",
+        "Watermelon"
+      ],
+      "farewells": [
+        "cauliflower"
+      ],
+      "quiet": [
+        "cabbage",
+        "Sweet Corn",
+        "Cantaloupe",
+        "Collard Greens",
+        "Radish"
+      ],
+      "blurb": "March has <strong>29</strong> Florida crops in season. Much the same list as February."
+    },
+    {
+      "key": "apr",
+      "name": "April",
+      "counts": {
+        "peak": 0,
+        "in": 30,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "blueberry",
+        "broccoli",
+        "strawberry",
+        "Potato",
+        "cabbage",
+        "Lettuce",
+        "Sweet Corn",
+        "Carrot",
+        "Watermelon",
+        "Bell Pepper",
+        "cucumber",
+        "Snap Beans",
+        "Squash",
+        "Tomato",
+        "Orange"
+      ],
+      "peak": [],
+      "in": [
+        "Bell Pepper",
+        "blackberry",
+        "blueberry",
+        "broccoli",
+        "cabbage",
+        "Cantaloupe",
+        "Carrot",
+        "celery",
+        "Cilantro",
+        "Collard Greens",
+        "cucumber",
+        "Eggplant",
+        "Endive",
+        "Escarole",
+        "Grapefruit",
+        "Lettuce",
+        "Mushroom",
+        "Orange",
+        "peach",
+        "Pineberry",
+        "Potato",
+        "Radish",
+        "Snap Beans",
+        "spinach",
+        "Squash",
+        "strawberry",
+        "Sweet Corn",
+        "Tangerine",
+        "Tomato",
+        "Watermelon"
+      ],
+      "edge": [],
+      "arrivals": [
+        "blackberry",
+        "peach"
+      ],
+      "farewells": [
+        "broccoli",
+        "Collard Greens",
+        "Endive",
+        "Escarole"
+      ],
+      "quiet": [
+        "blueberry",
+        "Carrot",
+        "Bell Pepper",
+        "peach",
+        "blackberry"
+      ],
+      "blurb": "April has <strong>30</strong> Florida crops in season. The fullest month on the wheel."
+    },
+    {
+      "key": "may",
+      "name": "May",
+      "counts": {
+        "peak": 0,
+        "in": 22,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "blueberry",
+        "Potato",
+        "cabbage",
+        "Sweet Corn",
+        "Carrot",
+        "Watermelon",
+        "Bell Pepper",
+        "cucumber",
+        "Snap Beans",
+        "Squash",
+        "Tomato",
+        "Orange",
+        "peach",
+        "blackberry",
+        "Cantaloupe"
+      ],
+      "peak": [],
+      "in": [
+        "Bell Pepper",
+        "blackberry",
+        "blueberry",
+        "cabbage",
+        "Cantaloupe",
+        "Carrot",
+        "celery",
+        "Cilantro",
+        "cucumber",
+        "Eggplant",
+        "Grapefruit",
+        "mango",
+        "Mushroom",
+        "Orange",
+        "peach",
+        "Potato",
+        "Radish",
+        "Snap Beans",
+        "Squash",
+        "Sweet Corn",
+        "Tomato",
+        "Watermelon"
+      ],
+      "edge": [],
+      "arrivals": [
+        "mango"
+      ],
+      "farewells": [
+        "blueberry",
+        "cabbage",
+        "celery",
+        "Cilantro"
+      ],
+      "quiet": [
+        "blueberry",
+        "Potato",
+        "Squash",
+        "Tomato",
+        "celery"
+      ],
+      "blurb": "May has <strong>22</strong> Florida crops in season. Winding down: 8 fewer in season than in April."
+    },
+    {
+      "key": "jun",
+      "name": "June",
+      "counts": {
+        "peak": 0,
+        "in": 15,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Potato",
+        "Carrot",
+        "Watermelon",
+        "Bell Pepper",
+        "cucumber",
+        "Snap Beans",
+        "Squash",
+        "Tomato",
+        "Orange",
+        "blackberry",
+        "Cantaloupe",
+        "mango",
+        "Avocado",
+        "Eggplant",
+        "Mushroom"
+      ],
+      "peak": [],
+      "in": [
+        "Avocado",
+        "Bell Pepper",
+        "blackberry",
+        "Cantaloupe",
+        "Carrot",
+        "cucumber",
+        "Eggplant",
+        "mango",
+        "Mushroom",
+        "Orange",
+        "Potato",
+        "Snap Beans",
+        "Squash",
+        "Tomato",
+        "Watermelon"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Avocado"
+      ],
+      "farewells": [
+        "Bell Pepper",
+        "Carrot",
+        "cucumber",
+        "Eggplant"
+      ],
+      "quiet": [
+        "Potato",
+        "Carrot",
+        "cucumber",
+        "Snap Beans",
+        "Eggplant"
+      ],
+      "blurb": "June has <strong>15</strong> Florida crops in season. Much the same list as May."
+    },
+    {
+      "key": "jul",
+      "name": "July",
+      "counts": {
+        "peak": 0,
+        "in": 6,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Watermelon",
+        "blackberry",
+        "Cantaloupe",
+        "mango",
+        "Avocado",
+        "Mushroom"
+      ],
+      "peak": [],
+      "in": [
+        "Avocado",
+        "blackberry",
+        "Cantaloupe",
+        "mango",
+        "Mushroom",
+        "Watermelon"
+      ],
+      "edge": [],
+      "arrivals": [],
+      "farewells": [
+        "blackberry",
+        "Cantaloupe",
+        "Watermelon"
+      ],
+      "quiet": [
+        "Watermelon",
+        "blackberry",
+        "Cantaloupe",
+        "mango",
+        "Mushroom"
+      ],
+      "blurb": "July has <strong>6</strong> Florida crops in season. Winding down: 9 fewer in season than in June."
+    },
+    {
+      "key": "aug",
+      "name": "August",
+      "counts": {
+        "peak": 0,
+        "in": 3,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "mango",
+        "Avocado",
+        "Mushroom"
+      ],
+      "peak": [],
+      "in": [
+        "Avocado",
+        "mango",
+        "Mushroom"
+      ],
+      "edge": [],
+      "arrivals": [],
+      "farewells": [],
+      "quiet": [
+        "mango",
+        "Avocado",
+        "Mushroom"
+      ],
+      "blurb": "August has <strong>3</strong> Florida crops in season. The leanest stretch of the year."
+    },
+    {
+      "key": "sep",
+      "name": "September",
+      "counts": {
+        "peak": 0,
+        "in": 5,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Orange",
+        "mango",
+        "Tangerine",
+        "Avocado",
+        "Mushroom"
+      ],
+      "peak": [],
+      "in": [
+        "Avocado",
+        "mango",
+        "Mushroom",
+        "Orange",
+        "Tangerine"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Orange",
+        "Tangerine"
+      ],
+      "farewells": [
+        "mango"
+      ],
+      "quiet": [
+        "Orange",
+        "mango",
+        "Tangerine",
+        "Avocado",
+        "Mushroom"
+      ],
+      "blurb": "September has <strong>5</strong> Florida crops in season. Much the same list as August."
+    },
+    {
+      "key": "oct",
+      "name": "October",
+      "counts": {
+        "peak": 0,
+        "in": 12,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Watermelon",
+        "Bell Pepper",
+        "cucumber",
+        "Snap Beans",
+        "Squash",
+        "Tomato",
+        "Orange",
+        "Grapefruit",
+        "Tangerine",
+        "Avocado",
+        "Eggplant",
+        "Mushroom"
+      ],
+      "peak": [],
+      "in": [
+        "Avocado",
+        "Bell Pepper",
+        "cucumber",
+        "Eggplant",
+        "Grapefruit",
+        "Mushroom",
+        "Orange",
+        "Snap Beans",
+        "Squash",
+        "Tangerine",
+        "Tomato",
+        "Watermelon"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Bell Pepper",
+        "cucumber",
+        "Eggplant",
+        "Grapefruit"
+      ],
+      "farewells": [],
+      "quiet": [
+        "Watermelon",
+        "Bell Pepper",
+        "cucumber",
+        "Snap Beans",
+        "Grapefruit"
+      ],
+      "blurb": "October has <strong>12</strong> Florida crops in season. Much the same list as September."
+    },
+    {
+      "key": "nov",
+      "name": "November",
+      "counts": {
+        "peak": 0,
+        "in": 20,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Lettuce",
+        "Sweet Corn",
+        "Carrot",
+        "Watermelon",
+        "Bell Pepper",
+        "cucumber",
+        "Snap Beans",
+        "Squash",
+        "Tomato",
+        "Orange",
+        "Endive",
+        "Escarole",
+        "spinach",
+        "Cilantro",
+        "Radish"
+      ],
+      "peak": [],
+      "in": [
+        "Avocado",
+        "Bell Pepper",
+        "Carrot",
+        "Cilantro",
+        "cucumber",
+        "Eggplant",
+        "Endive",
+        "Escarole",
+        "Grapefruit",
+        "Lettuce",
+        "Mushroom",
+        "Orange",
+        "Radish",
+        "Snap Beans",
+        "spinach",
+        "Squash",
+        "Sweet Corn",
+        "Tangerine",
+        "Tomato",
+        "Watermelon"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Carrot",
+        "Cilantro",
+        "Endive",
+        "Escarole"
+      ],
+      "farewells": [],
+      "quiet": [
+        "Lettuce",
+        "Sweet Corn",
+        "Squash",
+        "Tomato",
+        "Endive"
+      ],
+      "blurb": "November has <strong>20</strong> Florida crops in season. The wheel is filling up: 8 more in season than in October."
+    },
+    {
+      "key": "dec",
+      "name": "December",
+      "counts": {
+        "peak": 0,
+        "in": 26,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "broccoli",
+        "strawberry",
+        "cabbage",
+        "Lettuce",
+        "Sweet Corn",
+        "Carrot",
+        "Watermelon",
+        "Bell Pepper",
+        "cucumber",
+        "Snap Beans",
+        "Squash",
+        "Tomato",
+        "Orange",
+        "Collard Greens",
+        "Pineberry"
+      ],
+      "peak": [],
+      "in": [
+        "Avocado",
+        "Bell Pepper",
+        "broccoli",
+        "cabbage",
+        "Carrot",
+        "celery",
+        "Cilantro",
+        "Collard Greens",
+        "cucumber",
+        "Eggplant",
+        "Endive",
+        "Escarole",
+        "Grapefruit",
+        "Lettuce",
+        "Mushroom",
+        "Orange",
+        "Pineberry",
+        "Radish",
+        "Snap Beans",
+        "spinach",
+        "Squash",
+        "strawberry",
+        "Sweet Corn",
+        "Tangerine",
+        "Tomato",
+        "Watermelon"
+      ],
+      "edge": [],
+      "arrivals": [
+        "broccoli",
+        "cabbage",
+        "celery",
+        "Collard Greens"
+      ],
+      "farewells": [
+        "Watermelon"
+      ],
+      "quiet": [
+        "broccoli",
+        "strawberry",
+        "Collard Greens",
+        "Pineberry",
+        "spinach"
+      ],
+      "blurb": "December has <strong>26</strong> Florida crops in season. Much the same list as November."
+    }
+  ]
+}

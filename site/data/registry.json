@@ -18,5 +18,15 @@
     "id": "on",
     "name": "Canada – Ontario",
     "status": "shipped"
+  },
+  {
+    "id": "it",
+    "name": "Italy",
+    "status": "shipped"
+  },
+  {
+    "id": "fl",
+    "name": "Florida",
+    "status": "shipped"
   }
 ]

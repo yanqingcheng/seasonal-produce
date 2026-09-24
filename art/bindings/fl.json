@@ -1,0 +1,243 @@
+{
+  "Avocado": {
+    "archetype": "pear",
+    "colours": {
+      "body": "#23865a",
+      "leaf": "#a8e05a"
+    }
+  },
+  "Bell Pepper": {
+    "archetype": "pepper",
+    "colours": {
+      "body": "#ff5a4e",
+      "cap": "#3bb273"
+    }
+  },
+  "blackberry": {
+    "archetype": "berry",
+    "colours": {
+      "body": "#5b3a9b",
+      "body2": "#8e4dd6",
+      "leaf": "#3bb273"
+    }
+  },
+  "blueberry": {
+    "archetype": "cluster",
+    "colours": {
+      "body": "#4f6df5"
+    }
+  },
+  "broccoli": {
+    "archetype": "broccoli",
+    "colours": {
+      "body": "#3bb273",
+      "body2": "#23865a",
+      "stalk": "#a8e05a"
+    }
+  },
+  "cabbage": {
+    "archetype": "head",
+    "colours": {
+      "body": "#52c26b",
+      "body2": "#3bb273"
+    }
+  },
+  "Cantaloupe": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#e9b87a",
+      "stripes": "#c4a574",
+      "leaf": "#3bb273"
+    }
+  },
+  "Carrot": {
+    "archetype": "root",
+    "colours": {
+      "body": "#ff9a3c",
+      "leaf": "#3bb273"
+    }
+  },
+  "cauliflower": {
+    "archetype": "cauliflower",
+    "colours": {
+      "body": "#fff6dc",
+      "leaf": "#3bb273"
+    }
+  },
+  "celery": {
+    "archetype": "celery",
+    "colours": {
+      "body": "#c9f0b0",
+      "body2": "#52c26b",
+      "leaf": "#3bb273"
+    }
+  },
+  "Cilantro": {
+    "archetype": "herb",
+    "colours": {
+      "body": "#3bb273",
+      "stem": "#23865a",
+      "leafShape": "frilly"
+    }
+  },
+  "Collard Greens": {
+    "archetype": "leafy",
+    "colours": {
+      "body": "#2f7d74",
+      "rib": "#c9f0b0"
+    }
+  },
+  "cucumber": {
+    "archetype": "long",
+    "colours": {
+      "body": "#23865a",
+      "dots": "#c9f0b0",
+      "cap": "#a8e05a"
+    }
+  },
+  "Eggplant": {
+    "archetype": "aubergine",
+    "colours": {
+      "body": "#5b3a9b",
+      "cap": "#3bb273"
+    }
+  },
+  "Endive": {
+    "archetype": "chicory",
+    "colours": {
+      "body": "#fff6dc",
+      "tip": "#a8e05a"
+    }
+  },
+  "Escarole": {
+    "archetype": "head",
+    "colours": {
+      "body": "#c9f0b0",
+      "body2": "#52c26b",
+      "frilly": true
+    }
+  },
+  "Grapefruit": {
+    "archetype": "round",
+    "colours": {
+      "body": "#e7f5a4",
+      "leaf": "#52c26b"
+    }
+  },
+  "Lettuce": {
+    "archetype": "head",
+    "colours": {
+      "body": "#a8e05a",
+      "body2": "#52c26b",
+      "frilly": true
+    }
+  },
+  "mango": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#ff9a3c",
+      "cleft": true,
+      "leaf": "#3bb273"
+    }
+  },
+  "Mushroom": {
+    "archetype": "mushroom",
+    "colours": {
+      "cap": "#fff6dc",
+      "stem": "#fffdf6"
+    }
+  },
+  "Orange": {
+    "archetype": "round",
+    "colours": {
+      "body": "#ff7a1a",
+      "leaf": "#3bb273"
+    }
+  },
+  "peach": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#ffb38a",
+      "cleft": true,
+      "leaf": "#52c26b"
+    }
+  },
+  "Pineberry": {
+    "archetype": "strawberry",
+    "colours": {
+      "body": "#fffdf6",
+      "leaf": "#3bb273"
+    }
+  },
+  "Potato": {
+    "archetype": "potato",
+    "colours": {
+      "body": "#e9b87a"
+    }
+  },
+  "Radish": {
+    "archetype": "bulbroot",
+    "colours": {
+      "body": "#ff5f8a",
+      "leaf": "#3bb273",
+      "stem": "#3bb273"
+    }
+  },
+  "Snap Beans": {
+    "archetype": "beans",
+    "colours": {
+      "body": "#3bb273"
+    }
+  },
+  "spinach": {
+    "archetype": "leafy",
+    "colours": {
+      "body": "#23865a"
+    }
+  },
+  "Squash": {
+    "archetype": "pumpkin",
+    "colours": {
+      "body": "#ff9a3c",
+      "body2": "#ffb627",
+      "stem": "#b0703f"
+    }
+  },
+  "strawberry": {
+    "archetype": "strawberry",
+    "colours": {
+      "body": "#ff5a4e",
+      "leaf": "#3bb273"
+    }
+  },
+  "Sweet Corn": {
+    "archetype": "corn",
+    "colours": {
+      "body": "#ffd84a",
+      "body2": "#ffb627",
+      "leaf": "#52c26b"
+    }
+  },
+  "Tangerine": {
+    "archetype": "round",
+    "colours": {
+      "body": "#ffb627",
+      "leaf": "#3bb273"
+    }
+  },
+  "Tomato": {
+    "archetype": "round",
+    "colours": {
+      "body": "#ff5a4e",
+      "calyx": "#3bb273"
+    }
+  },
+  "Watermelon": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#1f7a4d",
+      "stripes": "#143d32",
+      "leaf": "#52c26b"
+    }
+  }
+}
