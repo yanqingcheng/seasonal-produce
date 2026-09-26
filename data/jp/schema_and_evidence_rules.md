@@ -19,10 +19,12 @@ Fruit, vegetable, herb, and nut follow the food name, the same way the other pac
 
 Every shipped row is a harvest window for this place. Nothing was added to fill a quiet month. Rows with no shared sticker stay in `STICKER_GAPS.md` with their source months. They are not dropped as imports.
 
-Shipped: 35. Held for a drawing: 10.
+Shipped: 46. Held for a drawing: 18.
+
+Peach uses the Yamanashi window, June–September, which covers more months than the Niigata window.
 
 ## Approximate stickers
 
 Shared archetypes, not new drawings. Crops that already have a sticker in another pack use that sticker's item name and colours. Named cultivars of pear, peach, plum, and citrus use the same silhouette with their own name. Fact sheets name the region the window belongs to, and cite the publishers for that crop.
 
-Attribution: Japan harvest months from ALIC 野菜情報 and Hokkaido Yasai.
+Attribution: Japan harvest months from ALIC 野菜情報, Hokkaido Yasai, prefectural governments, JA, and Tokyo Seika.

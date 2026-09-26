@@ -54,9 +54,9 @@
     ".": "out"
   },
   "sticker_exclude": [],
-  "attribution": "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar.",
+  "attribution": "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar, and University of Florida IFAS.",
   "alias_profile": "none",
   "recipe_rule": "optional",
-  "expect_items": 33,
+  "expect_items": 34,
   "require_peak_every_month": false
 }

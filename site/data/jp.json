@@ -47,13 +47,19 @@
       "plural": "fruit"
     },
     {
+      "id": "herb",
+      "label": "Herb",
+      "one": "herb",
+      "plural": "herbs"
+    },
+    {
       "id": "nut",
       "label": "Nut",
       "one": "nut",
       "plural": "nuts"
     }
   ],
-  "attribution": "Japan harvest months from ALIC 野菜情報 and Hokkaido Yasai.",
+  "attribution": "Japan harvest months from ALIC 野菜情報, Hokkaido Yasai, prefectural governments, JA, and Tokyo Seika.",
   "copy": {
     "this_month": "This month",
     "back_to": "Back to {month}",
@@ -140,6 +146,29 @@
       ]
     },
     {
+      "item": "Bell Pepper",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Hasaki, Ibaraki Prefecture.",
+      "specialist_sources": [
+        "Tokyo Seika"
+      ]
+    },
+    {
       "item": "blueberry",
       "category": "fruit",
       "months": [
@@ -160,6 +189,29 @@
       "regions_notes": "Harvest months for Nagano Prefecture.",
       "specialist_sources": [
         "B.B Karasawa-en"
+      ]
+    },
+    {
+      "item": "broccoli",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Hokkaido.",
+      "specialist_sources": [
+        "ALIC 野菜情報"
       ]
     },
     {
@@ -206,6 +258,52 @@
       "regions_notes": "Harvest months for Tsumagoi, Gunma Prefecture.",
       "specialist_sources": [
         "ALIC"
+      ]
+    },
+    {
+      "item": "Carrot",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Tomisato, Chiba Prefecture.",
+      "specialist_sources": [
+        "JA Tomisato"
+      ]
+    },
+    {
+      "item": "celery",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Nagano Prefecture.",
+      "specialist_sources": [
+        "JA Zen-Noh Nagano"
       ]
     },
     {
@@ -275,6 +373,29 @@
       "regions_notes": "Harvest months for Nagano Prefecture.",
       "specialist_sources": [
         "JA Nagano group"
+      ]
+    },
+    {
+      "item": "Chinese chives",
+      "category": "herb",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Kochi Prefecture.",
+      "specialist_sources": [
+        "ALIC 野菜情報"
       ]
     },
     {
@@ -411,6 +532,29 @@
       ],
       "stored_notes": null,
       "regions_notes": "Harvest months for Hokkaido.",
+      "specialist_sources": [
+        "ALIC 野菜情報"
+      ]
+    },
+    {
+      "item": "Green bean",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Chiba Prefecture.",
       "specialist_sources": [
         "ALIC 野菜情報"
       ]
@@ -700,8 +844,8 @@
         "out",
         "out",
         "out",
-        "out",
-        "out",
+        "in",
+        "in",
         "in",
         "in",
         "out",
@@ -709,9 +853,32 @@
         "out"
       ],
       "stored_notes": null,
-      "regions_notes": "Harvest months for Niigata Prefecture.",
+      "regions_notes": "Harvest months for Yamanashi Prefecture.",
       "specialist_sources": [
-        "Niigata Prefectural Government"
+        "Yamanashi Prefectural Government"
+      ]
+    },
+    {
+      "item": "Peas (Snow)",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Kagoshima Prefecture.",
+      "specialist_sources": [
+        "Kagoshima Prefectural Government"
       ]
     },
     {
@@ -781,6 +948,29 @@
       "regions_notes": "Harvest months for Kagoshima Prefecture.",
       "specialist_sources": [
         "Kagoshima Prefectural Government"
+      ]
+    },
+    {
+      "item": "Shiranui / dekopon",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Kumamoto Prefecture.",
+      "specialist_sources": [
+        "Kumamoto Prefecture"
       ]
     },
     {
@@ -876,6 +1066,75 @@
       ]
     },
     {
+      "item": "Taro",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Saitama Prefecture.",
+      "specialist_sources": [
+        "Saitama Prefectural Government"
+      ]
+    },
+    {
+      "item": "Tomato",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Kumamoto Prefecture.",
+      "specialist_sources": [
+        "JA Kumamoto"
+      ]
+    },
+    {
+      "item": "Turnip",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Chiba Prefecture.",
+      "specialist_sources": [
+        "ALIC 野菜情報"
+      ]
+    },
+    {
       "item": "Ume",
       "category": "fruit",
       "months": [
@@ -929,7 +1188,7 @@
       "name": "January",
       "counts": {
         "peak": 0,
-        "in": 9,
+        "in": 16,
         "edge": 0
       },
       "lead": null,
@@ -940,20 +1199,33 @@
         "Watermelon",
         "Iyokan citrus",
         "Daikon",
+        "Carrot",
         "Satsuma mandarin",
+        "Shiranui / dekopon",
+        "Taro",
+        "Tomato",
+        "Peas (Snow)",
         "Kujo negi",
-        "Sweet potato"
+        "Sweet potato",
+        "Turnip"
       ],
       "peak": [],
       "in": [
+        "Carrot",
+        "Chinese chives",
         "cucumber",
         "Daikon",
         "Eggplant",
         "Iyokan citrus",
         "Kujo negi",
+        "Peas (Snow)",
         "Satsuma mandarin",
+        "Shiranui / dekopon",
         "strawberry",
         "Sweet potato",
+        "Taro",
+        "Tomato",
+        "Turnip",
         "Watermelon"
       ],
       "edge": [],
@@ -964,338 +1236,15 @@
       "quiet": [
         "strawberry",
         "cucumber",
-        "Iyokan citrus",
         "Daikon",
-        "Sweet potato"
+        "Satsuma mandarin",
+        "Kujo negi"
       ],
-      "blurb": "January has <strong>9</strong> Japanese crops in season. Much the same list as December."
+      "blurb": "January has <strong>16</strong> Japanese crops in season. Much the same list as December."
     },
     {
       "key": "feb",
       "name": "February",
-      "counts": {
-        "peak": 0,
-        "in": 9,
-        "edge": 0
-      },
-      "lead": null,
-      "wheel": [
-        "strawberry",
-        "cucumber",
-        "Eggplant",
-        "Watermelon",
-        "Iyokan citrus",
-        "Daikon",
-        "Satsuma mandarin",
-        "Kujo negi",
-        "Sweet potato"
-      ],
-      "peak": [],
-      "in": [
-        "cucumber",
-        "Daikon",
-        "Eggplant",
-        "Iyokan citrus",
-        "Kujo negi",
-        "Satsuma mandarin",
-        "strawberry",
-        "Sweet potato",
-        "Watermelon"
-      ],
-      "edge": [],
-      "arrivals": [],
-      "farewells": [
-        "Satsuma mandarin"
-      ],
-      "quiet": [
-        "strawberry",
-        "Eggplant",
-        "Iyokan citrus",
-        "Satsuma mandarin",
-        "Sweet potato"
-      ],
-      "blurb": "February has <strong>9</strong> Japanese crops in season. Much the same list as January."
-    },
-    {
-      "key": "mar",
-      "name": "March",
-      "counts": {
-        "peak": 0,
-        "in": 9,
-        "edge": 0
-      },
-      "lead": null,
-      "wheel": [
-        "strawberry",
-        "cucumber",
-        "Eggplant",
-        "Watermelon",
-        "Iyokan citrus",
-        "Daikon",
-        "Nagaimo yam",
-        "Kujo negi",
-        "Sweet potato"
-      ],
-      "peak": [],
-      "in": [
-        "cucumber",
-        "Daikon",
-        "Eggplant",
-        "Iyokan citrus",
-        "Kujo negi",
-        "Nagaimo yam",
-        "strawberry",
-        "Sweet potato",
-        "Watermelon"
-      ],
-      "edge": [],
-      "arrivals": [
-        "Nagaimo yam"
-      ],
-      "farewells": [
-        "Daikon",
-        "Iyokan citrus",
-        "Sweet potato"
-      ],
-      "quiet": [
-        "cucumber",
-        "Eggplant",
-        "Watermelon",
-        "Nagaimo yam",
-        "Kujo negi"
-      ],
-      "blurb": "March has <strong>9</strong> Japanese crops in season. Much the same list as February."
-    },
-    {
-      "key": "apr",
-      "name": "April",
-      "counts": {
-        "peak": 0,
-        "in": 7,
-        "edge": 0
-      },
-      "lead": null,
-      "wheel": [
-        "strawberry",
-        "cucumber",
-        "Eggplant",
-        "Watermelon",
-        "Green asparagus",
-        "Nagaimo yam",
-        "Kujo negi"
-      ],
-      "peak": [],
-      "in": [
-        "cucumber",
-        "Eggplant",
-        "Green asparagus",
-        "Kujo negi",
-        "Nagaimo yam",
-        "strawberry",
-        "Watermelon"
-      ],
-      "edge": [],
-      "arrivals": [
-        "Green asparagus"
-      ],
-      "farewells": [
-        "Nagaimo yam"
-      ],
-      "quiet": [
-        "strawberry",
-        "cucumber",
-        "Eggplant",
-        "Green asparagus",
-        "Nagaimo yam"
-      ],
-      "blurb": "April has <strong>7</strong> Japanese crops in season. The leanest stretch of the year."
-    },
-    {
-      "key": "may",
-      "name": "May",
-      "counts": {
-        "peak": 0,
-        "in": 11,
-        "edge": 0
-      },
-      "lead": null,
-      "wheel": [
-        "Lettuce",
-        "melon",
-        "Chinese cabbage",
-        "strawberry",
-        "cucumber",
-        "Eggplant",
-        "Watermelon",
-        "Loquat",
-        "Ume",
-        "Green asparagus",
-        "Kujo negi"
-      ],
-      "peak": [],
-      "in": [
-        "Chinese cabbage",
-        "cucumber",
-        "Eggplant",
-        "Green asparagus",
-        "Kujo negi",
-        "Lettuce",
-        "Loquat",
-        "melon",
-        "strawberry",
-        "Ume",
-        "Watermelon"
-      ],
-      "edge": [],
-      "arrivals": [
-        "Chinese cabbage",
-        "Lettuce",
-        "Loquat",
-        "melon"
-      ],
-      "farewells": [
-        "strawberry"
-      ],
-      "quiet": [
-        "Lettuce",
-        "melon",
-        "Chinese cabbage",
-        "Loquat",
-        "Ume"
-      ],
-      "blurb": "May has <strong>11</strong> Japanese crops in season. Much the same list as April."
-    },
-    {
-      "key": "jun",
-      "name": "June",
-      "counts": {
-        "peak": 0,
-        "in": 14,
-        "edge": 0
-      },
-      "lead": null,
-      "wheel": [
-        "cherry",
-        "blueberry",
-        "sweetcorn",
-        "Lettuce",
-        "melon",
-        "Chinese cabbage",
-        "cucumber",
-        "Eggplant",
-        "Watermelon",
-        "Loquat",
-        "Ume",
-        "Edamame",
-        "Green asparagus",
-        "Kujo negi"
-      ],
-      "peak": [],
-      "in": [
-        "blueberry",
-        "cherry",
-        "Chinese cabbage",
-        "cucumber",
-        "Edamame",
-        "Eggplant",
-        "Green asparagus",
-        "Kujo negi",
-        "Lettuce",
-        "Loquat",
-        "melon",
-        "sweetcorn",
-        "Ume",
-        "Watermelon"
-      ],
-      "edge": [],
-      "arrivals": [
-        "blueberry",
-        "cherry",
-        "Edamame",
-        "sweetcorn"
-      ],
-      "farewells": [
-        "cucumber",
-        "Eggplant",
-        "Kujo negi",
-        "Loquat"
-      ],
-      "quiet": [
-        "cherry",
-        "blueberry",
-        "sweetcorn",
-        "Lettuce",
-        "Ume"
-      ],
-      "blurb": "June has <strong>14</strong> Japanese crops in season. Much the same list as May."
-    },
-    {
-      "key": "jul",
-      "name": "July",
-      "counts": {
-        "peak": 0,
-        "in": 14,
-        "edge": 0
-      },
-      "lead": null,
-      "wheel": [
-        "cherry",
-        "blueberry",
-        "sweetcorn",
-        "cabbage",
-        "Grape",
-        "Lettuce",
-        "melon",
-        "Chinese cabbage",
-        "Watermelon",
-        "Ume",
-        "Edamame",
-        "Japanese pear",
-        "Green asparagus",
-        "Sweet potato"
-      ],
-      "peak": [],
-      "in": [
-        "blueberry",
-        "cabbage",
-        "cherry",
-        "Chinese cabbage",
-        "Edamame",
-        "Grape",
-        "Green asparagus",
-        "Japanese pear",
-        "Lettuce",
-        "melon",
-        "Sweet potato",
-        "sweetcorn",
-        "Ume",
-        "Watermelon"
-      ],
-      "edge": [],
-      "arrivals": [
-        "cabbage",
-        "Grape",
-        "Japanese pear",
-        "Sweet potato"
-      ],
-      "farewells": [
-        "cherry",
-        "Green asparagus",
-        "Ume",
-        "Watermelon"
-      ],
-      "quiet": [
-        "cherry",
-        "blueberry",
-        "Grape",
-        "Edamame",
-        "Japanese pear"
-      ],
-      "blurb": "July has <strong>14</strong> Japanese crops in season. Much the same list as June."
-    },
-    {
-      "key": "aug",
-      "name": "August",
       "counts": {
         "peak": 0,
         "in": 17,
@@ -1303,7 +1252,407 @@
       },
       "lead": null,
       "wheel": [
+        "strawberry",
+        "cucumber",
+        "Eggplant",
+        "Watermelon",
+        "Iyokan citrus",
+        "Daikon",
+        "Carrot",
+        "Bell Pepper",
+        "Satsuma mandarin",
+        "Shiranui / dekopon",
+        "Taro",
+        "Tomato",
+        "Peas (Snow)",
+        "Kujo negi",
+        "Sweet potato"
+      ],
+      "peak": [],
+      "in": [
+        "Bell Pepper",
+        "Carrot",
+        "Chinese chives",
+        "cucumber",
+        "Daikon",
+        "Eggplant",
+        "Iyokan citrus",
+        "Kujo negi",
+        "Peas (Snow)",
+        "Satsuma mandarin",
+        "Shiranui / dekopon",
+        "strawberry",
+        "Sweet potato",
+        "Taro",
+        "Tomato",
+        "Turnip",
+        "Watermelon"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Bell Pepper"
+      ],
+      "farewells": [
+        "Satsuma mandarin"
+      ],
+      "quiet": [
+        "Eggplant",
+        "Watermelon",
+        "Carrot",
+        "Taro",
+        "Turnip"
+      ],
+      "blurb": "February has <strong>17</strong> Japanese crops in season. Much the same list as January."
+    },
+    {
+      "key": "mar",
+      "name": "March",
+      "counts": {
+        "peak": 0,
+        "in": 17,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "strawberry",
+        "cucumber",
+        "Eggplant",
+        "Watermelon",
+        "Iyokan citrus",
+        "Daikon",
+        "Nagaimo yam",
+        "Carrot",
+        "Bell Pepper",
+        "Shiranui / dekopon",
+        "Taro",
+        "Tomato",
+        "Peas (Snow)",
+        "Kujo negi",
+        "Sweet potato"
+      ],
+      "peak": [],
+      "in": [
+        "Bell Pepper",
+        "Carrot",
+        "Chinese chives",
+        "cucumber",
+        "Daikon",
+        "Eggplant",
+        "Iyokan citrus",
+        "Kujo negi",
+        "Nagaimo yam",
+        "Peas (Snow)",
+        "Shiranui / dekopon",
+        "strawberry",
+        "Sweet potato",
+        "Taro",
+        "Tomato",
+        "Turnip",
+        "Watermelon"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Nagaimo yam"
+      ],
+      "farewells": [
+        "Carrot",
+        "Daikon",
+        "Iyokan citrus",
+        "Sweet potato"
+      ],
+      "quiet": [
+        "Iyokan citrus",
+        "Daikon",
+        "Bell Pepper",
+        "Tomato",
+        "Chinese chives"
+      ],
+      "blurb": "March has <strong>17</strong> Japanese crops in season. Much the same list as February."
+    },
+    {
+      "key": "apr",
+      "name": "April",
+      "counts": {
+        "peak": 0,
+        "in": 15,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "strawberry",
+        "cucumber",
+        "Eggplant",
+        "Watermelon",
+        "Green bean",
+        "Green asparagus",
+        "Nagaimo yam",
+        "Bell Pepper",
+        "Shiranui / dekopon",
+        "Taro",
+        "Tomato",
+        "Peas (Snow)",
+        "Kujo negi",
+        "Turnip",
+        "Chinese chives"
+      ],
+      "peak": [],
+      "in": [
+        "Bell Pepper",
+        "Chinese chives",
+        "cucumber",
+        "Eggplant",
+        "Green asparagus",
+        "Green bean",
+        "Kujo negi",
+        "Nagaimo yam",
+        "Peas (Snow)",
+        "Shiranui / dekopon",
+        "strawberry",
+        "Taro",
+        "Tomato",
+        "Turnip",
+        "Watermelon"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Green asparagus",
+        "Green bean"
+      ],
+      "farewells": [
+        "Nagaimo yam",
+        "Taro"
+      ],
+      "quiet": [
+        "strawberry",
+        "cucumber",
+        "Green bean",
+        "Green asparagus",
+        "Peas (Snow)"
+      ],
+      "blurb": "April has <strong>15</strong> Japanese crops in season. The leanest stretch of the year."
+    },
+    {
+      "key": "may",
+      "name": "May",
+      "counts": {
+        "peak": 0,
+        "in": 19,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Lettuce",
+        "melon",
+        "Chinese cabbage",
+        "strawberry",
+        "cucumber",
+        "Eggplant",
+        "Watermelon",
+        "Loquat",
+        "Green bean",
+        "Ume",
+        "Green asparagus",
+        "Bell Pepper",
+        "celery",
+        "Shiranui / dekopon",
+        "Tomato"
+      ],
+      "peak": [],
+      "in": [
+        "Bell Pepper",
+        "celery",
+        "Chinese cabbage",
+        "Chinese chives",
+        "cucumber",
+        "Eggplant",
+        "Green asparagus",
+        "Green bean",
+        "Kujo negi",
+        "Lettuce",
+        "Loquat",
+        "melon",
+        "Peas (Snow)",
+        "Shiranui / dekopon",
+        "strawberry",
+        "Tomato",
+        "Turnip",
+        "Ume",
+        "Watermelon"
+      ],
+      "edge": [],
+      "arrivals": [
+        "celery",
+        "Chinese cabbage",
+        "Lettuce",
+        "Loquat"
+      ],
+      "farewells": [
+        "Peas (Snow)",
+        "strawberry",
+        "Tomato"
+      ],
+      "quiet": [
+        "Lettuce",
+        "melon",
+        "Chinese cabbage",
+        "Loquat",
+        "celery"
+      ],
+      "blurb": "May has <strong>19</strong> Japanese crops in season. Much the same list as April."
+    },
+    {
+      "key": "jun",
+      "name": "June",
+      "counts": {
+        "peak": 0,
+        "in": 22,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "cherry",
+        "blueberry",
+        "sweetcorn",
         "peach",
+        "Lettuce",
+        "melon",
+        "Chinese cabbage",
+        "cucumber",
+        "Eggplant",
+        "Watermelon",
+        "Loquat",
+        "Green bean",
+        "Ume",
+        "Edamame",
+        "Green asparagus"
+      ],
+      "peak": [],
+      "in": [
+        "Bell Pepper",
+        "blueberry",
+        "broccoli",
+        "celery",
+        "cherry",
+        "Chinese cabbage",
+        "Chinese chives",
+        "cucumber",
+        "Edamame",
+        "Eggplant",
+        "Green asparagus",
+        "Green bean",
+        "Kujo negi",
+        "Lettuce",
+        "Loquat",
+        "melon",
+        "peach",
+        "Shiranui / dekopon",
+        "sweetcorn",
+        "Turnip",
+        "Ume",
+        "Watermelon"
+      ],
+      "edge": [],
+      "arrivals": [
+        "blueberry",
+        "broccoli",
+        "cherry",
+        "Edamame"
+      ],
+      "farewells": [
+        "cucumber",
+        "Eggplant",
+        "Green bean",
+        "Kujo negi"
+      ],
+      "quiet": [
+        "cherry",
+        "sweetcorn",
+        "peach",
+        "Edamame",
+        "broccoli"
+      ],
+      "blurb": "June has <strong>22</strong> Japanese crops in season. Much the same list as May."
+    },
+    {
+      "key": "jul",
+      "name": "July",
+      "counts": {
+        "peak": 0,
+        "in": 19,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "cherry",
+        "blueberry",
+        "sweetcorn",
+        "cabbage",
+        "Grape",
+        "peach",
+        "Lettuce",
+        "melon",
+        "Chinese cabbage",
+        "Watermelon",
+        "Ume",
+        "Edamame",
+        "Japanese pear",
+        "Green asparagus",
+        "broccoli"
+      ],
+      "peak": [],
+      "in": [
+        "Bell Pepper",
+        "blueberry",
+        "broccoli",
+        "cabbage",
+        "celery",
+        "cherry",
+        "Chinese cabbage",
+        "Chinese chives",
+        "Edamame",
+        "Grape",
+        "Green asparagus",
+        "Japanese pear",
+        "Lettuce",
+        "melon",
+        "peach",
+        "Sweet potato",
+        "sweetcorn",
+        "Ume",
+        "Watermelon"
+      ],
+      "edge": [],
+      "arrivals": [
+        "cabbage",
+        "Grape",
+        "Japanese pear",
+        "Sweet potato"
+      ],
+      "farewells": [
+        "Bell Pepper",
+        "cherry",
+        "Green asparagus",
+        "Ume"
+      ],
+      "quiet": [
+        "cherry",
+        "blueberry",
+        "Grape",
+        "Ume",
+        "Japanese pear"
+      ],
+      "blurb": "July has <strong>19</strong> Japanese crops in season. Much the same list as June."
+    },
+    {
+      "key": "aug",
+      "name": "August",
+      "counts": {
+        "peak": 0,
+        "in": 20,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
         "blueberry",
         "Onion",
         "sweetcorn",
@@ -1311,6 +1660,7 @@
         "cabbage",
         "Grape",
         "Potato",
+        "peach",
         "Lettuce",
         "melon",
         "Chinese cabbage",
@@ -1323,8 +1673,11 @@
       "in": [
         "apple",
         "blueberry",
+        "broccoli",
         "cabbage",
+        "celery",
         "Chinese cabbage",
+        "Chinese chives",
         "Edamame",
         "Grape",
         "Japanese pear",
@@ -1351,30 +1704,30 @@
         "sweetcorn"
       ],
       "quiet": [
-        "peach",
+        "blueberry",
         "sweetcorn",
-        "Chinese cabbage",
+        "Potato",
         "Kabocha squash",
         "Sudachi"
       ],
-      "blurb": "August has <strong>17</strong> Japanese crops in season. Much the same list as July."
+      "blurb": "August has <strong>20</strong> Japanese crops in season. Much the same list as July."
     },
     {
       "key": "sep",
       "name": "September",
       "counts": {
         "peak": 0,
-        "in": 20,
+        "in": 23,
         "edge": 0
       },
       "lead": null,
       "wheel": [
-        "peach",
         "Onion",
         "apple",
         "cabbage",
         "Grape",
         "Potato",
+        "peach",
         "Lettuce",
         "melon",
         "Chinese cabbage",
@@ -1388,10 +1741,13 @@
       "peak": [],
       "in": [
         "apple",
+        "broccoli",
         "Burdock",
         "cabbage",
+        "celery",
         "chestnut",
         "Chinese cabbage",
+        "Chinese chives",
         "Edamame",
         "Grape",
         "Japanese pear",
@@ -1420,20 +1776,20 @@
         "peach"
       ],
       "quiet": [
-        "peach",
         "Onion",
+        "apple",
         "Burdock",
         "Nijisseiki pear",
         "chestnut"
       ],
-      "blurb": "September has <strong>20</strong> Japanese crops in season. Much the same list as August."
+      "blurb": "September has <strong>23</strong> Japanese crops in season. Much the same list as August."
     },
     {
       "key": "oct",
       "name": "October",
       "counts": {
         "peak": 0,
-        "in": 21,
+        "in": 27,
         "edge": 0
       },
       "lead": null,
@@ -1457,10 +1813,13 @@
       "peak": [],
       "in": [
         "apple",
+        "broccoli",
         "Burdock",
         "cabbage",
+        "celery",
         "chestnut",
         "Chinese cabbage",
+        "Chinese chives",
         "Eggplant",
         "Grape",
         "Japanese pear",
@@ -1472,39 +1831,43 @@
         "melon",
         "Nijisseiki pear",
         "Onion",
+        "Peas (Snow)",
         "Persimmon",
         "Potato",
         "Satsuma mandarin",
         "Sudachi",
-        "Sweet potato"
+        "Sweet potato",
+        "Taro",
+        "Turnip"
       ],
       "edge": [],
       "arrivals": [
         "Eggplant",
         "Kujo negi",
-        "La France pear"
+        "La France pear",
+        "Peas (Snow)"
       ],
       "farewells": [
+        "broccoli",
         "cabbage",
         "chestnut",
-        "Grape",
-        "Japanese pear"
+        "Grape"
       ],
       "quiet": [
         "Onion",
-        "apple",
         "cabbage",
+        "Grape",
         "La France pear",
         "Matsutake"
       ],
-      "blurb": "October has <strong>21</strong> Japanese crops in season. The fullest month on the wheel."
+      "blurb": "October has <strong>27</strong> Japanese crops in season. The fullest month on the wheel."
     },
     {
       "key": "nov",
       "name": "November",
       "counts": {
         "peak": 0,
-        "in": 14,
+        "in": 21,
         "edge": 0
       },
       "lead": null,
@@ -1520,55 +1883,63 @@
         "Persimmon",
         "Matsutake",
         "Nagaimo yam",
+        "Carrot",
         "Satsuma mandarin",
-        "Kujo negi",
-        "Sweet potato"
+        "celery",
+        "Taro"
       ],
       "peak": [],
       "in": [
         "apple",
         "Burdock",
+        "Carrot",
+        "celery",
         "Chinese cabbage",
+        "Chinese chives",
         "cucumber",
         "Eggplant",
         "Kujo negi",
         "Matsutake",
         "Nagaimo yam",
+        "Peas (Snow)",
         "Persimmon",
         "Potato",
         "Satsuma mandarin",
         "strawberry",
         "Sweet potato",
+        "Taro",
+        "Tomato",
+        "Turnip",
         "Watermelon"
       ],
       "edge": [],
       "arrivals": [
+        "Carrot",
         "cucumber",
         "Nagaimo yam",
-        "strawberry",
-        "Watermelon"
+        "strawberry"
       ],
       "farewells": [
         "apple",
         "Burdock",
-        "Chinese cabbage",
-        "Matsutake"
+        "celery",
+        "Chinese cabbage"
       ],
       "quiet": [
         "apple",
         "Potato",
+        "Chinese cabbage",
         "Burdock",
-        "Persimmon",
-        "Matsutake"
+        "Persimmon"
       ],
-      "blurb": "November has <strong>14</strong> Japanese crops in season. Much the same list as October."
+      "blurb": "November has <strong>21</strong> Japanese crops in season. Much the same list as October."
     },
     {
       "key": "dec",
       "name": "December",
       "counts": {
         "peak": 0,
-        "in": 9,
+        "in": 16,
         "edge": 0
       },
       "lead": null,
@@ -1579,37 +1950,51 @@
         "Watermelon",
         "Daikon",
         "Nagaimo yam",
+        "Carrot",
         "Satsuma mandarin",
+        "Shiranui / dekopon",
+        "Taro",
+        "Tomato",
+        "Peas (Snow)",
         "Kujo negi",
-        "Sweet potato"
+        "Sweet potato",
+        "Turnip"
       ],
       "peak": [],
       "in": [
+        "Carrot",
+        "Chinese chives",
         "cucumber",
         "Daikon",
         "Eggplant",
         "Kujo negi",
         "Nagaimo yam",
+        "Peas (Snow)",
         "Satsuma mandarin",
+        "Shiranui / dekopon",
         "strawberry",
         "Sweet potato",
+        "Taro",
+        "Tomato",
+        "Turnip",
         "Watermelon"
       ],
       "edge": [],
       "arrivals": [
-        "Daikon"
+        "Daikon",
+        "Shiranui / dekopon"
       ],
       "farewells": [
         "Nagaimo yam"
       ],
       "quiet": [
+        "Eggplant",
         "Watermelon",
-        "Daikon",
         "Nagaimo yam",
-        "Satsuma mandarin",
-        "Kujo negi"
+        "Shiranui / dekopon",
+        "Sweet potato"
       ],
-      "blurb": "December has <strong>9</strong> Japanese crops in season. Much the same list as November."
+      "blurb": "December has <strong>16</strong> Japanese crops in season. Much the same list as November."
     }
   ]
 }

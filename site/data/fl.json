@@ -47,7 +47,7 @@
       "plural": "fruit"
     }
   ],
-  "attribution": "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar.",
+  "attribution": "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar, and University of Florida IFAS.",
   "copy": {
     "this_month": "This month",
     "back_to": "Back to {month}",
@@ -502,6 +502,29 @@
       ]
     },
     {
+      "item": "Kumquat",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "University of Florida IFAS"
+      ]
+    },
+    {
       "item": "Lettuce",
       "category": "vegetable",
       "months": [
@@ -877,7 +900,7 @@
       "name": "January",
       "counts": {
         "peak": 0,
-        "in": 26,
+        "in": 27,
         "edge": 0
       },
       "lead": null,
@@ -914,6 +937,7 @@
         "Endive",
         "Escarole",
         "Grapefruit",
+        "Kumquat",
         "Lettuce",
         "Mushroom",
         "Orange",
@@ -935,18 +959,18 @@
       "quiet": [
         "broccoli",
         "strawberry",
-        "Orange",
+        "Tomato",
         "cauliflower",
         "Escarole"
       ],
-      "blurb": "January has <strong>26</strong> Florida crops in season. Much the same list as December."
+      "blurb": "January has <strong>27</strong> Florida crops in season. Much the same list as December."
     },
     {
       "key": "feb",
       "name": "February",
       "counts": {
         "peak": 0,
-        "in": 27,
+        "in": 28,
         "edge": 0
       },
       "lead": null,
@@ -983,6 +1007,7 @@
         "Endive",
         "Escarole",
         "Grapefruit",
+        "Kumquat",
         "Lettuce",
         "Mushroom",
         "Orange",
@@ -1011,14 +1036,14 @@
         "Pineberry",
         "Cilantro"
       ],
-      "blurb": "February has <strong>27</strong> Florida crops in season. Much the same list as January."
+      "blurb": "February has <strong>28</strong> Florida crops in season. Much the same list as January."
     },
     {
       "key": "mar",
       "name": "March",
       "counts": {
         "peak": 0,
-        "in": 29,
+        "in": 30,
         "edge": 0
       },
       "lead": null,
@@ -1056,6 +1081,7 @@
         "Endive",
         "Escarole",
         "Grapefruit",
+        "Kumquat",
         "Lettuce",
         "Mushroom",
         "Orange",
@@ -1078,16 +1104,17 @@
         "Watermelon"
       ],
       "farewells": [
-        "cauliflower"
+        "cauliflower",
+        "Kumquat"
       ],
       "quiet": [
-        "cabbage",
+        "blueberry",
         "Sweet Corn",
         "Cantaloupe",
         "Collard Greens",
         "Radish"
       ],
-      "blurb": "March has <strong>29</strong> Florida crops in season. Much the same list as February."
+      "blurb": "March has <strong>30</strong> Florida crops in season. The fullest month on the wheel."
     },
     {
       "key": "apr",
@@ -1160,11 +1187,11 @@
         "Escarole"
       ],
       "quiet": [
-        "blueberry",
+        "cabbage",
         "Carrot",
-        "Bell Pepper",
         "peach",
-        "blackberry"
+        "blackberry",
+        "Grapefruit"
       ],
       "blurb": "April has <strong>30</strong> Florida crops in season. The fullest month on the wheel."
     },
@@ -1295,7 +1322,7 @@
       "quiet": [
         "Potato",
         "Carrot",
-        "cucumber",
+        "Bell Pepper",
         "Snap Beans",
         "Eggplant"
       ],
@@ -1419,7 +1446,7 @@
       "name": "October",
       "counts": {
         "peak": 0,
-        "in": 12,
+        "in": 13,
         "edge": 0
       },
       "lead": null,
@@ -1431,6 +1458,7 @@
         "Squash",
         "Tomato",
         "Orange",
+        "Kumquat",
         "Grapefruit",
         "Tangerine",
         "Avocado",
@@ -1444,6 +1472,7 @@
         "cucumber",
         "Eggplant",
         "Grapefruit",
+        "Kumquat",
         "Mushroom",
         "Orange",
         "Snap Beans",
@@ -1465,16 +1494,16 @@
         "Bell Pepper",
         "cucumber",
         "Snap Beans",
-        "Grapefruit"
+        "Kumquat"
       ],
-      "blurb": "October has <strong>12</strong> Florida crops in season. Much the same list as September."
+      "blurb": "October has <strong>13</strong> Florida crops in season. The wheel is filling up: 8 more in season than in September."
     },
     {
       "key": "nov",
       "name": "November",
       "counts": {
         "peak": 0,
-        "in": 20,
+        "in": 21,
         "edge": 0
       },
       "lead": null,
@@ -1490,10 +1519,10 @@
         "Tomato",
         "Orange",
         "Endive",
+        "Kumquat",
         "Escarole",
         "spinach",
-        "Cilantro",
-        "Radish"
+        "Cilantro"
       ],
       "peak": [],
       "in": [
@@ -1506,6 +1535,7 @@
         "Endive",
         "Escarole",
         "Grapefruit",
+        "Kumquat",
         "Lettuce",
         "Mushroom",
         "Orange",
@@ -1529,18 +1559,18 @@
       "quiet": [
         "Lettuce",
         "Sweet Corn",
+        "cucumber",
         "Squash",
-        "Tomato",
         "Endive"
       ],
-      "blurb": "November has <strong>20</strong> Florida crops in season. The wheel is filling up: 8 more in season than in October."
+      "blurb": "November has <strong>21</strong> Florida crops in season. The wheel is filling up: 8 more in season than in October."
     },
     {
       "key": "dec",
       "name": "December",
       "counts": {
         "peak": 0,
-        "in": 26,
+        "in": 27,
         "edge": 0
       },
       "lead": null,
@@ -1576,6 +1606,7 @@
         "Endive",
         "Escarole",
         "Grapefruit",
+        "Kumquat",
         "Lettuce",
         "Mushroom",
         "Orange",
@@ -1603,11 +1634,11 @@
       "quiet": [
         "broccoli",
         "strawberry",
+        "Orange",
         "Collard Greens",
-        "Pineberry",
         "spinach"
       ],
-      "blurb": "December has <strong>26</strong> Florida crops in season. Much the same list as November."
+      "blurb": "December has <strong>27</strong> Florida crops in season. Much the same list as November."
     }
   ]
 }

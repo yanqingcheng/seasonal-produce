@@ -175,6 +175,11 @@ check(named(fl, "Orange") && named(fl, "Avocado") && named(fl, "mango") && named
 const watermelon = fl.items.find((row) => row.item === "Watermelon");
 check(watermelon && watermelon.months[2] === "in" && watermelon.months[6] === "in" && watermelon.months[7] === "out" && watermelon.months[9] === "in", "Florida keeps both watermelon windows");
 check(fl.months[7].counts.in === 3 && fl.months[7].in.length === 3, "Florida August is the short calendar month");
+check(named(fl, "Kumquat") && !named(fl, "Jujube") && !named(fl, "Pummelo") && !named(fl, "Guava") && !named(fl, "Papaya") && !named(fl, "Passion fruit"), "Florida IFAS kumquat ships; jujube and pummelo stay off the wheel");
+const jpPeach = byId.jp.items.find((row) => row.item === "peach");
+check(jpPeach && jpPeach.months[4] === "out" && jpPeach.months.slice(5, 9).every((role) => role === "in") && jpPeach.months[9] === "out", "Japan peach is the Yamanashi June–September window");
+check(["Tomato", "Carrot", "Bell Pepper", "Taro", "broccoli", "celery", "Peas (Snow)", "Green bean", "Turnip", "Chinese chives", "Shiranui / dekopon"].every((item) => named(byId.jp, item)), "Japan v0.3 rows with stickers");
+check(!named(byId.jp, "Okra") && !named(byId.jp, "Ginger") && !named(byId.jp, "Oyster"), "Japan rows without stickers stay off the wheel");
 const orange = ca.items.find((row) => row.item === "Orange");
 check(orange && orange.months[0] === "in" && orange.months[4] === "in" && orange.months[5] === "out" && orange.months[6] === "out" && orange.months[10] === "in", "California orange keeps the longer navel window");
 const broccoli = ca.items.find((row) => row.item === "broccoli");
@@ -188,7 +193,7 @@ check(artichoke && artichoke.months.every((role) => role === "in"), "California 
 check(named(ca, "Orange") && named(ca, "Grape") && named(ca, "Tomato") && named(ca, "garlic") && named(ca, "fig") && !named(ca, "Almond") && !named(ca, "Walnut") && !named(ca, "Kiwifruit") && !named(ca, "Pistachio") && !named(ca, "Date") && !named(ca, "Olive") && !named(ca, "Pecan"), "California domestic rows; nuts, kiwi, date, and olive held for a drawing");
 check(ca.months[6].counts.in === 13, "California July in-season count");
 const gaps = readFileSync(join(root, "STICKER_GAPS.md"), "utf8");
-check(gaps.includes("plátano") && gaps.includes("Garlic Scapes") && gaps.includes("kiwi") && gaps.includes("Peanut") && gaps.includes("## California (`ca`)") && gaps.includes("### Pistachio") && gaps.includes("### Kiwifruit"), "sticker gap list");
+check(gaps.includes("plátano") && gaps.includes("Garlic Scapes") && gaps.includes("kiwi") && gaps.includes("Peanut") && gaps.includes("## California (`ca`)") && gaps.includes("### Pistachio") && gaps.includes("### Kiwifruit") && gaps.includes("### Jujube") && gaps.includes("### Pummelo"), "sticker gap list");
 
 check(resolvePackId(null, registry) === "uk", "missing country falls back to uk");
 check(resolvePackId("fr", registry) === "fr" && resolvePackId("es", registry) === "es" && resolvePackId("on", registry) === "on" && resolvePackId("it", registry) === "it" && resolvePackId("fl", registry) === "fl" && resolvePackId("ca", registry) === "ca", "shipped country ids");

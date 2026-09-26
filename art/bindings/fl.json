@@ -239,5 +239,12 @@
       "stripes": "#143d32",
       "leaf": "#52c26b"
     }
+  },
+  "Kumquat": {
+    "archetype": "round",
+    "colours": {
+      "body": "#e4572e",
+      "leaf": "#52c26b"
+    }
   }
 }

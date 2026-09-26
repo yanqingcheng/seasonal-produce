@@ -49,6 +49,13 @@
       "everyday": true
     },
     {
+      "id": "herb",
+      "label": "Herb",
+      "one": "herb",
+      "plural": "herbs",
+      "everyday": false
+    },
+    {
       "id": "nut",
       "label": "Nut",
       "one": "nut",
@@ -61,9 +68,9 @@
     ".": "out"
   },
   "sticker_exclude": [],
-  "attribution": "Japan harvest months from ALIC 野菜情報 and Hokkaido Yasai.",
+  "attribution": "Japan harvest months from ALIC 野菜情報, Hokkaido Yasai, prefectural governments, JA, and Tokyo Seika.",
   "alias_profile": "none",
   "recipe_rule": "optional",
-  "expect_items": 35,
+  "expect_items": 46,
   "require_peak_every_month": false
 }
