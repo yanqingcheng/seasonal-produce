@@ -26,6 +26,90 @@ function face(x, y, s = 1) {
 const shine = (x, y, rx, ry, rot = 20) =>
   `<ellipse cx="${x}" cy="${y}" rx="${rx}" ry="${ry}" fill="#fff" stroke="none" opacity=".5" transform="rotate(${rot} ${x} ${y})"/>`;
 
+const n1 = (v) => +v.toFixed(1);
+const TAU = Math.PI * 2;
+
+/** Ellipse outline made of `n` round bumps (lychee skin, walnut shell, custard-apple knobs). */
+function scallop(cx, cy, rx, ry, n, bump) {
+  let d = `M${n1(cx)} ${n1(cy - ry)}`;
+  for (let i = 1; i <= n; i++) {
+    const a = -Math.PI / 2 + (i / n) * TAU;
+    const m = a - Math.PI / n;
+    d += `Q${n1(cx + (rx + bump) * Math.cos(m))} ${n1(cy + (ry + bump) * Math.sin(m))} ${n1(cx + rx * Math.cos(a))} ${n1(cy + ry * Math.sin(a))}`;
+  }
+  return `${d}Z`;
+}
+
+/** Ellipse outline with `n` sharp spikes (durian). */
+function spikes(cx, cy, rx, ry, n, len) {
+  let d = "";
+  for (let i = 0; i < n; i++) {
+    const a = -Math.PI / 2 + (i / n) * TAU;
+    const m = a + Math.PI / n;
+    d += `${i ? "L" : "M"}${n1(cx + rx * Math.cos(a))} ${n1(cy + ry * Math.sin(a))}L${n1(cx + (rx + len) * Math.cos(m))} ${n1(cy + (ry + len) * Math.sin(m))}`;
+  }
+  return `${d}Z`;
+}
+
+function star(cx, cy, ro, ri, n = 5) {
+  let d = "";
+  for (let i = 0; i < n * 2; i++) {
+    const a = -Math.PI / 2 + (i / (n * 2)) * TAU;
+    const r = i % 2 ? ri : ro;
+    d += `${i ? "L" : "M"}${n1(cx + r * Math.cos(a))} ${n1(cy + r * Math.sin(a))}`;
+  }
+  return `${d}Z`;
+}
+
+/** Parallel lines across an ellipse at `angle` degrees, leaving a gap for the face box. */
+function hatch(cx, cy, rx, ry, step, angle, hole) {
+  const ux = Math.cos((angle * Math.PI) / 180), uy = Math.sin((angle * Math.PI) / 180);
+  const segs = [];
+  for (let k = -Math.max(rx, ry); k <= Math.max(rx, ry); k += step) {
+    const px = cx - uy * k, py = cy + ux * k;
+    const a = (ux / rx) ** 2 + (uy / ry) ** 2;
+    const b = 2 * (((px - cx) * ux) / rx ** 2 + ((py - cy) * uy) / ry ** 2);
+    const c = ((px - cx) / rx) ** 2 + ((py - cy) / ry) ** 2 - 1;
+    const disc = b * b - 4 * a * c;
+    if (disc <= 0) continue;
+    const t0 = (-b - Math.sqrt(disc)) / (2 * a), t1 = (-b + Math.sqrt(disc)) / (2 * a);
+    let h0 = Infinity, h1 = -Infinity;
+    if (hole) {
+      const [x0, y0, x1, y1] = hole;
+      let lo = -Infinity, hi = Infinity;
+      for (const [p, u, mn, mx] of [[px, ux, x0, x1], [py, uy, y0, y1]]) {
+        if (Math.abs(u) < 1e-9) { if (p < mn || p > mx) { lo = Infinity; } continue; }
+        const ta = (mn - p) / u, tb = (mx - p) / u;
+        lo = Math.max(lo, Math.min(ta, tb)); hi = Math.min(hi, Math.max(ta, tb));
+      }
+      if (lo < hi) { h0 = lo; h1 = hi; }
+    }
+    const pieces = h0 < h1 ? [[t0, Math.min(h0, t1)], [Math.max(h1, t0), t1]] : [[t0, t1]];
+    for (const [s, e] of pieces) {
+      if (e - s < 2) continue;
+      segs.push(`M${n1(px + ux * s)} ${n1(py + uy * s)}L${n1(px + ux * e)} ${n1(py + uy * e)}`);
+    }
+  }
+  return segs.join("");
+}
+
+/** Points on a staggered grid inside an ellipse, skipping the face box. */
+function grid(cx, cy, rx, ry, step, hole, fillRatio = 0.86) {
+  const pts = [];
+  for (let y = cy - ry, row = 0; y <= cy + ry; y += step * 0.87, row++) {
+    for (let x = cx - rx + (row % 2 ? step / 2 : 0); x <= cx + rx; x += step) {
+      if (((x - cx) / rx) ** 2 + ((y - cy) / ry) ** 2 > fillRatio) continue;
+      if (hole && x > hole[0] && x < hole[2] && y > hole[1] && y < hole[3]) continue;
+      pts.push([n1(x), n1(y)]);
+    }
+  }
+  return pts;
+}
+
+/** A stroked stem with an ink edge, for shapes that are lines rather than fills. */
+const inkStroke = (d, colour, w) =>
+  `<path d="${d}" fill="none" stroke="${INK}" stroke-width="${w + 5.5}"/><path d="${d}" fill="none" stroke="${colour}" stroke-width="${w}"/>`;
+
 // Archetypes: (c, f) => markup in a 100x100 box. `c` holds colours, `f` is the face function
 // (a no-op when drawing the sticker silhouette).
 const A = {
@@ -440,6 +524,493 @@ const A = {
     <path d="M50 8C60 16 64 26 64 36C58 28 54 20 50 8Z M50 8C40 16 36 26 36 36C42 28 46 20 50 8Z" fill="${c.tip}"/>
     <path d="M50 20C42 40 42 70 48 92M50 20C58 40 58 70 52 92" fill="none" stroke-width="2.2" opacity=".35"/>
     ${f(50, 62, 0.72)}`,
+
+  banana: (c, f) => {
+    const finger = "M12 40C18 86 70 96 84 36L90 28C74 62 30 62 14 37Z";
+    return `
+    <g transform="rotate(24 87 32)"><path d="${finger}" fill="${c.body2}"/><circle cx="12" cy="38.5" r="3" fill="${c.tip}"/></g>
+    <path d="${finger}" fill="${c.body}"/>
+    <circle cx="12" cy="38.5" r="3" fill="${c.tip}"/>
+    <path d="M82 36L88 14L96 16L92 30Z" fill="${c.stem}"/>
+    <path d="M20 47C32 70 62 78 82 40" fill="none" stroke-width="2.2" opacity=".3"/>
+    ${shine(24, 58, 3, 7, -40)}
+    ${f(48, 65, 0.72)}`;
+  },
+
+  kiwi: (c, f) => {
+    const seeds = Array.from({ length: 14 }, (_, i) => {
+      const a = (i / 14) * TAU;
+      const x = n1(42 + 18.5 * Math.cos(a)), y = n1(60 + 18.5 * Math.sin(a));
+      return `<ellipse cx="${x}" cy="${y}" rx="1.5" ry="2.8" fill="${INK}" stroke="none" transform="rotate(${n1((a * 180) / Math.PI + 90)} ${x} ${y})"/>`;
+    }).join("");
+    return `
+    <ellipse cx="66" cy="38" rx="27" ry="22" fill="${c.skin}" transform="rotate(-28 66 38)"/>
+    ${c.fuzz ? `<path d="M74 18l2-3M86 28l3-1M89 42l3 1M60 17l-1-3M50 24l-3-2" fill="none" stroke-width="2" opacity=".45"/>` : ""}
+    ${shine(60, 26, 3, 6, -30)}
+    <circle cx="42" cy="60" r="31" fill="${c.skin}"/>
+    <circle cx="42" cy="60" r="26" fill="${c.body}"/>
+    <path d="M42 36V44M42 76V84M18 60H26M58 60H66M25 43l6 6M59 43l-6 6M25 77l6-6M59 77l-6-6" fill="none" stroke="${c.core}" stroke-width="2" opacity=".6"/>
+    <ellipse cx="42" cy="61" rx="13" ry="9.5" fill="${c.core}" stroke="none"/>
+    ${seeds}
+    ${f(42, 60, 0.58)}`;
+  },
+
+  lychee: (c, f) => {
+    const texture = c.hairs
+      ? Array.from({ length: 24 }, (_, i) => {
+        const a = (i / 24) * TAU;
+        const [x0, y0] = [46 + 28 * Math.cos(a), 58 + 28 * Math.sin(a)];
+        const [x1, y1] = [46 + 40 * Math.cos(a + 0.2), 58 + 40 * Math.sin(a + 0.2)];
+        const [qx, qy] = [46 + 38 * Math.cos(a - 0.08), 58 + 38 * Math.sin(a - 0.08)];
+        return `<path d="M${n1(x0)} ${n1(y0)}Q${n1(qx)} ${n1(qy)} ${n1(x1)} ${n1(y1)}" fill="none" stroke="${c.hairs}" stroke-width="4"/>`;
+      }).join("")
+      : "";
+    const bumps = grid(46, 58, 27, 27, 9, [30, 50, 60, 72], 0.8)
+      .map(([x, y]) => `M${x - 2.6} ${y + 1.6}L${x} ${y - 1.8}L${x + 2.6} ${y + 1.6}`).join("");
+    return `
+    ${texture}
+    <path d="${c.hairs ? scallop(46, 58, 30, 30, 24, 2) : scallop(46, 58, 30, 30, 20, 4)}" fill="${c.body}"/>
+    <path d="${bumps}" fill="none" stroke="${c.body2}" stroke-width="2.2"/>
+    ${shine(30, 48, 4, 7)}
+    <path d="M50 29C52 22 56 16 62 12" fill="none" stroke="${c.stem}" stroke-width="3.2"/>
+    <path d="M60 13C66 3 80 3 86 7C80 17 68 19 60 13Z" fill="${c.leaf}"/>
+    ${c.flesh ? `<ellipse cx="78" cy="74" rx="13" ry="14" fill="${c.flesh}"/>${shine(73, 69, 2.5, 5)}
+      <path d="M64 76C65 92 91 92 92 76L87 80L83 75L78 81L73 75L69 80Z" fill="${c.body}"/>` : ""}
+    ${f(45, 60, 0.85)}`;
+  },
+
+  longan: (c, f) => {
+    const fruit = (x, y, r, face) => {
+      const body = c.oval
+        ? `<ellipse cx="${x}" cy="${y}" rx="${n1(r * 0.8)}" ry="${r}" fill="${c.body}"/>`
+        : `<circle cx="${x}" cy="${y}" r="${r}" fill="${c.body}"/>`;
+      const specks = `<path d="M${x - r * 0.4} ${y + r * 0.45}h.1M${x + r * 0.5} ${y + r * 0.2}h.1M${x + r * 0.1} ${y + r * 0.62}h.1M${x - r * 0.55} ${y - r * 0.05}h.1" fill="none" stroke="${c.body2}" stroke-width="2.6"/>`;
+      return `${body}${specks}${shine(x - r * 0.4, y - r * 0.3, r * 0.16, r * 0.3)}${face ? f(x, y + 2, 0.62) : ""}`;
+    };
+    return `
+    <path d="M60 18C70 4 88 2 96 6C88 16 74 22 60 18Z M36 16C26 4 10 4 4 8C12 18 26 20 36 16Z" fill="${c.leaf}"/>
+    <path d="M10 26C34 14 64 14 90 26M34 20L26 42M64 20L74 44M50 18L50 50M42 20L38 60M58 20L64 62" fill="none" stroke="${c.stem}" stroke-width="3"/>
+    ${fruit(26, 44, 13, false)}${fruit(74, 46, 13, false)}${fruit(36, 62, 13, false)}${fruit(64, 64, 13, false)}${fruit(50, 74, 17, true)}`;
+  },
+
+  papaya: (c, f) => {
+    const d = "M50 8C64 8 72 26 74 46C77 72 70 94 50 94C30 94 23 72 26 46C28 26 36 8 50 8Z";
+    const seeds = [[44, 32], [50, 27], [56, 32], [42, 40], [49, 38], [57, 40], [44, 48], [51, 47], [57, 49], [48, 55], [54, 55]];
+    return `
+    <path d="M47 9L48 2L53 2L53 9Z" fill="${c.stem}"/>
+    <path d="${d}" fill="${c.skin}"/>
+    <path d="${d}" fill="${c.body}" transform="translate(50 52) scale(.84) translate(-50 -52)"/>
+    <path d="M50 19C59 19 63 30 63 42C63 54 58 61 50 61C42 61 37 54 37 42C37 30 41 19 50 19Z" fill="${c.cavity}"/>
+    ${seeds.map(([x, y]) => `<circle cx="${x}" cy="${y}" r="2.7" fill="${INK}" stroke="none"/><circle cx="${x - 0.8}" cy="${y - 0.9}" r=".8" fill="#fff" stroke="none"/>`).join("")}
+    ${f(50, 75, 0.72)}`;
+  },
+
+  passionfruit: (c, f) => {
+    const seeds = [[62, 26], [72, 30], [58, 36], [70, 40], [78, 36], [66, 18]];
+    return `
+    <circle cx="64" cy="34" r="26" fill="${c.body}"/>
+    <circle cx="64" cy="34" r="21" fill="${c.pith}"/>
+    <circle cx="64" cy="34" r="16.5" fill="${c.pulp}" stroke="none"/>
+    ${seeds.map(([x, y]) => `<circle cx="${x}" cy="${y}" r="4" fill="${c.pulp2}" stroke="none"/><circle cx="${x}" cy="${y + 0.6}" r="2" fill="${INK}" stroke="none"/>`).join("")}
+    <circle cx="38" cy="62" r="29" fill="${c.body}"/>
+    <path d="M20 72q3-2 5 0M52 80q3-2 5 0M56 50q3-2 5 0M24 50q3-2 5 0" fill="none" stroke-width="2" opacity=".4"/>
+    ${shine(24, 52, 4, 8)}
+    <path d="M40 34C40 28 42 24 46 21" fill="none" stroke="${c.leaf}" stroke-width="3.4"/>
+    ${f(38, 64)}`;
+  },
+
+  dragonfruit: (c, f) => {
+    const flap = (x, y, rot, s = 1) => `<g transform="translate(${x} ${y}) rotate(${rot}) scale(${s})">
+      <path d="M-8 3C-8 -8 -4 -16 3 -23C2 -14 5 -6 8 3Z" fill="${c.body}"/>
+      <path d="M3 -23C-1 -19 -3 -14 -3 -10C0 -11 3 -11 5.5 -10C4.5 -15 3.5 -19 3 -23Z" fill="${c.tip}" stroke-width="2"/></g>`;
+    return `
+    ${flap(22, 50, -62)}${flap(78, 50, 62)}${flap(24, 76, -110, 0.9)}${flap(76, 76, 110, 0.9)}
+    <path d="M50 16C68 16 82 34 82 56C82 78 68 92 50 92C32 92 18 78 18 56C18 34 32 16 50 16Z" fill="${c.body}"/>
+    ${flap(36, 22, -30)}${flap(64, 22, 30)}${flap(50, 20, 0, 1.1)}
+    ${flap(30, 82, -12, 0.75)}${flap(70, 82, 12, 0.75)}${flap(50, 88, 0, 0.7)}
+    ${shine(30, 46, 4, 8)}
+    ${f(50, 60)}`;
+  },
+
+  jackfruit: (c, f) => {
+    const bumps = grid(50, 58, 28, 36, 8, [31, 50, 69, 72])
+      .map(([x, y]) => `M${x - 2.2} ${y + 1.4}L${x} ${y - 1.6}L${x + 2.2} ${y + 1.4}`).join("");
+    return `
+    <path d="M45 22L46 8L54 8L55 22Z" fill="${c.stem}"/>
+    <path d="M54 12C60 2 76 0 82 4C76 14 64 18 54 12Z" fill="${c.leaf}"/>
+    <path d="${scallop(50, 58, 30, 37, 30, 3)}" fill="${c.body}"/>
+    <path d="${bumps}" fill="none" stroke="${c.body2}" stroke-width="2.2"/>
+    ${shine(32, 44, 4, 9)}
+    ${f(50, 60, 0.9)}`;
+  },
+
+  durian: (c, f) => {
+    const inner = grid(50, 58, 24, 26, 10, [32, 48, 68, 72], 0.75)
+      .map(([x, y]) => `M${x - 3} ${y + 2}L${x} ${y - 3}L${x + 3} ${y + 2}`).join("");
+    return `
+    <path d="M46 28L45 12L53 10L54 28Z" fill="${c.stem}"/>
+    <path d="${spikes(50, 60, 29, 28, 18, 9)}" fill="${c.body}"/>
+    <path d="${inner}" fill="none" stroke="${c.body2}" stroke-width="2.2"/>
+    ${shine(34, 48, 4, 8)}
+    ${f(50, 61, 0.9)}`;
+  },
+
+  custardapple: (c, f) => {
+    const knobs = grid(50, 58, 28, 30, 10, [32, 50, 68, 72], 0.82)
+      .map(([x, y]) => `M${x - 4.5} ${y - 3}C${x - 4.5} ${y + 5} ${x + 4.5} ${y + 5} ${x + 4.5} ${y - 3}`).join("");
+    return `
+    <path d="M48 28L47 16L53 15L53 28Z" fill="${c.stem}"/>
+    <path d="M52 18C58 8 74 6 80 10C74 20 62 24 52 18Z" fill="${c.leaf}"/>
+    <path d="${scallop(50, 58, 30, 31, 16, 5)}" fill="${c.body}"/>
+    <path d="${knobs}" fill="none" stroke="${c.body2}" stroke-width="2.2"/>
+    ${shine(32, 46, 4, 8)}
+    ${f(50, 60, 0.9)}`;
+  },
+
+  carambola: (c, f) => `
+    <g transform="translate(64 32) rotate(-32)">
+      <path d="M-33 0C-24 -17 20 -19 33 -4C35 0 35 2 33 4C20 19 -24 17 -33 0Z" fill="${c.body2}"/>
+      <path d="M-28 -3C-10 -9 14 -9 31 -2M-28 3C-10 9 14 9 31 2" fill="none" stroke-width="2.2" opacity=".45"/>
+      <path d="M33 0L40 -2" fill="none" stroke="${c.stem}" stroke-width="3.4"/>
+    </g>
+    <path d="${star(40, 62, 32, 19)}" fill="${c.body}"/>
+    <path d="${star(40, 62, 17, 9)}" fill="${c.flesh}" stroke="none" opacity=".75"/>
+    ${[0, 1, 2, 3, 4].map((i) => { const a = -Math.PI / 2 + (i / 5) * TAU; return `<ellipse cx="${n1(40 + 12 * Math.cos(a))}" cy="${n1(62 + 12 * Math.sin(a))}" rx="1.6" ry="2.6" fill="${c.stem}" stroke="none" transform="rotate(${i * 72} ${n1(40 + 12 * Math.cos(a))} ${n1(62 + 12 * Math.sin(a))})"/>`; }).join("")}
+    ${f(40, 63, 0.6)}`,
+
+  pineapple: (c, f) => {
+    const leaf = (rot, s) => `<path d="M45 40C44 28 46 16 50 4C54 16 56 28 55 40Z" fill="${c.leaf}" transform="rotate(${rot} 50 40) translate(50 40) scale(${s}) translate(-50 -40)"/>`;
+    const hole = [31, 57, 69, 79];
+    return `
+    ${leaf(-52, 0.72)}${leaf(52, 0.72)}${leaf(-26, 0.88)}${leaf(26, 0.88)}${leaf(0, 1)}
+    <ellipse cx="50" cy="65" rx="26" ry="29" fill="${c.body}"/>
+    <path d="${hatch(50, 65, 24, 27, 9, 50, hole)}${hatch(50, 65, 24, 27, 9, -50, hole)}" fill="none" stroke="${c.body2}" stroke-width="2.2"/>
+    ${shine(33, 52, 4, 8)}
+    ${f(50, 67, 0.85)}`;
+  },
+
+  waxapple: (c, f) => `
+    <path d="M50 16L52 6" fill="none" stroke="${c.stem}" stroke-width="3.4"/>
+    <path d="M50 15C61 15 64 24 66 34C70 51 86 60 86 76C86 86 78 90 72 86C68 92 58 94 50 88C42 94 32 92 28 86C22 90 14 86 14 76C14 60 30 51 34 34C36 24 39 15 50 15Z" fill="${c.body}"/>
+    <path d="M40 30C36 48 30 64 29 84M60 30C64 48 70 64 71 84" fill="none" stroke-width="2" opacity=".3"/>
+    ${shine(35, 50, 4, 9)}
+    ${f(50, 64)}`,
+
+  coconut: (c, f) => `
+    <circle cx="68" cy="36" r="24" fill="${c.body}"/>
+    <path d="M52 26l4 2M80 22l3 3M86 40l3 1M60 52l2 3" fill="none" stroke-width="2" opacity=".45"/>
+    <ellipse cx="63" cy="30" rx="2.4" ry="3" fill="${INK}" stroke="none"/><ellipse cx="72" cy="30" rx="2.4" ry="3" fill="${INK}" stroke="none"/><ellipse cx="67.5" cy="38" rx="2.4" ry="3" fill="${INK}" stroke="none"/>
+    <path d="M12 58C12 82 30 92 48 92C66 92 84 82 84 58Z" fill="${c.body}"/>
+    <path d="M20 74l4 2M32 84l3 2M66 84l3-2M76 72l4-2" fill="none" stroke-width="2" opacity=".45"/>
+    <ellipse cx="48" cy="58" rx="36" ry="12" fill="${c.flesh}"/>
+    <ellipse cx="48" cy="59" rx="27" ry="7.5" fill="${c.flesh2}"/>
+    ${f(48, 75, 0.8)}`,
+
+  date: (c, f) => {
+    const one = (rot, face) => `<g transform="rotate(${rot} 50 14)">
+      <path d="M50 22C62 22 64 36 64 50C64 66 58 80 50 80C42 80 36 66 36 50C36 36 38 22 50 22Z" fill="${c.body}"/>
+      <path d="M44 22C46 18 54 18 56 22C54 25 46 25 44 22Z" fill="${c.cap}"/>
+      <path d="M40 40q3 3 1 7M59 56q-3 3-1 7M57 34q-2 3 0 6" fill="none" stroke-width="2" opacity=".4"/>
+      ${shine(42, 36, 2.5, 6)}
+      ${face ? f(50, 56, 0.55) : ""}</g>`;
+    return `<path d="M50 20C52 10 60 4 72 2" fill="none" stroke="${c.stem}" stroke-width="3.4"/>
+      ${one(40, false)}${one(-40, false)}${one(0, true)}`;
+  },
+
+  olive: (c, f) => {
+    const leaf = (x, y, rot) => `<ellipse cx="${x}" cy="${y}" rx="4.5" ry="17" fill="${c.leaf}" transform="rotate(${rot} ${x} ${y})"/>`;
+    const fruit = (x, y, s, face) => `<path d="M${x} ${y - 14 * s}L${x - 2} ${y - 20 * s}" fill="none" stroke="${c.stem}" stroke-width="2.6"/>
+      <ellipse cx="${x}" cy="${y}" rx="${n1(12 * s)}" ry="${n1(15 * s)}" fill="${c.body}"/>${shine(x - 5 * s, y - 5 * s, 2.5 * s, 5 * s)}${face ? f(x, y + 2, 0.55) : ""}`;
+    return `
+    ${leaf(22, 20, -58)}${leaf(56, 12, 70)}${leaf(80, 30, 40)}${leaf(40, 36, -20)}
+    <path d="M6 30C30 32 60 24 94 12" fill="none" stroke="${c.stem}" stroke-width="3.4"/>
+    ${fruit(28, 56, 0.9, false)}${fruit(76, 60, 0.9, false)}${fruit(52, 70, 1.25, true)}`;
+  },
+
+  peanut: (c, f) => `
+    <g transform="rotate(-24 50 52)">
+    <path d="M50 10C63 10 71 21 70 32C69 42 63 46 63 51C63 55 72 59 72 70C72 84 62 92 50 92C38 92 28 84 28 70C28 59 37 55 37 51C37 46 31 42 30 32C29 21 37 10 50 10Z" fill="${c.body}"/>
+    <path d="M38 22C42 30 42 38 40 44M62 22C58 30 58 38 60 44M44 14C46 24 46 34 46 44M56 14C54 24 54 34 54 44M36 32H64M40 20H60M32 64C34 76 38 84 44 88M68 64C66 76 62 84 56 88" fill="none" stroke-width="2" opacity=".35"/>
+    ${shine(36, 30, 2.8, 6)}
+    ${f(50, 70, 0.8)}</g>`,
+
+  walnut: (c, f) => `
+    <path d="${scallop(50, 56, 33, 32, 22, 2.6)}" fill="${c.body}"/>
+    <path d="M50 22C47 28 53 33 50 39M50 81C47 84 53 87 50 90" fill="none" stroke-width="3"/>
+    <path d="M24 44C30 40 32 48 38 44M20 58C26 54 30 62 35 58M26 74C30 70 34 76 39 72M76 44C70 40 68 48 62 44M80 58C74 54 70 62 65 58M74 74C70 70 66 76 61 72M36 30C40 34 44 30 44 36M64 30C60 34 56 30 56 36" fill="none" stroke-width="2.2" opacity=".5"/>
+    <path d="M47 23L50 15L53 23Z" fill="${c.body}"/>
+    ${f(50, 60, 0.85)}`,
+
+  almond: (c, f) => {
+    const shape = c.pecan
+      ? "M0 -30C10 -22 13 -8 13 2C13 14 8 24 0 30C-8 24 -13 14 -13 2C-13 -8 -10 -22 0 -30Z"
+      : "M0 -28C9 -18 15 -3 15 8C15 19 8 25 0 25C-8 25 -15 19 -15 8C-15 -3 -9 -18 0 -28Z";
+    const marks = c.pecan
+      ? `<path d="M-6 -20C-10 -8 -10 8 -6 22M6 -20C10 -8 10 8 6 22M0 -26V-16" fill="none" stroke="${c.body2}" stroke-width="3"/>`
+      : `<path d="M-6 -8h.1M5 -14h.1M-8 6h.1M8 2h.1M-2 18h.1M6 16h.1" fill="none" stroke="${c.body2}" stroke-width="3"/>`;
+    return `
+    <g transform="translate(66 38) rotate(32) scale(.86)"><path d="${shape}" fill="${c.body}"/>${marks}</g>
+    <g transform="translate(40 60) rotate(-22)"><path d="${shape}" fill="${c.body}"/>${marks}${shine(-6, -6, 2.5, 6, 10)}</g>
+    ${f(40, 64, 0.62)}`;
+  },
+
+  pistachio: (c, f) => `
+    <g transform="rotate(-18 50 56)">
+    <ellipse cx="50" cy="38" rx="17" ry="22" fill="${c.kernel}"/>
+    <path d="M36 26C40 18 60 18 64 26C58 23 42 23 36 26Z" fill="${c.skin}" stroke="none"/>
+    <path d="M50 92C32 92 25 74 27 58C28 46 30 38 34 30C38 42 44 50 50 52C56 50 62 42 66 30C70 38 72 46 73 58C75 74 68 92 50 92Z" fill="${c.body}"/>
+    <path d="M50 53C49 60 49 66 50 70" fill="none" stroke-width="2" opacity=".35"/>
+    ${shine(36, 52, 3, 6)}
+    ${f(51, 74, 0.8)}</g>`,
+
+  ginkgo: (c, f) => {
+    const nut = (x, y, s, face) => `<g transform="translate(${x} ${y}) scale(${s})"><path d="M0 -16C9 -16 13 -6 13 2C13 11 7 16 0 16C-7 16 -13 11 -13 2C-13 -6 -9 -16 0 -16Z" fill="${c.body}"/><path d="M0 -16C1 -19 2 -20 3 -21" fill="none" stroke-width="2.4"/>${shine(-5, -4, 2, 4)}</g>${face ? f(x, y + 2, 0.55) : ""}`;
+    return `
+    <path d="M50 62L50 80" fill="none" stroke="${c.stem}" stroke-width="3.4"/>
+    <path d="M50 62L16 22C28 8 42 6 48 8L50 24L52 8C58 6 72 8 84 22Z" fill="${c.leaf}"/>
+    <path d="M50 58L28 24M50 58L38 16M50 58L62 16M50 58L72 24M50 58L20 30M50 58L80 30" fill="none" stroke-width="2" opacity=".3"/>
+    ${nut(68, 76, 1, false)}${nut(38, 74, 1.25, true)}`;
+  },
+
+  sunflower: (c, f) => {
+    const petals = Array.from({ length: 16 }, (_, i) =>
+      `<ellipse cx="50" cy="20" rx="6.5" ry="12" fill="${c.body}" transform="rotate(${i * 22.5} 50 46)"/>`).join("");
+    const seeds = grid(50, 46, 15, 15, 5.2, [38, 40, 62, 56], 0.8).map(([x, y]) => `M${x} ${y}h.1`).join("");
+    return `
+    <path d="M50 70L50 97" fill="none" stroke="${c.stem}" stroke-width="5"/>
+    <path d="M50 88C40 82 30 84 24 90C32 96 42 94 50 88Z" fill="${c.leaf}"/>
+    ${petals}
+    <circle cx="50" cy="46" r="18" fill="${c.disc}"/>
+    <path d="${seeds}" fill="none" stroke="${c.seed}" stroke-width="2.6"/>
+    ${f(50, 47, 0.72)}`;
+  },
+
+  coffee: (c, f) => `
+    <path d="M58 20C62 6 78 2 88 6C84 18 70 24 58 20Z" fill="${c.leaf}"/>
+    <path d="M60 18C68 12 76 10 84 8" fill="none" stroke-width="2" opacity=".35"/>
+    <g transform="translate(64 44) rotate(28)">
+      <ellipse cx="0" cy="0" rx="17" ry="22" fill="${c.body2}"/>
+      <path d="M-2 -21C6 -12 -8 -4 0 4C8 12 -4 16 2 21" fill="none" stroke-width="3"/>
+    </g>
+    <g transform="translate(38 62) rotate(-24)">
+      <ellipse cx="0" cy="0" rx="21" ry="27" fill="${c.body}"/>
+      ${shine(-9, -10, 3, 7, 0)}
+    </g>
+    ${f(38, 63, 0.78)}`,
+
+  peppercorn: (c, f) => {
+    const corns = [[30, 58, 8], [44, 50, 8], [60, 52, 8], [72, 62, 7.5], [36, 74, 8], [64, 76, 8], [50, 86, 7.5], [22, 70, 7]];
+    const leaflets = [[62, 20, -40], [72, 14, -40], [82, 10, -40], [66, 30, 50], [76, 26, 50], [86, 22, 50]];
+    return `
+    ${leaflets.map(([x, y, r]) => `<ellipse cx="${x}" cy="${y}" rx="4.5" ry="8" fill="${c.leaf}" transform="rotate(${r} ${x} ${y})"/>`).join("")}
+    <path d="M54 28C66 22 80 18 94 16M50 44C50 36 52 30 56 26M50 44L30 58M50 44L60 52M50 44L50 66" fill="none" stroke="${c.stem}" stroke-width="3"/>
+    ${corns.map(([x, y, r], i) => `<circle cx="${x}" cy="${y}" r="${r}" fill="${c.body}"/>${i % 2
+      ? `<circle cx="${x + r * 0.2}" cy="${y - r * 0.2}" r="${n1(r * 0.42)}" fill="${INK}" stroke="none"/><circle cx="${x}" cy="${y - r * 0.35}" r=".9" fill="#fff" stroke="none"/>`
+      : `<path d="M${x - r * 0.35} ${y + r * 0.2}h.1M${x + r * 0.3} ${y - r * 0.3}h.1M${x + r * 0.2} ${y + r * 0.5}h.1" fill="none" stroke="${c.body2}" stroke-width="2.2"/>`}`).join("")}
+    <circle cx="50" cy="66" r="13" fill="${c.body}"/>
+    <path d="M40 58C38 64 40 72 46 76" fill="none" stroke="${c.body2}" stroke-width="2.4"/>
+    ${f(51, 67, 0.5)}`;
+  },
+
+  tea: (c, f) => `
+    <path d="M50 96C50 80 50 62 52 42" fill="none" stroke="${c.stem}" stroke-width="3.4"/>
+    <path d="M52 44C45 32 47 18 55 6C61 18 61 32 52 44Z" fill="${c.bud}"/>
+    <path d="M53 40C54 30 55 20 55 12" fill="none" stroke-width="1.8" opacity=".35"/>
+    <path d="M51 58C68 44 86 40 94 44C88 60 70 68 51 58Z" fill="${c.body2}"/>
+    <path d="M53 57C66 52 80 48 91 46" fill="none" stroke-width="2" opacity=".35"/>
+    <path d="M50 76C34 58 12 54 4 58C8 78 30 88 50 76Z" fill="${c.body}"/>
+    <path d="M48 75C38 68 22 62 8 60M20 62l-2 6M30 66l-1 7M40 70l0 6" fill="none" stroke-width="2" opacity=".3"/>
+    ${f(28, 70, 0.55)}`,
+
+  bittermelon: (c, f) => {
+    const spine = (t) => 50 + 4 * Math.sin(t * Math.PI);
+    const half = (t) => 17 * Math.pow(Math.sin(Math.PI * Math.min(0.96, 0.04 + t)), 0.75);
+    const left = [], right = [];
+    for (let i = 0; i <= 40; i++) {
+      const t = i / 40;
+      const bump = 2.2 * Math.abs(Math.sin(t * 34));
+      left.push(`${n1(spine(t) - half(t) - bump)} ${n1(10 + t * 84)}`);
+      right.push(`${n1(spine(t) + half(t) + bump)} ${n1(10 + t * 84)}`);
+    }
+    const ridges = [-0.55, 0, 0.55].map((k) => {
+      const pts = [];
+      for (let i = 2; i <= 38; i += 2) {
+        const t = i / 40;
+        if (k === 0 && t > 0.44 && t < 0.72) continue;
+        pts.push(`${n1(spine(t) + k * half(t) + 1.6 * Math.sin(t * 34))} ${n1(10 + t * 84)}`);
+      }
+      return `M${pts.join("L")}`;
+    }).join("");
+    return `
+    <path d="M${[...left, ...right.reverse()].join("L")}Z" fill="${c.body}"/>
+    <path d="${ridges}" fill="none" stroke="${c.body2}" stroke-width="2.4"/>
+    ${grid(54, 52, 13, 36, 8, [38, 44, 70, 72], 0.9).map(([x, y]) => `<ellipse cx="${x}" cy="${y}" rx="1.8" ry="2.6" fill="${c.body2}" stroke="none"/>`).join("")}
+    <path d="M48 12C46 6 49 2 54 2" fill="none" stroke="${c.stem}" stroke-width="3.4"/>
+    ${shine(n1(spine(0.4) - 9), 38, 3, 8, 5)}
+    ${f(n1(spine(0.58)), 59, 0.72)}`;
+  },
+
+  okra: (c, f) => {
+    const pod = (x, y, rot, face) => `<g transform="translate(${x} ${y}) rotate(${rot})">
+      <path d="M-9 -30C-10 -8 -6 16 0 40C6 16 10 -8 9 -30Z" fill="${c.body}"/>
+      <path d="M-4 -28C-4 -6 -2 16 0 36M4 -28C4 -6 2 16 0 36" fill="none" stroke-width="2" opacity=".4"/>
+      <path d="M-10 -30C-10 -37 10 -37 10 -30C5 -27 -5 -27 -10 -30Z" fill="${c.cap}"/>
+      <path d="M0 -35L2 -44" fill="none" stroke="${c.cap}" stroke-width="4"/></g>`;
+    return `${pod(28, 52, 22)}${pod(72, 52, -22)}${pod(50, 50, 0)}${f(50, 44, 0.5)}`;
+  },
+
+  lotusroot: (c, f) => {
+    const holes = Array.from({ length: 8 }, (_, i) => {
+      const a = (i / 8) * TAU + 0.2;
+      return `<ellipse cx="${n1(40 + 19 * Math.cos(a))}" cy="${n1(62 + 19 * Math.sin(a))}" rx="4.6" ry="5.4" fill="${c.hole}" stroke-width="2.2"/>`;
+    }).join("");
+    return `
+    <g transform="translate(40 62) rotate(45)">
+      <rect x="-17" y="-66" width="34" height="66" rx="17" fill="${c.body}"/>
+      <path d="M-17 -38C-6 -35 6 -35 17 -38" fill="none" stroke-width="2.4"/>
+      <path d="M-7 -52h.1M8 -58h.1M5 -46h.1" fill="none" stroke-width="2.6" opacity=".4"/>
+    </g>
+    <circle cx="40" cy="62" r="29" fill="${c.body}"/>
+    <circle cx="40" cy="62" r="25.5" fill="${c.flesh}"/>
+    ${holes}
+    ${f(40, 62, 0.58)}`;
+  },
+
+  lotuspod: (c, f) => {
+    const seeds = [[50, 34], [36, 32], [64, 32], [42, 39], [58, 39], [26, 36], [74, 36], [44, 27], [57, 27]];
+    return `
+    <path d="M45 70C45 82 43 90 40 98L50 98C52 90 55 82 55 70Z" fill="${c.body}"/>
+    <path d="M17 34C18 56 36 70 46 74L54 74C64 70 82 56 83 34Z" fill="${c.body}"/>
+    <ellipse cx="50" cy="34" rx="33" ry="12" fill="${c.top}"/>
+    ${seeds.map(([x, y]) => `<ellipse cx="${x}" cy="${y}" rx="4.2" ry="3.4" fill="${c.seed}" stroke-width="2"/>`).join("")}
+    <path d="M24 50C30 60 38 66 44 68" fill="none" stroke-width="2" opacity=".35"/>
+    ${f(50, 55, 0.72)}`;
+  },
+
+  bambooshoot: (c, f) => `
+    <path d="M50 6C58 18 74 52 76 76C77 88 64 94 50 94C36 94 23 88 24 76C26 52 42 18 50 6Z" fill="${c.body}"/>
+    <path d="M50 94C64 94 77 88 76 76C74 58 66 40 57 24C61 46 59 72 50 94Z" fill="${c.body2}"/>
+    <path d="M50 94C36 94 23 88 24 76C26 62 32 48 40 36C40 56 43 78 50 94Z" fill="${c.body2}"/>
+    <path d="M50 6C54 12 57 18 59 24C54 22 46 22 41 24C43 18 46 12 50 6Z" fill="${c.tip}"/>
+    <path d="M29 62h.1M33 50h.1M70 60h.1M66 46h.1M28 78h.1M72 78h.1" fill="none" stroke-width="2.6" opacity=".4"/>
+    <path d="M27 86C34 95 66 95 73 86C64 90 36 90 27 86Z" fill="${c.base}"/>
+    ${f(50, 64, 0.72)}`,
+
+  corm: (c, f) => {
+    const body = c.beak
+      ? "M50 30C70 30 84 44 84 62C84 78 70 88 50 88C30 88 16 78 16 62C16 44 30 30 50 30Z"
+      : "M50 36C70 36 88 46 88 62C88 78 70 86 50 86C30 86 12 78 12 62C12 46 30 36 50 36Z";
+    const sprout = c.beak
+      ? `<path d="M48 34C44 20 50 8 66 2C60 12 56 24 54 34Z" fill="${c.sprout}"/>`
+      : `<path d="M47 38C44 28 46 20 50 12C54 20 56 28 53 38Z" fill="${c.sprout}"/><path d="M47 30L40 24M53 30L60 24" fill="none" stroke="${c.sprout}" stroke-width="3"/>`;
+    const y0 = c.beak ? 48 : 52;
+    return `
+    ${sprout}
+    <path d="${body}" fill="${c.body}"/>
+    <path d="M${c.beak ? 20 : 15} ${y0}C34 ${y0 + 6} 66 ${y0 + 6} ${c.beak ? 80 : 85} ${y0}M${c.beak ? 22 : 24} ${y0 + 26}C36 ${y0 + 31} 64 ${y0 + 31} ${c.beak ? 78 : 76} ${y0 + 26}" fill="none" stroke="${c.body2}" stroke-width="2.6"/>
+    <path d="M46 ${c.beak ? 88 : 86}l-2 6M54 ${c.beak ? 88 : 86}l2 6" fill="none" stroke-width="2"/>
+    ${shine(28, y0 + 6, 4, 7)}
+    ${f(50, y0 + 15, 0.85)}`;
+  },
+
+  caltrop: (c, f) => `
+    <path d="M45 40L46 28L54 28L55 40Z" fill="${c.body2}"/>
+    <path d="M50 38C61 38 67 45 71 52C80 50 90 43 96 32C95 48 86 60 75 64C72 76 62 84 50 84C38 84 28 76 25 64C14 60 5 48 4 32C10 43 20 50 29 52C33 45 39 38 50 38Z" fill="${c.body}"/>
+    <path d="M47 84L50 92L53 84Z" fill="${c.body}"/>
+    ${shine(36, 52, 3, 6)}
+    ${f(50, 62, 0.82)}`,
+
+  scape: (c, f) => {
+    if (c.straight) {
+      const tips = [[30, 16], [40, 10], [50, 7], [60, 10], [70, 16]];
+      return `
+      ${tips.map(([x, y]) => inkStroke(`M50 96L${x} ${y + 8}`, c.body, 4.5)).join("")}
+      ${tips.map(([x, y]) => `<path d="M${x} ${y - 7}C${x + 5} ${y - 1} ${x + 5} ${y + 8} ${x} ${y + 9}C${x - 5} ${y + 8} ${x - 5} ${y - 1} ${x} ${y - 7}Z" fill="${c.bud}"/>`).join("")}
+      <path d="M34 60C44 65 56 65 66 60L67 78C56 83 44 83 33 78Z" fill="${c.band}"/>
+      ${f(50, 69, 0.55)}`;
+    }
+    const main = "M30 97C30 74 28 54 32 40C36 22 60 14 70 26C80 38 66 52 56 44C48 38 54 28 62 30C70 32 72 44 70 52";
+    const back = "M58 97C60 86 70 80 80 76C88 72 90 64 86 58";
+    return `
+    ${inkStroke(back, c.body, 5.5)}
+    <ellipse cx="84" cy="53" rx="6" ry="7.5" fill="${c.bud}" transform="rotate(-20 84 53)"/>
+    <path d="M86 46L90 36" fill="none" stroke="${c.body}" stroke-width="3"/>
+    ${inkStroke(main, c.body, 7)}
+    <path d="M70 50C82 52 84 70 74 76C62 78 58 62 70 50Z" fill="${c.bud}"/>
+    <path d="M72 76L70 90" fill="none" stroke="${c.body}" stroke-width="3.2"/>
+    ${f(71, 63, 0.5)}`;
+  },
+
+  fiddlehead: (c, f) => {
+    const coil = "M48 97C46 78 36 64 34 48C32 28 48 16 62 20C76 24 78 42 66 48C56 52 50 44 56 38";
+    const coil2 = "M30 97C28 84 20 76 16 64C12 50 22 40 32 44";
+    return `
+    ${inkStroke(coil2, c.body, 7)}
+    <circle cx="33" cy="47" r="6" fill="${c.body2}"/>
+    ${inkStroke(coil, c.body, 9)}
+    <circle cx="57" cy="36" r="8" fill="${c.body2}"/>
+    <path d="M36 70l-6 -3M38 80l-6 -2M34 58l-6 -4" fill="none" stroke="${c.body}" stroke-width="3.2"/>
+    ${f(58, 34, 0.45)}`;
+  },
+
+  ginger: (c, f) => `
+    <path d="M58 34C56 24 58 14 62 6C66 14 66 24 62 34Z M76 40C78 30 82 22 88 16C90 24 86 34 80 42Z" fill="${c.leaf}"/>
+    <path d="M18 66C12 58 16 48 26 48C28 40 36 36 42 40C46 30 56 28 60 36C66 30 76 32 78 40C88 40 92 52 86 60C88 70 80 78 70 76C62 84 48 84 40 78C30 82 20 76 18 66Z" fill="${c.body}"/>
+    <path d="M42 40C45 38 48 39 50 42M57 34C60 32 63 33 64 36M77 40C80 39 83 41 84 44" fill="none" stroke="${c.tip}" stroke-width="4"/>
+    <path d="M30 52C32 56 32 60 30 64M72 70C70 66 70 62 72 58" fill="none" stroke-width="2.2" opacity=".45"/>
+    ${shine(28, 56, 3, 6)}
+    ${f(52, 60, 0.8)}`,
+
+  sugarcane: (c, f) => {
+    const stalk = (dx, rot) => `<g transform="rotate(${rot} 50 96) translate(${dx} 0)">
+      <path d="M42 96L42 26L58 26L58 96Z" fill="${c.body}"/>
+      ${[40, 58, 76].map((y) => `<path d="M41 ${y}C46 ${y + 3} 54 ${y + 3} 59 ${y}L59 ${y + 4}C54 ${y + 7} 46 ${y + 7} 41 ${y + 4}Z" fill="${c.node}"/>`).join("")}
+      <ellipse cx="50" cy="26" rx="8" ry="2.6" fill="${c.flesh}"/></g>`;
+    return `
+    <path d="M50 30C40 16 24 8 8 8C24 16 38 26 46 36Z M52 30C60 14 76 6 94 6C78 16 64 26 56 36Z" fill="${c.leaf}"/>
+    ${stalk(-18, -8)}${stalk(18, 8)}${stalk(0, 0)}
+    ${f(50, 69, 0.5)}`;
+  },
+
+  rose: (c, f) => `
+    <path d="M50 70L50 97" fill="none" stroke="${c.stem}" stroke-width="4"/>
+    <path d="M50 84C40 76 28 76 20 82C28 92 42 92 50 84Z M50 80C60 72 72 72 80 78C72 88 58 88 50 80Z" fill="${c.leaf}"/>
+    ${[0, 72, 144, 216, 288].map((r) => `<circle cx="50" cy="28" r="15" fill="${c.body}" transform="rotate(${r} 50 46)"/>`).join("")}
+    <circle cx="50" cy="46" r="20" fill="${c.body2}"/>
+    <path d="M42 36C44 28 58 28 58 36C58 42 50 44 48 40M34 44C34 34 40 28 46 26M66 44C66 34 60 28 54 26" fill="none" stroke-width="2.2" opacity=".5"/>
+    ${f(50, 51, 0.62)}`,
+
+  sprouts: (c, f) => {
+    const heads = [[20, 30, 7, -40], [34, 16, 7, -20], [66, 16, 7, 20], [80, 30, 7, 40]];
+    const stems = heads.map(([x, y]) => inkStroke(`M${n1(44 + x / 8)} 97C${n1(44 + x / 8)} 70 ${x} ${y + 30} ${x} ${y + 5}`, c.body, 4.5)).join("");
+    const head = ([x, y, r, rot]) => `<g transform="rotate(${rot} ${x} ${y})">
+      <path d="M${x} ${y - r}C${x - 4} ${y - r - 8} ${x - 12} ${y - r - 6} ${x - 12} ${y - r - 2}C${x - 8} ${y - r} ${x - 4} ${y - r + 1} ${x} ${y - r}Z" fill="${c.leaf}" stroke-width="2"/>
+      <ellipse cx="${x}" cy="${y}" rx="${r}" ry="${n1(r * 0.85)}" fill="${c.head}"/><path d="M${x} ${y - r * 0.8}V${y + r * 0.8}" fill="none" stroke-width="1.8" opacity=".35"/></g>`;
+    return `
+    ${stems}
+    ${inkStroke("M52 97C52 76 50 60 50 42", c.body, 6)}
+    ${heads.map(head).join("")}
+    <ellipse cx="50" cy="34" rx="15" ry="12.5" fill="${c.head}"/>
+    <path d="M46 22C42 12 30 10 26 14C30 20 40 22 46 22Z" fill="${c.leaf}"/>
+    ${f(50, 35, 0.6)}`;
+  },
+
+  kelp: (c, f) => {
+    const frond = (x0, amp, lean, w, len) => {
+      const l = [], r = [], mid = [];
+      for (let i = 0; i <= 24; i++) {
+        const t = i / 24;
+        const y = 96 - t * len;
+        const x = x0 + lean * t + amp * Math.sin(t * 9);
+        const hw = w * Math.sin(Math.PI * Math.min(0.95, 0.12 + t * 0.88)) * (1 + 0.15 * Math.sin(t * 22));
+        l.push(`${n1(x - hw)} ${n1(y)}`); r.push(`${n1(x + hw)} ${n1(y)}`); mid.push(`${n1(x)} ${n1(y)}`);
+      }
+      return `<path d="M${[...l, ...r.reverse()].join("L")}Z" fill="${c.body}"/><path d="M${mid.join("L")}" fill="none" stroke="${c.body2}" stroke-width="2.4"/>`;
+    };
+    return `${frond(38, 4, -22, 9, 78)}${frond(64, 4, 20, 9, 76)}${frond(50, 5, 0, 13, 90)}
+      <path d="M40 96C44 92 56 92 60 96" fill="none" stroke-width="3"/>
+      ${f(50, 56, 0.55)}`;
+  },
 };
 
 
