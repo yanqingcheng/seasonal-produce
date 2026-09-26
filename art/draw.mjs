@@ -852,11 +852,19 @@ const A = {
 
   okra: (c, f) => {
     const pod = (x, y, rot, face) => `<g transform="translate(${x} ${y}) rotate(${rot})">
-      <path d="M-9 -30C-10 -8 -6 16 0 40C6 16 10 -8 9 -30Z" fill="${c.body}"/>
-      <path d="M-4 -28C-4 -6 -2 16 0 36M4 -28C4 -6 2 16 0 36" fill="none" stroke-width="2" opacity=".4"/>
-      <path d="M-10 -30C-10 -37 10 -37 10 -30C5 -27 -5 -27 -10 -30Z" fill="${c.cap}"/>
-      <path d="M0 -35L2 -44" fill="none" stroke="${c.cap}" stroke-width="4"/></g>`;
-    return `${pod(28, 52, 22)}${pod(72, 52, -22)}${pod(50, 50, 0)}${f(50, 44, 0.5)}`;
+      <path d="M-37 0L-45 -3" fill="none" stroke="${c.cap}" stroke-width="4.5"/>
+      <path d="M-30 -10C-20 -13 -8 -12 4 -9C18 -5 30 -1 41 3C30 6 18 9 4 10C-8 12 -20 12 -30 9C-33 4 -33 -5 -30 -10Z" fill="${c.body}"/>
+      <path d="M-26 -5C-8 -6 16 -2 38 3M-26 5C-8 7 16 6 38 3${face ? "M10 1C20 2 30 2 38 3" : "M-26 0C-4 0 18 1 38 3"}" fill="none" stroke-width="2.2" opacity=".4"/>
+      <path d="M-30 -10C-35 -12 -39 -7 -38 -3L-38 3C-39 7 -35 11 -30 9C-28 4 -28 -5 -30 -10Z" fill="${c.cap}"/>
+      ${face ? `${shine(-18, -6, 2, 4.5, 80)}${f(-6, 1, 0.55)}` : ""}</g>`;
+    const seeds = [0, 1, 2, 3, 4].map((i) => {
+      const a = -Math.PI / 2 + (i / 5) * TAU;
+      return `<circle cx="${n1(76 + 6.5 * Math.cos(a))}" cy="${n1(80 + 6.5 * Math.sin(a))}" r="2.4" fill="${c.seed}" stroke-width="1.6"/>`;
+    }).join("");
+    return `${pod(28, 54, 102, false)}${pod(60, 42, 28, true)}
+      <circle cx="76" cy="80" r="16" fill="${c.body}"/>
+      <path d="${star(76, 80, 12, 6)}" fill="${c.flesh}" stroke-width="2"/>
+      ${seeds}`;
   },
 
   lotusroot: (c, f) => {
@@ -953,13 +961,23 @@ const A = {
     ${f(58, 34, 0.45)}`;
   },
 
-  ginger: (c, f) => `
-    <path d="M58 34C56 24 58 14 62 6C66 14 66 24 62 34Z M76 40C78 30 82 22 88 16C90 24 86 34 80 42Z" fill="${c.leaf}"/>
-    <path d="M18 66C12 58 16 48 26 48C28 40 36 36 42 40C46 30 56 28 60 36C66 30 76 32 78 40C88 40 92 52 86 60C88 70 80 78 70 76C62 84 48 84 40 78C30 82 20 76 18 66Z" fill="${c.body}"/>
-    <path d="M42 40C45 38 48 39 50 42M57 34C60 32 63 33 64 36M77 40C80 39 83 41 84 44" fill="none" stroke="${c.tip}" stroke-width="4"/>
-    <path d="M30 52C32 56 32 60 30 64M72 70C70 66 70 62 72 58" fill="none" stroke-width="2.2" opacity=".45"/>
-    ${shine(28, 56, 3, 6)}
-    ${f(52, 60, 0.8)}`,
+  ginger: (c, f) => {
+    const lobes = [[18, 68, 70, 64, 27], [28, 60, 16, 42, 16], [48, 56, 50, 34, 17], [50, 42, 64, 26, 13], [66, 60, 84, 48, 15], [70, 72, 88, 80, 13], [22, 74, 10, 84, 11]];
+    const seg = ([x1, y1, x2, y2]) => `M${x1} ${y1}L${x2} ${y2}`;
+    const rings = lobes.flatMap(([x1, y1, x2, y2, w], i) => (i === 0 ? [0.1, 0.9] : [0.45, 0.78]).map((t) => {
+      const len = Math.hypot(x2 - x1, y2 - y1), nx = -(y2 - y1) / len, ny = (x2 - x1) / len;
+      const cx = x1 + (x2 - x1) * t, cy = y1 + (y2 - y1) * t, h = w / 2 - 1.5;
+      return `M${n1(cx - nx * h)} ${n1(cy - ny * h)}Q${n1(cx + (x2 - x1) / len * 2.5)} ${n1(cy + (y2 - y1) / len * 2.5)} ${n1(cx + nx * h)} ${n1(cy + ny * h)}`;
+    })).join("");
+    return `
+    ${c.leaf ? `<path d="M62 28C60 18 62 10 68 2C72 10 70 20 66 28Z M82 48C82 38 86 30 92 24C94 32 90 42 85 49Z" fill="${c.leaf}"/>` : ""}
+    ${lobes.map((l) => `<path d="${seg(l)}" fill="none" stroke="${INK}" stroke-width="${l[4] + 6.8}"/>`).join("")}
+    ${lobes.map((l) => `<path d="${seg(l)}" fill="none" stroke="${c.body}" stroke-width="${l[4]}"/>`).join("")}
+    ${c.tip ? lobes.slice(1).map(([, , x2, y2, w]) => `<circle cx="${x2}" cy="${y2}" r="${n1(w / 2)}" fill="${c.tip}" stroke="none"/>`).join("") : ""}
+    <path d="${rings}" fill="none" stroke="${c.ring}" stroke-width="2.2"/>
+    ${shine(26, 58, 2.6, 5, 70)}
+    ${f(46, 66, 0.78)}`;
+  },
 
   sugarcane: (c, f) => {
     const stalk = (dx, rot) => `<g transform="rotate(${rot} 50 96) translate(${dx} 0)">
