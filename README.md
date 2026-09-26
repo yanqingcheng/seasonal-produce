@@ -1,39 +1,91 @@
-# seasonal-produce
+# Seasonal Produce
 
-This repository is the seasonal produce calendar for idea #22. The United Kingdom shipped first. France, Spain, Ontario, Italy, Florida, Sichuan, Shandong, Jiangsu, Yunnan, Hainan, Xinjiang, and Japan ship on the same wheel. The work follows the museum-ship pipeline.
+An illustrated year-wheel of what fruit and veg are in season, month by month, across 13 places. Spin the wheel, tap a month to see what's at its peak, and tap any sticker for a fact sheet. It lives at **[qingsworkshop.com/in-season](https://www.qingsworkshop.com/in-season/)**, part of Qing's Workshop.
 
-[INTENT.md](INTENT.md) is the product truth.
+[![The UK year-wheel in September](docs/year-wheel.png)](https://www.qingsworkshop.com/in-season/)
 
-[STAGE2.md](STAGE2.md) records a PASS (2026-09-23) of the UK pass-2 corpus against that intent. It is not Melody’s earlier idea #22 PASS.
+## Places
 
-[DESIGN.md](DESIGN.md) is the Stage 3 design. It records Qing’s 2026-09-23 art direction (stylised, never fake-realistic food; joyful, dynamic, slick) and the "Sticker Garden" system that meets it.
+Pick a place from the **Place** menu, or link straight to one with `?country=<id>`.
 
-[ARCH.md](ARCH.md) is the Stage 4 high-level design. The signed-off sticker-garden wheel is the shared graphics layer. Stage 5 shipped the UK pack on that wheel. A later country is another pack plus a selector, not a new wheel. France, Spain, Ontario, Italy, Florida, Sichuan, Shandong, Jiangsu, Yunnan, Hainan, Xinjiang, and Japan are those packs. There is still no globe. Where ARCH.md and DESIGN.md disagree on the UK clock, the UK staple ranking, or which UK items may be stickers, ARCH.md wins. Motion and art stay in DESIGN.md.
+| Region | Place | Id |
+| --- | --- | --- |
+| Europe | United Kingdom | `uk` |
+| Europe | France | `fr` |
+| Europe | Spain | `es` |
+| Europe | Italy | `it` |
+| North America | Ontario | `on` |
+| North America | Florida | `fl` |
+| Asia | Sichuan | `sc` |
+| Asia | Shandong | `sd` |
+| Asia | Jiangsu | `js` |
+| Asia | Yunnan | `yn` |
+| Asia | Hainan | `hi` |
+| Asia | Xinjiang | `xj` |
+| Asia | Japan | `jp` |
 
-## Thin ship
+Regional places stay regional. Ontario is not Canada, Florida is not the United States, and each Chinese province is its own wheel. Any id not in this table, such as `us` or `cn`, falls back to the UK.
 
-Stage 5 publishes one static exhibit in [`site/`](site/). The wheel is shared. Shipped packs are the United Kingdom, France, Spain, Ontario (`on`, never a Canada-wide pack), Italy (`it`), Florida (`fl`, never a United States pack), Sichuan (`sc`), Shandong (`sd`), Jiangsu (`js`), Yunnan (`yn`), Hainan (`hi`), Xinjiang (`xj`), and Japan (`jp`). There is no China-wide pack and no United States pack. A place selector appears when the registry lists more than one shipped pack.
+## What "in season" means
+
+Here, "in season" means **grown locally in that place during that month**. What the shops happen to import does not count. A lemon on a London shelf in February is not a UK crop, so it isn't on the UK wheel.
+
+Where the sources allow, each month sorts its produce into **at peak**, **in season**, and **on the edge** (the start or end of a season, or a month only one source mentions). The UK wheel also has a recipe for every month.
+
+## Run it locally
+
+It's a static site with no dependencies. You only need Node (CI uses Node 22) and Python 3.
 
 ```bash
-node scripts/build-data.mjs
-node scripts/check-ship.mjs
-python3 -m http.server -d site
+node scripts/build-data.mjs     # rebuild site/data/ from the packs in data/
+node scripts/check-ship.mjs     # run the acceptance checks
+python3 -m http.server -d site  # serve at http://localhost:8000/
 ```
 
-Open `http://localhost:8000/`. With no query, the wheel lands on the current month in the pack timezone (Europe/London for the UK). `?month=9` opens September. `?item=apple` opens that fact sheet after the arrival spin. `?country=fr`, `?country=es`, `?country=on`, `?country=it`, `?country=fl`, `?country=sc`, `?country=sd`, `?country=js`, `?country=yn`, `?country=hi`, `?country=xj`, and `?country=jp` load those packs. Any other `?country=` value, including `us`, `cn`, and `china`, falls back to the UK pack.
+By default the wheel opens on the current month in the place's own timezone. You can change that with URL parameters:
 
-The intended public URL is `https://yanqingcheng.github.io/seasonal-produce/`.
+| Parameter | Example | Effect |
+| --- | --- | --- |
+| `country` | `?country=jp` | Open a place by id (see the table above). Unknown ids fall back to `uk`. |
+| `month` | `?month=9` | Open a month, `1`–`12`. |
+| `item` | `?item=apple` | Open that item's fact sheet once the wheel stops spinning. Use the item's name as it appears in the pack. |
 
-## Prototype
+You can combine them, as in `?country=fr&month=6`. The same parameters work on the [live site](https://www.qingsworkshop.com/in-season/?country=jp).
 
-The signed Stage 3 prototype stays in [`prototype/`](prototype/) for comparison. Its `data.js` is the Stage 3 snapshot. The ship command above does not regenerate it.
+## How the data is laid out
 
-```bash
-python3 -m http.server -d prototype
-```
+- **`data/<id>/`** holds one pack per place. `pack.json` has the name, timezone, month names and source attribution. `produce_calendar.csv` has the month-by-month grid. `copy.json` has the interface wording, `staples.txt` the commonness ranking for stickers, and `schema_and_evidence_rules.md` explains how that pack's months were decided.
+- **`art/`** draws the stickers. `art/draw.mjs` makes the shared sticker art, and `art/bindings/<id>.json` maps each item in a pack to a sticker.
+- **`scripts/build-data.mjs`** reads every pack and regenerates `site/data/<id>.json`, `site/data/registry.json`, `site/sprites.svg` and `site/og.svg`. Don't edit those by hand. CI rebuilds them and fails if the committed copies are stale.
+- **`site/`** is the page itself: `index.html`, `exhibit.js`, `styles.css` and self-hosted fonts. The [Workshop site](https://www.qingsworkshop.com/in-season/) serves a copy of this folder.
 
-pstack is enabled for this repository in [`.cursor/settings.json`](.cursor/settings.json). Keep later work static and small.
+### Adding a place
+
+1. Create `data/<id>/` with the same files as an existing pack, and `art/bindings/<id>.json` for its stickers.
+2. Add the id to `PACK_ORDER` in `scripts/build-data.mjs` so it sorts into the registry where you want it.
+3. In `site/exhibit.js`, add the id to `PLACE_FLAGS` and to its group in `PLACE_CONTINENTS`. A place missing from `PLACE_CONTINENTS` won't show up in the Place menu.
+4. Update the expected id lists in `scripts/check-ship.mjs`.
+5. Run `node scripts/build-data.mjs` and `node scripts/check-ship.mjs`, then commit the regenerated `site/` files.
+
+Only count what's grown there. Leave out import-only produce instead of hiding it.
+
+## Sources
+
+Every pack credits the public sources behind it. You'll find the credit in the `attribution` field of `data/<id>/pack.json`, which the page also shows in its footer. Each pack's `schema_and_evidence_rules.md` gives more detail, and Spain adds a source ledger in `data/es/primary_sources.csv`.
+
+## Design notes
+
+For the curious:
+
+- [INTENT.md](INTENT.md): what the wheel set out to do.
+- [DESIGN.md](DESIGN.md): the "sticker garden" art direction, wheel anatomy and motion.
+- [ARCH.md](ARCH.md): how one shared wheel renders any place's pack.
+- [`prototype/`](prototype/): the original design prototype, kept for comparison. Serve it with `python3 -m http.server -d prototype`.
+
+## Made with
+
+Designed and built with AI models in [Cursor](https://cursor.com): Claude Opus 5.5 designed the UI and built the prototype, and Grok did the architecture and implementation. Art direction and product decisions by Qing.
 
 ## License
 
-The code in this repository is [MIT](LICENSE), copyright 2026 Yanqing Cheng / Qing's Workshop. Country pack attributions stay with their named public sources, already on each pack.
+The code is [MIT](LICENSE), copyright 2026 Yanqing Cheng / Qing's Workshop. Pack source attributions stay with their named public sources.
