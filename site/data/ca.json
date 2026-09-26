@@ -1,0 +1,1636 @@
+{
+  "id": "ca",
+  "name": "California",
+  "locale": "en-US",
+  "timezone": "America/Los_Angeles",
+  "title": "The California Year-Wheel",
+  "tagline": "What's growing in California, month by month.",
+  "month_names": [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ],
+  "seasons": [
+    "Winter",
+    "Winter",
+    "Spring",
+    "Spring",
+    "Spring",
+    "Summer",
+    "Summer",
+    "Summer",
+    "Autumn",
+    "Autumn",
+    "Autumn",
+    "Winter"
+  ],
+  "categories": [
+    {
+      "id": "vegetable",
+      "label": "Vegetable",
+      "one": "vegetable",
+      "plural": "vegetables"
+    },
+    {
+      "id": "fruit",
+      "label": "Fruit",
+      "one": "fruit",
+      "plural": "fruit"
+    }
+  ],
+  "attribution": "California harvest months from the County of Fresno Harvest Calendar for Fresno County Crops (2018), the California Artichoke Advisory Board, California Grown, The Produce Nerd, and the Coachella Valley Independent.",
+  "copy": {
+    "this_month": "This month",
+    "back_to": "Back to {month}",
+    "new_in": "New in",
+    "last_call": "Last call",
+    "at_peak": "At peak",
+    "also_in_season": "In season",
+    "on_the_edge": "On the edge",
+    "edge_why": "Edge of the season.",
+    "hub_this_month": "this month",
+    "at_peak_short": "{n} at peak",
+    "more_in_season": "{n} more in season",
+    "hub_when_no_peak": "{n} in season",
+    "open_fact_sheet": "Open fact sheet.",
+    "recipe_badge": "recipe",
+    "months_recipe": "{month}'s recipe",
+    "made_with": "Made with",
+    "cook_it_on": "Cook it on {name}",
+    "fact_in_season": "In season",
+    "fact_peak": "Peak",
+    "fact_edge": "On the edge",
+    "stored_notes": "Stored & type notes",
+    "regions": "Regions & notes",
+    "recipe": "Recipe",
+    "specialist_sources": "Source",
+    "no_in_season": "No in-season months on the calendar",
+    "no_peak": "",
+    "all_year": "all year",
+    "in_month": "{state} in {month}",
+    "state_labels": {
+      "peak": "Peak",
+      "in": "In season",
+      "edge": "On the edge",
+      "out": "Not in season"
+    },
+    "ring_key": {
+      "peak": "Peak",
+      "in": "In season",
+      "edge": "Edge",
+      "out": "Out"
+    },
+    "proper": {},
+    "hint": "Tap a month on the wheel, or use the ← → keys.",
+    "wheel_label": "Produce year-wheel. Pick a month.",
+    "months_nav": "Months",
+    "close_sheet": "Close fact sheet",
+    "season_label": "Season: {list}",
+    "mix_label": "In season by type: {list}",
+    "blurb": {
+      "counts": "{month} has {in} California crops in season.",
+      "fullest": "The fullest month on the wheel.",
+      "leanest": "The leanest stretch of the year.",
+      "filling": "The wheel is filling up: {n} more in season than in {prev}.",
+      "winding": "Winding down: {n} fewer in season than in {prev}.",
+      "same": "Much the same list as {prev}.",
+      "lead_fruit_one": "{lead} lead the peaks ({count} of {peak}), with 1 fruit at its best.",
+      "lead_fruit": "{lead} lead the peaks ({count} of {peak}), with {n} fruits at their best.",
+      "lead_none": "{lead} lead the peaks ({count} of {peak}); no fruit is at peak.",
+      "change_threshold": 8
+    }
+  },
+  "items": [
+    {
+      "item": "apple",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "County of Fresno, Harvest Calendar for Fresno County Crops (2018)"
+      ]
+    },
+    {
+      "item": "apricot",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "County of Fresno, Harvest Calendar for Fresno County Crops (2018)"
+      ]
+    },
+    {
+      "item": "Artichoke",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "California Artichoke Advisory Board"
+      ]
+    },
+    {
+      "item": "asparagus",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "County of Fresno, Harvest Calendar for Fresno County Crops (2018)"
+      ]
+    },
+    {
+      "item": "blueberry",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "County of Fresno, Harvest Calendar for Fresno County Crops (2018)"
+      ]
+    },
+    {
+      "item": "Boysenberry",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "County of Fresno, Harvest Calendar for Fresno County Crops (2018)"
+      ]
+    },
+    {
+      "item": "broccoli",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "County of Fresno, Harvest Calendar for Fresno County Crops (2018)"
+      ]
+    },
+    {
+      "item": "cabbage",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "County of Fresno, Harvest Calendar for Fresno County Crops (2018)"
+      ]
+    },
+    {
+      "item": "Carrot",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "County of Fresno, Harvest Calendar for Fresno County Crops (2018)"
+      ]
+    },
+    {
+      "item": "cauliflower",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "County of Fresno, Harvest Calendar for Fresno County Crops (2018)"
+      ]
+    },
+    {
+      "item": "celery",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "County of Fresno, Harvest Calendar for Fresno County Crops (2018)"
+      ]
+    },
+    {
+      "item": "cherry",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "County of Fresno, Harvest Calendar for Fresno County Crops (2018)"
+      ]
+    },
+    {
+      "item": "fig",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "County of Fresno, Harvest Calendar for Fresno County Crops (2018)"
+      ]
+    },
+    {
+      "item": "garlic",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "California Grown"
+      ]
+    },
+    {
+      "item": "Grape",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "County of Fresno, Harvest Calendar for Fresno County Crops (2018)"
+      ]
+    },
+    {
+      "item": "Lemon",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "County of Fresno, Harvest Calendar for Fresno County Crops (2018)"
+      ]
+    },
+    {
+      "item": "Lettuce",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "County of Fresno, Harvest Calendar for Fresno County Crops (2018)"
+      ]
+    },
+    {
+      "item": "Lima bean",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "County of Fresno, Harvest Calendar for Fresno County Crops (2018)"
+      ]
+    },
+    {
+      "item": "Mandarin",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "The Produce Nerd"
+      ]
+    },
+    {
+      "item": "melon",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "County of Fresno, Harvest Calendar for Fresno County Crops (2018)"
+      ]
+    },
+    {
+      "item": "nectarine",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "County of Fresno, Harvest Calendar for Fresno County Crops (2018)"
+      ]
+    },
+    {
+      "item": "Onion",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "County of Fresno, Harvest Calendar for Fresno County Crops (2018)"
+      ]
+    },
+    {
+      "item": "Orange",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "County of Fresno, Harvest Calendar for Fresno County Crops (2018)"
+      ]
+    },
+    {
+      "item": "peach",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "County of Fresno, Harvest Calendar for Fresno County Crops (2018)"
+      ]
+    },
+    {
+      "item": "pear",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "County of Fresno, Harvest Calendar for Fresno County Crops (2018)"
+      ]
+    },
+    {
+      "item": "peas",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "County of Fresno, Harvest Calendar for Fresno County Crops (2018)"
+      ]
+    },
+    {
+      "item": "Persimmon",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "County of Fresno, Harvest Calendar for Fresno County Crops (2018)"
+      ]
+    },
+    {
+      "item": "plum",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "County of Fresno, Harvest Calendar for Fresno County Crops (2018)"
+      ]
+    },
+    {
+      "item": "Pomegranate",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "County of Fresno, Harvest Calendar for Fresno County Crops (2018)"
+      ]
+    },
+    {
+      "item": "Pumpkin",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "County of Fresno, Harvest Calendar for Fresno County Crops (2018)"
+      ]
+    },
+    {
+      "item": "Radish",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "County of Fresno, Harvest Calendar for Fresno County Crops (2018)"
+      ]
+    },
+    {
+      "item": "Snap Beans",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "County of Fresno, Harvest Calendar for Fresno County Crops (2018)"
+      ]
+    },
+    {
+      "item": "strawberry",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "County of Fresno, Harvest Calendar for Fresno County Crops (2018)"
+      ]
+    },
+    {
+      "item": "Sweet Corn",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "County of Fresno, Harvest Calendar for Fresno County Crops (2018)"
+      ]
+    },
+    {
+      "item": "Sweet Potatoes",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "County of Fresno, Harvest Calendar for Fresno County Crops (2018)"
+      ]
+    },
+    {
+      "item": "Tomato",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "County of Fresno, Harvest Calendar for Fresno County Crops (2018)"
+      ]
+    },
+    {
+      "item": "Turnip",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "County of Fresno, Harvest Calendar for Fresno County Crops (2018)"
+      ]
+    }
+  ],
+  "recipes": [],
+  "months": [
+    {
+      "key": "jan",
+      "name": "January",
+      "counts": {
+        "peak": 0,
+        "in": 7,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "broccoli",
+        "cabbage",
+        "Orange",
+        "Turnip",
+        "cauliflower",
+        "Mandarin",
+        "Artichoke"
+      ],
+      "peak": [],
+      "in": [
+        "Artichoke",
+        "broccoli",
+        "cabbage",
+        "cauliflower",
+        "Mandarin",
+        "Orange",
+        "Turnip"
+      ],
+      "edge": [],
+      "arrivals": [],
+      "farewells": [
+        "broccoli",
+        "cabbage",
+        "cauliflower",
+        "Turnip"
+      ],
+      "quiet": [
+        "broccoli",
+        "cabbage",
+        "Turnip",
+        "cauliflower",
+        "Mandarin"
+      ],
+      "blurb": "January has <strong>7</strong> California crops in season. Much the same list as December."
+    },
+    {
+      "key": "feb",
+      "name": "February",
+      "counts": {
+        "peak": 0,
+        "in": 6,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "peas",
+        "Snap Beans",
+        "Orange",
+        "Lima bean",
+        "Mandarin",
+        "Artichoke"
+      ],
+      "peak": [],
+      "in": [
+        "Artichoke",
+        "Lima bean",
+        "Mandarin",
+        "Orange",
+        "peas",
+        "Snap Beans"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Lima bean",
+        "peas",
+        "Snap Beans"
+      ],
+      "farewells": [],
+      "quiet": [
+        "peas",
+        "Snap Beans",
+        "Orange",
+        "Lima bean",
+        "Mandarin"
+      ],
+      "blurb": "February has <strong>6</strong> California crops in season. The leanest stretch of the year."
+    },
+    {
+      "key": "mar",
+      "name": "March",
+      "counts": {
+        "peak": 0,
+        "in": 10,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "peas",
+        "Snap Beans",
+        "Carrot",
+        "Orange",
+        "blueberry",
+        "Lima bean",
+        "Radish",
+        "asparagus",
+        "Mandarin",
+        "Artichoke"
+      ],
+      "peak": [],
+      "in": [
+        "Artichoke",
+        "asparagus",
+        "blueberry",
+        "Carrot",
+        "Lima bean",
+        "Mandarin",
+        "Orange",
+        "peas",
+        "Radish",
+        "Snap Beans"
+      ],
+      "edge": [],
+      "arrivals": [
+        "asparagus",
+        "blueberry",
+        "Carrot",
+        "Radish"
+      ],
+      "farewells": [],
+      "quiet": [
+        "peas",
+        "Snap Beans",
+        "Carrot",
+        "blueberry",
+        "Radish"
+      ],
+      "blurb": "March has <strong>10</strong> California crops in season. Much the same list as February."
+    },
+    {
+      "key": "apr",
+      "name": "April",
+      "counts": {
+        "peak": 0,
+        "in": 10,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "peas",
+        "Snap Beans",
+        "Carrot",
+        "Orange",
+        "blueberry",
+        "Lima bean",
+        "Radish",
+        "asparagus",
+        "Mandarin",
+        "Artichoke"
+      ],
+      "peak": [],
+      "in": [
+        "Artichoke",
+        "asparagus",
+        "blueberry",
+        "Carrot",
+        "Lima bean",
+        "Mandarin",
+        "Orange",
+        "peas",
+        "Radish",
+        "Snap Beans"
+      ],
+      "edge": [],
+      "arrivals": [],
+      "farewells": [
+        "Lima bean",
+        "Mandarin",
+        "peas",
+        "Snap Beans"
+      ],
+      "quiet": [
+        "Carrot",
+        "Orange",
+        "blueberry",
+        "Lima bean",
+        "asparagus"
+      ],
+      "blurb": "April has <strong>10</strong> California crops in season. Much the same list as March."
+    },
+    {
+      "key": "may",
+      "name": "May",
+      "counts": {
+        "peak": 0,
+        "in": 10,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Carrot",
+        "peach",
+        "strawberry",
+        "Orange",
+        "Boysenberry",
+        "blueberry",
+        "Radish",
+        "asparagus",
+        "nectarine",
+        "Artichoke"
+      ],
+      "peak": [],
+      "in": [
+        "Artichoke",
+        "asparagus",
+        "blueberry",
+        "Boysenberry",
+        "Carrot",
+        "nectarine",
+        "Orange",
+        "peach",
+        "Radish",
+        "strawberry"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Boysenberry",
+        "nectarine",
+        "peach",
+        "strawberry"
+      ],
+      "farewells": [
+        "blueberry",
+        "Orange",
+        "Radish"
+      ],
+      "quiet": [
+        "peach",
+        "strawberry",
+        "Boysenberry",
+        "Radish",
+        "nectarine"
+      ],
+      "blurb": "May has <strong>10</strong> California crops in season. Much the same list as April."
+    },
+    {
+      "key": "jun",
+      "name": "June",
+      "counts": {
+        "peak": 0,
+        "in": 14,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "garlic",
+        "Tomato",
+        "Carrot",
+        "melon",
+        "peach",
+        "strawberry",
+        "cherry",
+        "apricot",
+        "Boysenberry",
+        "plum",
+        "asparagus",
+        "fig",
+        "nectarine",
+        "Artichoke"
+      ],
+      "peak": [],
+      "in": [
+        "apricot",
+        "Artichoke",
+        "asparagus",
+        "Boysenberry",
+        "Carrot",
+        "cherry",
+        "fig",
+        "garlic",
+        "melon",
+        "nectarine",
+        "peach",
+        "plum",
+        "strawberry",
+        "Tomato"
+      ],
+      "edge": [],
+      "arrivals": [
+        "apricot",
+        "cherry",
+        "fig",
+        "garlic"
+      ],
+      "farewells": [
+        "asparagus",
+        "Boysenberry",
+        "Carrot"
+      ],
+      "quiet": [
+        "garlic",
+        "Tomato",
+        "melon",
+        "peach",
+        "cherry"
+      ],
+      "blurb": "June has <strong>14</strong> California crops in season. Much the same list as May."
+    },
+    {
+      "key": "jul",
+      "name": "July",
+      "counts": {
+        "peak": 0,
+        "in": 13,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "garlic",
+        "Tomato",
+        "Grape",
+        "Sweet Corn",
+        "melon",
+        "peach",
+        "strawberry",
+        "apricot",
+        "plum",
+        "celery",
+        "fig",
+        "nectarine",
+        "Artichoke"
+      ],
+      "peak": [],
+      "in": [
+        "apricot",
+        "Artichoke",
+        "celery",
+        "fig",
+        "garlic",
+        "Grape",
+        "melon",
+        "nectarine",
+        "peach",
+        "plum",
+        "strawberry",
+        "Sweet Corn",
+        "Tomato"
+      ],
+      "edge": [],
+      "arrivals": [
+        "celery",
+        "Grape",
+        "Sweet Corn"
+      ],
+      "farewells": [
+        "apricot"
+      ],
+      "quiet": [
+        "garlic",
+        "Tomato",
+        "Grape",
+        "Sweet Corn",
+        "apricot"
+      ],
+      "blurb": "July has <strong>13</strong> California crops in season. Much the same list as June."
+    },
+    {
+      "key": "aug",
+      "name": "August",
+      "counts": {
+        "peak": 0,
+        "in": 15,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "apple",
+        "garlic",
+        "Onion",
+        "Tomato",
+        "Grape",
+        "Sweet Corn",
+        "melon",
+        "peach",
+        "strawberry",
+        "pear",
+        "plum",
+        "celery",
+        "fig",
+        "nectarine",
+        "Artichoke"
+      ],
+      "peak": [],
+      "in": [
+        "apple",
+        "Artichoke",
+        "celery",
+        "fig",
+        "garlic",
+        "Grape",
+        "melon",
+        "nectarine",
+        "Onion",
+        "peach",
+        "pear",
+        "plum",
+        "strawberry",
+        "Sweet Corn",
+        "Tomato"
+      ],
+      "edge": [],
+      "arrivals": [
+        "apple",
+        "Onion",
+        "pear"
+      ],
+      "farewells": [
+        "garlic",
+        "plum",
+        "Tomato"
+      ],
+      "quiet": [
+        "apple",
+        "Onion",
+        "melon",
+        "pear",
+        "plum"
+      ],
+      "blurb": "August has <strong>15</strong> California crops in season. The fullest month on the wheel."
+    },
+    {
+      "key": "sep",
+      "name": "September",
+      "counts": {
+        "peak": 0,
+        "in": 15,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "apple",
+        "Onion",
+        "Grape",
+        "Sweet Corn",
+        "broccoli",
+        "melon",
+        "cabbage",
+        "peach",
+        "strawberry",
+        "pear",
+        "celery",
+        "cauliflower",
+        "fig",
+        "nectarine",
+        "Artichoke"
+      ],
+      "peak": [],
+      "in": [
+        "apple",
+        "Artichoke",
+        "broccoli",
+        "cabbage",
+        "cauliflower",
+        "celery",
+        "fig",
+        "Grape",
+        "melon",
+        "nectarine",
+        "Onion",
+        "peach",
+        "pear",
+        "strawberry",
+        "Sweet Corn"
+      ],
+      "edge": [],
+      "arrivals": [
+        "broccoli",
+        "cabbage",
+        "cauliflower"
+      ],
+      "farewells": [
+        "nectarine",
+        "peach",
+        "pear",
+        "strawberry"
+      ],
+      "quiet": [
+        "apple",
+        "Onion",
+        "strawberry",
+        "celery",
+        "fig"
+      ],
+      "blurb": "September has <strong>15</strong> California crops in season. The fullest month on the wheel."
+    },
+    {
+      "key": "oct",
+      "name": "October",
+      "counts": {
+        "peak": 0,
+        "in": 15,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "apple",
+        "Lettuce",
+        "Onion",
+        "Grape",
+        "Sweet Corn",
+        "broccoli",
+        "melon",
+        "cabbage",
+        "Pumpkin",
+        "Persimmon",
+        "Pomegranate",
+        "celery",
+        "cauliflower",
+        "fig",
+        "Artichoke"
+      ],
+      "peak": [],
+      "in": [
+        "apple",
+        "Artichoke",
+        "broccoli",
+        "cabbage",
+        "cauliflower",
+        "celery",
+        "fig",
+        "Grape",
+        "Lettuce",
+        "melon",
+        "Onion",
+        "Persimmon",
+        "Pomegranate",
+        "Pumpkin",
+        "Sweet Corn"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Lettuce",
+        "Persimmon",
+        "Pomegranate",
+        "Pumpkin"
+      ],
+      "farewells": [
+        "apple",
+        "celery",
+        "fig",
+        "Grape"
+      ],
+      "quiet": [
+        "Grape",
+        "Sweet Corn",
+        "Pumpkin",
+        "Persimmon",
+        "Pomegranate"
+      ],
+      "blurb": "October has <strong>15</strong> California crops in season. The fullest month on the wheel."
+    },
+    {
+      "key": "nov",
+      "name": "November",
+      "counts": {
+        "peak": 0,
+        "in": 12,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Lettuce",
+        "broccoli",
+        "cabbage",
+        "Orange",
+        "Lemon",
+        "Sweet Potatoes",
+        "Persimmon",
+        "Pomegranate",
+        "Turnip",
+        "cauliflower",
+        "Mandarin",
+        "Artichoke"
+      ],
+      "peak": [],
+      "in": [
+        "Artichoke",
+        "broccoli",
+        "cabbage",
+        "cauliflower",
+        "Lemon",
+        "Lettuce",
+        "Mandarin",
+        "Orange",
+        "Persimmon",
+        "Pomegranate",
+        "Sweet Potatoes",
+        "Turnip"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Lemon",
+        "Mandarin",
+        "Orange",
+        "Sweet Potatoes"
+      ],
+      "farewells": [
+        "Persimmon",
+        "Pomegranate"
+      ],
+      "quiet": [
+        "Lettuce",
+        "cabbage",
+        "Lemon",
+        "Sweet Potatoes",
+        "Persimmon"
+      ],
+      "blurb": "November has <strong>12</strong> California crops in season. Much the same list as October."
+    },
+    {
+      "key": "dec",
+      "name": "December",
+      "counts": {
+        "peak": 0,
+        "in": 10,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Lettuce",
+        "broccoli",
+        "cabbage",
+        "Orange",
+        "Lemon",
+        "Sweet Potatoes",
+        "Turnip",
+        "cauliflower",
+        "Mandarin",
+        "Artichoke"
+      ],
+      "peak": [],
+      "in": [
+        "Artichoke",
+        "broccoli",
+        "cabbage",
+        "cauliflower",
+        "Lemon",
+        "Lettuce",
+        "Mandarin",
+        "Orange",
+        "Sweet Potatoes",
+        "Turnip"
+      ],
+      "edge": [],
+      "arrivals": [],
+      "farewells": [
+        "Lemon",
+        "Lettuce",
+        "Sweet Potatoes"
+      ],
+      "quiet": [
+        "Lettuce",
+        "broccoli",
+        "Lemon",
+        "Sweet Potatoes",
+        "Artichoke"
+      ],
+      "blurb": "December has <strong>10</strong> California crops in season. Much the same list as November."
+    }
+  ]
+}

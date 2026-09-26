@@ -1,0 +1,277 @@
+{
+  "apple": {
+    "archetype": "round",
+    "colours": {
+      "body": "#ff5a4e",
+      "leaf": "#52c26b"
+    }
+  },
+  "apricot": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#ffb627",
+      "cleft": true,
+      "leaf": "#52c26b"
+    }
+  },
+  "Artichoke": {
+    "archetype": "artichoke",
+    "colours": {
+      "body": "#9dbf94",
+      "body2": "#3bb273",
+      "tip": "#8e4dd6"
+    }
+  },
+  "asparagus": {
+    "archetype": "asparagus",
+    "colours": {
+      "body": "#52c26b",
+      "tip": "#8e4dd6",
+      "band": "#ff5f8a"
+    }
+  },
+  "blueberry": {
+    "archetype": "cluster",
+    "colours": {
+      "body": "#4f6df5"
+    }
+  },
+  "Boysenberry": {
+    "archetype": "berry",
+    "colours": {
+      "body": "#5b3a9b",
+      "body2": "#8e4dd6",
+      "leaf": "#3bb273"
+    }
+  },
+  "broccoli": {
+    "archetype": "broccoli",
+    "colours": {
+      "body": "#3bb273",
+      "body2": "#23865a",
+      "stalk": "#a8e05a"
+    }
+  },
+  "cabbage": {
+    "archetype": "head",
+    "colours": {
+      "body": "#52c26b",
+      "body2": "#3bb273"
+    }
+  },
+  "Carrot": {
+    "archetype": "root",
+    "colours": {
+      "body": "#ff9a3c",
+      "leaf": "#3bb273"
+    }
+  },
+  "cauliflower": {
+    "archetype": "cauliflower",
+    "colours": {
+      "body": "#fff6dc",
+      "leaf": "#3bb273"
+    }
+  },
+  "celery": {
+    "archetype": "celery",
+    "colours": {
+      "body": "#c9f0b0",
+      "body2": "#52c26b",
+      "leaf": "#3bb273"
+    }
+  },
+  "cherry": {
+    "archetype": "cherry",
+    "colours": {
+      "body": "#d9344a",
+      "stem": "#3bb273",
+      "leaf": "#52c26b"
+    }
+  },
+  "fig": {
+    "archetype": "fig",
+    "colours": {
+      "body": "#8e4dd6",
+      "leaf": "#3bb273"
+    }
+  },
+  "garlic": {
+    "archetype": "garlic",
+    "colours": {
+      "body": "#fffdf6",
+      "body2": "#c9a7ff"
+    }
+  },
+  "Grape": {
+    "archetype": "currants",
+    "colours": {
+      "body": "#5b3a9b",
+      "stem": "#3bb273",
+      "leaf": "#52c26b"
+    }
+  },
+  "Lemon": {
+    "archetype": "round",
+    "colours": {
+      "body": "#ffd84a",
+      "leaf": "#52c26b"
+    }
+  },
+  "Lettuce": {
+    "archetype": "head",
+    "colours": {
+      "body": "#a8e05a",
+      "body2": "#52c26b",
+      "frilly": true
+    }
+  },
+  "Lima bean": {
+    "archetype": "pod",
+    "colours": {
+      "body": "#c9f0b0",
+      "body2": "#fff6dc",
+      "leaf": "#3bb273"
+    }
+  },
+  "Mandarin": {
+    "archetype": "round",
+    "colours": {
+      "body": "#ffb627",
+      "leaf": "#3bb273"
+    }
+  },
+  "melon": {
+    "archetype": "round",
+    "colours": {
+      "body": "#f0a202",
+      "leaf": "#52c26b"
+    }
+  },
+  "nectarine": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#ff5a4e",
+      "cleft": true,
+      "leaf": "#52c26b"
+    }
+  },
+  "Onion": {
+    "archetype": "onion",
+    "colours": {
+      "body": "#ffb627",
+      "body2": "#ff9a3c"
+    }
+  },
+  "Orange": {
+    "archetype": "round",
+    "colours": {
+      "body": "#ff7a1a",
+      "leaf": "#3bb273"
+    }
+  },
+  "peach": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#ffb38a",
+      "cleft": true,
+      "leaf": "#52c26b"
+    }
+  },
+  "pear": {
+    "archetype": "pear",
+    "colours": {
+      "body": "#a8e05a",
+      "leaf": "#3bb273"
+    }
+  },
+  "peas": {
+    "archetype": "pod",
+    "colours": {
+      "body": "#52c26b",
+      "body2": "#a8e05a",
+      "leaf": "#3bb273"
+    }
+  },
+  "Persimmon": {
+    "archetype": "round",
+    "colours": {
+      "body": "#ff6b2c",
+      "calyx": "#3bb273"
+    }
+  },
+  "plum": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#8e4dd6",
+      "cleft": true,
+      "leaf": "#3bb273"
+    }
+  },
+  "Pomegranate": {
+    "archetype": "round",
+    "colours": {
+      "body": "#c2255c",
+      "crown": "#e9b87a"
+    }
+  },
+  "Pumpkin": {
+    "archetype": "pumpkin",
+    "colours": {
+      "body": "#ff9a3c",
+      "body2": "#ffb627",
+      "stem": "#b0703f"
+    }
+  },
+  "Radish": {
+    "archetype": "bulbroot",
+    "colours": {
+      "body": "#ff5f8a",
+      "leaf": "#3bb273",
+      "stem": "#3bb273"
+    }
+  },
+  "Snap Beans": {
+    "archetype": "beans",
+    "colours": {
+      "body": "#3bb273"
+    }
+  },
+  "strawberry": {
+    "archetype": "strawberry",
+    "colours": {
+      "body": "#ff5a4e",
+      "leaf": "#3bb273"
+    }
+  },
+  "Sweet Corn": {
+    "archetype": "corn",
+    "colours": {
+      "body": "#ffd84a",
+      "body2": "#ffb627",
+      "leaf": "#52c26b"
+    }
+  },
+  "Sweet Potatoes": {
+    "archetype": "potato",
+    "colours": {
+      "body": "#ff9a3c"
+    }
+  },
+  "Tomato": {
+    "archetype": "round",
+    "colours": {
+      "body": "#ff5a4e",
+      "calyx": "#3bb273"
+    }
+  },
+  "Turnip": {
+    "archetype": "bulbroot",
+    "colours": {
+      "body": "#fffdf6",
+      "cap": "#8e4dd6",
+      "leaf": "#3bb273",
+      "stem": "#3bb273"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+item,category,jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec,peak_months,stored_notes,regions_notes,specialist_sources,source_label,source_group
+apple,fruit,.,.,.,.,.,.,.,I,I,I,.,.,,,,"County of Fresno, Harvest Calendar for Fresno County Crops (2018)",Apple,fruit
+apricot,fruit,.,.,.,.,.,I,I,.,.,.,.,.,,,,"County of Fresno, Harvest Calendar for Fresno County Crops (2018)",Apricot,fruit
+Artichoke,vegetable,I,I,I,I,I,I,I,I,I,I,I,I,,,,California Artichoke Advisory Board,Artichoke,vegetable
+asparagus,vegetable,.,.,I,I,I,I,.,.,.,.,.,.,,,,"County of Fresno, Harvest Calendar for Fresno County Crops (2018)",Asparagus,vegetable
+blueberry,fruit,.,.,I,I,I,.,.,.,.,.,.,.,,,,"County of Fresno, Harvest Calendar for Fresno County Crops (2018)",Blueberry,fruit
+Boysenberry,fruit,.,.,.,.,I,I,.,.,.,.,.,.,,,,"County of Fresno, Harvest Calendar for Fresno County Crops (2018)",Boysenberry,fruit
+broccoli,vegetable,I,.,.,.,.,.,.,.,I,I,I,I,,,,"County of Fresno, Harvest Calendar for Fresno County Crops (2018)",Broccoli,vegetable
+cabbage,vegetable,I,.,.,.,.,.,.,.,I,I,I,I,,,,"County of Fresno, Harvest Calendar for Fresno County Crops (2018)",Cabbage,vegetable
+Carrot,vegetable,.,.,I,I,I,I,.,.,.,.,.,.,,,,"County of Fresno, Harvest Calendar for Fresno County Crops (2018)",Carrot,vegetable
+cauliflower,vegetable,I,.,.,.,.,.,.,.,I,I,I,I,,,,"County of Fresno, Harvest Calendar for Fresno County Crops (2018)",Cauliflower,vegetable
+celery,vegetable,.,.,.,.,.,.,I,I,I,I,.,.,,,,"County of Fresno, Harvest Calendar for Fresno County Crops (2018)",Celery,vegetable
+cherry,fruit,.,.,.,.,.,I,.,.,.,.,.,.,,,,"County of Fresno, Harvest Calendar for Fresno County Crops (2018)",Cherry,fruit
+fig,fruit,.,.,.,.,.,I,I,I,I,I,.,.,,,,"County of Fresno, Harvest Calendar for Fresno County Crops (2018)",Fig,fruit
+garlic,vegetable,.,.,.,.,.,I,I,I,.,.,.,.,,,,California Grown,Garlic,vegetable
+Grape,fruit,.,.,.,.,.,.,I,I,I,I,.,.,,,,"County of Fresno, Harvest Calendar for Fresno County Crops (2018)",Grape,fruit
+Lemon,fruit,.,.,.,.,.,.,.,.,.,.,I,I,,,,"County of Fresno, Harvest Calendar for Fresno County Crops (2018)",Lemon,fruit
+Lettuce,vegetable,.,.,.,.,.,.,.,.,.,I,I,I,,,,"County of Fresno, Harvest Calendar for Fresno County Crops (2018)",Lettuce,vegetable
+Lima bean,vegetable,.,I,I,I,.,.,.,.,.,.,.,.,,,,"County of Fresno, Harvest Calendar for Fresno County Crops (2018)",Lima bean,vegetable
+Mandarin,fruit,I,I,I,I,.,.,.,.,.,.,I,I,,,,The Produce Nerd,Mandarin,fruit
+melon,fruit,.,.,.,.,.,I,I,I,I,I,.,.,,,,"County of Fresno, Harvest Calendar for Fresno County Crops (2018)",Melon,fruit
+nectarine,fruit,.,.,.,.,I,I,I,I,I,.,.,.,,,,"County of Fresno, Harvest Calendar for Fresno County Crops (2018)",Nectarine,fruit
+Onion,vegetable,.,.,.,.,.,.,.,I,I,I,.,.,,,,"County of Fresno, Harvest Calendar for Fresno County Crops (2018)",Onion,vegetable
+Orange,fruit,I,I,I,I,I,.,.,.,.,.,I,I,,,,"County of Fresno, Harvest Calendar for Fresno County Crops (2018)",Orange (Navel),fruit
+peach,fruit,.,.,.,.,I,I,I,I,I,.,.,.,,,,"County of Fresno, Harvest Calendar for Fresno County Crops (2018)",Peach,fruit
+pear,fruit,.,.,.,.,.,.,.,I,I,.,.,.,,,,"County of Fresno, Harvest Calendar for Fresno County Crops (2018)",Pear,fruit
+peas,vegetable,.,I,I,I,.,.,.,.,.,.,.,.,,,,"County of Fresno, Harvest Calendar for Fresno County Crops (2018)",Pea,vegetable
+Persimmon,fruit,.,.,.,.,.,.,.,.,.,I,I,.,,,,"County of Fresno, Harvest Calendar for Fresno County Crops (2018)",Persimmon,fruit
+plum,fruit,.,.,.,.,.,I,I,I,.,.,.,.,,,,"County of Fresno, Harvest Calendar for Fresno County Crops (2018)",Plum / prune,fruit
+Pomegranate,fruit,.,.,.,.,.,.,.,.,.,I,I,.,,,,"County of Fresno, Harvest Calendar for Fresno County Crops (2018)",Pomegranate,fruit
+Pumpkin,vegetable,.,.,.,.,.,.,.,.,.,I,.,.,,,,"County of Fresno, Harvest Calendar for Fresno County Crops (2018)",Pumpkin,vegetable
+Radish,vegetable,.,.,I,I,I,.,.,.,.,.,.,.,,,,"County of Fresno, Harvest Calendar for Fresno County Crops (2018)",Radish,vegetable
+Snap Beans,vegetable,.,I,I,I,.,.,.,.,.,.,.,.,,,,"County of Fresno, Harvest Calendar for Fresno County Crops (2018)",Snap bean,vegetable
+strawberry,fruit,.,.,.,.,I,I,I,I,I,.,.,.,,,,"County of Fresno, Harvest Calendar for Fresno County Crops (2018)",Strawberry,fruit
+Sweet Corn,vegetable,.,.,.,.,.,.,I,I,I,I,.,.,,,,"County of Fresno, Harvest Calendar for Fresno County Crops (2018)",Sweet corn,vegetable
+Sweet Potatoes,vegetable,.,.,.,.,.,.,.,.,.,.,I,I,,,,"County of Fresno, Harvest Calendar for Fresno County Crops (2018)",Sweet potato / yam,vegetable
+Tomato,vegetable,.,.,.,.,.,I,I,I,.,.,.,.,,,,"County of Fresno, Harvest Calendar for Fresno County Crops (2018)",Tomato,vegetable
+Turnip,vegetable,I,.,.,.,.,.,.,.,.,.,I,I,,,,"County of Fresno, Harvest Calendar for Fresno County Crops (2018)",Turnip,vegetable

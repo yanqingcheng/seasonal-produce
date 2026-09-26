@@ -30,6 +30,11 @@
     "status": "shipped"
   },
   {
+    "id": "ca",
+    "name": "California",
+    "status": "shipped"
+  },
+  {
     "id": "sc",
     "name": "Sichuan",
     "status": "shipped"
