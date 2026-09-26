@@ -58,6 +58,50 @@ The Florida calendar lists a bounded season. A husked cobnut would read as a haz
 
 aug in, sep in, oct in, nov in
 
+## California (`ca`)
+
+### Almond
+
+The Fresno County calendar lists a bounded season. A husked cobnut would read as a hazelnut, not an almond.
+
+sep in, oct in
+
+### Date
+
+The Coachella Valley Independent lists a bounded season. No shared drawing reads as a date.
+
+sep in, oct in, nov in, dec in
+
+### Kiwifruit
+
+The Fresno County calendar lists a bounded season. A brown oval would read as a stone fruit, not a kiwi.
+
+nov in
+
+### Olive
+
+The Fresno County calendar lists a bounded season. No shared drawing reads as an olive.
+
+oct in, nov in
+
+### Pecan
+
+The Fresno County calendar lists a bounded season. A husked cobnut would read as a hazelnut, not a pecan.
+
+nov in
+
+### Pistachio
+
+The Fresno County calendar lists a bounded season. No shared drawing reads as a pistachio.
+
+sep in, oct in, nov in
+
+### Walnut
+
+The Fresno County calendar lists a bounded season. A chestnut drawing would read as a chestnut, not a walnut.
+
+sep in, oct in, nov in
+
 ## Sichuan (`sc`)
 
 ### Bamboo fungus

@@ -587,6 +587,7 @@ const PLACE_FLAGS = {
   on: "🇨🇦",
   it: "🇮🇹",
   fl: "🇺🇸",
+  ca: "🇺🇸",
   sc: "🇨🇳",
   sd: "🇨🇳",
   js: "🇨🇳",
@@ -598,7 +599,7 @@ const PLACE_FLAGS = {
 
 const PLACE_CONTINENTS = [
   ["Europe", ["uk", "fr", "es", "it"]],
-  ["North America", ["on", "fl"]],
+  ["North America", ["on", "fl", "ca"]],
   ["Asia", ["sc", "sd", "js", "yn", "hi", "xj", "jp"]],
 ];
 
