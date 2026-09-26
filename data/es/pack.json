@@ -72,6 +72,6 @@
   "attribution": "Ministerio de Agricultura, Pesca y Alimentación, frutas y hortalizas de temporada.",
   "alias_profile": "none",
   "recipe_rule": "optional",
-  "expect_items": 54,
+  "expect_items": 57,
   "require_peak_every_month": true
 }

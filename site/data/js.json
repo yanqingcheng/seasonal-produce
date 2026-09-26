@@ -140,6 +140,29 @@
       ]
     },
     {
+      "item": "Arrowhead",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Huai'an, Jiangsu.",
+      "specialist_sources": [
+        "淮海晚报 via 中国江苏网"
+      ]
+    },
+    {
       "item": "asparagus",
       "category": "vegetable",
       "months": [
@@ -439,6 +462,52 @@
       ]
     },
     {
+      "item": "Garlic-chive flower stems",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Luoqiao, Funing, Yancheng, Jiangsu.",
+      "specialist_sources": [
+        "央广网"
+      ]
+    },
+    {
+      "item": "Ginkgo nut",
+      "category": "nut",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Yangzhou, Jiangsu.",
+      "specialist_sources": [
+        "中国江苏网"
+      ]
+    },
+    {
       "item": "Grape",
       "category": "fruit",
       "months": [
@@ -459,6 +528,29 @@
       "regions_notes": "Harvest months for Jiangxinzhou, Jianye, Nanjing, Jiangsu.",
       "specialist_sources": [
         "南京市建邺区人民政府"
+      ]
+    },
+    {
+      "item": "Hardy kiwi",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Shuangdian, Donghai, Lianyungang, Jiangsu.",
+      "specialist_sources": [
+        "扬子晚报"
       ]
     },
     {
@@ -485,6 +577,29 @@
       ]
     },
     {
+      "item": "Kiwifruit",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Biancheng, Jurong, Zhenjiang, Jiangsu.",
+      "specialist_sources": [
+        "扬子晚报"
+      ]
+    },
+    {
       "item": "Loquat",
       "category": "fruit",
       "months": [
@@ -505,6 +620,52 @@
       "regions_notes": "Harvest months for Wuzhong, Suzhou, Jiangsu.",
       "specialist_sources": [
         "苏州市人民政府"
+      ]
+    },
+    {
+      "item": "Lotus root",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Jiangsu.",
+      "specialist_sources": [
+        "我苏网"
+      ]
+    },
+    {
+      "item": "Lotus seed pod",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Jiangsu.",
+      "specialist_sources": [
+        "我苏网"
       ]
     },
     {
@@ -623,6 +784,29 @@
       ]
     },
     {
+      "item": "Red water caltrop",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Jinting, Wuzhong, Suzhou, Jiangsu.",
+      "specialist_sources": [
+        "苏州市农业农村局"
+      ]
+    },
+    {
       "item": "Shepherd's purse",
       "category": "vegetable",
       "months": [
@@ -666,6 +850,29 @@
       "regions_notes": "Harvest months for Pingwang, Wujiang, Suzhou, Jiangsu.",
       "specialist_sources": [
         "扬子晚报"
+      ]
+    },
+    {
+      "item": "Spring bamboo shoot",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Yixing, Wuxi, Jiangsu.",
+      "specialist_sources": [
+        "中国江苏网"
       ]
     },
     {
@@ -735,6 +942,29 @@
       "regions_notes": "Harvest months for Yangzhou, Jiangsu.",
       "specialist_sources": [
         "中国江苏网"
+      ]
+    },
+    {
+      "item": "Water chestnut",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Luzhi, Wuzhong, Suzhou, Jiangsu.",
+      "specialist_sources": [
+        "我苏网"
       ]
     },
     {
@@ -837,7 +1067,7 @@
       "name": "January",
       "counts": {
         "peak": 0,
-        "in": 5,
+        "in": 8,
         "edge": 0
       },
       "lead": null,
@@ -845,16 +1075,22 @@
         "strawberry",
         "Black tatsoi",
         "Water celery",
+        "Water chestnut",
+        "Arrowhead",
         "Luhao",
-        "Shiitake"
+        "Shiitake",
+        "Lotus root"
       ],
       "peak": [],
       "in": [
+        "Arrowhead",
         "Black tatsoi",
+        "Lotus root",
         "Luhao",
         "Shiitake",
         "strawberry",
-        "Water celery"
+        "Water celery",
+        "Water chestnut"
       ],
       "edge": [],
       "arrivals": [],
@@ -863,17 +1099,17 @@
         "strawberry",
         "Black tatsoi",
         "Water celery",
-        "Luhao",
+        "Water chestnut",
         "Shiitake"
       ],
-      "blurb": "January has <strong>5</strong> Jiangsu crops in season. The leanest stretch of the year."
+      "blurb": "January has <strong>8</strong> Jiangsu crops in season. The leanest stretch of the year."
     },
     {
       "key": "feb",
       "name": "February",
       "counts": {
         "peak": 0,
-        "in": 5,
+        "in": 8,
         "edge": 0
       },
       "lead": null,
@@ -881,16 +1117,22 @@
         "strawberry",
         "Black tatsoi",
         "Water celery",
+        "Water chestnut",
+        "Arrowhead",
         "Luhao",
-        "Shiitake"
+        "Shiitake",
+        "Lotus root"
       ],
       "peak": [],
       "in": [
+        "Arrowhead",
         "Black tatsoi",
+        "Lotus root",
         "Luhao",
         "Shiitake",
         "strawberry",
-        "Water celery"
+        "Water celery",
+        "Water chestnut"
       ],
       "edge": [],
       "arrivals": [],
@@ -901,60 +1143,72 @@
       "quiet": [
         "strawberry",
         "Black tatsoi",
-        "Water celery",
+        "Arrowhead",
         "Luhao",
-        "Shiitake"
+        "Lotus root"
       ],
-      "blurb": "February has <strong>5</strong> Jiangsu crops in season. The leanest stretch of the year."
+      "blurb": "February has <strong>8</strong> Jiangsu crops in season. The leanest stretch of the year."
     },
     {
       "key": "mar",
       "name": "March",
       "counts": {
         "peak": 0,
-        "in": 6,
+        "in": 10,
         "edge": 0
       },
       "lead": null,
       "wheel": [
         "strawberry",
         "Malan greens",
+        "Spring bamboo shoot",
         "Shepherd's purse",
+        "Water chestnut",
+        "Arrowhead",
         "Luhao",
         "Shiitake",
-        "asparagus"
+        "asparagus",
+        "Lotus root"
       ],
       "peak": [],
       "in": [
+        "Arrowhead",
         "asparagus",
+        "Lotus root",
         "Luhao",
         "Malan greens",
         "Shepherd's purse",
         "Shiitake",
-        "strawberry"
+        "Spring bamboo shoot",
+        "strawberry",
+        "Water chestnut"
       ],
       "edge": [],
       "arrivals": [
         "asparagus",
         "Malan greens",
-        "Shepherd's purse"
+        "Shepherd's purse",
+        "Spring bamboo shoot"
       ],
-      "farewells": [],
+      "farewells": [
+        "Arrowhead",
+        "Water chestnut"
+      ],
       "quiet": [
-        "strawberry",
         "Malan greens",
+        "Spring bamboo shoot",
         "Shepherd's purse",
         "Shiitake",
         "asparagus"
       ],
-      "blurb": "March has <strong>6</strong> Jiangsu crops in season. Much the same list as February."
+      "blurb": "March has <strong>10</strong> Jiangsu crops in season. Much the same list as February."
     },
     {
       "key": "apr",
       "name": "April",
       "counts": {
         "peak": 0,
-        "in": 11,
+        "in": 14,
         "edge": 0
       },
       "lead": null,
@@ -965,22 +1219,28 @@
         "strawberry",
         "Sweet pea",
         "Malan greens",
+        "Spring bamboo shoot",
         "Shepherd's purse",
         "Luhao",
         "Shiitake",
+        "Garlic-chive flower stems",
         "asparagus",
-        "Honey peach"
+        "Honey peach",
+        "Lotus root"
       ],
       "peak": [],
       "in": [
         "asparagus",
         "cherry",
+        "Garlic-chive flower stems",
         "Honey peach",
+        "Lotus root",
         "Luhao",
         "Malan greens",
         "melon",
         "Shepherd's purse",
         "Shiitake",
+        "Spring bamboo shoot",
         "strawberry",
         "Sweet pea",
         "Watermelon"
@@ -988,13 +1248,14 @@
       "edge": [],
       "arrivals": [
         "cherry",
+        "Garlic-chive flower stems",
         "Honey peach",
-        "melon",
-        "Sweet pea"
+        "melon"
       ],
       "farewells": [
         "Malan greens",
-        "Shiitake"
+        "Shiitake",
+        "Spring bamboo shoot"
       ],
       "quiet": [
         "cherry",
@@ -1003,14 +1264,14 @@
         "Sweet pea",
         "Malan greens"
       ],
-      "blurb": "April has <strong>11</strong> Jiangsu crops in season. Much the same list as March."
+      "blurb": "April has <strong>14</strong> Jiangsu crops in season. Much the same list as March."
     },
     {
       "key": "may",
       "name": "May",
       "counts": {
         "peak": 0,
-        "in": 12,
+        "in": 14,
         "edge": 0
       },
       "lead": null,
@@ -1025,8 +1286,10 @@
         "Loquat",
         "Shepherd's purse",
         "Luhao",
+        "Garlic-chive flower stems",
         "asparagus",
-        "Honey peach"
+        "Honey peach",
+        "Lotus root"
       ],
       "peak": [],
       "in": [
@@ -1035,8 +1298,10 @@
         "cherry",
         "chillies",
         "garlic",
+        "Garlic-chive flower stems",
         "Honey peach",
         "Loquat",
+        "Lotus root",
         "Luhao",
         "melon",
         "Shepherd's purse",
@@ -1051,6 +1316,7 @@
         "Loquat"
       ],
       "farewells": [
+        "Lotus root",
         "Luhao",
         "Shepherd's purse",
         "strawberry"
@@ -1058,18 +1324,18 @@
       "quiet": [
         "garlic",
         "blueberry",
-        "Watermelon",
+        "melon",
         "Loquat",
-        "Shepherd's purse"
+        "Garlic-chive flower stems"
       ],
-      "blurb": "May has <strong>12</strong> Jiangsu crops in season. The fullest month on the wheel."
+      "blurb": "May has <strong>14</strong> Jiangsu crops in season. Much the same list as April."
     },
     {
       "key": "jun",
       "name": "June",
       "counts": {
         "peak": 0,
-        "in": 11,
+        "in": 12,
         "edge": 0
       },
       "lead": null,
@@ -1083,6 +1349,7 @@
         "Chinese bayberry",
         "Loquat",
         "Yangshan honey peach",
+        "Garlic-chive flower stems",
         "asparagus",
         "Honey peach"
       ],
@@ -1093,6 +1360,7 @@
         "cherry",
         "chillies",
         "Chinese bayberry",
+        "Garlic-chive flower stems",
         "Honey peach",
         "Loquat",
         "melon",
@@ -1113,18 +1381,18 @@
       "quiet": [
         "blueberry",
         "cherry",
+        "Watermelon",
         "Chinese bayberry",
-        "Loquat",
-        "Yangshan honey peach"
+        "Honey peach"
       ],
-      "blurb": "June has <strong>11</strong> Jiangsu crops in season. Much the same list as May."
+      "blurb": "June has <strong>12</strong> Jiangsu crops in season. Much the same list as May."
     },
     {
       "key": "jul",
       "name": "July",
       "counts": {
         "peak": 0,
-        "in": 12,
+        "in": 16,
         "edge": 0
       },
       "lead": null,
@@ -1137,8 +1405,11 @@
         "chillies",
         "Cuiguan pear",
         "Yangshan honey peach",
+        "Lotus seed pod",
+        "Red water caltrop",
         "fig",
         "Winter jujube",
+        "Garlic-chive flower stems",
         "asparagus",
         "Honey peach"
       ],
@@ -1149,10 +1420,14 @@
         "chillies",
         "Cuiguan pear",
         "fig",
+        "Garlic-chive flower stems",
         "Grape",
         "Honey peach",
+        "Lotus root",
+        "Lotus seed pod",
         "melon",
         "pear",
+        "Red water caltrop",
         "Watermelon",
         "Winter jujube",
         "Yangshan honey peach"
@@ -1162,7 +1437,7 @@
         "Cuiguan pear",
         "fig",
         "Grape",
-        "Winter jujube"
+        "Lotus root"
       ],
       "farewells": [
         "blueberry",
@@ -1173,16 +1448,16 @@
         "pear",
         "Cuiguan pear",
         "Yangshan honey peach",
-        "Winter jujube"
+        "Lotus seed pod"
       ],
-      "blurb": "July has <strong>12</strong> Jiangsu crops in season. The fullest month on the wheel."
+      "blurb": "July has <strong>16</strong> Jiangsu crops in season. Much the same list as June."
     },
     {
       "key": "aug",
       "name": "August",
       "counts": {
         "peak": 0,
-        "in": 12,
+        "in": 17,
         "edge": 0
       },
       "lead": null,
@@ -1194,11 +1469,14 @@
         "Yellow peach",
         "Cuiguan pear",
         "broccoli",
+        "Hardy kiwi",
         "Yangshan honey peach",
+        "Lotus seed pod",
+        "Red water caltrop",
         "fig",
         "Winter jujube",
-        "asparagus",
-        "Honey peach"
+        "Garlic-chive flower stems",
+        "asparagus"
       ],
       "peak": [],
       "in": [
@@ -1207,10 +1485,15 @@
         "chillies",
         "Cuiguan pear",
         "fig",
+        "Garlic-chive flower stems",
         "Grape",
+        "Hardy kiwi",
         "Honey peach",
+        "Lotus root",
+        "Lotus seed pod",
         "melon",
         "pear",
+        "Red water caltrop",
         "Winter jujube",
         "Yangshan honey peach",
         "Yellow peach"
@@ -1218,6 +1501,7 @@
       "edge": [],
       "arrivals": [
         "broccoli",
+        "Hardy kiwi",
         "Yellow peach"
       ],
       "farewells": [
@@ -1226,20 +1510,20 @@
         "Yangshan honey peach"
       ],
       "quiet": [
+        "Grape",
         "pear",
-        "melon",
         "Yellow peach",
         "Cuiguan pear",
-        "asparagus"
+        "Hardy kiwi"
       ],
-      "blurb": "August has <strong>12</strong> Jiangsu crops in season. The fullest month on the wheel."
+      "blurb": "August has <strong>17</strong> Jiangsu crops in season. Much the same list as July."
     },
     {
       "key": "sep",
       "name": "September",
       "counts": {
         "peak": 0,
-        "in": 10,
+        "in": 17,
         "edge": 0
       },
       "lead": null,
@@ -1247,13 +1531,18 @@
         "Grape",
         "pear",
         "chillies",
+        "Kiwifruit",
         "broccoli",
+        "Hardy kiwi",
         "Persimmon",
+        "Lotus seed pod",
+        "Red water caltrop",
         "fig",
         "Winter jujube",
+        "Garlic-chive flower stems",
         "asparagus",
         "Honey peach",
-        "chestnut"
+        "Lotus root"
       ],
       "peak": [],
       "in": [
@@ -1262,35 +1551,44 @@
         "chestnut",
         "chillies",
         "fig",
+        "Garlic-chive flower stems",
+        "Ginkgo nut",
         "Grape",
+        "Hardy kiwi",
         "Honey peach",
+        "Kiwifruit",
+        "Lotus root",
+        "Lotus seed pod",
         "pear",
         "Persimmon",
+        "Red water caltrop",
         "Winter jujube"
       ],
       "edge": [],
       "arrivals": [
         "chestnut",
+        "Ginkgo nut",
+        "Kiwifruit",
         "Persimmon"
       ],
       "farewells": [
         "pear"
       ],
       "quiet": [
-        "Grape",
+        "chillies",
+        "Kiwifruit",
         "broccoli",
-        "Persimmon",
-        "fig",
+        "Lotus seed pod",
         "chestnut"
       ],
-      "blurb": "September has <strong>10</strong> Jiangsu crops in season. Much the same list as August."
+      "blurb": "September has <strong>17</strong> Jiangsu crops in season. Much the same list as August."
     },
     {
       "key": "oct",
       "name": "October",
       "counts": {
         "peak": 0,
-        "in": 11,
+        "in": 18,
         "edge": 0
       },
       "lead": null,
@@ -1299,13 +1597,17 @@
         "Grape",
         "chillies",
         "Citrus",
+        "Kiwifruit",
         "broccoli",
+        "Hardy kiwi",
         "Persimmon",
+        "Lotus seed pod",
+        "Red water caltrop",
         "fig",
         "Winter jujube",
+        "Garlic-chive flower stems",
         "asparagus",
-        "Honey peach",
-        "chestnut"
+        "Honey peach"
       ],
       "peak": [],
       "in": [
@@ -1316,9 +1618,16 @@
         "chillies",
         "Citrus",
         "fig",
+        "Garlic-chive flower stems",
+        "Ginkgo nut",
         "Grape",
+        "Hardy kiwi",
         "Honey peach",
+        "Kiwifruit",
+        "Lotus root",
+        "Lotus seed pod",
         "Persimmon",
+        "Red water caltrop",
         "Winter jujube"
       ],
       "edge": [],
@@ -1330,23 +1639,23 @@
         "asparagus",
         "broccoli",
         "chestnut",
-        "Grape"
+        "Garlic-chive flower stems"
       ],
       "quiet": [
         "apple",
-        "chillies",
         "Citrus",
         "broccoli",
-        "Honey peach"
+        "Red water caltrop",
+        "Ginkgo nut"
       ],
-      "blurb": "October has <strong>11</strong> Jiangsu crops in season. Much the same list as September."
+      "blurb": "October has <strong>18</strong> Jiangsu crops in season. The fullest month on the wheel."
     },
     {
       "key": "nov",
       "name": "November",
       "counts": {
         "peak": 0,
-        "in": 10,
+        "in": 12,
         "edge": 0
       },
       "lead": null,
@@ -1357,19 +1666,23 @@
         "Citrus",
         "Persimmon",
         "Water celery",
+        "Arrowhead",
         "fig",
         "Shiitake",
         "Winter jujube",
-        "Honey peach"
+        "Honey peach",
+        "Lotus root"
       ],
       "peak": [],
       "in": [
         "apple",
+        "Arrowhead",
         "chillies",
         "Chinese yam",
         "Citrus",
         "fig",
         "Honey peach",
+        "Lotus root",
         "Persimmon",
         "Shiitake",
         "Water celery",
@@ -1377,6 +1690,7 @@
       ],
       "edge": [],
       "arrivals": [
+        "Arrowhead",
         "Chinese yam",
         "Shiitake",
         "Water celery"
@@ -1391,17 +1705,17 @@
         "apple",
         "chillies",
         "Chinese yam",
-        "Citrus",
+        "Persimmon",
         "fig"
       ],
-      "blurb": "November has <strong>10</strong> Jiangsu crops in season. Much the same list as October."
+      "blurb": "November has <strong>12</strong> Jiangsu crops in season. Much the same list as October."
     },
     {
       "key": "dec",
       "name": "December",
       "counts": {
         "peak": 0,
-        "in": 6,
+        "in": 9,
         "edge": 0
       },
       "lead": null,
@@ -1409,36 +1723,43 @@
         "strawberry",
         "Black tatsoi",
         "Water celery",
+        "Water chestnut",
+        "Arrowhead",
         "Luhao",
         "Winter jujube",
-        "Shiitake"
+        "Shiitake",
+        "Lotus root"
       ],
       "peak": [],
       "in": [
+        "Arrowhead",
         "Black tatsoi",
+        "Lotus root",
         "Luhao",
         "Shiitake",
         "strawberry",
         "Water celery",
+        "Water chestnut",
         "Winter jujube"
       ],
       "edge": [],
       "arrivals": [
         "Black tatsoi",
         "Luhao",
-        "strawberry"
+        "strawberry",
+        "Water chestnut"
       ],
       "farewells": [
         "Winter jujube"
       ],
       "quiet": [
-        "strawberry",
-        "Black tatsoi",
         "Water celery",
+        "Water chestnut",
+        "Arrowhead",
         "Luhao",
         "Winter jujube"
       ],
-      "blurb": "December has <strong>6</strong> Jiangsu crops in season. Much the same list as November."
+      "blurb": "December has <strong>9</strong> Jiangsu crops in season. Much the same list as November."
     }
   ]
 }

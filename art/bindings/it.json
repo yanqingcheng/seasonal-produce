@@ -371,5 +371,14 @@
       "stripes": "#a8e05a",
       "cap": "#ffb627"
     }
+  },
+  "kiwi": {
+    "archetype": "kiwi",
+    "colours": {
+      "skin": "#b0703f",
+      "body": "#52c26b",
+      "core": "#fff6dc",
+      "fuzz": true
+    }
   }
 }

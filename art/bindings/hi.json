@@ -121,5 +121,176 @@
       "body2": "#eef6e4",
       "stem": "#b0703f"
     }
+  },
+  "Banana": {
+    "archetype": "banana",
+    "colours": {
+      "body": "#ffd84a",
+      "body2": "#ffb627",
+      "tip": "#7a4a2c",
+      "stem": "#a8e05a"
+    }
+  },
+  "Bitter gourd": {
+    "archetype": "bittermelon",
+    "colours": {
+      "body": "#7fcf52",
+      "body2": "#23865a",
+      "stem": "#3bb273"
+    }
+  },
+  "Coffee": {
+    "archetype": "coffee",
+    "colours": {
+      "body": "#7a4a2c",
+      "body2": "#b0703f",
+      "leaf": "#23865a"
+    }
+  },
+  "Dragon fruit": {
+    "archetype": "dragonfruit",
+    "colours": {
+      "body": "#ff5f8a",
+      "tip": "#a8e05a"
+    }
+  },
+  "Durian": {
+    "archetype": "durian",
+    "colours": {
+      "body": "#b9b44e",
+      "body2": "#6f6a24",
+      "stem": "#7a4a2c"
+    }
+  },
+  "Green tea": {
+    "archetype": "tea",
+    "colours": {
+      "body": "#52c26b",
+      "body2": "#a8e05a",
+      "bud": "#c9f0b0",
+      "stem": "#7a4a2c"
+    }
+  },
+  "Jackfruit": {
+    "archetype": "jackfruit",
+    "colours": {
+      "body": "#c9dc5a",
+      "body2": "#6f9a2e",
+      "stem": "#b0703f",
+      "leaf": "#3bb273"
+    }
+  },
+  "Leigong shoot": {
+    "archetype": "bambooshoot",
+    "colours": {
+      "body": "#e9b87a",
+      "body2": "#b0703f",
+      "tip": "#a8e05a",
+      "base": "#fff6dc"
+    }
+  },
+  "Longan": {
+    "archetype": "longan",
+    "colours": {
+      "body": "#e9b87a",
+      "body2": "#b0703f",
+      "stem": "#7a4a2c",
+      "leaf": "#3bb273"
+    }
+  },
+  "Lychee": {
+    "archetype": "lychee",
+    "colours": {
+      "body": "#ff5a6e",
+      "body2": "#c2255c",
+      "stem": "#7a4a2c",
+      "leaf": "#3bb273",
+      "flesh": "#fffdf6"
+    }
+  },
+  "Okra": {
+    "archetype": "okra",
+    "colours": {
+      "body": "#52c26b",
+      "cap": "#a8e05a"
+    }
+  },
+  "Papaya": {
+    "archetype": "papaya",
+    "colours": {
+      "skin": "#a8e05a",
+      "body": "#ff9a3c",
+      "cavity": "#ff5a4e",
+      "stem": "#3bb273"
+    }
+  },
+  "Passion fruit": {
+    "archetype": "passionfruit",
+    "colours": {
+      "body": "#8e4dd6",
+      "pith": "#fff6dc",
+      "pulp": "#ffc93c",
+      "pulp2": "#fff0a6",
+      "leaf": "#3bb273"
+    }
+  },
+  "Peanut": {
+    "archetype": "peanut",
+    "colours": {
+      "body": "#e9b87a"
+    }
+  },
+  "Pineapple": {
+    "archetype": "pineapple",
+    "colours": {
+      "body": "#ffb627",
+      "body2": "#b0703f",
+      "leaf": "#3bb273"
+    }
+  },
+  "Rambutan": {
+    "archetype": "lychee",
+    "colours": {
+      "body": "#ff5a4e",
+      "body2": "#d9344a",
+      "hairs": "#52c26b",
+      "stem": "#7a4a2c",
+      "leaf": "#3bb273"
+    }
+  },
+  "Sugar apple": {
+    "archetype": "custardapple",
+    "colours": {
+      "body": "#b8e39a",
+      "body2": "#3bb273",
+      "stem": "#7a4a2c",
+      "leaf": "#3bb273"
+    }
+  },
+  "Tea": {
+    "archetype": "tea",
+    "colours": {
+      "body": "#3bb273",
+      "body2": "#52c26b",
+      "bud": "#a8e05a",
+      "stem": "#7a4a2c"
+    }
+  },
+  "Wampee": {
+    "archetype": "longan",
+    "colours": {
+      "body": "#ffc93c",
+      "body2": "#b0703f",
+      "stem": "#7a4a2c",
+      "leaf": "#3bb273",
+      "oval": true
+    }
+  },
+  "Wax apple": {
+    "archetype": "waxapple",
+    "colours": {
+      "body": "#ff5a6e",
+      "stem": "#7a4a2c"
+    }
   }
 }

@@ -663,6 +663,29 @@
       ]
     },
     {
+      "item": "Bitter Melon/Fuzzy Squash",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
       "item": "Bok Choy",
       "category": "vegetable",
       "months": [
@@ -1000,6 +1023,29 @@
         "in",
         "in",
         "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
+      "item": "Garlic Scapes",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
       ],
       "stored_notes": null,
       "regions_notes": null,
@@ -1537,6 +1583,29 @@
       ]
     },
     {
+      "item": "Sprouts",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Foodland Ontario Availability Guide"
+      ]
+    },
+    {
       "item": "Winter Squash",
       "category": "vegetable",
       "months": [
@@ -1728,7 +1797,7 @@
       "name": "January",
       "counts": {
         "peak": 0,
-        "in": 20,
+        "in": 21,
         "edge": 0
       },
       "lead": null,
@@ -1768,6 +1837,7 @@
         "Peppers (Greenhouse)",
         "potatoes",
         "Rutabaga",
+        "Sprouts",
         "Winter Squash",
         "Sweet Potatoes",
         "Tomatoes (Greenhouse)"
@@ -1784,14 +1854,14 @@
         "Strawberries (Greenhouse)",
         "Rutabaga"
       ],
-      "blurb": "January lists <strong>20</strong> Ontario-grown crops. Much the same list as December."
+      "blurb": "January lists <strong>21</strong> Ontario-grown crops. Much the same list as December."
     },
     {
       "key": "feb",
       "name": "February",
       "counts": {
         "peak": 0,
-        "in": 19,
+        "in": 20,
         "edge": 0
       },
       "lead": null,
@@ -1831,6 +1901,7 @@
         "Peppers (Greenhouse)",
         "potatoes",
         "Rutabaga",
+        "Sprouts",
         "Sweet Potatoes",
         "Tomatoes (Greenhouse)"
       ],
@@ -1847,14 +1918,14 @@
         "Beets",
         "Peppers (Greenhouse)"
       ],
-      "blurb": "February lists <strong>19</strong> Ontario-grown crops. Much the same list as January."
+      "blurb": "February lists <strong>20</strong> Ontario-grown crops. Much the same list as January."
     },
     {
       "key": "mar",
       "name": "March",
       "counts": {
         "peak": 0,
-        "in": 18,
+        "in": 19,
         "edge": 0
       },
       "lead": null,
@@ -1893,6 +1964,7 @@
         "Peppers (Greenhouse)",
         "potatoes",
         "Rutabaga",
+        "Sprouts",
         "Sweet Potatoes",
         "Tomatoes (Greenhouse)"
       ],
@@ -1908,16 +1980,16 @@
         "Rhubarb (Forced)",
         "Onions (Red)",
         "Lettuce (Greenhouse)",
-        "Tomatoes (Greenhouse)"
+        "Sweet Potatoes"
       ],
-      "blurb": "March lists <strong>18</strong> Ontario-grown crops. The leanest stretch of the year in the guide."
+      "blurb": "March lists <strong>19</strong> Ontario-grown crops. The leanest stretch of the year in the guide."
     },
     {
       "key": "apr",
       "name": "April",
       "counts": {
         "peak": 0,
-        "in": 18,
+        "in": 19,
         "edge": 0
       },
       "lead": null,
@@ -1956,6 +2028,7 @@
         "Peppers (Greenhouse)",
         "potatoes",
         "Rutabaga",
+        "Sprouts",
         "Sweet Potatoes",
         "Tomatoes (Greenhouse)"
       ],
@@ -1971,19 +2044,19 @@
       ],
       "quiet": [
         "cabbage",
-        "Apples",
         "rhubarb",
         "Parsnip",
-        "Mushrooms"
+        "Mushrooms",
+        "Tomatoes (Greenhouse)"
       ],
-      "blurb": "April lists <strong>18</strong> Ontario-grown crops. The leanest stretch of the year in the guide."
+      "blurb": "April lists <strong>19</strong> Ontario-grown crops. The leanest stretch of the year in the guide."
     },
     {
       "key": "may",
       "name": "May",
       "counts": {
         "peak": 0,
-        "in": 18,
+        "in": 19,
         "edge": 0
       },
       "lead": null,
@@ -2022,6 +2095,7 @@
         "Rutabaga",
         "Snow Pea Shoots (Dow Miu)",
         "spinach",
+        "Sprouts",
         "Sweet Potatoes",
         "Tomatoes (Greenhouse)"
       ],
@@ -2042,14 +2116,14 @@
         "spinach",
         "radishes"
       ],
-      "blurb": "May lists <strong>18</strong> Ontario-grown crops. The leanest stretch of the year in the guide."
+      "blurb": "May lists <strong>19</strong> Ontario-grown crops. The leanest stretch of the year in the guide."
     },
     {
       "key": "jun",
       "name": "June",
       "counts": {
         "peak": 0,
-        "in": 39,
+        "in": 41,
         "edge": 0
       },
       "lead": null,
@@ -2067,8 +2141,8 @@
         "potatoes",
         "Haskap Berries",
         "asparagus",
-        "rhubarb",
-        "radicchio"
+        "Garlic Scapes",
+        "rhubarb"
       ],
       "peak": [],
       "in": [
@@ -2089,6 +2163,7 @@
         "Cucumber (Greenhouse)",
         "Daikon Radish",
         "Edible Amaranth (Hinn Choy)",
+        "Garlic Scapes",
         "kale",
         "Lettuce (Assorted)",
         "Lettuce (Greenhouse)",
@@ -2106,6 +2181,7 @@
         "Rutabaga",
         "Snow Pea Shoots (Dow Miu)",
         "spinach",
+        "Sprouts",
         "Summer Squash",
         "Sweet Potatoes",
         "Tomatoes (Greenhouse)",
@@ -2130,14 +2206,14 @@
         "radicchio",
         "Peas (Snow)"
       ],
-      "blurb": "June lists <strong>39</strong> Ontario-grown crops. The wheel is filling up: 21 more listed than in May."
+      "blurb": "June lists <strong>41</strong> Ontario-grown crops. The wheel is filling up: 22 more listed than in May."
     },
     {
       "key": "jul",
       "name": "July",
       "counts": {
         "peak": 0,
-        "in": 54,
+        "in": 56,
         "edge": 0
       },
       "lead": null,
@@ -2188,6 +2264,7 @@
         "Daikon Radish",
         "Edible Amaranth (Hinn Choy)",
         "garlic",
+        "Garlic Scapes",
         "kale",
         "Lettuce (Assorted)",
         "Lettuce (Greenhouse)",
@@ -2207,6 +2284,7 @@
         "Rutabaga",
         "Snow Pea Shoots (Dow Miu)",
         "spinach",
+        "Sprouts",
         "Summer Squash",
         "Sweet Potatoes",
         "Tomatoes (Field)",
@@ -2223,20 +2301,137 @@
         "Currants"
       ],
       "farewells": [
-        "Haskap Berries"
+        "Haskap Berries",
+        "Garlic Scapes"
       ],
       "quiet": [
         "Corn",
         "Cucumber (Field)",
-        "Cherries",
-        "Gooseberries",
-        "Peaches"
+        "Garlic Scapes",
+        "Currants",
+        "Blueberries"
       ],
-      "blurb": "July lists <strong>54</strong> Ontario-grown crops. The wheel is filling up: 15 more listed than in June."
+      "blurb": "July lists <strong>56</strong> Ontario-grown crops. The wheel is filling up: 15 more listed than in June."
     },
     {
       "key": "aug",
       "name": "August",
+      "counts": {
+        "peak": 0,
+        "in": 65,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Corn",
+        "Peppers (Field)",
+        "Tomatoes (Field)",
+        "Strawberries (Field)",
+        "Beans (Green/Yellow)",
+        "broccoli",
+        "Cucumber (Field)",
+        "Lettuce (Assorted)",
+        "Peas (Green)",
+        "garlic",
+        "cabbage",
+        "Apples",
+        "carrots",
+        "Onions (Cooking)",
+        "potatoes"
+      ],
+      "peak": [],
+      "in": [
+        "Apples",
+        "Apricots",
+        "Blueberries",
+        "Cherries",
+        "Cranberries",
+        "Currants",
+        "Gooseberries",
+        "Grapes",
+        "Muskmelon",
+        "Nectarines",
+        "Peaches",
+        "Pears",
+        "Plums",
+        "Raspberries",
+        "Strawberries (Field)",
+        "Strawberries (Greenhouse)",
+        "Watermelon",
+        "Artichoke",
+        "Beans (Green/Yellow)",
+        "Beets",
+        "Bitter Melon/Fuzzy Squash",
+        "Bok Choy",
+        "broccoli",
+        "cabbage",
+        "carrots",
+        "cauliflower",
+        "celery",
+        "Chinese Broccoli (White Flower)",
+        "Corn",
+        "Cucumber (Field)",
+        "Cucumber (Greenhouse)",
+        "Daikon Radish",
+        "Edible Amaranth (Hinn Choy)",
+        "Eggplant",
+        "garlic",
+        "kale",
+        "leeks",
+        "Lettuce (Assorted)",
+        "Lettuce (Greenhouse)",
+        "Mushrooms",
+        "Mustard Greens (Gai Choy)",
+        "Nappa Cabbage",
+        "Onions (Cooking)",
+        "Onions (Green)",
+        "Parsnip",
+        "Peas (Green)",
+        "Peas (Snow)",
+        "Peppers (Field)",
+        "Peppers (Greenhouse)",
+        "potatoes",
+        "radicchio",
+        "radishes",
+        "Rapini",
+        "Rutabaga",
+        "Snow Pea Shoots (Dow Miu)",
+        "spinach",
+        "Sprouts",
+        "Winter Squash",
+        "Summer Squash",
+        "Sweet Potatoes",
+        "Tomatoes (Field)",
+        "Tomatoes (Greenhouse)",
+        "Water Spinach (Tung Choy)",
+        "Yow Choy(Yellow Flower)",
+        "Zucchini"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Cranberries",
+        "Grapes",
+        "Muskmelon",
+        "Nectarines"
+      ],
+      "farewells": [
+        "Apricots",
+        "Cherries",
+        "Currants",
+        "Gooseberries"
+      ],
+      "quiet": [
+        "Beans (Green/Yellow)",
+        "Apricots",
+        "Cherries",
+        "Gooseberries",
+        "Grapes"
+      ],
+      "blurb": "August lists <strong>65</strong> Ontario-grown crops. The fullest month in the guide."
+    },
+    {
+      "key": "sep",
+      "name": "September",
       "counts": {
         "peak": 0,
         "in": 63,
@@ -2263,120 +2458,6 @@
       "peak": [],
       "in": [
         "Apples",
-        "Apricots",
-        "Blueberries",
-        "Cherries",
-        "Cranberries",
-        "Currants",
-        "Gooseberries",
-        "Grapes",
-        "Muskmelon",
-        "Nectarines",
-        "Peaches",
-        "Pears",
-        "Plums",
-        "Raspberries",
-        "Strawberries (Field)",
-        "Strawberries (Greenhouse)",
-        "Watermelon",
-        "Artichoke",
-        "Beans (Green/Yellow)",
-        "Beets",
-        "Bok Choy",
-        "broccoli",
-        "cabbage",
-        "carrots",
-        "cauliflower",
-        "celery",
-        "Chinese Broccoli (White Flower)",
-        "Corn",
-        "Cucumber (Field)",
-        "Cucumber (Greenhouse)",
-        "Daikon Radish",
-        "Edible Amaranth (Hinn Choy)",
-        "Eggplant",
-        "garlic",
-        "kale",
-        "leeks",
-        "Lettuce (Assorted)",
-        "Lettuce (Greenhouse)",
-        "Mushrooms",
-        "Mustard Greens (Gai Choy)",
-        "Nappa Cabbage",
-        "Onions (Cooking)",
-        "Onions (Green)",
-        "Parsnip",
-        "Peas (Green)",
-        "Peas (Snow)",
-        "Peppers (Field)",
-        "Peppers (Greenhouse)",
-        "potatoes",
-        "radicchio",
-        "radishes",
-        "Rapini",
-        "Rutabaga",
-        "Snow Pea Shoots (Dow Miu)",
-        "spinach",
-        "Winter Squash",
-        "Summer Squash",
-        "Sweet Potatoes",
-        "Tomatoes (Field)",
-        "Tomatoes (Greenhouse)",
-        "Water Spinach (Tung Choy)",
-        "Yow Choy(Yellow Flower)",
-        "Zucchini"
-      ],
-      "edge": [],
-      "arrivals": [
-        "Cranberries",
-        "Grapes",
-        "Muskmelon",
-        "Nectarines"
-      ],
-      "farewells": [
-        "Apricots",
-        "Cherries",
-        "Currants",
-        "Gooseberries"
-      ],
-      "quiet": [
-        "Beans (Green/Yellow)",
-        "Apricots",
-        "Currants",
-        "Blueberries",
-        "Eggplant"
-      ],
-      "blurb": "August lists <strong>63</strong> Ontario-grown crops. The fullest month in the guide."
-    },
-    {
-      "key": "sep",
-      "name": "September",
-      "counts": {
-        "peak": 0,
-        "in": 61,
-        "edge": 0
-      },
-      "lead": null,
-      "wheel": [
-        "Corn",
-        "Peppers (Field)",
-        "Tomatoes (Field)",
-        "Strawberries (Field)",
-        "Beans (Green/Yellow)",
-        "broccoli",
-        "Cucumber (Field)",
-        "Lettuce (Assorted)",
-        "Peas (Green)",
-        "garlic",
-        "cabbage",
-        "Apples",
-        "carrots",
-        "Onions (Cooking)",
-        "potatoes"
-      ],
-      "peak": [],
-      "in": [
-        "Apples",
         "Blueberries",
         "Cranberries",
         "Grapes",
@@ -2392,6 +2473,7 @@
         "Artichoke",
         "Beans (Green/Yellow)",
         "Beets",
+        "Bitter Melon/Fuzzy Squash",
         "Bok Choy",
         "broccoli",
         "brussels sprouts",
@@ -2429,6 +2511,7 @@
         "Rutabaga",
         "Snow Pea Shoots (Dow Miu)",
         "spinach",
+        "Sprouts",
         "Winter Squash",
         "Summer Squash",
         "Sweet Potatoes",
@@ -2455,16 +2538,16 @@
         "Peas (Green)",
         "Muskmelon",
         "Nectarines",
-        "Grapes"
+        "Bitter Melon/Fuzzy Squash"
       ],
-      "blurb": "September lists <strong>61</strong> Ontario-grown crops. Much the same list as August."
+      "blurb": "September lists <strong>63</strong> Ontario-grown crops. Much the same list as August."
     },
     {
       "key": "oct",
       "name": "October",
       "counts": {
         "peak": 0,
-        "in": 55,
+        "in": 57,
         "edge": 0
       },
       "lead": null,
@@ -2498,6 +2581,7 @@
         "Artichoke",
         "Beans (Green/Yellow)",
         "Beets",
+        "Bitter Melon/Fuzzy Squash",
         "Bok Choy",
         "broccoli",
         "brussels sprouts",
@@ -2534,6 +2618,7 @@
         "Rutabaga",
         "Snow Pea Shoots (Dow Miu)",
         "spinach",
+        "Sprouts",
         "Winter Squash",
         "Summer Squash",
         "Sweet Potatoes",
@@ -2558,14 +2643,14 @@
         "Cranberries",
         "Artichoke"
       ],
-      "blurb": "October lists <strong>55</strong> Ontario-grown crops. Much the same list as September."
+      "blurb": "October lists <strong>57</strong> Ontario-grown crops. Much the same list as September."
     },
     {
       "key": "nov",
       "name": "November",
       "counts": {
         "peak": 0,
-        "in": 31,
+        "in": 32,
         "edge": 0
       },
       "lead": null,
@@ -2614,6 +2699,7 @@
         "potatoes",
         "radishes",
         "Rutabaga",
+        "Sprouts",
         "Winter Squash",
         "Sweet Potatoes",
         "Tomatoes (Greenhouse)",
@@ -2635,14 +2721,14 @@
         "Chinese Broccoli (White Flower)",
         "Daikon Radish"
       ],
-      "blurb": "November lists <strong>31</strong> Ontario-grown crops. Winding down: 24 fewer listed than in October."
+      "blurb": "November lists <strong>32</strong> Ontario-grown crops. Winding down: 25 fewer listed than in October."
     },
     {
       "key": "dec",
       "name": "December",
       "counts": {
         "peak": 0,
-        "in": 20,
+        "in": 21,
         "edge": 0
       },
       "lead": null,
@@ -2682,6 +2768,7 @@
         "Peppers (Greenhouse)",
         "potatoes",
         "Rutabaga",
+        "Sprouts",
         "Winter Squash",
         "Sweet Potatoes",
         "Tomatoes (Greenhouse)"
@@ -2690,13 +2777,13 @@
       "arrivals": [],
       "farewells": [],
       "quiet": [
-        "carrots",
+        "Apples",
         "potatoes",
         "leeks",
         "Cucumber (Greenhouse)",
-        "Sweet Potatoes"
+        "Sprouts"
       ],
-      "blurb": "December lists <strong>20</strong> Ontario-grown crops. Winding down: 11 fewer listed than in November."
+      "blurb": "December lists <strong>21</strong> Ontario-grown crops. Winding down: 11 fewer listed than in November."
     }
   ]
 }

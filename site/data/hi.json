@@ -45,6 +45,18 @@
       "label": "Fruit",
       "one": "fruit",
       "plural": "fruit"
+    },
+    {
+      "id": "herb",
+      "label": "Herb",
+      "one": "herb",
+      "plural": "herbs"
+    },
+    {
+      "id": "nut",
+      "label": "Nut",
+      "one": "nut",
+      "plural": "nuts"
     }
   ],
   "attribution": "Hainan harvest months from 海南省农业农村厅 and 海南日报.",
@@ -157,6 +169,52 @@
       ]
     },
     {
+      "item": "Banana",
+      "category": "fruit",
+      "months": [
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Hainan.",
+      "specialist_sources": [
+        "中国新闻网 海南"
+      ]
+    },
+    {
+      "item": "Bitter gourd",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Sanya winter vegetable areas.",
+      "specialist_sources": [
+        "新华网海南频道 2023-12-27"
+      ]
+    },
+    {
       "item": "Cherry tomato",
       "category": "vegetable",
       "months": [
@@ -226,6 +284,29 @@
       ]
     },
     {
+      "item": "Coffee",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Xinglong, Wanning, Hainan.",
+      "specialist_sources": [
+        "海南日报"
+      ]
+    },
+    {
       "item": "Cowpea",
       "category": "vegetable",
       "months": [
@@ -272,6 +353,52 @@
       ]
     },
     {
+      "item": "Dragon fruit",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Haikou, Hainan.",
+      "specialist_sources": [
+        "中国新闻网 海南"
+      ]
+    },
+    {
+      "item": "Durian",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Sanya, Baoting, Ledong, Hainan.",
+      "specialist_sources": [
+        "中国新闻网 海南"
+      ]
+    },
+    {
       "item": "Green pomelo",
       "category": "fruit",
       "months": [
@@ -292,6 +419,29 @@
       "regions_notes": "Harvest months for Hainan.",
       "specialist_sources": [
         "海南网"
+      ]
+    },
+    {
+      "item": "Green tea",
+      "category": "herb",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Baisha, Hainan.",
+      "specialist_sources": [
+        "中国地理标志产品 record"
       ]
     },
     {
@@ -341,6 +491,98 @@
       ]
     },
     {
+      "item": "Jackfruit",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Hainan.",
+      "specialist_sources": [
+        "腾讯新闻"
+      ]
+    },
+    {
+      "item": "Leigong shoot",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Southern Hainan.",
+      "specialist_sources": [
+        "南海网"
+      ]
+    },
+    {
+      "item": "Longan",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Ledong, Hainan.",
+      "specialist_sources": [
+        "海南日报"
+      ]
+    },
+    {
+      "item": "Lychee",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Hainan.",
+      "specialist_sources": [
+        "中国邮政 海南"
+      ]
+    },
+    {
       "item": "mango",
       "category": "fruit",
       "months": [
@@ -364,6 +606,29 @@
       ]
     },
     {
+      "item": "Okra",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Baoting, Hainan.",
+      "specialist_sources": [
+        "海南日报, quoting 保亭县农业农村局"
+      ]
+    },
+    {
       "item": "Orange",
       "category": "fruit",
       "months": [
@@ -384,6 +649,144 @@
       "regions_notes": "Harvest months for Qiongzhong, Hainan.",
       "specialist_sources": [
         "海南新闻发布厅"
+      ]
+    },
+    {
+      "item": "Papaya",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Sanya, Hainan.",
+      "specialist_sources": [
+        "海南扶贫网"
+      ]
+    },
+    {
+      "item": "Passion fruit",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Hainan.",
+      "specialist_sources": [
+        "海南扶贫网"
+      ]
+    },
+    {
+      "item": "Peanut",
+      "category": "nut",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Hainan.",
+      "specialist_sources": [
+        "央广网 海南"
+      ]
+    },
+    {
+      "item": "Pineapple",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Qionghai, Hainan.",
+      "specialist_sources": [
+        "椰岛农事"
+      ]
+    },
+    {
+      "item": "Rambutan",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Baoting, Hainan.",
+      "specialist_sources": [
+        "中新网海南"
+      ]
+    },
+    {
+      "item": "Sugar apple",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Sanya, Hainan.",
+      "specialist_sources": [
+        "海南日报客户端 via hainanfp"
       ]
     },
     {
@@ -456,6 +859,52 @@
       ]
     },
     {
+      "item": "Tea",
+      "category": "herb",
+      "months": [
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Wuzhishan, Hainan.",
+      "specialist_sources": [
+        "海南在线"
+      ]
+    },
+    {
+      "item": "Wampee",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Lingshui, Hainan.",
+      "specialist_sources": [
+        "陵水融媒"
+      ]
+    },
+    {
       "item": "Watermelon",
       "category": "fruit",
       "months": [
@@ -476,6 +925,29 @@
       "regions_notes": "Harvest months for Hou'an, Wanning, Hainan.",
       "specialist_sources": [
         "海南扶贫网"
+      ]
+    },
+    {
+      "item": "Wax apple",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Sanya, Hainan.",
+      "specialist_sources": [
+        "新华网 海南"
       ]
     },
     {
@@ -509,7 +981,7 @@
       "name": "January",
       "counts": {
         "peak": 0,
-        "in": 8,
+        "in": 15,
         "edge": 0
       },
       "lead": null,
@@ -520,35 +992,570 @@
         "cucumber",
         "Cowpea",
         "Indian jujube / green jujube",
+        "Bitter gourd",
         "Hami melon",
-        "Sweet potato"
+        "Papaya",
+        "Okra",
+        "Longan",
+        "Sweet potato",
+        "Wax apple",
+        "Peanut",
+        "Green tea"
       ],
       "peak": [],
       "in": [
         "aubergine",
+        "Bitter gourd",
         "Cowpea",
         "cucumber",
+        "Green tea",
         "Hami melon",
         "Indian jujube / green jujube",
+        "Longan",
         "mango",
+        "Okra",
+        "Papaya",
+        "Peanut",
         "Sweet potato",
-        "sweetcorn"
+        "sweetcorn",
+        "Wax apple"
       ],
       "edge": [],
-      "arrivals": [],
+      "arrivals": [
+        "Peanut"
+      ],
       "farewells": [],
       "quiet": [
         "mango",
         "sweetcorn",
-        "aubergine",
         "Cowpea",
-        "Indian jujube / green jujube"
+        "Indian jujube / green jujube",
+        "Papaya"
       ],
-      "blurb": "January has <strong>8</strong> Hainan crops in season. Much the same list as December."
+      "blurb": "January has <strong>15</strong> Hainan crops in season. Much the same list as December."
     },
     {
       "key": "feb",
       "name": "February",
+      "counts": {
+        "peak": 0,
+        "in": 18,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Watermelon",
+        "mango",
+        "sweetcorn",
+        "aubergine",
+        "cucumber",
+        "Cowpea",
+        "Indian jujube / green jujube",
+        "Bitter gourd",
+        "Banana",
+        "Hami melon",
+        "Papaya",
+        "Okra",
+        "Longan",
+        "Sweet potato",
+        "Wax apple"
+      ],
+      "peak": [],
+      "in": [
+        "aubergine",
+        "Banana",
+        "Bitter gourd",
+        "Cowpea",
+        "cucumber",
+        "Green tea",
+        "Hami melon",
+        "Indian jujube / green jujube",
+        "Longan",
+        "mango",
+        "Okra",
+        "Papaya",
+        "Peanut",
+        "Sweet potato",
+        "sweetcorn",
+        "Tea",
+        "Watermelon",
+        "Wax apple"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Banana",
+        "Tea",
+        "Watermelon"
+      ],
+      "farewells": [],
+      "quiet": [
+        "Watermelon",
+        "aubergine",
+        "Bitter gourd",
+        "Banana",
+        "Longan"
+      ],
+      "blurb": "February has <strong>18</strong> Hainan crops in season. Much the same list as January."
+    },
+    {
+      "key": "mar",
+      "name": "March",
+      "counts": {
+        "peak": 0,
+        "in": 23,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Watermelon",
+        "mango",
+        "sweetcorn",
+        "aubergine",
+        "cucumber",
+        "Coffee",
+        "Cherry tomato",
+        "Cowpea",
+        "Pineapple",
+        "Indian jujube / green jujube",
+        "Bitter gourd",
+        "Banana",
+        "Hami melon",
+        "Papaya",
+        "Passion fruit"
+      ],
+      "peak": [],
+      "in": [
+        "aubergine",
+        "Banana",
+        "Bitter gourd",
+        "Cherry tomato",
+        "Coffee",
+        "Cowpea",
+        "cucumber",
+        "Green tea",
+        "Hami melon",
+        "Indian jujube / green jujube",
+        "Leigong shoot",
+        "Longan",
+        "mango",
+        "Okra",
+        "Papaya",
+        "Passion fruit",
+        "Peanut",
+        "Pineapple",
+        "Sweet potato",
+        "sweetcorn",
+        "Tea",
+        "Watermelon",
+        "Wax apple"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Cherry tomato",
+        "Coffee",
+        "Leigong shoot",
+        "Passion fruit"
+      ],
+      "farewells": [
+        "Cowpea"
+      ],
+      "quiet": [
+        "Watermelon",
+        "Coffee",
+        "Cherry tomato",
+        "Pineapple",
+        "Peanut"
+      ],
+      "blurb": "March has <strong>23</strong> Hainan crops in season. Much the same list as February."
+    },
+    {
+      "key": "apr",
+      "name": "April",
+      "counts": {
+        "peak": 0,
+        "in": 25,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Watermelon",
+        "chillies",
+        "mango",
+        "sweetcorn",
+        "aubergine",
+        "cucumber",
+        "Wax gourd",
+        "Cherry tomato",
+        "Pineapple",
+        "Indian jujube / green jujube",
+        "Lychee",
+        "Bitter gourd",
+        "Jackfruit",
+        "Banana",
+        "Hami melon"
+      ],
+      "peak": [],
+      "in": [
+        "aubergine",
+        "Banana",
+        "Bitter gourd",
+        "Cherry tomato",
+        "chillies",
+        "cucumber",
+        "Green tea",
+        "Hami melon",
+        "Indian jujube / green jujube",
+        "Jackfruit",
+        "Leigong shoot",
+        "Longan",
+        "Lychee",
+        "mango",
+        "Okra",
+        "Papaya",
+        "Passion fruit",
+        "Peanut",
+        "Pineapple",
+        "Sweet potato",
+        "sweetcorn",
+        "Tea",
+        "Watermelon",
+        "Wax apple",
+        "Wax gourd"
+      ],
+      "edge": [],
+      "arrivals": [
+        "chillies",
+        "Jackfruit",
+        "Lychee",
+        "Wax gourd"
+      ],
+      "farewells": [
+        "Bitter gourd",
+        "Indian jujube / green jujube",
+        "sweetcorn",
+        "Watermelon"
+      ],
+      "quiet": [
+        "cucumber",
+        "Wax gourd",
+        "Lychee",
+        "Banana",
+        "Tea"
+      ],
+      "blurb": "April has <strong>25</strong> Hainan crops in season. The fullest month on the wheel."
+    },
+    {
+      "key": "may",
+      "name": "May",
+      "counts": {
+        "peak": 0,
+        "in": 22,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "chillies",
+        "mango",
+        "aubergine",
+        "cucumber",
+        "Wampee",
+        "Cherry tomato",
+        "Pineapple",
+        "Lychee",
+        "Dragon fruit",
+        "Jackfruit",
+        "Banana",
+        "Hami melon",
+        "Papaya",
+        "Passion fruit",
+        "Leigong shoot"
+      ],
+      "peak": [],
+      "in": [
+        "aubergine",
+        "Banana",
+        "Cherry tomato",
+        "chillies",
+        "cucumber",
+        "Dragon fruit",
+        "Green tea",
+        "Hami melon",
+        "Jackfruit",
+        "Leigong shoot",
+        "Longan",
+        "Lychee",
+        "mango",
+        "Okra",
+        "Papaya",
+        "Passion fruit",
+        "Peanut",
+        "Pineapple",
+        "Sweet potato",
+        "Tea",
+        "Wampee",
+        "Wax apple"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Dragon fruit",
+        "Wampee"
+      ],
+      "farewells": [
+        "aubergine",
+        "Cherry tomato",
+        "cucumber",
+        "Hami melon"
+      ],
+      "quiet": [
+        "cucumber",
+        "Wampee",
+        "Cherry tomato",
+        "Jackfruit",
+        "Wax apple"
+      ],
+      "blurb": "May has <strong>22</strong> Hainan crops in season. Much the same list as April."
+    },
+    {
+      "key": "jun",
+      "name": "June",
+      "counts": {
+        "peak": 0,
+        "in": 20,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "chillies",
+        "Durian",
+        "Wampee",
+        "Green pomelo",
+        "Rambutan",
+        "Pineapple",
+        "Lychee",
+        "Dragon fruit",
+        "Jackfruit",
+        "Avocado",
+        "Banana",
+        "Passion fruit",
+        "Leigong shoot",
+        "Okra",
+        "Longan"
+      ],
+      "peak": [],
+      "in": [
+        "Avocado",
+        "Banana",
+        "chillies",
+        "Dragon fruit",
+        "Durian",
+        "Green pomelo",
+        "Green tea",
+        "Jackfruit",
+        "Leigong shoot",
+        "Longan",
+        "Lychee",
+        "Okra",
+        "Passion fruit",
+        "Peanut",
+        "Pineapple",
+        "Rambutan",
+        "Sweet potato",
+        "Tea",
+        "Wampee",
+        "Wax apple"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Avocado",
+        "Durian",
+        "Green pomelo",
+        "Rambutan"
+      ],
+      "farewells": [
+        "Longan",
+        "Okra",
+        "Peanut",
+        "Pineapple"
+      ],
+      "quiet": [
+        "Durian",
+        "Wampee",
+        "Green pomelo",
+        "Pineapple",
+        "Sweet potato"
+      ],
+      "blurb": "June has <strong>20</strong> Hainan crops in season. Much the same list as May."
+    },
+    {
+      "key": "jul",
+      "name": "July",
+      "counts": {
+        "peak": 0,
+        "in": 16,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "chillies",
+        "Sugar apple",
+        "Durian",
+        "Green pomelo",
+        "Rambutan",
+        "Lychee",
+        "Dragon fruit",
+        "Jackfruit",
+        "Avocado",
+        "Banana",
+        "Passion fruit",
+        "Leigong shoot",
+        "Sweet potato",
+        "Wax apple",
+        "Tea"
+      ],
+      "peak": [],
+      "in": [
+        "Avocado",
+        "Banana",
+        "chillies",
+        "Dragon fruit",
+        "Durian",
+        "Green pomelo",
+        "Green tea",
+        "Jackfruit",
+        "Leigong shoot",
+        "Lychee",
+        "Passion fruit",
+        "Rambutan",
+        "Sugar apple",
+        "Sweet potato",
+        "Tea",
+        "Wax apple"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Sugar apple"
+      ],
+      "farewells": [
+        "Durian",
+        "Sweet potato",
+        "Wax apple"
+      ],
+      "quiet": [
+        "chillies",
+        "Sugar apple",
+        "Durian",
+        "Rambutan",
+        "Leigong shoot"
+      ],
+      "blurb": "July has <strong>16</strong> Hainan crops in season. Much the same list as June."
+    },
+    {
+      "key": "aug",
+      "name": "August",
+      "counts": {
+        "peak": 0,
+        "in": 13,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "chillies",
+        "Green pomelo",
+        "Taro",
+        "Rambutan",
+        "Lychee",
+        "Dragon fruit",
+        "Jackfruit",
+        "Avocado",
+        "Banana",
+        "Passion fruit",
+        "Leigong shoot",
+        "Tea",
+        "Green tea"
+      ],
+      "peak": [],
+      "in": [
+        "Avocado",
+        "Banana",
+        "chillies",
+        "Dragon fruit",
+        "Green pomelo",
+        "Green tea",
+        "Jackfruit",
+        "Leigong shoot",
+        "Lychee",
+        "Passion fruit",
+        "Rambutan",
+        "Taro",
+        "Tea"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Taro"
+      ],
+      "farewells": [
+        "Banana",
+        "chillies",
+        "Green pomelo",
+        "Lychee"
+      ],
+      "quiet": [
+        "chillies",
+        "Green pomelo",
+        "Rambutan",
+        "Lychee",
+        "Passion fruit"
+      ],
+      "blurb": "August has <strong>13</strong> Hainan crops in season. Much the same list as July."
+    },
+    {
+      "key": "sep",
+      "name": "September",
+      "counts": {
+        "peak": 0,
+        "in": 8,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Taro",
+        "Dragon fruit",
+        "Jackfruit",
+        "Avocado",
+        "Passion fruit",
+        "Leigong shoot",
+        "Tea",
+        "Green tea"
+      ],
+      "peak": [],
+      "in": [
+        "Avocado",
+        "Dragon fruit",
+        "Green tea",
+        "Jackfruit",
+        "Leigong shoot",
+        "Passion fruit",
+        "Taro",
+        "Tea"
+      ],
+      "edge": [],
+      "arrivals": [],
+      "farewells": [
+        "Jackfruit",
+        "Passion fruit"
+      ],
+      "quiet": [
+        "Taro",
+        "Dragon fruit",
+        "Jackfruit",
+        "Avocado",
+        "Green tea"
+      ],
+      "blurb": "September has <strong>8</strong> Hainan crops in season. The leanest stretch of the year."
+    },
+    {
+      "key": "oct",
+      "name": "October",
       "counts": {
         "peak": 0,
         "in": 9,
@@ -556,372 +1563,55 @@
       },
       "lead": null,
       "wheel": [
-        "Watermelon",
-        "mango",
-        "sweetcorn",
-        "aubergine",
-        "cucumber",
-        "Cowpea",
-        "Indian jujube / green jujube",
-        "Hami melon",
-        "Sweet potato"
-      ],
-      "peak": [],
-      "in": [
-        "aubergine",
-        "Cowpea",
-        "cucumber",
-        "Hami melon",
-        "Indian jujube / green jujube",
-        "mango",
-        "Sweet potato",
-        "sweetcorn",
-        "Watermelon"
-      ],
-      "edge": [],
-      "arrivals": [
-        "Watermelon"
-      ],
-      "farewells": [],
-      "quiet": [
-        "Watermelon",
-        "mango",
-        "sweetcorn",
-        "Cowpea",
-        "Indian jujube / green jujube"
-      ],
-      "blurb": "February has <strong>9</strong> Hainan crops in season. Much the same list as January."
-    },
-    {
-      "key": "mar",
-      "name": "March",
-      "counts": {
-        "peak": 0,
-        "in": 10,
-        "edge": 0
-      },
-      "lead": null,
-      "wheel": [
-        "Watermelon",
-        "mango",
-        "sweetcorn",
-        "aubergine",
-        "cucumber",
-        "Cherry tomato",
-        "Cowpea",
-        "Indian jujube / green jujube",
-        "Hami melon",
-        "Sweet potato"
-      ],
-      "peak": [],
-      "in": [
-        "aubergine",
-        "Cherry tomato",
-        "Cowpea",
-        "cucumber",
-        "Hami melon",
-        "Indian jujube / green jujube",
-        "mango",
-        "Sweet potato",
-        "sweetcorn",
-        "Watermelon"
-      ],
-      "edge": [],
-      "arrivals": [
-        "Cherry tomato"
-      ],
-      "farewells": [
-        "Cowpea"
-      ],
-      "quiet": [
-        "Watermelon",
-        "mango",
-        "aubergine",
-        "cucumber",
-        "Cherry tomato"
-      ],
-      "blurb": "March has <strong>10</strong> Hainan crops in season. Much the same list as February."
-    },
-    {
-      "key": "apr",
-      "name": "April",
-      "counts": {
-        "peak": 0,
-        "in": 11,
-        "edge": 0
-      },
-      "lead": null,
-      "wheel": [
-        "Watermelon",
-        "chillies",
-        "mango",
-        "sweetcorn",
-        "aubergine",
-        "cucumber",
-        "Wax gourd",
-        "Cherry tomato",
-        "Indian jujube / green jujube",
-        "Hami melon",
-        "Sweet potato"
-      ],
-      "peak": [],
-      "in": [
-        "aubergine",
-        "Cherry tomato",
-        "chillies",
-        "cucumber",
-        "Hami melon",
-        "Indian jujube / green jujube",
-        "mango",
-        "Sweet potato",
-        "sweetcorn",
-        "Watermelon",
-        "Wax gourd"
-      ],
-      "edge": [],
-      "arrivals": [
-        "chillies",
-        "Wax gourd"
-      ],
-      "farewells": [
-        "Indian jujube / green jujube",
-        "sweetcorn",
-        "Watermelon"
-      ],
-      "quiet": [
-        "Watermelon",
-        "chillies",
-        "sweetcorn",
-        "Wax gourd",
-        "Cherry tomato"
-      ],
-      "blurb": "April has <strong>11</strong> Hainan crops in season. The fullest month on the wheel."
-    },
-    {
-      "key": "may",
-      "name": "May",
-      "counts": {
-        "peak": 0,
-        "in": 7,
-        "edge": 0
-      },
-      "lead": null,
-      "wheel": [
-        "chillies",
-        "mango",
-        "aubergine",
-        "cucumber",
-        "Cherry tomato",
-        "Hami melon",
-        "Sweet potato"
-      ],
-      "peak": [],
-      "in": [
-        "aubergine",
-        "Cherry tomato",
-        "chillies",
-        "cucumber",
-        "Hami melon",
-        "mango",
-        "Sweet potato"
-      ],
-      "edge": [],
-      "arrivals": [],
-      "farewells": [
-        "aubergine",
-        "Cherry tomato",
-        "cucumber",
-        "Hami melon"
-      ],
-      "quiet": [
-        "mango",
-        "aubergine",
-        "cucumber",
-        "Cherry tomato",
-        "Hami melon"
-      ],
-      "blurb": "May has <strong>7</strong> Hainan crops in season. Much the same list as April."
-    },
-    {
-      "key": "jun",
-      "name": "June",
-      "counts": {
-        "peak": 0,
-        "in": 4,
-        "edge": 0
-      },
-      "lead": null,
-      "wheel": [
-        "chillies",
-        "Green pomelo",
-        "Avocado",
-        "Sweet potato"
-      ],
-      "peak": [],
-      "in": [
-        "Avocado",
-        "chillies",
-        "Green pomelo",
-        "Sweet potato"
-      ],
-      "edge": [],
-      "arrivals": [
-        "Avocado",
-        "Green pomelo"
-      ],
-      "farewells": [],
-      "quiet": [
-        "chillies",
-        "Green pomelo",
-        "Avocado",
-        "Sweet potato"
-      ],
-      "blurb": "June has <strong>4</strong> Hainan crops in season. Much the same list as May."
-    },
-    {
-      "key": "jul",
-      "name": "July",
-      "counts": {
-        "peak": 0,
-        "in": 4,
-        "edge": 0
-      },
-      "lead": null,
-      "wheel": [
-        "chillies",
-        "Green pomelo",
-        "Avocado",
-        "Sweet potato"
-      ],
-      "peak": [],
-      "in": [
-        "Avocado",
-        "chillies",
-        "Green pomelo",
-        "Sweet potato"
-      ],
-      "edge": [],
-      "arrivals": [],
-      "farewells": [
-        "Sweet potato"
-      ],
-      "quiet": [
-        "chillies",
-        "Green pomelo",
-        "Avocado",
-        "Sweet potato"
-      ],
-      "blurb": "July has <strong>4</strong> Hainan crops in season. Much the same list as June."
-    },
-    {
-      "key": "aug",
-      "name": "August",
-      "counts": {
-        "peak": 0,
-        "in": 4,
-        "edge": 0
-      },
-      "lead": null,
-      "wheel": [
-        "chillies",
-        "Green pomelo",
-        "Taro",
-        "Avocado"
-      ],
-      "peak": [],
-      "in": [
-        "Avocado",
-        "chillies",
-        "Green pomelo",
-        "Taro"
-      ],
-      "edge": [],
-      "arrivals": [
-        "Taro"
-      ],
-      "farewells": [
-        "chillies",
-        "Green pomelo"
-      ],
-      "quiet": [
-        "chillies",
-        "Green pomelo",
-        "Taro",
-        "Avocado"
-      ],
-      "blurb": "August has <strong>4</strong> Hainan crops in season. Much the same list as July."
-    },
-    {
-      "key": "sep",
-      "name": "September",
-      "counts": {
-        "peak": 0,
-        "in": 2,
-        "edge": 0
-      },
-      "lead": null,
-      "wheel": [
-        "Taro",
-        "Avocado"
-      ],
-      "peak": [],
-      "in": [
-        "Avocado",
-        "Taro"
-      ],
-      "edge": [],
-      "arrivals": [],
-      "farewells": [],
-      "quiet": [
-        "Taro",
-        "Avocado"
-      ],
-      "blurb": "September has <strong>2</strong> Hainan crops in season. The leanest stretch of the year."
-    },
-    {
-      "key": "oct",
-      "name": "October",
-      "counts": {
-        "peak": 0,
-        "in": 4,
-        "edge": 0
-      },
-      "lead": null,
-      "wheel": [
         "Orange",
         "Chinese yam",
         "Taro",
-        "Avocado"
+        "Dragon fruit",
+        "Avocado",
+        "Leigong shoot",
+        "Longan",
+        "Tea",
+        "Green tea"
       ],
       "peak": [],
       "in": [
         "Avocado",
         "Chinese yam",
+        "Dragon fruit",
+        "Green tea",
+        "Leigong shoot",
+        "Longan",
         "Orange",
-        "Taro"
+        "Taro",
+        "Tea"
       ],
       "edge": [],
       "arrivals": [
         "Chinese yam",
+        "Longan",
         "Orange"
       ],
       "farewells": [
+        "Dragon fruit",
+        "Green tea",
+        "Leigong shoot",
         "Taro"
       ],
       "quiet": [
         "Orange",
         "Chinese yam",
         "Taro",
+        "Dragon fruit",
         "Avocado"
       ],
-      "blurb": "October has <strong>4</strong> Hainan crops in season. Much the same list as September."
+      "blurb": "October has <strong>9</strong> Hainan crops in season. Much the same list as September."
     },
     {
       "key": "nov",
       "name": "November",
       "counts": {
         "peak": 0,
-        "in": 7,
+        "in": 12,
         "edge": 0
       },
       "lead": null,
@@ -930,43 +1620,53 @@
         "sweetcorn",
         "aubergine",
         "cucumber",
+        "Bitter gourd",
         "Avocado",
         "Hami melon",
-        "Sweet potato"
+        "Papaya",
+        "Okra",
+        "Longan",
+        "Sweet potato",
+        "Wax apple"
       ],
       "peak": [],
       "in": [
         "aubergine",
         "Avocado",
+        "Bitter gourd",
         "cucumber",
         "Hami melon",
+        "Longan",
+        "Okra",
         "Orange",
+        "Papaya",
         "Sweet potato",
-        "sweetcorn"
+        "sweetcorn",
+        "Wax apple"
       ],
       "edge": [],
       "arrivals": [
         "aubergine",
+        "Bitter gourd",
         "cucumber",
-        "Hami melon",
-        "Sweet potato"
+        "Hami melon"
       ],
       "farewells": [],
       "quiet": [
         "Orange",
         "sweetcorn",
-        "cucumber",
+        "Bitter gourd",
         "Hami melon",
-        "Sweet potato"
+        "Papaya"
       ],
-      "blurb": "November has <strong>7</strong> Hainan crops in season. Much the same list as October."
+      "blurb": "November has <strong>12</strong> Hainan crops in season. Much the same list as October."
     },
     {
       "key": "dec",
       "name": "December",
       "counts": {
         "peak": 0,
-        "in": 10,
+        "in": 16,
         "edge": 0
       },
       "lead": null,
@@ -978,26 +1678,38 @@
         "cucumber",
         "Cowpea",
         "Indian jujube / green jujube",
+        "Bitter gourd",
         "Avocado",
         "Hami melon",
-        "Sweet potato"
+        "Papaya",
+        "Okra",
+        "Longan",
+        "Sweet potato",
+        "Wax apple"
       ],
       "peak": [],
       "in": [
         "aubergine",
         "Avocado",
+        "Bitter gourd",
         "Cowpea",
         "cucumber",
+        "Green tea",
         "Hami melon",
         "Indian jujube / green jujube",
+        "Longan",
         "mango",
+        "Okra",
         "Orange",
+        "Papaya",
         "Sweet potato",
-        "sweetcorn"
+        "sweetcorn",
+        "Wax apple"
       ],
       "edge": [],
       "arrivals": [
         "Cowpea",
+        "Green tea",
         "Indian jujube / green jujube",
         "mango"
       ],
@@ -1006,13 +1718,13 @@
         "Orange"
       ],
       "quiet": [
-        "Orange",
+        "mango",
         "aubergine",
         "Cowpea",
         "Indian jujube / green jujube",
-        "Hami melon"
+        "Okra"
       ],
-      "blurb": "December has <strong>10</strong> Hainan crops in season. Much the same list as November."
+      "blurb": "December has <strong>16</strong> Hainan crops in season. Much the same list as November."
     }
   ]
 }

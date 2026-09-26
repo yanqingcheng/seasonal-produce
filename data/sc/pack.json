@@ -54,6 +54,13 @@
       "one": "nut",
       "plural": "nuts",
       "everyday": false
+    },
+    {
+      "id": "herb",
+      "label": "Herb",
+      "one": "herb",
+      "plural": "herbs",
+      "everyday": false
     }
   ],
   "state_roles": {
@@ -64,6 +71,6 @@
   "attribution": "Sichuan harvest months from 四川在线 and 川观新闻.",
   "alias_profile": "none",
   "recipe_rule": "optional",
-  "expect_items": 35,
+  "expect_items": 42,
   "require_peak_every_month": false
 }

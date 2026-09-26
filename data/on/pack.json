@@ -57,6 +57,6 @@
   "attribution": "Foodland Ontario Availability Guide. Open Government Licence – Ontario.",
   "alias_profile": "none",
   "recipe_rule": "optional",
-  "expect_items": 70,
+  "expect_items": 73,
   "require_peak_every_month": false
 }

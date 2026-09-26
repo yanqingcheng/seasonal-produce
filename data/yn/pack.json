@@ -47,6 +47,20 @@
       "one": "fruit",
       "plural": "fruit",
       "everyday": true
+    },
+    {
+      "id": "herb",
+      "label": "Herb",
+      "one": "herb",
+      "plural": "herbs",
+      "everyday": false
+    },
+    {
+      "id": "nut",
+      "label": "Nut",
+      "one": "nut",
+      "plural": "nuts",
+      "everyday": false
     }
   ],
   "state_roles": {
@@ -57,6 +71,6 @@
   "attribution": "Yunnan harvest months from 云南网 and 云南省农业农村厅.",
   "alias_profile": "none",
   "recipe_rule": "optional",
-  "expect_items": 32,
+  "expect_items": 45,
   "require_peak_every_month": false
 }

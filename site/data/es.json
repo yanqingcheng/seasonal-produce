@@ -906,6 +906,29 @@
       ]
     },
     {
+      "item": "chirimoya",
+      "category": "fruit",
+      "months": [
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de frutas de temporada"
+      ]
+    },
+    {
       "item": "ciruela",
       "category": "fruit",
       "months": [
@@ -1013,6 +1036,29 @@
         "in",
         "out",
         "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de frutas de temporada"
+      ]
+    },
+    {
+      "item": "kiwi",
+      "category": "fruit",
+      "months": [
+        "peak",
+        "peak",
+        "peak",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "peak",
+        "peak",
+        "peak"
       ],
       "stored_notes": null,
       "regions_notes": null,
@@ -1297,6 +1343,29 @@
       ]
     },
     {
+      "item": "plátano",
+      "category": "fruit",
+      "months": [
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak",
+        "peak"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MAPA, calendario de frutas de temporada"
+      ]
+    },
+    {
       "item": "pomelo",
       "category": "fruit",
       "months": [
@@ -1372,8 +1441,8 @@
       "key": "jan",
       "name": "Enero",
       "counts": {
-        "peak": 32,
-        "in": 4,
+        "peak": 34,
+        "in": 5,
         "edge": 0
       },
       "lead": {
@@ -1424,18 +1493,21 @@
         "aguacate",
         "frambuesa",
         "fresa y fresón",
+        "kiwi",
         "limón",
         "mandarina",
         "manzana",
         "naranja",
         "pera",
+        "plátano",
         "pomelo"
       ],
       "in": [
         "endibia",
         "guisante",
         "nabo",
-        "caqui"
+        "caqui",
+        "chirimoya"
       ],
       "edge": [],
       "arrivals": [
@@ -1445,22 +1517,23 @@
       ],
       "farewells": [
         "endibia",
-        "caqui"
+        "caqui",
+        "chirimoya"
       ],
       "quiet": [
         "naranja",
-        "tomate",
-        "cardo",
-        "alcachofa",
-        "repollo"
+        "zanahoria",
+        "col lombarda",
+        "kiwi",
+        "puerro"
       ],
-      "blurb": "Enero tiene <strong>32</strong> productos en mayor comercialización y <strong>4</strong> en menor. Una cosecha parecida a la de Diciembre. Hortalizas lideran la mayor comercialización (23 de 32), con 9 frutas en ese nivel."
+      "blurb": "Enero tiene <strong>34</strong> productos en mayor comercialización y <strong>5</strong> en menor. Una cosecha parecida a la de Diciembre. Hortalizas lideran la mayor comercialización (23 de 34), con 11 frutas en ese nivel."
     },
     {
       "key": "feb",
       "name": "Febrero",
       "counts": {
-        "peak": 31,
+        "peak": 33,
         "in": 3,
         "edge": 0
       },
@@ -1511,11 +1584,13 @@
         "aguacate",
         "frambuesa",
         "fresa y fresón",
+        "kiwi",
         "limón",
         "mandarina",
         "manzana",
         "naranja",
         "pera",
+        "plátano",
         "pomelo"
       ],
       "in": [
@@ -1533,15 +1608,15 @@
         "pepino",
         "apio",
         "pomelo",
-        "puerro"
+        "brócoli"
       ],
-      "blurb": "Febrero tiene <strong>31</strong> productos en mayor comercialización y <strong>3</strong> en menor. Una cosecha parecida a la de Enero. Hortalizas lideran la mayor comercialización (22 de 31), con 9 frutas en ese nivel."
+      "blurb": "Febrero tiene <strong>33</strong> productos en mayor comercialización y <strong>3</strong> en menor. Una cosecha parecida a la de Enero. Hortalizas lideran la mayor comercialización (22 de 33), con 11 frutas en ese nivel."
     },
     {
       "key": "mar",
       "name": "Marzo",
       "counts": {
-        "peak": 31,
+        "peak": 33,
         "in": 4,
         "edge": 0
       },
@@ -1592,11 +1667,13 @@
         "aguacate",
         "frambuesa",
         "fresa y fresón",
+        "kiwi",
         "limón",
         "mandarina",
         "manzana",
         "naranja",
         "pera",
+        "plátano",
         "pomelo"
       ],
       "in": [
@@ -1618,16 +1695,16 @@
         "pimiento",
         "haba",
         "aguacate",
-        "rábano"
+        "coliflor"
       ],
-      "blurb": "Marzo tiene <strong>31</strong> productos en mayor comercialización y <strong>4</strong> en menor. Una cosecha parecida a la de Febrero. Hortalizas lideran la mayor comercialización (22 de 31), con 9 frutas en ese nivel."
+      "blurb": "Marzo tiene <strong>33</strong> productos en mayor comercialización y <strong>4</strong> en menor. Una cosecha parecida a la de Febrero. Hortalizas lideran la mayor comercialización (22 de 33), con 11 frutas en ese nivel."
     },
     {
       "key": "apr",
       "name": "Abril",
       "counts": {
-        "peak": 27,
-        "in": 11,
+        "peak": 28,
+        "in": 12,
         "edge": 0
       },
       "lead": {
@@ -1678,6 +1755,7 @@
         "mandarina",
         "naranja",
         "níspero",
+        "plátano",
         "pomelo"
       ],
       "in": [
@@ -1688,6 +1766,7 @@
         "repollo",
         "albaricoque",
         "cereza",
+        "kiwi",
         "manzana",
         "melocotón",
         "nectarina",
@@ -1703,23 +1782,23 @@
       "farewells": [
         "frambuesa",
         "apio",
-        "manzana",
-        "pera"
+        "kiwi",
+        "manzana"
       ],
       "quiet": [
-        "fresa y fresón",
-        "ajo",
-        "níspero",
+        "calabacín",
+        "espárrago verde",
         "frambuesa",
-        "escarola"
+        "limón",
+        "repollo"
       ],
-      "blurb": "Abril tiene <strong>27</strong> productos en mayor comercialización y <strong>11</strong> en menor. Una cosecha parecida a la de Marzo. Hortalizas lideran la mayor comercialización (19 de 27), con 8 frutas en ese nivel."
+      "blurb": "Abril tiene <strong>28</strong> productos en mayor comercialización y <strong>12</strong> en menor. Una cosecha parecida a la de Marzo. Hortalizas lideran la mayor comercialización (19 de 28), con 9 frutas en ese nivel."
     },
     {
       "key": "may",
       "name": "Mayo",
       "counts": {
-        "peak": 26,
+        "peak": 27,
         "in": 12,
         "edge": 0
       },
@@ -1770,7 +1849,8 @@
         "melocotón",
         "naranja",
         "nectarina",
-        "níspero"
+        "níspero",
+        "plátano"
       ],
       "in": [
         "calabaza",
@@ -1800,19 +1880,19 @@
         "pomelo"
       ],
       "quiet": [
-        "naranja",
-        "calabacín",
-        "espárrago verde",
+        "ajo",
+        "níspero",
         "albaricoque",
-        "brócoli"
+        "nectarina",
+        "rábano"
       ],
-      "blurb": "Mayo tiene <strong>26</strong> productos en mayor comercialización y <strong>12</strong> en menor. Una cosecha parecida a la de Abril. Hortalizas lideran la mayor comercialización (18 de 26), con 8 frutas en ese nivel."
+      "blurb": "Mayo tiene <strong>27</strong> productos en mayor comercialización y <strong>12</strong> en menor. Una cosecha parecida a la de Abril. Hortalizas lideran la mayor comercialización (18 de 27), con 9 frutas en ese nivel."
     },
     {
       "key": "jun",
       "name": "Junio",
       "counts": {
-        "peak": 24,
+        "peak": 25,
         "in": 13,
         "edge": 0
       },
@@ -1861,6 +1941,7 @@
         "melón",
         "nectarina",
         "paraguaya",
+        "plátano",
         "sandía"
       ],
       "in": [
@@ -1891,25 +1972,25 @@
         "alcachofa"
       ],
       "quiet": [
-        "melón",
         "espinaca",
-        "breva",
-        "ciruela",
-        "guisante"
+        "tomate",
+        "cereza",
+        "guisante",
+        "plátano"
       ],
-      "blurb": "Junio tiene <strong>24</strong> productos en mayor comercialización y <strong>13</strong> en menor. Una cosecha parecida a la de Mayo. Hortalizas lideran la mayor comercialización (15 de 24), con 9 frutas en ese nivel."
+      "blurb": "Junio tiene <strong>25</strong> productos en mayor comercialización y <strong>13</strong> en menor. Una cosecha parecida a la de Mayo. Hortalizas lideran la mayor comercialización (15 de 25), con 10 frutas en ese nivel."
     },
     {
       "key": "jul",
       "name": "Julio",
       "counts": {
-        "peak": 22,
+        "peak": 23,
         "in": 9,
         "edge": 0
       },
       "lead": {
-        "category": "vegetable",
-        "count": 11
+        "category": "fruit",
+        "count": 12
       },
       "wheel": [
         "melón",
@@ -1950,6 +2031,7 @@
         "nectarina",
         "paraguaya",
         "pera",
+        "plátano",
         "sandía"
       ],
       "in": [
@@ -1977,17 +2059,17 @@
       "quiet": [
         "sandía",
         "lechuga",
-        "cereza",
+        "breva",
         "melocotón",
         "berenjena"
       ],
-      "blurb": "Julio tiene <strong>22</strong> productos en mayor comercialización y <strong>9</strong> en menor. Una cosecha parecida a la de Junio. Hortalizas lideran la mayor comercialización (11 de 22), con 11 frutas en ese nivel."
+      "blurb": "Julio tiene <strong>23</strong> productos en mayor comercialización y <strong>9</strong> en menor. Una cosecha parecida a la de Junio. Frutas lideran la mayor comercialización (12 de 23), con 12 frutas en ese nivel."
     },
     {
       "key": "aug",
       "name": "Agosto",
       "counts": {
-        "peak": 25,
+        "peak": 26,
         "in": 5,
         "edge": 0
       },
@@ -2037,6 +2119,7 @@
         "nectarina",
         "paraguaya",
         "pera",
+        "plátano",
         "sandía"
       ],
       "in": [
@@ -2058,17 +2141,17 @@
         "melón",
         "cebolla",
         "paraguaya",
-        "remolacha",
+        "ciruela",
         "acelga"
       ],
-      "blurb": "Agosto tiene <strong>25</strong> productos en mayor comercialización y <strong>5</strong> en menor. El tramo más corto del año. Hortalizas lideran la mayor comercialización (14 de 25), con 11 frutas en ese nivel."
+      "blurb": "Agosto tiene <strong>26</strong> productos en mayor comercialización y <strong>5</strong> en menor. El tramo más corto del año. Hortalizas lideran la mayor comercialización (14 de 26), con 12 frutas en ese nivel."
     },
     {
       "key": "sep",
       "name": "Septiembre",
       "counts": {
-        "peak": 27,
-        "in": 10,
+        "peak": 28,
+        "in": 12,
         "edge": 0
       },
       "lead": {
@@ -2119,6 +2202,7 @@
         "membrillo",
         "nectarina",
         "pera",
+        "plátano",
         "uva"
       ],
       "in": [
@@ -2127,8 +2211,10 @@
         "nabo",
         "albaricoque",
         "caqui",
+        "chirimoya",
         "ciruela",
         "granada",
+        "kiwi",
         "mandarina",
         "melón",
         "sandía"
@@ -2151,15 +2237,15 @@
         "judía verde",
         "membrillo",
         "higo",
-        "nectarina"
+        "remolacha"
       ],
-      "blurb": "Septiembre tiene <strong>27</strong> productos en mayor comercialización y <strong>10</strong> en menor. Una cosecha parecida a la de Agosto. Hortalizas lideran la mayor comercialización (19 de 27), con 8 frutas en ese nivel."
+      "blurb": "Septiembre tiene <strong>28</strong> productos en mayor comercialización y <strong>12</strong> en menor. La rueda se llena: 9 más de temporada que en Agosto. Hortalizas lideran la mayor comercialización (19 de 28), con 9 frutas en ese nivel."
     },
     {
       "key": "oct",
       "name": "Octubre",
       "counts": {
-        "peak": 31,
+        "peak": 34,
         "in": 9,
         "edge": 0
       },
@@ -2209,12 +2295,15 @@
         "tomate",
         "zanahoria",
         "caqui",
+        "chirimoya",
         "frambuesa",
         "granada",
+        "kiwi",
         "mandarina",
         "mango",
         "manzana",
         "pera",
+        "plátano",
         "uva"
       ],
       "in": [
@@ -2245,16 +2334,16 @@
         "judía verde",
         "calabaza",
         "endibia",
-        "col lombarda",
-        "coliflor"
+        "mango",
+        "mandarina"
       ],
-      "blurb": "Octubre tiene <strong>31</strong> productos en mayor comercialización y <strong>9</strong> en menor. El mes con más productos de temporada. Hortalizas lideran la mayor comercialización (23 de 31), con 8 frutas en ese nivel."
+      "blurb": "Octubre tiene <strong>34</strong> productos en mayor comercialización y <strong>9</strong> en menor. El mes con más productos de temporada. Hortalizas lideran la mayor comercialización (23 de 34), con 11 frutas en ese nivel."
     },
     {
       "key": "nov",
       "name": "Noviembre",
       "counts": {
-        "peak": 33,
+        "peak": 36,
         "in": 6,
         "edge": 0
       },
@@ -2304,14 +2393,17 @@
         "zanahoria",
         "aguacate",
         "caqui",
+        "chirimoya",
         "frambuesa",
         "granada",
+        "kiwi",
         "limón",
         "mandarina",
         "mango",
         "manzana",
         "naranja",
         "pera",
+        "plátano",
         "uva"
       ],
       "in": [
@@ -2336,16 +2428,16 @@
         "manzana",
         "pera",
         "granada",
-        "mango",
-        "mandarina"
+        "chirimoya",
+        "escarola"
       ],
-      "blurb": "Noviembre tiene <strong>33</strong> productos en mayor comercialización y <strong>6</strong> en menor. Una cosecha parecida a la de Octubre. Hortalizas lideran la mayor comercialización (22 de 33), con 11 frutas en ese nivel."
+      "blurb": "Noviembre tiene <strong>36</strong> productos en mayor comercialización y <strong>6</strong> en menor. Una cosecha parecida a la de Octubre. Hortalizas lideran la mayor comercialización (22 de 36), con 14 frutas en ese nivel."
     },
     {
       "key": "dec",
       "name": "Diciembre",
       "counts": {
-        "peak": 33,
+        "peak": 36,
         "in": 3,
         "edge": 0
       },
@@ -2396,12 +2488,15 @@
         "zanahoria",
         "aguacate",
         "caqui",
+        "chirimoya",
         "frambuesa",
+        "kiwi",
         "limón",
         "mandarina",
         "manzana",
         "naranja",
         "pera",
+        "plátano",
         "pomelo",
         "uva"
       ],
@@ -2419,12 +2514,12 @@
       ],
       "quiet": [
         "uva",
-        "zanahoria",
+        "cardo",
         "caqui",
-        "limón",
+        "alcachofa",
         "nabo"
       ],
-      "blurb": "Diciembre tiene <strong>33</strong> productos en mayor comercialización y <strong>3</strong> en menor. Una cosecha parecida a la de Noviembre. Hortalizas lideran la mayor comercialización (23 de 33), con 10 frutas en ese nivel."
+      "blurb": "Diciembre tiene <strong>36</strong> productos en mayor comercialización y <strong>3</strong> en menor. Una cosecha parecida a la de Noviembre. Hortalizas lideran la mayor comercialización (23 de 36), con 13 frutas en ese nivel."
     }
   ]
 }

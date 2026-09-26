@@ -71,6 +71,6 @@
   "attribution": "Shandong harvest months from 齐鲁网 and 腾讯新闻.",
   "alias_profile": "none",
   "recipe_rule": "optional",
-  "expect_items": 32,
+  "expect_items": 37,
   "require_peak_every_month": false
 }

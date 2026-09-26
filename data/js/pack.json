@@ -64,6 +64,6 @@
   "attribution": "Jiangsu harvest months from 中国江苏网 and 扬子晚报.",
   "alias_profile": "none",
   "recipe_rule": "optional",
-  "expect_items": 31,
+  "expect_items": 41,
   "require_peak_every_month": false
 }

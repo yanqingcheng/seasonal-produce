@@ -51,6 +51,12 @@
       "label": "Herb",
       "one": "herb",
       "plural": "herbs"
+    },
+    {
+      "id": "nut",
+      "label": "Nut",
+      "one": "nut",
+      "plural": "nuts"
     }
   ],
   "attribution": "Xinjiang harvest months from 中新网·新疆 and 天山网.",
@@ -116,6 +122,29 @@
     }
   },
   "items": [
+    {
+      "item": "Almond",
+      "category": "nut",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Shache, Kashgar, Xinjiang.",
+      "specialist_sources": [
+        "莎车县人民政府"
+      ]
+    },
     {
       "item": "apple",
       "category": "fruit",
@@ -899,6 +928,29 @@
       ]
     },
     {
+      "item": "Sunflower seed",
+      "category": "nut",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Jimsar, Changji, Xinjiang.",
+      "specialist_sources": [
+        "央广网 新疆"
+      ]
+    },
+    {
       "item": "Tomato",
       "category": "vegetable",
       "months": [
@@ -942,6 +994,29 @@
       "regions_notes": "Harvest months for Kalpin, Aksu, Xinjiang.",
       "specialist_sources": [
         "百度百科"
+      ]
+    },
+    {
+      "item": "Walnut",
+      "category": "nut",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Aksu, Xinjiang.",
+      "specialist_sources": [
+        "阿克苏新闻网"
       ]
     },
     {
@@ -1281,10 +1356,10 @@
       ],
       "quiet": [
         "Onion",
-        "blackcurrant",
+        "Grape",
+        "Cowpea / yard-long bean",
         "Jiashi melon",
-        "fig",
-        "raspberry"
+        "fig"
       ],
       "blurb": "July has <strong>13</strong> Xinjiang crops in season. Much the same list as June."
     },
@@ -1293,7 +1368,7 @@
       "name": "August",
       "counts": {
         "peak": 0,
-        "in": 12,
+        "in": 13,
         "edge": 0
       },
       "lead": null,
@@ -1309,10 +1384,12 @@
         "fig",
         "raspberry",
         "Hami melon",
-        "wild mushrooms"
+        "wild mushrooms",
+        "Almond"
       ],
       "peak": [],
       "in": [
+        "Almond",
         "blackcurrant",
         "Cowpea / yard-long bean",
         "crab apple",
@@ -1328,6 +1405,7 @@
       ],
       "edge": [],
       "arrivals": [
+        "Almond",
         "crab apple",
         "European plum",
         "Tomato"
@@ -1339,19 +1417,19 @@
       ],
       "quiet": [
         "Tomato",
-        "Grape",
-        "Cowpea / yard-long bean",
+        "blackcurrant",
         "crab apple",
-        "European plum"
+        "European plum",
+        "raspberry"
       ],
-      "blurb": "August has <strong>12</strong> Xinjiang crops in season. Much the same list as July."
+      "blurb": "August has <strong>13</strong> Xinjiang crops in season. Much the same list as July."
     },
     {
       "key": "sep",
       "name": "September",
       "counts": {
         "peak": 0,
-        "in": 18,
+        "in": 21,
         "edge": 0
       },
       "lead": null,
@@ -1374,6 +1452,7 @@
       ],
       "peak": [],
       "in": [
+        "Almond",
         "chillies",
         "Chinese cabbage",
         "crab apple",
@@ -1390,7 +1469,9 @@
         "Potato",
         "raspberry",
         "Sea buckthorn",
+        "Sunflower seed",
         "Tomato",
+        "Walnut",
         "wild mushrooms"
       ],
       "edge": [],
@@ -1401,6 +1482,7 @@
         "Goji"
       ],
       "farewells": [
+        "Almond",
         "crab apple",
         "European plum",
         "peach"
@@ -1412,7 +1494,7 @@
         "Kidney bean",
         "Sea buckthorn"
       ],
-      "blurb": "September has <strong>18</strong> Xinjiang crops in season. The fullest month on the wheel."
+      "blurb": "September has <strong>21</strong> Xinjiang crops in season. The fullest month on the wheel."
     },
     {
       "key": "oct",

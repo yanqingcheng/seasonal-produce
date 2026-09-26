@@ -13,13 +13,13 @@ Each crop keeps the months of one local harvest window. Where several cultivar o
 
 ## Categories
 
-Fruit, vegetable, herb, and nut follow the food name, the same way the other packs file tomato, sweet corn, and mushroom as vegetables and citrus as fruit.
+Fruit, vegetable, herb, and nut follow the food name, the same way the other packs file tomato, sweet corn, and mushroom as vegetables and citrus as fruit. Edible rose and spring green tea file as herbs: both are picked for infusions and flavouring, and the shared legend has no drink-crop category.
 
 ## Domestic filter
 
 Every shipped row is a harvest window for this place. Nothing was added to fill a quiet month. Rows with no shared sticker stay in `STICKER_GAPS.md` with their source months. They are not dropped as imports.
 
-Shipped: 32. Held for a drawing: 16.
+Shipped: 37. Held for a drawing: 11.
 
 ## Approximate stickers
 

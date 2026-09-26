@@ -723,6 +723,29 @@
       ]
     },
     {
+      "item": "kiwi",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
+      ]
+    },
+    {
       "item": "lamponi",
       "category": "fruit",
       "months": [
@@ -1282,7 +1305,7 @@
       "name": "Gennaio",
       "counts": {
         "peak": 0,
-        "in": 19,
+        "in": 20,
         "edge": 0
       },
       "lead": null,
@@ -1300,8 +1323,8 @@
         "mandarini",
         "clementine",
         "rape",
-        "limoni",
-        "pompelmi"
+        "kiwi",
+        "limoni"
       ],
       "peak": [],
       "in": [
@@ -1315,6 +1338,7 @@
         "cicoria",
         "clementine",
         "finocchi",
+        "kiwi",
         "limoni",
         "mandarini",
         "mele",
@@ -1334,17 +1358,17 @@
         "arance",
         "finocchi",
         "carciofi",
-        "rape",
-        "cicoria"
+        "kiwi",
+        "cavoli"
       ],
-      "blurb": "Gennaio conta <strong>19</strong> prodotti di stagione. Il tratto più magro dell'anno."
+      "blurb": "Gennaio conta <strong>20</strong> prodotti di stagione. Il tratto più magro dell'anno."
     },
     {
       "key": "feb",
       "name": "Febbraio",
       "counts": {
         "peak": 0,
-        "in": 20,
+        "in": 21,
         "edge": 0
       },
       "lead": null,
@@ -1362,8 +1386,8 @@
         "mandarini",
         "clementine",
         "rape",
-        "limoni",
-        "pompelmi"
+        "kiwi",
+        "limoni"
       ],
       "peak": [],
       "in": [
@@ -1377,6 +1401,7 @@
         "cicoria",
         "clementine",
         "finocchi",
+        "kiwi",
         "limoni",
         "mandarini",
         "mele",
@@ -1402,16 +1427,16 @@
         "spinaci",
         "mandarini",
         "limoni",
-        "radicchio"
+        "cicoria"
       ],
-      "blurb": "Febbraio conta <strong>20</strong> prodotti di stagione. Più o meno lo stesso raccolto di Gennaio."
+      "blurb": "Febbraio conta <strong>21</strong> prodotti di stagione. Più o meno lo stesso raccolto di Gennaio."
     },
     {
       "key": "mar",
       "name": "Marzo",
       "counts": {
         "peak": 0,
-        "in": 20,
+        "in": 21,
         "edge": 0
       },
       "lead": null,
@@ -1429,8 +1454,8 @@
         "asparagi",
         "carciofi",
         "rape",
-        "limoni",
-        "pompelmi"
+        "kiwi",
+        "limoni"
       ],
       "peak": [],
       "in": [
@@ -1446,6 +1471,7 @@
         "cipolline",
         "finocchi",
         "insalata",
+        "kiwi",
         "limoni",
         "mele",
         "pere",
@@ -1466,20 +1492,20 @@
         "rape"
       ],
       "quiet": [
-        "arance",
         "cavolfiori",
         "insalata",
         "cipolline",
-        "pompelmi"
+        "pompelmi",
+        "radicchio"
       ],
-      "blurb": "Marzo conta <strong>20</strong> prodotti di stagione. Più o meno lo stesso raccolto di Febbraio."
+      "blurb": "Marzo conta <strong>21</strong> prodotti di stagione. Più o meno lo stesso raccolto di Febbraio."
     },
     {
       "key": "apr",
       "name": "Aprile",
       "counts": {
         "peak": 0,
-        "in": 22,
+        "in": 23,
         "edge": 0
       },
       "lead": null,
@@ -1497,7 +1523,7 @@
         "cipolline",
         "asparagi",
         "carciofi",
-        "limoni",
+        "kiwi",
         "ravanelli"
       ],
       "peak": [],
@@ -1515,6 +1541,7 @@
         "finocchi",
         "fragole",
         "insalata",
+        "kiwi",
         "limoni",
         "mele",
         "nespole",
@@ -1540,19 +1567,19 @@
       ],
       "quiet": [
         "fragole",
-        "cavolfiori",
+        "arance",
         "mele",
         "asparagi",
         "ravanelli"
       ],
-      "blurb": "Aprile conta <strong>22</strong> prodotti di stagione. Più o meno lo stesso raccolto di Marzo."
+      "blurb": "Aprile conta <strong>23</strong> prodotti di stagione. Più o meno lo stesso raccolto di Marzo."
     },
     {
       "key": "may",
       "name": "Maggio",
       "counts": {
         "peak": 0,
-        "in": 26,
+        "in": 27,
         "edge": 0
       },
       "lead": null,
@@ -1589,6 +1616,7 @@
         "finocchi",
         "fragole",
         "insalata",
+        "kiwi",
         "lamponi",
         "mele",
         "meloni",
@@ -1612,8 +1640,8 @@
       "farewells": [
         "cipolline",
         "finocchi",
-        "mele",
-        "nespole"
+        "kiwi",
+        "mele"
       ],
       "quiet": [
         "fragole",
@@ -1622,7 +1650,7 @@
         "piselli",
         "fagioli"
       ],
-      "blurb": "Maggio conta <strong>26</strong> prodotti di stagione. Più o meno lo stesso raccolto di Aprile."
+      "blurb": "Maggio conta <strong>27</strong> prodotti di stagione. Più o meno lo stesso raccolto di Aprile."
     },
     {
       "key": "jun",
@@ -1854,7 +1882,7 @@
         "peperoni",
         "angurie",
         "prugne",
-        "sedano"
+        "lamponi"
       ],
       "blurb": "Agosto conta <strong>29</strong> prodotti di stagione. Il mese più pieno della ruota."
     },
@@ -1932,7 +1960,7 @@
         "meloni",
         "mirtilli",
         "fichi",
-        "cavoli"
+        "sedano"
       ],
       "blurb": "Settembre conta <strong>29</strong> prodotti di stagione. Il mese più pieno della ruota."
     },
@@ -2005,10 +2033,10 @@
       ],
       "quiet": [
         "peperoni",
-        "zucche",
-        "castagne",
-        "melanzane",
-        "lamponi"
+        "uva",
+        "carote",
+        "clementine",
+        "melanzane"
       ],
       "blurb": "Ottobre conta <strong>25</strong> prodotti di stagione. Più o meno lo stesso raccolto di Settembre."
     },
@@ -2017,7 +2045,7 @@
       "name": "Novembre",
       "counts": {
         "peak": 0,
-        "in": 24,
+        "in": 25,
         "edge": 0
       },
       "lead": null,
@@ -2053,6 +2081,7 @@
         "finocchi",
         "insalata",
         "kaki",
+        "kiwi",
         "limoni",
         "mandarini",
         "mele",
@@ -2068,6 +2097,7 @@
       "edge": [],
       "arrivals": [
         "arance",
+        "kiwi",
         "mandarini",
         "pompelmi"
       ],
@@ -2076,20 +2106,20 @@
         "sedano"
       ],
       "quiet": [
-        "uva",
+        "cavolfiori",
         "zucche",
-        "carote",
-        "clementine",
+        "castagne",
+        "rape",
         "aglio"
       ],
-      "blurb": "Novembre conta <strong>24</strong> prodotti di stagione. Più o meno lo stesso raccolto di Ottobre."
+      "blurb": "Novembre conta <strong>25</strong> prodotti di stagione. Più o meno lo stesso raccolto di Ottobre."
     },
     {
       "key": "dec",
       "name": "Dicembre",
       "counts": {
         "peak": 0,
-        "in": 22,
+        "in": 23,
         "edge": 0
       },
       "lead": null,
@@ -2124,6 +2154,7 @@
         "finocchi",
         "insalata",
         "kaki",
+        "kiwi",
         "limoni",
         "mandarini",
         "mele",
@@ -2150,7 +2181,7 @@
         "kaki",
         "bietole da coste"
       ],
-      "blurb": "Dicembre conta <strong>22</strong> prodotti di stagione. Più o meno lo stesso raccolto di Novembre."
+      "blurb": "Dicembre conta <strong>23</strong> prodotti di stagione. Più o meno lo stesso raccolto di Novembre."
     }
   ]
 }

@@ -231,5 +231,46 @@
       "body": "#fffdf6",
       "leaf": "#3bb273"
     }
+  },
+  "Edible rose": {
+    "archetype": "rose",
+    "colours": {
+      "body": "#ff86a8",
+      "body2": "#ff5f8a",
+      "leaf": "#3bb273",
+      "stem": "#3bb273"
+    }
+  },
+  "Garlic scape": {
+    "archetype": "scape",
+    "colours": {
+      "body": "#3bb273",
+      "bud": "#c9f0b0"
+    }
+  },
+  "Green tea, spring": {
+    "archetype": "tea",
+    "colours": {
+      "body": "#3bb273",
+      "body2": "#52c26b",
+      "bud": "#a8e05a",
+      "stem": "#7a4a2c"
+    }
+  },
+  "Kelp": {
+    "archetype": "kelp",
+    "colours": {
+      "body": "#7a8f3a",
+      "body2": "#b8c46a"
+    }
+  },
+  "Kiwifruit": {
+    "archetype": "kiwi",
+    "colours": {
+      "skin": "#b0703f",
+      "body": "#52c26b",
+      "core": "#fff6dc",
+      "fuzz": true
+    }
   }
 }

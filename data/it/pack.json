@@ -71,6 +71,6 @@
   "attribution": "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura, pubblicato da AULSS 9 Scaligera.",
   "alias_profile": "none",
   "recipe_rule": "optional",
-  "expect_items": 50,
+  "expect_items": 51,
   "require_peak_every_month": false
 }

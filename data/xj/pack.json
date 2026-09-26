@@ -54,6 +54,13 @@
       "one": "herb",
       "plural": "herbs",
       "everyday": false
+    },
+    {
+      "id": "nut",
+      "label": "Nut",
+      "one": "nut",
+      "plural": "nuts",
+      "everyday": false
     }
   ],
   "state_roles": {
@@ -64,6 +71,6 @@
   "attribution": "Xinjiang harvest months from 中新网·新疆 and 天山网.",
   "alias_profile": "none",
   "recipe_rule": "optional",
-  "expect_items": 39,
+  "expect_items": 42,
   "require_peak_every_month": false
 }

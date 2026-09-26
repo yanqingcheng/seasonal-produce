@@ -232,5 +232,117 @@
       "spots": "#e9b87a",
       "pair": true
     }
+  },
+  "Bamboo shoot": {
+    "archetype": "bambooshoot",
+    "colours": {
+      "body": "#e9b87a",
+      "body2": "#b0703f",
+      "tip": "#a8e05a",
+      "base": "#fff6dc"
+    }
+  },
+  "Banana": {
+    "archetype": "banana",
+    "colours": {
+      "body": "#ffd84a",
+      "body2": "#ffb627",
+      "tip": "#7a4a2c",
+      "stem": "#a8e05a"
+    }
+  },
+  "Coffee cherry": {
+    "archetype": "coffee",
+    "colours": {
+      "body": "#7a4a2c",
+      "body2": "#b0703f",
+      "leaf": "#23865a"
+    }
+  },
+  "Dragon fruit": {
+    "archetype": "dragonfruit",
+    "colours": {
+      "body": "#ff5f8a",
+      "tip": "#a8e05a"
+    }
+  },
+  "Edible rose": {
+    "archetype": "rose",
+    "colours": {
+      "body": "#ff86a8",
+      "body2": "#ff5f8a",
+      "leaf": "#3bb273",
+      "stem": "#3bb273"
+    }
+  },
+  "Green Sichuan pepper": {
+    "archetype": "peppercorn",
+    "colours": {
+      "body": "#52c26b",
+      "body2": "#23865a",
+      "leaf": "#3bb273",
+      "stem": "#7a4a2c"
+    }
+  },
+  "Lychee": {
+    "archetype": "lychee",
+    "colours": {
+      "body": "#ff5a6e",
+      "body2": "#c2255c",
+      "stem": "#7a4a2c",
+      "leaf": "#3bb273",
+      "flesh": "#fffdf6"
+    }
+  },
+  "Passion fruit": {
+    "archetype": "passionfruit",
+    "colours": {
+      "body": "#8e4dd6",
+      "pith": "#fff6dc",
+      "pulp": "#ffc93c",
+      "pulp2": "#fff0a6",
+      "leaf": "#3bb273"
+    }
+  },
+  "Sugarcane": {
+    "archetype": "sugarcane",
+    "colours": {
+      "body": "#8e4dd6",
+      "node": "#5b3a9b",
+      "flesh": "#fff6dc",
+      "leaf": "#3bb273"
+    }
+  },
+  "Tea": {
+    "archetype": "tea",
+    "colours": {
+      "body": "#3bb273",
+      "body2": "#52c26b",
+      "bud": "#a8e05a",
+      "stem": "#7a4a2c"
+    }
+  },
+  "Walnut": {
+    "archetype": "walnut",
+    "colours": {
+      "body": "#d49a5e"
+    }
+  },
+  "Young ginger": {
+    "archetype": "ginger",
+    "colours": {
+      "body": "#fff0a6",
+      "tip": "#ff86a8",
+      "leaf": "#52c26b"
+    }
+  },
+  "Kiwifruit": {
+    "archetype": "kiwi",
+    "colours": {
+      "skin": "#b0703f",
+      "body": "#52c26b",
+      "core": "#fff6dc",
+      "fuzz": true
+    }
   }
 }

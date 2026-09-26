@@ -252,5 +252,65 @@
       "stripes": "#143d32",
       "leaf": "#52c26b"
     }
+  },
+  "Bitter melon": {
+    "archetype": "bittermelon",
+    "colours": {
+      "body": "#7fcf52",
+      "body2": "#23865a",
+      "stem": "#3bb273"
+    }
+  },
+  "Bracken fern": {
+    "archetype": "fiddlehead",
+    "colours": {
+      "body": "#8fbf3a",
+      "body2": "#a8e05a"
+    }
+  },
+  "Kiwifruit": {
+    "archetype": "kiwi",
+    "colours": {
+      "skin": "#b0703f",
+      "body": "#52c26b",
+      "core": "#fff6dc",
+      "fuzz": true
+    }
+  },
+  "Lotus root": {
+    "archetype": "lotusroot",
+    "colours": {
+      "body": "#e9b87a",
+      "flesh": "#fff6dc",
+      "hole": "#e9b87a"
+    }
+  },
+  "Passion fruit": {
+    "archetype": "passionfruit",
+    "colours": {
+      "body": "#8e4dd6",
+      "pith": "#fff6dc",
+      "pulp": "#ffc93c",
+      "pulp2": "#fff0a6",
+      "leaf": "#3bb273"
+    }
+  },
+  "Sichuan pepper": {
+    "archetype": "peppercorn",
+    "colours": {
+      "body": "#d9344a",
+      "body2": "#8a1f33",
+      "leaf": "#3bb273",
+      "stem": "#7a4a2c"
+    }
+  },
+  "Spring bamboo shoot": {
+    "archetype": "bambooshoot",
+    "colours": {
+      "body": "#e9b87a",
+      "body2": "#b0703f",
+      "tip": "#a8e05a",
+      "base": "#fff6dc"
+    }
   }
 }

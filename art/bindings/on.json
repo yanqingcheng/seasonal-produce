@@ -523,5 +523,28 @@
       "stripes": "#a8e05a",
       "cap": "#ffb627"
     }
+  },
+  "Bitter Melon/Fuzzy Squash": {
+    "archetype": "bittermelon",
+    "colours": {
+      "body": "#7fcf52",
+      "body2": "#23865a",
+      "stem": "#3bb273"
+    }
+  },
+  "Garlic Scapes": {
+    "archetype": "scape",
+    "colours": {
+      "body": "#3bb273",
+      "bud": "#c9f0b0"
+    }
+  },
+  "Sprouts": {
+    "archetype": "sprouts",
+    "colours": {
+      "body": "#fffdf6",
+      "head": "#fff0a6",
+      "leaf": "#a8e05a"
+    }
   }
 }
