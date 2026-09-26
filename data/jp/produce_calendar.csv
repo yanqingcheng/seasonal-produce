@@ -1,17 +1,23 @@
 item,category,jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec,peak_months,stored_notes,regions_notes,specialist_sources
 apple,fruit,.,.,.,.,.,.,.,I,I,I,I,.,,,Harvest months for Aomori Prefecture.,Aomori Prefectural Government
+Bell Pepper,vegetable,.,I,I,I,I,I,I,.,.,.,.,.,,,"Harvest months for Hasaki, Ibaraki Prefecture.",Tokyo Seika
 blueberry,fruit,.,.,.,.,.,I,I,I,.,.,.,.,,,Harvest months for Nagano Prefecture.,B.B Karasawa-en
+broccoli,vegetable,.,.,.,.,.,I,I,I,I,I,.,.,,,Harvest months for Hokkaido.,ALIC 野菜情報
 Burdock,vegetable,.,.,.,.,.,.,.,.,I,I,I,.,,,Harvest months for Aomori Prefecture.,Aomori agri-job site
 cabbage,vegetable,.,.,.,.,.,.,I,I,I,I,.,.,,,"Harvest months for Tsumagoi, Gunma Prefecture.",ALIC
+Carrot,vegetable,I,I,I,.,.,.,.,.,.,.,I,I,,,"Harvest months for Tomisato, Chiba Prefecture.",JA Tomisato
+celery,vegetable,.,.,.,.,I,I,I,I,I,I,I,.,,,Harvest months for Nagano Prefecture.,JA Zen-Noh Nagano
 cherry,fruit,.,.,.,.,.,I,I,.,.,.,.,.,,,Harvest months for Yamagata Prefecture.,JA Zen-Noh Yamagata
 chestnut,nut,.,.,.,.,.,.,.,.,I,I,.,.,,,Harvest months for Ibaraki Prefecture.,Ibaraki Prefecture
 Chinese cabbage,vegetable,.,.,.,.,I,I,I,I,I,I,I,.,,,Harvest months for Nagano Prefecture.,JA Nagano group
+Chinese chives,herb,I,I,I,I,I,I,I,I,I,I,I,I,,,Harvest months for Kochi Prefecture.,ALIC 野菜情報
 cucumber,vegetable,I,I,I,I,I,I,.,.,.,.,I,I,,,Harvest months for Miyazaki Prefecture.,Miyazaki Prefecture
 Daikon,vegetable,I,I,I,.,.,.,.,.,.,.,.,I,,,Harvest months for Chiba Prefecture.,Chiba Prefecture
 Edamame,vegetable,.,.,.,.,.,I,I,I,I,.,.,.,,,Harvest months for Gunma Prefecture.,ALIC 野菜情報
 Eggplant,vegetable,I,I,I,I,I,I,.,.,.,I,I,I,,,Harvest months for Kochi Prefecture.,JA Kochi
 Grape,fruit,.,.,.,.,.,.,I,I,I,I,.,.,,,Harvest months for Yamanashi Prefecture.,Yamanashi Prefectural Government
 Green asparagus,vegetable,.,.,.,I,I,I,I,.,.,.,.,.,,,Harvest months for Hokkaido.,ALIC 野菜情報
+Green bean,vegetable,.,.,.,I,I,I,.,.,.,.,.,.,,,Harvest months for Chiba Prefecture.,ALIC 野菜情報
 Iyokan citrus,fruit,I,I,I,.,.,.,.,.,.,.,.,.,,,Harvest months for Ehime Prefecture.,Ehime Prefecture
 Japanese pear,fruit,.,.,.,.,.,.,I,I,I,I,.,.,,,Harvest months for Saitama Prefecture.,Saitama Prefectural Government
 Kabocha squash,vegetable,.,.,.,.,.,.,.,I,I,I,.,.,,,Harvest months for Hokkaido.,Hokkaido Yasai
@@ -24,13 +30,18 @@ melon,fruit,.,.,.,.,I,I,I,I,I,I,.,.,,,Harvest months for Ibaraki Prefecture.,Iba
 Nagaimo yam,vegetable,.,.,I,I,.,.,.,.,.,.,I,I,,,Harvest months for Aomori Prefecture.,Aomori Prefecture
 Nijisseiki pear,fruit,.,.,.,.,.,.,.,I,I,I,.,.,,,Harvest months for Tottori Prefecture.,Tottori City official tourism site
 Onion,vegetable,.,.,.,.,.,.,.,I,I,I,.,.,,,Harvest months for Hokkaido.,ALIC 野菜情報
-peach,fruit,.,.,.,.,.,.,.,I,I,.,.,.,,,Harvest months for Niigata Prefecture.,Niigata Prefectural Government
+peach,fruit,.,.,.,.,.,I,I,I,I,.,.,.,,,Harvest months for Yamanashi Prefecture.,Yamanashi Prefectural Government
+Peas (Snow),vegetable,I,I,I,I,I,.,.,.,.,I,I,I,,,Harvest months for Kagoshima Prefecture.,Kagoshima Prefectural Government
 Persimmon,fruit,.,.,.,.,.,.,.,.,I,I,I,.,,,Harvest months for Wakayama Prefecture.,Wakayama Prefectural Government
 Potato,vegetable,.,.,.,.,.,.,.,I,I,I,I,.,,,Harvest months for Hokkaido.,Hokkaido Yasai
 Satsuma mandarin,fruit,I,I,.,.,.,.,.,.,I,I,I,I,,,Harvest months for Kagoshima Prefecture.,Kagoshima Prefectural Government
+Shiranui / dekopon,fruit,I,I,I,I,I,I,.,.,.,.,.,I,,,Harvest months for Kumamoto Prefecture.,Kumamoto Prefecture
 strawberry,fruit,I,I,I,I,I,.,.,.,.,.,I,I,,,Harvest months for Nara Prefecture.,Nara Prefectural Government
 Sudachi,fruit,.,.,.,.,.,.,.,I,I,I,.,.,,,Harvest months for Tokushima Prefecture.,JA Zen-Noh Tokushima
 Sweet potato,vegetable,I,I,I,.,.,.,I,I,I,I,I,I,,,Harvest months for Wakayama Prefecture.,Wakayama Prefectural Government
 sweetcorn,vegetable,.,.,.,.,.,I,I,I,.,.,.,.,,,Harvest months for Kagawa Prefecture.,Kagawa Prefectural Government
+Taro,vegetable,I,I,I,I,.,.,.,.,.,I,I,I,,,Harvest months for Saitama Prefecture.,Saitama Prefectural Government
+Tomato,vegetable,I,I,I,I,I,.,.,.,.,.,I,I,,,Harvest months for Kumamoto Prefecture.,JA Kumamoto
+Turnip,vegetable,I,I,I,I,I,I,.,.,.,I,I,I,,,Harvest months for Chiba Prefecture.,ALIC 野菜情報
 Ume,fruit,.,.,.,.,I,I,I,.,.,.,.,.,,,Harvest months for Wakayama Prefecture.,Wakayama Prefecture
 Watermelon,fruit,I,I,I,I,I,I,I,.,.,.,I,I,,,Harvest months for Kumamoto Prefecture.,ALIC 野菜情報

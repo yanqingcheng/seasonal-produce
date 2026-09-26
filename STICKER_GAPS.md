@@ -58,6 +58,155 @@ The Florida calendar lists a bounded season. A husked cobnut would read as a haz
 
 aug in, sep in, oct in, nov in
 
+### Akee
+
+No shared drawing reads as this crop.
+
+jan in, feb in, mar in, aug in, sep in, oct in, nov in, dec in
+
+### Atemoya
+
+No shared drawing reads as a custard apple.
+
+jan in, aug in, sep in, oct in, nov in, dec in
+
+### Banana
+
+A shared drawing would read as a different crop already on the wheel.
+
+jan in, feb in, mar in, apr in, may in, jun in, jul in, aug in, sep in, oct in, nov in, dec in
+
+### Black sapote
+
+No shared drawing reads as this crop.
+
+jan in, feb in, mar in, dec in
+
+### Carambola
+
+No shared drawing reads as this crop.
+
+jan in, feb in, mar in, jun in, jul in, aug in, sep in, oct in, nov in, dec in
+
+### Coconut
+
+No shared drawing reads as this crop.
+
+jan in, feb in, mar in, apr in, may in, jun in, jul in, aug in, sep in, oct in, nov in, dec in
+
+### Custard apple
+
+No shared drawing reads as a custard apple.
+
+jan in, feb in, mar in, apr in, may in, nov in, dec in
+
+### Guanabana (soursop)
+
+No shared drawing reads as this crop.
+
+jun in, jul in, aug in, sep in
+
+### Guava
+
+No shared drawing reads as this crop.
+
+feb in, mar in, aug in, sep in, oct in
+
+### Jackfruit
+
+No shared drawing reads as this crop.
+
+may in, jun in, jul in, aug in, sep in, oct in
+
+### Jujube
+
+The round and oval fruit drawings read as another crop already on the wheel.
+
+feb in, mar in, apr in, may in
+
+### Longan
+
+A shared drawing would read as a different crop already on the wheel.
+
+jul in, aug in
+
+### Lychee
+
+A shared drawing would read as a different crop already on the wheel.
+
+may in, jun in, jul in
+
+### Macadamia
+
+A husked cobnut would read as a hazelnut, not a macadamia.
+
+aug in, sep in, oct in
+
+### Mamey sapote
+
+No shared drawing reads as this crop.
+
+apr in, may in, jun in, jul in, aug in, sep in, oct in
+
+### Papaya
+
+No shared drawing reads as this crop.
+
+jan in, feb in, mar in, apr in, may in, jun in, jul in, aug in, sep in, oct in, nov in, dec in
+
+### Passion fruit
+
+No shared drawing reads as this crop.
+
+may in, jun in, jul in, aug in, sep in, oct in, nov in, dec in
+
+### Pitaya (dragon fruit)
+
+No shared drawing reads as this crop.
+
+jun in, jul in, aug in, sep in, oct in, nov in
+
+### Pummelo
+
+A green round fruit reads as an apple, not a pummelo.
+
+jan in, feb in, mar in, apr in, aug in, sep in, oct in, nov in, dec in
+
+### Sapodilla
+
+No shared drawing reads as this crop.
+
+jan in, feb in, mar in, apr in, may in, jun in, jul in, nov in, dec in
+
+### Star apple (caimito)
+
+No shared drawing reads as this crop.
+
+feb in, mar in, apr in, may in
+
+### Sugar apple
+
+No shared drawing reads as this crop.
+
+jul in, aug in, sep in
+
+### Wampee
+
+A shared drawing would read as a different crop already on the wheel.
+
+jun in, jul in
+
+### Wax jambu
+
+A shared drawing would read as a different crop already on the wheel.
+
+jun in, jul in
+
+### White sapote
+
+No shared drawing reads as this crop.
+
+may in, jun in, jul in
 ## California (`ca`)
 
 ### Almond
@@ -751,5 +900,53 @@ jan in, feb in, mar in, nov in, dec in
 No shared drawing reads as this crop.
 
 jan in, feb in, mar in, apr in, may in, nov in, dec in
+
+### Chum salmon
+
+No shared drawing reads as this catch.
+
+sep in, oct in, nov in
+
+### Garland chrysanthemum
+
+No shared drawing reads as this crop.
+
+jan in, feb in, dec in
+
+### Ginger
+
+No shared drawing reads as this crop.
+
+mar in, apr in, may in, jun in (source peak), jul in (source peak), aug in, sep in
+
+### Myoga
+
+No shared drawing reads as this crop.
+
+jan in, feb in, mar in, apr in, may in, jun in, jul in, aug in, sep in, oct in, nov in, dec in
+
+### Okra
+
+No shared drawing reads as this crop.
+
+apr in, may in, jun in (source peak), jul in (source peak), aug in (source peak), sep in (source peak), oct in
+
+### Oyster
+
+No shared drawing reads as this catch.
+
+jan in (source peak), feb in (source peak), mar in, oct in, nov in, dec in (source peak)
+
+### Red sea bream
+
+No shared drawing reads as this catch.
+
+apr in, may in, jun in, jul in, aug in, sep in (source peak), oct in (source peak), nov in (source peak), dec in
+
+### Whitebait
+
+No shared drawing reads as this catch.
+
+mar in, apr in, may in, jun in, oct in, nov in, dec in
 
 France has no sticker gaps. The French rows that failed the domestic test are listed in `data/fr/schema_and_evidence_rules.md`, not here. Italy drops one isolated carciofi month (June) and ships the rest of that row; that note is in `data/it/schema_and_evidence_rules.md`.

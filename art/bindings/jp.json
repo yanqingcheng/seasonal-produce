@@ -253,5 +253,85 @@
       "stripes": "#143d32",
       "leaf": "#52c26b"
     }
+  },
+  "Bell Pepper": {
+    "archetype": "pepper",
+    "colours": {
+      "body": "#ff5a4e",
+      "cap": "#3bb273"
+    }
+  },
+  "broccoli": {
+    "archetype": "broccoli",
+    "colours": {
+      "body": "#3bb273",
+      "body2": "#23865a",
+      "stalk": "#a8e05a"
+    }
+  },
+  "Carrot": {
+    "archetype": "root",
+    "colours": {
+      "body": "#ff9a3c",
+      "leaf": "#3bb273"
+    }
+  },
+  "celery": {
+    "archetype": "celery",
+    "colours": {
+      "body": "#c9f0b0",
+      "body2": "#52c26b",
+      "leaf": "#3bb273"
+    }
+  },
+  "Chinese chives": {
+    "archetype": "herb",
+    "colours": {
+      "body": "#3bb273",
+      "leafShape": "grass"
+    }
+  },
+  "Green bean": {
+    "archetype": "beans",
+    "colours": {
+      "body": "#3bb273"
+    }
+  },
+  "Peas (Snow)": {
+    "archetype": "pod",
+    "colours": {
+      "body": "#a8e05a",
+      "leaf": "#3bb273",
+      "flat": true
+    }
+  },
+  "Shiranui / dekopon": {
+    "archetype": "round",
+    "colours": {
+      "body": "#ffb047",
+      "leaf": "#3bb273"
+    }
+  },
+  "Taro": {
+    "archetype": "potato",
+    "colours": {
+      "body": "#6b3f69"
+    }
+  },
+  "Tomato": {
+    "archetype": "round",
+    "colours": {
+      "body": "#ff5a4e",
+      "calyx": "#3bb273"
+    }
+  },
+  "Turnip": {
+    "archetype": "bulbroot",
+    "colours": {
+      "body": "#fffdf6",
+      "cap": "#8e4dd6",
+      "leaf": "#3bb273",
+      "stem": "#3bb273"
+    }
   }
 }
