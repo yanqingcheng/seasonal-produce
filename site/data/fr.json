@@ -77,6 +77,13 @@
   "copy": {
     "this_month": "Ce mois-ci",
     "back_to": "Retour en {month}",
+    "month_of": "{n} sur 12",
+    "place": "Lieu",
+    "continents": {
+      "Europe": "Europe",
+      "North America": "Amérique du Nord",
+      "Asia": "Asie"
+    },
     "new_in": "Arrivées",
     "last_call": "Derniers jours",
     "at_peak": "Au pic",

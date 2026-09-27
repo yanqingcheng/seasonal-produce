@@ -45,6 +45,7 @@ check(Array.isArray(registry) && registry.map((row) => `${row.id}:${row.status}`
 check(!exhibit.includes("Europe/London"), "exhibit script contains Europe/London");
 check(!exhibit.includes("Europe/Paris") && !exhibit.includes("Europe/Madrid") && !exhibit.includes("America/Toronto") && !exhibit.includes("Europe/Rome") && !exhibit.includes("America/New_York") && !exhibit.includes("Asia/Shanghai") && !exhibit.includes("Asia/Urumqi") && !exhibit.includes("Asia/Tokyo"), "exhibit script contains a pack timezone");
 check(!exhibit.includes("Gardeners"), "exhibit script contains the footer sentence");
+check(!exhibit.includes("of 12") && !exhibit.includes('"Place"'), "exhibit script hardcodes English chrome copy");
 check(!exhibit.includes("cranberry"), "exhibit script contains cranberry");
 check(!html.includes("fonts.googleapis.com") && !html.includes("fonts.gstatic.com"), "page requests Google Fonts");
 check(!html.includes("country-control") && !exhibit.includes("globe") && !exhibit.includes("GeoJSON"), "globe or hardcoded country chrome shipped");
@@ -113,6 +114,7 @@ for (const id of ["uk", "fr", "es", "on", "it", "fl", "ca", "sc", "sd", "js", "y
   check(file.id === id && file.timezone === manifest.timezone && file.name === manifest.name, `${id} id, name, or timezone`);
   check(file.items.every((it) => it.months.every((role) => ["peak", "in", "edge", "out"].includes(role))), `${id} role outside the four`);
   check(file.items.every((it) => it.months.some((role) => role !== "out")), `${id} row with no domestic month`);
+  check(file.copy.month_of?.includes("{n}") && file.copy.place && ["Europe", "North America", "Asia"].every((c) => file.copy.continents?.[c]), `${id} copy lacks month_of, place, or continent names`);
   const roles = new Set(Object.values(manifest.state_roles));
   check([...roles].every((role) => ["peak", "in", "edge", "out"].includes(role)), `${id} state_roles`);
 }

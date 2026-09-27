@@ -63,6 +63,13 @@
   "copy": {
     "this_month": "This month",
     "back_to": "Back to {month}",
+    "month_of": "{n} of 12",
+    "place": "Place",
+    "continents": {
+      "Europe": "Europe",
+      "North America": "North America",
+      "Asia": "Asia"
+    },
     "new_in": "New in",
     "last_call": "Last call",
     "at_peak": "At peak",
