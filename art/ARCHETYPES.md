@@ -8,18 +8,19 @@ Entries marked `"existing": true` use an archetype that was already in the libra
 
 ## New archetypes
 
-`almond`, `bambooshoot`, `banana`, `bittermelon`, `caltrop`, `carambola`, `coconut`, `coffee`, `corm`, `custardapple`, `date`, `dragonfruit`, `durian`, `fiddlehead`, `ginger`, `ginkgo`, `jackfruit`, `kelp`, `kiwi`, `longan`, `lotuspod`, `lotusroot`, `lychee`, `okra`, `olive`, `papaya`, `passionfruit`, `peanut`, `peppercorn`, `pineapple`, `pistachio`, `rose`, `scape`, `sprouts`, `sugarcane`, `sunflower`, `tea`, `walnut`, `waxapple`.
+`almond`, `bambooshoot`, `banana`, `bittermelon`, `caltrop`, `carambola`, `coconut`, `coffee`, `corm`, `custardapple`, `date`, `dragonfruit`, `durian`, `fiddlehead`, `ginger`, `ginkgo`, `guava`, `jujube`, `jackfruit`, `kelp`, `kiwi`, `longan`, `lotuspod`, `lotusroot`, `lychee`, `macadamia`, `okra`, `olive`, `papaya`, `passionfruit`, `peanut`, `peppercorn`, `pineapple`, `pistachio`, `pummelo`, `rose`, `scape`, `sprouts`, `sugarcane`, `sunflower`, `tea`, `walnut`, `waxapple`.
 
 ## Not drawn
 
 These stay in `STICKER_GAPS.md`:
 
 - Seafood and other catches: fish, crab, shrimp, crayfish, clam, oyster, scallop, abalone, jellyfish, and sea cucumber. No pack has a seafood category, and the category legend is shared, so adding one needs its own decision.
-- Luffa / loofah: the drawn gourd read as a cucumber or courgette.
+- Luffa / loofah: the drawn gourd read as a cucumber or courgette, and a ridged one reads as a giant okra pod.
+- Hairy gourd (jiegua): a fuzzy green gourd reads as a courgette or cucumber.
 - Truffle: read as a chestnut burr or a sea urchin.
 - Soursop: read as a spiny cucumber.
 - Black pepper: fresh green peppercorns would repeat the green Sichuan pepper sticker and not read as black pepper.
-- Crops with no silhouette most visitors know: bamboo fungus, celtuce, toon shoots, houttuynia root, garlic shoots, water bamboo, water shield, water poppy, gorgon nut, black locust flowers, canistel, chickpea, leafy tara sprouts, fukinoto, and the sapotes, akee and star apple in the Florida IFAS list.
+- Crops with no silhouette most visitors know: bamboo fungus, celtuce, toon shoots, houttuynia root, garlic shoots, water bamboo, water shield, water poppy, gorgon nut, black locust flowers, canistel, chickpea, leafy tara sprouts, fukinoto, myoga, garland chrysanthemum, and the sapotes, sapodilla, akee and star apple in the Florida IFAS list.
 
 ## Mapping
 
@@ -38,7 +39,9 @@ These stay in `STICKER_GAPS.md`:
   {"food": "dragon fruit", "archetype": "dragonfruit", "colours": {"body": "#ff5f8a", "tip": "#a8e05a"}, "also": ["Dragon fruit (yn, hi)", "Pitaya (dragon fruit) (fl IFAS)", "Dragon fruit (Guangdong)"]},
   {"food": "jackfruit", "archetype": "jackfruit", "colours": {"body": "#c9dc5a", "body2": "#6f9a2e", "stem": "#b0703f", "leaf": "#3bb273"}, "also": ["Jackfruit (hi)", "Jackfruit (fl IFAS)"]},
   {"food": "durian", "archetype": "durian", "colours": {"body": "#b9b44e", "body2": "#6f6a24", "stem": "#7a4a2c"}, "also": ["Durian (hi)"]},
-  {"food": "custard apple", "archetype": "custardapple", "colours": {"body": "#b8e39a", "body2": "#3bb273", "stem": "#7a4a2c", "leaf": "#3bb273"}, "also": ["chirimoya (es)", "Sugar apple (hi)", "Custard apple, Sugar apple, Atemoya (fl IFAS)"]},
+  {"food": "custard apple", "archetype": "custardapple", "colours": {"body": "#b8e39a", "body2": "#3bb273", "stem": "#7a4a2c", "leaf": "#3bb273"}, "also": ["chirimoya (es)", "Sugar apple (hi, fl IFAS)"]},
+  {"food": "bullock's heart custard apple", "archetype": "custardapple", "colours": {"body": "#f0c078", "body2": "#c96a3a", "stem": "#7a4a2c", "leaf": "#3bb273"}, "also": ["Custard apple (fl IFAS, Annona reticulata)"]},
+  {"food": "atemoya", "archetype": "custardapple", "colours": {"body": "#c9e8a0", "body2": "#7fb86a", "stem": "#7a4a2c", "leaf": "#3bb273"}, "also": ["Atemoya (fl IFAS)"]},
   {"food": "carambola", "archetype": "carambola", "colours": {"body": "#ffd84a", "body2": "#d8e05a", "flesh": "#fff0a6", "stem": "#7a4a2c"}, "also": ["Carambola (fl)", "Carambola (Huadu, Guangdong)"]},
   {"food": "pineapple", "archetype": "pineapple", "colours": {"body": "#ffb627", "body2": "#b0703f", "leaf": "#3bb273"}, "also": ["Pineapple (hi)", "Pineapple (Xuwen, Guangdong)"]},
   {"food": "wax apple", "archetype": "waxapple", "colours": {"body": "#ff5a6e", "stem": "#7a4a2c"}, "also": ["Wax apple (hi)", "Wax jambu (fl IFAS)"]},
@@ -74,6 +77,14 @@ These stay in `STICKER_GAPS.md`:
   {"food": "sugarcane", "archetype": "sugarcane", "colours": {"body": "#8e4dd6", "node": "#5b3a9b", "flesh": "#fff6dc", "leaf": "#3bb273"}, "also": ["Sugarcane (yn)", "Sugarcane (fresh-eating, Guangdong)"]},
   {"food": "edible rose", "archetype": "rose", "colours": {"body": "#ff86a8", "body2": "#ff5f8a", "leaf": "#3bb273", "stem": "#3bb273"}, "also": ["Edible rose (sd, yn)"]},
   {"food": "sprouts", "archetype": "sprouts", "colours": {"body": "#fffdf6", "head": "#fff0a6", "leaf": "#a8e05a"}, "also": ["Sprouts (on)"]},
+  {"food": "pummelo", "archetype": "pummelo", "colours": {"body": "#e7f5a4", "pore": "#b8d96a", "pith": "#fffdf6", "flesh": "#ff9fb2", "stem": "#7a4a2c", "leaf": "#3bb273"}, "also": ["Pummelo (fl IFAS)", "Zhenlong pomelo (sc)"]},
+  {"food": "green pomelo", "archetype": "pummelo", "colours": {"body": "#b8e07a", "pore": "#7fb84a", "pith": "#fffdf6", "flesh": "#ffe28a", "stem": "#7a4a2c", "leaf": "#3bb273"}, "also": ["Green pomelo (hi)"]},
+  {"food": "golden pomelo", "archetype": "pummelo", "colours": {"body": "#f6e27a", "pore": "#d8b84a", "pith": "#fffdf6", "flesh": "#ffe28a", "stem": "#7a4a2c", "leaf": "#3bb273"}, "also": ["Jinyou pomelo (gd)"]},
+  {"food": "jujube", "archetype": "jujube", "colours": {"body": "#a33b2b", "mottle": "#d8e07a", "stem": "#7a4a2c", "leaf": "#3bb273"}, "also": ["Jujube (fl IFAS)", "Jujube (xj)", "Jinsi jujube (sd)"]},
+  {"food": "winter jujube", "archetype": "jujube", "colours": {"body": "#c0503a", "mottle": "#dfe89a", "stem": "#7a4a2c", "leaf": "#3bb273"}, "also": ["Winter jujube (sd, js)"]},
+  {"food": "green jujube", "archetype": "jujube", "colours": {"body": "#9bd05a", "mottle": "#e7f0a0", "stem": "#7a4a2c", "leaf": "#3bb273"}, "also": ["Indian jujube / green jujube (hi, yn)"]},
+  {"food": "guava", "archetype": "guava", "colours": {"skin": "#8fcf52", "body": "#ff86a8", "pulp": "#ffb3c6", "seed": "#fff6dc", "stem": "#7a4a2c", "leaf": "#3bb273"}, "also": ["Guava (fl IFAS)", "Guava (Hongbaoshi, Guangdong)"]},
+  {"food": "macadamia", "archetype": "macadamia", "colours": {"body": "#7a4a2c", "husk": "#52c26b", "lining": "#c9f0b0", "eye": "#e9b87a", "kernel": "#fff0d0", "leaf": "#23865a"}, "also": ["Macadamia (fl IFAS)"]},
   {"food": "kelp", "archetype": "kelp", "colours": {"body": "#7a8f3a", "body2": "#b8c46a"}, "also": ["Kelp (sd)"]},
   {"food": "mirabelle plum", "archetype": "oval", "colours": {"body": "#ffd84a", "cleft": true, "leaf": "#3bb273"}, "also": ["Mirabelle de Lorraine (fr regional)"], "existing": true},
   {"food": "Espelette chilli", "archetype": "chilli", "colours": {"body": "#ff5a4e", "cap": "#3bb273"}, "also": ["Piment d'Espelette (fr regional)"], "existing": true},
