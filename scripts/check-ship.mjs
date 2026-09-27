@@ -208,7 +208,7 @@ const bindingsOf = (id) => JSON.parse(readFileSync(join(root, "art/bindings", `$
 for (const id of Object.keys(byId)) {
   for (const [item, binding] of Object.entries(bindingsOf(id))) {
     if (/jujube/i.test(item)) check(binding.archetype === "jujube", `${id} ${item} should use the jujube sticker, not ${binding.archetype}`);
-    if (/pummelo|pomelo/i.test(item) && id !== "es") check(binding.archetype === "pummelo", `${id} ${item} should use the pummelo sticker, not ${binding.archetype}`);
+    if (/pummelo|pomelo|grapefruit/i.test(item)) check(binding.archetype === "pummelo", `${id} ${item} should use the pummelo sticker, not ${binding.archetype}`);
   }
 }
 

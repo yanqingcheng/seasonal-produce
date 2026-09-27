@@ -118,10 +118,15 @@
     }
   },
   "Grapefruit": {
-    "archetype": "round",
+    "archetype": "pummelo",
     "colours": {
-      "body": "#e7f5a4",
-      "leaf": "#52c26b"
+      "body": "#ffe066",
+      "pore": "#e0b83a",
+      "blush": "#ff7a8a",
+      "pith": "#fff6dc",
+      "flesh": "#ff5a6e",
+      "stem": "#7a4a2c",
+      "leaf": "#3bb273"
     }
   },
   "Lettuce": {

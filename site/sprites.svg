@@ -4003,25 +4003,41 @@
     <ellipse cx="24" cy="58" rx="3" ry="7" fill="currentColor" stroke="none"  transform="rotate(-40 24 58)"/>
     </g></symbol>
 <symbol id="art-pomelo" viewBox="-8 -8 116 116"><g stroke="#2b2340" stroke-width="3.4" stroke-linejoin="round" stroke-linecap="round" style="--blink-delay:5.4s">
-    <path d="M50 31C36 20 13 26 14 52C15 77 34 91 50 85C66 91 85 77 86 52C87 26 64 20 50 31Z" fill="#e7f5a4"/>
-    <ellipse cx="31" cy="46" rx="5" ry="9" fill="#fff" stroke="none" opacity=".5" transform="rotate(20 31 46)"/>
-    <path d="M50 32C50 24 51 18 55 11" fill="none"/>
-    <path d="M54 21C60 9 76 7 83 11C79 23 64 28 54 21Z" fill="#52c26b"/>
-    
-    <g class="face" transform="translate(50 60) scale(1)" stroke="none">
+    <path d="M40 12L41 4" fill="none" stroke="#7a4a2c" stroke-width="3.4"/>
+    <path d="M42 7C48 -2 62 -2 68 2C62 11 50 13 42 7Z" fill="#3bb273"/>
+    <path d="M40 11C53 11 61 19 67 27C79 35 84 47 84 60C84 80 64 92 40 92C16 92 -2 80 -2 60C-2 47 3 35 14 27C20 19 28 11 40 11Z" fill="#ffe066"/>
+    <ellipse cx="60" cy="40" rx="22" ry="17" fill="#ff7a8a" stroke="none" opacity=".3" transform="rotate(30 60 40)"/>
+    <path d="M20.5 31.6h.1M31.5 31.6h.1M42.5 31.6h.1M53.5 31.6h.1M15 41.1h.1M26 41.1h.1M37 41.1h.1M48 41.1h.1M59 41.1h.1M9.5 50.7h.1M64.5 50.7h.1M15 60.3h.1M70 60.3h.1M64.5 69.8h.1M26 79.4h.1M37 79.4h.1M48 79.4h.1" fill="none" stroke="#e0b83a" stroke-width="2.6"/>
+    <ellipse cx="16" cy="46" rx="5" ry="10" fill="#fff" stroke="none" opacity=".5" transform="rotate(20 16 46)"/>
+    <g class="face" transform="translate(36 56) scale(1)" stroke="none">
     <g class="eyes"><ellipse cx="-7" cy="0" rx="2.7" ry="3.5" fill="#2b2340"/><ellipse cx="7" cy="0" rx="2.7" ry="3.5" fill="#2b2340"/>
     <circle cx="-6.2" cy="-1.3" r="0.9" fill="#fff"/><circle cx="7.8" cy="-1.3" r="0.9" fill="#fff"/></g>
     <path d="M-4.5 5.2Q0 9.8 4.5 5.2" fill="none" stroke="#2b2340" stroke-width="2.3" stroke-linecap="round"/>
     <ellipse cx="-12.5" cy="5" rx="3.8" ry="2.4" fill="#ff6f9f" opacity=".5"/>
     <ellipse cx="12.5" cy="5" rx="3.8" ry="2.4" fill="#ff6f9f" opacity=".5"/>
-  </g></g></symbol>
+  </g>
+    <g transform="translate(74 72) rotate(-18)">
+      <path d="M-26 0A26 26 0 0 0 26 0Z" fill="#ffe066"/>
+      <path d="M-23 0A23 23 0 0 0 23 0Z" fill="#fff6dc" stroke="none"/>
+      <path d="M-15 0A15 15 0 0 0 15 0Z" fill="#ff5a6e" stroke="none"/>
+      <path d="M0 0L-12.1 8.8M0 0L-4.6 14.3M0 0L4.6 14.3M0 0L12.1 8.8" fill="none" stroke="#fff6dc" stroke-width="2.2"/>
+      <path d="M-26 0H26" fill="none"/>
+    </g></g></symbol>
         <symbol id="cut-pomelo" viewBox="-8 -8 116 116"><g fill="currentColor" stroke="currentColor" stroke-width="15" stroke-linejoin="round" stroke-linecap="round">
-    <path d="M50 31C36 20 13 26 14 52C15 77 34 91 50 85C66 91 85 77 86 52C87 26 64 20 50 31Z" fill="currentColor"/>
-    <ellipse cx="31" cy="46" rx="5" ry="9" fill="currentColor" stroke="none"  transform="rotate(20 31 46)"/>
-    <path d="M50 32C50 24 51 18 55 11" fill="none"/>
-    <path d="M54 21C60 9 76 7 83 11C79 23 64 28 54 21Z" fill="currentColor"/>
+    <path d="M40 12L41 4" fill="none" stroke="currentColor" stroke-width="15.4"/>
+    <path d="M42 7C48 -2 62 -2 68 2C62 11 50 13 42 7Z" fill="currentColor"/>
+    <path d="M40 11C53 11 61 19 67 27C79 35 84 47 84 60C84 80 64 92 40 92C16 92 -2 80 -2 60C-2 47 3 35 14 27C20 19 28 11 40 11Z" fill="currentColor"/>
+    <ellipse cx="60" cy="40" rx="22" ry="17" fill="currentColor" stroke="none"  transform="rotate(30 60 40)"/>
+    <path d="M20.5 31.6h.1M31.5 31.6h.1M42.5 31.6h.1M53.5 31.6h.1M15 41.1h.1M26 41.1h.1M37 41.1h.1M48 41.1h.1M59 41.1h.1M9.5 50.7h.1M64.5 50.7h.1M15 60.3h.1M70 60.3h.1M64.5 69.8h.1M26 79.4h.1M37 79.4h.1M48 79.4h.1" fill="none" stroke="currentColor" stroke-width="14.6"/>
+    <ellipse cx="16" cy="46" rx="5" ry="10" fill="currentColor" stroke="none"  transform="rotate(20 16 46)"/>
     
-    </g></symbol>
+    <g transform="translate(74 72) rotate(-18)">
+      <path d="M-26 0A26 26 0 0 0 26 0Z" fill="currentColor"/>
+      <path d="M-23 0A23 23 0 0 0 23 0Z" fill="currentColor" stroke="none"/>
+      <path d="M-15 0A15 15 0 0 0 15 0Z" fill="currentColor" stroke="none"/>
+      <path d="M0 0L-12.1 8.8M0 0L-4.6 14.3M0 0L4.6 14.3M0 0L12.1 8.8" fill="none" stroke="currentColor" stroke-width="14.2"/>
+      <path d="M-26 0H26" fill="none"/>
+    </g></g></symbol>
 <symbol id="art-sand-a" viewBox="-8 -8 116 116"><g stroke="#2b2340" stroke-width="3.4" stroke-linejoin="round" stroke-linecap="round" style="--blink-delay:4s">
     <ellipse cx="50" cy="57" rx="31" ry="33" fill="#1f7a4d"/>
     <path d="M50 26C40 40 40 74 50 89M50 26C60 40 60 74 50 89M50 26C28 42 28 72 50 89M50 26C72 42 72 72 50 89" fill="none" stroke="#143d32" stroke-width="2.2"/>
@@ -6507,25 +6523,41 @@
       <path d="M28 44C36 34 64 34 72 44M22 62C30 46 44 42 50 42C58 42 72 48 78 62M50 42C46 56 46 74 50 88" fill="none" stroke="currentColor" stroke-width="14.2" />
       </g></symbol>
 <symbol id="art-grapefruit" viewBox="-8 -8 116 116"><g stroke="#2b2340" stroke-width="3.4" stroke-linejoin="round" stroke-linecap="round" style="--blink-delay:1.7s">
-    <path d="M50 31C36 20 13 26 14 52C15 77 34 91 50 85C66 91 85 77 86 52C87 26 64 20 50 31Z" fill="#e7f5a4"/>
-    <ellipse cx="31" cy="46" rx="5" ry="9" fill="#fff" stroke="none" opacity=".5" transform="rotate(20 31 46)"/>
-    <path d="M50 32C50 24 51 18 55 11" fill="none"/>
-    <path d="M54 21C60 9 76 7 83 11C79 23 64 28 54 21Z" fill="#52c26b"/>
-    
-    <g class="face" transform="translate(50 60) scale(1)" stroke="none">
+    <path d="M40 12L41 4" fill="none" stroke="#7a4a2c" stroke-width="3.4"/>
+    <path d="M42 7C48 -2 62 -2 68 2C62 11 50 13 42 7Z" fill="#3bb273"/>
+    <path d="M40 11C53 11 61 19 67 27C79 35 84 47 84 60C84 80 64 92 40 92C16 92 -2 80 -2 60C-2 47 3 35 14 27C20 19 28 11 40 11Z" fill="#ffe066"/>
+    <ellipse cx="60" cy="40" rx="22" ry="17" fill="#ff7a8a" stroke="none" opacity=".3" transform="rotate(30 60 40)"/>
+    <path d="M20.5 31.6h.1M31.5 31.6h.1M42.5 31.6h.1M53.5 31.6h.1M15 41.1h.1M26 41.1h.1M37 41.1h.1M48 41.1h.1M59 41.1h.1M9.5 50.7h.1M64.5 50.7h.1M15 60.3h.1M70 60.3h.1M64.5 69.8h.1M26 79.4h.1M37 79.4h.1M48 79.4h.1" fill="none" stroke="#e0b83a" stroke-width="2.6"/>
+    <ellipse cx="16" cy="46" rx="5" ry="10" fill="#fff" stroke="none" opacity=".5" transform="rotate(20 16 46)"/>
+    <g class="face" transform="translate(36 56) scale(1)" stroke="none">
     <g class="eyes"><ellipse cx="-7" cy="0" rx="2.7" ry="3.5" fill="#2b2340"/><ellipse cx="7" cy="0" rx="2.7" ry="3.5" fill="#2b2340"/>
     <circle cx="-6.2" cy="-1.3" r="0.9" fill="#fff"/><circle cx="7.8" cy="-1.3" r="0.9" fill="#fff"/></g>
     <path d="M-4.5 5.2Q0 9.8 4.5 5.2" fill="none" stroke="#2b2340" stroke-width="2.3" stroke-linecap="round"/>
     <ellipse cx="-12.5" cy="5" rx="3.8" ry="2.4" fill="#ff6f9f" opacity=".5"/>
     <ellipse cx="12.5" cy="5" rx="3.8" ry="2.4" fill="#ff6f9f" opacity=".5"/>
-  </g></g></symbol>
+  </g>
+    <g transform="translate(74 72) rotate(-18)">
+      <path d="M-26 0A26 26 0 0 0 26 0Z" fill="#ffe066"/>
+      <path d="M-23 0A23 23 0 0 0 23 0Z" fill="#fff6dc" stroke="none"/>
+      <path d="M-15 0A15 15 0 0 0 15 0Z" fill="#ff5a6e" stroke="none"/>
+      <path d="M0 0L-12.1 8.8M0 0L-4.6 14.3M0 0L4.6 14.3M0 0L12.1 8.8" fill="none" stroke="#fff6dc" stroke-width="2.2"/>
+      <path d="M-26 0H26" fill="none"/>
+    </g></g></symbol>
         <symbol id="cut-grapefruit" viewBox="-8 -8 116 116"><g fill="currentColor" stroke="currentColor" stroke-width="15" stroke-linejoin="round" stroke-linecap="round">
-    <path d="M50 31C36 20 13 26 14 52C15 77 34 91 50 85C66 91 85 77 86 52C87 26 64 20 50 31Z" fill="currentColor"/>
-    <ellipse cx="31" cy="46" rx="5" ry="9" fill="currentColor" stroke="none"  transform="rotate(20 31 46)"/>
-    <path d="M50 32C50 24 51 18 55 11" fill="none"/>
-    <path d="M54 21C60 9 76 7 83 11C79 23 64 28 54 21Z" fill="currentColor"/>
+    <path d="M40 12L41 4" fill="none" stroke="currentColor" stroke-width="15.4"/>
+    <path d="M42 7C48 -2 62 -2 68 2C62 11 50 13 42 7Z" fill="currentColor"/>
+    <path d="M40 11C53 11 61 19 67 27C79 35 84 47 84 60C84 80 64 92 40 92C16 92 -2 80 -2 60C-2 47 3 35 14 27C20 19 28 11 40 11Z" fill="currentColor"/>
+    <ellipse cx="60" cy="40" rx="22" ry="17" fill="currentColor" stroke="none"  transform="rotate(30 60 40)"/>
+    <path d="M20.5 31.6h.1M31.5 31.6h.1M42.5 31.6h.1M53.5 31.6h.1M15 41.1h.1M26 41.1h.1M37 41.1h.1M48 41.1h.1M59 41.1h.1M9.5 50.7h.1M64.5 50.7h.1M15 60.3h.1M70 60.3h.1M64.5 69.8h.1M26 79.4h.1M37 79.4h.1M48 79.4h.1" fill="none" stroke="currentColor" stroke-width="14.6"/>
+    <ellipse cx="16" cy="46" rx="5" ry="10" fill="currentColor" stroke="none"  transform="rotate(20 16 46)"/>
     
-    </g></symbol>
+    <g transform="translate(74 72) rotate(-18)">
+      <path d="M-26 0A26 26 0 0 0 26 0Z" fill="currentColor"/>
+      <path d="M-23 0A23 23 0 0 0 23 0Z" fill="currentColor" stroke="none"/>
+      <path d="M-15 0A15 15 0 0 0 15 0Z" fill="currentColor" stroke="none"/>
+      <path d="M0 0L-12.1 8.8M0 0L-4.6 14.3M0 0L4.6 14.3M0 0L12.1 8.8" fill="none" stroke="currentColor" stroke-width="14.2"/>
+      <path d="M-26 0H26" fill="none"/>
+    </g></g></symbol>
 <symbol id="art-kumquat" viewBox="-8 -8 116 116"><g stroke="#2b2340" stroke-width="3.4" stroke-linejoin="round" stroke-linecap="round" style="--blink-delay:4.8s">
     <path d="M50 31C36 20 13 26 14 52C15 77 34 91 50 85C66 91 85 77 86 52C87 26 64 20 50 31Z" fill="#e4572e"/>
     <ellipse cx="31" cy="46" rx="5" ry="9" fill="#fff" stroke="none" opacity=".5" transform="rotate(20 31 46)"/>
@@ -7098,6 +7130,7 @@
     <path d="M40 12L41 4" fill="none" stroke="#7a4a2c" stroke-width="3.4"/>
     <path d="M42 7C48 -2 62 -2 68 2C62 11 50 13 42 7Z" fill="#3bb273"/>
     <path d="M40 11C53 11 61 19 67 27C79 35 84 47 84 60C84 80 64 92 40 92C16 92 -2 80 -2 60C-2 47 3 35 14 27C20 19 28 11 40 11Z" fill="#e7f5a4"/>
+    
     <path d="M20.5 31.6h.1M31.5 31.6h.1M42.5 31.6h.1M53.5 31.6h.1M15 41.1h.1M26 41.1h.1M37 41.1h.1M48 41.1h.1M59 41.1h.1M9.5 50.7h.1M64.5 50.7h.1M15 60.3h.1M70 60.3h.1M64.5 69.8h.1M26 79.4h.1M37 79.4h.1M48 79.4h.1" fill="none" stroke="#b8d96a" stroke-width="2.6"/>
     <ellipse cx="16" cy="46" rx="5" ry="10" fill="#fff" stroke="none" opacity=".5" transform="rotate(20 16 46)"/>
     <g class="face" transform="translate(36 56) scale(1)" stroke="none">
@@ -7118,6 +7151,7 @@
     <path d="M40 12L41 4" fill="none" stroke="currentColor" stroke-width="15.4"/>
     <path d="M42 7C48 -2 62 -2 68 2C62 11 50 13 42 7Z" fill="currentColor"/>
     <path d="M40 11C53 11 61 19 67 27C79 35 84 47 84 60C84 80 64 92 40 92C16 92 -2 80 -2 60C-2 47 3 35 14 27C20 19 28 11 40 11Z" fill="currentColor"/>
+    
     <path d="M20.5 31.6h.1M31.5 31.6h.1M42.5 31.6h.1M53.5 31.6h.1M15 41.1h.1M26 41.1h.1M37 41.1h.1M48 41.1h.1M59 41.1h.1M9.5 50.7h.1M64.5 50.7h.1M15 60.3h.1M70 60.3h.1M64.5 69.8h.1M26 79.4h.1M37 79.4h.1M48 79.4h.1" fill="none" stroke="currentColor" stroke-width="14.6"/>
     <ellipse cx="16" cy="46" rx="5" ry="10" fill="currentColor" stroke="none"  transform="rotate(20 16 46)"/>
     
@@ -7922,6 +7956,7 @@
     <path d="M40 12L41 4" fill="none" stroke="#7a4a2c" stroke-width="3.4"/>
     <path d="M42 7C48 -2 62 -2 68 2C62 11 50 13 42 7Z" fill="#3bb273"/>
     <path d="M40 11C53 11 61 19 67 27C79 35 84 47 84 60C84 80 64 92 40 92C16 92 -2 80 -2 60C-2 47 3 35 14 27C20 19 28 11 40 11Z" fill="#e7f5a4"/>
+    
     <path d="M20.5 31.6h.1M31.5 31.6h.1M42.5 31.6h.1M53.5 31.6h.1M15 41.1h.1M26 41.1h.1M37 41.1h.1M48 41.1h.1M59 41.1h.1M9.5 50.7h.1M64.5 50.7h.1M15 60.3h.1M70 60.3h.1M64.5 69.8h.1M26 79.4h.1M37 79.4h.1M48 79.4h.1" fill="none" stroke="#b8d96a" stroke-width="2.6"/>
     <ellipse cx="16" cy="46" rx="5" ry="10" fill="#fff" stroke="none" opacity=".5" transform="rotate(20 16 46)"/>
     <g class="face" transform="translate(36 56) scale(1)" stroke="none">
@@ -7942,6 +7977,7 @@
     <path d="M40 12L41 4" fill="none" stroke="currentColor" stroke-width="15.4"/>
     <path d="M42 7C48 -2 62 -2 68 2C62 11 50 13 42 7Z" fill="currentColor"/>
     <path d="M40 11C53 11 61 19 67 27C79 35 84 47 84 60C84 80 64 92 40 92C16 92 -2 80 -2 60C-2 47 3 35 14 27C20 19 28 11 40 11Z" fill="currentColor"/>
+    
     <path d="M20.5 31.6h.1M31.5 31.6h.1M42.5 31.6h.1M53.5 31.6h.1M15 41.1h.1M26 41.1h.1M37 41.1h.1M48 41.1h.1M59 41.1h.1M9.5 50.7h.1M64.5 50.7h.1M15 60.3h.1M70 60.3h.1M64.5 69.8h.1M26 79.4h.1M37 79.4h.1M48 79.4h.1" fill="none" stroke="currentColor" stroke-width="14.6"/>
     <ellipse cx="16" cy="46" rx="5" ry="10" fill="currentColor" stroke="none"  transform="rotate(20 16 46)"/>
     
@@ -9206,6 +9242,7 @@
     <path d="M40 12L41 4" fill="none" stroke="#7a4a2c" stroke-width="3.4"/>
     <path d="M42 7C48 -2 62 -2 68 2C62 11 50 13 42 7Z" fill="#3bb273"/>
     <path d="M40 11C53 11 61 19 67 27C79 35 84 47 84 60C84 80 64 92 40 92C16 92 -2 80 -2 60C-2 47 3 35 14 27C20 19 28 11 40 11Z" fill="#b8e07a"/>
+    
     <path d="M20.5 31.6h.1M31.5 31.6h.1M42.5 31.6h.1M53.5 31.6h.1M15 41.1h.1M26 41.1h.1M37 41.1h.1M48 41.1h.1M59 41.1h.1M9.5 50.7h.1M64.5 50.7h.1M15 60.3h.1M70 60.3h.1M64.5 69.8h.1M26 79.4h.1M37 79.4h.1M48 79.4h.1" fill="none" stroke="#7fb84a" stroke-width="2.6"/>
     <ellipse cx="16" cy="46" rx="5" ry="10" fill="#fff" stroke="none" opacity=".5" transform="rotate(20 16 46)"/>
     <g class="face" transform="translate(36 56) scale(1)" stroke="none">
@@ -9226,6 +9263,7 @@
     <path d="M40 12L41 4" fill="none" stroke="currentColor" stroke-width="15.4"/>
     <path d="M42 7C48 -2 62 -2 68 2C62 11 50 13 42 7Z" fill="currentColor"/>
     <path d="M40 11C53 11 61 19 67 27C79 35 84 47 84 60C84 80 64 92 40 92C16 92 -2 80 -2 60C-2 47 3 35 14 27C20 19 28 11 40 11Z" fill="currentColor"/>
+    
     <path d="M20.5 31.6h.1M31.5 31.6h.1M42.5 31.6h.1M53.5 31.6h.1M15 41.1h.1M26 41.1h.1M37 41.1h.1M48 41.1h.1M59 41.1h.1M9.5 50.7h.1M64.5 50.7h.1M15 60.3h.1M70 60.3h.1M64.5 69.8h.1M26 79.4h.1M37 79.4h.1M48 79.4h.1" fill="none" stroke="currentColor" stroke-width="14.6"/>
     <ellipse cx="16" cy="46" rx="5" ry="10" fill="currentColor" stroke="none"  transform="rotate(20 16 46)"/>
     
@@ -9484,6 +9522,7 @@
     <path d="M40 12L41 4" fill="none" stroke="#7a4a2c" stroke-width="3.4"/>
     <path d="M42 7C48 -2 62 -2 68 2C62 11 50 13 42 7Z" fill="#3bb273"/>
     <path d="M40 11C53 11 61 19 67 27C79 35 84 47 84 60C84 80 64 92 40 92C16 92 -2 80 -2 60C-2 47 3 35 14 27C20 19 28 11 40 11Z" fill="#f6e27a"/>
+    
     <path d="M20.5 31.6h.1M31.5 31.6h.1M42.5 31.6h.1M53.5 31.6h.1M15 41.1h.1M26 41.1h.1M37 41.1h.1M48 41.1h.1M59 41.1h.1M9.5 50.7h.1M64.5 50.7h.1M15 60.3h.1M70 60.3h.1M64.5 69.8h.1M26 79.4h.1M37 79.4h.1M48 79.4h.1" fill="none" stroke="#d8b84a" stroke-width="2.6"/>
     <ellipse cx="16" cy="46" rx="5" ry="10" fill="#fff" stroke="none" opacity=".5" transform="rotate(20 16 46)"/>
     <g class="face" transform="translate(36 56) scale(1)" stroke="none">
@@ -9504,6 +9543,7 @@
     <path d="M40 12L41 4" fill="none" stroke="currentColor" stroke-width="15.4"/>
     <path d="M42 7C48 -2 62 -2 68 2C62 11 50 13 42 7Z" fill="currentColor"/>
     <path d="M40 11C53 11 61 19 67 27C79 35 84 47 84 60C84 80 64 92 40 92C16 92 -2 80 -2 60C-2 47 3 35 14 27C20 19 28 11 40 11Z" fill="currentColor"/>
+    
     <path d="M20.5 31.6h.1M31.5 31.6h.1M42.5 31.6h.1M53.5 31.6h.1M15 41.1h.1M26 41.1h.1M37 41.1h.1M48 41.1h.1M59 41.1h.1M9.5 50.7h.1M64.5 50.7h.1M15 60.3h.1M70 60.3h.1M64.5 69.8h.1M26 79.4h.1M37 79.4h.1M48 79.4h.1" fill="none" stroke="currentColor" stroke-width="14.6"/>
     <ellipse cx="16" cy="46" rx="5" ry="10" fill="currentColor" stroke="none"  transform="rotate(20 16 46)"/>
     

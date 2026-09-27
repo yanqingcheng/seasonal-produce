@@ -1040,6 +1040,7 @@ const A = {
     <path d="M40 12L41 4" fill="none" stroke="${c.stem}" stroke-width="3.4"/>
     <path d="M42 7C48 -2 62 -2 68 2C62 11 50 13 42 7Z" fill="${c.leaf}"/>
     <path d="M40 11C53 11 61 19 67 27C79 35 84 47 84 60C84 80 64 92 40 92C16 92 -2 80 -2 60C-2 47 3 35 14 27C20 19 28 11 40 11Z" fill="${c.body}"/>
+    ${c.blush ? `<ellipse cx="60" cy="40" rx="22" ry="17" fill="${c.blush}" stroke="none" opacity=".3" transform="rotate(30 60 40)"/>` : ""}
     <path d="${pores}" fill="none" stroke="${c.pore}" stroke-width="2.6"/>
     ${shine(16, 46, 5, 10)}
     ${f(36, 56)}

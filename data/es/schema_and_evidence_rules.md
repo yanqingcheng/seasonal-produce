@@ -39,6 +39,6 @@ Cereza del Jerte is not a separate row: its May–July window is already the nat
 
 ## Approximate stickers
 
-Aguacate uses the pear drawing. Citrus and caqui use round fruit. Granada uses round with a crown. Mango, níspero, and paraguaya use the oval. Uva and sandía use the currant bunch and the green striped oval. Melón uses a round fruit. Cardo uses the celery drawing. Endibia uses chicory. Calçot uses the spring-onion drawing in white, and castaña the chestnut. Breva and higo both use the fig drawing, with different fills. Nectarina shares the nectarine colours; the item name stays nectarina.
+Aguacate uses the pear drawing. Citrus and caqui use round fruit, except pomelo (grapefruit), which uses the pummelo drawing with a yellow, blushed rind and pink-red segments. Granada uses round with a crown. Mango, níspero, and paraguaya use the oval. Uva and sandía use the currant bunch and the green striped oval. Melón uses a round fruit. Cardo uses the celery drawing. Endibia uses chicory. Calçot uses the spring-onion drawing in white, and castaña the chestnut. Breva and higo both use the fig drawing, with different fills. Nectarina shares the nectarine colours; the item name stays nectarina.
 
 Fact sheets cite the MAPA calendar and otherwise show only the month grid.

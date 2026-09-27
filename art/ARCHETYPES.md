@@ -78,6 +78,7 @@ These stay in `STICKER_GAPS.md`:
   {"food": "edible rose", "archetype": "rose", "colours": {"body": "#ff86a8", "body2": "#ff5f8a", "leaf": "#3bb273", "stem": "#3bb273"}, "also": ["Edible rose (sd, yn)"]},
   {"food": "sprouts", "archetype": "sprouts", "colours": {"body": "#fffdf6", "head": "#fff0a6", "leaf": "#a8e05a"}, "also": ["Sprouts (on)"]},
   {"food": "pummelo", "archetype": "pummelo", "colours": {"body": "#e7f5a4", "pore": "#b8d96a", "pith": "#fffdf6", "flesh": "#ff9fb2", "stem": "#7a4a2c", "leaf": "#3bb273"}, "also": ["Pummelo (fl IFAS)", "Zhenlong pomelo (sc)"]},
+  {"food": "grapefruit", "archetype": "pummelo", "colours": {"body": "#ffe066", "pore": "#e0b83a", "blush": "#ff7a8a", "pith": "#fff6dc", "flesh": "#ff5a6e", "stem": "#7a4a2c", "leaf": "#3bb273"}, "also": ["Grapefruit (fl)", "pomelo (es, grapefruit)"]},
   {"food": "green pomelo", "archetype": "pummelo", "colours": {"body": "#b8e07a", "pore": "#7fb84a", "pith": "#fffdf6", "flesh": "#ffe28a", "stem": "#7a4a2c", "leaf": "#3bb273"}, "also": ["Green pomelo (hi)"]},
   {"food": "golden pomelo", "archetype": "pummelo", "colours": {"body": "#f6e27a", "pore": "#d8b84a", "pith": "#fffdf6", "flesh": "#ffe28a", "stem": "#7a4a2c", "leaf": "#3bb273"}, "also": ["Jinyou pomelo (gd)"]},
   {"food": "jujube", "archetype": "jujube", "colours": {"body": "#a33b2b", "mottle": "#d8e07a", "stem": "#7a4a2c", "leaf": "#3bb273"}, "also": ["Jujube (fl IFAS)", "Jujube (xj)", "Jinsi jujube (sd)"]},
