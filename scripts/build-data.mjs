@@ -449,9 +449,9 @@ export function assembleSite(root = repoRoot) {
 }
 
 function ogSvg(sprite) {
-  const defs = sprite.match(/<defs>[\s\S]*<\/defs>/)?.[0] ?? "<defs></defs>";
   const ids = [...sprite.matchAll(/id="(art-[^"]+)"/g)].map((m) => m[1]);
   const picks = [0, 8, 16, 24, 32, 40].map((i) => ids[i]).filter(Boolean);
+  const defs = `<defs>\n${picks.map((id) => sprite.match(new RegExp(`<symbol id="${id}"[\\s\\S]*?</symbol>`))[0]).join("\n")}\n</defs>`;
   const uses = picks.map((id, i) => {
     const x = 150 + i * 160;
     return `<use href="#${id}" x="${x}" y="180" width="130" height="130"/>`;
