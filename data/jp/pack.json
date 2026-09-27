@@ -68,9 +68,9 @@
     ".": "out"
   },
   "sticker_exclude": [],
-  "attribution": "Japan harvest months from ALIC 野菜情報, Hokkaido Yasai, prefectural governments, JA, and Tokyo Seika.",
+  "attribution": "Japan harvest months from ALIC 野菜情報, MAFF, Hokkaido Yasai, prefectural governments, JA, Shizuoka Cha Tsushin, and Tokyo Seika.",
   "alias_profile": "none",
   "recipe_rule": "optional",
-  "expect_items": 46,
+  "expect_items": 52,
   "require_peak_every_month": false
 }

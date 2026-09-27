@@ -333,5 +333,56 @@
       "leaf": "#3bb273",
       "stem": "#3bb273"
     }
+  },
+  "Bamboo shoot": {
+    "archetype": "bambooshoot",
+    "colours": {
+      "body": "#e9b87a",
+      "body2": "#b0703f",
+      "tip": "#a8e05a",
+      "base": "#fff6dc"
+    }
+  },
+  "Lotus root": {
+    "archetype": "lotusroot",
+    "colours": {
+      "body": "#e9b87a",
+      "flesh": "#fff6dc",
+      "hole": "#e9b87a"
+    }
+  },
+  "Kiwifruit": {
+    "archetype": "kiwi",
+    "colours": {
+      "skin": "#b0703f",
+      "body": "#52c26b",
+      "core": "#fff6dc",
+      "fuzz": true
+    }
+  },
+  "Green tea, first flush": {
+    "archetype": "tea",
+    "colours": {
+      "body": "#3bb273",
+      "body2": "#52c26b",
+      "bud": "#a8e05a",
+      "stem": "#7a4a2c"
+    }
+  },
+  "Ginger": {
+    "archetype": "ginger",
+    "colours": {
+      "body": "#e9b87a",
+      "ring": "#b0703f"
+    }
+  },
+  "Okra": {
+    "archetype": "okra",
+    "colours": {
+      "body": "#52c26b",
+      "cap": "#a8e05a",
+      "flesh": "#c9f0b0",
+      "seed": "#fffdf6"
+    }
   }
 }

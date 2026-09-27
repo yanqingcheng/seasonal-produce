@@ -47,6 +47,13 @@
       "one": "fruit",
       "plural": "fruit",
       "everyday": true
+    },
+    {
+      "id": "nut",
+      "label": "Nut",
+      "one": "nut",
+      "plural": "nuts",
+      "everyday": false
     }
   ],
   "state_roles": {
@@ -57,6 +64,6 @@
   "attribution": "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar, and University of Florida IFAS.",
   "alias_profile": "none",
   "recipe_rule": "optional",
-  "expect_items": 34,
+  "expect_items": 53,
   "require_peak_every_month": false
 }

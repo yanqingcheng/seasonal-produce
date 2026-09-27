@@ -45,6 +45,12 @@
       "label": "Fruit",
       "one": "fruit",
       "plural": "fruit"
+    },
+    {
+      "id": "nut",
+      "label": "Nut",
+      "one": "nut",
+      "plural": "nuts"
     }
   ],
   "attribution": "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar, and University of Florida IFAS.",
@@ -891,6 +897,443 @@
       "specialist_sources": [
         "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar"
       ]
+    },
+    {
+      "item": "Peanut",
+      "category": "nut",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar"
+      ]
+    },
+    {
+      "item": "Banana",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "University of Florida IFAS"
+      ]
+    },
+    {
+      "item": "Carambola",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "University of Florida IFAS"
+      ]
+    },
+    {
+      "item": "Coconut",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "University of Florida IFAS"
+      ]
+    },
+    {
+      "item": "Custard apple",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "University of Florida IFAS"
+      ]
+    },
+    {
+      "item": "Atemoya",
+      "category": "fruit",
+      "months": [
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "University of Florida IFAS"
+      ]
+    },
+    {
+      "item": "Sugar apple",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "University of Florida IFAS"
+      ]
+    },
+    {
+      "item": "Jackfruit",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "University of Florida IFAS"
+      ]
+    },
+    {
+      "item": "Longan",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "University of Florida IFAS"
+      ]
+    },
+    {
+      "item": "Lychee",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "University of Florida IFAS"
+      ]
+    },
+    {
+      "item": "Papaya",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "University of Florida IFAS"
+      ]
+    },
+    {
+      "item": "Passion fruit",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "University of Florida IFAS"
+      ]
+    },
+    {
+      "item": "Dragon fruit",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "University of Florida IFAS"
+      ]
+    },
+    {
+      "item": "Wampee",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "University of Florida IFAS"
+      ]
+    },
+    {
+      "item": "Wax apple",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "University of Florida IFAS"
+      ]
+    },
+    {
+      "item": "Pummelo",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "University of Florida IFAS"
+      ]
+    },
+    {
+      "item": "Jujube",
+      "category": "fruit",
+      "months": [
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "University of Florida IFAS"
+      ]
+    },
+    {
+      "item": "Guava",
+      "category": "fruit",
+      "months": [
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "University of Florida IFAS"
+      ]
+    },
+    {
+      "item": "Macadamia",
+      "category": "nut",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": null,
+      "specialist_sources": [
+        "University of Florida IFAS"
+      ]
     }
   ],
   "recipes": [],
@@ -900,7 +1343,7 @@
       "name": "January",
       "counts": {
         "peak": 0,
-        "in": 27,
+        "in": 34,
         "edge": 0
       },
       "lead": null,
@@ -949,28 +1392,37 @@
         "strawberry",
         "Sweet Corn",
         "Tangerine",
-        "Tomato"
+        "Tomato",
+        "Banana",
+        "Carambola",
+        "Coconut",
+        "Custard apple",
+        "Atemoya",
+        "Papaya",
+        "Pummelo"
       ],
       "edge": [],
       "arrivals": [
         "cauliflower"
       ],
-      "farewells": [],
+      "farewells": [
+        "Atemoya"
+      ],
       "quiet": [
         "broccoli",
         "strawberry",
-        "Tomato",
         "cauliflower",
-        "Escarole"
+        "Pineberry",
+        "Avocado"
       ],
-      "blurb": "January has <strong>27</strong> Florida crops in season. Much the same list as December."
+      "blurb": "January has <strong>34</strong> Florida crops in season. Much the same list as December."
     },
     {
       "key": "feb",
       "name": "February",
       "counts": {
         "peak": 0,
-        "in": 28,
+        "in": 36,
         "edge": 0
       },
       "lead": null,
@@ -989,7 +1441,7 @@
         "Tomato",
         "Orange",
         "cauliflower",
-        "Collard Greens"
+        "Jujube"
       ],
       "peak": [],
       "in": [
@@ -1020,11 +1472,21 @@
         "strawberry",
         "Sweet Corn",
         "Tangerine",
-        "Tomato"
+        "Tomato",
+        "Banana",
+        "Carambola",
+        "Coconut",
+        "Custard apple",
+        "Papaya",
+        "Pummelo",
+        "Jujube",
+        "Guava"
       ],
       "edge": [],
       "arrivals": [
-        "Potato"
+        "Potato",
+        "Jujube",
+        "Guava"
       ],
       "farewells": [
         "Avocado"
@@ -1032,18 +1494,18 @@
       "quiet": [
         "cabbage",
         "Lettuce",
-        "cauliflower",
-        "Pineberry",
-        "Cilantro"
+        "Jujube",
+        "Escarole",
+        "Pummelo"
       ],
-      "blurb": "February has <strong>28</strong> Florida crops in season. Much the same list as January."
+      "blurb": "February has <strong>36</strong> Florida crops in season. Much the same list as January."
     },
     {
       "key": "mar",
       "name": "March",
       "counts": {
         "peak": 0,
-        "in": 30,
+        "in": 38,
         "edge": 0
       },
       "lead": null,
@@ -1095,7 +1557,15 @@
         "Sweet Corn",
         "Tangerine",
         "Tomato",
-        "Watermelon"
+        "Watermelon",
+        "Banana",
+        "Carambola",
+        "Coconut",
+        "Custard apple",
+        "Papaya",
+        "Pummelo",
+        "Jujube",
+        "Guava"
       ],
       "edge": [],
       "arrivals": [
@@ -1105,23 +1575,25 @@
       ],
       "farewells": [
         "cauliflower",
-        "Kumquat"
+        "Kumquat",
+        "Carambola",
+        "Guava"
       ],
       "quiet": [
-        "blueberry",
-        "Sweet Corn",
+        "cabbage",
+        "Carrot",
         "Cantaloupe",
-        "Collard Greens",
-        "Radish"
+        "Cilantro",
+        "Carambola"
       ],
-      "blurb": "March has <strong>30</strong> Florida crops in season. The fullest month on the wheel."
+      "blurb": "March has <strong>38</strong> Florida crops in season. The fullest month on the wheel."
     },
     {
       "key": "apr",
       "name": "April",
       "counts": {
         "peak": 0,
-        "in": 30,
+        "in": 36,
         "edge": 0
       },
       "lead": null,
@@ -1173,7 +1645,13 @@
         "Sweet Corn",
         "Tangerine",
         "Tomato",
-        "Watermelon"
+        "Watermelon",
+        "Banana",
+        "Coconut",
+        "Custard apple",
+        "Papaya",
+        "Pummelo",
+        "Jujube"
       ],
       "edge": [],
       "arrivals": [
@@ -1187,20 +1665,20 @@
         "Escarole"
       ],
       "quiet": [
-        "cabbage",
-        "Carrot",
+        "blueberry",
+        "Sweet Corn",
         "peach",
-        "blackberry",
-        "Grapefruit"
+        "spinach",
+        "Mushroom"
       ],
-      "blurb": "April has <strong>30</strong> Florida crops in season. The fullest month on the wheel."
+      "blurb": "April has <strong>36</strong> Florida crops in season. Much the same list as March."
     },
     {
       "key": "may",
       "name": "May",
       "counts": {
         "peak": 0,
-        "in": 22,
+        "in": 30,
         "edge": 0
       },
       "lead": null,
@@ -1218,8 +1696,8 @@
         "Tomato",
         "Orange",
         "peach",
-        "blackberry",
-        "Cantaloupe"
+        "Lychee",
+        "blackberry"
       ],
       "peak": [],
       "in": [
@@ -1244,11 +1722,22 @@
         "Squash",
         "Sweet Corn",
         "Tomato",
-        "Watermelon"
+        "Watermelon",
+        "Banana",
+        "Coconut",
+        "Custard apple",
+        "Jackfruit",
+        "Lychee",
+        "Papaya",
+        "Passion fruit",
+        "Jujube"
       ],
       "edge": [],
       "arrivals": [
-        "mango"
+        "mango",
+        "Jackfruit",
+        "Lychee",
+        "Passion fruit"
       ],
       "farewells": [
         "blueberry",
@@ -1260,17 +1749,17 @@
         "blueberry",
         "Potato",
         "Squash",
-        "Tomato",
-        "celery"
+        "blackberry",
+        "Custard apple"
       ],
-      "blurb": "May has <strong>22</strong> Florida crops in season. Winding down: 8 fewer in season than in April."
+      "blurb": "May has <strong>30</strong> Florida crops in season. Much the same list as April."
     },
     {
       "key": "jun",
       "name": "June",
       "counts": {
         "peak": 0,
-        "in": 15,
+        "in": 25,
         "edge": 0
       },
       "lead": null,
@@ -1284,12 +1773,12 @@
         "Squash",
         "Tomato",
         "Orange",
+        "Wampee",
+        "Wax apple",
+        "Lychee",
         "blackberry",
         "Cantaloupe",
-        "mango",
-        "Avocado",
-        "Eggplant",
-        "Mushroom"
+        "mango"
       ],
       "peak": [],
       "in": [
@@ -1307,11 +1796,24 @@
         "Snap Beans",
         "Squash",
         "Tomato",
-        "Watermelon"
+        "Watermelon",
+        "Banana",
+        "Carambola",
+        "Coconut",
+        "Jackfruit",
+        "Lychee",
+        "Papaya",
+        "Passion fruit",
+        "Dragon fruit",
+        "Wampee",
+        "Wax apple"
       ],
       "edge": [],
       "arrivals": [
-        "Avocado"
+        "Avocado",
+        "Carambola",
+        "Dragon fruit",
+        "Wampee"
       ],
       "farewells": [
         "Bell Pepper",
@@ -1322,27 +1824,36 @@
       "quiet": [
         "Potato",
         "Carrot",
-        "Bell Pepper",
-        "Snap Beans",
-        "Eggplant"
+        "cucumber",
+        "Lychee",
+        "Passion fruit"
       ],
-      "blurb": "June has <strong>15</strong> Florida crops in season. Much the same list as May."
+      "blurb": "June has <strong>25</strong> Florida crops in season. Much the same list as May."
     },
     {
       "key": "jul",
       "name": "July",
       "counts": {
         "peak": 0,
-        "in": 6,
+        "in": 18,
         "edge": 0
       },
       "lead": null,
       "wheel": [
         "Watermelon",
+        "Longan",
+        "Wampee",
+        "Wax apple",
+        "Sugar apple",
+        "Lychee",
         "blackberry",
         "Cantaloupe",
         "mango",
+        "Jackfruit",
+        "Dragon fruit",
+        "Passion fruit",
         "Avocado",
+        "Carambola",
         "Mushroom"
       ],
       "peak": [],
@@ -1352,69 +1863,130 @@
         "Cantaloupe",
         "mango",
         "Mushroom",
-        "Watermelon"
+        "Watermelon",
+        "Banana",
+        "Carambola",
+        "Coconut",
+        "Sugar apple",
+        "Jackfruit",
+        "Longan",
+        "Lychee",
+        "Papaya",
+        "Passion fruit",
+        "Dragon fruit",
+        "Wampee",
+        "Wax apple"
       ],
       "edge": [],
-      "arrivals": [],
+      "arrivals": [
+        "Sugar apple",
+        "Longan"
+      ],
       "farewells": [
         "blackberry",
         "Cantaloupe",
-        "Watermelon"
+        "Watermelon",
+        "Lychee"
       ],
       "quiet": [
         "Watermelon",
-        "blackberry",
-        "Cantaloupe",
-        "mango",
-        "Mushroom"
+        "Wampee",
+        "Wax apple",
+        "Dragon fruit",
+        "Coconut"
       ],
-      "blurb": "July has <strong>6</strong> Florida crops in season. Winding down: 9 fewer in season than in June."
+      "blurb": "July has <strong>18</strong> Florida crops in season. Much the same list as June."
     },
     {
       "key": "aug",
       "name": "August",
       "counts": {
         "peak": 0,
-        "in": 3,
+        "in": 17,
         "edge": 0
       },
       "lead": null,
       "wheel": [
+        "Longan",
+        "Sugar apple",
         "mango",
+        "Guava",
+        "Atemoya",
+        "Jackfruit",
+        "Dragon fruit",
+        "Passion fruit",
         "Avocado",
-        "Mushroom"
+        "Pummelo",
+        "Carambola",
+        "Mushroom",
+        "Banana",
+        "Coconut",
+        "Papaya"
       ],
       "peak": [],
       "in": [
         "Avocado",
         "mango",
-        "Mushroom"
+        "Mushroom",
+        "Peanut",
+        "Banana",
+        "Carambola",
+        "Coconut",
+        "Atemoya",
+        "Sugar apple",
+        "Jackfruit",
+        "Longan",
+        "Papaya",
+        "Passion fruit",
+        "Dragon fruit",
+        "Pummelo",
+        "Guava",
+        "Macadamia"
       ],
       "edge": [],
-      "arrivals": [],
-      "farewells": [],
-      "quiet": [
-        "mango",
-        "Avocado",
-        "Mushroom"
+      "arrivals": [
+        "Peanut",
+        "Atemoya",
+        "Pummelo",
+        "Guava"
       ],
-      "blurb": "August has <strong>3</strong> Florida crops in season. The leanest stretch of the year."
+      "farewells": [
+        "Longan"
+      ],
+      "quiet": [
+        "Longan",
+        "Sugar apple",
+        "Guava",
+        "Jackfruit",
+        "Banana"
+      ],
+      "blurb": "August has <strong>17</strong> Florida crops in season. The leanest stretch of the year."
     },
     {
       "key": "sep",
       "name": "September",
       "counts": {
         "peak": 0,
-        "in": 5,
+        "in": 18,
         "edge": 0
       },
       "lead": null,
       "wheel": [
         "Orange",
+        "Sugar apple",
         "mango",
+        "Guava",
+        "Atemoya",
+        "Jackfruit",
+        "Dragon fruit",
         "Tangerine",
+        "Passion fruit",
         "Avocado",
-        "Mushroom"
+        "Pummelo",
+        "Carambola",
+        "Mushroom",
+        "Banana",
+        "Coconut"
       ],
       "peak": [],
       "in": [
@@ -1422,7 +1994,20 @@
         "mango",
         "Mushroom",
         "Orange",
-        "Tangerine"
+        "Tangerine",
+        "Peanut",
+        "Banana",
+        "Carambola",
+        "Coconut",
+        "Atemoya",
+        "Sugar apple",
+        "Jackfruit",
+        "Papaya",
+        "Passion fruit",
+        "Dragon fruit",
+        "Pummelo",
+        "Guava",
+        "Macadamia"
       ],
       "edge": [],
       "arrivals": [
@@ -1430,23 +2015,24 @@
         "Tangerine"
       ],
       "farewells": [
-        "mango"
+        "mango",
+        "Sugar apple"
       ],
       "quiet": [
         "Orange",
         "mango",
+        "Atemoya",
         "Tangerine",
-        "Avocado",
-        "Mushroom"
+        "Papaya"
       ],
-      "blurb": "September has <strong>5</strong> Florida crops in season. Much the same list as August."
+      "blurb": "September has <strong>18</strong> Florida crops in season. Much the same list as August."
     },
     {
       "key": "oct",
       "name": "October",
       "counts": {
         "peak": 0,
-        "in": 13,
+        "in": 25,
         "edge": 0
       },
       "lead": null,
@@ -1458,12 +2044,14 @@
         "Squash",
         "Tomato",
         "Orange",
+        "Guava",
         "Kumquat",
+        "Atemoya",
+        "Jackfruit",
+        "Dragon fruit",
         "Grapefruit",
         "Tangerine",
-        "Avocado",
-        "Eggplant",
-        "Mushroom"
+        "Passion fruit"
       ],
       "peak": [],
       "in": [
@@ -1479,7 +2067,19 @@
         "Squash",
         "Tangerine",
         "Tomato",
-        "Watermelon"
+        "Watermelon",
+        "Peanut",
+        "Banana",
+        "Carambola",
+        "Coconut",
+        "Atemoya",
+        "Jackfruit",
+        "Papaya",
+        "Passion fruit",
+        "Dragon fruit",
+        "Pummelo",
+        "Guava",
+        "Macadamia"
       ],
       "edge": [],
       "arrivals": [
@@ -1488,22 +2088,26 @@
         "Eggplant",
         "Grapefruit"
       ],
-      "farewells": [],
-      "quiet": [
-        "Watermelon",
-        "Bell Pepper",
-        "cucumber",
-        "Snap Beans",
-        "Kumquat"
+      "farewells": [
+        "Jackfruit",
+        "Guava",
+        "Macadamia"
       ],
-      "blurb": "October has <strong>13</strong> Florida crops in season. The wheel is filling up: 8 more in season than in September."
+      "quiet": [
+        "Bell Pepper",
+        "Snap Beans",
+        "Kumquat",
+        "Grapefruit",
+        "Macadamia"
+      ],
+      "blurb": "October has <strong>25</strong> Florida crops in season. Much the same list as September."
     },
     {
       "key": "nov",
       "name": "November",
       "counts": {
         "peak": 0,
-        "in": 21,
+        "in": 31,
         "edge": 0
       },
       "lead": null,
@@ -1521,8 +2125,8 @@
         "Endive",
         "Kumquat",
         "Escarole",
-        "spinach",
-        "Cilantro"
+        "Atemoya",
+        "spinach"
       ],
       "peak": [],
       "in": [
@@ -1546,7 +2150,17 @@
         "Sweet Corn",
         "Tangerine",
         "Tomato",
-        "Watermelon"
+        "Watermelon",
+        "Peanut",
+        "Banana",
+        "Carambola",
+        "Coconut",
+        "Custard apple",
+        "Atemoya",
+        "Papaya",
+        "Passion fruit",
+        "Dragon fruit",
+        "Pummelo"
       ],
       "edge": [],
       "arrivals": [
@@ -1555,22 +2169,25 @@
         "Endive",
         "Escarole"
       ],
-      "farewells": [],
+      "farewells": [
+        "Peanut",
+        "Dragon fruit"
+      ],
       "quiet": [
         "Lettuce",
-        "Sweet Corn",
-        "cucumber",
-        "Squash",
-        "Endive"
+        "Tomato",
+        "Endive",
+        "Radish",
+        "Peanut"
       ],
-      "blurb": "November has <strong>21</strong> Florida crops in season. The wheel is filling up: 8 more in season than in October."
+      "blurb": "November has <strong>31</strong> Florida crops in season. Much the same list as October."
     },
     {
       "key": "dec",
       "name": "December",
       "counts": {
         "peak": 0,
-        "in": 27,
+        "in": 35,
         "edge": 0
       },
       "lead": null,
@@ -1619,7 +2236,15 @@
         "Sweet Corn",
         "Tangerine",
         "Tomato",
-        "Watermelon"
+        "Watermelon",
+        "Banana",
+        "Carambola",
+        "Coconut",
+        "Custard apple",
+        "Atemoya",
+        "Papaya",
+        "Passion fruit",
+        "Pummelo"
       ],
       "edge": [],
       "arrivals": [
@@ -1629,16 +2254,17 @@
         "Collard Greens"
       ],
       "farewells": [
-        "Watermelon"
+        "Watermelon",
+        "Passion fruit"
       ],
       "quiet": [
         "broccoli",
         "strawberry",
-        "Orange",
         "Collard Greens",
-        "spinach"
+        "celery",
+        "Eggplant"
       ],
-      "blurb": "December has <strong>27</strong> Florida crops in season. Much the same list as November."
+      "blurb": "December has <strong>35</strong> Florida crops in season. Much the same list as November."
     }
   ]
 }

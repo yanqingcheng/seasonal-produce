@@ -273,5 +273,59 @@
       "leaf": "#3bb273",
       "stem": "#3bb273"
     }
+  },
+  "Almond": {
+    "archetype": "almond",
+    "colours": {
+      "body": "#d0925a",
+      "body2": "#9a5a34"
+    }
+  },
+  "Walnut": {
+    "archetype": "walnut",
+    "colours": {
+      "body": "#d49a5e"
+    }
+  },
+  "Pistachio": {
+    "archetype": "pistachio",
+    "colours": {
+      "body": "#f0d9a8",
+      "kernel": "#a8e05a",
+      "skin": "#c2255c"
+    }
+  },
+  "Pecan": {
+    "archetype": "almond",
+    "colours": {
+      "body": "#a8643a",
+      "body2": "#5a321e",
+      "pecan": true
+    }
+  },
+  "Kiwifruit": {
+    "archetype": "kiwi",
+    "colours": {
+      "skin": "#b0703f",
+      "body": "#52c26b",
+      "core": "#fff6dc",
+      "fuzz": true
+    }
+  },
+  "Olive": {
+    "archetype": "olive",
+    "colours": {
+      "body": "#8fae3a",
+      "leaf": "#9dbf94",
+      "stem": "#7a4a2c"
+    }
+  },
+  "Date": {
+    "archetype": "date",
+    "colours": {
+      "body": "#9a4a2c",
+      "cap": "#ffb627",
+      "stem": "#ffb627"
+    }
   }
 }

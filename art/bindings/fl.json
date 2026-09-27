@@ -246,5 +246,177 @@
       "body": "#e4572e",
       "leaf": "#52c26b"
     }
+  },
+  "Peanut": {
+    "archetype": "peanut",
+    "colours": {
+      "body": "#e9b87a"
+    }
+  },
+  "Banana": {
+    "archetype": "banana",
+    "colours": {
+      "body": "#ffd84a",
+      "body2": "#ffb627",
+      "tip": "#7a4a2c",
+      "stem": "#a8e05a"
+    }
+  },
+  "Carambola": {
+    "archetype": "carambola",
+    "colours": {
+      "body": "#ffd84a",
+      "body2": "#d8e05a",
+      "flesh": "#fff0a6",
+      "stem": "#7a4a2c"
+    }
+  },
+  "Coconut": {
+    "archetype": "coconut",
+    "colours": {
+      "body": "#7a4a2c",
+      "flesh": "#fffdf6",
+      "flesh2": "#fff0d0"
+    }
+  },
+  "Custard apple": {
+    "archetype": "custardapple",
+    "colours": {
+      "body": "#f0c078",
+      "body2": "#c96a3a",
+      "stem": "#7a4a2c",
+      "leaf": "#3bb273"
+    }
+  },
+  "Atemoya": {
+    "archetype": "custardapple",
+    "colours": {
+      "body": "#c9e8a0",
+      "body2": "#7fb86a",
+      "stem": "#7a4a2c",
+      "leaf": "#3bb273"
+    }
+  },
+  "Sugar apple": {
+    "archetype": "custardapple",
+    "colours": {
+      "body": "#b8e39a",
+      "body2": "#3bb273",
+      "stem": "#7a4a2c",
+      "leaf": "#3bb273"
+    }
+  },
+  "Jackfruit": {
+    "archetype": "jackfruit",
+    "colours": {
+      "body": "#c9dc5a",
+      "body2": "#6f9a2e",
+      "stem": "#b0703f",
+      "leaf": "#3bb273"
+    }
+  },
+  "Longan": {
+    "archetype": "longan",
+    "colours": {
+      "body": "#e9b87a",
+      "body2": "#b0703f",
+      "stem": "#7a4a2c",
+      "leaf": "#3bb273"
+    }
+  },
+  "Lychee": {
+    "archetype": "lychee",
+    "colours": {
+      "body": "#ff5a6e",
+      "body2": "#c2255c",
+      "stem": "#7a4a2c",
+      "leaf": "#3bb273",
+      "flesh": "#fffdf6"
+    }
+  },
+  "Papaya": {
+    "archetype": "papaya",
+    "colours": {
+      "skin": "#a8e05a",
+      "body": "#ff9a3c",
+      "cavity": "#ff5a4e",
+      "stem": "#3bb273"
+    }
+  },
+  "Passion fruit": {
+    "archetype": "passionfruit",
+    "colours": {
+      "body": "#8e4dd6",
+      "pith": "#fff6dc",
+      "pulp": "#ffc93c",
+      "pulp2": "#fff0a6",
+      "leaf": "#3bb273"
+    }
+  },
+  "Dragon fruit": {
+    "archetype": "dragonfruit",
+    "colours": {
+      "body": "#ff5f8a",
+      "tip": "#a8e05a"
+    }
+  },
+  "Wampee": {
+    "archetype": "longan",
+    "colours": {
+      "body": "#ffc93c",
+      "body2": "#b0703f",
+      "stem": "#7a4a2c",
+      "leaf": "#3bb273",
+      "oval": true
+    }
+  },
+  "Wax apple": {
+    "archetype": "waxapple",
+    "colours": {
+      "body": "#ff5a6e",
+      "stem": "#7a4a2c"
+    }
+  },
+  "Pummelo": {
+    "archetype": "pummelo",
+    "colours": {
+      "body": "#e7f5a4",
+      "pore": "#b8d96a",
+      "pith": "#fffdf6",
+      "flesh": "#ff9fb2",
+      "stem": "#7a4a2c",
+      "leaf": "#3bb273"
+    }
+  },
+  "Jujube": {
+    "archetype": "jujube",
+    "colours": {
+      "body": "#a33b2b",
+      "mottle": "#d8e07a",
+      "stem": "#7a4a2c",
+      "leaf": "#3bb273"
+    }
+  },
+  "Guava": {
+    "archetype": "guava",
+    "colours": {
+      "skin": "#8fcf52",
+      "body": "#ff86a8",
+      "pulp": "#ffb3c6",
+      "seed": "#fff6dc",
+      "stem": "#7a4a2c",
+      "leaf": "#3bb273"
+    }
+  },
+  "Macadamia": {
+    "archetype": "macadamia",
+    "colours": {
+      "body": "#7a4a2c",
+      "husk": "#52c26b",
+      "lining": "#c9f0b0",
+      "eye": "#e9b87a",
+      "kernel": "#fff0d0",
+      "leaf": "#23865a"
+    }
   }
 }

@@ -33,18 +33,18 @@ Artichoke is in season all year. March–May and October are peaks in the source
 
 ## Categories
 
-Fruit or vegetable, the same way the other packs file tomato and sweet corn as vegetables and citrus as fruit. Navel and Valencia are one orange row.
+Fruit, vegetable, or nut, the same way the other packs file tomato and sweet corn as vegetables and citrus as fruit. Navel and Valencia are one orange row.
 
 ## Domestic filter
 
 In season means grown in California. Import-only produce is not on this wheel. Field crops and the ambiguous Fresno slash lines (greens, squash) were already left out of the extract. Avocado, Dungeness crab, ocean salmon, and red bell pepper have notes without a month window, so they are not rows.
 
-Shipped: 37. Held for a drawing: 7 (almond, walnut, kiwifruit, pistachio, date, olive, pecan). Those rows are in `STICKER_GAPS.md`.
+Shipped: 44. Almond, walnut, kiwifruit, pistachio, date, olive, and pecan joined once their stickers were drawn.
 
 ## Approximate stickers
 
 Shared archetypes, not new drawings. Item names that share a sticker id with another pack use that pack's item string, so the drawing matches.
 
-Boysenberry uses the berry drawing. Lima bean uses the pod drawing. Mandarin uses a round citrus fill. Persimmon and pomegranate use the drawings already shared with other packs.
+Boysenberry uses the berry drawing. Lima bean uses the pod drawing. Mandarin uses a round citrus fill. Persimmon and pomegranate use the drawings already shared with other packs. Pecan uses the almond drawing with the darker, ridged pecan fill. Olive uses the green olive fill.
 
 Fact sheets cite the publisher for that crop and otherwise show only the month grid.

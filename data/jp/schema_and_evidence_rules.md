@@ -19,9 +19,11 @@ Fruit, vegetable, herb, and nut follow the food name, the same way the other pac
 
 Every shipped row is a harvest window for this place. Nothing was added to fill a quiet month. Rows with no shared sticker stay in `STICKER_GAPS.md` with their source months. They are not dropped as imports.
 
-Shipped: 46. Held for a drawing: 18.
+Shipped: 52. Held for a drawing: 12. Bamboo shoot, lotus root, kiwifruit, first-flush green tea, ginger, and okra joined once their stickers were drawn.
 
 Peach uses the Yamanashi window, June–September, which covers more months than the Niigata window.
+
+Bamboo shoot is MAFF's moso window, March–May; the source is national, so the fact sheet names no prefecture. Kiwifruit is the Ehime window: harvest in November, then shipped from cold store until April, as JA Ehime Taiki lists it.
 
 ## Approximate stickers
 
