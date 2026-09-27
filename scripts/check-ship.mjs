@@ -198,6 +198,7 @@ const archetypeMap = JSON.parse(readFileSync(join(root, "art/ARCHETYPES.md"), "u
 const knownArchetypes = new Set(archetypeIds());
 for (const entry of archetypeMap) check(knownArchetypes.has(entry.archetype), `art/ARCHETYPES.md ${entry.food} names unknown archetype ${entry.archetype}`);
 check(gapList.includes("### Peanut") && !gapList.includes("plátano") && !gapList.includes("Garlic Scapes") && gapList.includes("## California (`ca`)") && gapList.includes("### Pistachio") && gapList.includes("### Jujube") && gapList.includes("### Pummelo"), "sticker gap list");
+check(!site.sprite.includes("undefined"), "a sticker binding is missing a colour its drawing uses");
 
 check(resolvePackId(null, registry) === "uk", "missing country falls back to uk");
 check(resolvePackId("fr", registry) === "fr" && resolvePackId("es", registry) === "es" && resolvePackId("on", registry) === "on" && resolvePackId("it", registry) === "it" && resolvePackId("fl", registry) === "fl" && resolvePackId("ca", registry) === "ca", "shipped country ids");

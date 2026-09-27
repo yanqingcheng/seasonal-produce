@@ -333,7 +333,8 @@
     "colours": {
       "body": "#fff0a6",
       "tip": "#ff86a8",
-      "leaf": "#52c26b"
+      "leaf": "#52c26b",
+      "ring": "#e9b87a"
     }
   },
   "Kiwifruit": {

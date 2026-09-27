@@ -212,7 +212,9 @@
     "archetype": "okra",
     "colours": {
       "body": "#52c26b",
-      "cap": "#a8e05a"
+      "cap": "#a8e05a",
+      "flesh": "#c9f0b0",
+      "seed": "#fffdf6"
     }
   },
   "Papaya": {
