@@ -293,5 +293,28 @@
       "spots": "#e9b87a",
       "pair": true
     }
+  },
+  "Almond": {
+    "archetype": "almond",
+    "colours": {
+      "body": "#d0925a",
+      "body2": "#9a5a34"
+    }
+  },
+  "Sunflower seed": {
+    "archetype": "sunflower",
+    "colours": {
+      "body": "#ffd84a",
+      "disc": "#7a4a2c",
+      "seed": "#e9b87a",
+      "stem": "#3bb273",
+      "leaf": "#52c26b"
+    }
+  },
+  "Walnut": {
+    "archetype": "walnut",
+    "colours": {
+      "body": "#d49a5e"
+    }
   }
 }

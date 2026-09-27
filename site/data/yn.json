@@ -45,6 +45,18 @@
       "label": "Fruit",
       "one": "fruit",
       "plural": "fruit"
+    },
+    {
+      "id": "herb",
+      "label": "Herb",
+      "one": "herb",
+      "plural": "herbs"
+    },
+    {
+      "id": "nut",
+      "label": "Nut",
+      "one": "nut",
+      "plural": "nuts"
     }
   ],
   "attribution": "Yunnan harvest months from 云南网 and 云南省农业农村厅.",
@@ -154,6 +166,52 @@
       "regions_notes": "Harvest months for Menglian, Pu'er, Yunnan.",
       "specialist_sources": [
         "春城晚报"
+      ]
+    },
+    {
+      "item": "Bamboo shoot",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Daguan, Zhaotong, Yunnan.",
+      "specialist_sources": [
+        "人民网 云南"
+      ]
+    },
+    {
+      "item": "Banana",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Yunnan.",
+      "specialist_sources": [
+        "新华财经"
       ]
     },
     {
@@ -364,6 +422,29 @@
       ]
     },
     {
+      "item": "Coffee cherry",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Pu'er, Yunnan.",
+      "specialist_sources": [
+        "中国热带农业科学院"
+      ]
+    },
+    {
       "item": "cucumber",
       "category": "vegetable",
       "months": [
@@ -384,6 +465,52 @@
       "regions_notes": "Harvest months for Yunnan.",
       "specialist_sources": [
         "云南省农业农村厅"
+      ]
+    },
+    {
+      "item": "Dragon fruit",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Yakou village, Yunnan.",
+      "specialist_sources": [
+        "中国新闻网云南"
+      ]
+    },
+    {
+      "item": "Edible rose",
+      "category": "herb",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Huangguan community, Yunnan.",
+      "specialist_sources": [
+        "云南季"
       ]
     },
     {
@@ -456,6 +583,29 @@
       ]
     },
     {
+      "item": "Green Sichuan pepper",
+      "category": "herb",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Zhenyuan, Pu'er, Yunnan.",
+      "specialist_sources": [
+        "人民网 云南"
+      ]
+    },
+    {
       "item": "Indian jujube / green jujube",
       "category": "fruit",
       "months": [
@@ -476,6 +626,30 @@
       "regions_notes": "Harvest months for Yuanmou, Chuxiong, Yunnan.",
       "specialist_sources": [
         "云南网"
+      ]
+    },
+    {
+      "item": "Kiwifruit",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Pingbian, Honghe, Yunnan.",
+      "specialist_sources": [
+        "中国网",
+        "屏边苗族自治县人民政府"
       ]
     },
     {
@@ -522,6 +696,29 @@
       "regions_notes": "Harvest months for Yunnan.",
       "specialist_sources": [
         "云南省农业农村厅"
+      ]
+    },
+    {
+      "item": "Lychee",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Pingbian, Honghe, Yunnan.",
+      "specialist_sources": [
+        "腾讯新闻"
       ]
     },
     {
@@ -614,6 +811,29 @@
       "regions_notes": "Harvest months for Yuanmou, Chuxiong, Yunnan.",
       "specialist_sources": [
         "昆明信息港"
+      ]
+    },
+    {
+      "item": "Passion fruit",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Yunnan.",
+      "specialist_sources": [
+        "云南网"
       ]
     },
     {
@@ -778,6 +998,52 @@
       ]
     },
     {
+      "item": "Sugarcane",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Gengma, Lincang, Yunnan.",
+      "specialist_sources": [
+        "云南省农业农村厅"
+      ]
+    },
+    {
+      "item": "Tea",
+      "category": "herb",
+      "months": [
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Simao, Pu'er, Yunnan.",
+      "specialist_sources": [
+        "云南省农业农村厅"
+      ]
+    },
+    {
       "item": "Tomato",
       "category": "vegetable",
       "months": [
@@ -798,6 +1064,29 @@
       "regions_notes": "Harvest months for Yuanmou, Chuxiong, Yunnan.",
       "specialist_sources": [
         "元谋县人民政府"
+      ]
+    },
+    {
+      "item": "Walnut",
+      "category": "nut",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Dali Prefecture, Yunnan.",
+      "specialist_sources": [
+        "大理州核桃采收技术指南"
       ]
     },
     {
@@ -845,6 +1134,29 @@
       "specialist_sources": [
         "云南日报"
       ]
+    },
+    {
+      "item": "Young ginger",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Mengzi, Honghe, Yunnan.",
+      "specialist_sources": [
+        "蒙自市人民政府"
+      ]
     }
   ],
   "recipes": [],
@@ -854,7 +1166,7 @@
       "name": "January",
       "counts": {
         "peak": 0,
-        "in": 12,
+        "in": 17,
         "edge": 0
       },
       "lead": null,
@@ -866,30 +1178,39 @@
         "Tomato",
         "broad beans",
         "Avocado",
+        "Banana",
+        "Coffee cherry",
+        "Young ginger",
+        "Sugarcane",
         "Cherry tomato",
         "Pea shoots",
         "Citrus",
-        "Indian jujube / green jujube",
-        "Loquat"
+        "Indian jujube / green jujube"
       ],
       "peak": [],
       "in": [
         "Avocado",
+        "Banana",
         "blueberry",
         "broad beans",
         "Cherry tomato",
         "Citrus",
+        "Coffee cherry",
         "cucumber",
         "garlic",
         "Indian jujube / green jujube",
         "Loquat",
+        "Passion fruit",
         "Pea shoots",
         "strawberry",
-        "Tomato"
+        "Sugarcane",
+        "Tomato",
+        "Young ginger"
       ],
       "edge": [],
       "arrivals": [
-        "garlic"
+        "garlic",
+        "Sugarcane"
       ],
       "farewells": [
         "Citrus"
@@ -897,18 +1218,18 @@
       "quiet": [
         "garlic",
         "blueberry",
-        "Tomato",
         "broad beans",
-        "Avocado"
+        "Banana",
+        "Passion fruit"
       ],
-      "blurb": "January has <strong>12</strong> Yunnan crops in season. Much the same list as December."
+      "blurb": "January has <strong>17</strong> Yunnan crops in season. Much the same list as December."
     },
     {
       "key": "feb",
       "name": "February",
       "counts": {
         "peak": 0,
-        "in": 14,
+        "in": 19,
         "edge": 0
       },
       "lead": null,
@@ -922,28 +1243,34 @@
         "broad beans",
         "Morel",
         "Avocado",
+        "Banana",
         "Chinese bayberry",
-        "Cherry tomato",
-        "Pea shoots",
-        "Indian jujube / green jujube",
-        "Loquat"
+        "Coffee cherry",
+        "Young ginger",
+        "Sugarcane",
+        "Cherry tomato"
       ],
       "peak": [],
       "in": [
         "Avocado",
+        "Banana",
         "blueberry",
         "broad beans",
         "cauliflower",
         "Cherry tomato",
         "Chinese bayberry",
+        "Coffee cherry",
         "cucumber",
         "garlic",
         "Indian jujube / green jujube",
         "Loquat",
         "Morel",
+        "Passion fruit",
         "Pea shoots",
         "strawberry",
-        "Tomato"
+        "Sugarcane",
+        "Tomato",
+        "Young ginger"
       ],
       "edge": [],
       "arrivals": [
@@ -954,23 +1281,24 @@
       "farewells": [
         "Avocado",
         "broad beans",
-        "garlic"
+        "garlic",
+        "Passion fruit"
       ],
       "quiet": [
         "garlic",
         "cucumber",
+        "Tomato",
         "cauliflower",
-        "Morel",
-        "Indian jujube / green jujube"
+        "Young ginger"
       ],
-      "blurb": "February has <strong>14</strong> Yunnan crops in season. Much the same list as January."
+      "blurb": "February has <strong>19</strong> Yunnan crops in season. Much the same list as January."
     },
     {
       "key": "mar",
       "name": "March",
       "counts": {
         "peak": 0,
-        "in": 12,
+        "in": 16,
         "edge": 0
       },
       "lead": null,
@@ -982,7 +1310,10 @@
         "strawberry",
         "Tomato",
         "Morel",
+        "Banana",
         "Chinese bayberry",
+        "Coffee cherry",
+        "Sugarcane",
         "Cherry tomato",
         "Pea shoots",
         "Indian jujube / green jujube",
@@ -990,9 +1321,11 @@
       ],
       "peak": [],
       "in": [
+        "Banana",
         "blueberry",
         "Cherry tomato",
         "Chinese bayberry",
+        "Coffee cherry",
         "cucumber",
         "Indian jujube / green jujube",
         "Loquat",
@@ -1000,33 +1333,104 @@
         "Onion",
         "Pea shoots",
         "strawberry",
+        "Sugarcane",
+        "Tea",
         "Tomato",
         "Watermelon"
       ],
       "edge": [],
       "arrivals": [
         "Onion",
+        "Tea",
         "Watermelon"
       ],
       "farewells": [
+        "Banana",
+        "Coffee cherry",
         "Indian jujube / green jujube",
-        "Pea shoots",
-        "Tomato"
+        "Pea shoots"
       ],
       "quiet": [
         "Watermelon",
         "Onion",
+        "Tomato",
         "Morel",
-        "Cherry tomato",
-        "Pea shoots"
+        "Indian jujube / green jujube"
       ],
-      "blurb": "March has <strong>12</strong> Yunnan crops in season. Much the same list as February."
+      "blurb": "March has <strong>16</strong> Yunnan crops in season. Much the same list as February."
     },
     {
       "key": "apr",
       "name": "April",
       "counts": {
         "peak": 0,
+        "in": 16,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "cherry",
+        "peach",
+        "Watermelon",
+        "Onion",
+        "blueberry",
+        "cucumber",
+        "strawberry",
+        "chillies",
+        "Bamboo shoot",
+        "Morel",
+        "Chinese bayberry",
+        "Sugarcane",
+        "Cherry tomato",
+        "Loquat",
+        "Tea"
+      ],
+      "peak": [],
+      "in": [
+        "Bamboo shoot",
+        "blueberry",
+        "cherry",
+        "Cherry tomato",
+        "chillies",
+        "Chinese bayberry",
+        "cucumber",
+        "Edible rose",
+        "Loquat",
+        "Morel",
+        "Onion",
+        "peach",
+        "strawberry",
+        "Sugarcane",
+        "Tea",
+        "Watermelon"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Bamboo shoot",
+        "cherry",
+        "chillies",
+        "Edible rose"
+      ],
+      "farewells": [
+        "blueberry",
+        "Cherry tomato",
+        "cucumber",
+        "Loquat"
+      ],
+      "quiet": [
+        "cherry",
+        "peach",
+        "Bamboo shoot",
+        "Sugarcane",
+        "Loquat"
+      ],
+      "blurb": "April has <strong>16</strong> Yunnan crops in season. Much the same list as March."
+    },
+    {
+      "key": "may",
+      "name": "May",
+      "counts": {
+        "peak": 0,
         "in": 12,
         "edge": 0
       },
@@ -1034,85 +1438,38 @@
       "wheel": [
         "cherry",
         "peach",
-        "Watermelon",
-        "Onion",
-        "blueberry",
-        "cucumber",
-        "strawberry",
-        "chillies",
-        "Morel",
-        "Chinese bayberry",
-        "Cherry tomato",
-        "Loquat"
-      ],
-      "peak": [],
-      "in": [
-        "blueberry",
-        "cherry",
-        "Cherry tomato",
-        "chillies",
-        "Chinese bayberry",
-        "cucumber",
-        "Loquat",
-        "Morel",
-        "Onion",
-        "peach",
-        "strawberry",
-        "Watermelon"
-      ],
-      "edge": [],
-      "arrivals": [
-        "cherry",
-        "chillies",
-        "peach"
-      ],
-      "farewells": [
-        "blueberry",
-        "Cherry tomato",
-        "cucumber",
-        "Loquat"
-      ],
-      "quiet": [
-        "cherry",
-        "peach",
-        "Watermelon",
-        "Chinese bayberry",
-        "Loquat"
-      ],
-      "blurb": "April has <strong>12</strong> Yunnan crops in season. Much the same list as March."
-    },
-    {
-      "key": "may",
-      "name": "May",
-      "counts": {
-        "peak": 0,
-        "in": 7,
-        "edge": 0
-      },
-      "lead": null,
-      "wheel": [
-        "cherry",
-        "peach",
         "Onion",
         "chillies",
         "Chinese bayberry",
+        "Lychee",
+        "Sugarcane",
         "Lemon",
-        "Green bean"
+        "Green bean",
+        "Tea",
+        "Green Sichuan pepper",
+        "Edible rose"
       ],
       "peak": [],
       "in": [
         "cherry",
         "chillies",
         "Chinese bayberry",
+        "Edible rose",
         "Green bean",
+        "Green Sichuan pepper",
         "Lemon",
+        "Lychee",
         "Onion",
-        "peach"
+        "peach",
+        "Sugarcane",
+        "Tea"
       ],
       "edge": [],
       "arrivals": [
         "Green bean",
-        "Lemon"
+        "Green Sichuan pepper",
+        "Lemon",
+        "Lychee"
       ],
       "farewells": [
         "cherry",
@@ -1122,19 +1479,19 @@
       ],
       "quiet": [
         "cherry",
-        "peach",
         "Onion",
         "Chinese bayberry",
-        "Green bean"
+        "Green bean",
+        "Tea"
       ],
-      "blurb": "May has <strong>7</strong> Yunnan crops in season. Much the same list as April."
+      "blurb": "May has <strong>12</strong> Yunnan crops in season. Much the same list as April."
     },
     {
       "key": "jun",
       "name": "June",
       "counts": {
         "peak": 0,
-        "in": 6,
+        "in": 10,
         "edge": 0
       },
       "lead": null,
@@ -1142,21 +1499,30 @@
         "pear",
         "Grape",
         "chillies",
+        "Lychee",
         "Lemon",
         "wild mushrooms",
-        "Green bean"
+        "Dragon fruit",
+        "Green bean",
+        "Green Sichuan pepper",
+        "Edible rose"
       ],
       "peak": [],
       "in": [
         "chillies",
+        "Dragon fruit",
+        "Edible rose",
         "Grape",
         "Green bean",
+        "Green Sichuan pepper",
         "Lemon",
+        "Lychee",
         "pear",
         "wild mushrooms"
       ],
       "edge": [],
       "arrivals": [
+        "Dragon fruit",
         "Grape",
         "pear",
         "wild mushrooms"
@@ -1166,17 +1532,17 @@
         "pear",
         "Grape",
         "chillies",
-        "Lemon",
-        "wild mushrooms"
+        "Lychee",
+        "Dragon fruit"
       ],
-      "blurb": "June has <strong>6</strong> Yunnan crops in season. The leanest stretch of the year."
+      "blurb": "June has <strong>10</strong> Yunnan crops in season. The leanest stretch of the year."
     },
     {
       "key": "jul",
       "name": "July",
       "counts": {
         "peak": 0,
-        "in": 11,
+        "in": 17,
         "edge": 0
       },
       "lead": null,
@@ -1186,23 +1552,33 @@
         "apple",
         "Grape",
         "chillies",
+        "Kiwifruit",
         "Matsutake",
+        "Lychee",
         "Pepino melon",
         "Lemon",
         "wild mushrooms",
         "Citrus",
-        "Green bean"
+        "Green bean",
+        "Dragon fruit",
+        "Passion fruit"
       ],
       "peak": [],
       "in": [
         "apple",
         "chillies",
         "Citrus",
+        "Dragon fruit",
+        "Edible rose",
         "Grape",
         "Green bean",
+        "Green Sichuan pepper",
+        "Kiwifruit",
         "Lemon",
+        "Lychee",
         "mango",
         "Matsutake",
+        "Passion fruit",
         "pear",
         "Pepino melon",
         "wild mushrooms"
@@ -1211,25 +1587,25 @@
       "arrivals": [
         "apple",
         "Citrus",
-        "mango",
-        "Matsutake"
+        "Kiwifruit",
+        "mango"
       ],
       "farewells": [],
       "quiet": [
         "mango",
         "pear",
-        "Matsutake",
-        "Pepino melon",
-        "Citrus"
+        "Kiwifruit",
+        "Lemon",
+        "Green Sichuan pepper"
       ],
-      "blurb": "July has <strong>11</strong> Yunnan crops in season. Much the same list as June."
+      "blurb": "July has <strong>17</strong> Yunnan crops in season. Much the same list as June."
     },
     {
       "key": "aug",
       "name": "August",
       "counts": {
         "peak": 0,
-        "in": 14,
+        "in": 20,
         "edge": 0
       },
       "lead": null,
@@ -1241,24 +1617,31 @@
         "Grape",
         "Tomato",
         "chillies",
+        "Kiwifruit",
         "Matsutake",
+        "Lychee",
         "Pomegranate",
         "Pepino melon",
         "Lemon",
         "wild mushrooms",
-        "Citrus",
-        "Green bean"
+        "Citrus"
       ],
       "peak": [],
       "in": [
         "apple",
         "chillies",
         "Citrus",
+        "Dragon fruit",
+        "Edible rose",
         "Grape",
         "Green bean",
+        "Green Sichuan pepper",
+        "Kiwifruit",
         "Lemon",
+        "Lychee",
         "mango",
         "Matsutake",
+        "Passion fruit",
         "pear",
         "Pepino melon",
         "Pomegranate",
@@ -1272,22 +1655,25 @@
         "Potato",
         "Tomato"
       ],
-      "farewells": [],
+      "farewells": [
+        "Kiwifruit",
+        "Lychee"
+      ],
       "quiet": [
         "Potato",
-        "mango",
-        "Tomato",
+        "chillies",
         "Matsutake",
-        "Pomegranate"
+        "wild mushrooms",
+        "Edible rose"
       ],
-      "blurb": "August has <strong>14</strong> Yunnan crops in season. Much the same list as July."
+      "blurb": "August has <strong>20</strong> Yunnan crops in season. Much the same list as July."
     },
     {
       "key": "sep",
       "name": "September",
       "counts": {
         "peak": 0,
-        "in": 15,
+        "in": 20,
         "edge": 0
       },
       "lead": null,
@@ -1306,29 +1692,35 @@
         "wild mushrooms",
         "Citrus",
         "Green bean",
-        "Indian jujube / green jujube"
+        "Dragon fruit"
       ],
       "peak": [],
       "in": [
         "apple",
         "chillies",
         "Citrus",
+        "Dragon fruit",
+        "Edible rose",
         "Grape",
         "Green bean",
+        "Green Sichuan pepper",
         "Indian jujube / green jujube",
         "Lemon",
         "mango",
         "Matsutake",
+        "Passion fruit",
         "pear",
         "Pepino melon",
         "Pomegranate",
         "Potato",
         "Tomato",
+        "Walnut",
         "wild mushrooms"
       ],
       "edge": [],
       "arrivals": [
-        "Indian jujube / green jujube"
+        "Indian jujube / green jujube",
+        "Walnut"
       ],
       "farewells": [
         "Matsutake",
@@ -1338,18 +1730,18 @@
       "quiet": [
         "Potato",
         "apple",
-        "chillies",
-        "Pepino melon",
-        "wild mushrooms"
+        "Pomegranate",
+        "Citrus",
+        "Walnut"
       ],
-      "blurb": "September has <strong>15</strong> Yunnan crops in season. Much the same list as August."
+      "blurb": "September has <strong>20</strong> Yunnan crops in season. Much the same list as August."
     },
     {
       "key": "oct",
       "name": "October",
       "counts": {
         "peak": 0,
-        "in": 15,
+        "in": 21,
         "edge": 0
       },
       "lead": null,
@@ -1362,58 +1754,66 @@
         "chillies",
         "Pomegranate",
         "Pepino melon",
+        "Young ginger",
         "Lemon",
         "Pea shoots",
         "wild mushrooms",
         "Citrus",
         "Green bean",
-        "Indian jujube / green jujube",
-        "Loquat"
+        "Dragon fruit"
       ],
       "peak": [],
       "in": [
         "apple",
         "chillies",
         "Citrus",
+        "Dragon fruit",
+        "Edible rose",
         "Grape",
         "Green bean",
+        "Green Sichuan pepper",
         "Indian jujube / green jujube",
         "Lemon",
         "Loquat",
         "mango",
+        "Passion fruit",
         "Pea shoots",
         "Pepino melon",
         "Pomegranate",
         "strawberry",
         "Tomato",
-        "wild mushrooms"
+        "Walnut",
+        "wild mushrooms",
+        "Young ginger"
       ],
       "edge": [],
       "arrivals": [
         "Loquat",
         "Pea shoots",
-        "strawberry"
+        "strawberry",
+        "Young ginger"
       ],
       "farewells": [
         "Grape",
+        "Green Sichuan pepper",
         "Lemon",
         "mango"
       ],
       "quiet": [
-        "apple",
+        "mango",
         "Grape",
         "Pomegranate",
-        "Lemon",
-        "Citrus"
+        "Pepino melon",
+        "Pea shoots"
       ],
-      "blurb": "October has <strong>15</strong> Yunnan crops in season. Much the same list as September."
+      "blurb": "October has <strong>21</strong> Yunnan crops in season. The fullest month on the wheel."
     },
     {
       "key": "nov",
       "name": "November",
       "counts": {
         "peak": 0,
-        "in": 16,
+        "in": 21,
         "edge": 0
       },
       "lead": null,
@@ -1426,13 +1826,13 @@
         "Chu orange",
         "Avocado",
         "Pomegranate",
+        "Coffee cherry",
+        "Young ginger",
         "Pepino melon",
         "Cherry tomato",
         "Pea shoots",
         "wild mushrooms",
-        "Citrus",
-        "Green bean",
-        "Indian jujube / green jujube"
+        "Citrus"
       ],
       "peak": [],
       "in": [
@@ -1442,45 +1842,50 @@
         "chillies",
         "Chu orange",
         "Citrus",
+        "Coffee cherry",
         "cucumber",
+        "Dragon fruit",
+        "Edible rose",
         "Green bean",
         "Indian jujube / green jujube",
         "Loquat",
+        "Passion fruit",
         "Pea shoots",
         "Pepino melon",
         "Pomegranate",
         "strawberry",
         "Tomato",
-        "wild mushrooms"
+        "wild mushrooms",
+        "Young ginger"
       ],
       "edge": [],
       "arrivals": [
         "Avocado",
         "Cherry tomato",
         "Chu orange",
-        "cucumber"
+        "Coffee cherry"
       ],
       "farewells": [
         "apple",
+        "Edible rose",
         "Green bean",
-        "Pepino melon",
-        "Pomegranate"
+        "Pepino melon"
       ],
       "quiet": [
-        "cucumber",
+        "apple",
         "strawberry",
         "Chu orange",
         "Avocado",
-        "Green bean"
+        "Cherry tomato"
       ],
-      "blurb": "November has <strong>16</strong> Yunnan crops in season. The fullest month on the wheel."
+      "blurb": "November has <strong>21</strong> Yunnan crops in season. The fullest month on the wheel."
     },
     {
       "key": "dec",
       "name": "December",
       "counts": {
         "peak": 0,
-        "in": 12,
+        "in": 17,
         "edge": 0
       },
       "lead": null,
@@ -1492,43 +1897,53 @@
         "chillies",
         "broad beans",
         "Avocado",
+        "Banana",
+        "Coffee cherry",
+        "Young ginger",
         "Cherry tomato",
         "Pea shoots",
         "Citrus",
-        "Indian jujube / green jujube",
-        "Loquat"
+        "Dragon fruit",
+        "Indian jujube / green jujube"
       ],
       "peak": [],
       "in": [
         "Avocado",
+        "Banana",
         "blueberry",
         "broad beans",
         "Cherry tomato",
         "chillies",
         "Citrus",
+        "Coffee cherry",
         "cucumber",
+        "Dragon fruit",
         "Indian jujube / green jujube",
         "Loquat",
+        "Passion fruit",
         "Pea shoots",
         "strawberry",
-        "Tomato"
+        "Tomato",
+        "Young ginger"
       ],
       "edge": [],
       "arrivals": [
+        "Banana",
         "blueberry",
         "broad beans"
       ],
       "farewells": [
-        "chillies"
+        "chillies",
+        "Dragon fruit"
       ],
       "quiet": [
         "blueberry",
+        "cucumber",
         "strawberry",
-        "broad beans",
-        "Cherry tomato",
-        "Pea shoots"
+        "Avocado",
+        "Coffee cherry"
       ],
-      "blurb": "December has <strong>12</strong> Yunnan crops in season. Much the same list as November."
+      "blurb": "December has <strong>17</strong> Yunnan crops in season. Much the same list as November."
     }
   ]
 }

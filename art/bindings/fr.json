@@ -161,10 +161,9 @@
     }
   },
   "noix": {
-    "archetype": "chestnut",
+    "archetype": "walnut",
     "colours": {
-      "body": "#7a4a2c",
-      "body2": "#e9b87a"
+      "body": "#d49a5e"
     }
   },
   "oignon": {

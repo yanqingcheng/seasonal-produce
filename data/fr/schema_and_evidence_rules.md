@@ -41,6 +41,6 @@ Kept with a note, not dropped: **cresson** is in season all 12 months. Cultivate
 
 ## Approximate stickers
 
-Shared archetypes, not new drawings. Noix uses the chestnut drawing. Melon uses a round fruit. Pastèque uses a green striped oval. Raisin uses the currant bunch. Courge and potiron both use the pumpkin drawing, with different fills, and stay separate because ADEME lists both.
+Shared archetypes, not new drawings. Noix uses the walnut drawing. Melon uses a round fruit. Pastèque uses a green striped oval. Raisin uses the currant bunch. Courge and potiron both use the pumpkin drawing, with different fills, and stay separate because ADEME lists both.
 
 Fact sheets cite the ADEME tool and otherwise show only the month grid.

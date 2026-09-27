@@ -222,5 +222,88 @@
       "cleft": true,
       "leaf": "#52c26b"
     }
+  },
+  "Arrowhead": {
+    "archetype": "corm",
+    "colours": {
+      "body": "#e8e1f5",
+      "body2": "#8e4dd6",
+      "sprout": "#fff0a6",
+      "beak": true
+    }
+  },
+  "Garlic-chive flower stems": {
+    "archetype": "scape",
+    "colours": {
+      "body": "#3bb273",
+      "bud": "#c9f0b0",
+      "band": "#ffc93c",
+      "straight": true
+    }
+  },
+  "Ginkgo nut": {
+    "archetype": "ginkgo",
+    "colours": {
+      "body": "#fff0a6",
+      "leaf": "#ffd84a",
+      "stem": "#b0703f"
+    }
+  },
+  "Hardy kiwi": {
+    "archetype": "kiwi",
+    "colours": {
+      "skin": "#3bb273",
+      "body": "#a8e05a",
+      "core": "#fff0a6"
+    }
+  },
+  "Kiwifruit": {
+    "archetype": "kiwi",
+    "colours": {
+      "skin": "#b0703f",
+      "body": "#52c26b",
+      "core": "#fff6dc",
+      "fuzz": true
+    }
+  },
+  "Lotus root": {
+    "archetype": "lotusroot",
+    "colours": {
+      "body": "#e9b87a",
+      "flesh": "#fff6dc",
+      "hole": "#e9b87a"
+    }
+  },
+  "Lotus seed pod": {
+    "archetype": "lotuspod",
+    "colours": {
+      "body": "#52c26b",
+      "top": "#a8e05a",
+      "seed": "#c9f0b0"
+    }
+  },
+  "Red water caltrop": {
+    "archetype": "caltrop",
+    "colours": {
+      "body": "#c2255c",
+      "body2": "#7a4a2c"
+    }
+  },
+  "Spring bamboo shoot": {
+    "archetype": "bambooshoot",
+    "colours": {
+      "body": "#e9b87a",
+      "body2": "#b0703f",
+      "tip": "#a8e05a",
+      "base": "#fff6dc"
+    }
+  },
+  "Water chestnut": {
+    "archetype": "corm",
+    "colours": {
+      "body": "#7a4a2c",
+      "body2": "#4a2a1c",
+      "sprout": "#b0703f"
+    }
   }
 }

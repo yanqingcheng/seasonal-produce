@@ -403,5 +403,32 @@
       "stem": "#3bb273",
       "leaf": "#52c26b"
     }
+  },
+  "chirimoya": {
+    "archetype": "custardapple",
+    "colours": {
+      "body": "#b8e39a",
+      "body2": "#3bb273",
+      "stem": "#7a4a2c",
+      "leaf": "#3bb273"
+    }
+  },
+  "kiwi": {
+    "archetype": "kiwi",
+    "colours": {
+      "skin": "#b0703f",
+      "body": "#52c26b",
+      "core": "#fff6dc",
+      "fuzz": true
+    }
+  },
+  "plátano": {
+    "archetype": "banana",
+    "colours": {
+      "body": "#ffd84a",
+      "body2": "#ffb627",
+      "tip": "#7a4a2c",
+      "stem": "#a8e05a"
+    }
   }
 }

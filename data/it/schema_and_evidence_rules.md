@@ -23,9 +23,9 @@ The page groups FRUTTA and VERDURA. Frutta → fruit. Verdura → vegetable, inc
 
 ## Domestic filter
 
-Every row is an Italian crop. Kiwi stays in the Italian season (Lazio grows it) but is held for a drawing, not dropped as an import. No row was removed as import-only. Nothing tropical and flat across all twelve months is on this list.
+Every row is an Italian crop. Kiwi stays in the Italian season (Lazio grows it) and ships on the kiwi sticker. It was never an import drop. No row was removed as import-only. Nothing tropical and flat across all twelve months is on this list.
 
-Shipped: 50. Held for a drawing: kiwi (`STICKER_GAPS.md`).
+Shipped: 51. Held for a drawing: none.
 
 One shoulder month is not shipped. Carciofi is listed January–April, absent in May, and listed again for June alone. June is dropped so the wheel shows January–April without a hole. May is not filled in. The June cell remains in `primary_months.csv`.
 

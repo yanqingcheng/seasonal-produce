@@ -19,7 +19,7 @@ Fruit, vegetable, herb, and nut follow the food name, the same way the other pac
 
 Every shipped row is a harvest window for this place. Nothing was added to fill a quiet month. Rows with no shared sticker stay in `STICKER_GAPS.md` with their source months. They are not dropped as imports.
 
-Shipped: 31. Held for a drawing: 16.
+Shipped: 41. Held for a drawing: 6.
 
 ## Approximate stickers
 

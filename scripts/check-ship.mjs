@@ -5,6 +5,7 @@ import { tmpdir } from "node:os";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { assembleSite, buildPack, resolveIngredient } from "./build-data.mjs";
+import { archetypeIds } from "../art/draw.mjs";
 import { resolvePackId, searchForPack } from "../site/pack-id.js";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -163,12 +164,12 @@ for (const item of ["Ananas", "Avocat", "Banane", "Mangue (importée par avion)"
   check(!lowered(fr).includes(item.toLowerCase()), `France still lists ${item}`);
 }
 check(named(fr, "melon") && named(fr, "pastèque") && named(fr, "cresson") && named(fr, "tomate"), "France domestic rows");
-for (const item of ["plátano", "chirimoya", "kiwi"]) check(!named(es, item), `Spain sticker gap ${item} shipped without a drawing`);
+for (const item of ["plátano", "chirimoya", "kiwi"]) check(named(es, item), `Spain ${item} is not wired to its sticker`);
 check(named(es, "naranja") && named(es, "aguacate") && named(es, "mango") && named(es, "tomate"), "Spain domestic rows");
 check(named(on, "Cranberries") && named(on, "Watermelon") && named(on, "Sweet Potatoes"), "Ontario domestic rows the UK pack does not grow");
-check(named(on, "brussels sprouts") && !named(on, "Sprouts"), "Ontario sprouts held for art; Brussels sprouts stay");
-check(!named(on, "Bitter Melon/Fuzzy Squash") && !named(on, "Garlic Scapes"), "Ontario sticker gaps shipped");
-check(named(it, "pomodori") && named(it, "arance") && named(it, "meloni") && named(it, "angurie") && !named(it, "kiwi"), "Italy domestic rows; kiwi held for a drawing");
+check(named(on, "brussels sprouts") && named(on, "Sprouts"), "Ontario sprouts and Brussels sprouts are separate rows");
+check(named(on, "Bitter Melon/Fuzzy Squash") && named(on, "Garlic Scapes"), "Ontario bitter melon and garlic scapes are not wired");
+check(named(it, "pomodori") && named(it, "arance") && named(it, "meloni") && named(it, "angurie") && named(it, "kiwi"), "Italy domestic rows");
 const carciofi = it.items.find((row) => row.item === "carciofi");
 check(carciofi && carciofi.months[5] === "out" && carciofi.months.slice(0, 4).every((role) => role === "in"), "Italy dropped the isolated carciofi June shoulder");
 check(named(fl, "Orange") && named(fl, "Avocado") && named(fl, "mango") && named(fl, "Watermelon") && named(fl, "Pineberry") && named(fl, "strawberry") && !named(fl, "Peanut") && !named(fl, "Strawberry"), "Florida domestic rows; peanut held for a drawing");
@@ -192,8 +193,11 @@ const artichoke = ca.items.find((row) => row.item === "Artichoke");
 check(artichoke && artichoke.months.every((role) => role === "in"), "California artichoke stays in season all year");
 check(named(ca, "Orange") && named(ca, "Grape") && named(ca, "Tomato") && named(ca, "garlic") && named(ca, "fig") && !named(ca, "Almond") && !named(ca, "Walnut") && !named(ca, "Kiwifruit") && !named(ca, "Pistachio") && !named(ca, "Date") && !named(ca, "Olive") && !named(ca, "Pecan"), "California domestic rows; nuts, kiwi, date, and olive held for a drawing");
 check(ca.months[6].counts.in === 13, "California July in-season count");
-const gaps = readFileSync(join(root, "STICKER_GAPS.md"), "utf8");
-check(gaps.includes("plátano") && gaps.includes("Garlic Scapes") && gaps.includes("kiwi") && gaps.includes("Peanut") && gaps.includes("## California (`ca`)") && gaps.includes("### Pistachio") && gaps.includes("### Kiwifruit") && gaps.includes("### Jujube") && gaps.includes("### Pummelo"), "sticker gap list");
+const gapList = readFileSync(join(root, "STICKER_GAPS.md"), "utf8");
+const archetypeMap = JSON.parse(readFileSync(join(root, "art/ARCHETYPES.md"), "utf8").match(/```json\n([\s\S]*?)\n```/)[1]);
+const knownArchetypes = new Set(archetypeIds());
+for (const entry of archetypeMap) check(knownArchetypes.has(entry.archetype), `art/ARCHETYPES.md ${entry.food} names unknown archetype ${entry.archetype}`);
+check(gapList.includes("### Peanut") && !gapList.includes("plátano") && !gapList.includes("Garlic Scapes") && gapList.includes("## California (`ca`)") && gapList.includes("### Pistachio") && gapList.includes("### Jujube") && gapList.includes("### Pummelo"), "sticker gap list");
 
 check(resolvePackId(null, registry) === "uk", "missing country falls back to uk");
 check(resolvePackId("fr", registry) === "fr" && resolvePackId("es", registry) === "es" && resolvePackId("on", registry) === "on" && resolvePackId("it", registry) === "it" && resolvePackId("fl", registry) === "fl" && resolvePackId("ca", registry) === "ca", "shipped country ids");

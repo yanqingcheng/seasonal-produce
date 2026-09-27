@@ -47,6 +47,20 @@
       "one": "fruit",
       "plural": "fruit",
       "everyday": true
+    },
+    {
+      "id": "herb",
+      "label": "Herb",
+      "one": "herb",
+      "plural": "herbs",
+      "everyday": false
+    },
+    {
+      "id": "nut",
+      "label": "Nut",
+      "one": "nut",
+      "plural": "nuts",
+      "everyday": false
     }
   ],
   "state_roles": {
@@ -57,6 +71,6 @@
   "attribution": "Hainan harvest months from 海南省农业农村厅 and 海南日报.",
   "alias_profile": "none",
   "recipe_rule": "optional",
-  "expect_items": 17,
+  "expect_items": 37,
   "require_peak_every_month": false
 }

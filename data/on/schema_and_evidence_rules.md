@@ -21,9 +21,9 @@ The guide's produce_group is kept: fruit or vegetable. Rhubarb stays fruit becau
 
 ## Domestic filter
 
-Foodland Ontario publishes Ontario-grown availability. Cranberries, watermelon, muskmelon, and sweet potatoes stay: the guide gives them Ontario months, and the UK pack's import exclusions do not apply here. No source row was dropped as import-only. Three rows are held for a drawing (`STICKER_GAPS.md`), not because they failed the domestic test.
+Foodland Ontario publishes Ontario-grown availability. Cranberries, watermelon, muskmelon, and sweet potatoes stay: the guide gives them Ontario months, and the UK pack's import exclusions do not apply here. No source row was dropped as import-only. Bitter melon, garlic scapes, and sprouts were held for a drawing, not for failing the domestic test. They ship now that their stickers exist.
 
-Shipped: 70.
+Shipped: 73.
 
 Item names that share a sticker id with the UK pack use the UK item string, so the shared sprite matches:
 

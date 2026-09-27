@@ -26,7 +26,7 @@ The MAPA calendars are Spanish seasonal produce, not an import shop list. Citrus
 
 Year-round mayor rows (ajo, tomate, pimiento, and others) stay. The source marks those months de temporada, which matches staggered and protected Spanish production. This pack does not relabel them as imports.
 
-Shipped: 54. Held for a drawing, not dropped: 3. See `STICKER_GAPS.md`.
+Shipped: 57. Held for a drawing: none. Plátano, chirimoya, and kiwi joined once their stickers were drawn.
 
 ## Approximate stickers
 

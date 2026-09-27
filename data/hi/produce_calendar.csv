@@ -1,18 +1,38 @@
 item,category,jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec,peak_months,stored_notes,regions_notes,specialist_sources
 aubergine,vegetable,I,I,I,I,I,.,.,.,.,.,I,I,,,"Harvest months for Sanya, Hainan.",海南省农业农村厅
 Avocado,fruit,.,.,.,.,.,I,I,I,I,I,I,I,,,Harvest months for Hainan.,海南省农业农村厅
+Banana,fruit,.,I,I,I,I,I,I,I,.,.,.,.,,,Harvest months for Hainan.,中国新闻网 海南
+Bitter gourd,vegetable,I,I,I,I,.,.,.,.,.,.,I,I,,,Harvest months for Sanya winter vegetable areas.,新华网海南频道 2023-12-27
 Cherry tomato,vegetable,.,.,I,I,I,.,.,.,.,.,.,.,,,"Harvest months for Tanli, Ding'an, Hainan.",椰岛农事
 chillies,vegetable,.,.,.,I,I,I,I,I,.,.,.,.,,,"Harvest months for Longhu, Ding'an, Hainan.",海南日报
 Chinese yam,vegetable,.,.,.,.,.,.,.,.,.,I,.,.,,,"Harvest months for Hainan, Hainan.",海南日报
+Coffee,fruit,.,.,I,.,.,.,.,.,.,.,.,.,,,"Harvest months for Xinglong, Wanning, Hainan.",海南日报
 Cowpea,vegetable,I,I,I,.,.,.,.,.,.,.,.,I,,,"Harvest months for Ledong, Hainan.",海南日报
 cucumber,vegetable,I,I,I,I,I,.,.,.,.,.,I,I,,,"Harvest months for Sanya, Hainan.",海南省农业农村厅
+Dragon fruit,fruit,.,.,.,.,I,I,I,I,I,I,.,.,,,"Harvest months for Haikou, Hainan.",中国新闻网 海南
+Durian,fruit,.,.,.,.,.,I,I,.,.,.,.,.,,,"Harvest months for Sanya, Baoting, Ledong, Hainan.",中国新闻网 海南
 Green pomelo,fruit,.,.,.,.,.,I,I,I,.,.,.,.,,,Harvest months for Hainan.,海南网
+Green tea,herb,I,I,I,I,I,I,I,I,I,I,.,I,,,"Harvest months for Baisha, Hainan.",中国地理标志产品 record
 Hami melon,fruit,I,I,I,I,I,.,.,.,.,.,I,I,,,"Harvest months for Dongfang, Hainan.",中新网海南
 Indian jujube / green jujube,fruit,I,I,I,I,.,.,.,.,.,.,.,I,,,"Harvest months for Ledong and Dongfang, Hainan.",一亩田
+Jackfruit,fruit,.,.,.,I,I,I,I,I,I,.,.,.,,,Harvest months for Hainan.,腾讯新闻
+Leigong shoot,vegetable,.,.,I,I,I,I,I,I,I,I,.,.,,,Harvest months for Southern Hainan.,南海网
+Longan,fruit,I,I,I,I,I,I,.,.,.,I,I,I,,,"Harvest months for Ledong, Hainan.",海南日报
+Lychee,fruit,.,.,.,I,I,I,I,I,.,.,.,.,,,Harvest months for Hainan.,中国邮政 海南
 mango,fruit,I,I,I,I,I,.,.,.,.,.,.,I,,,Harvest months for Hainan.,海南省农业农村厅
+Okra,vegetable,I,I,I,I,I,I,.,.,.,.,I,I,,,"Harvest months for Baoting, Hainan.","海南日报, quoting 保亭县农业农村局"
 Orange,fruit,.,.,.,.,.,.,.,.,.,I,I,I,,,"Harvest months for Qiongzhong, Hainan.",海南新闻发布厅
+Papaya,fruit,I,I,I,I,I,.,.,.,.,.,I,I,,,"Harvest months for Sanya, Hainan.",海南扶贫网
+Passion fruit,fruit,.,.,I,I,I,I,I,I,I,.,.,.,,,Harvest months for Hainan.,海南扶贫网
+Peanut,nut,I,I,I,I,I,I,.,.,.,.,.,.,,,Harvest months for Hainan.,央广网 海南
+Pineapple,fruit,.,.,I,I,I,I,.,.,.,.,.,.,,,"Harvest months for Qionghai, Hainan.",椰岛农事
+Rambutan,fruit,.,.,.,.,.,I,I,I,.,.,.,.,,,"Harvest months for Baoting, Hainan.",中新网海南
+Sugar apple,fruit,.,.,.,.,.,.,I,.,.,.,.,.,,,"Harvest months for Sanya, Hainan.",海南日报客户端 via hainanfp
 Sweet potato,vegetable,I,I,I,I,I,I,I,.,.,.,I,I,,,Harvest months for Hainan.,中国日报网 海南
 sweetcorn,vegetable,I,I,I,I,.,.,.,.,.,.,I,I,,,Harvest months for Hainan.,中国经济网
 Taro,vegetable,.,.,.,.,.,.,.,I,I,I,.,.,,,"Harvest months for Zhonghe, Danzhou, Hainan.",央视网 三农频道
+Tea,herb,.,I,I,I,I,I,I,I,I,I,.,.,,,"Harvest months for Wuzhishan, Hainan.",海南在线
+Wampee,fruit,.,.,.,.,I,I,.,.,.,.,.,.,,,"Harvest months for Lingshui, Hainan.",陵水融媒
 Watermelon,fruit,.,I,I,I,.,.,.,.,.,.,.,.,,,"Harvest months for Hou'an, Wanning, Hainan.",海南扶贫网
+Wax apple,fruit,I,I,I,I,I,I,I,.,.,.,I,I,,,"Harvest months for Sanya, Hainan.",新华网 海南
 Wax gourd,vegetable,.,.,.,I,.,.,.,.,.,.,.,.,,,"Harvest months for Shangen, Wanning, Hainan.",海南在线

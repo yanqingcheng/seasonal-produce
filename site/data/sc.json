@@ -51,6 +51,12 @@
       "label": "Nut",
       "one": "nut",
       "plural": "nuts"
+    },
+    {
+      "id": "herb",
+      "label": "Herb",
+      "one": "herb",
+      "plural": "herbs"
     }
   ],
   "attribution": "Sichuan harvest months from 四川在线 and 川观新闻.",
@@ -163,6 +169,29 @@
       ]
     },
     {
+      "item": "Bitter melon",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Chengdu area, Sichuan.",
+      "specialist_sources": [
+        "川观新闻"
+      ]
+    },
+    {
       "item": "Blood orange",
       "category": "fruit",
       "months": [
@@ -206,6 +235,29 @@
       "regions_notes": "Harvest months for Sichuan.",
       "specialist_sources": [
         "四川在线"
+      ]
+    },
+    {
+      "item": "Bracken fern",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Yuexi, Liangshan, Sichuan.",
+      "specialist_sources": [
+        "四川在线·凉山"
       ]
     },
     {
@@ -439,6 +491,29 @@
       ]
     },
     {
+      "item": "Kiwifruit",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Pujiang, Sichuan.",
+      "specialist_sources": [
+        "国际果蔬报道"
+      ]
+    },
+    {
       "item": "Lemon",
       "category": "fruit",
       "months": [
@@ -482,6 +557,29 @@
       "regions_notes": "Harvest months for Luzhou, Sichuan.",
       "specialist_sources": [
         "四川在线·泸州"
+      ]
+    },
+    {
+      "item": "Lotus root",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Suining, Sichuan.",
+      "specialist_sources": [
+        "四川在线"
       ]
     },
     {
@@ -574,6 +672,29 @@
       "regions_notes": "Harvest months for Chengdu area, Sichuan.",
       "specialist_sources": [
         "成都商报"
+      ]
+    },
+    {
+      "item": "Passion fruit",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Guishansi village, Sichuan.",
+      "specialist_sources": [
+        "四川在线"
       ]
     },
     {
@@ -784,6 +905,52 @@
       ]
     },
     {
+      "item": "Sichuan pepper",
+      "category": "herb",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Hanyuan, Ya'an, Sichuan.",
+      "specialist_sources": [
+        "四川在线"
+      ]
+    },
+    {
+      "item": "Spring bamboo shoot",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Mabian, Leshan, Sichuan.",
+      "specialist_sources": [
+        "四川在线·乐山"
+      ]
+    },
+    {
       "item": "strawberry",
       "category": "fruit",
       "months": [
@@ -929,7 +1096,7 @@
       "name": "January",
       "counts": {
         "peak": 0,
-        "in": 10,
+        "in": 11,
         "edge": 0
       },
       "lead": null,
@@ -943,7 +1110,8 @@
         "Blood orange",
         "Chinese mallow",
         "Chinese yam",
-        "Pea shoots"
+        "Pea shoots",
+        "Lotus root"
       ],
       "peak": [],
       "in": [
@@ -952,6 +1120,7 @@
         "Chinese yam",
         "Chunjian mandarin",
         "Lemon",
+        "Lotus root",
         "Morel",
         "Pea shoots",
         "pomelo",
@@ -966,20 +1135,20 @@
         "Lemon"
       ],
       "quiet": [
-        "Chunjian mandarin",
+        "Morel",
         "Radish",
         "Lemon",
-        "Chinese mallow",
-        "Chinese yam"
+        "Blood orange",
+        "Lotus root"
       ],
-      "blurb": "January has <strong>10</strong> Sichuan crops in season. Much the same list as December."
+      "blurb": "January has <strong>11</strong> Sichuan crops in season. Much the same list as December."
     },
     {
       "key": "feb",
       "name": "February",
       "counts": {
         "peak": 0,
-        "in": 9,
+        "in": 10,
         "edge": 0
       },
       "lead": null,
@@ -992,7 +1161,8 @@
         "Blood orange",
         "Chinese mallow",
         "Chinese yam",
-        "Pea shoots"
+        "Pea shoots",
+        "Lotus root"
       ],
       "peak": [],
       "in": [
@@ -1000,6 +1170,7 @@
         "Chinese mallow",
         "Chinese yam",
         "Chunjian mandarin",
+        "Lotus root",
         "Morel",
         "Pea shoots",
         "pomelo",
@@ -1015,38 +1186,42 @@
       "quiet": [
         "strawberry",
         "Morel",
-        "Radish",
+        "Chunjian mandarin",
         "pomelo",
-        "Blood orange"
+        "Pea shoots"
       ],
-      "blurb": "February has <strong>9</strong> Sichuan crops in season. Much the same list as January."
+      "blurb": "February has <strong>10</strong> Sichuan crops in season. The leanest stretch of the year."
     },
     {
       "key": "mar",
       "name": "March",
       "counts": {
         "peak": 0,
-        "in": 9,
+        "in": 11,
         "edge": 0
       },
       "lead": null,
       "wheel": [
         "strawberry",
-        "Morel",
+        "Bracken fern",
         "Shiranui / dekopon",
+        "Morel",
         "Chunjian mandarin",
         "Blood orange",
         "Chinese mallow",
         "Chinese yam",
         "Pea shoots",
+        "Lotus root",
         "Water spinach"
       ],
       "peak": [],
       "in": [
         "Blood orange",
+        "Bracken fern",
         "Chinese mallow",
         "Chinese yam",
         "Chunjian mandarin",
+        "Lotus root",
         "Morel",
         "Pea shoots",
         "Shiranui / dekopon",
@@ -1055,6 +1230,7 @@
       ],
       "edge": [],
       "arrivals": [
+        "Bracken fern",
         "Shiranui / dekopon",
         "Water spinach"
       ],
@@ -1065,66 +1241,17 @@
         "Pea shoots"
       ],
       "quiet": [
-        "Morel",
+        "Bracken fern",
         "Shiranui / dekopon",
-        "Chunjian mandarin",
         "Blood orange",
-        "Chinese mallow"
+        "Chinese mallow",
+        "Water spinach"
       ],
-      "blurb": "March has <strong>9</strong> Sichuan crops in season. Much the same list as February."
+      "blurb": "March has <strong>11</strong> Sichuan crops in season. Much the same list as February."
     },
     {
       "key": "apr",
       "name": "April",
-      "counts": {
-        "peak": 0,
-        "in": 8,
-        "edge": 0
-      },
-      "lead": null,
-      "wheel": [
-        "Watermelon",
-        "strawberry",
-        "Mulberry",
-        "Loquat",
-        "Shiranui / dekopon",
-        "Blood orange",
-        "Chinese yam",
-        "Water spinach"
-      ],
-      "peak": [],
-      "in": [
-        "Blood orange",
-        "Chinese yam",
-        "Loquat",
-        "Mulberry",
-        "Shiranui / dekopon",
-        "strawberry",
-        "Water spinach",
-        "Watermelon"
-      ],
-      "edge": [],
-      "arrivals": [
-        "Loquat",
-        "Mulberry",
-        "Watermelon"
-      ],
-      "farewells": [
-        "Chinese yam",
-        "strawberry"
-      ],
-      "quiet": [
-        "Watermelon",
-        "strawberry",
-        "Mulberry",
-        "Loquat",
-        "Shiranui / dekopon"
-      ],
-      "blurb": "April has <strong>8</strong> Sichuan crops in season. The leanest stretch of the year."
-    },
-    {
-      "key": "may",
-      "name": "May",
       "counts": {
         "peak": 0,
         "in": 11,
@@ -1132,12 +1259,71 @@
       },
       "lead": null,
       "wheel": [
+        "Watermelon",
+        "strawberry",
+        "Mulberry",
+        "Spring bamboo shoot",
+        "Bracken fern",
+        "Loquat",
+        "Shiranui / dekopon",
+        "Blood orange",
+        "Chinese yam",
+        "Lotus root",
+        "Water spinach"
+      ],
+      "peak": [],
+      "in": [
+        "Blood orange",
+        "Bracken fern",
+        "Chinese yam",
+        "Loquat",
+        "Lotus root",
+        "Mulberry",
+        "Shiranui / dekopon",
+        "Spring bamboo shoot",
+        "strawberry",
+        "Water spinach",
+        "Watermelon"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Loquat",
+        "Mulberry",
+        "Spring bamboo shoot",
+        "Watermelon"
+      ],
+      "farewells": [
+        "Chinese yam",
+        "Lotus root",
+        "strawberry"
+      ],
+      "quiet": [
+        "Watermelon",
+        "strawberry",
+        "Mulberry",
+        "Spring bamboo shoot",
+        "Bracken fern"
+      ],
+      "blurb": "April has <strong>11</strong> Sichuan crops in season. Much the same list as March."
+    },
+    {
+      "key": "may",
+      "name": "May",
+      "counts": {
+        "peak": 0,
+        "in": 13,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
         "blueberry",
         "Watermelon",
         "sweetcorn",
         "Chinese cabbage",
         "apricot",
+        "Spring bamboo shoot",
         "Mulberry",
+        "Bracken fern",
         "Loquat",
         "Shiranui / dekopon",
         "Sweet cherry",
@@ -1149,10 +1335,12 @@
         "apricot",
         "Blood orange",
         "blueberry",
+        "Bracken fern",
         "Chinese cabbage",
         "Loquat",
         "Mulberry",
         "Shiranui / dekopon",
+        "Spring bamboo shoot",
         "Sweet cherry",
         "sweetcorn",
         "Water spinach",
@@ -1167,17 +1355,18 @@
       ],
       "farewells": [
         "Blood orange",
+        "Bracken fern",
         "Mulberry",
         "Shiranui / dekopon"
       ],
       "quiet": [
         "blueberry",
         "Watermelon",
-        "Chinese cabbage",
+        "sweetcorn",
         "apricot",
         "Sweet cherry"
       ],
-      "blurb": "May has <strong>11</strong> Sichuan crops in season. Much the same list as April."
+      "blurb": "May has <strong>13</strong> Sichuan crops in season. Much the same list as April."
     },
     {
       "key": "jun",
@@ -1233,7 +1422,7 @@
         "blueberry",
         "peach",
         "Chinese cabbage",
-        "apricot",
+        "Loquat",
         "Pumpkin"
       ],
       "blurb": "June has <strong>12</strong> Sichuan crops in season. Much the same list as May."
@@ -1243,7 +1432,7 @@
       "name": "July",
       "counts": {
         "peak": 0,
-        "in": 17,
+        "in": 19,
         "edge": 0
       },
       "lead": null,
@@ -1260,9 +1449,9 @@
         "Crisp plum",
         "Matsutake",
         "Sweet cherry",
+        "Passion fruit",
         "Edamame",
-        "Pumpkin",
-        "Sweet potato"
+        "Pumpkin"
       ],
       "peak": [],
       "in": [
@@ -1275,9 +1464,11 @@
         "Grape",
         "mango",
         "Matsutake",
+        "Passion fruit",
         "peach",
         "pear",
         "Pumpkin",
+        "Sichuan pepper",
         "Sweet cherry",
         "Sweet potato",
         "sweetcorn",
@@ -1302,14 +1493,14 @@
         "Crisp plum",
         "chestnut"
       ],
-      "blurb": "July has <strong>17</strong> Sichuan crops in season. The fullest month on the wheel."
+      "blurb": "July has <strong>19</strong> Sichuan crops in season. Much the same list as June."
     },
     {
       "key": "aug",
       "name": "August",
       "counts": {
         "peak": 0,
-        "in": 16,
+        "in": 20,
         "edge": 0
       },
       "lead": null,
@@ -1325,32 +1516,38 @@
         "Pomegranate",
         "Crisp plum",
         "Matsutake",
-        "Edamame",
-        "Pumpkin",
-        "Sweet potato",
-        "Water spinach"
+        "Kiwifruit",
+        "Bitter melon",
+        "Passion fruit",
+        "Edamame"
       ],
       "peak": [],
       "in": [
         "apple",
+        "Bitter melon",
         "chestnut",
         "Chinese cabbage",
         "Crisp plum",
         "Edamame",
         "Erjingtiao chilli",
         "Grape",
+        "Kiwifruit",
         "mango",
         "Matsutake",
+        "Passion fruit",
         "peach",
         "pear",
         "Pomegranate",
         "Pumpkin",
+        "Sichuan pepper",
         "Sweet potato",
         "sweetcorn",
         "Water spinach"
       ],
       "edge": [],
       "arrivals": [
+        "Bitter melon",
+        "Kiwifruit",
         "Pomegranate"
       ],
       "farewells": [
@@ -1363,16 +1560,16 @@
         "peach",
         "Erjingtiao chilli",
         "Pomegranate",
-        "Matsutake"
+        "Edamame"
       ],
-      "blurb": "August has <strong>16</strong> Sichuan crops in season. Much the same list as July."
+      "blurb": "August has <strong>20</strong> Sichuan crops in season. The fullest month on the wheel."
     },
     {
       "key": "sep",
       "name": "September",
       "counts": {
         "peak": 0,
-        "in": 15,
+        "in": 19,
         "edge": 0
       },
       "lead": null,
@@ -1387,26 +1584,30 @@
         "Pomegranate",
         "Crisp plum",
         "Matsutake",
+        "Kiwifruit",
+        "Bitter melon",
+        "Passion fruit",
         "Edamame",
-        "Pumpkin",
-        "Sweet potato",
-        "Water spinach",
-        "chestnut"
+        "Pumpkin"
       ],
       "peak": [],
       "in": [
         "apple",
+        "Bitter melon",
         "chestnut",
         "Chinese cabbage",
         "Crisp plum",
         "cucumber",
         "Edamame",
         "Grape",
+        "Kiwifruit",
         "mango",
         "Matsutake",
+        "Passion fruit",
         "Persimmon",
         "Pomegranate",
         "Pumpkin",
+        "Sichuan pepper",
         "Sweet potato",
         "sweetcorn",
         "Water spinach"
@@ -1424,19 +1625,19 @@
       ],
       "quiet": [
         "apple",
-        "Grape",
+        "Chinese cabbage",
         "Persimmon",
-        "Pomegranate",
-        "Crisp plum"
+        "Matsutake",
+        "Sichuan pepper"
       ],
-      "blurb": "September has <strong>15</strong> Sichuan crops in season. Much the same list as August."
+      "blurb": "September has <strong>19</strong> Sichuan crops in season. Much the same list as August."
     },
     {
       "key": "oct",
       "name": "October",
       "counts": {
         "peak": 0,
-        "in": 15,
+        "in": 19,
         "edge": 0
       },
       "lead": null,
@@ -1448,25 +1649,29 @@
         "Chinese cabbage",
         "mango",
         "Persimmon",
+        "Kiwifruit",
+        "Bitter melon",
         "Lemon",
+        "Passion fruit",
         "Edamame",
         "pomelo",
         "Pumpkin",
-        "Sweet potato",
-        "Chinese mallow",
-        "Pea shoots",
-        "Water spinach"
+        "Sweet potato"
       ],
       "peak": [],
       "in": [
         "apple",
+        "Bitter melon",
         "Chinese cabbage",
         "Chinese mallow",
         "cucumber",
         "Edamame",
         "Grape",
+        "Kiwifruit",
         "Lemon",
+        "Lotus root",
         "mango",
+        "Passion fruit",
         "Pea shoots",
         "Persimmon",
         "pomelo",
@@ -1479,30 +1684,30 @@
       "arrivals": [
         "Chinese mallow",
         "Lemon",
-        "Pea shoots",
-        "pomelo"
+        "Lotus root",
+        "Pea shoots"
       ],
       "farewells": [
         "Edamame",
-        "Persimmon",
-        "Pumpkin",
-        "sweetcorn"
+        "Kiwifruit",
+        "Passion fruit",
+        "Persimmon"
       ],
       "quiet": [
         "cucumber",
         "Grape",
-        "sweetcorn",
-        "Persimmon",
-        "Edamame"
+        "mango",
+        "Kiwifruit",
+        "Passion fruit"
       ],
-      "blurb": "October has <strong>15</strong> Sichuan crops in season. Much the same list as September."
+      "blurb": "October has <strong>19</strong> Sichuan crops in season. Much the same list as September."
     },
     {
       "key": "nov",
       "name": "November",
       "counts": {
         "peak": 0,
-        "in": 14,
+        "in": 16,
         "edge": 0
       },
       "lead": null,
@@ -1513,6 +1718,7 @@
         "strawberry",
         "Chinese cabbage",
         "mango",
+        "Bitter melon",
         "Lemon",
         "Radish",
         "pomelo",
@@ -1520,17 +1726,19 @@
         "Chinese mallow",
         "Chinese yam",
         "Pea shoots",
-        "Water spinach"
+        "Lotus root"
       ],
       "peak": [],
       "in": [
         "apple",
+        "Bitter melon",
         "Chinese cabbage",
         "Chinese mallow",
         "Chinese yam",
         "cucumber",
         "Grape",
         "Lemon",
+        "Lotus root",
         "mango",
         "Pea shoots",
         "pomelo",
@@ -1547,25 +1755,25 @@
       ],
       "farewells": [
         "apple",
+        "Bitter melon",
         "Chinese cabbage",
-        "cucumber",
-        "Grape"
+        "cucumber"
       ],
       "quiet": [
         "cucumber",
         "apple",
-        "mango",
-        "Sweet potato",
-        "Water spinach"
+        "Grape",
+        "Bitter melon",
+        "Sweet potato"
       ],
-      "blurb": "November has <strong>14</strong> Sichuan crops in season. Much the same list as October."
+      "blurb": "November has <strong>16</strong> Sichuan crops in season. Much the same list as October."
     },
     {
       "key": "dec",
       "name": "December",
       "counts": {
         "peak": 0,
-        "in": 10,
+        "in": 11,
         "edge": 0
       },
       "lead": null,
@@ -1579,7 +1787,8 @@
         "Blood orange",
         "Chinese mallow",
         "Chinese yam",
-        "Pea shoots"
+        "Pea shoots",
+        "Lotus root"
       ],
       "peak": [],
       "in": [
@@ -1588,6 +1797,7 @@
         "Chinese yam",
         "Chunjian mandarin",
         "Lemon",
+        "Lotus root",
         "mango",
         "Pea shoots",
         "pomelo",
@@ -1604,12 +1814,12 @@
       ],
       "quiet": [
         "mango",
+        "Chunjian mandarin",
+        "Radish",
         "Lemon",
-        "pomelo",
-        "Chinese yam",
-        "Pea shoots"
+        "Chinese yam"
       ],
-      "blurb": "December has <strong>10</strong> Sichuan crops in season. Much the same list as November."
+      "blurb": "December has <strong>11</strong> Sichuan crops in season. Much the same list as November."
     }
   ]
 }

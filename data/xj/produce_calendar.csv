@@ -1,4 +1,5 @@
 item,category,jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec,peak_months,stored_notes,regions_notes,specialist_sources
+Almond,nut,.,.,.,.,.,.,.,I,I,.,.,.,,,"Harvest months for Shache, Kashgar, Xinjiang.",莎车县人民政府
 apple,fruit,.,.,.,.,.,.,.,.,.,I,I,.,,,"Harvest months for Aksu, Xinjiang.",新疆日报
 apricot,fruit,.,.,.,.,I,I,.,.,.,.,.,.,,,"Harvest months for Turpan, Xinjiang.",天山网
 blackcurrant,fruit,.,.,.,.,.,.,I,I,.,.,.,.,,,"Harvest months for Quanzijie town, Jimsar, Changji, Xinjiang.",中新网·新疆
@@ -33,8 +34,10 @@ Pumpkin,vegetable,.,.,.,.,.,.,.,.,.,I,.,.,,,"Harvest months for Fuhai, Altay, Xi
 raspberry,fruit,.,.,.,.,.,I,I,I,I,I,.,.,,,"Harvest months for Beitun, XPCC 10th Division, Xinjiang.",中新网·兵团
 Sea buckthorn,fruit,.,.,.,.,.,.,.,.,I,.,.,.,,,"Harvest months for Habahe, Altay, Xinjiang.",阿勒泰地区行政公署
 Small white apricot,fruit,.,.,.,.,I,I,I,.,.,.,.,.,,,"Harvest months for Luntai, Bayingolin, Xinjiang.",lookxj
+Sunflower seed,nut,.,.,.,.,.,.,.,.,I,.,.,.,,,"Harvest months for Jimsar, Changji, Xinjiang.",央广网 新疆
 Tomato,vegetable,.,.,.,.,.,.,.,I,I,I,.,.,,,"Harvest months for Changji city, Xinjiang.",昌吉市人民政府
 Turnip,vegetable,.,.,.,.,.,.,.,.,.,.,I,.,,,"Harvest months for Kalpin, Aksu, Xinjiang.",百度百科
+Walnut,nut,.,.,.,.,.,.,.,.,I,.,.,.,,,"Harvest months for Aksu, Xinjiang.",阿克苏新闻网
 Watermelon,fruit,.,.,.,.,I,I,.,.,.,.,.,.,,,"Harvest months for Turpan, Xinjiang.",天山网
 White radish,vegetable,.,.,.,.,.,.,.,.,.,I,I,.,,,"Harvest months for Baicheng, Aksu, Xinjiang.",天山网
 wild mushrooms,vegetable,.,.,.,I,I,I,I,I,I,I,.,.,,,Harvest months for Xinjiang.,中新网·新疆
