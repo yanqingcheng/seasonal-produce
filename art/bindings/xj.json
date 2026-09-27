@@ -142,10 +142,11 @@
     }
   },
   "Jujube": {
-    "archetype": "oval",
+    "archetype": "jujube",
     "colours": {
       "body": "#a33b2b",
-      "cleft": true,
+      "mottle": "#d8e07a",
+      "stem": "#7a4a2c",
       "leaf": "#3bb273"
     }
   },

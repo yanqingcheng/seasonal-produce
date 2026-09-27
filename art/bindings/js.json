@@ -200,10 +200,11 @@
     }
   },
   "Winter jujube": {
-    "archetype": "oval",
+    "archetype": "jujube",
     "colours": {
-      "body": "#d8e7a4",
-      "cleft": true,
+      "body": "#c0503a",
+      "mottle": "#dfe89a",
+      "stem": "#7a4a2c",
       "leaf": "#3bb273"
     }
   },

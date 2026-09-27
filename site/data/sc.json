@@ -813,7 +813,7 @@
       ]
     },
     {
-      "item": "pomelo",
+      "item": "Zhenlong pomelo",
       "category": "fruit",
       "months": [
         "in",
@@ -1106,7 +1106,7 @@
         "Chunjian mandarin",
         "Radish",
         "Lemon",
-        "pomelo",
+        "Zhenlong pomelo",
         "Blood orange",
         "Chinese mallow",
         "Chinese yam",
@@ -1123,7 +1123,7 @@
         "Lotus root",
         "Morel",
         "Pea shoots",
-        "pomelo",
+        "Zhenlong pomelo",
         "Radish",
         "strawberry"
       ],
@@ -1157,7 +1157,7 @@
         "Morel",
         "Chunjian mandarin",
         "Radish",
-        "pomelo",
+        "Zhenlong pomelo",
         "Blood orange",
         "Chinese mallow",
         "Chinese yam",
@@ -1173,21 +1173,21 @@
         "Lotus root",
         "Morel",
         "Pea shoots",
-        "pomelo",
+        "Zhenlong pomelo",
         "Radish",
         "strawberry"
       ],
       "edge": [],
       "arrivals": [],
       "farewells": [
-        "pomelo",
+        "Zhenlong pomelo",
         "Radish"
       ],
       "quiet": [
         "strawberry",
         "Morel",
         "Chunjian mandarin",
-        "pomelo",
+        "Zhenlong pomelo",
         "Pea shoots"
       ],
       "blurb": "February has <strong>10</strong> Sichuan crops in season. The leanest stretch of the year."
@@ -1654,7 +1654,7 @@
         "Lemon",
         "Passion fruit",
         "Edamame",
-        "pomelo",
+        "Zhenlong pomelo",
         "Pumpkin",
         "Sweet potato"
       ],
@@ -1674,7 +1674,7 @@
         "Passion fruit",
         "Pea shoots",
         "Persimmon",
-        "pomelo",
+        "Zhenlong pomelo",
         "Pumpkin",
         "Sweet potato",
         "sweetcorn",
@@ -1721,7 +1721,7 @@
         "Bitter melon",
         "Lemon",
         "Radish",
-        "pomelo",
+        "Zhenlong pomelo",
         "Sweet potato",
         "Chinese mallow",
         "Chinese yam",
@@ -1741,7 +1741,7 @@
         "Lotus root",
         "mango",
         "Pea shoots",
-        "pomelo",
+        "Zhenlong pomelo",
         "Radish",
         "strawberry",
         "Sweet potato",
@@ -1783,7 +1783,7 @@
         "Chunjian mandarin",
         "Radish",
         "Lemon",
-        "pomelo",
+        "Zhenlong pomelo",
         "Blood orange",
         "Chinese mallow",
         "Chinese yam",
@@ -1800,7 +1800,7 @@
         "Lotus root",
         "mango",
         "Pea shoots",
-        "pomelo",
+        "Zhenlong pomelo",
         "Radish",
         "strawberry"
       ],

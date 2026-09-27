@@ -49,10 +49,14 @@
     }
   },
   "Green pomelo": {
-    "archetype": "round",
+    "archetype": "pummelo",
     "colours": {
-      "body": "#e7f5a4",
-      "leaf": "#52c26b"
+      "body": "#b8e07a",
+      "pore": "#7fb84a",
+      "pith": "#fffdf6",
+      "flesh": "#ffe28a",
+      "stem": "#7a4a2c",
+      "leaf": "#3bb273"
     }
   },
   "Hami melon": {
@@ -64,10 +68,11 @@
     }
   },
   "Indian jujube / green jujube": {
-    "archetype": "oval",
+    "archetype": "jujube",
     "colours": {
-      "body": "#c6e07a",
-      "cleft": true,
+      "body": "#9bd05a",
+      "mottle": "#e7f0a0",
+      "stem": "#7a4a2c",
       "leaf": "#3bb273"
     }
   },

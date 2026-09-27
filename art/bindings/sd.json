@@ -101,11 +101,12 @@
     }
   },
   "Jinsi jujube": {
-    "archetype": "oval",
+    "archetype": "jujube",
     "colours": {
-      "body": "#e7b84a",
-      "cleft": true,
-      "leaf": "#52c26b"
+      "body": "#a33b2b",
+      "mottle": "#d8e07a",
+      "stem": "#7a4a2c",
+      "leaf": "#3bb273"
     }
   },
   "Laiyang pear": {
@@ -218,10 +219,11 @@
     }
   },
   "Winter jujube": {
-    "archetype": "oval",
+    "archetype": "jujube",
     "colours": {
-      "body": "#d8e7a4",
-      "cleft": true,
+      "body": "#c0503a",
+      "mottle": "#dfe89a",
+      "stem": "#7a4a2c",
       "leaf": "#3bb273"
     }
   },
