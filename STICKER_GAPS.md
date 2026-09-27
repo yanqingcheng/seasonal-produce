@@ -262,6 +262,32 @@ No shared drawing reads as this catch.
 
 dec in
 
+## Guangdong (`gd`)
+
+### Luffa
+
+The drawn gourd read as a cucumber or courgette.
+
+jun in, jul in, aug in, sep in, oct in
+
+### Hairy gourd
+
+A fuzzy green gourd reads as a courgette or cucumber.
+
+feb in, mar in, apr in, may in
+
+### Mud crab
+
+No shared drawing reads as this catch.
+
+mar in, apr in, may in, jun in, jul in, aug in, sep in, oct in, nov in, dec in
+
+### Oyster
+
+No shared drawing reads as this catch.
+
+jan in, feb in, mar in, oct in, nov in, dec in
+
 ## Xinjiang (`xj`)
 
 ### Chickpea

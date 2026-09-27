@@ -1,0 +1,1603 @@
+{
+  "id": "gd",
+  "name": "Guangdong",
+  "locale": "en",
+  "timezone": "Asia/Shanghai",
+  "title": "The Guangdong Year-Wheel",
+  "tagline": "What's growing in Guangdong, month by month.",
+  "month_names": [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ],
+  "seasons": [
+    "Winter",
+    "Winter",
+    "Spring",
+    "Spring",
+    "Spring",
+    "Summer",
+    "Summer",
+    "Summer",
+    "Autumn",
+    "Autumn",
+    "Autumn",
+    "Winter"
+  ],
+  "categories": [
+    {
+      "id": "vegetable",
+      "label": "Vegetable",
+      "one": "vegetable",
+      "plural": "vegetables"
+    },
+    {
+      "id": "fruit",
+      "label": "Fruit",
+      "one": "fruit",
+      "plural": "fruit"
+    }
+  ],
+  "attribution": "Guangdong harvest months from Guangdong provincial, city and county governments, 南方+, 羊城晚报, 广州日报 and other Guangdong newspapers, and 中国地理标志产品 records.",
+  "copy": {
+    "this_month": "This month",
+    "back_to": "Back to {month}",
+    "new_in": "New in",
+    "last_call": "Last call",
+    "at_peak": "At peak",
+    "also_in_season": "In season",
+    "on_the_edge": "On the edge",
+    "edge_why": "Edge of the season.",
+    "hub_this_month": "this month",
+    "at_peak_short": "{n} at peak",
+    "more_in_season": "{n} more in season",
+    "hub_when_no_peak": "{n} in season",
+    "open_fact_sheet": "Open fact sheet.",
+    "recipe_badge": "recipe",
+    "months_recipe": "{month}'s recipe",
+    "made_with": "Made with",
+    "cook_it_on": "Cook it on {name}",
+    "fact_in_season": "In season",
+    "fact_peak": "Peak",
+    "fact_edge": "On the edge",
+    "stored_notes": "Stored & type notes",
+    "regions": "Regions & notes",
+    "recipe": "Recipe",
+    "specialist_sources": "Source",
+    "no_in_season": "No in-season months on the calendar",
+    "no_peak": "",
+    "all_year": "all year",
+    "in_month": "{state} in {month}",
+    "state_labels": {
+      "peak": "Peak",
+      "in": "In season",
+      "edge": "On the edge",
+      "out": "Not in season"
+    },
+    "ring_key": {
+      "peak": "Peak",
+      "in": "In season",
+      "edge": "Edge",
+      "out": "Out"
+    },
+    "proper": {},
+    "hint": "Tap a month on the wheel, or use the ← → keys.",
+    "wheel_label": "Produce year-wheel. Pick a month.",
+    "months_nav": "Months",
+    "close_sheet": "Close fact sheet",
+    "season_label": "Season: {list}",
+    "mix_label": "In season by type: {list}",
+    "blurb": {
+      "counts": "{month} has {in} Guangdong crops in season.",
+      "fullest": "The fullest month on the wheel.",
+      "leanest": "The leanest stretch of the year.",
+      "filling": "The wheel is filling up: {n} more in season than in {prev}.",
+      "winding": "Winding down: {n} fewer in season than in {prev}.",
+      "same": "Much the same list as {prev}.",
+      "lead_fruit_one": "{lead} lead the peaks ({count} of {peak}), with 1 fruit at its best.",
+      "lead_fruit": "{lead} lead the peaks ({count} of {peak}), with {n} fruits at their best.",
+      "lead_none": "{lead} lead the peaks ({count} of {peak}); no fruit is at peak.",
+      "change_threshold": 8
+    }
+  },
+  "items": [
+    {
+      "item": "aubergine",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Zhanjiang and Maoming, Guangdong.",
+      "specialist_sources": [
+        "中国食品安全网"
+      ]
+    },
+    {
+      "item": "Bamboo shoot",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Xiniu, Yingde, Qingyuan, Guangdong.",
+      "specialist_sources": [
+        "英德市人民政府"
+      ]
+    },
+    {
+      "item": "Banana",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for western Guangdong.",
+      "specialist_sources": [
+        "新华财经"
+      ]
+    },
+    {
+      "item": "Bitter melon",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Nanhai, Foshan, Guangdong.",
+      "specialist_sources": [
+        "羊城晚报"
+      ]
+    },
+    {
+      "item": "blueberry",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for greenhouse growers in Baiyun, Guangzhou.",
+      "specialist_sources": [
+        "广州日报大洋网"
+      ]
+    },
+    {
+      "item": "Carambola",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Huadu, Guangzhou, Guangdong.",
+      "specialist_sources": [
+        "广州市花都区人民政府"
+      ]
+    },
+    {
+      "item": "chillies",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Zhanjiang and Maoming, Guangdong.",
+      "specialist_sources": [
+        "中国食品安全网"
+      ]
+    },
+    {
+      "item": "Chinese olive",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Chao'an, Chaozhou, Guangdong.",
+      "specialist_sources": [
+        "南方农村报 (南方+)"
+      ]
+    },
+    {
+      "item": "Choy sum",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Guangdong.",
+      "specialist_sources": [
+        "广东省农业科学院"
+      ]
+    },
+    {
+      "item": "Cowpea",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Zhanjiang and Maoming, Guangdong.",
+      "specialist_sources": [
+        "中国食品安全网"
+      ]
+    },
+    {
+      "item": "cucumber",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Zhanjiang and Maoming, Guangdong.",
+      "specialist_sources": [
+        "中国食品安全网"
+      ]
+    },
+    {
+      "item": "Dragon fruit",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Hongshiyue, Yangjiang, Guangdong.",
+      "specialist_sources": [
+        "阳江日报"
+      ]
+    },
+    {
+      "item": "Green plum",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Puning, Guangdong.",
+      "specialist_sources": [
+        "普宁市人民政府"
+      ]
+    },
+    {
+      "item": "Guava",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Guangzhou, Guangdong.",
+      "specialist_sources": [
+        "广州市人民政府"
+      ]
+    },
+    {
+      "item": "Jinyou pomelo",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Meizhou, Guangdong.",
+      "specialist_sources": [
+        "南方+"
+      ]
+    },
+    {
+      "item": "Kiwifruit",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Heping, Heyuan, Guangdong.",
+      "specialist_sources": [
+        "中国产业经济信息网"
+      ]
+    },
+    {
+      "item": "Lettuce",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Guangzhou, Guangdong.",
+      "specialist_sources": [
+        "广州日报"
+      ]
+    },
+    {
+      "item": "Longan",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Guangzhou and Gaozhou, Guangdong.",
+      "specialist_sources": [
+        "广州市政府 (广州日报)"
+      ]
+    },
+    {
+      "item": "Loquat",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Baiyun, Guangzhou, Guangdong.",
+      "specialist_sources": [
+        "广州本地宝"
+      ]
+    },
+    {
+      "item": "Lotus root",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Zengcheng, Guangzhou, Guangdong.",
+      "specialist_sources": [
+        "南方都市报"
+      ]
+    },
+    {
+      "item": "Lychee",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Lintou, Maoming, Guangdong.",
+      "specialist_sources": [
+        "南方日报"
+      ]
+    },
+    {
+      "item": "Mandarin",
+      "category": "fruit",
+      "months": [
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Deqing, Zhaoqing, Guangdong.",
+      "specialist_sources": [
+        "天府财经"
+      ]
+    },
+    {
+      "item": "mango",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Tandou, Leizhou, Guangdong.",
+      "specialist_sources": [
+        "中国地理标志产品"
+      ]
+    },
+    {
+      "item": "Mulberry",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Nanhai, Foshan, Guangdong.",
+      "specialist_sources": [
+        "新快网"
+      ]
+    },
+    {
+      "item": "Passion fruit",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Xuwen, Zhanjiang, Guangdong.",
+      "specialist_sources": [
+        "南方日报"
+      ]
+    },
+    {
+      "item": "pear",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Lianzhou, Qingyuan, Guangdong.",
+      "specialist_sources": [
+        "新快报"
+      ]
+    },
+    {
+      "item": "Pineapple",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Xuwen, Leizhou Peninsula, Guangdong.",
+      "specialist_sources": [
+        "羊城晚报"
+      ]
+    },
+    {
+      "item": "plum",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Qianpai, Xinyi, Maoming, Guangdong.",
+      "specialist_sources": [
+        "羊城晚报"
+      ]
+    },
+    {
+      "item": "Sugarcane",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Zhanjiang and Huazhou, Guangdong.",
+      "specialist_sources": [
+        "一亩田"
+      ]
+    },
+    {
+      "item": "Sweet potato",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Suixi, Zhanjiang, Guangdong.",
+      "specialist_sources": [
+        "超赞特产网"
+      ]
+    },
+    {
+      "item": "Taro",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Zhangxi, Guangdong.",
+      "specialist_sources": [
+        "南方+"
+      ]
+    },
+    {
+      "item": "Wampee",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Guangdong.",
+      "specialist_sources": [
+        "广东省科学技术厅"
+      ]
+    },
+    {
+      "item": "Water chestnut",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Beixiang, Lechang, Shaoguan, Guangdong.",
+      "specialist_sources": [
+        "中国地理标志产品"
+      ]
+    },
+    {
+      "item": "watercress",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Harvest months for Huadu, Guangzhou, Guangdong.",
+      "specialist_sources": [
+        "广州市花都区梯面镇人民政府"
+      ]
+    }
+  ],
+  "recipes": [],
+  "months": [
+    {
+      "key": "jan",
+      "name": "January",
+      "counts": {
+        "peak": 0,
+        "in": 17,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Sweet potato",
+        "cucumber",
+        "Lettuce",
+        "Choy sum",
+        "Water chestnut",
+        "Mandarin",
+        "Sugarcane",
+        "aubergine",
+        "blueberry",
+        "chillies",
+        "Cowpea",
+        "Pineapple",
+        "Taro",
+        "watercress",
+        "Carambola"
+      ],
+      "peak": [],
+      "in": [
+        "aubergine",
+        "blueberry",
+        "Carambola",
+        "chillies",
+        "Chinese olive",
+        "Choy sum",
+        "Cowpea",
+        "cucumber",
+        "Guava",
+        "Lettuce",
+        "Mandarin",
+        "Pineapple",
+        "Sugarcane",
+        "Sweet potato",
+        "Taro",
+        "Water chestnut",
+        "watercress"
+      ],
+      "edge": [],
+      "arrivals": [
+        "blueberry",
+        "Pineapple"
+      ],
+      "farewells": [
+        "Mandarin",
+        "Sweet potato",
+        "Water chestnut"
+      ],
+      "quiet": [
+        "Sweet potato",
+        "Water chestnut",
+        "Sugarcane",
+        "Cowpea",
+        "Pineapple"
+      ],
+      "blurb": "January has <strong>17</strong> Guangdong crops in season. The fullest month on the wheel."
+    },
+    {
+      "key": "feb",
+      "name": "February",
+      "counts": {
+        "peak": 0,
+        "in": 14,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "cucumber",
+        "Lettuce",
+        "Choy sum",
+        "Sugarcane",
+        "aubergine",
+        "blueberry",
+        "chillies",
+        "Cowpea",
+        "Pineapple",
+        "Taro",
+        "watercress",
+        "Carambola",
+        "Chinese olive",
+        "Guava"
+      ],
+      "peak": [],
+      "in": [
+        "aubergine",
+        "blueberry",
+        "Carambola",
+        "chillies",
+        "Chinese olive",
+        "Choy sum",
+        "Cowpea",
+        "cucumber",
+        "Guava",
+        "Lettuce",
+        "Pineapple",
+        "Sugarcane",
+        "Taro",
+        "watercress"
+      ],
+      "edge": [],
+      "arrivals": [],
+      "farewells": [
+        "Chinese olive",
+        "Sugarcane"
+      ],
+      "quiet": [
+        "cucumber",
+        "Sugarcane",
+        "aubergine",
+        "blueberry",
+        "Guava"
+      ],
+      "blurb": "February has <strong>14</strong> Guangdong crops in season. Much the same list as January."
+    },
+    {
+      "key": "mar",
+      "name": "March",
+      "counts": {
+        "peak": 0,
+        "in": 15,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "cucumber",
+        "Lettuce",
+        "Choy sum",
+        "Green plum",
+        "Mulberry",
+        "aubergine",
+        "blueberry",
+        "chillies",
+        "Cowpea",
+        "Pineapple",
+        "Taro",
+        "watercress",
+        "Carambola",
+        "Guava",
+        "Passion fruit"
+      ],
+      "peak": [],
+      "in": [
+        "aubergine",
+        "blueberry",
+        "Carambola",
+        "chillies",
+        "Choy sum",
+        "Cowpea",
+        "cucumber",
+        "Green plum",
+        "Guava",
+        "Lettuce",
+        "Mulberry",
+        "Passion fruit",
+        "Pineapple",
+        "Taro",
+        "watercress"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Green plum",
+        "Mulberry",
+        "Passion fruit"
+      ],
+      "farewells": [
+        "aubergine",
+        "chillies",
+        "Cowpea",
+        "cucumber"
+      ],
+      "quiet": [
+        "Green plum",
+        "Mulberry",
+        "aubergine",
+        "chillies",
+        "Passion fruit"
+      ],
+      "blurb": "March has <strong>15</strong> Guangdong crops in season. Much the same list as February."
+    },
+    {
+      "key": "apr",
+      "name": "April",
+      "counts": {
+        "peak": 0,
+        "in": 12,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Lettuce",
+        "Choy sum",
+        "Green plum",
+        "Loquat",
+        "Mulberry",
+        "blueberry",
+        "Pineapple",
+        "watercress",
+        "Bitter melon",
+        "Carambola",
+        "Guava",
+        "Passion fruit"
+      ],
+      "peak": [],
+      "in": [
+        "Bitter melon",
+        "blueberry",
+        "Carambola",
+        "Choy sum",
+        "Green plum",
+        "Guava",
+        "Lettuce",
+        "Loquat",
+        "Mulberry",
+        "Passion fruit",
+        "Pineapple",
+        "watercress"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Bitter melon",
+        "Loquat"
+      ],
+      "farewells": [
+        "Carambola",
+        "Green plum",
+        "Guava",
+        "Lettuce"
+      ],
+      "quiet": [
+        "Lettuce",
+        "Green plum",
+        "Loquat",
+        "Mulberry",
+        "watercress"
+      ],
+      "blurb": "April has <strong>12</strong> Guangdong crops in season. Much the same list as March."
+    },
+    {
+      "key": "may",
+      "name": "May",
+      "counts": {
+        "peak": 0,
+        "in": 13,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Lychee",
+        "Choy sum",
+        "Loquat",
+        "plum",
+        "mango",
+        "Mulberry",
+        "blueberry",
+        "Pineapple",
+        "watercress",
+        "Bamboo shoot",
+        "Dragon fruit",
+        "Bitter melon",
+        "Passion fruit"
+      ],
+      "peak": [],
+      "in": [
+        "Bamboo shoot",
+        "Bitter melon",
+        "blueberry",
+        "Choy sum",
+        "Dragon fruit",
+        "Loquat",
+        "Lychee",
+        "mango",
+        "Mulberry",
+        "Passion fruit",
+        "Pineapple",
+        "plum",
+        "watercress"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Bamboo shoot",
+        "Dragon fruit",
+        "Lychee",
+        "mango"
+      ],
+      "farewells": [
+        "blueberry",
+        "Choy sum",
+        "Loquat",
+        "Mulberry"
+      ],
+      "quiet": [
+        "Lychee",
+        "Loquat",
+        "plum",
+        "blueberry",
+        "Dragon fruit"
+      ],
+      "blurb": "May has <strong>13</strong> Guangdong crops in season. Much the same list as April."
+    },
+    {
+      "key": "jun",
+      "name": "June",
+      "counts": {
+        "peak": 0,
+        "in": 11,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Lychee",
+        "Banana",
+        "plum",
+        "mango",
+        "pear",
+        "Wampee",
+        "Pineapple",
+        "Bamboo shoot",
+        "Dragon fruit",
+        "Bitter melon",
+        "Passion fruit"
+      ],
+      "peak": [],
+      "in": [
+        "Bamboo shoot",
+        "Banana",
+        "Bitter melon",
+        "Dragon fruit",
+        "Lychee",
+        "mango",
+        "Passion fruit",
+        "pear",
+        "Pineapple",
+        "plum",
+        "Wampee"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Banana",
+        "pear",
+        "Wampee"
+      ],
+      "farewells": [
+        "Pineapple",
+        "plum"
+      ],
+      "quiet": [
+        "Lychee",
+        "Banana",
+        "plum",
+        "mango",
+        "Pineapple"
+      ],
+      "blurb": "June has <strong>11</strong> Guangdong crops in season. Much the same list as May."
+    },
+    {
+      "key": "jul",
+      "name": "July",
+      "counts": {
+        "peak": 0,
+        "in": 10,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Longan",
+        "Lychee",
+        "Banana",
+        "mango",
+        "pear",
+        "Wampee",
+        "Bamboo shoot",
+        "Dragon fruit",
+        "Bitter melon",
+        "Passion fruit"
+      ],
+      "peak": [],
+      "in": [
+        "Bamboo shoot",
+        "Banana",
+        "Bitter melon",
+        "Dragon fruit",
+        "Longan",
+        "Lychee",
+        "mango",
+        "Passion fruit",
+        "pear",
+        "Wampee"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Longan"
+      ],
+      "farewells": [
+        "Lychee",
+        "mango"
+      ],
+      "quiet": [
+        "Longan",
+        "mango",
+        "pear",
+        "Wampee",
+        "Bitter melon"
+      ],
+      "blurb": "July has <strong>10</strong> Guangdong crops in season. The leanest stretch of the year."
+    },
+    {
+      "key": "aug",
+      "name": "August",
+      "counts": {
+        "peak": 0,
+        "in": 11,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Longan",
+        "Banana",
+        "Kiwifruit",
+        "Lotus root",
+        "pear",
+        "Wampee",
+        "Bamboo shoot",
+        "Chinese olive",
+        "Bitter melon",
+        "Dragon fruit",
+        "Passion fruit"
+      ],
+      "peak": [],
+      "in": [
+        "Bamboo shoot",
+        "Banana",
+        "Bitter melon",
+        "Chinese olive",
+        "Dragon fruit",
+        "Kiwifruit",
+        "Longan",
+        "Lotus root",
+        "Passion fruit",
+        "pear",
+        "Wampee"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Chinese olive",
+        "Kiwifruit",
+        "Lotus root"
+      ],
+      "farewells": [
+        "Longan",
+        "pear",
+        "Wampee"
+      ],
+      "quiet": [
+        "Longan",
+        "Kiwifruit",
+        "Lotus root",
+        "pear",
+        "Chinese olive"
+      ],
+      "blurb": "August has <strong>11</strong> Guangdong crops in season. Much the same list as July."
+    },
+    {
+      "key": "sep",
+      "name": "September",
+      "counts": {
+        "peak": 0,
+        "in": 10,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Banana",
+        "Lettuce",
+        "Choy sum",
+        "Kiwifruit",
+        "Lotus root",
+        "Bamboo shoot",
+        "Chinese olive",
+        "Bitter melon",
+        "Dragon fruit",
+        "Passion fruit"
+      ],
+      "peak": [],
+      "in": [
+        "Bamboo shoot",
+        "Banana",
+        "Bitter melon",
+        "Chinese olive",
+        "Choy sum",
+        "Dragon fruit",
+        "Kiwifruit",
+        "Lettuce",
+        "Lotus root",
+        "Passion fruit"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Choy sum",
+        "Lettuce"
+      ],
+      "farewells": [
+        "Banana"
+      ],
+      "quiet": [
+        "Banana",
+        "Choy sum",
+        "Lotus root",
+        "Bamboo shoot",
+        "Chinese olive"
+      ],
+      "blurb": "September has <strong>10</strong> Guangdong crops in season. The leanest stretch of the year."
+    },
+    {
+      "key": "oct",
+      "name": "October",
+      "counts": {
+        "peak": 0,
+        "in": 12,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Lettuce",
+        "Choy sum",
+        "Kiwifruit",
+        "Lotus root",
+        "Taro",
+        "Bamboo shoot",
+        "Carambola",
+        "Bitter melon",
+        "Chinese olive",
+        "Dragon fruit",
+        "Guava",
+        "Passion fruit"
+      ],
+      "peak": [],
+      "in": [
+        "Bamboo shoot",
+        "Bitter melon",
+        "Carambola",
+        "Chinese olive",
+        "Choy sum",
+        "Dragon fruit",
+        "Guava",
+        "Kiwifruit",
+        "Lettuce",
+        "Lotus root",
+        "Passion fruit",
+        "Taro"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Carambola",
+        "Guava",
+        "Taro"
+      ],
+      "farewells": [
+        "Bitter melon",
+        "Kiwifruit",
+        "Lotus root"
+      ],
+      "quiet": [
+        "Choy sum",
+        "Kiwifruit",
+        "Taro",
+        "Bamboo shoot",
+        "Carambola"
+      ],
+      "blurb": "October has <strong>12</strong> Guangdong crops in season. Much the same list as September."
+    },
+    {
+      "key": "nov",
+      "name": "November",
+      "counts": {
+        "peak": 0,
+        "in": 16,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "cucumber",
+        "Lettuce",
+        "Choy sum",
+        "Jinyou pomelo",
+        "Mandarin",
+        "Sugarcane",
+        "aubergine",
+        "chillies",
+        "Cowpea",
+        "Taro",
+        "Bamboo shoot",
+        "Carambola",
+        "Chinese olive",
+        "Dragon fruit",
+        "Guava"
+      ],
+      "peak": [],
+      "in": [
+        "aubergine",
+        "Bamboo shoot",
+        "Carambola",
+        "chillies",
+        "Chinese olive",
+        "Choy sum",
+        "Cowpea",
+        "cucumber",
+        "Dragon fruit",
+        "Guava",
+        "Jinyou pomelo",
+        "Lettuce",
+        "Mandarin",
+        "Passion fruit",
+        "Sugarcane",
+        "Taro"
+      ],
+      "edge": [],
+      "arrivals": [
+        "aubergine",
+        "chillies",
+        "Cowpea",
+        "cucumber"
+      ],
+      "farewells": [
+        "Bamboo shoot",
+        "Dragon fruit",
+        "Passion fruit"
+      ],
+      "quiet": [
+        "Lettuce",
+        "Jinyou pomelo",
+        "Mandarin",
+        "chillies",
+        "Taro"
+      ],
+      "blurb": "November has <strong>16</strong> Guangdong crops in season. Much the same list as October."
+    },
+    {
+      "key": "dec",
+      "name": "December",
+      "counts": {
+        "peak": 0,
+        "in": 15,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "Sweet potato",
+        "cucumber",
+        "Lettuce",
+        "Choy sum",
+        "Water chestnut",
+        "Mandarin",
+        "Sugarcane",
+        "aubergine",
+        "chillies",
+        "Cowpea",
+        "Taro",
+        "watercress",
+        "Carambola",
+        "Chinese olive",
+        "Guava"
+      ],
+      "peak": [],
+      "in": [
+        "aubergine",
+        "Carambola",
+        "chillies",
+        "Chinese olive",
+        "Choy sum",
+        "Cowpea",
+        "cucumber",
+        "Guava",
+        "Lettuce",
+        "Mandarin",
+        "Sugarcane",
+        "Sweet potato",
+        "Taro",
+        "Water chestnut",
+        "watercress"
+      ],
+      "edge": [],
+      "arrivals": [
+        "Sweet potato",
+        "Water chestnut",
+        "watercress"
+      ],
+      "farewells": [],
+      "quiet": [
+        "Sweet potato",
+        "cucumber",
+        "Water chestnut",
+        "Mandarin",
+        "Cowpea"
+      ],
+      "blurb": "December has <strong>15</strong> Guangdong crops in season. Much the same list as November."
+    }
+  ]
+}

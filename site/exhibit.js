@@ -593,6 +593,7 @@ const PLACE_FLAGS = {
   js: "🇨🇳",
   yn: "🇨🇳",
   hi: "🇨🇳",
+  gd: "🇨🇳",
   xj: "🇨🇳",
   jp: "🇯🇵",
 };
@@ -600,7 +601,7 @@ const PLACE_FLAGS = {
 const PLACE_CONTINENTS = [
   ["Europe", ["uk", "fr", "es", "it"]],
   ["North America", ["on", "fl", "ca"]],
-  ["Asia", ["sc", "sd", "js", "yn", "hi", "xj", "jp"]],
+  ["Asia", ["sc", "sd", "js", "yn", "hi", "gd", "xj", "jp"]],
 ];
 
 function flagForPlace(id) {
