@@ -19,7 +19,7 @@ const registry = JSON.parse(readFileSync(join(root, "site/data/registry.json"), 
 const packFile = readFileSync(join(root, "data/uk/pack.json"), "utf8");
 const built = buildPack("uk", { root });
 
-check(uk.items.length === 107, `uk.json has ${uk.items.length} items, expected 107`);
+check(uk.items.length === 108, `uk.json has ${uk.items.length} items, expected 108`);
 check(!JSON.stringify(uk).toLowerCase().includes("cranberry"), "uk.json contains cranberry");
 check(uk.items.some((it) => it.item === "pak choi"), "pak choi missing");
 check(uk.items.some((it) => it.item === "samphire"), "samphire missing");
@@ -50,7 +50,7 @@ check(!html.includes("fonts.googleapis.com") && !html.includes("fonts.gstatic.co
 check(!html.includes("country-control") && !exhibit.includes("globe") && !exhibit.includes("GeoJSON"), "globe or hardcoded country chrome shipped");
 check(exhibit.includes("resolvePackId"), "country query is not wired");
 check(JSON.parse(packFile).sticker_exclude.length === 0, "sticker_exclude is not empty");
-check(JSON.parse(packFile).expect_items === 107, "expect_items");
+check(JSON.parse(packFile).expect_items === 108, "expect_items");
 
 for (const item of uk.items) {
   const needle = item.item.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -169,6 +169,9 @@ check(named(es, "naranja") && named(es, "aguacate") && named(es, "mango") && nam
 check(named(on, "Cranberries") && named(on, "Watermelon") && named(on, "Sweet Potatoes"), "Ontario domestic rows the UK pack does not grow");
 check(named(on, "brussels sprouts") && named(on, "Sprouts"), "Ontario sprouts and Brussels sprouts are separate rows");
 check(named(on, "Bitter Melon/Fuzzy Squash") && named(on, "Garlic Scapes"), "Ontario bitter melon and garlic scapes are not wired");
+check(["mirabelle de Lorraine", "asperge des sables des Landes", "piment d'Espelette", "châtaigne d'Ardèche", "abricot rouge du Roussillon"].every((item) => named(fr, item))
+  && named(es, "calçot de Valls") && named(es, "castaña de Galicia") && named(it, "limone di Sorrento") && named(it, "patata della Sila") && named(it, "carciofo romanesco")
+  && named(on, "Wild Blueberries") && named(uk, "armagh bramley apple"), "regional specialties");
 check(named(it, "pomodori") && named(it, "arance") && named(it, "meloni") && named(it, "angurie") && named(it, "kiwi"), "Italy domestic rows");
 const carciofi = it.items.find((row) => row.item === "carciofi");
 check(carciofi && carciofi.months[5] === "out" && carciofi.months.slice(0, 4).every((role) => role === "in"), "Italy dropped the isolated carciofi June shoulder");
@@ -228,7 +231,7 @@ check(byId.on.months.every((mo) => !mo.blurb.includes("peak level") && !mo.blurb
 check(byId.it.months.every((mo) => !mo.blurb.includes("picco") && !mo.blurb.includes("<strong>0</strong>")), "Italy blurb names a missing peak");
 check(byId.fl.months.every((mo) => !/\bpeak\b/i.test(mo.blurb) && !mo.blurb.includes("does not use") && !mo.blurb.includes("<strong>0</strong>")), "Florida blurb names a missing peak");
 check(byId.ca.months.every((mo) => !/\bpeak\b/i.test(mo.blurb) && !/does not use|gap|apology/i.test(mo.blurb) && !mo.blurb.includes("<strong>0</strong>")), "California blurb names a missing peak");
-check(byId.fr.months[8].blurb.includes("35"), "France September count");
+check(byId.fr.months[8].blurb.includes("38"), "France September count");
 
 const jargon = /pass-2|pass-1|research corpus|Instinct|\bannex\b|\bARCH\b|\bINTENT\b|\bStage\b|thin_sheet|only has the month|that's all we show|fiche s'arrête|ficha se queda/;
 for (const rel of ["site/exhibit.js", "site/index.html", "site/styles.css", "site/pack-id.js", "site/data/uk.json", "site/data/fr.json", "site/data/es.json", "site/data/on.json", "site/data/it.json", "site/data/fl.json", "site/data/ca.json", "site/data/sc.json", "site/data/sd.json", "site/data/js.json", "site/data/yn.json", "site/data/hi.json", "site/data/xj.json", "site/data/jp.json", "site/data/registry.json"]) {

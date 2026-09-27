@@ -61,7 +61,7 @@
       "plural": "frutas"
     }
   ],
-  "attribution": "Ministerio de Agricultura, Pesca y Alimentación, frutas y hortalizas de temporada.",
+  "attribution": "Ministerio de Agricultura, Pesca y Alimentación, frutas y hortalizas de temporada. Especialidades regionales: IGP Calçot de Valls y AGACAL (IGP Castaña de Galicia).",
   "copy": {
     "this_month": "Este mes",
     "back_to": "Volver a {month}",
@@ -1433,6 +1433,52 @@
       "specialist_sources": [
         "MAPA, calendario de frutas de temporada"
       ]
+    },
+    {
+      "item": "calçot de Valls",
+      "category": "vegetable",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Calçot de Valls IGP (Alt Camp, Tarragona). Temporada de noviembre a abril.",
+      "specialist_sources": [
+        "IGP Calçot de Valls"
+      ]
+    },
+    {
+      "item": "castaña de Galicia",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Castaña de Galicia IGP. La recogida empieza a finales de septiembre o primeros de octubre y dura alrededor de un mes.",
+      "specialist_sources": [
+        "AGACAL, pliego de condiciones de la IGP Castaña de Galicia"
+      ]
     }
   ],
   "recipes": [],
@@ -1442,7 +1488,7 @@
       "name": "Enero",
       "counts": {
         "peak": 34,
-        "in": 5,
+        "in": 6,
         "edge": 0
       },
       "lead": {
@@ -1507,7 +1553,8 @@
         "guisante",
         "nabo",
         "caqui",
-        "chirimoya"
+        "chirimoya",
+        "calçot de Valls"
       ],
       "edge": [],
       "arrivals": [
@@ -1521,20 +1568,20 @@
         "chirimoya"
       ],
       "quiet": [
-        "naranja",
-        "zanahoria",
+        "pera",
+        "cardo",
         "col lombarda",
-        "kiwi",
-        "puerro"
+        "aguacate",
+        "rábano"
       ],
-      "blurb": "Enero tiene <strong>34</strong> productos en mayor comercialización y <strong>5</strong> en menor. Una cosecha parecida a la de Diciembre. Hortalizas lideran la mayor comercialización (23 de 34), con 11 frutas en ese nivel."
+      "blurb": "Enero tiene <strong>34</strong> productos en mayor comercialización y <strong>6</strong> en menor. Una cosecha parecida a la de Diciembre. Hortalizas lideran la mayor comercialización (23 de 34), con 11 frutas en ese nivel."
     },
     {
       "key": "feb",
       "name": "Febrero",
       "counts": {
         "peak": 33,
-        "in": 3,
+        "in": 4,
         "edge": 0
       },
       "lead": {
@@ -1596,7 +1643,8 @@
       "in": [
         "cardo",
         "guisante",
-        "nabo"
+        "nabo",
+        "calçot de Valls"
       ],
       "edge": [],
       "arrivals": [],
@@ -1607,17 +1655,17 @@
         "fresa y fresón",
         "pepino",
         "apio",
-        "pomelo",
-        "brócoli"
+        "frambuesa",
+        "limón"
       ],
-      "blurb": "Febrero tiene <strong>33</strong> productos en mayor comercialización y <strong>3</strong> en menor. Una cosecha parecida a la de Enero. Hortalizas lideran la mayor comercialización (22 de 33), con 11 frutas en ese nivel."
+      "blurb": "Febrero tiene <strong>33</strong> productos en mayor comercialización y <strong>4</strong> en menor. Una cosecha parecida a la de Enero. Hortalizas lideran la mayor comercialización (22 de 33), con 11 frutas en ese nivel."
     },
     {
       "key": "mar",
       "name": "Marzo",
       "counts": {
         "peak": 33,
-        "in": 4,
+        "in": 5,
         "edge": 0
       },
       "lead": {
@@ -1680,7 +1728,8 @@
         "col lombarda",
         "guisante",
         "nabo",
-        "níspero"
+        "níspero",
+        "calçot de Valls"
       ],
       "edge": [],
       "arrivals": [
@@ -1693,18 +1742,18 @@
       "quiet": [
         "manzana",
         "pimiento",
-        "haba",
-        "aguacate",
-        "coliflor"
+        "espárrago verde",
+        "pomelo",
+        "brócoli"
       ],
-      "blurb": "Marzo tiene <strong>33</strong> productos en mayor comercialización y <strong>4</strong> en menor. Una cosecha parecida a la de Febrero. Hortalizas lideran la mayor comercialización (22 de 33), con 11 frutas en ese nivel."
+      "blurb": "Marzo tiene <strong>33</strong> productos en mayor comercialización y <strong>5</strong> en menor. Una cosecha parecida a la de Febrero. Hortalizas lideran la mayor comercialización (22 de 33), con 11 frutas en ese nivel."
     },
     {
       "key": "apr",
       "name": "Abril",
       "counts": {
         "peak": 28,
-        "in": 12,
+        "in": 13,
         "edge": 0
       },
       "lead": {
@@ -1770,7 +1819,8 @@
         "manzana",
         "melocotón",
         "nectarina",
-        "pera"
+        "pera",
+        "calçot de Valls"
       ],
       "edge": [],
       "arrivals": [
@@ -1787,12 +1837,12 @@
       ],
       "quiet": [
         "calabacín",
-        "espárrago verde",
-        "frambuesa",
-        "limón",
-        "repollo"
+        "níspero",
+        "haba",
+        "alcachofa",
+        "calçot de Valls"
       ],
-      "blurb": "Abril tiene <strong>28</strong> productos en mayor comercialización y <strong>12</strong> en menor. Una cosecha parecida a la de Marzo. Hortalizas lideran la mayor comercialización (19 de 28), con 9 frutas en ese nivel."
+      "blurb": "Abril tiene <strong>28</strong> productos en mayor comercialización y <strong>13</strong> en menor. Una cosecha parecida a la de Marzo. Hortalizas lideran la mayor comercialización (19 de 28), con 9 frutas en ese nivel."
     },
     {
       "key": "may",
@@ -1880,11 +1930,11 @@
         "pomelo"
       ],
       "quiet": [
-        "ajo",
-        "níspero",
+        "naranja",
+        "zanahoria",
         "albaricoque",
         "nectarina",
-        "rábano"
+        "puerro"
       ],
       "blurb": "Mayo tiene <strong>27</strong> productos en mayor comercialización y <strong>12</strong> en menor. Una cosecha parecida a la de Abril. Hortalizas lideran la mayor comercialización (18 de 27), con 9 frutas en ese nivel."
     },
@@ -2234,10 +2284,10 @@
       ],
       "quiet": [
         "uva",
-        "judía verde",
         "membrillo",
         "higo",
-        "remolacha"
+        "coliflor",
+        "repollo"
       ],
       "blurb": "Septiembre tiene <strong>28</strong> productos en mayor comercialización y <strong>12</strong> en menor. La rueda se llena: 9 más de temporada que en Agosto. Hortalizas lideran la mayor comercialización (19 de 28), con 9 frutas en ese nivel."
     },
@@ -2246,7 +2296,7 @@
       "name": "Octubre",
       "counts": {
         "peak": 34,
-        "in": 9,
+        "in": 10,
         "edge": 0
       },
       "lead": {
@@ -2315,7 +2365,8 @@
         "melocotón",
         "membrillo",
         "naranja",
-        "nectarina"
+        "nectarina",
+        "castaña de Galicia"
       ],
       "edge": [],
       "arrivals": [
@@ -2332,19 +2383,19 @@
       ],
       "quiet": [
         "judía verde",
-        "calabaza",
         "endibia",
-        "mango",
-        "mandarina"
+        "remolacha",
+        "mandarina",
+        "castaña de Galicia"
       ],
-      "blurb": "Octubre tiene <strong>34</strong> productos en mayor comercialización y <strong>9</strong> en menor. El mes con más productos de temporada. Hortalizas lideran la mayor comercialización (23 de 34), con 11 frutas en ese nivel."
+      "blurb": "Octubre tiene <strong>34</strong> productos en mayor comercialización y <strong>10</strong> en menor. El mes con más productos de temporada. Hortalizas lideran la mayor comercialización (23 de 34), con 11 frutas en ese nivel."
     },
     {
       "key": "nov",
       "name": "Noviembre",
       "counts": {
         "peak": 36,
-        "in": 6,
+        "in": 7,
         "edge": 0
       },
       "lead": {
@@ -2412,33 +2463,35 @@
         "haba",
         "judía verde",
         "remolacha",
-        "pomelo"
+        "pomelo",
+        "calçot de Valls"
       ],
       "edge": [],
       "arrivals": [
         "apio",
         "haba",
-        "pomelo"
+        "pomelo",
+        "calçot de Valls"
       ],
       "farewells": [
         "granada",
         "mango"
       ],
       "quiet": [
-        "manzana",
-        "pera",
+        "uva",
+        "calabaza",
         "granada",
-        "chirimoya",
+        "mango",
         "escarola"
       ],
-      "blurb": "Noviembre tiene <strong>36</strong> productos en mayor comercialización y <strong>6</strong> en menor. Una cosecha parecida a la de Octubre. Hortalizas lideran la mayor comercialización (22 de 36), con 14 frutas en ese nivel."
+      "blurb": "Noviembre tiene <strong>36</strong> productos en mayor comercialización y <strong>7</strong> en menor. Una cosecha parecida a la de Octubre. Hortalizas lideran la mayor comercialización (22 de 36), con 14 frutas en ese nivel."
     },
     {
       "key": "dec",
       "name": "Diciembre",
       "counts": {
         "peak": 36,
-        "in": 3,
+        "in": 4,
         "edge": 0
       },
       "lead": {
@@ -2503,7 +2556,8 @@
       "in": [
         "endibia",
         "judía verde",
-        "remolacha"
+        "remolacha",
+        "calçot de Valls"
       ],
       "edge": [],
       "arrivals": [],
@@ -2513,13 +2567,13 @@
         "remolacha"
       ],
       "quiet": [
-        "uva",
-        "cardo",
+        "ajo",
         "caqui",
-        "alcachofa",
+        "chirimoya",
+        "kiwi",
         "nabo"
       ],
-      "blurb": "Diciembre tiene <strong>36</strong> productos en mayor comercialización y <strong>3</strong> en menor. Una cosecha parecida a la de Noviembre. Hortalizas lideran la mayor comercialización (23 de 36), con 13 frutas en ese nivel."
+      "blurb": "Diciembre tiene <strong>36</strong> productos en mayor comercialización y <strong>4</strong> en menor. Una cosecha parecida a la de Noviembre. Hortalizas lideran la mayor comercialización (23 de 36), con 13 frutas en ese nivel."
     }
   ]
 }

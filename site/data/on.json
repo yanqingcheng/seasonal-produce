@@ -47,7 +47,7 @@
       "plural": "fruit"
     }
   ],
-  "attribution": "Foodland Ontario Availability Guide. Open Government Licence – Ontario.",
+  "attribution": "Foodland Ontario Availability Guide and Northern Ontario Travel. Open Government Licence – Ontario.",
   "copy": {
     "this_month": "This month",
     "back_to": "Back to {month}",
@@ -1788,6 +1788,29 @@
       "specialist_sources": [
         "Foodland Ontario Availability Guide"
       ]
+    },
+    {
+      "item": "Wild Blueberries",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Wild blueberries from Northern Ontario forests, ripe in mid- to late August.",
+      "specialist_sources": [
+        "Northern Ontario Travel"
+      ]
     }
   ],
   "recipes": [],
@@ -2203,8 +2226,8 @@
         "Strawberries (Field)",
         "broccoli",
         "Haskap Berries",
-        "radicchio",
-        "Peas (Snow)"
+        "Garlic Scapes",
+        "radicchio"
       ],
       "blurb": "June lists <strong>41</strong> Ontario-grown crops. The wheel is filling up: 22 more listed than in May."
     },
@@ -2307,7 +2330,7 @@
       "quiet": [
         "Corn",
         "Cucumber (Field)",
-        "Garlic Scapes",
+        "Apricots",
         "Currants",
         "Blueberries"
       ],
@@ -2318,7 +2341,7 @@
       "name": "August",
       "counts": {
         "peak": 0,
-        "in": 65,
+        "in": 66,
         "edge": 0
       },
       "lead": null,
@@ -2405,7 +2428,8 @@
         "Tomatoes (Greenhouse)",
         "Water Spinach (Tung Choy)",
         "Yow Choy(Yellow Flower)",
-        "Zucchini"
+        "Zucchini",
+        "Wild Blueberries"
       ],
       "edge": [],
       "arrivals": [
@@ -2422,12 +2446,12 @@
       ],
       "quiet": [
         "Beans (Green/Yellow)",
-        "Apricots",
+        "Wild Blueberries",
         "Cherries",
         "Gooseberries",
         "Grapes"
       ],
-      "blurb": "August lists <strong>65</strong> Ontario-grown crops. The fullest month in the guide."
+      "blurb": "August lists <strong>66</strong> Ontario-grown crops. The fullest month in the guide."
     },
     {
       "key": "sep",

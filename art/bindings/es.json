@@ -430,5 +430,19 @@
       "tip": "#7a4a2c",
       "stem": "#a8e05a"
     }
+  },
+  "calçot de Valls": {
+    "archetype": "springonion",
+    "colours": {
+      "body": "#fffdf6",
+      "leaf": "#3bb273"
+    }
+  },
+  "castaña de Galicia": {
+    "archetype": "chestnut",
+    "colours": {
+      "body": "#7a4a2c",
+      "body2": "#e9b87a"
+    }
   }
 }

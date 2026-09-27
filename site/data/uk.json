@@ -2523,6 +2523,29 @@
       "stored_notes": null,
       "regions_notes": null,
       "specialist_sources": []
+    },
+    {
+      "item": "armagh bramley apple",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Armagh Bramley Apple PGI, County Armagh. Picked by hand from early September to late October.",
+      "specialist_sources": [
+        "nationaltrust.org.uk (Ardress House, Co. Armagh)"
+      ]
     }
   ],
   "recipes": [
@@ -3569,7 +3592,7 @@
       "name": "September",
       "counts": {
         "peak": 46,
-        "in": 17,
+        "in": 18,
         "edge": 22
       },
       "lead": {
@@ -3658,7 +3681,8 @@
         "salsify",
         "sorrel",
         "strawberry",
-        "watercress"
+        "watercress",
+        "armagh bramley apple"
       ],
       "edge": [
         "bilberry",
@@ -3703,14 +3727,14 @@
         "butternut squash",
         "loganberry"
       ],
-      "blurb": "September has <strong>46</strong> things at peak and <strong>17</strong> more in season. The fullest month on the wheel. Veg lead the peaks (30 of 46), with 12 fruits at their best."
+      "blurb": "September has <strong>46</strong> things at peak and <strong>18</strong> more in season. The fullest month on the wheel. Veg lead the peaks (30 of 46), with 12 fruits at their best."
     },
     {
       "key": "oct",
       "name": "October",
       "counts": {
         "peak": 29,
-        "in": 18,
+        "in": 19,
         "edge": 25
       },
       "lead": {
@@ -3783,7 +3807,8 @@
         "runner beans",
         "spinach",
         "sweetcorn",
-        "watercress"
+        "watercress",
+        "armagh bramley apple"
       ],
       "edge": [
         "bilberry",
@@ -3831,7 +3856,7 @@
         "tomatoes",
         "elderberry"
       ],
-      "blurb": "October has <strong>29</strong> things at peak and <strong>18</strong> more in season. Winding down: 16 fewer in season than September. Veg lead the peaks (20 of 29), with 6 fruits at their best."
+      "blurb": "October has <strong>29</strong> things at peak and <strong>19</strong> more in season. Winding down: 16 fewer in season than September. Veg lead the peaks (20 of 29), with 6 fruits at their best."
     },
     {
       "key": "nov",
@@ -3925,7 +3950,7 @@
         "chard",
         "globe artichoke"
       ],
-      "blurb": "November has <strong>22</strong> things at peak and <strong>8</strong> more in season. Winding down: 17 fewer in season than October. Veg lead the peaks (16 of 22), with 3 fruits at their best."
+      "blurb": "November has <strong>22</strong> things at peak and <strong>8</strong> more in season. Winding down: 18 fewer in season than October. Veg lead the peaks (16 of 22), with 3 fruits at their best."
     },
     {
       "key": "dec",

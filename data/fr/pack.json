@@ -82,9 +82,9 @@
     ".": "out"
   },
   "sticker_exclude": [],
-  "attribution": "ADEME Impact CO2, Fruits et légumes de saison.",
+  "attribution": "ADEME Impact CO2, Fruits et légumes de saison. Spécialités régionales : ministère de l'Agriculture, INAO, Syndicat du Piment d'Espelette AOP et producteurs de châtaignes d'Ardèche.",
   "alias_profile": "none",
   "recipe_rule": "optional",
-  "expect_items": 35,
+  "expect_items": 40,
   "require_peak_every_month": false
 }

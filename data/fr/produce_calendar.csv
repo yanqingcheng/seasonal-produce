@@ -34,3 +34,8 @@ prune,fruit,.,.,.,.,.,.,I,I,I,.,.,.,,,,"ADEME Impact CO2, Fruits et légumes de 
 raisin,fruit,.,.,.,.,.,.,.,.,I,I,.,.,,,,"ADEME Impact CO2, Fruits et légumes de saison",Raisin,fruits
 reine claude,fruit,.,.,.,.,.,.,.,.,I,.,.,.,,,,"ADEME Impact CO2, Fruits et légumes de saison",Reine claude,fruits
 tomate,vegetable,.,.,.,.,.,I,I,I,I,.,.,.,,,,"ADEME Impact CO2, Fruits et légumes de saison",Tomate,légumes
+mirabelle de Lorraine,fruit,.,.,.,.,.,.,.,I,I,.,.,.,,,"Mirabelle de Lorraine IGP, en Lorraine (Grand Est), de mi-août à fin septembre.",Ministère de l'Agriculture,Mirabelle de Lorraine (IGP),spécialité régionale
+asperge des sables des Landes,vegetable,.,.,I,I,I,I,.,.,.,.,.,.,,,"Asperge des sables des Landes IGP (Nouvelle-Aquitaine), récoltée de mars à juin.",Ministère de l'Agriculture,Asperge des sables des Landes (IGP),spécialité régionale
+piment d'Espelette,vegetable,.,.,.,.,.,.,.,I,I,I,I,I,,,"Piment d'Espelette AOP, au Pays basque, récolté d'août aux premières gelées et au plus tard le 15 décembre.",Syndicat du Piment d'Espelette AOP,Piment d'Espelette (AOP),spécialité régionale
+châtaigne d'Ardèche,nut,.,.,.,.,.,.,.,.,I,I,I,.,,,"Châtaigne d'Ardèche AOP (Auvergne-Rhône-Alpes), ramassée de mi-septembre à mi-novembre.",Les châtaignes ardéchoises,Châtaigne d'Ardèche (AOP),spécialité régionale
+abricot rouge du Roussillon,fruit,.,.,.,.,.,I,I,I,.,.,.,.,,,"Abricots rouges du Roussillon AOP (Pyrénées-Orientales), sur les marchés de mi-juin à mi-août.",INAO,Abricots rouges du Roussillon (AOP),spécialité régionale

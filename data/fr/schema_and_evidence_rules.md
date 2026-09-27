@@ -27,7 +27,7 @@ Peak and edge are not used. Inventing them would overclaim the grid. `require_pe
 
 A row stays only when the month grid itself shows a French season. Flat 12-month tropical rows are treated as shop availability unless the source names a French season. Melon and pastèque stay: their windows are June–September, which is a southern French season, not an import flag.
 
-Shipped: 35. Dropped: 7.
+Shipped: 40: 35 ADEME rows and 5 regional specialties (below). Dropped: 7.
 
 - **Ananas** (`ananas`). Ananas is in season in all 12 ADEME months. The grid does not name a metropolitan or overseas harvest, and a flat year is the import-shop pattern. Possible French overseas pineapple is not stated, so the row is excluded rather than narrowed.
 - **Avocat** (`avocat`). Avocat is in season in all 12 months. That is shop availability. It is not the bounded Corsican crop, and this pack does not invent a shorter window.
@@ -39,8 +39,22 @@ Shipped: 35. Dropped: 7.
 
 Kept with a note, not dropped: **cresson** is in season all 12 months. Cultivated watercress supports that, and the source says so. Fenouil keeps the April cell and the May hole; nothing is smoothed.
 
+## Regional specialties
+
+ADEME is national and leaves out several French crops with a protected regional name. Five of them ship as their own rows, each from a French source about the place that grows it. The ADEME rows are not changed, and no regional window is copied onto them. The fact sheet names the region.
+
+| Row | Region | Months | Source |
+|---|---|---|---|
+| mirabelle de Lorraine | Lorraine (Grand Est) | Aug–Sep | Ministère de l'Agriculture |
+| asperge des sables des Landes | Landes (Nouvelle-Aquitaine) | Mar–Jun | Ministère de l'Agriculture |
+| piment d'Espelette | Pays basque | Aug–Dec (latest picking 15 December) | Syndicat du Piment d'Espelette AOP |
+| châtaigne d'Ardèche | Ardèche (Auvergne-Rhône-Alpes) | Sep–Nov | Les châtaignes ardéchoises |
+| abricot rouge du Roussillon | Pyrénées-Orientales (Occitanie) | Jun–Aug | INAO |
+
+Half months round out to the month they touch, as in the other composed packs. Fraise de Plougastel is not a row: its May–July window was only seen in a search excerpt.
+
 ## Approximate stickers
 
-Shared archetypes, not new drawings. Noix uses the walnut drawing. Melon uses a round fruit. Pastèque uses a green striped oval. Raisin uses the currant bunch. Courge and potiron both use the pumpkin drawing, with different fills, and stay separate because ADEME lists both.
+Shared archetypes, not new drawings. Noix uses the walnut drawing. Melon uses a round fruit. Pastèque uses a green striped oval. Raisin uses the currant bunch. Courge and potiron both use the pumpkin drawing, with different fills, and stay separate because ADEME lists both. Mirabelle uses a yellow oval, piment d'Espelette the chilli, asperge des Landes the asparagus drawing in white, châtaigne the chestnut, and the Roussillon apricot an apricot oval.
 
-Fact sheets cite the ADEME tool and otherwise show only the month grid.
+Fact sheets cite the ADEME tool or the regional source, and otherwise show only the month grid.

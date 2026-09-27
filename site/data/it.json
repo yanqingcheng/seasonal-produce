@@ -61,7 +61,7 @@
       "plural": "frutta"
     }
   ],
-  "attribution": "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura, pubblicato da AULSS 9 Scaligera.",
+  "attribution": "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura, pubblicato da AULSS 9 Scaligera. Specialità regionali: Consorzio Limone di Sorrento IGP, disciplinare IGP Patata della Sila e agrofood.it.",
   "copy": {
     "this_month": "Questo mese",
     "back_to": "Torna a {month}",
@@ -1296,6 +1296,75 @@
       "specialist_sources": [
         "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura (AULSS 9 Scaligera)"
       ]
+    },
+    {
+      "item": "limone di Sorrento",
+      "category": "fruit",
+      "months": [
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Limone di Sorrento IGP, penisola sorrentina e Capri. Raccolta dal 1° gennaio al 31 ottobre.",
+      "specialist_sources": [
+        "Consorzio Limone di Sorrento IGP, disciplinare di produzione"
+      ]
+    },
+    {
+      "item": "patata della Sila",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Patata della Sila IGP, altopiano della Sila (Calabria). Raccolta dal 20 agosto al 30 novembre.",
+      "specialist_sources": [
+        "MASAF, disciplinare IGP Patata della Sila"
+      ]
+    },
+    {
+      "item": "carciofo romanesco",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Carciofo Romanesco del Lazio IGP, fascia costiera del Lazio. Raccolta da febbraio a maggio, soprattutto a marzo e aprile.",
+      "specialist_sources": [
+        "agrofood.it"
+      ]
     }
   ],
   "recipes": [],
@@ -1303,69 +1372,6 @@
     {
       "key": "jan",
       "name": "Gennaio",
-      "counts": {
-        "peak": 0,
-        "in": 20,
-        "edge": 0
-      },
-      "lead": null,
-      "wheel": [
-        "arance",
-        "broccoli",
-        "cavolfiori",
-        "zucche",
-        "finocchi",
-        "spinaci",
-        "mele",
-        "pere",
-        "carote",
-        "carciofi",
-        "mandarini",
-        "clementine",
-        "rape",
-        "kiwi",
-        "limoni"
-      ],
-      "peak": [],
-      "in": [
-        "arance",
-        "bietole da coste",
-        "broccoli",
-        "carciofi",
-        "carote",
-        "cavolfiori",
-        "cavoli",
-        "cicoria",
-        "clementine",
-        "finocchi",
-        "kiwi",
-        "limoni",
-        "mandarini",
-        "mele",
-        "pere",
-        "pompelmi",
-        "radicchio",
-        "rape",
-        "spinaci",
-        "zucche"
-      ],
-      "edge": [],
-      "arrivals": [
-        "carciofi"
-      ],
-      "farewells": [],
-      "quiet": [
-        "arance",
-        "finocchi",
-        "carciofi",
-        "kiwi",
-        "cavoli"
-      ],
-      "blurb": "Gennaio conta <strong>20</strong> prodotti di stagione. Il tratto più magro dell'anno."
-    },
-    {
-      "key": "feb",
-      "name": "Febbraio",
       "counts": {
         "peak": 0,
         "in": 21,
@@ -1409,13 +1415,81 @@
         "pompelmi",
         "radicchio",
         "rape",
-        "sedano",
         "spinaci",
-        "zucche"
+        "zucche",
+        "limone di Sorrento"
       ],
       "edge": [],
       "arrivals": [
-        "sedano"
+        "carciofi",
+        "limone di Sorrento"
+      ],
+      "farewells": [],
+      "quiet": [
+        "arance",
+        "finocchi",
+        "carciofi",
+        "rape",
+        "limone di Sorrento"
+      ],
+      "blurb": "Gennaio conta <strong>21</strong> prodotti di stagione. Il tratto più magro dell'anno."
+    },
+    {
+      "key": "feb",
+      "name": "Febbraio",
+      "counts": {
+        "peak": 0,
+        "in": 23,
+        "edge": 0
+      },
+      "lead": null,
+      "wheel": [
+        "arance",
+        "broccoli",
+        "cavolfiori",
+        "zucche",
+        "finocchi",
+        "spinaci",
+        "mele",
+        "pere",
+        "carote",
+        "carciofi",
+        "mandarini",
+        "carciofo romanesco",
+        "clementine",
+        "rape",
+        "kiwi"
+      ],
+      "peak": [],
+      "in": [
+        "arance",
+        "bietole da coste",
+        "broccoli",
+        "carciofi",
+        "carote",
+        "cavolfiori",
+        "cavoli",
+        "cicoria",
+        "clementine",
+        "finocchi",
+        "kiwi",
+        "limoni",
+        "mandarini",
+        "mele",
+        "pere",
+        "pompelmi",
+        "radicchio",
+        "rape",
+        "sedano",
+        "spinaci",
+        "zucche",
+        "limone di Sorrento",
+        "carciofo romanesco"
+      ],
+      "edge": [],
+      "arrivals": [
+        "sedano",
+        "carciofo romanesco"
       ],
       "farewells": [
         "clementine",
@@ -1426,17 +1500,17 @@
         "broccoli",
         "spinaci",
         "mandarini",
-        "limoni",
-        "cicoria"
+        "carciofo romanesco",
+        "sedano"
       ],
-      "blurb": "Febbraio conta <strong>21</strong> prodotti di stagione. Più o meno lo stesso raccolto di Gennaio."
+      "blurb": "Febbraio conta <strong>23</strong> prodotti di stagione. Più o meno lo stesso raccolto di Gennaio."
     },
     {
       "key": "mar",
       "name": "Marzo",
       "counts": {
         "peak": 0,
-        "in": 21,
+        "in": 23,
         "edge": 0
       },
       "lead": null,
@@ -1453,9 +1527,9 @@
         "cipolline",
         "asparagi",
         "carciofi",
+        "carciofo romanesco",
         "rape",
-        "kiwi",
-        "limoni"
+        "kiwi"
       ],
       "peak": [],
       "in": [
@@ -1479,7 +1553,9 @@
         "radicchio",
         "rape",
         "sedano",
-        "spinaci"
+        "spinaci",
+        "limone di Sorrento",
+        "carciofo romanesco"
       ],
       "edge": [],
       "arrivals": [
@@ -1495,17 +1571,17 @@
         "cavolfiori",
         "insalata",
         "cipolline",
-        "pompelmi",
-        "radicchio"
+        "kiwi",
+        "bietole da coste"
       ],
-      "blurb": "Marzo conta <strong>21</strong> prodotti di stagione. Più o meno lo stesso raccolto di Febbraio."
+      "blurb": "Marzo conta <strong>23</strong> prodotti di stagione. Più o meno lo stesso raccolto di Febbraio."
     },
     {
       "key": "apr",
       "name": "Aprile",
       "counts": {
         "peak": 0,
-        "in": 23,
+        "in": 25,
         "edge": 0
       },
       "lead": null,
@@ -1523,8 +1599,8 @@
         "cipolline",
         "asparagi",
         "carciofi",
-        "kiwi",
-        "ravanelli"
+        "carciofo romanesco",
+        "kiwi"
       ],
       "peak": [],
       "in": [
@@ -1550,7 +1626,9 @@
         "radicchio",
         "ravanelli",
         "sedano",
-        "spinaci"
+        "spinaci",
+        "limone di Sorrento",
+        "carciofo romanesco"
       ],
       "edge": [],
       "arrivals": [
@@ -1567,19 +1645,19 @@
       ],
       "quiet": [
         "fragole",
-        "arance",
-        "mele",
+        "pere",
         "asparagi",
-        "ravanelli"
+        "ravanelli",
+        "cicoria"
       ],
-      "blurb": "Aprile conta <strong>23</strong> prodotti di stagione. Più o meno lo stesso raccolto di Marzo."
+      "blurb": "Aprile conta <strong>25</strong> prodotti di stagione. Più o meno lo stesso raccolto di Marzo."
     },
     {
       "key": "may",
       "name": "Maggio",
       "counts": {
         "peak": 0,
-        "in": 27,
+        "in": 29,
         "edge": 0
       },
       "lead": null,
@@ -1628,7 +1706,9 @@
         "radicchio",
         "ravanelli",
         "sedano",
-        "spinaci"
+        "spinaci",
+        "limone di Sorrento",
+        "carciofo romanesco"
       ],
       "edge": [],
       "arrivals": [
@@ -1650,14 +1730,14 @@
         "piselli",
         "fagioli"
       ],
-      "blurb": "Maggio conta <strong>27</strong> prodotti di stagione. Più o meno lo stesso raccolto di Aprile."
+      "blurb": "Maggio conta <strong>29</strong> prodotti di stagione. Più o meno lo stesso raccolto di Aprile."
     },
     {
       "key": "jun",
       "name": "Giugno",
       "counts": {
         "peak": 0,
-        "in": 28,
+        "in": 29,
         "edge": 0
       },
       "lead": null,
@@ -1707,7 +1787,8 @@
         "ravanelli",
         "sedano",
         "susine",
-        "zucchine"
+        "zucchine",
+        "limone di Sorrento"
       ],
       "edge": [],
       "arrivals": [
@@ -1727,14 +1808,14 @@
         "ciliegie",
         "susine"
       ],
-      "blurb": "Giugno conta <strong>28</strong> prodotti di stagione. Più o meno lo stesso raccolto di Maggio."
+      "blurb": "Giugno conta <strong>29</strong> prodotti di stagione. Più o meno lo stesso raccolto di Maggio."
     },
     {
       "key": "jul",
       "name": "Luglio",
       "counts": {
         "peak": 0,
-        "in": 29,
+        "in": 30,
         "edge": 0
       },
       "lead": null,
@@ -1785,7 +1866,8 @@
         "ravanelli",
         "sedano",
         "susine",
-        "zucchine"
+        "zucchine",
+        "limone di Sorrento"
       ],
       "edge": [],
       "arrivals": [
@@ -1806,14 +1888,14 @@
         "fave",
         "fagiolini"
       ],
-      "blurb": "Luglio conta <strong>29</strong> prodotti di stagione. Il mese più pieno della ruota."
+      "blurb": "Luglio conta <strong>30</strong> prodotti di stagione. Più o meno lo stesso raccolto di Giugno."
     },
     {
       "key": "aug",
       "name": "Agosto",
       "counts": {
         "peak": 0,
-        "in": 29,
+        "in": 31,
         "edge": 0
       },
       "lead": null,
@@ -1864,7 +1946,9 @@
         "susine",
         "uva",
         "zucche",
-        "zucchine"
+        "zucchine",
+        "limone di Sorrento",
+        "patata della Sila"
       ],
       "edge": [],
       "arrivals": [
@@ -1884,14 +1968,14 @@
         "prugne",
         "lamponi"
       ],
-      "blurb": "Agosto conta <strong>29</strong> prodotti di stagione. Il mese più pieno della ruota."
+      "blurb": "Agosto conta <strong>31</strong> prodotti di stagione. Il mese più pieno della ruota."
     },
     {
       "key": "sep",
       "name": "Settembre",
       "counts": {
         "peak": 0,
-        "in": 29,
+        "in": 31,
         "edge": 0
       },
       "lead": null,
@@ -1942,7 +2026,9 @@
         "susine",
         "uva",
         "zucche",
-        "zucchine"
+        "zucchine",
+        "limone di Sorrento",
+        "patata della Sila"
       ],
       "edge": [],
       "arrivals": [
@@ -1960,16 +2046,16 @@
         "meloni",
         "mirtilli",
         "fichi",
-        "sedano"
+        "aglio"
       ],
-      "blurb": "Settembre conta <strong>29</strong> prodotti di stagione. Il mese più pieno della ruota."
+      "blurb": "Settembre conta <strong>31</strong> prodotti di stagione. Il mese più pieno della ruota."
     },
     {
       "key": "oct",
       "name": "Ottobre",
       "counts": {
         "peak": 0,
-        "in": 25,
+        "in": 27,
         "edge": 0
       },
       "lead": null,
@@ -1987,8 +2073,8 @@
         "carote",
         "castagne",
         "kaki",
-        "clementine",
-        "melanzane"
+        "patata della Sila",
+        "clementine"
       ],
       "peak": [],
       "in": [
@@ -2016,7 +2102,9 @@
         "sedano",
         "spinaci",
         "uva",
-        "zucche"
+        "zucche",
+        "limone di Sorrento",
+        "patata della Sila"
       ],
       "edge": [],
       "arrivals": [
@@ -2034,18 +2122,18 @@
       "quiet": [
         "peperoni",
         "uva",
-        "carote",
+        "castagne",
         "clementine",
         "melanzane"
       ],
-      "blurb": "Ottobre conta <strong>25</strong> prodotti di stagione. Più o meno lo stesso raccolto di Settembre."
+      "blurb": "Ottobre conta <strong>27</strong> prodotti di stagione. Più o meno lo stesso raccolto di Settembre."
     },
     {
       "key": "nov",
       "name": "Novembre",
       "counts": {
         "peak": 0,
-        "in": 25,
+        "in": 26,
         "edge": 0
       },
       "lead": null,
@@ -2064,7 +2152,7 @@
         "castagne",
         "kaki",
         "mandarini",
-        "clementine"
+        "patata della Sila"
       ],
       "peak": [],
       "in": [
@@ -2092,7 +2180,8 @@
         "sedano",
         "spinaci",
         "uva",
-        "zucche"
+        "zucche",
+        "patata della Sila"
       ],
       "edge": [],
       "arrivals": [
@@ -2103,16 +2192,17 @@
       ],
       "farewells": [
         "aglio",
-        "sedano"
+        "sedano",
+        "patata della Sila"
       ],
       "quiet": [
-        "cavolfiori",
         "zucche",
-        "castagne",
-        "rape",
-        "aglio"
+        "carote",
+        "patata della Sila",
+        "pompelmi",
+        "radicchio"
       ],
-      "blurb": "Novembre conta <strong>25</strong> prodotti di stagione. Più o meno lo stesso raccolto di Ottobre."
+      "blurb": "Novembre conta <strong>26</strong> prodotti di stagione. Più o meno lo stesso raccolto di Ottobre."
     },
     {
       "key": "dec",
@@ -2176,10 +2266,10 @@
       ],
       "quiet": [
         "uva",
-        "broccoli",
-        "pere",
+        "mele",
         "kaki",
-        "bietole da coste"
+        "limoni",
+        "cavoli"
       ],
       "blurb": "Dicembre conta <strong>23</strong> prodotti di stagione. Più o meno lo stesso raccolto di Novembre."
     }

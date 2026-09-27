@@ -68,9 +68,9 @@
     ".": "out"
   },
   "sticker_exclude": [],
-  "attribution": "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura, pubblicato da AULSS 9 Scaligera.",
+  "attribution": "MIPAAF/MASAF, Calendario stagionalità di frutta e verdura, pubblicato da AULSS 9 Scaligera. Specialità regionali: Consorzio Limone di Sorrento IGP, disciplinare IGP Patata della Sila e agrofood.it.",
   "alias_profile": "none",
   "recipe_rule": "optional",
-  "expect_items": 51,
+  "expect_items": 54,
   "require_peak_every_month": false
 }

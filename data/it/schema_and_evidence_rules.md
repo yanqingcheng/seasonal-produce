@@ -25,12 +25,20 @@ The page groups FRUTTA and VERDURA. Frutta → fruit. Verdura → vegetable, inc
 
 Every row is an Italian crop. Kiwi stays in the Italian season (Lazio grows it) and ships on the kiwi sticker. It was never an import drop. No row was removed as import-only. Nothing tropical and flat across all twelve months is on this list.
 
-Shipped: 51. Held for a drawing: none.
+Shipped: 54: 51 MIPAAF rows and 3 regional specialties. Held for a drawing: none.
+
+## Regional specialties
+
+Each regional row comes from the IGP specification or a source about the place that grows it, and the fact sheet names the region. The national rows are not changed, and no regional window is copied onto them.
+
+- **limone di Sorrento**: Sorrento peninsula and Capri, January–October (the IGP harvest period, 1 January to 31 October). It adds the summer months the national limoni row does not list.
+- **patata della Sila**: Sila plateau (Calabria), August–November (the IGP harvest period, 20 August to 30 November). Potato is not on the national list.
+- **carciofo romanesco**: Lazio coast, February–May, most of it in March and April. The national carciofi row stays January–April.
 
 One shoulder month is not shipped. Carciofi is listed January–April, absent in May, and listed again for June alone. June is dropped so the wheel shows January–April without a hole. May is not filled in. The June cell remains in `primary_months.csv`.
 
 ## Approximate stickers
 
-Shared archetypes, not new drawings. Agrumi use round fruit, with different fills for arance, clementine, mandarini, limoni, and pompelmi. Susine and prugne both use the oval, with different fills. Angurie uses a green striped oval. Meloni uses a round fruit. Kaki uses a round fruit with a calyx. Nespole uses the oval. Uva uses the same bunch as Spain. Castagne uses the chestnut drawing. Bietole da coste uses the chard leaf. Cicoria uses the chicory drawing.
+Shared archetypes, not new drawings. Agrumi use round fruit, with different fills for arance, clementine, mandarini, limoni, and pompelmi. Susine and prugne both use the oval, with different fills. Angurie uses a green striped oval. Meloni uses a round fruit. Kaki uses a round fruit with a calyx. Nespole uses the oval. Uva uses the same bunch as Spain. Castagne uses the chestnut drawing. Bietole da coste uses the chard leaf. Cicoria uses the chicory drawing. Limone di Sorrento uses the lemon fill, patata della Sila the potato, and carciofo romanesco the artichoke.
 
-Fact sheets cite the MIPAAF/MASAF calendar and otherwise show only the month grid.
+Fact sheets cite the MIPAAF/MASAF calendar or the regional source, and otherwise show only the month grid.

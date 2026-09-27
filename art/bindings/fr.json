@@ -256,5 +256,43 @@
       "body": "#ff5a4e",
       "calyx": "#3bb273"
     }
+  },
+  "mirabelle de Lorraine": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#ffd84a",
+      "cleft": true,
+      "leaf": "#3bb273"
+    }
+  },
+  "asperge des sables des Landes": {
+    "archetype": "asparagus",
+    "colours": {
+      "body": "#fff6dc",
+      "tip": "#e9b87a",
+      "band": "#ff5f8a"
+    }
+  },
+  "piment d'Espelette": {
+    "archetype": "chilli",
+    "colours": {
+      "body": "#ff5a4e",
+      "cap": "#3bb273"
+    }
+  },
+  "châtaigne d'Ardèche": {
+    "archetype": "chestnut",
+    "colours": {
+      "body": "#7a4a2c",
+      "body2": "#e9b87a"
+    }
+  },
+  "abricot rouge du Roussillon": {
+    "archetype": "oval",
+    "colours": {
+      "body": "#ffb627",
+      "cleft": true,
+      "leaf": "#52c26b"
+    }
   }
 }

@@ -73,7 +73,7 @@
       "plural": "fruits à coque"
     }
   ],
-  "attribution": "ADEME Impact CO2, Fruits et légumes de saison.",
+  "attribution": "ADEME Impact CO2, Fruits et légumes de saison. Spécialités régionales : ministère de l'Agriculture, INAO, Syndicat du Piment d'Espelette AOP et producteurs de châtaignes d'Ardèche.",
   "copy": {
     "this_month": "Ce mois-ci",
     "back_to": "Retour en {month}",
@@ -940,6 +940,121 @@
       "specialist_sources": [
         "ADEME Impact CO2, Fruits et légumes de saison"
       ]
+    },
+    {
+      "item": "mirabelle de Lorraine",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Mirabelle de Lorraine IGP, en Lorraine (Grand Est), de mi-août à fin septembre.",
+      "specialist_sources": [
+        "Ministère de l'Agriculture"
+      ]
+    },
+    {
+      "item": "asperge des sables des Landes",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Asperge des sables des Landes IGP (Nouvelle-Aquitaine), récoltée de mars à juin.",
+      "specialist_sources": [
+        "Ministère de l'Agriculture"
+      ]
+    },
+    {
+      "item": "piment d'Espelette",
+      "category": "vegetable",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "in",
+        "in"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Piment d'Espelette AOP, au Pays basque, récolté d'août aux premières gelées et au plus tard le 15 décembre.",
+      "specialist_sources": [
+        "Syndicat du Piment d'Espelette AOP"
+      ]
+    },
+    {
+      "item": "châtaigne d'Ardèche",
+      "category": "nut",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Châtaigne d'Ardèche AOP (Auvergne-Rhône-Alpes), ramassée de mi-septembre à mi-novembre.",
+      "specialist_sources": [
+        "Les châtaignes ardéchoises"
+      ]
+    },
+    {
+      "item": "abricot rouge du Roussillon",
+      "category": "fruit",
+      "months": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out",
+        "in",
+        "in",
+        "in",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "stored_notes": null,
+      "regions_notes": "Abricots rouges du Roussillon AOP (Pyrénées-Orientales), sur les marchés de mi-juin à mi-août.",
+      "specialist_sources": [
+        "INAO"
+      ]
     }
   ],
   "recipes": [],
@@ -1040,7 +1155,7 @@
       "name": "Mars",
       "counts": {
         "peak": 0,
-        "in": 8,
+        "in": 9,
         "edge": 0
       },
       "lead": null,
@@ -1052,6 +1167,7 @@
         "poireau",
         "épinard",
         "pomme",
+        "asperge des sables des Landes",
         "cresson"
       ],
       "peak": [],
@@ -1063,10 +1179,13 @@
         "oignon",
         "poire",
         "poireau",
-        "pomme"
+        "pomme",
+        "asperge des sables des Landes"
       ],
       "edge": [],
-      "arrivals": [],
+      "arrivals": [
+        "asperge des sables des Landes"
+      ],
       "farewells": [
         "carotte",
         "chou-fleur",
@@ -1075,18 +1194,18 @@
       "quiet": [
         "carotte",
         "chou-fleur",
-        "oignon",
         "poireau",
-        "pomme"
+        "pomme",
+        "cresson"
       ],
-      "blurb": "Mars compte <strong>8</strong> produits de saison. À peu près la même récolte qu'en Février."
+      "blurb": "Mars compte <strong>9</strong> produits de saison. À peu près la même récolte qu'en Février."
     },
     {
       "key": "apr",
       "name": "Avril",
       "counts": {
         "peak": 0,
-        "in": 6,
+        "in": 7,
         "edge": 0
       },
       "lead": null,
@@ -1095,6 +1214,7 @@
         "poireau",
         "épinard",
         "pomme",
+        "asperge des sables des Landes",
         "fenouil",
         "cresson"
       ],
@@ -1105,7 +1225,8 @@
         "fenouil",
         "oignon",
         "poireau",
-        "pomme"
+        "pomme",
+        "asperge des sables des Landes"
       ],
       "edge": [],
       "arrivals": [
@@ -1120,17 +1241,17 @@
         "oignon",
         "poireau",
         "épinard",
-        "fenouil",
-        "cresson"
+        "asperge des sables des Landes",
+        "fenouil"
       ],
-      "blurb": "Avril compte <strong>6</strong> produits de saison. Le creux de l'année : chaque produit compte."
+      "blurb": "Avril compte <strong>7</strong> produits de saison. Le creux de l'année : chaque produit compte."
     },
     {
       "key": "may",
       "name": "Mai",
       "counts": {
         "peak": 0,
-        "in": 6,
+        "in": 7,
         "edge": 0
       },
       "lead": null,
@@ -1139,6 +1260,7 @@
         "concombre",
         "courgette",
         "épinard",
+        "asperge des sables des Landes",
         "artichaut",
         "cresson"
       ],
@@ -1149,7 +1271,8 @@
         "courgette",
         "cresson",
         "épinard",
-        "laitue"
+        "laitue",
+        "asperge des sables des Landes"
       ],
       "edge": [],
       "arrivals": [
@@ -1165,17 +1288,17 @@
         "laitue",
         "concombre",
         "courgette",
-        "épinard",
+        "asperge des sables des Landes",
         "artichaut"
       ],
-      "blurb": "Mai compte <strong>6</strong> produits de saison. Le creux de l'année : chaque produit compte."
+      "blurb": "Mai compte <strong>7</strong> produits de saison. Le creux de l'année : chaque produit compte."
     },
     {
       "key": "jun",
       "name": "Juin",
       "counts": {
         "peak": 0,
-        "in": 14,
+        "in": 16,
         "edge": 0
       },
       "lead": null,
@@ -1188,12 +1311,13 @@
         "laitue",
         "concombre",
         "courgette",
+        "abricot rouge du Roussillon",
         "aubergine",
         "pastèque",
+        "asperge des sables des Landes",
         "artichaut",
         "blette",
-        "fenouil",
-        "cresson"
+        "fenouil"
       ],
       "peak": [],
       "in": [
@@ -1210,7 +1334,9 @@
         "pastèque",
         "pêche",
         "poivron",
-        "tomate"
+        "tomate",
+        "asperge des sables des Landes",
+        "abricot rouge du Roussillon"
       ],
       "edge": [],
       "arrivals": [
@@ -1219,22 +1345,24 @@
         "fenouil",
         "haricot vert (cru)"
       ],
-      "farewells": [],
+      "farewells": [
+        "asperge des sables des Landes"
+      ],
       "quiet": [
         "melon",
         "poivron",
         "haricot vert (cru)",
-        "aubergine",
-        "pastèque"
+        "abricot rouge du Roussillon",
+        "aubergine"
       ],
-      "blurb": "Juin compte <strong>14</strong> produits de saison. La roue se remplit : 8 de plus de saison qu'en Mai."
+      "blurb": "Juin compte <strong>16</strong> produits de saison. La roue se remplit : 9 de plus de saison qu'en Mai."
     },
     {
       "key": "jul",
       "name": "Juillet",
       "counts": {
         "peak": 0,
-        "in": 19,
+        "in": 20,
         "edge": 0
       },
       "lead": null,
@@ -1251,9 +1379,9 @@
         "maïs",
         "myrtille",
         "prune",
+        "abricot rouge du Roussillon",
         "aubergine",
-        "figue",
-        "pastèque"
+        "figue"
       ],
       "peak": [],
       "in": [
@@ -1275,7 +1403,8 @@
         "pêche",
         "poivron",
         "prune",
-        "tomate"
+        "tomate",
+        "abricot rouge du Roussillon"
       ],
       "edge": [],
       "arrivals": [
@@ -1286,20 +1415,20 @@
       ],
       "farewells": [],
       "quiet": [
+        "melon",
         "poivron",
-        "pêche",
         "courgette",
         "maïs",
-        "prune"
+        "myrtille"
       ],
-      "blurb": "Juillet compte <strong>19</strong> produits de saison. À peu près la même récolte qu'en Juin."
+      "blurb": "Juillet compte <strong>20</strong> produits de saison. À peu près la même récolte qu'en Juin."
     },
     {
       "key": "aug",
       "name": "Août",
       "counts": {
         "peak": 0,
-        "in": 23,
+        "in": 26,
         "edge": 0
       },
       "lead": null,
@@ -1317,8 +1446,8 @@
         "pomme",
         "mûre",
         "nectarine",
-        "maïs",
-        "myrtille"
+        "mirabelle de Lorraine",
+        "maïs"
       ],
       "peak": [],
       "in": [
@@ -1344,7 +1473,10 @@
         "poivron",
         "pomme",
         "prune",
-        "tomate"
+        "tomate",
+        "mirabelle de Lorraine",
+        "piment d'Espelette",
+        "abricot rouge du Roussillon"
       ],
       "edge": [],
       "arrivals": [
@@ -1353,22 +1485,24 @@
         "poire",
         "pomme"
       ],
-      "farewells": [],
+      "farewells": [
+        "abricot rouge du Roussillon"
+      ],
       "quiet": [
-        "melon",
         "pêche",
         "tomate",
         "mûre",
-        "nectarine"
+        "nectarine",
+        "prune"
       ],
-      "blurb": "Août compte <strong>23</strong> produits de saison. À peu près la même récolte qu'en Juillet."
+      "blurb": "Août compte <strong>26</strong> produits de saison. À peu près la même récolte qu'en Juillet."
     },
     {
       "key": "sep",
       "name": "Septembre",
       "counts": {
         "peak": 0,
-        "in": 35,
+        "in": 38,
         "edge": 0
       },
       "lead": null,
@@ -1425,7 +1559,10 @@
         "prune",
         "raisin",
         "reine claude",
-        "tomate"
+        "tomate",
+        "mirabelle de Lorraine",
+        "piment d'Espelette",
+        "châtaigne d'Ardèche"
       ],
       "edge": [],
       "arrivals": [
@@ -1443,18 +1580,18 @@
       "quiet": [
         "raisin",
         "tomate",
-        "laitue",
         "reine claude",
-        "myrtille"
+        "mirabelle de Lorraine",
+        "pastèque"
       ],
-      "blurb": "Septembre compte <strong>35</strong> produits de saison. Le mois le plus fourni de la roue."
+      "blurb": "Septembre compte <strong>38</strong> produits de saison. Le mois le plus fourni de la roue."
     },
     {
       "key": "oct",
       "name": "Octobre",
       "counts": {
         "peak": 0,
-        "in": 21,
+        "in": 23,
         "edge": 0
       },
       "lead": null,
@@ -1497,7 +1634,9 @@
         "poireau",
         "pomme",
         "potiron",
-        "raisin"
+        "raisin",
+        "piment d'Espelette",
+        "châtaigne d'Ardèche"
       ],
       "edge": [],
       "arrivals": [],
@@ -1510,18 +1649,18 @@
       "quiet": [
         "raisin",
         "brocoli",
-        "haricot vert (cru)",
         "figue",
+        "fenouil",
         "noix"
       ],
-      "blurb": "Octobre compte <strong>21</strong> produits de saison. Ça se calme : 14 de moins de saison qu'en Septembre."
+      "blurb": "Octobre compte <strong>23</strong> produits de saison. Ça se calme : 15 de moins de saison qu'en Septembre."
     },
     {
       "key": "nov",
       "name": "Novembre",
       "counts": {
         "peak": 0,
-        "in": 15,
+        "in": 17,
         "edge": 0
       },
       "lead": null,
@@ -1537,10 +1676,10 @@
         "pomme",
         "courge",
         "potiron",
+        "piment d'Espelette",
         "blette",
         "fenouil",
-        "cresson",
-        "noisette"
+        "cresson"
       ],
       "peak": [],
       "in": [
@@ -1558,7 +1697,9 @@
         "poire",
         "poireau",
         "pomme",
-        "potiron"
+        "potiron",
+        "piment d'Espelette",
+        "châtaigne d'Ardèche"
       ],
       "edge": [],
       "arrivals": [],
@@ -1570,19 +1711,19 @@
       ],
       "quiet": [
         "brocoli",
-        "ail",
+        "piment d'Espelette",
         "blette",
-        "fenouil",
-        "noisette"
+        "noisette",
+        "châtaigne d'Ardèche"
       ],
-      "blurb": "Novembre compte <strong>15</strong> produits de saison. À peu près la même récolte qu'en Octobre."
+      "blurb": "Novembre compte <strong>17</strong> produits de saison. À peu près la même récolte qu'en Octobre."
     },
     {
       "key": "dec",
       "name": "Décembre",
       "counts": {
         "peak": 0,
-        "in": 11,
+        "in": 12,
         "edge": 0
       },
       "lead": null,
@@ -1597,6 +1738,7 @@
         "pomme",
         "courge",
         "potiron",
+        "piment d'Espelette",
         "cresson"
       ],
       "peak": [],
@@ -1611,21 +1753,23 @@
         "poire",
         "poireau",
         "pomme",
-        "potiron"
+        "potiron",
+        "piment d'Espelette"
       ],
       "edge": [],
       "arrivals": [],
       "farewells": [
-        "ail"
+        "ail",
+        "piment d'Espelette"
       ],
       "quiet": [
         "ail",
-        "carotte",
         "oignon",
         "courge",
-        "potiron"
+        "potiron",
+        "piment d'Espelette"
       ],
-      "blurb": "Décembre compte <strong>11</strong> produits de saison. À peu près la même récolte qu'en Novembre."
+      "blurb": "Décembre compte <strong>12</strong> produits de saison. À peu près la même récolte qu'en Novembre."
     }
   ]
 }

@@ -546,5 +546,11 @@
       "head": "#fff0a6",
       "leaf": "#a8e05a"
     }
+  },
+  "Wild Blueberries": {
+    "archetype": "cluster",
+    "colours": {
+      "body": "#34307a"
+    }
   }
 }
