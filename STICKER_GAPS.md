@@ -2,15 +2,9 @@
 
 Domestic-grown rows held out of the wheel because no shared sticker archetype reads as them. Month cells are the source cells.
 
-Many Florida, California, and Japan rows below (banana, lychee, longan, papaya, kiwifruit, the nuts, lotus root, bamboo shoot, green tea, and more) now have a sticker in `art/ARCHETYPES.md`. They stay listed until those packs are wired. Catches (fish, shellfish, crab) stay held: no pack has a seafood category, and adding one is a shared-legend change.
+Catches (fish, shellfish, crab) stay held: the wheel is fruit and vegetables, and no pack has a seafood category. The rest are crops with no silhouette most visitors would know, or drawings that read as another food (see `art/ARCHETYPES.md`).
 
 ## Florida (`fl`)
-
-### Peanut
-
-The Florida calendar lists a bounded season. A husked cobnut would read as a hazelnut, not a peanut.
-
-aug in, sep in, oct in, nov in
 
 ### Akee
 
@@ -18,41 +12,11 @@ No shared drawing reads as this crop.
 
 jan in, feb in, mar in, aug in, sep in, oct in, nov in, dec in
 
-### Atemoya
-
-No shared drawing reads as a custard apple.
-
-jan in, aug in, sep in, oct in, nov in, dec in
-
-### Banana
-
-A shared drawing would read as a different crop already on the wheel.
-
-jan in, feb in, mar in, apr in, may in, jun in, jul in, aug in, sep in, oct in, nov in, dec in
-
 ### Black sapote
 
 No shared drawing reads as this crop.
 
 jan in, feb in, mar in, dec in
-
-### Carambola
-
-No shared drawing reads as this crop.
-
-jan in, feb in, mar in, jun in, jul in, aug in, sep in, oct in, nov in, dec in
-
-### Coconut
-
-No shared drawing reads as this crop.
-
-jan in, feb in, mar in, apr in, may in, jun in, jul in, aug in, sep in, oct in, nov in, dec in
-
-### Custard apple
-
-No shared drawing reads as a custard apple.
-
-jan in, feb in, mar in, apr in, may in, nov in, dec in
 
 ### Guanabana (soursop)
 
@@ -60,71 +24,11 @@ No shared drawing reads as this crop.
 
 jun in, jul in, aug in, sep in
 
-### Guava
-
-No shared drawing reads as this crop.
-
-feb in, mar in, aug in, sep in, oct in
-
-### Jackfruit
-
-No shared drawing reads as this crop.
-
-may in, jun in, jul in, aug in, sep in, oct in
-
-### Jujube
-
-The round and oval fruit drawings read as another crop already on the wheel.
-
-feb in, mar in, apr in, may in
-
-### Longan
-
-A shared drawing would read as a different crop already on the wheel.
-
-jul in, aug in
-
-### Lychee
-
-A shared drawing would read as a different crop already on the wheel.
-
-may in, jun in, jul in
-
-### Macadamia
-
-A husked cobnut would read as a hazelnut, not a macadamia.
-
-aug in, sep in, oct in
-
 ### Mamey sapote
 
 No shared drawing reads as this crop.
 
 apr in, may in, jun in, jul in, aug in, sep in, oct in
-
-### Papaya
-
-No shared drawing reads as this crop.
-
-jan in, feb in, mar in, apr in, may in, jun in, jul in, aug in, sep in, oct in, nov in, dec in
-
-### Passion fruit
-
-No shared drawing reads as this crop.
-
-may in, jun in, jul in, aug in, sep in, oct in, nov in, dec in
-
-### Pitaya (dragon fruit)
-
-No shared drawing reads as this crop.
-
-jun in, jul in, aug in, sep in, oct in, nov in
-
-### Pummelo
-
-A green round fruit reads as an apple, not a pummelo.
-
-jan in, feb in, mar in, apr in, aug in, sep in, oct in, nov in, dec in
 
 ### Sapodilla
 
@@ -138,72 +42,11 @@ No shared drawing reads as this crop.
 
 feb in, mar in, apr in, may in
 
-### Sugar apple
-
-No shared drawing reads as this crop.
-
-jul in, aug in, sep in
-
-### Wampee
-
-A shared drawing would read as a different crop already on the wheel.
-
-jun in, jul in
-
-### Wax jambu
-
-A shared drawing would read as a different crop already on the wheel.
-
-jun in, jul in
-
 ### White sapote
 
 No shared drawing reads as this crop.
 
 may in, jun in, jul in
-## California (`ca`)
-
-### Almond
-
-The Fresno County calendar lists a bounded season. A husked cobnut would read as a hazelnut, not an almond.
-
-sep in, oct in
-
-### Date
-
-The Coachella Valley Independent lists a bounded season. No shared drawing reads as a date.
-
-sep in, oct in, nov in, dec in
-
-### Kiwifruit
-
-The Fresno County calendar lists a bounded season. A brown oval would read as a stone fruit, not a kiwi.
-
-nov in
-
-### Olive
-
-The Fresno County calendar lists a bounded season. No shared drawing reads as an olive.
-
-oct in, nov in
-
-### Pecan
-
-The Fresno County calendar lists a bounded season. A husked cobnut would read as a hazelnut, not a pecan.
-
-nov in
-
-### Pistachio
-
-The Fresno County calendar lists a bounded season. No shared drawing reads as a pistachio.
-
-sep in, oct in, nov in
-
-### Walnut
-
-The Fresno County calendar lists a bounded season. A chestnut drawing would read as a chestnut, not a walnut.
-
-sep in, oct in, nov in
 
 ## Sichuan (`sc`)
 
@@ -419,6 +262,32 @@ No shared drawing reads as this catch.
 
 dec in
 
+## Guangdong (`gd`)
+
+### Luffa
+
+The drawn gourd read as a cucumber or courgette.
+
+jun in, jul in, aug in, sep in, oct in
+
+### Hairy gourd
+
+A fuzzy green gourd reads as a courgette or cucumber.
+
+feb in, mar in, apr in, may in
+
+### Mud crab
+
+No shared drawing reads as this catch.
+
+mar in, apr in, may in, jun in, jul in, aug in, sep in, oct in, nov in, dec in
+
+### Oyster
+
+No shared drawing reads as this catch.
+
+jan in, feb in, mar in, oct in, nov in, dec in
+
 ## Xinjiang (`xj`)
 
 ### Chickpea
@@ -447,12 +316,6 @@ jan in, feb in, mar in, apr in
 
 ## Japan (`jp`)
 
-### Bamboo shoot
-
-No shared drawing reads as this crop.
-
-mar in, apr in, may in
-
 ### Firefly squid
 
 No shared drawing reads as this catch.
@@ -464,24 +327,6 @@ mar in, apr in, may in, jun in
 No shared drawing reads as this crop.
 
 jan in, feb in, mar in
-
-### Green tea, first flush
-
-No shared drawing reads as this crop.
-
-apr in, may in
-
-### Kiwifruit
-
-A shared drawing would read as a different crop already on the wheel.
-
-jan in, feb in, mar in, apr in, nov in, dec in
-
-### Lotus root
-
-No shared drawing reads as this crop.
-
-jan in, feb in, mar in, apr in, may in, jun in, jul in, aug in, sep in, oct in, nov in, dec in
 
 ### Pacific saury
 
@@ -519,23 +364,11 @@ No shared drawing reads as this crop.
 
 jan in, feb in, dec in
 
-### Ginger
-
-No shared drawing reads as this crop.
-
-mar in, apr in, may in, jun in (source peak), jul in (source peak), aug in, sep in
-
 ### Myoga
 
 No shared drawing reads as this crop.
 
 jan in, feb in, mar in, apr in, may in, jun in, jul in, aug in, sep in, oct in, nov in, dec in
-
-### Okra
-
-No shared drawing reads as this crop.
-
-apr in, may in, jun in (source peak), jul in (source peak), aug in (source peak), sep in (source peak), oct in
 
 ### Oyster
 

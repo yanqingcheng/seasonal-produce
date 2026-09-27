@@ -69,9 +69,9 @@
     ".": "out"
   },
   "sticker_exclude": [],
-  "attribution": "Ministerio de Agricultura, Pesca y Alimentación, frutas y hortalizas de temporada.",
+  "attribution": "Ministerio de Agricultura, Pesca y Alimentación, frutas y hortalizas de temporada. Especialidades regionales: IGP Calçot de Valls y AGACAL (IGP Castaña de Galicia).",
   "alias_profile": "none",
   "recipe_rule": "optional",
-  "expect_items": 57,
+  "expect_items": 59,
   "require_peak_every_month": true
 }

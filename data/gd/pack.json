@@ -1,10 +1,10 @@
 {
-  "id": "fl",
-  "name": "Florida",
-  "locale": "en-US",
-  "timezone": "America/New_York",
-  "title": "The Florida Year-Wheel",
-  "tagline": "What's growing in Florida, month by month.",
+  "id": "gd",
+  "name": "Guangdong",
+  "locale": "en",
+  "timezone": "Asia/Shanghai",
+  "title": "The Guangdong Year-Wheel",
+  "tagline": "What's growing in Guangdong, month by month.",
   "month_names": [
     "January",
     "February",
@@ -47,13 +47,6 @@
       "one": "fruit",
       "plural": "fruit",
       "everyday": true
-    },
-    {
-      "id": "nut",
-      "label": "Nut",
-      "one": "nut",
-      "plural": "nuts",
-      "everyday": false
     }
   ],
   "state_roles": {
@@ -61,9 +54,9 @@
     ".": "out"
   },
   "sticker_exclude": [],
-  "attribution": "Florida Department of Agriculture and Consumer Services, Florida Produce Seasonal Availability Calendar, and University of Florida IFAS.",
+  "attribution": "Guangdong harvest months from Guangdong provincial, city and county governments, 南方+, 羊城晚报, 广州日报 and other Guangdong newspapers, and 中国地理标志产品 records.",
   "alias_profile": "none",
   "recipe_rule": "optional",
-  "expect_items": 53,
+  "expect_items": 34,
   "require_peak_every_month": false
 }

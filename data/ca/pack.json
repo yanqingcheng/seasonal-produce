@@ -47,6 +47,13 @@
       "one": "fruit",
       "plural": "fruit",
       "everyday": true
+    },
+    {
+      "id": "nut",
+      "label": "Nut",
+      "one": "nut",
+      "plural": "nuts",
+      "everyday": false
     }
   ],
   "state_roles": {
@@ -57,6 +64,6 @@
   "attribution": "California harvest months from the County of Fresno Harvest Calendar for Fresno County Crops (2018), the California Artichoke Advisory Board, California Grown, The Produce Nerd, and the Coachella Valley Independent.",
   "alias_profile": "none",
   "recipe_rule": "optional",
-  "expect_items": 37,
+  "expect_items": 44,
   "require_peak_every_month": false
 }

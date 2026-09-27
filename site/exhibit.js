@@ -421,7 +421,7 @@ function renderPanel(animate) {
   panel.innerHTML = `
     <article class="month-card${animate ? " enter" : ""}">
       <header class="month-head">
-        <p class="eyebrow">${esc(session.pack.seasons[m])} · ${m + 1} of 12 ${now}</p>
+        <p class="eyebrow">${esc(session.pack.seasons[m])} · ${esc(fillTpl(session.pack.copy.month_of, { n: m + 1 }))} ${now}</p>
         <h2>${esc(mo.name)}</h2>
         <p class="blurb">${mo.blurb}</p>
         ${mixBar(mo)}
@@ -593,6 +593,7 @@ const PLACE_FLAGS = {
   js: "🇨🇳",
   yn: "🇨🇳",
   hi: "🇨🇳",
+  gd: "🇨🇳",
   xj: "🇨🇳",
   jp: "🇯🇵",
 };
@@ -600,7 +601,7 @@ const PLACE_FLAGS = {
 const PLACE_CONTINENTS = [
   ["Europe", ["uk", "fr", "es", "it"]],
   ["North America", ["on", "fl", "ca"]],
-  ["Asia", ["sc", "sd", "js", "yn", "hi", "xj", "jp"]],
+  ["Asia", ["sc", "sd", "js", "yn", "hi", "gd", "xj", "jp"]],
 ];
 
 function flagForPlace(id) {
@@ -615,14 +616,14 @@ function maybeCountryControl(registry) {
   nav.className = "country-control";
   const label = document.createElement("label");
   label.htmlFor = "country-select";
-  label.textContent = "Place";
+  label.textContent = session.pack.copy.place;
   const select = document.createElement("select");
   select.id = "country-select";
   for (const [continent, ids] of PLACE_CONTINENTS) {
     const rows = shipped.filter((row) => ids.includes(row.id));
     if (!rows.length) continue;
     const group = document.createElement("optgroup");
-    group.label = continent;
+    group.label = session.pack.copy.continents[continent];
     for (const row of rows) {
       const option = document.createElement("option");
       option.value = row.id;

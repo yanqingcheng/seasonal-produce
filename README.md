@@ -1,6 +1,6 @@
 # Seasonal Produce
 
-An illustrated year-wheel of what fruit and veg are in season, month by month, across 14 places. Spin the wheel, tap a month to see what's at its peak, and tap any sticker for a fact sheet. It lives at **[qingsworkshop.com/in-season](https://www.qingsworkshop.com/in-season/)**, part of Qing's Workshop.
+An illustrated year-wheel of what fruit and veg are in season, month by month, across 15 places. Spin the wheel, tap a month to see what's at its peak, and tap any sticker for a fact sheet. It lives at **[qingsworkshop.com/in-season](https://www.qingsworkshop.com/in-season/)**, part of Qing's Workshop.
 
 [![The UK year-wheel in September](docs/year-wheel.png)](https://www.qingsworkshop.com/in-season/)
 
@@ -22,6 +22,7 @@ Pick a place from the **Place** menu, or link straight to one with `?country=<id
 | Asia | Jiangsu | `js` |
 | Asia | Yunnan | `yn` |
 | Asia | Hainan | `hi` |
+| Asia | Guangdong | `gd` |
 | Asia | Xinjiang | `xj` |
 | Asia | Japan | `jp` |
 

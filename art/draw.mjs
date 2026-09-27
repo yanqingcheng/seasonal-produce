@@ -1029,6 +1029,97 @@ const A = {
       <path d="M40 96C44 92 56 92 60 96" fill="none" stroke-width="3"/>
       ${f(50, 56, 0.55)}`;
   },
+
+  pummelo: (c, f) => {
+    const pores = grid(40, 54, 36, 32, 11, [18, 42, 60, 70], 0.8).map(([x, y]) => `M${x} ${y}h.1`).join("");
+    const segs = [36, 72, 108, 144].map((a) => {
+      const r = (a * Math.PI) / 180;
+      return `M0 0L${n1(-15 * Math.cos(r))} ${n1(15 * Math.sin(r))}`;
+    }).join("");
+    return `
+    <path d="M40 12L41 4" fill="none" stroke="${c.stem}" stroke-width="3.4"/>
+    <path d="M42 7C48 -2 62 -2 68 2C62 11 50 13 42 7Z" fill="${c.leaf}"/>
+    <path d="M40 11C53 11 61 19 67 27C79 35 84 47 84 60C84 80 64 92 40 92C16 92 -2 80 -2 60C-2 47 3 35 14 27C20 19 28 11 40 11Z" fill="${c.body}"/>
+    ${c.blush ? `<ellipse cx="60" cy="40" rx="22" ry="17" fill="${c.blush}" stroke="none" opacity=".3" transform="rotate(30 60 40)"/>` : ""}
+    <path d="${pores}" fill="none" stroke="${c.pore}" stroke-width="2.6"/>
+    ${shine(16, 46, 5, 10)}
+    ${f(36, 56)}
+    <g transform="translate(74 72) rotate(-18)">
+      <path d="M-26 0A26 26 0 0 0 26 0Z" fill="${c.body}"/>
+      <path d="M-23 0A23 23 0 0 0 23 0Z" fill="${c.pith}" stroke="none"/>
+      <path d="M-15 0A15 15 0 0 0 15 0Z" fill="${c.flesh}" stroke="none"/>
+      <path d="${segs}" fill="none" stroke="${c.pith}" stroke-width="2.2"/>
+      <path d="M-26 0H26" fill="none"/>
+    </g>`;
+  },
+
+  jujube: (c, f) => {
+    // A patch of the second colour hugging the outline between two angles, with a wavy inner edge.
+    const patch = (rx, ry, from, to, amp) => {
+      const at = (deg, k = 1) => [(rx - 1.8) * k * Math.cos((deg * Math.PI) / 180), (ry - 1.8) * k * Math.sin((deg * Math.PI) / 180)];
+      const rim = Array.from({ length: 13 }, (_, i) => at(from + ((to - from) * i) / 12));
+      const [x0, y0] = rim[12], [x1, y1] = rim[0];
+      let back = "";
+      for (let i = 1; i <= 4; i++) {
+        const tm = (i - 0.5) / 4, t = i / 4;
+        const [mx, my] = [x0 + (x1 - x0) * tm, y0 + (y1 - y0) * tm];
+        back += `Q${n1(mx * (i % 2 ? 1 - amp : 1 + amp * 0.4))} ${n1(my * (i % 2 ? 1 - amp : 1 + amp * 0.4))} ${n1(x0 + (x1 - x0) * t)} ${n1(y0 + (y1 - y0) * t)}`;
+      }
+      return `M${rim.map(([x, y]) => `${n1(x)} ${n1(y)}`).join("L")}${back}Z`;
+    };
+    const fruit = (x, y, rx, ry, rot, face, [from, to], fleck) => `<g transform="translate(${x} ${y}) rotate(${rot})">
+      <path d="M0 ${-ry + 1}L1.5 ${-ry - 6}" fill="none" stroke="${c.stem}" stroke-width="3"/>
+      <path d="M0 ${-ry}C${n1(rx * 0.9)} ${-ry} ${rx} ${n1(-ry * 0.45)} ${rx} 0C${rx} ${n1(ry * 0.55)} ${n1(rx * 0.7)} ${ry} 0 ${ry}C${n1(-rx * 0.7)} ${ry} ${-rx} ${n1(ry * 0.55)} ${-rx} 0C${-rx} ${n1(-ry * 0.45)} ${n1(-rx * 0.9)} ${-ry} 0 ${-ry}Z" fill="${c.body}"/>
+      <path d="${patch(rx, ry, from, to, 0.9)}" fill="${c.mottle}" stroke="none"/>
+      <path d="M${n1(fleck[0] * rx)} ${n1(fleck[1] * ry)}h.1M${n1(fleck[0] * rx + 4)} ${n1(fleck[1] * ry + 6)}h.1" fill="none" stroke="${c.mottle}" stroke-width="3.4"/>
+      ${face ? shine(n1(-rx * 0.5), n1(-ry * 0.34), 2.6, 7, 8) : ""}</g>${face ? f(x, y + 3, 0.58) : ""}`;
+    return `
+    <path d="M98 10C86 12 76 18 70 24M80 15C76 20 72 26 68 32" fill="none" stroke="${c.stem}" stroke-width="3"/>
+    <ellipse cx="88" cy="26" rx="5.5" ry="10" fill="${c.leaf}" transform="rotate(50 88 26)"/>
+    <ellipse cx="70" cy="11" rx="5.5" ry="10" fill="${c.leaf}" transform="rotate(-62 70 11)"/>
+    <path d="M84 22L92 30M66 14L75 8" fill="none" stroke-width="1.8" opacity=".35"/>
+    ${fruit(72, 56, 12, 20, 14, false, [-40, 220], [0.1, -0.7])}
+    ${fruit(42, 58, 17, 29, -12, true, [55, 165], [0.35, -0.55])}`;
+  },
+
+  guava: (c, f) => {
+    const whole = "M70 8C76 8 78 12 80 16C90 20 96 30 96 42C96 56 86 64 72 64C58 64 48 56 48 42C48 30 54 20 64 16C65 12 66 8 70 8Z";
+    const half = "M40 26C48 26 51 31 53 36C66 41 74 53 74 65C74 81 60 93 40 93C20 93 6 81 6 65C6 53 14 41 27 36C29 31 32 26 40 26Z";
+    const seeds = Array.from({ length: 11 }, (_, i) => {
+      const a = (i / 11) * TAU + 0.3;
+      return `<circle cx="${n1(40 + 14.5 * Math.cos(a))}" cy="${n1(68 + 12 * Math.sin(a))}" r="1.9" fill="${c.seed}" stroke="none"/>`;
+    }).join("");
+    return `
+    <path d="M70 9L72 2" fill="none" stroke="${c.stem}" stroke-width="3.2"/>
+    <path d="M72 5C80 -4 94 -3 98 2C92 11 80 12 72 5Z" fill="${c.leaf}"/>
+    <path d="M75 4C82 3 88 2 95 2" fill="none" stroke-width="1.8" opacity=".35"/>
+    <path d="${whole}" fill="${c.skin}"/>
+    ${shine(86, 34, 3, 7, -20)}
+    <path d="${half}" fill="${c.skin}"/>
+    <path d="${half}" fill="${c.body}" stroke="none" transform="translate(40 64) scale(.88) translate(-40 -64)"/>
+    <ellipse cx="40" cy="68" rx="19" ry="16" fill="${c.pulp}" stroke="none"/>
+    ${seeds}
+    ${f(40, 66, 0.62)}`;
+  },
+
+  macadamia: (c, f) => `
+    <path d="M14 22C8 8 18 -2 30 2C32 14 24 22 14 22Z" fill="${c.leaf}"/>
+    <path d="M16 20C20 12 24 8 28 4" fill="none" stroke-width="1.8" opacity=".35"/>
+    <path d="M22 26L18 20" fill="none" stroke="${c.lining}" stroke-width="3"/>
+    <path d="M46 20C30 20 14 32 14 52C14 72 28 84 44 86C38 74 36 60 40 46C43 34 48 26 46 20Z" fill="${c.husk}"/>
+    <path d="M40 44C37 58 38 72 44 86" fill="none" stroke="${c.lining}" stroke-width="3.4"/>
+    <path d="M58 22C76 24 88 38 88 56C88 70 80 80 68 84C74 72 74 56 70 44C67 34 62 28 58 22Z" fill="${c.husk}"/>
+    <path d="M70 44C74 56 74 72 68 84" fill="none" stroke="${c.lining}" stroke-width="3.4"/>
+    ${shine(24, 44, 3, 8, 20)}
+    <circle cx="55" cy="54" r="21" fill="${c.body}"/>
+    <circle cx="63" cy="43" r="3.2" fill="${c.eye}" stroke="none"/>
+    ${f(54, 57, 0.66)}
+    <g transform="translate(80 80) rotate(18) scale(1.2)">
+      <path d="M-16 -2C-16 12 -8 17 0 17C8 17 16 12 16 -2L10 2L6 -4L1 1L-4 -5L-9 1Z" fill="${c.body}"/>
+      <circle cx="0" cy="-3" r="11" fill="${c.kernel}"/>
+      <path d="M-16 -2C-16 12 -8 17 0 17C8 17 16 12 16 -2L10 2L6 -4L1 1L-4 -5L-9 1Z" fill="${c.body}"/>
+      <path d="M-5 -10C-3 -12 1 -12 3 -11" fill="none" stroke-width="1.8" opacity=".35"/>
+    </g>`,
 };
 
 

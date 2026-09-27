@@ -382,10 +382,15 @@
     }
   },
   "pomelo": {
-    "archetype": "round",
+    "archetype": "pummelo",
     "colours": {
-      "body": "#e7f5a4",
-      "leaf": "#52c26b"
+      "body": "#ffe066",
+      "pore": "#e0b83a",
+      "blush": "#ff7a8a",
+      "pith": "#fff6dc",
+      "flesh": "#ff5a6e",
+      "stem": "#7a4a2c",
+      "leaf": "#3bb273"
     }
   },
   "sandía": {
@@ -429,6 +434,20 @@
       "body2": "#ffb627",
       "tip": "#7a4a2c",
       "stem": "#a8e05a"
+    }
+  },
+  "calçot de Valls": {
+    "archetype": "springonion",
+    "colours": {
+      "body": "#fffdf6",
+      "leaf": "#3bb273"
+    }
+  },
+  "castaña de Galicia": {
+    "archetype": "chestnut",
+    "colours": {
+      "body": "#7a4a2c",
+      "body2": "#e9b87a"
     }
   }
 }

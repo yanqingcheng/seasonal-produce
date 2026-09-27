@@ -380,5 +380,26 @@
       "core": "#fff6dc",
       "fuzz": true
     }
+  },
+  "limone di Sorrento": {
+    "archetype": "round",
+    "colours": {
+      "body": "#ffd84a",
+      "leaf": "#52c26b"
+    }
+  },
+  "patata della Sila": {
+    "archetype": "potato",
+    "colours": {
+      "body": "#e9b87a"
+    }
+  },
+  "carciofo romanesco": {
+    "archetype": "artichoke",
+    "colours": {
+      "body": "#9dbf94",
+      "body2": "#3bb273",
+      "tip": "#8e4dd6"
+    }
   }
 }

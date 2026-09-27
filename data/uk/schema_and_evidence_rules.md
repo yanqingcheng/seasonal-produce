@@ -23,7 +23,8 @@ Project #22 from Qing's public-data research dump, pass 2 (19 Sep 2026). See cha
 3. Where a specialist body contradicts the generalist calendars (e.g. The Watercress Company's May-Nov season), the specialist window wins in the main table via a recorded override, and the disagreement is kept in audit_report.md. Overrides are flagged per-cell in produce_calendar_long.csv.
 4. Boundary disagreements of half a month are preserved, not averaged.
 5. Imported-only produce (banana, citrus, dates, pomegranate, watermelon, melon, sweet potato) is excluded from the UK calendar; the exclusions are listed in the audit report.
-6. Regionality is only asserted where a source names the place (Jersey Royals -> Jersey PDO/PGI; forced rhubarb -> Yorkshire Triangle PDO; asparagus -> Vale of Evesham PGI; watercress -> Hampshire/Dorset; raspberries -> Tayside/Angus; damsons -> Lyth Valley; cobnuts -> Kent; Cornish/Pembrokeshire earlies; samphire -> Norfolk marsh coast).
+6. Regionality is only asserted where a source names the place (Jersey Royals -> Jersey PDO/PGI; forced rhubarb -> Yorkshire Triangle PDO; asparagus -> Vale of Evesham PGI; watercress -> Hampshire/Dorset; raspberries -> Tayside/Angus; damsons -> Lyth Valley; cobnuts -> Kent; Cornish/Pembrokeshire earlies; samphire -> Norfolk marsh coast; armagh bramley apple -> County Armagh PGI).
+8. One regional row sits outside the pass-2 vote: armagh bramley apple, September–October, from the National Trust's Ardress House orchards (Co. Armagh), where the apples are picked by hand. The bramley apple row keeps its stored-season months. Vale of Evesham asparagus and Kentish cobnuts are already the asparagus and cobnuts rows, so they add no row.
 7. Recipes: exactly one per calendar month, each using produce the dataset marks in season (P or I) that month, each with a working source URL (spot-verified).
 
 ## Source families used

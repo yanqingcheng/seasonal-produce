@@ -23,6 +23,6 @@ Shipped: 42. Held for a drawing: 7.
 
 ## Approximate stickers
 
-Shared archetypes, not new drawings. Crops that already have a sticker in another pack use that sticker's item name and colours. Named cultivars of pear, peach, plum, and citrus use the same silhouette with their own name. Fact sheets name the region the window belongs to, and cite the publishers for that crop.
+Shared archetypes, not new drawings. Crops that already have a sticker in another pack use that sticker's item name and colours. Named cultivars of pear, peach, plum, and citrus use the same silhouette with their own name. Zhenlong pomelo takes its cultivar name from the source so it can use the pummelo drawing; the Spanish « pomelo » is grapefruit, so it keeps its own sprite id with grapefruit colours. Fact sheets name the region the window belongs to, and cite the publishers for that crop.
 
 Attribution: Sichuan harvest months from 四川在线 and 川观新闻.

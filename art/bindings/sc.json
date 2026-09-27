@@ -180,11 +180,15 @@
       "crown": "#e9b87a"
     }
   },
-  "pomelo": {
-    "archetype": "round",
+  "Zhenlong pomelo": {
+    "archetype": "pummelo",
     "colours": {
       "body": "#e7f5a4",
-      "leaf": "#52c26b"
+      "pore": "#b8d96a",
+      "pith": "#fffdf6",
+      "flesh": "#ff9fb2",
+      "stem": "#7a4a2c",
+      "leaf": "#3bb273"
     }
   },
   "Pumpkin": {

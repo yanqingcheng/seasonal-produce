@@ -23,7 +23,7 @@ The guide's produce_group is kept: fruit or vegetable. Rhubarb stays fruit becau
 
 Foodland Ontario publishes Ontario-grown availability. Cranberries, watermelon, muskmelon, and sweet potatoes stay: the guide gives them Ontario months, and the UK pack's import exclusions do not apply here. No source row was dropped as import-only. Bitter melon, garlic scapes, and sprouts were held for a drawing, not for failing the domestic test. They ship now that their stickers exist.
 
-Shipped: 73.
+Shipped: 74: the 73 Foodland rows and Wild Blueberries, a Northern Ontario forest crop (Northern Ontario Travel, typically mid- to late August). The Foodland Blueberries row is the cultivated crop and keeps its own months.
 
 Item names that share a sticker id with the UK pack use the UK item string, so the shared sprite matches:
 
@@ -45,6 +45,6 @@ Item names that share a sticker id with the UK pack use the UK item string, so t
 
 ## Approximate stickers
 
-Haskap uses the berry cluster. Cranberries use the berry drawing. Grapes use the currant bunch. Watermelon uses a green striped oval. Muskmelon uses a tan striped oval. Sweet potatoes use the potato drawing with an orange fill. Daikon uses a thin white root. Nappa, bok choy, mustard greens, amaranth, water spinach, yow choy, and snow-pea shoots use leafy or head drawings. Chinese broccoli and rapini use the broccoli drawing. Green and yellow beans share one row in the guide and one green-bean drawing.
+Haskap uses the berry cluster. Wild blueberries use the same cluster in a darker indigo. Cranberries use the berry drawing. Grapes use the currant bunch. Watermelon uses a green striped oval. Muskmelon uses a tan striped oval. Sweet potatoes use the potato drawing with an orange fill. Daikon uses a thin white root. Nappa, bok choy, mustard greens, amaranth, water spinach, yow choy, and snow-pea shoots use leafy or head drawings. Chinese broccoli and rapini use the broccoli drawing. Green and yellow beans share one row in the guide and one green-bean drawing.
 
-Fact sheets cite the Foodland guide and otherwise show only the month grid.
+Fact sheets cite the Foodland guide or Northern Ontario Travel, and otherwise show only the month grid.

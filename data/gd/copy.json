@@ -50,7 +50,7 @@
   "season_label": "Season: {list}",
   "mix_label": "In season by type: {list}",
   "blurb": {
-    "counts": "{month} has {in} Xinjiang crops in season.",
+    "counts": "{month} has {in} Guangdong crops in season.",
     "fullest": "The fullest month on the wheel.",
     "leanest": "The leanest stretch of the year.",
     "filling": "The wheel is filling up: {n} more in season than in {prev}.",

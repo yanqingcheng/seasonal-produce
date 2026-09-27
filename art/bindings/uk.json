@@ -813,5 +813,12 @@
       "body": "#3bb273",
       "stem": "#23865a"
     }
+  },
+  "armagh bramley apple": {
+    "archetype": "round",
+    "colours": {
+      "body": "#a8e05a",
+      "leaf": "#3bb273"
+    }
   }
 }

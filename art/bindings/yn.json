@@ -108,10 +108,11 @@
     }
   },
   "Indian jujube / green jujube": {
-    "archetype": "oval",
+    "archetype": "jujube",
     "colours": {
-      "body": "#c6e07a",
-      "cleft": true,
+      "body": "#9bd05a",
+      "mottle": "#e7f0a0",
+      "stem": "#7a4a2c",
       "leaf": "#3bb273"
     }
   },
@@ -333,7 +334,8 @@
     "colours": {
       "body": "#fff0a6",
       "tip": "#ff86a8",
-      "leaf": "#52c26b"
+      "leaf": "#52c26b",
+      "ring": "#e9b87a"
     }
   },
   "Kiwifruit": {

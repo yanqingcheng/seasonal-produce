@@ -1,6 +1,9 @@
 {
   "this_month": "Questo mese",
   "back_to": "Torna a {month}",
+  "month_of": "{n} di 12",
+  "place": "Luogo",
+  "continents": {"Europe": "Europa", "North America": "America del Nord", "Asia": "Asia"},
   "new_in": "Novità",
   "last_call": "Ultimi giorni",
   "at_peak": "Al picco",

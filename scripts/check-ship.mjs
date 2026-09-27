@@ -19,7 +19,7 @@ const registry = JSON.parse(readFileSync(join(root, "site/data/registry.json"), 
 const packFile = readFileSync(join(root, "data/uk/pack.json"), "utf8");
 const built = buildPack("uk", { root });
 
-check(uk.items.length === 107, `uk.json has ${uk.items.length} items, expected 107`);
+check(uk.items.length === 108, `uk.json has ${uk.items.length} items, expected 108`);
 check(!JSON.stringify(uk).toLowerCase().includes("cranberry"), "uk.json contains cranberry");
 check(uk.items.some((it) => it.item === "pak choi"), "pak choi missing");
 check(uk.items.some((it) => it.item === "samphire"), "samphire missing");
@@ -41,16 +41,17 @@ const walk = (value, path) => {
 };
 walk(uk, "uk");
 
-check(Array.isArray(registry) && registry.map((row) => `${row.id}:${row.status}`).join(",") === "uk:shipped,fr:shipped,es:shipped,on:shipped,it:shipped,fl:shipped,ca:shipped,sc:shipped,sd:shipped,js:shipped,yn:shipped,hi:shipped,xj:shipped,jp:shipped", "registry");
+check(Array.isArray(registry) && registry.map((row) => `${row.id}:${row.status}`).join(",") === "uk:shipped,fr:shipped,es:shipped,on:shipped,it:shipped,fl:shipped,ca:shipped,sc:shipped,sd:shipped,js:shipped,yn:shipped,hi:shipped,gd:shipped,xj:shipped,jp:shipped", "registry");
 check(!exhibit.includes("Europe/London"), "exhibit script contains Europe/London");
 check(!exhibit.includes("Europe/Paris") && !exhibit.includes("Europe/Madrid") && !exhibit.includes("America/Toronto") && !exhibit.includes("Europe/Rome") && !exhibit.includes("America/New_York") && !exhibit.includes("Asia/Shanghai") && !exhibit.includes("Asia/Urumqi") && !exhibit.includes("Asia/Tokyo"), "exhibit script contains a pack timezone");
 check(!exhibit.includes("Gardeners"), "exhibit script contains the footer sentence");
+check(!exhibit.includes("of 12") && !exhibit.includes('"Place"'), "exhibit script hardcodes English chrome copy");
 check(!exhibit.includes("cranberry"), "exhibit script contains cranberry");
 check(!html.includes("fonts.googleapis.com") && !html.includes("fonts.gstatic.com"), "page requests Google Fonts");
 check(!html.includes("country-control") && !exhibit.includes("globe") && !exhibit.includes("GeoJSON"), "globe or hardcoded country chrome shipped");
 check(exhibit.includes("resolvePackId"), "country query is not wired");
 check(JSON.parse(packFile).sticker_exclude.length === 0, "sticker_exclude is not empty");
-check(JSON.parse(packFile).expect_items === 107, "expect_items");
+check(JSON.parse(packFile).expect_items === 108, "expect_items");
 
 for (const item of uk.items) {
   const needle = item.item.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -105,7 +106,7 @@ check(readFileSync(join(root, "site/sprites.svg"), "utf8") === site.sprite, "spr
 check(readFileSync(join(root, "site/og.svg"), "utf8") === site.og, "og.svg is stale; rerun the build");
 
 const byId = Object.fromEntries(site.built.map((entry) => [entry.id, entry.pack]));
-for (const id of ["uk", "fr", "es", "on", "it", "fl", "ca", "sc", "sd", "js", "yn", "hi", "xj", "jp"]) {
+for (const id of ["uk", "fr", "es", "on", "it", "fl", "ca", "sc", "sd", "js", "yn", "hi", "gd", "xj", "jp"]) {
   const manifest = JSON.parse(readFileSync(join(root, "data", id, "pack.json"), "utf8"));
   const file = JSON.parse(readFileSync(join(root, "site/data", `${id}.json`), "utf8"));
   check(JSON.stringify(byId[id]) === JSON.stringify(file), `site/data/${id}.json is stale; rerun the build`);
@@ -113,6 +114,7 @@ for (const id of ["uk", "fr", "es", "on", "it", "fl", "ca", "sc", "sd", "js", "y
   check(file.id === id && file.timezone === manifest.timezone && file.name === manifest.name, `${id} id, name, or timezone`);
   check(file.items.every((it) => it.months.every((role) => ["peak", "in", "edge", "out"].includes(role))), `${id} role outside the four`);
   check(file.items.every((it) => it.months.some((role) => role !== "out")), `${id} row with no domestic month`);
+  check(file.copy.month_of?.includes("{n}") && file.copy.place && ["Europe", "North America", "Asia"].every((c) => file.copy.continents?.[c]), `${id} copy lacks month_of, place, or continent names`);
   const roles = new Set(Object.values(manifest.state_roles));
   check([...roles].every((role) => ["peak", "in", "edge", "out"].includes(role)), `${id} state_roles`);
 }
@@ -127,7 +129,7 @@ check(fr.timezone === "Europe/Paris" && es.timezone === "Europe/Madrid" && on.ti
 check(on.id === "on" && on.name.includes("Ontario") && on.name !== "Canada", "Ontario is not a Canada-national pack");
 check(fl.id === "fl" && fl.name === "Florida" && fl.name !== "United States" && fl.name !== "USA", "Florida is not a United States pack");
 check(ca.id === "ca" && ca.name === "California" && ca.name !== "United States" && ca.name !== "USA", "California is not a United States pack");
-const placeNames = { sc: "Sichuan", sd: "Shandong", js: "Jiangsu", yn: "Yunnan", hi: "Hainan", xj: "Xinjiang", jp: "Japan" };
+const placeNames = { sc: "Sichuan", sd: "Shandong", js: "Jiangsu", yn: "Yunnan", hi: "Hainan", gd: "Guangdong", xj: "Xinjiang", jp: "Japan" };
 for (const [id, name] of Object.entries(placeNames)) {
   const place = byId[id];
   check(place.id === id && place.name === name, `${id} id or name`);
@@ -139,7 +141,7 @@ for (const [id, name] of Object.entries(placeNames)) {
   check(place.recipes.length === 0, `${id} invented recipes`);
   check(JSON.parse(readFileSync(join(root, "data", id, "pack.json"), "utf8")).alias_profile === "none", `${id} alias profile`);
 }
-check(byId.sc.timezone === "Asia/Shanghai" && byId.xj.timezone === "Asia/Urumqi" && byId.jp.timezone === "Asia/Tokyo", "Sichuan, Xinjiang, and Japan timezones");
+check(byId.sc.timezone === "Asia/Shanghai" && byId.gd.timezone === "Asia/Shanghai" && byId.xj.timezone === "Asia/Urumqi" && byId.jp.timezone === "Asia/Tokyo", "Sichuan, Guangdong, Xinjiang, and Japan timezones");
 check(byId.hi.id === "hi" && !registry.some((row) => row.id === "hn" || row.id === "cn"), "Hainan id is hi; no national China id");
 check(it.id === "it" && it.name === "Italy", "Italy id or name");
 check(fr.recipes.length === 0 && es.recipes.length === 0 && on.recipes.length === 0 && it.recipes.length === 0 && fl.recipes.length === 0 && ca.recipes.length === 0, "no invented recipes");
@@ -169,18 +171,21 @@ check(named(es, "naranja") && named(es, "aguacate") && named(es, "mango") && nam
 check(named(on, "Cranberries") && named(on, "Watermelon") && named(on, "Sweet Potatoes"), "Ontario domestic rows the UK pack does not grow");
 check(named(on, "brussels sprouts") && named(on, "Sprouts"), "Ontario sprouts and Brussels sprouts are separate rows");
 check(named(on, "Bitter Melon/Fuzzy Squash") && named(on, "Garlic Scapes"), "Ontario bitter melon and garlic scapes are not wired");
+check(["mirabelle de Lorraine", "asperge des sables des Landes", "piment d'Espelette", "châtaigne d'Ardèche", "abricot rouge du Roussillon"].every((item) => named(fr, item))
+  && named(es, "calçot de Valls") && named(es, "castaña de Galicia") && named(it, "limone di Sorrento") && named(it, "patata della Sila") && named(it, "carciofo romanesco")
+  && named(on, "Wild Blueberries") && named(uk, "armagh bramley apple"), "regional specialties");
 check(named(it, "pomodori") && named(it, "arance") && named(it, "meloni") && named(it, "angurie") && named(it, "kiwi"), "Italy domestic rows");
 const carciofi = it.items.find((row) => row.item === "carciofi");
 check(carciofi && carciofi.months[5] === "out" && carciofi.months.slice(0, 4).every((role) => role === "in"), "Italy dropped the isolated carciofi June shoulder");
-check(named(fl, "Orange") && named(fl, "Avocado") && named(fl, "mango") && named(fl, "Watermelon") && named(fl, "Pineberry") && named(fl, "strawberry") && !named(fl, "Peanut") && !named(fl, "Strawberry"), "Florida domestic rows; peanut held for a drawing");
+check(named(fl, "Orange") && named(fl, "Avocado") && named(fl, "mango") && named(fl, "Watermelon") && named(fl, "Pineberry") && named(fl, "strawberry") && named(fl, "Peanut") && !named(fl, "Strawberry"), "Florida domestic rows");
 const watermelon = fl.items.find((row) => row.item === "Watermelon");
 check(watermelon && watermelon.months[2] === "in" && watermelon.months[6] === "in" && watermelon.months[7] === "out" && watermelon.months[9] === "in", "Florida keeps both watermelon windows");
-check(fl.months[7].counts.in === 3 && fl.months[7].in.length === 3, "Florida August is the short calendar month");
-check(named(fl, "Kumquat") && !named(fl, "Jujube") && !named(fl, "Pummelo") && !named(fl, "Guava") && !named(fl, "Papaya") && !named(fl, "Passion fruit"), "Florida IFAS kumquat ships; jujube and pummelo stay off the wheel");
+check(fl.months[7].counts.in === 17 && ["Avocado", "mango", "Mushroom", "Peanut", "Papaya", "Macadamia"].every((item) => fl.months[7].in.includes(item)), "Florida August count");
+check(["Kumquat", "Jujube", "Pummelo", "Guava", "Papaya", "Passion fruit", "Lychee", "Longan", "Carambola", "Macadamia"].every((item) => named(fl, item)) && !named(fl, "Akee") && !named(fl, "Mamey sapote") && !named(fl, "Guanabana (soursop)"), "Florida IFAS fruit with stickers ship; the rest stay off the wheel");
 const jpPeach = byId.jp.items.find((row) => row.item === "peach");
 check(jpPeach && jpPeach.months[4] === "out" && jpPeach.months.slice(5, 9).every((role) => role === "in") && jpPeach.months[9] === "out", "Japan peach is the Yamanashi June–September window");
 check(["Tomato", "Carrot", "Bell Pepper", "Taro", "broccoli", "celery", "Peas (Snow)", "Green bean", "Turnip", "Chinese chives", "Shiranui / dekopon"].every((item) => named(byId.jp, item)), "Japan v0.3 rows with stickers");
-check(!named(byId.jp, "Okra") && !named(byId.jp, "Ginger") && !named(byId.jp, "Oyster"), "Japan rows without stickers stay off the wheel");
+check(["Okra", "Ginger", "Lotus root", "Kiwifruit", "Bamboo shoot", "Green tea, first flush"].every((item) => named(byId.jp, item)) && !named(byId.jp, "Oyster") && !named(byId.jp, "Myoga"), "Japan rows with stickers ship; the rest stay off the wheel");
 const orange = ca.items.find((row) => row.item === "Orange");
 check(orange && orange.months[0] === "in" && orange.months[4] === "in" && orange.months[5] === "out" && orange.months[6] === "out" && orange.months[10] === "in", "California orange keeps the longer navel window");
 const broccoli = ca.items.find((row) => row.item === "broccoli");
@@ -191,18 +196,26 @@ const sweetPotatoes = ca.items.find((row) => row.item === "Sweet Potatoes");
 check(sweetPotatoes && sweetPotatoes.months[1] === "out" && sweetPotatoes.months[10] === "in" && sweetPotatoes.months[11] === "in", "California sweet potatoes keep the first window when the counts tie");
 const artichoke = ca.items.find((row) => row.item === "Artichoke");
 check(artichoke && artichoke.months.every((role) => role === "in"), "California artichoke stays in season all year");
-check(named(ca, "Orange") && named(ca, "Grape") && named(ca, "Tomato") && named(ca, "garlic") && named(ca, "fig") && !named(ca, "Almond") && !named(ca, "Walnut") && !named(ca, "Kiwifruit") && !named(ca, "Pistachio") && !named(ca, "Date") && !named(ca, "Olive") && !named(ca, "Pecan"), "California domestic rows; nuts, kiwi, date, and olive held for a drawing");
+check(named(ca, "Orange") && named(ca, "Grape") && named(ca, "Tomato") && named(ca, "garlic") && named(ca, "fig") && ["Almond", "Walnut", "Kiwifruit", "Pistachio", "Date", "Olive", "Pecan"].every((item) => named(ca, item)), "California domestic rows");
 check(ca.months[6].counts.in === 13, "California July in-season count");
 const gapList = readFileSync(join(root, "STICKER_GAPS.md"), "utf8");
 const archetypeMap = JSON.parse(readFileSync(join(root, "art/ARCHETYPES.md"), "utf8").match(/```json\n([\s\S]*?)\n```/)[1]);
 const knownArchetypes = new Set(archetypeIds());
 for (const entry of archetypeMap) check(knownArchetypes.has(entry.archetype), `art/ARCHETYPES.md ${entry.food} names unknown archetype ${entry.archetype}`);
-check(gapList.includes("### Peanut") && !gapList.includes("plátano") && !gapList.includes("Garlic Scapes") && gapList.includes("## California (`ca`)") && gapList.includes("### Pistachio") && gapList.includes("### Jujube") && gapList.includes("### Pummelo"), "sticker gap list");
+check(!gapList.includes("### Peanut") && !gapList.includes("### Pummelo") && !gapList.includes("### Jujube") && !gapList.includes("## California (`ca`)") && gapList.includes("### Akee") && gapList.includes("## Guangdong (`gd`)") && gapList.includes("### Hairy gourd"), "sticker gap list");
+check(!site.sprite.includes("undefined"), "a sticker binding is missing a colour its drawing uses");
+const bindingsOf = (id) => JSON.parse(readFileSync(join(root, "art/bindings", `${id}.json`), "utf8"));
+for (const id of Object.keys(byId)) {
+  for (const [item, binding] of Object.entries(bindingsOf(id))) {
+    if (/jujube/i.test(item)) check(binding.archetype === "jujube", `${id} ${item} should use the jujube sticker, not ${binding.archetype}`);
+    if (/pummelo|pomelo|grapefruit/i.test(item)) check(binding.archetype === "pummelo", `${id} ${item} should use the pummelo sticker, not ${binding.archetype}`);
+  }
+}
 
 check(resolvePackId(null, registry) === "uk", "missing country falls back to uk");
 check(resolvePackId("fr", registry) === "fr" && resolvePackId("es", registry) === "es" && resolvePackId("on", registry) === "on" && resolvePackId("it", registry) === "it" && resolvePackId("fl", registry) === "fl" && resolvePackId("ca", registry) === "ca", "shipped country ids");
-check(["sc", "sd", "js", "yn", "hi", "xj", "jp"].every((id) => resolvePackId(id, registry) === id), "new place ids");
-check(resolvePackId("ontario", registry) === "uk" && resolvePackId("zz", registry) === "uk" && resolvePackId("us", registry) === "uk" && resolvePackId("usa", registry) === "uk" && resolvePackId("us-fl", registry) === "uk" && resolvePackId("california", registry) === "uk" && resolvePackId("cn", registry) === "uk" && resolvePackId("china", registry) === "uk" && resolvePackId("China", registry) === "uk" && resolvePackId("CN", registry) === "uk" && resolvePackId("hn", registry) === "uk", "unknown country falls back to uk");
+check(["sc", "sd", "js", "yn", "hi", "gd", "xj", "jp"].every((id) => resolvePackId(id, registry) === id), "new place ids");
+check(resolvePackId("ontario", registry) === "uk" && resolvePackId("zz", registry) === "uk" && resolvePackId("us", registry) === "uk" && resolvePackId("usa", registry) === "uk" && resolvePackId("us-fl", registry) === "uk" && resolvePackId("california", registry) === "uk" && resolvePackId("cn", registry) === "uk" && resolvePackId("china", registry) === "uk" && resolvePackId("China", registry) === "uk" && resolvePackId("CN", registry) === "uk" && resolvePackId("hn", registry) === "uk" && resolvePackId("guangdong", registry) === "uk" && resolvePackId("gz", registry) === "uk", "unknown country falls back to uk");
 check(resolvePackId("fr", [{ id: "fr", status: "draft" }, { id: "uk", status: "shipped" }]) === "uk", "draft pack is not selectable");
 check(resolvePackId("es", [{ id: "es", status: "ready" }]) === "es", "ready pack is selectable");
 check(searchForPack("?country=cz&month=9", "uk") === "month=9", "unknown country stays in the query");
@@ -212,7 +225,7 @@ check(searchForPack("?country=FR", "fr") === "", "mismatched country id is clear
 
 const pageCss = readFileSync(join(root, "site/styles.css"), "utf8");
 check(!exhibit.includes("thin_sheet") && !exhibit.includes("sheet-foot") && !pageCss.includes("sheet-foot"), "thin-sheet footer still shipped");
-check(byId.uk.thin_sheet == null && byId.fr.thin_sheet == null && byId.es.thin_sheet == null && byId.on.thin_sheet == null && byId.it.thin_sheet == null && byId.fl.thin_sheet == null && byId.ca.thin_sheet == null && ["sc", "sd", "js", "yn", "hi", "xj", "jp"].every((id) => byId[id].thin_sheet == null), "thin_sheet still on a pack");
+check(byId.uk.thin_sheet == null && byId.fr.thin_sheet == null && byId.es.thin_sheet == null && byId.on.thin_sheet == null && byId.it.thin_sheet == null && byId.fl.thin_sheet == null && byId.ca.thin_sheet == null && ["sc", "sd", "js", "yn", "hi", "gd", "xj", "jp"].every((id) => byId[id].thin_sheet == null), "thin_sheet still on a pack");
 check(byId.uk.attribution === "BBC Good Food, Hubbub, BBC Gardeners’ World, Borough Kitchen, and specialist grower guides. Recipes are from BBC Good Food.", "uk attribution");
 check(!/pass-2|research corpus|importée|pas un pic|harvest-date|ficha se queda|fiche s'arrête/i.test([byId.uk, byId.fr, byId.es, byId.on, byId.it, byId.fl].map((p) => p.attribution).join("\n")), "attribution still explains a gap");
 check(byId.fr.months.every((mo) => !mo.blurb.includes("aucun pic") && !mo.blurb.includes("<strong>0</strong>")), "France blurb names a missing peak");
@@ -220,10 +233,10 @@ check(byId.on.months.every((mo) => !mo.blurb.includes("peak level") && !mo.blurb
 check(byId.it.months.every((mo) => !mo.blurb.includes("picco") && !mo.blurb.includes("<strong>0</strong>")), "Italy blurb names a missing peak");
 check(byId.fl.months.every((mo) => !/\bpeak\b/i.test(mo.blurb) && !mo.blurb.includes("does not use") && !mo.blurb.includes("<strong>0</strong>")), "Florida blurb names a missing peak");
 check(byId.ca.months.every((mo) => !/\bpeak\b/i.test(mo.blurb) && !/does not use|gap|apology/i.test(mo.blurb) && !mo.blurb.includes("<strong>0</strong>")), "California blurb names a missing peak");
-check(byId.fr.months[8].blurb.includes("35"), "France September count");
+check(byId.fr.months[8].blurb.includes("38"), "France September count");
 
 const jargon = /pass-2|pass-1|research corpus|Instinct|\bannex\b|\bARCH\b|\bINTENT\b|\bStage\b|thin_sheet|only has the month|that's all we show|fiche s'arrête|ficha se queda/;
-for (const rel of ["site/exhibit.js", "site/index.html", "site/styles.css", "site/pack-id.js", "site/data/uk.json", "site/data/fr.json", "site/data/es.json", "site/data/on.json", "site/data/it.json", "site/data/fl.json", "site/data/ca.json", "site/data/sc.json", "site/data/sd.json", "site/data/js.json", "site/data/yn.json", "site/data/hi.json", "site/data/xj.json", "site/data/jp.json", "site/data/registry.json"]) {
+for (const rel of ["site/exhibit.js", "site/index.html", "site/styles.css", "site/pack-id.js", "site/data/uk.json", "site/data/fr.json", "site/data/es.json", "site/data/on.json", "site/data/it.json", "site/data/fl.json", "site/data/ca.json", "site/data/sc.json", "site/data/sd.json", "site/data/js.json", "site/data/yn.json", "site/data/hi.json", "site/data/gd.json", "site/data/xj.json", "site/data/jp.json", "site/data/registry.json"]) {
   check(!jargon.test(readFileSync(join(root, rel), "utf8")), `${rel} has visitor-facing research jargon`);
 }
 
